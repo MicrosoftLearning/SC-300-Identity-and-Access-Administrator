@@ -1,0 +1,107 @@
+---
+lab:
+    title: '29 - Configure Privileged Identity Management for Azure AD roles'
+    learning path: '04'
+    module: 'Module 03 - Plan and implement privileged access'
+---
+
+# Lab 29: Assign Azure AD roles in Privileged Identity Management
+
+## Lab scenario
+
+With Azure Active Directory (Azure AD), a Global administrator can make permanent Azure AD admin role assignments. These role assignments can be created using the Azure portal or using PowerShell commands.
+
+The Azure AD Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Azure AD admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
+
+#### Estimated time: 15 minutes
+
+## Assign a role
+
+Follow these steps to make a user eligible for an Azure AD admin role.
+
+1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
+
+1. Search for and then select **Azure AD Privileged Identity Management.**
+
+1. In the Privileged Identity Management blade, in the left navigation, select **Azure AD roles.**
+
+1. On the Quick start page, in the left navigation, select **Roles**.
+
+1. On the top menu, select **+ Add assignments.**
+
+    ![Screen image displaying Azure AD roles with Add assignments menu highlighted](./media/lp4-mod3-pim-assign-role.png)
+
+1. In the Add assignments blade, on the **Membership** tab, review the settings.
+
+1. Select the **Select role** menu and then select **Compliance Administrator**.
+
+1. You can use the **Search role by name** filter to help located a role.
+
+1. Under **Select member(s),** select **No members selected**.
+
+1. In the Select a member pane, select your administrator account and then select **Select**.
+
+    ![Screen image displaying the select a member pane with a selected member highlighted](./media/lp4-mod3-pim-add-role-assignment.png)
+
+1. In the Add assignments blade, select **Next**.
+
+1. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
+
+    - Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
+
+    - Active assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
+
+1. Review the remaining settings and then select **Assign**.
+
+## Activate your Azure AD roles
+
+When you need to assume an Azure AD role, you can request activation by opening **My roles** in Privileged Identity Management.
+
+1. On the Privileged Identity Management blade, in the left navigation menu, select **My roles.**
+
+1. In the My roles blade, review the list of eligible assignments.
+
+    ![Screen image displaying My roles with eligible role assignments highlighted](./media/lp4-mod3-my-roles.png)
+
+1. In the Compliance Administrator role row, select **Activate**.
+
+1. In the Activate – Compliance Administrator pane, select **Additional verification required** and then follow the instructions to provide additional security verification. You are required to authenticate only once per session.
+
+    ![Screen image displaying a popup to activate the compliance administrator](./media/lp4-mod3-pim-activate-role.png)
+
+1. After you have completed the additional security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the justification for activating this role.
+
+1. Select **Activate**.
+
+## Assign a role with restricted scope
+
+For certain roles, the scope of the granted permissions can be restricted to a single admin unit, service principal, or application. This procedure is an example if assigning a role that has the scope of an administrative unit.
+
+1. Browse to the Privileged Identity Management blade, and in the left navigation menu, select Azure **AD roles.**
+
+1. In the Roles blade, on the top menu, select **+ Add assignments.**
+
+1. In the Add assignments blade, select the **Select role** menu and then select **User administrator.**
+
+1. Select the **Scope type** menu and review the available options. For now, you will use the **Directory** scope type.
+
+>[!Tip]
+>Go to [https://docs.microsoft.com/en-us/azure/active-directory/roles/admin-units-manage](https://docs.microsoft.com/en-us/azure/active-directory/roles/admin-units-manage) for more information about the administrative unit scope type.
+
+1. As you did when assigning a role without a restricted scope, you would add members and complete the settings options. For now, select **Cancel**.
+
+## Update or remove an existing role assignment
+
+Follow these steps to update or remove an existing role assignment.
+
+1. In the Open Azure AD Privileged Identity Management > Azure AD roles blade, in the left navigation, select **Assignments**.
+
+1. In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
+
+    ![Screen image displaying the options listed in the action column of the Compliance Adminsitrator](./media/lp4-mod3-pim-edit-role-assignments.png)
+
+1. Select **Update** and review the options available in the Membership settings pane. When complete, close the pane.
+
+1. Select **Remove**.
+
+1. In the **Remove** dialog box, review the information and then select **Yes**.
