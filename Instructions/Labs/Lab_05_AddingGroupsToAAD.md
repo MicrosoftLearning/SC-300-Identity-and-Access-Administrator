@@ -13,7 +13,7 @@ Part of your duties as an Azure AD administrator is to create different types of
 
 #### Estimated time: 5 minutes
 
-## Create an Office 365 group in Azure Active Directory
+## Create an Microsoft 365 group in Azure Active Directory
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
