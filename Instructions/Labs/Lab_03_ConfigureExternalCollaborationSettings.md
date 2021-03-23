@@ -6,8 +6,6 @@ lab:
 
 # Lab 03: Configure external collaboration settings
 
-# Student lab manual
-
 ## Lab scenario
 You must enable external collaboration settings for your organization for approved guests access.
 
@@ -51,6 +49,7 @@ You must enable external collaboration settings for your organization for approv
 1. Under **Collaboration restrictions**, review the available options and accept the default settings.
 
     **IMPORTANT**
+    
     You can create either an allow list or a deny list. You can't set up both types of lists. By default, whatever domains are not in the allow list are on the deny list, and vice versa.
     You can create only one policy per organization. You can update the policy to include more domains, or you can delete the policy to create a new one.
     The number of domains you can add to an allow list or deny list is limited only by the size of the policy. The maximum size of the entire policy is 25 KB (25,000 characters), which includes the allow list or deny list and any other parameters configured for other features.
