@@ -10,7 +10,7 @@ lab:
 
 Your organization has decided to use groups in Azure AD to manage users and licenses. You need to perform several operations on the users and groups withing your Azure AD, like assigning a license to a group and verify group member license's have been updated.  And adding / removing users.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 15 minutes
 
 ## Create a new user in Azure Active Directory
 
