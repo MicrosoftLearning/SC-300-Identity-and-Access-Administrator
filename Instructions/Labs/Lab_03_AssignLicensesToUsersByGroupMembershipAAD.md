@@ -47,7 +47,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
     | :--- | :--- |
     | Group type| Security|
     | Group name| Marketing|
-    | `Membership type| Assigned|
+    | Membership type| Assigned|
     | Owners| *Assign your own administrator account as the group owner*|
     | Members| Chris Green|
 
