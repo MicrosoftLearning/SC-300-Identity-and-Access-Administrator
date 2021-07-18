@@ -31,7 +31,10 @@ You must enable external collaboration settings for your organization for approv
 
     ![Screen image displaying guest user access restriction options](./media/lp1-mod3-guest-user-access-restrictions.png)
 
-1. Under **Guest invite settings**, under **Guests can invite**, select **No**.
+1. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068438-3652f70a-c57e-4f6c-823b-dc2c838a1c8b.PNG)
+![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068445-686279c1-bda3-4a90-8715-bb7a08fb9e26.PNG)
+![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068456-6888e278-93bc-491f-a45f-ec8700762cc3.PNG)
+
 
     > [!NOTE]
     > Admins and users in the guest inviter role can invite: To allow admins and users in the "Guest Inviter" role to invite guests, set this policy to Yes.
@@ -41,14 +44,6 @@ You must enable external collaboration settings for your organization for approv
     > If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
 
     ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-invite-settings.png)
-
-1. Under **Email one-time passcode for guests**, use the default setting.
-
-    >[!NOTE]
-    >
-    >- Automatically enable email one-time passcode for guests in March 2021. (Default) If the email one-time passcode feature is not already enabled for your tenant, it will be automatically turned on in March 2021. No further action is necessary if you want the feature enabled at that time. If you've already enabled or disabled the feature, this option will be unavailable.
-    >- Enable email one-time passcode for guests effective now. Turns on the email one-time passcode feature for your tenant.
-    >- Disable email one-time passcode for guests. Turns off the email one-time passcode feature for your tenant and prevents the feature from turning on in March 2021.
 
 1. Under **Collaboration restrictions**, review the available options and accept the default settings.
 

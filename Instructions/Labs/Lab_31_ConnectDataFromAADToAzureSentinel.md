@@ -31,7 +31,7 @@ Use these instructions if you do not already have a workspace available to Azure
 
 1. Search for and select **Azure Sentinel**.
 
-1. In the Azure Sentinel workspaces blade, on the menu, select **+ Add**.
+1. In the Azure Sentinel workspaces blade, on the menu, select **+ Create**.
 
 1. If you already have an Azure Sentinel workspace, you can select that and continue to the next task.
 

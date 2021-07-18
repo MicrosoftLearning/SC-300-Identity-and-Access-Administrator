@@ -81,7 +81,7 @@ The user that created a catalog becomes the first catalog owner. To delegate man
 
     ![Screen image displaying the Roles and administrators page for the Marketing catalog](./media/lp4-mod1-catalog-roles-and-admins.png)
 
-1. On the top menu, review the available roles and then select **+ Add owner**.
+1. On the top menu, review the available roles and then select **+ Add catalog owner**.
 
 1. In the Select members pane, select your administrator account and then select **Select**.
 

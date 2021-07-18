@@ -47,6 +47,8 @@ Some user accounts in your organization will not be provided all available produ
 
 1. In the left navigation, select **Licenses**.
 
+1. Select the **+Assignments** button. 
+
 1. On the Update license assignments blade, select the check box for a single or multiple licenses.
 
     ![Screen image displaying the Update license assignments page and license options highlighted](./media/lp1-mod2-assign-user-license-options.png)
