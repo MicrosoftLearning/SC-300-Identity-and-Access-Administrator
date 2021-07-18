@@ -61,7 +61,8 @@ Enable SSPR for the group.
 
     >Note
     >If the Password reset page still displays the message Get a free Premium trial to use this feature, wait for a few minutes and then refresh the page.
-    >On the Password reset blade Properties page, under **Self service password reset enabled**, select **Selected**.
+    
+1. On the Password reset blade Properties page, under **Self service password reset enabled**, select **Selected**.
 
 1. Select **Select group**.
 
