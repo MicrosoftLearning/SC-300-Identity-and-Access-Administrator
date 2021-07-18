@@ -54,7 +54,7 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 1. As with the User risk policy, the Sign-in risk policy can be assigned to users and groups and allows you to exclude users from the policy.
 
-1. Under **Sign-in risk**, select **Medium and above**.
+1. Under **Sign-in risk**, select **Low and above**.
 
 1. In the Sign-in risk pane, select **High** and then select **Done**.
 
