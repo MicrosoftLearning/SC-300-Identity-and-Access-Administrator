@@ -52,13 +52,14 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
     - Select **Select users and groups**  
     - Select the **All guest and external users** check box to apply this to all guests.  
-    - Select **Done**.  
+    
 
 1. Select **Cloud apps or actions**.
 
     - Select **Select apps**.  
     - Choose an app you want to enable Azure AD MFA such as Visual Studio App Center.  
-    - Select **Select** and then select **Done**.
+    - Select **Select**.
+    
 
 1. Review the Conditions section.
 
@@ -72,7 +73,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Set **Enable policy** to **On**.
 
-1. Select **Create to create the policy**.
+1. Select **Create** to create the policy.
 
     ![Screenshot showing the complete Add Policy dialog](./media/lp2-mod1-conditional-access-new-policy-complete.png)
 
@@ -86,7 +87,7 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 
 1. Select **Users**.
 
-1. At the top of the Users pane, select **Multi-Factor Authentication**.
+1. At the top of the Users pane, select **Per-user MFA**.
 
     ![Screenshot showing the MFA option](./media/lp2-mod1-users-mfa.png)
 
