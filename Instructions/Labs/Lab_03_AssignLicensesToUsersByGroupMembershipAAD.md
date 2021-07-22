@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-Your organization has decided to use security groups in Azure AD to manage licenses. You need to configure a new security and assign a license to that group and verify group member license's have been updated.
+Your organization has decided to use security groups in Azure AD to manage licenses. You need to configure a new security group and assign a license to that group and verify group member license's have been updated.
 
 #### Estimated time: 10 minutes
 
