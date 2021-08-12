@@ -87,5 +87,5 @@ If you need to remove the role assignment from a user, you can also do that from
 
     ![Screen image displaying the Remove assignments dialog box with Yes highlighted](./media/directory-role-remove-role.png)
 
-The Application administrator role is removed from the user and it no longer appears on the **Alain Charon – Assigned roles** page.
+The Application administrator role is removed from the user and it no longer appears on the **Chris Green – Assigned roles** page.
 
