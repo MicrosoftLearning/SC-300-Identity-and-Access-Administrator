@@ -48,7 +48,7 @@ Once you've added app roles in your application, you can assign users and groups
 
 To assign users and groups to roles by using the Azure portal:
 
-1. Sign in to [https:portal.azure.com] (https:portal.azure.com).
+1. Sign in to [https://portal.azure.com](https://portal.azure.com).
 
 1. In Azure Active Directory, in the navigation menu on the left, select **Enterprise applications.**
 
