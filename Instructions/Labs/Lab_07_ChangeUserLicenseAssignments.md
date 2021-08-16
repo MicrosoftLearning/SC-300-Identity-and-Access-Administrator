@@ -35,7 +35,7 @@ Some user accounts in your organization will not be provided all available produ
     >Warning
     >To assign a license to a user, the user must assigned a usage location.
 
-1. When complete, verify the account for Chris Green is shown in the **All users** list.
+1. When complete, verify the account for Dominique Koch is shown in the **All users** list.
 
 ## Update user license assignments
 
