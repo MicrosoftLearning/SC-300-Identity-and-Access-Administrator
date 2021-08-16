@@ -23,7 +23,7 @@ Your company expects to begin using a Security information and event management 
 
 - Your user must have read and write permissions to the Azure AD diagnostic settings to be able to see the connection status.
 
-## Create and add an Azure Sentinel workspace
+## Create and add an Azure Sentinel Workspace
 
 Use these instructions if you do not already have a workspace available to Azure Sentinel.
 
