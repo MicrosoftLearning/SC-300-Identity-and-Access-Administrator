@@ -35,7 +35,7 @@ Your company recently hired a new employee who will perform duties as an applica
 5. Mark the **Let me create the password**
 
 6. Use password = **Pass@word1**
-##### You will have to change the password upon first login to this account
+*You will have to change the password upon first login to this account*
 
 7. Select **Create**. The user is now created and registered to your organization.
 
