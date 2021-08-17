@@ -81,7 +81,9 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
     ![Assigned roles page - showing the selected role](./media/directory-role-select-role.png)
 
-The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
+8. Click the **Refesh** button.
+
+     ##### The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
 
 ## Remove a role assignment
 
