@@ -67,15 +67,17 @@ Your company recently hired a new employee who will perform duties as an applica
 
 ## Exercise 2 - Assign the application admin role and create an app
 
-### Assign a role to a user
+### Task 1 - Assign a role to a user
 
 Using Azure Active Directory (Azure AD), you can designate limited administrators to manage identity tasks in less-privileged roles. Administrators can be assigned for such purposes as adding or changing users, assigning administrative roles, resetting user passwords, managing user licenses, and managing domain names.
 
-1. In Azure Active Directory, All users blade, select **Chris Green**.
-
-1. On the **user’s profile** page, select **Assigned roles**. The **Assigned roles** page appears.
-
-1. Select **Add assignments**, select the **Application administrator** role and then select **Add**.
+1. If you are not already logged in as a Global Administrator role, open the Azure Portal and log in.
+2. Navigae to Azure Active Directory blade.
+3. Click on **User** under the Manage section of the menu.
+4. Click on **Chris Green** account.
+5. Choose **Assigned roles** from the Manage menu.
+6. Click **+ Add assignments** and mark the `Application administrator` role.
+7. Click **Add**
 
     ![Assigned roles page - showing the selected role](./media/directory-role-select-role.png)
 
