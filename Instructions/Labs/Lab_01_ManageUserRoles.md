@@ -42,9 +42,28 @@ Your company recently hired a new employee who will perform duties as an applica
 
 ### Task 2 - Login and try to create an app
 
-1. THIS IS THE NEXT STEP
+1. Launch a new InPrivate browser window.
+2. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
 
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | User name| ChrisG@`your domain name.com`|
+    | Password| Pass@word1|
 
+3. Update your password.
+
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | Current Password| Pass@word1|
+    | New Password| Pa$$w.rd1234|
+    | Confirm Password| Pa$$w.rd1234|
+
+4. If you see a **Welcome to Microsoft Azure** tour dialog, click the **Maybe Later** button.
+
+5. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
+6. Notice that **+ New Application** is unavailable.
+7. Try clicking on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
+8. Click on **ChrisG** name in the upper-right corner and sign out.
 
 ## Exercise 2 - Assign the application admin role and create an app
 
