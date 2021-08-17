@@ -85,6 +85,23 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
      ##### The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
 
+### Task 2 - Check application permissions
+
+1. Launch a new InPrivate browser window.
+2. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
+
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | User name| ChrisG@`your domain name.com`|
+    | Password| Pa$$w.rd1234|
+
+3. If you see a **Welcome to Microsoft Azure** tour dialog, click the **Maybe Later** button.
+4. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
+5. Notice that **+ New Application** is available now.
+6. Click **+ New Application**
+7. 
+
+
 ## Remove a role assignment
 
 If you need to remove the role assignment from a user, you can also do that from the **Assigned roles** page.
