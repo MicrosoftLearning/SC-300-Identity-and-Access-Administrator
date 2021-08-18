@@ -27,9 +27,9 @@ You need to identify and update the different properties associated with your te
 
 4. Change the Tenant Properties for the **Name** and **Technical contact** in the dialog.
 
-| Setting | Value |
-| *---    | *---  |
-| Name    | Contoso Marketing |
+| **Setting** | **Value** |
+| :--- | :--- |
+| Name | Contoso Marketing |
 | Technical contact | `your Global admin account` |
 
 5. Select **Save** to update the tenant properties.
