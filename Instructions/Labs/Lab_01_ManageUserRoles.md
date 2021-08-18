@@ -99,20 +99,29 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 4. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
 5. Notice that **+ New Application** is available now.
 6. Click **+ New Application**
-7. 
 
+     ##### This role now has the ability to add applications to the tenant.  We will experiment more with this feature in later labs.
 
-## Remove a role assignment
+7. Sign out of the Chris Green instance of the Azure Portal and close the browser.
 
-If you need to remove the role assignment from a user, you can also do that from the **Assigned roles** page.
+## Exercise 3 - Remove a role assignment
 
-1. In **Azure Active Directory**, select **Users**, and then select the user getting the role assignment removed. For example, *Chris Green*.
+### Task 1 - Remove the application administrator from Chris Green
 
-1. Select **Assigned roles**, select the name of the role your wish to removed.
+This task will use an alternative method to remove the assigned role; it will use the **Roles and administrators** option in Azure AD.
 
-1. Select the check box for the user who will be removed from the role, and then select **Remove assignments**.
+1. If you are not already logged in as your Global Admin, launch the Azure Portal and log in now.
+2. In the search box type **Azure Active Directory** and launch Azure AD.
+3. In **Azure Active Directory**, select **Roles and administrators**, and then select the **Application administrator** role from the list.
 
-    ![Screen image displaying the Remove assignments dialog box with Yes highlighted](./media/directory-role-remove-role.png)
+     ##### Note that you could select multiple roles at this point to perform some bulk activities.
 
-The Application administrator role is removed from the user and it no longer appears on the **Chris Green – Assigned roles** page.
+4. On the **Application administrator | Assignments** page you should see Chris Green's name listed.
+5. Put a check in the box next to Chris Green.
+6. Click **X Remove assignments** from the options at the top of the dialog.
+7. Answer **Yes** when the confirmation box opens.
+8. Close Azure Active Directory.
 
+## Experiment with managing users
+
+You can add and remove users with the Azure AD blade.  However, users can be created and roles can be assigned using the scripting.  Experiment with giving the Chris Green user account a different role using script.
