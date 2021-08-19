@@ -27,9 +27,9 @@ Part of your duties as an Azure AD administrator is to create different types of
     | :--- | :--- |
     | Group type| Microsoft 365|
     | Group name| Northwest Sales|
-    | `Membership type| Assigned|
+    | Membership type| Assigned|
     | Owners| *Assign your own administrator account as the group owner*|
-    | Members| *Assign a member of this group*|
+    | Members| **Alex Wilber** and **Bianca Pisani**|
 
     ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-o365-group.png)
 
