@@ -29,27 +29,25 @@ Your organization has decided to use security groups in Azure AD to manage licen
     | Group name| sg-SC300-O365|
     | `Membership type| Assigned|
     | Owners| *Assign your own administrator account as the group owner*|
-    | Members| Delia Dennis|
+
+5. Click the **No members selected** text under Members.
+6. Select **Delia Dennis** from the list of users.
+7. Click the **Select** button.
 
     ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-group.png)
 
-1. When complete, verify the group named **Marketing** is shown in the **All groups** list.
+8. Click the **Create** button.
+9. When complete, verify the group named **sg-SC300-O365** is shown in the **All groups** list.
 
-## Assign a license to a group
+## Task 2 - Assign a license to a group
 
-1. In the **All groups** list, select **Marketing**.
+1. In the **All groups** list, select **sg-SC300-O365**.
+2. In the Marketing blade, under **Mange**, select **Licenses**.
+3. On the menu, select **+ Assignments**.
+4. In the update license assignments blade, under **Select licenses**, review the list of available licenses and then select the check box for **Office 365 E3**.
 
-1. In the Marketing blade, under **Mange**, select **Licenses**.
-
-1. On the menu, select **Assignments**.
-
-1. In the update license assignments blade, under **Select licenses**, review the list of available licenses and then select the check box for one of the licenses.
-
-1. Under **Review license options**, review the available options for the license you have selected.
-
-    >[!Tip]
-    >When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
+    **Tip** - When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
 
     ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/lp1-mod2-assign-license-group.png)
 
-1. Select **Save**.
+6. Select **Save**.
