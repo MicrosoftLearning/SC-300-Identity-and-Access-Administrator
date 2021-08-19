@@ -13,43 +13,23 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 #### Estimated time: 10 minutes
 
-## Create a new user in Azure Active Directory
+## Exercise 1 - Create a security group and add a user
 
-1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) and sign in as a Global Administrator.
-
-1. In the left navigation, under **Mange**, select **Users**.
-
-1. In the Users blade, on the menu, select **New user**.
-
-1. Create a user using the following information:
-
-    | **Setting**| **Value**|
-    | :--- | :--- |
-    | User name| Chris|
-    | Name| Chris Green|
-    | First name| Chris|
-    | Last name| Green|
-    | Password| Pass@word1|
-
-1. When complete, verify the account for Chris Green is shown in the **All users** list.
-
-## Create a security group in Azure Active Directory
+### Task 1 -  Create a security group in Azure Active Directory
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
-1. In the left navigation, under **Mange**, select **Groups**.
-
-1. In the Groups blade, on the menu, select **New group**.
-
-1. Create a group using the following information:
+2. In the left navigation, under **Mange**, select **Groups**.
+3. In the Groups blade, on the menu, select **New group**.
+4. Create a group using the following information:
 
     | **Setting**| **Value**|
     | :--- | :--- |
     | Group type| Security|
-    | Group name| Marketing|
+    | Group name| sg-SC300-O365|
     | `Membership type| Assigned|
     | Owners| *Assign your own administrator account as the group owner*|
-    | Members| Chris Green|
+    | Members| Delia Dennis|
 
     ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-group.png)
 
