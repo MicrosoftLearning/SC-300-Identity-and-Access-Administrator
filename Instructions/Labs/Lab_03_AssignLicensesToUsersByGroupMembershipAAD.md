@@ -15,7 +15,24 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 ## Exercise 1 - Create a security group and add a user
 
-### Task 1 -  Create a security group in Azure Active Directory
+### Task 1 - Check to see if Delia Dennis has access to Office 365
+
+1. Launch a browser window.
+2. Connect to [https://www.office.com](https://www.office.com).
+3. Clcick Sign in and connect as Delia Dennis.
+
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | Username | DeliaD@ <<you azure domain>>|
+    | Password| pass@word123|
+
+4. You should connecit to the Office.com website, but see a message indicating you don't have a license.
+
+    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no licnese is assigned.](./media/delia-no-office-license.png)
+    
+5. Close the browser window.
+
+### Task 2 -  Create a security group in Azure Active Directory
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
@@ -39,7 +56,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
 8. Click the **Create** button.
 9. When complete, verify the group named **sg-SC300-O365** is shown in the **All groups** list.
 
-## Task 2 - Assign a license to a group
+## Task 3 - Assign a license to a group
 
 1. In the **All groups** list, select **sg-SC300-O365**.
 2. In the Marketing blade, under **Mange**, select **Licenses**.
@@ -51,3 +68,21 @@ Your organization has decided to use security groups in Azure AD to manage licen
     ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/lp1-mod2-assign-license-group.png)
 
 6. Select **Save**.
+
+### Taks 4 - Confirm the Office 365 license
+
+1. Launch a browser window.
+2. Connect to [https://www.office.com](https://www.office.com).
+3. Clcick Sign in and connect as Delia Dennis.
+
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | Username | DeliaD@ <<you azure domain>>|
+    | Password| pass@word123|
+
+4. You should connecit to the Office.com website, but see a message indicating you don't have a license.
+
+    ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a licnese is assigned.](./media/delia-office-license.png)
+    
+5. Close the browser window.
+    
