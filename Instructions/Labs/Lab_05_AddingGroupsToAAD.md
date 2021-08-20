@@ -30,6 +30,7 @@ Part of your duties as an Azure AD administrator is to create different types of
     | `Membership type| Assigned|
     | Owners| *Assign your own administrator account as the group owner*|
     | Members| *Assign a member of this group*|
+1. Click **Create**
 
     ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-o365-group.png)
 
