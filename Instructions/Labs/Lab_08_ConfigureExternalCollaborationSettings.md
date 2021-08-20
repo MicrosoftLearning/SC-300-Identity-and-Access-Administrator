@@ -32,19 +32,14 @@ You must enable external collaboration settings for your organization for approv
     ![Screen image displaying guest user access restriction options](./media/lp1-mod3-guest-user-access-restrictions.png)
 
 1. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068438-3652f70a-c57e-4f6c-823b-dc2c838a1c8b.PNG)
-![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068445-686279c1-bda3-4a90-8715-bb7a08fb9e26.PNG)
-![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068456-6888e278-93bc-491f-a45f-ec8700762cc3.PNG)
-
 
     > [!NOTE]
     > Admins and users in the guest inviter role can invite: To allow admins and users in the "Guest Inviter" role to invite guests, set this policy to Yes.
     > Members can invite: To allow non-admin members of your directory to invite guests, set this policy to Yes.
     > Guests can invite: To allow guests to invite other guests, set this policy to Yes.
-    > Enable guest self-service sign up via user flows (Preview): Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory.
+    > Enable guest self-service sign up via user flows: Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory.
     > If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
-
-    ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-invite-settings.png)
-
+   
 1. Under **Collaboration restrictions**, review the available options and accept the default settings.
 
     > [!IMPORTANT]
