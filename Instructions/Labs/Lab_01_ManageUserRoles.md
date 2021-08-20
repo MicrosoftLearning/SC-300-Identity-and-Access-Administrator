@@ -69,11 +69,11 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
 1. On the **user’s profile** page, select **Assigned roles**. The **Assigned roles** page appears.
 
-1. Select **Add assignments**, select the **Application administrator** role and then select **Add**.
+1. Select **Add assignments**, under **Select role** choose the **Application administrator** role and then select **Next**.
 
-    ![Assigned roles page - showing the selected role](./media/directory-role-select-role.png)
+1. Leave the defaults so tha tthe user is **permanently eligible** then click **Assign**.
 
-The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
+1. Click on the **Eligible assignments** page. The newly assigned Application administrator role appears.
 
 ## Remove a role assignment
 
@@ -81,11 +81,9 @@ If you need to remove the role assignment from a user, you can also do that from
 
 1. In **Azure Active Directory**, select **Users**, and then select the user getting the role assignment removed. For example, *Chris Green*.
 
-1. Select **Assigned roles**, select the name of the role your wish to removed.
+1. Select **Assigned roles** then **Eligible assignments** 
 
-1. Select the check box for the user who will be removed from the role, and then select **Remove assignments**.
+1. On the role you wish to remove select **Remove** then **Yes**.
 
-    ![Screen image displaying the Remove assignments dialog box with Yes highlighted](./media/directory-role-remove-role.png)
 
 The Application administrator role is removed from the user and it no longer appears on the **Chris Green – Assigned roles** page.
-
