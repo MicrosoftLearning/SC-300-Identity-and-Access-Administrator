@@ -53,7 +53,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
     ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-group.png)
 
-1. When complete, verify the group named **Marketing** is shown in the **All groups** list.
+1. When complete, verify the group named **Marketing** is shown in the **All groups** list. Click **Create**.
 
 ## Assign a license to a group
 
