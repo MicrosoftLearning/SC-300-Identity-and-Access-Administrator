@@ -57,13 +57,13 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 1. Select **Cloud apps or actions**.
 
     - Select **Select apps**.  
-    - Choose an app you want to enable Azure AD MFA such as Visual Studio App Center.  
+    - Choose an app you want to enable Azure AD MFA such as Office 365.  
     - Select **Select**.
     
 
 1. Review the Conditions section.
 
-    - Select **Locations** and then configure it for **Any location**.
+    - Select **Locations** and then **yes** under configure then select  **Any location**.
 
 1. Under **Access Controls** select **Grant** and verify **Grant access** is selected.
 
