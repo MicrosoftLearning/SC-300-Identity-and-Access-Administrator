@@ -48,7 +48,7 @@ You must enable external collaboration settings for your organization for approv
     - Enable guest self-service sign up via user flows: Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory.
     - If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
 
-    ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-invite-settings.png)
+    ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-user-invite-settings.png)
 
 6. Under **Collaboration restrictions**, review the available options and accept the default settings.
 
