@@ -35,16 +35,18 @@ Some user accounts in your organization will not be provided all available produ
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
-1. In the left navigation, under **Manage**, select **Users**
+2. In the left navigation, under **Manage**, select **Users**
 
-1. In the Users blade, select **Raul Razo**.
+3. In the Users blade, select **Raul Razo**.
 
-1. In the left navigation, select **Licenses**.
+4. In the left navigation, select **Licenses**.
 
-1. Select the **+ Assignments** button. 
+5. Select the **+ Assignments** button. 
 
-1. On the Update license assignments blade, select the check box for a **Windows 10 Enterprise E3** license.
+6. On the Update license assignments blade, select the check box for a **Windows 10 Enterprise E3** license.
 
     ![Screen image displaying the Update license assignments page and license options highlighted](./media/lp1-mod2-assign-user-license-options.png)
 
-1. When complete, select **Save**.
+7. When complete, select **Save**.
+8. At the top of the screen click `Home > Contoso Marketing > User >` **Raul Razo**
+9. Notice that the license has been assigned.
