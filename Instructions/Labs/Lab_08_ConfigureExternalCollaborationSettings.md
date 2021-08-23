@@ -38,27 +38,26 @@ You must enable external collaboration settings for your organization for approv
 
     ![Screen image displaying guest user access restriction options](./media/lp1-mod3-guest-user-access-restrictions.png)
 
-1. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068438-3652f70a-c57e-4f6c-823b-dc2c838a1c8b.PNG)
-![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068445-686279c1-bda3-4a90-8715-bb7a08fb9e26.PNG)
-![SC300Lab08Step5](https://user-images.githubusercontent.com/16070952/126068456-6888e278-93bc-491f-a45f-ec8700762cc3.PNG)
+5. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**!
 
-
-    > [!NOTE]
-    > Admins and users in the guest inviter role can invite: To allow admins and users in the "Guest Inviter" role to invite guests, set this policy to Yes.
-    > Members can invite: To allow non-admin members of your directory to invite guests, set this policy to Yes.
-    > Guests can invite: To allow guests to invite other guests, set this policy to Yes.
-    > Enable guest self-service sign up via user flows (Preview): Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory.
-    > If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
+    **NOTE**
+    
+    - Admins and users in the guest inviter role can invite: To allow admins and users in the "Guest Inviter" role to invite guests, set this policy to Yes.
+    - Members can invite: To allow non-admin members of your directory to invite guests, set this policy to Yes.
+    - Guests can invite: To allow guests to invite other guests, set this policy to Yes.
+    - Enable guest self-service sign up via user flows: Enables or disables self-service sign up for guests via user flows associated with applications in your directory. When disabled, guests are required to be invited to your directory.
+    - If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
 
     ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-invite-settings.png)
 
-1. Under **Collaboration restrictions**, review the available options and accept the default settings.
+6. Under **Collaboration restrictions**, review the available options and accept the default settings.
 
-    > [!IMPORTANT]
-    > You can create either an allow list or a deny list. You can't set up both types of lists. By default, whatever domains are not in the allow list are on the deny list, and vice versa.
-    > You can create only one policy per organization. You can update the policy to include more domains, or you can delete the policy to create a new one.
-    > The number of domains you can add to an allow list or deny list is limited only by the size of the policy. The maximum size of the entire policy is 25 KB (25,000 characters), which includes the allow list or deny list and any other parameters configured for other features.
-    > This list works independently from OneDrive for Business and SharePoint Online allow/block lists. If you want to restrict individual file sharing in SharePoint Online, you need to set up an allow or deny list for OneDrive for Business and SharePoint Online.
-    > The list does not apply to external users who have already redeemed the invitation. The list will be enforced after the list is set up. If a user invitation is in a pending state, and you set a policy that blocks their domain, the user's attempt to redeem the invitation will fail.
+    **IMPORTANT**
+    
+    - You can create either an allow list or a deny list. You can't set up both types of lists. By default, whatever domains are not in the allow list are on the deny list, and vice versa.
+    - You can create only one policy per organization. You can update the policy to include more domains, or you can delete the policy to create a new one.
+    - The number of domains you can add to an allow list or deny list is limited only by the size of the policy. The maximum size of the entire policy is 25 KB (25,000 characters), which includes the allow list or deny list and any other parameters configured for other features.
+    - This list works independently from OneDrive for Business and SharePoint Online allow/block lists. If you want to restrict individual file sharing in SharePoint Online, you need to set up an allow or deny list for OneDrive for Business and SharePoint Online.
+    - The list does not apply to external users who have already redeemed the invitation. The list will be enforced after the list is set up. If a user invitation is in a pending state, and you set a policy that blocks their domain, the user's attempt to redeem the invitation will fail.
 
-1. When finished, save your changes.
+7. When finished, save your changes.
