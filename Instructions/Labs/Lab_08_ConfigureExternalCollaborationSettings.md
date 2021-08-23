@@ -13,21 +13,28 @@ You must enable external collaboration settings for your organization for approv
 
 #### Estimated timing: 5 minutes
 
-### Configure external collaboration settings
+## Exercise 1 - Allowing guest users to be invited into your organization
+
+### Task 1 - Configure external collaboration settings
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a tenant administrator.
+2. Select **Azure Active Directory**.
+3. Select **External Identities > External collaboration settings**.
+4. Click the **Email one-time passcode** notification link you see near the top of the screen.
 
-1. Select **Azure Active Directory**.
+    **Note** - A one-time passcode is a very secure way to invite a user to join your organization.
 
-1. Select **External Identities > External collaboration settings**.
+5. Click on `Home > Contoso Marketing >` ** External Identities to return to the previous screen.
+6. 
 
-1. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
 
-    > [!NOTE]
-    >
-    >- Guest users have the same access as members (most inclusive): This option gives guests the same access to Azure AD resources and directory data as member users.
-    >- Guest users have limited access to properties and memberships of directory objects: (Default) This setting blocks guests from certain directory tasks, like enumerating users, groups, or other directory resources. Guests can see membership of all non-hidden groups.
-    >- Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users' profiles, groups, or group memberships.
+4. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
+
+    **NOTE**
+
+    - Guest users have the same access as members (most inclusive): This option gives guests the same access to Azure AD resources and directory data as member users.
+    - Guest users have limited access to properties and memberships of directory objects: (Default) This setting blocks guests from certain directory tasks, like enumerating users, groups, or other directory resources. Guests can see membership of all non-hidden groups.
+    - Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users' profiles, groups, or group memberships.
 
     ![Screen image displaying guest user access restriction options](./media/lp1-mod3-guest-user-access-restrictions.png)
 
