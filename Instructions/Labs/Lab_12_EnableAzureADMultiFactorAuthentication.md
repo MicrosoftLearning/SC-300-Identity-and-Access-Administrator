@@ -13,22 +13,23 @@ To improve security in your organization, you've been directed to enable multi-f
 
 #### Estimated time: 10 minutes
 
->[!IMPORTANT]
->Azure AD Premium is need for this exercise. You can use a 30-day free trial to try this feature out, or just read through the instructions below to understand the flow.
+**IMPORTANT** - An Azure AD Premium license is need for this exercise.
 
-## Configure Multi-Factor Authentication options
+## Exercise 1 - Review and enable Multifactor Authentication in Azure
+
+### Task 1 - Review Azure Multi-Factor Authentication options
 
 1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
-1. Use the search feature and search for **multi-factor**.
+2. Use the search feature and search for **multi-factor**.
 
-1. In the search results, select **Multi-Factor Authentication**.
+3. In the search results, select **Multi-Factor Authentication**.
 
-1. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
+4. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
 
     ![Screenshot showing MFA options in the dashboard](./media/lp2-mod1-set-additional-mfa-settings.png)
 
-1. In the new browser page, you can see the MFA options for Azure users and service settings.
+5. In the new browser page, you can see the MFA options for Azure users and service settings.
 
     ![Screenshot showing MFA configuration](./media/lp2-mod1-mfa-settings.png)
 
@@ -36,50 +37,55 @@ To improve security in your organization, you've been directed to enable multi-f
 
     You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Azure AD identity using a different password specific to that app.
 
-## Setup conditional access rules for MFA
+### Task 2 - Setup conditional access rules for MFA for Delia Dennis
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
 1. Switch back to the Azure portal and select **Azure Active Directory** > **Security** > **Conditional access**.
 
-1. On the menu, select **New policy**.
+2. On the menu, select **New policy**.
 
     ![creenshot highlighting the New Policy button in the Azure portal](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
 
-1. Name your policy, for example **All guests**.
+3. Name your policy, for example **MFA_for_Delia**.
 
-1. Select **Users and group**.
+4. Select **Users and group**.
 
     - Select **Select users and groups**  
-    - Select the **All guest and external users** check box to apply this to all guests.  
-    
+    - Select the **Users and groups** check box to configure.
+    - Click on **0 users and groups selected** item.
+    - Choose **Adele Vance** from the list of users then choose **Select** button.
 
-1. Select **Cloud apps or actions**.
+5. Select **Cloud apps or actions**.
 
-    - Select **Select apps**.  
-    - Choose an app you want to enable Azure AD MFA such as Visual Studio App Center.  
-    - Select **Select**.
-    
+    - In the dropdown, make sure **Cloud apps** is selected.
+    - Under Include, mark **All cloud apps** and note the warning the pops up about possibly locking yourself out. 
+    - Now under Include, change your choice to **Select apps** item.
+    - In the newly opened dialog, choose **Office 365**.
+        - **Reminder** - in a previous lab we gave Delia Dennis and Office 365 license and logged into ensure it worked.
+    - Choose **Select**.
 
-1. Review the Conditions section.
+6. Review the Conditions section.
 
     - Select **Locations** and then configure it for **Any location**.
 
-1. Under **Access Controls** select **Grant** and verify **Grant access** is selected.
+7. Under **Access Controls** select **Grant** and verify **Grant access** is selected.
 
-1. Select the **Require multi-factor authentication** check box to enforces MFA.
+8. Select the **Require multi-factor authentication** check box to enforces MFA.
 
-1. Select **Select**.
+9. Ensure that **Require all the slected controls** is selected.
 
-1. Set **Enable policy** to **On**.
+10. Select **Select**.
 
-1. Select **Create** to create the policy.
+11. Set **Enable policy** to **On**.
+
+12. Hit **Create** to create the policy.
 
     ![Screenshot showing the complete Add Policy dialog](./media/lp2-mod1-conditional-access-new-policy-complete.png)
 
-    MFA is now enabled for your selected application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
+    MFA is now enabled for your selected user and application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
 
-## Configure Azure AD MFA for passwords
+### Task 3 - Configure Azure AD MFA for passwords
 
 Finally, let's look at how to configure MFA for user accounts. This is another way to get to the multi-factor auth settings.
 
