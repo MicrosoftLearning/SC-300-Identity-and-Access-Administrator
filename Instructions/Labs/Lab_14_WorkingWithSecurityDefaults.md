@@ -10,6 +10,7 @@ lab:
 ## Lab scenario
 
 You must configure the Azure Active Directory security default settings in your organization.
+    **This is a completely optional lab!!**  You can turn on / off Security Defaults, just to find out where the menu option is.  But the key points to remember are from the training.  Note that if you turn on Security Defaults, and do not disable it, later labs involving Conditional Access will not work.
 
 #### Estimated time: 5 minutes
 
