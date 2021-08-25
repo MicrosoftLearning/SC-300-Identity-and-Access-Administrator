@@ -11,7 +11,7 @@ lab:
 
 Your organization needs to be able to limit user access to its internal applications. You must deploy an Azure Active Directory conditional access policy.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 12 minutes
 
 ## Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
 
