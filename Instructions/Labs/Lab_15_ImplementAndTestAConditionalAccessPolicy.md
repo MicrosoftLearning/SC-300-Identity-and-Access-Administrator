@@ -24,7 +24,7 @@ Your organization needs to be able to limit user access to its internal applicat
     | Setting | Value |
     | :--- | :--- |
     | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-    | Password | **pass@word123 |
+    | Password | **pass@word123** |
     
 4. Click on the Yammer icon to see that it loads correctly.
 
