@@ -11,7 +11,7 @@ lab:
 
 To improve security in your organization, you've been directed to enable multi-factor authentication for Azure Active Directory.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 15 minutes
 
 **IMPORTANT** - An Azure AD Premium license is need for this exercise.
 
