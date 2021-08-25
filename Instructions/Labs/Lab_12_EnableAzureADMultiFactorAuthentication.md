@@ -62,7 +62,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
     - Under Include, mark **All cloud apps** and note the warning the pops up about possibly locking yourself out. 
     - Now under Include, change your choice to **Select apps** item.
     - In the newly opened dialog, choose **Office 365**.
-        - **Reminder** - in a previous lab we gave Delia Dennis and Office 365 license and logged into ensure it worked.
+        - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
     - Choose **Select**.
 
 6. Review the Conditions section.
@@ -85,21 +85,45 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
     MFA is now enabled for your selected user and application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
 
-### Task 3 - Configure Azure AD MFA for passwords
+### Task 3 - Test Delia's login
+
+1. Open a new InPrivate Browsing windows.
+2. Connect to https://www.office.com.
+3. Click the sign-in option.
+4. Enter **DeliaD@** `<<your domain address>>`.
+5. Enter the password = **pass@word123**.
+6. At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Click the **Try Again** option in this case.
+
+You can see that because of the Conditional Access rule we created for Delia, MFA is reguired to launch Office 365 home page.
+
+## Exercise 2 - Configure MFA to be required for login
+
+### Task 1 - Configure Azure AD Per-User MFA
 
 Finally, let's look at how to configure MFA for user accounts. This is another way to get to the multi-factor auth settings.
 
 1. Switch back to the Azure Active Directory dashboard in the Azure portal.
 
-1. Select **Users**.
+2. Select **Users**.
 
-1. At the top of the Users pane, select **Per-user MFA**.
+3. At the top of the Users pane, select **Per-user MFA**.
 
     ![Screenshot showing the MFA option](./media/lp2-mod1-users-mfa.png)
+
+4. A new browser tab/window will open with a multi-factor authentication user settings dialog.
 
     You can enable or disable MFA on a user basis by selecting a user and then using the quick steps on the right side.
 
     ![Screenshot showing the MFA options](./media/lp2-mod1-mfa-service-settings-and-users.png)
 
-1. Select **service settings**.  
-    This displays the same global MFA options we saw earlier. Let's explore these in a bit more detail.
+5. Select **Adele Vance** with a check-mark.
+6. Select the **Enable** option under quick steps.
+7. Read the notification popup if you get it, then select **enable multi-factor auth** button.
+8. Select **Close**.
+9. Notice that Adele now has **Enabled** as her MFA status.
+10. You can select **service settings** to see the MFA setting screen, seen earlier in the lab.
+11. Close the MFA setting tab.
+
+### Task 2 -- Try logging in as Adele
+
+1. If you want to see another example of MFA login process, you can try to log in a Adele.
