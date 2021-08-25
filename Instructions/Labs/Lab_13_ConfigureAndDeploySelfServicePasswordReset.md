@@ -12,31 +12,15 @@ The company has decided to empower the employees and enable self-service passwor
 
 #### Estimated time: 15 minutes
 
-## Add a new user
+## Exercise 1 - Create a group with SSPR enabled and add users to it
 
-1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global administrator account.
-
-1. Open the portal menu and then select **Azure Active Directory**.
-
-1. In the Azure AD organization you created, under **Manage**, select **Users** > **New User**.
-
-1. The User pane now appears. Enter the following values:
-
-- **User name**: Utu
-
-- **Name**: Utu Linna
-
-1. Select **Show Password** and then copy it somewhere to reference it later.
-
-1. Select **Create**.
-
-## Create a group
+## Task 1 - Create a group to assign SSPR to
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
 1. On the Azure Active Directory blade, under **Manage**, select **+ New Group**.
 
-1. Create a new group using the following information:
+2. Create a new group using the following information:
 
     | **Setting**| **Value**|
     | :--- | :--- |
@@ -44,9 +28,12 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
     | Group name| SSPRTesters|
     | Group description| Testers of SSPR rollout|
     | Membership type| Assigned|
-    | Members| Utu Linna|
+    | Members| Alex Wilber |
+    | |  Allan Deyoung |
+    | | Bianca Pisani |
+  
     
-1. Select **Create**.
+3. Select **Create**.
 
     ![Screen image displaying the New Group blade with group type, group name, and create highlighted](./media/lp2-mod2-create-sspr-security-group.png)
 
