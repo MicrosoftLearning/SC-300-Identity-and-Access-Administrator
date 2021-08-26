@@ -36,6 +36,5 @@ Based on your organizational requirements, you can customize the Azure AD smart 
 
 1. Save your changes.
 
-    >[!NOTE]
-    > When the smart lockout threshold is triggered, you will get the following message while the account is locked:
-    > Your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
+    **NOTE** - When the smart lockout threshold is triggered, you will get the following message while the account is locked:
+    - Your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
