@@ -61,7 +61,14 @@ To include resources in an access package, the resources must exist in a catalog
 
 1. On the menu, select + **Add resources**.
 
-1. In the Add resources to catalog blade, review the available options.
+1. In the Add resources to catalog blade, review the available options.  Add the following items:
+
+| Resource Type | Value |
+| :------------- | :---------- |
+|  **Groups and Teams** | Retail |
+|  **Applications** | Box |
+|  **Applications** | Salesforce |
+|  **SharePoint sites** | Brand SharePoint <<<pick from your list of available SharePoint sites |
 
 1. You may not have any resources in Groups and Teams, Applications, or SharePoint sites. Select any resource category and then select a resource from that category.
 
@@ -83,7 +90,7 @@ The user that created a catalog becomes the first catalog owner. To delegate man
 
 1. On the top menu, review the available roles and then select **+ Add catalog owner**.
 
-1. In the Select members pane, select your administrator account and then select **Select**.
+1. In the Select members pane, select your **Adele Vance** and then select **Select**.
 
 1. Review the newly added role in the Roles and administrators list.
 
@@ -107,4 +114,6 @@ You can delete a catalog, but only if it does not have any access packages.
 
 1. In the Marketing catalog’s Overview page, on the top menu, select Delete.
 
-1. In the Delete dialog box, review the information and then select **Yes**.
+1. In the Delete dialog box, review the information and then select **No**.
+
+    **Note** - we are keeping the catalog for use in the next lab.
