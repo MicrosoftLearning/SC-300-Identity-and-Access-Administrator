@@ -15,8 +15,7 @@ For applications your organization has developed or for those that are registere
 
 ## Grant admin consent in App registrations
 
-> [!WARNING]
-> Warning
+> **Warning**
 > Granting tenant-wide admin consent to an application will grant the app and the app's publisher access to your organization's data. Carefully review the permissions the application is requesting before granting consent.
 
 The Global Administrator role is required in order to provide admin consent for application permissions to the Microsoft Graph API.
@@ -35,8 +34,7 @@ The Global Administrator role is required in order to provide admin consent for 
 
 1. Review the dialogue box, and then select **Yes.**
 
-    > [!WARNING]
-    > Warning
+    > **Warning**
     > Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
 
 ## Grant admin consent in Enterprise apps
