@@ -41,7 +41,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
    **ToU File Provided** - browse to the github repo AllFiles/Labs/Lab26 to get a sample Terms-of-User PDF document for use in this lab.
 
-1. Select **Englise** for the language for your terms of use document.
+1. Select **English** for the language for your terms of use document.
 
    **Note** - The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
 
