@@ -17,29 +17,31 @@ You need to create a new custom role for app management. This new role should be
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) using a Global administrator account.
 
-1. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Azure Active Directory**.
 
-1. On the Azure Active Directory blade, under **Manage**, select **Roles and administrators**.
+3. On the Azure Active Directory blade, under **Manage**, select **Roles and administrators**.
 
-1. On the Roles and administrators blade, on the menu, select **New custom role**.
+4. On the Roles and administrators blade, on the menu, select **New custom role**.
 
     ![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
 
-1. In the New custom role blade, on the Basics tab, in the name box, enter **My custom app role**.
+5. In the New custom role blade, on the Basics tab, in the name box, enter **My custom app role**.
 
-1. Review the remaining options and then select **Next**.
+6. Review the remaining options and then select **Next**.
 
-1. On the Permissions tab, review the available permissions.
+7. On the Permissions tab, review the available permissions.
 
-1. In the **Search by permission name or description** box, enter **credentials**.
+8. In the **Search by permission name or description** box, enter **credentials**.
 
-1. In the results, select the **Manage** permissions and then select **Next**.
+9. In the results, select the **Manage** permissions and then select **Next**.
 
     ```
-       microsoft.directory/servicePrincipals/managePasswordSingSignOnCredentials     -   Manage password sign sign-on credentials or service principals.
-       microsoft.directory/servicePrincipals/synchronizationCredentials/manage       -   Manage application provisioning secrets and credentials.
+       microsoft.directory/servicePrincipals/managePasswordSingleSignOnCredentials  -   Manage password single sign-on credentials or service principals.
+       microsoft.directory/servicePrincipals/synchronizationCredentials/manage    -   Manage application provisioning secrets and credentials.
     ```
 
     ![Screen image displaying the New custom role Permissions tab with search, manage permissions, and Next highlighted](./media/lp3-mod1-custom-role-permissions.png)
 
-1. Review the changes and then select **Create**.
+    **Why Pick Those Two** - For application provisionsing these two items are the bare mimimum permissions needed to enable and enforce single sign-on for the application or service principal being created; and be able to assign the enterise application to a set of users or groups.  Other permissions could also be granted.  You can get a full list of available permissions at `https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`.
+
+10. Review the changes and then select **Create**.
