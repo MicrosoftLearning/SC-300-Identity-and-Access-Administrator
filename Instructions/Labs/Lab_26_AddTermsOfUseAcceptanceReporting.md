@@ -39,11 +39,11 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. Select the **Terms of use document box**, browse to your finalized terms of use PDF and select it.
 
-1. For this exercise you can choose any PDF you may have or, using Microsoft Word, create a simple terms of use doc and then print to PDF.
+   **ToU File Provided** - browse to the github repo AllFiles/Labs/Lab26 to get a sample Terms-of-User PDF document for use in this lab.
 
-1. Select the language for your terms of use document.
+1. Select **Englise** for the language for your terms of use document.
 
-1. The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
+   **Note** - The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
 
 1. To require end users to view the terms of use prior to accepting them, set **Require users to expand the terms of use** to **On**.
 
