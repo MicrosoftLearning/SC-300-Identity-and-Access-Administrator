@@ -35,6 +35,11 @@ You need to create a new custom role for app management. This new role should be
 
 1. In the results, select the **Manage** permissions and then select **Next**.
 
+    ```
+       microsoft.directory/servicePrincipals/managePasswordSingSignOnCredentials     -   Manage password sign sign-on credentials or service principals.
+       microsoft.directory/servicePrincipals/synchronizationCredentials/manage       -   Manage application provisioning secrets and credentials.
+    ```
+
     ![Screen image displaying the New custom role Permissions tab with search, manage permissions, and Next highlighted](./media/lp3-mod1-custom-role-permissions.png)
 
 1. Review the changes and then select **Create**.
