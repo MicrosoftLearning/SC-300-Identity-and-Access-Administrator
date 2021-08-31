@@ -29,24 +29,27 @@ Use these instructions if you do not already have a workspace available to Azure
 
 1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
 
-1. Search for and select **Azure Sentinel**.
+2. Search for and select **Azure Sentinel**.
 
-1. In the Azure Sentinel workspaces blade, on the menu, select **+ Create**.
+3. In the Azure Sentinel workspaces blade, on the menu, select **+ Create**.
 
-1. If you already have an Azure Sentinel workspace, you can select that and continue to the next task.
+4. If you already have an Azure Sentinel workspace, you can select that and continue to the next task.
 
-1. In the Add Azure Sentinel to a workspace blade, select **Create a new workspace**.
+5. In the Add Azure Sentinel to a workspace blade, select **Create a new workspace**.
 
-1. Use the following information to create a new log analytics workspace:
+6. Use the following information to create a new log analytics workspace:
 
     | Setting| Value|
     | :--- | :--- |
     | Subscription| Use your current subscription.|
     | Resource group| Use an existing resource group or create a new one.|
     | Name| **Lab-workspace-yourinitialsanddate**</br>The workspace must be a globally unique value.|
-    | Pricing tier| Pay-as-you-go|
+    | Pricing tier| Pay-as-you-go (Per GB 2018) |
 
-1. When complete, select your new workspace and then select **Add** to add the workspace to Azure Sentinel.
+7. Select **Review + Create**.
+8. When the **Validation passed** message appears, select **Create**.
+
+9. When complete, select your new workspace and then select **Add** to add the workspace to Azure Sentinel.
 
 ## Connect to Azure Active Directory
 
