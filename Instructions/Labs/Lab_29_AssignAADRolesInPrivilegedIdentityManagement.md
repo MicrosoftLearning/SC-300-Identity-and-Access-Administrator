@@ -101,11 +101,12 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
 For certain roles, the scope of the granted permissions can be restricted to a single admin unit, service principal, or application. This procedure is an example if assigning a role that has the scope of an administrative unit.
 
-1. Browse to the Privileged Identity Management blade, and in the left navigation menu, select Azure **AD roles.**
+1. Remember to close out the browser windows for MiriamG, then open the Azure Portal as your administrator account.
+2. Browse to the Privileged Identity Management blade, and in the left navigation menu, select Azure **Azure AD roles.**
+3. Select **Roles**.
+4. In the Roles blade, on the top menu, select **+ Add assignments.**
 
-1. In the Roles blade, on the top menu, select **+ Add assignments.**
-
-1. In the Add assignments blade, select the **Select role** menu and then select **User administrator.**
+5. In the Add assignments blade, select the **Select role** menu and then select **User administrator.**
 
 1. Select the **Scope type** menu and review the available options. For now, you will use the **Directory** scope type.
 
