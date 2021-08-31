@@ -39,7 +39,7 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
 1. Under **Select member(s),** select **No members selected**.
 
-1. In the Select a member pane, select your administrator account and then select **Select**.
+1. In the Select a member pane, select **Miriam Graham** and then select **Select**.
 
     ![Screen image displaying the select a member pane with a selected member highlighted](./media/lp4-mod3-pim-add-role-assignment.png)
 
@@ -48,7 +48,6 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 1. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
 
     - Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
-
     - Active assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 
 1. Review the remaining settings and then select **Assign**.
