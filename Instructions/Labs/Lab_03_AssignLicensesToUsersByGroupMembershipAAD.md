@@ -13,63 +13,76 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 #### Estimated time: 10 minutes
 
-## Create a new user in Azure Active Directory
+## Exercise 1 - Create a security group and add a user
 
-1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) and sign in as a Global Administrator.
+### Task 1 - Check to see if Delia Dennis has access to Office 365
 
-1. In the left navigation, under **Mange**, select **Users**.
-
-1. In the Users blade, on the menu, select **New user**.
-
-1. Create a user using the following information:
+1. Launch a browser window.
+2. Connect to [https://www.office.com](https://www.office.com).
+3. Clcick Sign in and connect as Delia Dennis.
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | User name| Chris|
-    | Name| Chris Green|
-    | First name| Chris|
-    | Last name| Green|
-    | Password| Pass@word1|
+    | Username | DeliaD@ <<you azure domain>>|
+    | Password| pass@word123|
 
-1. When complete, verify the account for Chris Green is shown in the **All users** list.
+4. You should connecit to the Office.com website, but see a message indicating you don't have a license.
 
-## Create a security group in Azure Active Directory
+    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no licnese is assigned.](./media/delia-no-office-license.png)
+    
+5. Close the browser window.
+
+### Task 2 -  Create a security group in Azure Active Directory
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
-1. In the left navigation, under **Mange**, select **Groups**.
-
-1. In the Groups blade, on the menu, select **New group**.
-
-1. Create a group using the following information:
+2. In the left navigation, under **Mange**, select **Groups**.
+3. In the Groups blade, on the menu, select **New group**.
+4. Create a group using the following information:
 
     | **Setting**| **Value**|
     | :--- | :--- |
     | Group type| Security|
-    | Group name| Marketing|
+    | Group name| sg-SC300-O365|
     | `Membership type| Assigned|
     | Owners| *Assign your own administrator account as the group owner*|
-    | Members| Chris Green|
+
+5. Click the **No members selected** text under Members.
+6. Select **Delia Dennis** from the list of users.
+7. Click the **Select** button.
 
     ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-group.png)
 
-1. When complete, verify the group named **Marketing** is shown in the **All groups** list.
+8. Click the **Create** button.
+9. When complete, verify the group named **sg-SC300-O365** is shown in the **All groups** list.
 
-## Assign a license to a group
+## Task 3 - Assign a license to a group
 
-1. In the **All groups** list, select **Marketing**.
+1. In the **All groups** list, select **sg-SC300-O365**.
+2. In the Marketing blade, under **Mange**, select **Licenses**.
+3. On the menu, select **+ Assignments**.
+4. In the update license assignments blade, under **Select licenses**, review the list of available licenses and then select the check box for **Office 365 E3**.
 
-1. In the Marketing blade, under **Mange**, select **Licenses**.
-
-1. On the menu, select **Assignments**.
-
-1. In the update license assignments blade, under **Select licenses**, review the list of available licenses and then select the check box for one of the licenses.
-
-1. Under **Review license options**, review the available options for the license you have selected.
-
-    >[!Tip]
-    >When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
+    **Tip** - When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
 
     ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/lp1-mod2-assign-license-group.png)
 
-1. Select **Save**.
+6. Select **Save**.
+
+### Taks 4 - Confirm the Office 365 license
+
+1. Launch a browser window.
+2. Connect to [https://www.office.com](https://www.office.com).
+3. Clcick Sign in and connect as Delia Dennis.
+
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | Username | DeliaD@ <<you azure domain>>|
+    | Password| pass@word123|
+
+4. You should connecit to the Office.com website, but see a message indicating you don't have a license.
+
+    ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a licnese is assigned.](./media/delia-office-license.png)
+    
+5. Close the browser window.
+    

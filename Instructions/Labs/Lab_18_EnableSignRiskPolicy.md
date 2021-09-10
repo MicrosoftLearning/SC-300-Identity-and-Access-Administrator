@@ -41,8 +41,7 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 1. In the Access pane, review the available options.
 
-    >Tip
-    >Microsoft's recommendation is to Allow access and Require password change.
+    **Tip** - Microsoft's recommendation is to Allow access and Require password change.
 
 1. Select the **Require password change** check box and then select **Done**.
 
@@ -60,6 +59,6 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 1. Under **Controls** > **Access**, select **Block access**.
 
-1. Select the **Require password change** check box and then select **Done**.
+1. Select the **Require multi-factor authentication** check box and then select **Done**.
 
 1. Under **Enforce Policy**, select **On** and then select **Save**.

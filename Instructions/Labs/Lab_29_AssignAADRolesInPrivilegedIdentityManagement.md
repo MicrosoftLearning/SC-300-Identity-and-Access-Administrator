@@ -39,7 +39,7 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
 1. Under **Select member(s),** select **No members selected**.
 
-1. In the Select a member pane, select your administrator account and then select **Select**.
+1. In the Select a member pane, select **Miriam Graham** and then select **Select**.
 
     ![Screen image displaying the select a member pane with a selected member highlighted](./media/lp4-mod3-pim-add-role-assignment.png)
 
@@ -48,16 +48,36 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 1. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
 
     - Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
-
     - Active assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 
 1. Review the remaining settings and then select **Assign**.
+
+## Log in with Miriam
+
+1. Open a new InPrivate browser window.
+2. Connect to the Azure Portal (https://portal.azure.com).
+3. If it opens with a user logged in, click on their name in the upper-right corner and select **Sign in as a different account**.
+4. Log in a Miriam.
+
+| Field | Value |
+| :--- | :--- |
+| Username | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
+| Password | pass@word123 |
+
+5. Close the **Welcome to Azure dialog**.
+6. From the **Search resource, services, and docs** bar look for Azure Active Directory, and open the blade.
+7. On the **Ovewview** page, look for the **My feed**.
+8. Select **Miriam Graham**'s name; this with open Miriam's profile page.
+9. Select **Assigned roles** then select **Eligible assignments**.
+10. Notice that the **Compliance Administrator** role is now available to Miriam.
 
 ## Activate your Azure AD roles
 
 When you need to assume an Azure AD role, you can request activation by opening **My roles** in Privileged Identity Management.
 
-1. On the Privileged Identity Management blade, in the left navigation menu, select **My roles.**
+1. From the **Search, resources, services, and docs** bar, look for Privileged.
+2. Open the **Azure AD Privileged Identity Management** blade.
+3. On the Privileged Identity Management blade, in the left navigation menu, select **My roles.**
 
 1. In the My roles blade, review the list of eligible assignments.
 
@@ -69,7 +89,11 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
     ![Screen image displaying a popup to activate the compliance administrator](./media/lp4-mod3-pim-activate-role.png)
 
-1. After you have completed the additional security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the justification for activating this role.
+    **Verification** - Based on our current lab environment configuration, you will be required configure MFA and log in successfully.
+
+1. After you have completed the additional security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the **This is my justification for activating this role**.
+
+    **Important Note** - the principal of least prvilege, you should only activate the account for the amount of time you need it.  If the work needed to be done, only takes 1.5 hours, then set the duration to two hours.  Similarily, if you know that you won't be able to do the work until after 3pm, choose a Custom activation time.
 
 1. Select **Activate**.
 
@@ -77,11 +101,12 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
 For certain roles, the scope of the granted permissions can be restricted to a single admin unit, service principal, or application. This procedure is an example if assigning a role that has the scope of an administrative unit.
 
-1. Browse to the Privileged Identity Management blade, and in the left navigation menu, select Azure **AD roles.**
+1. Remember to close out the browser windows for MiriamG, then open the Azure Portal as your administrator account.
+2. Browse to the Privileged Identity Management blade, and in the left navigation menu, select Azure **Azure AD roles.**
+3. Select **Roles**.
+4. In the Roles blade, on the top menu, select **+ Add assignments.**
 
-1. In the Roles blade, on the top menu, select **+ Add assignments.**
-
-1. In the Add assignments blade, select the **Select role** menu and then select **User administrator.**
+5. In the Add assignments blade, select the **Select role** menu and then select **User administrator.**
 
 1. Select the **Scope type** menu and review the available options. For now, you will use the **Directory** scope type.
 

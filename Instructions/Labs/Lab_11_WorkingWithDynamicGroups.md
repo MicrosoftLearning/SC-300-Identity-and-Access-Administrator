@@ -13,34 +13,57 @@ As your company grows, manually group management is too time consuming. Since st
 
 #### Estimated time: 10 minutes
 
-## Creating a dynamic group with all users as members
+## Exercise 1 - Creating a dynamic group with all users as members
+
+### Task 1 - Create the dynamic group
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) with an account that is assigned the Global administrator or User administrator role in the tenant.
 
-1. Select **Azure Active Directory**.
+2. Select **Azure Active Directory**.
 
-1. Under **Manage**, select **Groups**, and then select **New group**.
+3. Under **Manage**, select **Groups**, and then select **New group**.
 
-1. On the New Group page, under **Group type**, select **Security**.
+4. On the New Group page, under **Group type**, select **Security**.
 
-1. In the **Group name** box, enter **All company users dynamic group**.
+5. In the **Group name** box, enter **SC300-myDynamicGroup**.
 
-1. Select the **Membership type** menu and then select **Dynamic User**.
+6. Select the **Membership type** menu and then select **Dynamic User**.
 
-1. Under **Dynamic user members**, select **Add dynamic query**.
+7. Under **Dynamic user members**, select **Add dynamic query**.
 
-1. On the right above the **Rule syntax** box, select **Edit**.
+8. On the right above the **Rule syntax** box, select **Edit**.
 
-1. In the Edit rule syntax pane, enter the following expression in the **Rule syntax** box:
+9. In the Edit rule syntax pane, enter the following expression in the **Rule syntax** box:
 
     ```powershell
-    user.objectId -ne null
+    user.objectid -ne null
     ```
 
-1. Select **OK**. The rule appears in the Rule syntax box.
+    **Warning** - the `user.objectid` is case sensitive.
+
+10. Select **OK**. The rule appears in the Rule syntax box.
 
     ![Screen image displaying the dynamic group membership rules blade with rule syntax highlighted](./media/lp1-mod3-dynamic-group-membership-rule.png)
 
-1. Select **Save**. The new dynamic group will now include B2B guest users as well as member users.
+11. Select **Save**. The new dynamic group will now include B2B guest users as well as member users.
 
-1. On the New group page, select **Create** to create the group.
+12. On the New group page, select **Create** to create the group.
+
+### Task 2 - Verify the members have been added
+
+1. Click on the **Home** `> Contoso Marketing > Groups > SC300-myDynamicGroup`.
+2. Launch **Azure Active Directory**.
+3. In the **Manage** menu click on **Groups**.
+4. In the filter box type **SC300** and your newly created group will be listed.
+5. Click on **SC300-myDynamicGroup** to open the group.
+6. Notice that it shows that it contains 30+ **Direct members*.
+7. Click on **Members** in the **Manage** menu.
+8. Review the members.
+
+### Task 3 - Experiment with alternate rules
+
+1. Try making a group with only **Guest** users:
+   - (user.objectid -ne null) and (user.userType -eq "Guest")
+
+2. Try make a group with only **Members** of the Azure AD users.
+   - (user.objectid -ne null) and (user.userType -eq "Member")

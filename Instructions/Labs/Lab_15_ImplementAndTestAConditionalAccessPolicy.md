@@ -11,71 +11,83 @@ lab:
 
 Your organization needs to be able to limit user access to its internal applications. You must deploy an Azure Active Directory conditional access policy.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 12 minutes
 
-## Create a conditional access policy
+## Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
+
+### Task 1 -- Confirm DebraB has access to Yammer
+
+1. Launch a new InPrivate browser window.
+2. Connect to [https://www.office.com](https://www.office.com) 
+3. When prompted, log in as DebraB:
+
+    | Setting | Value |
+    | :--- | :--- |
+    | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
+    | Password | **pass@word123** |
+    
+4. Click on the Yammer icon to see that it loads correctly.
+
+## Task 2 -  Create a conditional access policy
 
 Azure Active Directory conditional access is an advanced feature of Azure AD that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
 
 1. Browse to [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
-1. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Azure Active Directory**.
 
-1. On the Azure Active Directory blade, under **Manage**, select **Security**.
+3. On the Azure Active Directory blade, under **Manage**, select **Security**.
 
-1. On the Security blade, in the left navigation, select **Conditional access**.
+4. On the Security blade, in the left navigation, select **Conditional access**.
 
-1. On the top menu, select **New policy**.
+5. On the top menu, select **+ New policy**.
 
     ![Screen image displaying the Conditional Access blade with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
-1. In the **Name** box, enter **Yammer conditional access**.
+6. In the **Name** box, enter **Block Yammer for DebraB**.
 
-1. This is the name being using for this exercise, you may choose another name if you wish.
+    **Note** - Using this naming to help you quickly recognize the policy and its function.
 
-1. Under **Assignments**, select **Users and groups**.
+7. Under **Assignments**, select **Users and groups**.
 
-1. On the Include tab, select the **Users and groups** check box.
+8. On the Include tab, select the **Users and groups** check box.
 
-1. In the Select pane, select your administrator account and then select **Select**.
+9. In the Select pane, select **DebraB** account and then select **Select**.
 
-1. Select **Cloud apps or actions**.
+10. Select **Cloud apps or actions**.
 
-1. Verify **Cloud apps** is selected and then select **Select apps**.
+11. Verify **Cloud apps** is selected and then select **Select apps**.
 
-1. In the Select pane, select **Office 365 Yammer** and then select **Select**.
+12. In the Select pane, search for **Yammer** and select **Office 365 Yammer** and then select **Select**.
 
-1. Select **Conditions** and then select **Conditions**.
+13. Under **Access controls**, select **Grant**.
 
-1. Under **Configure**, select **Yes** and then select **Any location**.
+14. In the Grant pane, select **Block access** and then select **Select**.
 
-1. Under **Access controls**, select **Grant**.
+    **Note** - This policy is being configure for the exercise only and is being used to quickly demonstrate a conditional access policy.
 
-1. In the Grant pane, select **Block access** and then select **Select**.
-
-    >Note
-    >This policy is being configure for the exercise only and is being used to quickly demonstrate a conditional access policy.
-
-1. Under **Enable policy**, select **On**, and then select **Create**.
+15. Under **Enable policy**, select **On**, and then select **Create**.
 
     ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-conditional-access-policy.png)
 
-## Test the conditional access policy
+## Task 3 - Test the conditional access policy
 
 You should test your conditional access policies to ensure they working as expected.
 
 1. Open a new browser tab and then browse to [https://www.yammer.com/office365](https://www.yammer.com/office365).
 
      Your credentials should be passed through.
-
-1. Verify you are prevented from successfully access Microsoft Yammer.
+ 
+2. Verify you are prevented from successfully access Microsoft Yammer.
 
     ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](./media/lp2-mod3-test-conditional-access-policy.png)
 
-1. If you are signed in, close the tab, wait 1-2 minutes, and then retry.
+3. If you are signed in, close the tab, wait 1 minute, and then retry.
+    
+     **Note** - If your are auto-logged into Yammer as DebraB, then you will need to manually log out.  You credentials / access were cached.  Once you log out and sign-in, your Yammer session should deny access.
 
-1. Close the tab and return to the Conditional Access blade.
+4. Close the tab and return to the Conditional Access blade.
 
-1. Select the **Yammer conditional access** policy.
+5. Select the **Yammer conditional access** policy.
 
-1. Under **Enable policy**, select **Off** and then select **Save**.
+6. Under **Enable policy**, select **Off** and then select **Save**.

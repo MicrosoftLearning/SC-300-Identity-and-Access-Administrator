@@ -15,7 +15,9 @@ You must create and enforce a ToU policy for your organization.
 
 #### Estimated time: 20 minutes
 
-## Add terms of use
+## Exercise 1 - Set up a Term of Use and test them
+
+### Task 1 - Add terms of use
 
 Once you have finalized your terms of use document, use the following procedure to add it.
 
@@ -39,11 +41,11 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. Select the **Terms of use document box**, browse to your finalized terms of use PDF and select it.
 
-1. For this exercise you can choose any PDF you may have or, using Microsoft Word, create a simple terms of use doc and then print to PDF.
+   **ToU File Provided** - browse to the github repo AllFiles/Labs/Lab26 to get a sample Terms-of-User PDF document for use in this lab.
 
-1. Select the language for your terms of use document.
+1. Select **English** for the language for your terms of use document.
 
-1. The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
+   **Note** - The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
 
 1. To require end users to view the terms of use prior to accepting them, set **Require users to expand the terms of use** to **On**.
 
@@ -104,9 +106,9 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. On the include tab, select **Users and groups** check box.
 
-1. In the Select pane, select an account you would like to use to test the terms of use policy.
+1. In the Select pane, select **Adele Vance** to use to test the terms of use policy.
 
-1. If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
+   **Warning** - If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
 
 1. Select **Cloud apps or actions.**
 
@@ -124,7 +126,26 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. If you chose to use your own account, you can refresh your browser. You will be prompted to sign in again. When you sign in, you will be required to accept the terms of use.
 
-## View report of who has accepted and declined
+### Task 2 - Log in as Adele
+
+1. Open a new InPrivate browser window.
+2. Connect to https://portal.azure.com.
+3. If if comes up saying you are already logged in, click on the logged in users name in the upper-right of the screen and choose **Sign in with a different account**.
+4. Log in as Adele:
+
+    | Setting | Value to enter |
+    | :--- | :--- |
+    | User Name | **AdeleV@** `<<your domain name>>.onmicrosoft.com` |
+    | Password | **Pass@w.rd1234** (assuming you have used the password choices in the previous labs) |
+
+5. Validate Adele's login with the MFA request.
+6. View the Terms of Use.
+7. You can choose to **Accept** or **Decline**.
+
+    **Note** - If you choose **decline** then during a future login as AdeleV you will again be required to view and accept the Terms of Use.
+    
+
+### Task 3 - View report of who has accepted and declined
 
 The Terms of use blade shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
 
