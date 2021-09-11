@@ -17,18 +17,19 @@ Occasionally, you may need to change the license assignment that are used by an 
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
-1. In the left navigation, under **Manage**, select **Groups**.
+2. In the left navigation, under **Manage**, select **Groups**.
 
-1. Select one of the available groups. For example, Marketing.
+3. Search for and select the **sg-SC300-O365** group you created earlier.
 
-1. In the left navigation, under **Manage**, select **Licenses**.
+4. In the left navigation, under **Manage**, select **Licenses**.
 
-1. Review the current assignments and then, on the menu, select **+ Assignments**.
+5. Review the current assignments and then, on the menu, select **+ Assignments**.
 
     ![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted](./media/lp1-mod2-change-group-license.png)
 
-1. On the Update license assignments blade, select **Windows 10 Enterprise E3** license, clear the selection of an existing license, add or remove license options, or any combination.
+6. On the Update license assignments blade, select **Windows 10 Enterprise E3** license.
+ **Note** From here, you could clear the selection of an existing license, add or remove license options, or any combination.
 
-1. When complete, select **Save**.
+7. When complete, select **Save**.
 
-1. On the group’s Licenses page, review the change.
+8. On the group’s Licenses page, review the change.
