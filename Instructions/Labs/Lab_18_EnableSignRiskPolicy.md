@@ -29,9 +29,7 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 1. Under **Assignments**, select **All users** and review the available options.
 
-1. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
-
-1. Additionally, you can choose to exclude users from the policy.
+**Note** You can select from **All users** or **Select individuals and groups** if limiting your rollout. Additionally, you can choose to exclude users from the policy.
 
 1. Under **User risk**, select **Low and above**.
 
