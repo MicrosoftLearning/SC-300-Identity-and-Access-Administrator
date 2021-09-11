@@ -24,11 +24,9 @@ You must enable external collaboration settings for your organization for approv
 
     **Note** - A one-time passcode is a very secure way to invite a user to join your organization.
 
-5. Click on `Home > Contoso Marketing >` ** External Identities to return to the previous screen.
-6. 
+5. Click on `Home > Contoso Marketing > External Identities` to return to the previous screen. 
 
-
-4. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
+6. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
 
     **NOTE**
 
@@ -38,7 +36,7 @@ You must enable external collaboration settings for your organization for approv
 
     ![Screen image displaying guest user access restriction options](./media/lp1-mod3-guest-user-access-restrictions.png)
 
-5. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**!
+7. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**!
 
     **NOTE**
     
@@ -50,7 +48,7 @@ You must enable external collaboration settings for your organization for approv
 
     ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-user-invite-settings.png)
 
-6. Under **Collaboration restrictions**, review the available options and accept the default settings.
+8. Under **Collaboration restrictions**, review the available options and accept the default settings.
 
     **IMPORTANT**
     
@@ -60,4 +58,4 @@ You must enable external collaboration settings for your organization for approv
     - This list works independently from OneDrive for Business and SharePoint Online allow/block lists. If you want to restrict individual file sharing in SharePoint Online, you need to set up an allow or deny list for OneDrive for Business and SharePoint Online.
     - The list does not apply to external users who have already redeemed the invitation. The list will be enforced after the list is set up. If a user invitation is in a pending state, and you set a policy that blocks their domain, the user's attempt to redeem the invitation will fail.
 
-7. When finished, save your changes.
+9. When finished, click **Save** to save your changes.
