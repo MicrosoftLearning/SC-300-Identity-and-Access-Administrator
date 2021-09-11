@@ -54,7 +54,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
     - Select **Select users and groups**  
     - Select the **Users and groups** check box to configure.
     - Click on **0 users and groups selected** item.
-    - Choose **Adele Vance** from the list of users then choose **Select** button.
+    - Choose **Delia Dennis** from the list of users then choose **Select** button.
 
 5. Select **Cloud apps or actions**.
 
@@ -91,7 +91,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 2. Connect to https://www.office.com.
 3. Click the sign-in option.
 4. Enter **DeliaD@** `<<your domain address>>`.
-5. Enter the password = **pass@word123**.
+5. Enter the password = password provided to you.
 6. At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Click the **Try Again** option in this case.
 
 You can see that because of the Conditional Access rule we created for Delia, MFA is reguired to launch Office 365 home page.
