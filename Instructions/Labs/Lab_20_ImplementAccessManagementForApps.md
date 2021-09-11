@@ -39,7 +39,7 @@ Your organization requires that only specific users or groups have access to ent
 
 1. On the GitHub Enterprise Cloud – Enterprise Account blade, on the Overview page, under **Getting Started**, select **1. Assign users and groups**.
 
-1. Alternatively, in the left navigation, under **Manage**, you can select **Users and groups**.
+**Note** Alternatively, in the left navigation, under **Manage**, you can select **Users and groups**.
 
 1. On the Users and groups page, on the menu, select **+Add user/group**.
 
