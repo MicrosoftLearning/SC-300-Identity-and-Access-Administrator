@@ -25,13 +25,13 @@ Registering your application establishes a trust relationship between your app a
 
     ![Screen image displaying the Register an application blade with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
 
-1. When complete, you will be directed to the **Demo app** blade.
+1. When complete, click **Register**. You will then be directed to the **Demo app** blade.
 
 ## Add a redirect URI
 
 A redirect URI is the location where the Microsoft identity platform redirects a user's client and sends security tokens after authentication. In a production web application, for example, the redirect URI is often a public endpoint where your app is running. During development, it's common to also add the endpoint where you run your app locally.
 
-1. Add and modify redirect URIs for your registered applications by configuring their platform settings.
+**Note** You can add and modify redirect URIs for your registered applications by configuring their platform settings.
 
 ## Configure platform settings
 
@@ -39,7 +39,7 @@ Settings for each application type, including redirect URIs, are configured in 
 
 To configure application settings based on the platform or device you're targeting:
 
-1. Select your application in **App registrations** in the Azure portal.
+1. Your browser should be on the **Demo app** page.
 
 1. Under **Manage**, select **Authentication**.
 
