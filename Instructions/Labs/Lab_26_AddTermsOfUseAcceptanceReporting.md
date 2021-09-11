@@ -219,7 +219,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
     - **Require users to expand the terms of use** – Setting this to **On** will force the end use to expand the terms of use document before accepting it.
 
-    - U**pdate an existing terms of use** document.
+    - **Update an existing terms of use** document.
 
     - You can add a language to an existing ToU If there are other settings you would like to change, such as require users to consent on every device, expire consents, duration before reacceptance, or Conditional Access policy, you must create a new terms of use.
 
