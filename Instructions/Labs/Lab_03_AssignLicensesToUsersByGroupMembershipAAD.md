@@ -19,14 +19,14 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 1. Launch a browser window.
 2. Connect to [https://www.office.com](https://www.office.com).
-3. Clcick Sign in and connect as Delia Dennis.
+3. Click Sign in and connect as Delia Dennis.
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | Username | DeliaD@ <<you azure domain>>|
-    | Password| pass@word123|
+    | Username | DeliaD@ <<your AzureAD domain>>|
+    | Password| enter the credentials provided to you|
 
-4. You should connecit to the Office.com website, but see a message indicating you don't have a license.
+4. You should connect to the Office.com website, but see a message indicating you don't have a license.
 
     ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no licnese is assigned.](./media/delia-no-office-license.png)
     
@@ -34,11 +34,13 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 ### Task 2 -  Create a security group in Azure Active Directory
 
-1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Launch a browser window.
 
-2. In the left navigation, under **Mange**, select **Groups**.
-3. In the Groups blade, on the menu, select **New group**.
-4. Create a group using the following information:
+2. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+
+3. In the left navigation, under **Mange**, select **Groups**.
+4. In the Groups blade, on the menu, select **New group**.
+5. Create a group using the following information:
 
     | **Setting**| **Value**|
     | :--- | :--- |
@@ -47,14 +49,14 @@ Your organization has decided to use security groups in Azure AD to manage licen
     | `Membership type| Assigned|
     | Owners| *Assign your own administrator account as the group owner*|
 
-5. Click the **No members selected** text under Members.
-6. Select **Delia Dennis** from the list of users.
-7. Click the **Select** button.
+6. Click the **No members selected** text under Members.
+7. Select **Delia Dennis** from the list of users.
+8. Click the **Select** button.
 
     ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-group.png)
 
-8. Click the **Create** button.
-9. When complete, verify the group named **sg-SC300-O365** is shown in the **All groups** list.
+9. Click the **Create** button.
+10. When complete, verify the group named **sg-SC300-O365** is shown in the **All groups** list.
 
 ## Task 3 - Assign a license to a group
 
@@ -71,18 +73,15 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 ### Taks 4 - Confirm the Office 365 license
 
-1. Launch a browser window.
+1. Launch an **InPrivate** browser window.
 2. Connect to [https://www.office.com](https://www.office.com).
-3. Clcick Sign in and connect as Delia Dennis.
+3. Click Sign in and connect as Delia Dennis.
 
-    | **Setting**| **Value**|
+   | **Setting**| **Value**|
     | :--- | :--- |
-    | Username | DeliaD@ <<you azure domain>>|
-    | Password| pass@word123|
+    | Username | DeliaD@ <<your AzureAD domain>>|
+    | Password| enter the credentials provided to you|
 
-4. You should connecit to the Office.com website, but see a message indicating you don't have a license.
-
-    ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a licnese is assigned.](./media/delia-office-license.png)
-    
-5. Close the browser window.
+4. You should connect to the Office.com website, and see that Delia has access to Office 365 apps.
+5. Close the InPrivate browser window.
     
