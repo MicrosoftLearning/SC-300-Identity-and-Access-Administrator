@@ -36,7 +36,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
-2. In the left navigation, under **Mange**, select **Groups**.
+2. In the left navigation, under **Manage**, select **Groups**.
 3. In the Groups blade, on the menu, select **New group**.
 4. Create a group using the following information:
 
@@ -59,7 +59,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
 ## Task 3 - Assign a license to a group
 
 1. In the **All groups** list, select **sg-SC300-O365**.
-2. In the Marketing blade, under **Mange**, select **Licenses**.
+2. In the Marketing blade, under **Manage**, select **Licenses**.
 3. On the menu, select **+ Assignments**.
 4. In the update license assignments blade, under **Select licenses**, review the list of available licenses and then select the check box for **Office 365 E3**.
 
