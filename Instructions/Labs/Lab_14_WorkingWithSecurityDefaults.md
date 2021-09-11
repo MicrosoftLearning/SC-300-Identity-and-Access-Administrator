@@ -5,7 +5,7 @@ lab:
     module: 'Module 03 -Plan, implement, and administer conditional access'
 ---
 
-# Lab 14 - Working with security defaults
+# Lab 14 - Working with security defaults - OPTIONAL
 
 ## Lab scenario
 
