@@ -67,7 +67,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 
     This is to ensure you well be prompted for user authentication.
 
-2. Sign in as **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` with the password = **pass@word123**.
+2. Sign in as **AlexW@** `<<organization-domain-name>>` with the password = password provided to you.
 
     **Note** - Replace the organization-domain-name with your domain name.
 
@@ -99,7 +99,7 @@ Now let's test whether the user can reset their password.
 
     This is to ensure you well be prompted for user authentication.
 
-2. Enter **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` and then select **Next**.
+2. Enter **AlexW@** `<<organization-domain-name>>` and then select **Next**.
 
     **Note** - Replace the organization-domain-name with your domain name.
 
@@ -115,16 +115,16 @@ Now let's test whether the user can reset their password.
 
 6. Enter your verification code and then select **Next**.
 
-7. In the choose a new password step, enter and then confirm your new password.  Recommend password = **Pass@w.rd1234**.
+7. In the choose a new password step, enter and then confirm your new password.  Recommended password = **Pass@w.rd1234**.
 
 8. When complete, select **Finish**.
 
 9. Sign in as **AlexW** with the new password you created.
 
-10. Enter your verification code and then verify you can complete the sign in process.
+10. When finished, close your browser.
 
-11. When finished, close your browser.
-
-### Task 5 - What happens if you try a user not in SSPRTesters group?
+### Task 5 - What happens if you try reset a password for a user that is not in SSPRTesters group?
 
 1. As a test, open a new InPrivate browser window and try to log into the Azure Portal as GradyA, and select **Forgot my password** option.
+
+2. Note the message provided.
