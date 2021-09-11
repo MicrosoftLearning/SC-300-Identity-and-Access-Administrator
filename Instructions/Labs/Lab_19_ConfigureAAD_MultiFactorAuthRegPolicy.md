@@ -31,9 +31,7 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 1. Under **Assignments**, select **All users** and review the available options.
 
-1. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
-
-1. Additionally, you can choose to exclude users from the policy.
+**Note** You can select from **All users** or **Select individuals and groups** if limiting your rollout. Additionally, you can choose to exclude users from the policy.
 
 1. Under **Controls**, notice that the **Require Azure AD MFA registration** is selected and cannot be changed.
 
