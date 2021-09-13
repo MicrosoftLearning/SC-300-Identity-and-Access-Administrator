@@ -47,9 +47,9 @@ Once you have finalized your terms of use document, use the following procedure 
 
    **Note** - The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
 
-1. To require end users to view the terms of use prior to accepting them, set **Require users to expand the terms of use** to **On**.
+1. To require end users to view the terms of use prior to accepting them, set **Require users to expand the terms of use** to **On**. Toggle to **On**.
 
-1. To require end users to accept your terms of use on every device they are accessing from, set **Require users to consent on every device** to **On**. Users may be required to install additional applications if this option is enabled.
+1. To require end users to accept your terms of use on every device they are accessing from, set **Require users to consent on every device** to **On**. Users may be required to install additional applications if this option is enabled. Leave this **Off**.
 
     >[!Warning]  
     >Consent on every device will require users to register each device with Azure AD prior to getting access.
@@ -219,7 +219,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
     - **Require users to expand the terms of use** – Setting this to **On** will force the end use to expand the terms of use document before accepting it.
 
-    - U**pdate an existing terms of use** document.
+    - **Update an existing terms of use** document.
 
     - You can add a language to an existing ToU If there are other settings you would like to change, such as require users to consent on every device, expire consents, duration before reacceptance, or Conditional Access policy, you must create a new terms of use.
 
