@@ -54,7 +54,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
     - Select **Select users and groups**  
     - Select the **Users and groups** check box to configure.
     - Click on **0 users and groups selected** item.
-    - Choose **Adele Vance** from the list of users then choose **Select** button.
+    - Choose **Dalia Dennis** from the list of users then choose **Select** button.
 
 5. Select **Cloud apps or actions**.
 
