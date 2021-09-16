@@ -53,7 +53,7 @@ Use these instructions if you do not already have a workspace available to Azure
 
 ## Connect to Azure Active Directory
 
-You can use Azure Sentinel's built-in connector to collect data from [https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) and stream it into Azure Sentinel. The connector allows you to stream [https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins) and [https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs).
+You can use Azure Sentinel's built-in connector to collect data from Azure Active Directory and stream it into Azure Sentinel. The connector allows you to stream Sign-in and Audit logs.
 
 1. In Azure Sentinel, in the navigation menu on the left, under **Configuration**, select **Data connectors**.
 
