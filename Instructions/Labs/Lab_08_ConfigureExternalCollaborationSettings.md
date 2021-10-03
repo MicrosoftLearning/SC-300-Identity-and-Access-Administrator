@@ -24,8 +24,8 @@ You must enable external collaboration settings for your organization for approv
 
     **Note** - A one-time passcode is a very secure way to invite a user to join your organization.
 
-5. Click on `Home > Contoso Marketing >` ** External Identities to return to the previous screen.
-6. 
+5. Click on `Home > Contoso Marketing >` **External Identities** to return to the previous screen.
+6. Click **External Collaboration Settings**' on the left
 
 
 4. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
