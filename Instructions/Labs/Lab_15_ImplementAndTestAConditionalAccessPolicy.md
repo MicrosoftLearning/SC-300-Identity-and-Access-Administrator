@@ -74,10 +74,14 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 You should test your conditional access policies to ensure they working as expected.
 
-1. Open a new browser tab and then browse to [https://www.yammer.com/office365](https://www.yammer.com/office365).
+1. Open a new 'Inprivate' browser tab and then browse to [https://www.yammer.com/office365](https://www.yammer.com/office365).
+     - When prompted, log in as DebraB:
 
-     Your credentials should be passed through.
- 
+    | Setting | Value |
+    | :--- | :--- |
+    | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
+    | Password | **pass@word123** |
+      
 2. Verify you are prevented from successfully access Microsoft Yammer.
 
     ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](./media/lp2-mod3-test-conditional-access-policy.png)
