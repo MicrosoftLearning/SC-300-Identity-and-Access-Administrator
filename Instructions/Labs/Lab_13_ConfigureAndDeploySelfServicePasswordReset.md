@@ -18,7 +18,7 @@ The company has decided to empower the employees and enable self-service passwor
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
-1. On the Azure Active Directory blade, under **Manage**, select **+ New Group**.
+1. On the Azure Active Directory blade, under **Manage**, select **Groups** and select **+ New Group** on the right side window.
 
 2. Create a new group using the following information:
 
