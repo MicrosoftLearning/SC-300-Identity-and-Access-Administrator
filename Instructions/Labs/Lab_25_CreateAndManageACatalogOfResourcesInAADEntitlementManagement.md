@@ -27,27 +27,27 @@ A catalog is a container of resources and access packages. You create a catalog 
     >    - Security Administrator
     >    - Conditional Access Administrator
 
-1. Open **Azure Active Directory** and the select **Identity Governance**.
+2. Open **Azure Active Directory** and the select **Identity Governance**.
 
-1. In the left menu, under **Entitlement management**, select **Catalogs**.
+3. In the left menu, under **Entitlement management**, select **Catalogs**.
 
-1. On the top menu, select **+New Catalog**.
+4. On the top menu, select **+New Catalog**.
 
     ![Screen image displaying the Identity governance catalog page with the New catalog menu highlighted ](./media/lp4-mod1-identity-governance-new-catalog.png)
 
-1. In the New catalog pane, in the **Name** box, enter **Marketing**.
+5. In the New catalog pane, in the **Name** box, enter **Marketing**.
 
-1. In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
+6. In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
 
-1. **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
+7. **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
 
-1. Under **Enabled, select No**.
+8. Under **Enabled, select No**.
 
-1. You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
+9. You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
 
     ![Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted](./media/lp4-mod1-new-catalog-marketing.png)
 
-1. Select Create.
+10. Select Create.
 
 ## Add resources to a catalog
 
@@ -55,13 +55,13 @@ To include resources in an access package, the resources must exist in a catalog
 
 1. On the Identity Governance blade, if necessary, select **Catalogs**.
 
-1. In the **Catalogs** list, select **Marketing**.
+2. In the **Catalogs** list, select **Marketing**.
 
-1. In the left navigation, under **Manage**, select **Resources**.
+3. In the left navigation, under **Manage**, select **Resources**.
 
-1. On the menu, select + **Add resources**.
+4. On the menu, select + **Add resources**.
 
-1. In the Add resources to catalog blade, review the available options.  Add the following items:
+5. In the Add resources to catalog blade, review the available options.  Add the following items:
 
 | Resource Type | Value |
 | :------------- | :---------- |
@@ -70,29 +70,29 @@ To include resources in an access package, the resources must exist in a catalog
 |  **Applications** | Salesforce |
 |  **SharePoint sites** | Brand SharePoint <<<pick from your list of available SharePoint sites |
 
-1. You may not have any resources in Groups and Teams, Applications, or SharePoint sites. Select any resource category and then select a resource from that category.
+6. You may not have any resources in Groups and Teams, Applications, or SharePoint sites. Select any resource category and then select a resource from that category.
 
-1. For this exercise, it is okay to choose any resource you may have available.
+7. For this exercise, it is okay to choose any resource you may have available.
 
     ![Add resources to a catalog](./media/catalog-add-resources.png)
 
-1. When finished, click **Add**. These resources can now be included in access packages within the catalog.
+8. When finished, click **Add**. These resources can now be included in access packages within the catalog.
 
 ## Add additional catalog owners
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
-1. In the Marketing catalog blade, in the left navigation menu, select Roles and administrators.
-
 1. If necessary, in the Azure portal, browse to **Azure Active Directory** > **Identity Governance > Catalogs** and then select **Marketing**.
+
+2. In the Marketing catalog blade, in the left navigation menu, select Roles and administrators.
 
     ![Screen image displaying the Roles and administrators page for the Marketing catalog](./media/lp4-mod1-catalog-roles-and-admins.png)
 
-1. On the top menu, review the available roles and then select **+ Add catalog owner**.
+3. On the top menu, review the available roles and then select **+ Add catalog owner**.
 
-1. In the Select members pane, select your **Adele Vance** and then select **Select**.
+4. In the Select members pane, select your **Adele Vance** and then select **Select**.
 
-1. Review the newly added role in the Roles and administrators list.
+5. Review the newly added role in the Roles and administrators list.
 
 ## Edit a catalog
 
@@ -100,13 +100,13 @@ You can edit the name and description for a catalog. Users see this information 
 
 1. In the Marketing blade, in the left navigation, select **Overview**.
 
-1. On the top menu, select **Edit**.
+2. On the top menu, select **Edit**.
 
-1. Review the setting and, under **Properties** > **Enabled**, select **Yes**.
+3. Review the setting and, under **Properties** > **Enabled**, select **Yes**.
 
     ![Screen image displaying the properties being enabled.](./media/lp4-mod1-edit-marketing-catalog.png)
 
-1. Select **Save**.
+4. Select **Save**.
 
 ## Delete a catalog
 
@@ -114,6 +114,6 @@ You can delete a catalog, but only if it does not have any access packages.
 
 1. In the Marketing catalog’s Overview page, on the top menu, select Delete.
 
-1. In the Delete dialog box, review the information and then select **No**.
+2. In the Delete dialog box, review the information and then select **No**.
 
     **Note** - we are keeping the catalog for use in the next lab.
