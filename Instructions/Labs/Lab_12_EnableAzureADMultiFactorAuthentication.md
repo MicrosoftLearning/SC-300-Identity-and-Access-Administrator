@@ -49,11 +49,11 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 3. Name your policy, for example **MFA_for_Delia**.
 
-4. Select **Users and group**.
+4. Select **Users and group** under Assignments.
 
-    - Select **Select users and groups**  
-    - Select the **Users and groups** check box to configure.
-    - Click on **0 users and groups selected** item.
+    - Select **0 users and groups selected**  
+    - On the right side screen, select **Select users and groups** check box to configure.
+    - Check **Users and groups** (available users will be populated to the right)
     - Choose **Delia Dennis** from the list of users then choose **Select** button.
 
 5. Select **Cloud apps or actions**.
