@@ -73,7 +73,7 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
 1. If you are not already logged in as a Global Administrator role, open the Azure Portal and log in.
 2. Navigae to Azure Active Directory blade.
-3. Click on **User** under the Manage section of the menu.
+3. Click on **Users** under the Manage section of the menu.
 4. Click on **Chris Green** account.
 5. Choose **Assigned roles** from the Manage menu.
 6. Click **+ Add assignments** and mark the `Application administrator` role.

@@ -51,7 +51,7 @@ As your company grows, manually group management is too time consuming. Since st
 
 ### Task 2 - Verify the members have been added
 
-1. Click on the **Home** `> Contoso Marketing > Groups > SC300-myDynamicGroup`.
+1. Click on the **Home** `Azure Active Directory`.
 2. Launch **Azure Active Directory**.
 3. In the **Manage** menu click on **Groups**.
 4. In the filter box type **SC300** and your newly created group will be listed.

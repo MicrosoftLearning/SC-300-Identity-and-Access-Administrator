@@ -80,7 +80,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
     | Username | DeliaD@ <<you azure domain>>|
     | Password| pass@word123|
 
-4. You should connecit to the Office.com website, but see a message indicating you don't have a license.
+4. You should connecit to the Office.com website, and see no messages regarding license. All of the Office applications are available on the left.
 
     ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a licnese is assigned.](./media/delia-office-license.png)
     
