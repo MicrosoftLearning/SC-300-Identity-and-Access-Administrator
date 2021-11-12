@@ -12,7 +12,18 @@ lab:
 You must configure the Azure Active Directory security default settings in your organization.
     **This is a completely optional lab!!**  You can turn on / off Security Defaults, just to find out where the menu option is.  But the key points to remember are from the training.  Note that if you turn on Security Defaults, and do not disable it, later labs involving Conditional Access will not work.
 
-#### Estimated time: 5 minutes
+#### Estimated time: 7 minutes
+
+### Exercise - Prework
+
+To be able to enable Security Defaults, you have to delete or disable any existing Conditional Access policies.  Reminder that in a previous lab we built a policy to enforce MFA for Delia.  You will need to disable that before you can perform the below steps.
+
+1. Log into the Azure portal.
+2. Open Azure Active Directory.
+3. From the Security section of the menu select **Security** then select **Conditional Access**.
+4. Click on any Conditional Access policy that is set to On or Report-Only and change them to Off.
+
+
 
 ## Enabling security defaults
 
