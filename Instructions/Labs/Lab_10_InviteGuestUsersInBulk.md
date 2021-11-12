@@ -15,7 +15,7 @@ A recent partnership has been established with another company. For now, employe
 
 ## Invite guest users in bulk
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) with an account that is a User administrator in the organization.
+1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as your Global Administrator.
 
 1. In the navigation pane, select **Azure Active Directory**.
 
