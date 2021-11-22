@@ -67,7 +67,7 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 5. Close the **Welcome to Azure dialog**.
 6. From the **Search resource, services, and docs** bar look for Azure Active Directory, and open the blade.
 7. On the **Overview** page, look for the **My feed**.
-8. Select **Miriam Graham**'s name; this with open Miriam's profile page.
+8. Select **View Profile** under Miriam Graham's name; this with open Miriam's profile page.
 9. Select **Assigned roles** then select **Eligible assignments**.
 10. Notice that the **Compliance Administrator** role is now available to Miriam.
 
