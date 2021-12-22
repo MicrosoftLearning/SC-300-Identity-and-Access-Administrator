@@ -19,7 +19,7 @@ Occasionally, you may need to change the license assignment that are used by an 
 
 1. In the left navigation, under **Manage**, select **Groups**.
 
-1. Select one of the available groups. For example, Marketing.
+1. Select one of the available groups. For example, Sales and Marketing.
 
 1. In the left navigation, under **Manage**, select **Licenses**.
 
