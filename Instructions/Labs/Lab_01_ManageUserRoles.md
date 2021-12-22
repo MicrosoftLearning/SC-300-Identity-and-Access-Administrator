@@ -61,7 +61,7 @@ Your company recently hired a new employee who will perform duties as an applica
 4. If you see a **Welcome to Microsoft Azure** tour dialog, click the **Maybe Later** button.
 
 5. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
-6. Notice that **+ New Application** is unavailable.
+6. Click on **+ New application**. Notice that **+ Create your own application** is unavailable.
 7. Try clicking on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
 8. Click on **ChrisG** name in the upper-right corner and sign out.
 
