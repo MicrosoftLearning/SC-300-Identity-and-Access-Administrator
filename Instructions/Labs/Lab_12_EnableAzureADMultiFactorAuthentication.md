@@ -43,7 +43,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Switch back to the Azure portal and select **Azure Active Directory** > **Security** > **Conditional access**.
 
-2. On the menu, select **New policy**.
+2. On the menu, click **New policy**. From the drop down select **Creat new policy**.
 
     ![creenshot highlighting the New Policy button in the Azure portal](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
 
