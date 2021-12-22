@@ -28,7 +28,7 @@ To create an app role by using the Azure portal's user interface:
 
 4. Select the **Demo App** app registration item created previously.
 
-5. Select **App roles | Preview**, and then select **Create app role**.
+5. Select **App roles**, and then select **Create app role**.
 
     ![Screen image displaying app roles with create app role highlighted](./media/lp3-mod3-app-roles-create-app-role.png)
 
