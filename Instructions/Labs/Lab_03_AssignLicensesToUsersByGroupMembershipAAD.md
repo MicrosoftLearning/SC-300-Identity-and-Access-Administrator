@@ -17,18 +17,18 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 ### Task 1 - Check to see if Delia Dennis has access to Office 365
 
-1. Launch a browser window.
+1. Launch a new InPrivate browser window.
 2. Connect to [https://www.office.com](https://www.office.com).
-3. Clcick Sign in and connect as Delia Dennis.
+3. Click Sign in and connect as Delia Dennis.
 
     | **Setting**| **Value**|
     | :--- | :--- |
     | Username | DeliaD@ <<you azure domain>>|
-    | Password| pass@word123|
+    | Password| Enter the password of the Global Admin from the Resources|
 
-4. You should connecit to the Office.com website, but see a message indicating you don't have a license.
+4. You should connect to the Office.com website, but see a message indicating you don't have a license.
 
-    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no licnese is assigned.](./media/delia-no-office-license.png)
+    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/delia-no-office-license.png)
     
 5. Close the browser window.
 
@@ -71,18 +71,18 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 ### Taks 4 - Confirm the Office 365 license
 
-1. Launch a browser window.
+1. Launch a new InPrivate browser window.
 2. Connect to [https://www.office.com](https://www.office.com).
-3. Clcick Sign in and connect as Delia Dennis.
+3. Click Sign in and connect as Delia Dennis.
 
     | **Setting**| **Value**|
     | :--- | :--- |
     | Username | DeliaD@ <<you azure domain>>|
-    | Password| pass@word123|
+    | Password| Enter the password of the Global Admin from the Resources|
 
 4. You should connect to the Office.com website, and see no messages regarding license. All of the Office applications are available on the left.
 
-    ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a licnese is assigned.](./media/delia-office-license.png)
+    ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a license is assigned.](./media/delia-office-license.png)
     
 5. Close the browser window.
     
