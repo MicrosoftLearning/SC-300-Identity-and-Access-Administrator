@@ -49,9 +49,9 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 3. Name your policy, for example **MFA_for_Delia**.
 
-4. Select **Users or Workload identities** under Assignments.
+4. Select **Users or workload identities** under Assignments.
 
-    - Select **0 users and workload identities selected**  
+    - Select **0 users or workload identities selected**  
     - On the right side screen, select **Select users and groups** check box to configure.
     - Check **Users and groups** (available users will be populated to the right)
     - Choose **Delia Dennis** from the list of users then choose **Select** button.
