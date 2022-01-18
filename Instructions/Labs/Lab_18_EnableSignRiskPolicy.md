@@ -57,7 +57,7 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 1. In the Sign-in risk pane, select **High** and then select **Done**.
 
-1. Under **Controls** > **Access**, select **Block access**.
+1. Under **Controls** > **Access**, select **Allow access**.
 
 1. Select the **Require multi-factor authentication** check box and then select **Done**.
 
