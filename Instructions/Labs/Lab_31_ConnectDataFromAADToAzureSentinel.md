@@ -5,6 +5,12 @@ lab:
     module: 'Module 04 - Monitor and maintain Azure Active Directory'
 ---
 
+**NOTE -- this lab is being retired from the SC-300 labs on February 4th.  We will be introducing a more interesting lab to cover Azure Sentinel in the near future.  If you are teaching the SC-300 class, you can choose to optionally include or exclude this lab.  If you do use it, the students will need an Azure Pass and subscription set up.**
+
+
+
+
+
 # Lab 31: Connect data from Azure Active Directory (Azure AD) to Azure Sentinel
 
 ## Lab scenario
