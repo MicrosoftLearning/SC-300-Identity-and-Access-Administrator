@@ -5,7 +5,7 @@ lab:
     module: 'Module 01 - Plan and design the integration of enterprise apps for SSO'
 ---
 
-# Lab 21 - Implement access management for apps
+# Lab 21 - Create a custom role to management app registration
 
 ## Lab scenario
 
@@ -21,7 +21,7 @@ You need to create a new custom role for app management. This new role should be
 
 3. On the Azure Active Directory blade, under **Manage**, select **Roles and administrators**.
 
-4. On the Roles and administrators blade, on the menu, select **New custom role**.
+4. On the Roles and administrators blade, on the menu, select **+New custom role**.
 
     ![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
 
