@@ -5,7 +5,7 @@ lab:
     module: 'Module 01 - Plan and design the integration of enterprise apps for SSO'
 ---
 
-# Lab 21 - Create a custom role to management app registration
+# Lab 21 - Create a custom role to manage app registration
 
 ## Lab scenario
 
