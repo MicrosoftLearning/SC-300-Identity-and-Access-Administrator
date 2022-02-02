@@ -62,7 +62,7 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 | Field | Value |
 | :--- | :--- |
 | Username | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
-| Password | pass@word123 |
+| Password |  Enter the tenant's admin password(Refer the Lab Resources tab to retrieve the tenant admin password) |
 
 5. Close the **Welcome to Azure dialog**.
 6. From the **Search resource, services, and docs** bar look for Azure Active Directory, and open the blade.
