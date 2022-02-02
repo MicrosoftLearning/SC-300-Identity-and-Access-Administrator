@@ -24,7 +24,7 @@ Your organization needs to be able to limit user access to its internal applicat
     | Setting | Value |
     | :--- | :--- |
     | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-    | Password | **pass@word123** |
+    | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
     
 4. Click on the Yammer icon to see that it loads correctly.
 
@@ -40,7 +40,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 4. On the Security blade, in the left navigation, select **Conditional access**.
 
-5. On the top menu, select **+ New policy**.
+5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
 
     ![Screen image displaying the Conditional Access blade with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
@@ -48,7 +48,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
     **Note** - Using this naming to help you quickly recognize the policy and its function.
 
-7. Under **Assignments**, select **Users and groups**.
+7. Under **Assignments**, select **Users or workload identities**.
 
 8. On the Include tab, select the **Users and groups** check box.
 
@@ -80,7 +80,7 @@ You should test your conditional access policies to ensure they working as expec
     | Setting | Value |
     | :--- | :--- |
     | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-    | Password | **pass@word123** |
+    | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
       
 2. Verify you are prevented from successfully access Microsoft Yammer.
 
