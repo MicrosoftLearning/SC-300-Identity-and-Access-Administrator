@@ -2,7 +2,7 @@
 lab:
     title: '09 - Add guest users to the directory'
     learning path: '01'
-    module: 'Module 03 - Implement and manage external identities'
+    module: 'Module 01 - Implement an identity management solution'
 ---
 
 # Lab 09: Add guest users to the directory
