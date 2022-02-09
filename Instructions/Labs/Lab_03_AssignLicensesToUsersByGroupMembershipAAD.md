@@ -13,9 +13,9 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 #### Estimated time: 10 minutes
 
-## Exercise 1 - Create a security group and add a user
+### Exercise 1 - Create a security group and add a user
 
-### Task 1 - Check to see if Delia Dennis has access to Office 365
+#### Task 1 - Check to see if Delia Dennis has access to Office 365
 
 1. Launch a new InPrivate browser window.
 2. Connect to [https://www.office.com](https://www.office.com).
@@ -32,7 +32,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
     
 5. Close the browser window.
 
-### Task 2 -  Create a security group in Azure Active Directory
+#### Task 2 -  Create a security group in Azure Active Directory
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
@@ -56,7 +56,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
 8. Click the **Create** button.
 9. When complete, verify the group named **sg-SC300-O365** is shown in the **All groups** list.
 
-## Task 3 - Assign a license to a group
+#### Task 3 - Assign a license to a group
 
 1. In the **All groups** list, select **sg-SC300-O365**.
 2. In the Marketing blade, under **Manage**, select **Licenses**.
@@ -69,7 +69,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
 6. Select **Save**.
 
-### Taks 4 - Confirm the Office 365 license
+#### Taks 4 - Confirm the Office 365 license
 
 1. Launch a new InPrivate browser window.
 2. Connect to [https://www.office.com](https://www.office.com).
