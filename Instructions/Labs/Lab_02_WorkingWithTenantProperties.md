@@ -34,7 +34,7 @@ You need to identify and update the different properties associated with your te
 
 5. Select **Save** to update the tenant properties.
 
-      ##### You will notice the name change immediately upon completions of the save.
+   **You will notice the name change immediately upon completion of the save.**
 
 #### Task 2 - Review the Country or region and other values associated with your tenant
 
@@ -94,13 +94,13 @@ You add your organization's privacy information in the **Properties** area of 
 2. In the upper-righthand corner of the UI, click on your username.
 3. Choose **View account** from the dropdown menu.
 
-     ##### A new browser tab will open automatically.
+     **A new browser tab will open automatically.**
 
 4. In the **Settings & Privacy** card pick **VIEW SETTINGS AND PRIVACY >**.
 5. Select **Privacy**.
 6. User **Organization's notice** click the **Veiw** item next to Contoso Marketing organizational privacy statement.
 
-     ##### A new browser tab will open with the Prvacy PDF file you linked to displayed.
+     **A new browser tab will open with the Prvacy PDF file you linked to displayed.**
 
 7. Review the sample Privacy statement.
 8. Close the browser tab with the PDF in it.
