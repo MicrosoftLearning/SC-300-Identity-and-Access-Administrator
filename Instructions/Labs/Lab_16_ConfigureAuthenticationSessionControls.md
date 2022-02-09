@@ -2,7 +2,7 @@
 lab:
     title: '16 - Configure authentication session controls'
     learning path: '02'
-    module: 'Module 03 -Plan, implement, and administer conditional access'
+    module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
 # Lab 16 - Configure authentication session controls
@@ -13,7 +13,9 @@ As part of your company's larger security configuration, you must test a conditi
 
 #### Estimated time: 10 minutes
 
-## Configure sign in frequency controls using a conditional access policy
+### Exercise 1 - Configure sign in frequency controls using a conditional access policy
+
+#### Task - User the Azure Portal to configure conditional access
 
 1. Browse to [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
