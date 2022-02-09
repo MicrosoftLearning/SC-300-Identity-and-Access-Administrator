@@ -2,7 +2,7 @@
 lab:
     title: '06 - Change group license assignments'
     learning path: '01'
-    module: 'Module 02 - Create, configure, and manage identities'
+    module: 'Module 01 - Implement an identity management solution'
 ---
 
 # Lab 06: Change group license assignments
