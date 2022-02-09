@@ -13,9 +13,9 @@ Some user accounts in your organization will not be provided all available produ
 
 #### Estimated time: 5 minutes
 
-## Exercise 1 - Add a Windows 10 license to a user account
+### Exercise 1 - Add a Windows 10 license to a user account
 
-### Task 1 - Find your unlicensed user in Azure Active Directory
+#### Task 1 - Find your unlicensed user in Azure Active Directory
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
@@ -31,7 +31,7 @@ Some user accounts in your organization will not be provided all available produ
 6. Click the **Licenses** menu item in the left-hand menu.
 7. Ensure that Rual has "No license assignments found."
 
-### Task 2 - Update user license assignments
+#### Task 2 - Update user license assignments
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
