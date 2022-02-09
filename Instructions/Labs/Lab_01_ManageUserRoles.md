@@ -1,8 +1,8 @@
 ---
 lab:
-    title: '01 - Manage user roles'
+    title: '01 - Manage User Roles'
     learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+    module: 'Module 01 - Implement an Identity Management Solution'
 ---
 
 # Lab 01: Manage user roles
@@ -13,9 +13,9 @@ Your company recently hired a new employee who will perform duties as an applica
 
 #### Estimated time: 10 minutes
 
-## Exercise 1 - Create a new user and test their application admin rights
+### Exercise 1 - Create a new user and test their application admin rights
 
-### Task 1 - Add a new user
+#### Task 1 - Add a new user
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator
 
@@ -40,7 +40,7 @@ Your company recently hired a new employee who will perform duties as an applica
 
 7. Select **Create**. The user is now created and registered to your organization.
 
-### Task 2 - Login and try to create an app
+#### Task 2 - Login and try to create an app
 
 1. Launch a new InPrivate browser window.
 2. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
@@ -65,9 +65,9 @@ Your company recently hired a new employee who will perform duties as an applica
 7. Try clicking on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
 8. Click on **ChrisG** name in the upper-right corner and sign out.
 
-## Exercise 2 - Assign the application admin role and create an app
+### Exercise 2 - Assign the application admin role and create an app
 
-### Task 1 - Assign a role to a user
+#### Task 1 - Assign a role to a user
 
 Using Azure Active Directory (Azure AD), you can designate limited administrators to manage identity tasks in less-privileged roles. Administrators can be assigned for such purposes as adding or changing users, assigning administrative roles, resetting user passwords, managing user licenses, and managing domain names.
 
@@ -85,7 +85,7 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
      ##### The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
 
-### Task 2 - Check application permissions
+#### Task 2 - Check application permissions
 
 1. Launch a new InPrivate browser window.
 2. Open the Azure Portal [https://portal.azure.com](https://portal.azure.com) as Chris Green.
@@ -104,9 +104,9 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
 7. Sign out of the Chris Green instance of the Azure Portal and close the browser.
 
-## Exercise 3 - Remove a role assignment
+### Exercise 3 - Remove a role assignment
 
-### Task 1 - Remove the application administrator from Chris Green
+#### Task 1 - Remove the application administrator from Chris Green
 
 This task will use an alternative method to remove the assigned role; it will use the **Roles and administrators** option in Azure AD.
 
