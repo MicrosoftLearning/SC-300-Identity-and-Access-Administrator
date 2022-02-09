@@ -2,7 +2,7 @@
 lab:
     title: '21 - Create a new custom role to grant access to manage app registrations'
     learning path: '03'
-    module: 'Module 01 - Plan and design the integration of enterprise apps for SSO'
+    module: 'Module 03 - Implement Access Management for Apps'
 ---
 
 # Lab 21 - Create a custom role to manage app registration
@@ -13,7 +13,9 @@ You need to create a new custom role for app management. This new role should be
 
 #### Estimated time: 5 minutes
 
-## Create a new custom role to grant access to manage app registrations
+### Exercise 1 - Manage app registration with a custom role
+
+#### Task - Create a new custom role to grant access to manage app registrations
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) using a Global administrator account.
 
