@@ -2,7 +2,7 @@
 lab:
     title: '07 - Change user account license assignments'
     learning path: '01'
-    module: 'Module 02 - Create, configure, and manage identities'
+    module: 'Module 01 - Implement an identity management solution'
 ---
 
 # Lab 07: Change user account license assignments
