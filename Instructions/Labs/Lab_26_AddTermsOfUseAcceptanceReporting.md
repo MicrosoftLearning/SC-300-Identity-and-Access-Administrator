@@ -2,7 +2,7 @@
 lab:
     title: '26 - Add terms of use and acceptance reporting'
     learning path: '04'
-    module: 'Module 01 - Plan and implement entitlement management'
+    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
 # Lab 26: Add terms of use and acceptance reporting 
@@ -15,9 +15,9 @@ You must create and enforce a ToU policy for your organization.
 
 #### Estimated time: 20 minutes
 
-## Exercise 1 - Set up a Term of Use and test them
+### Exercise 1 - Set up a Term of Use and test them
 
-### Task 1 - Add terms of use
+#### Task 1 - Add terms of use
 
 Once you have finalized your terms of use document, use the following procedure to add it.
 
@@ -51,9 +51,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 12. To require end users to accept your terms of use on every device they are accessing from, set **Require users to consent on every device** to **Off**. Users may be required to install additional applications if this option is enabled.
 
-    >[!Warning]  
-    >Consent on every device will require users to register each device with Azure AD prior to getting access.
-    >It is a good practice to require this setting to On; however for the purpose of a cleaner lab, we are using Off.
+    **Warning** - Consent on every device will require users to register each device with Azure AD prior to getting access. It is a good practice to require this setting to On; however for the purpose of a cleaner lab, we are using Off.
 
 13. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two additional schedule settings are displayed.
 
@@ -80,8 +78,7 @@ Once you have finalized your terms of use document, use the following procedure 
     | Alice | Jan 1 | Jan 31 | Mar 2 | Apr 1|
     | Bob | Jan 15 | Feb 14 | Mar 16| Apr 15
 
-    >[!Note]  
-    >It is possible to use the Expire consents and Duration before re-acceptance requires (days) settings together, but typically you use one or the other.
+    **Note** - It is possible to use the Expire consents and Duration before re-acceptance requires (days) settings together, but typically you use one or the other.
 
 16. Under **Conditional Access**, select **Custom policy**.
 
@@ -92,8 +89,7 @@ Once you have finalized your terms of use document, use the following procedure 
     | **Custom policy** | Select the users, groups, and apps that this terms of use will be applied to. |
     | **Create Conditional Access policy later** | This terms of use will appear in the grant control list when creating a Conditional Access policy. |
 
-    >[!IMPORTANT]  
-    >Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
+    **IMPORTANT** - Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
 
     Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
 
@@ -127,7 +123,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 28. If you chose to use your own account, you can refresh your browser. You will be prompted to sign in again. When you sign in, you will be required to accept the terms of use.
 
-### Task 2 - Log in as Adele
+#### Task 2 - Log in as Adele
 
 1. Open a new InPrivate browser window.
 2. Connect to https://portal.azure.com.
@@ -146,7 +142,7 @@ Once you have finalized your terms of use document, use the following procedure 
     **Note** - If you choose **decline** then during a future login as AdeleV you will again be required to view and accept the Terms of Use.
     
 
-### Task 3 - View report of who has accepted and declined
+#### Task 3 - View report of who has accepted and declined
 
 The Terms of use blade shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
 
@@ -168,7 +164,7 @@ The Terms of use blade shows a count of the users who have accepted and declined
 
     ![View History pane lists the history accepts, declines, and expirations for a user](./media/view-history-pane.png)
 
-## What terms of use looks like for users
+#### Task 4 - What terms of use looks like for users
 
 1. Once a terms of use is created and enforced, users who are in scope will see the terms of use page.
 
@@ -182,7 +178,7 @@ The Terms of use blade shows a count of the users who have accepted and declined
 
     ![Example terms of use that appears when a user signs in on a mobile device](./media/mobile-tou.png)
 
-### How users can review their terms of use
+#### Task 5 - How users can review their terms of use
 
 Users can review and see the terms of use that they have accepted by using the following procedure.
 
@@ -198,7 +194,7 @@ Users can review and see the terms of use that they have accepted by using the f
 
 4. Under **Organization’s notice**, you can review the terms of use you have accepted.
 
-## Edit terms of use details
+#### Task 6 - Edit terms of use details
 
 You can edit some details of terms of use, but you can't modify an existing document. The following procedure describes how to edit the details.
 
@@ -228,7 +224,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
 7. Once you are done, select **Save** to save your changes.
 
-## Update an existing terms of use document
+#### Task 7 - Update an existing terms of use document
 
 You may, on occasion, be required to update the terms of use document.
 
