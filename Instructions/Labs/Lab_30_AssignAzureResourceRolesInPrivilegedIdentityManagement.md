@@ -12,20 +12,18 @@ lab:
 Azure Active Directory (Azure AD) Privileged Identity Management (PIM) can manage the built-in Azure resource roles, as well as custom roles, including (but not limited to):
 
 - Owner
-
 - User Access Administrator
-
 - Contributor
-
 - Security Admin
-
 - Security Manager
 
 You need to make a user eligible for an Azure resource role.
 
 #### Estimated time: 10 minutes
 
-## Assign Azure resource roles
+### Exercise 1 - PIM with Azure resources
+
+#### Task 1 - Assign Azure resource roles
 
 1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
 
@@ -71,7 +69,7 @@ You need to make a user eligible for an Azure resource role.
 
 18. After the new role assignment is created, a status notification is displayed.
 
-## Update or remove an existing resource role assignment
+#### Task 2 - Update or remove an existing resource role assignment
 
 Follow these steps to update or remove an existing role assignment.
 
