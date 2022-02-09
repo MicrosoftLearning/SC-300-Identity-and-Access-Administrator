@@ -2,7 +2,7 @@
 lab:
     title: '15 - Implement and test a conditional access policy'
     learning path: '02'
-    module: 'Module 03 -Plan, implement, and administer conditional access'
+    module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
 # Lab 15 - Implement and test a conditional access policy
@@ -13,9 +13,9 @@ Your organization needs to be able to limit user access to its internal applicat
 
 #### Estimated time: 12 minutes
 
-## Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
+### Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
 
-### Task 1 -- Confirm DebraB has access to Yammer
+#### Task 1 -- Confirm DebraB has access to Yammer
 
 1. Launch a new InPrivate browser window.
 2. Connect to [https://www.office.com](https://www.office.com) 
@@ -28,7 +28,7 @@ Your organization needs to be able to limit user access to its internal applicat
     
 4. Click on the Yammer icon to see that it loads correctly.
 
-## Task 2 -  Create a conditional access policy
+#### Task 2 -  Create a conditional access policy
 
 Azure Active Directory conditional access is an advanced feature of Azure AD that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
 
@@ -70,7 +70,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
     ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-conditional-access-policy.png)
 
-## Task 3 - Test the conditional access policy
+#### Task 3 - Test the conditional access policy
 
 You should test your conditional access policies to ensure they working as expected.
 
