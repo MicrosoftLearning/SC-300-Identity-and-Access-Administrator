@@ -2,7 +2,7 @@
 lab:
     title: '25 - Create and manage a catalog of resources in Azure AD entitlement management'
     learning path: '04'
-    module: 'Module 01 - Plan and implement entitlement management'
+    module: 'Module 01 - Plan and Implement and Identity Governance Strategy'
 ---
 
 # Lab 25: Create and manage a catalog of resources in Azure AD entitlement management
@@ -13,19 +13,19 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 #### Estimated time: 15 minutes
 
-## Create a catalog
+### Exercise 1 - Building out resources in Entitlement Management
+
+#### Task 1 - Create a catalog
 
 1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
 
-    >Important
-    >To use and configure Azure AD terms of use, you must have:
-    >
-    >- Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
-    >- If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.
-    >- One of the following administrator accounts for the directory you want to configure:
-    >    - Global Administrator
-    >    - Security Administrator
-    >    - Conditional Access Administrator
+    **Important** - To use and configure Azure AD terms of use, you must have:
+    - Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
+    - If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.
+    - One of the following administrator accounts for the directory you want to configure:
+        - Global Administrator
+        - Security Administrator
+        - Conditional Access Administrator
 
 2. Open **Azure Active Directory** and the select **Identity Governance**.
 
@@ -49,7 +49,7 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 10. Select Create.
 
-## Add resources to a catalog
+#### Task 2 - Add resources to a catalog
 
 To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Azure AD security groups. The applications can be Azure AD enterprise applications, including both SaaS applications and your own applications federated to Azure AD. The sites can be SharePoint Online sites or SharePoint Online site collections.
 
@@ -63,12 +63,12 @@ To include resources in an access package, the resources must exist in a catalog
 
 5. In the Add resources to catalog blade, review the available options.  Add the following items:
 
-| Resource Type | Value |
-| :------------- | :---------- |
-|  **Groups and Teams** | Retail |
-|  **Applications** | Box |
-|  **Applications** | Salesforce |
-|  **SharePoint sites** | Brand SharePoint <<<pick from your list of available SharePoint sites |
+   | Resource Type | Value |
+   | :------------- | :---------- |
+   |  **Groups and Teams** | Retail |
+   |  **Applications** | Box |
+   |  **Applications** | Salesforce |
+   |  **SharePoint sites** | Brand SharePoint <<<pick from your list of available SharePoint sites |
 
 6. You may not have any resources in Groups and Teams, Applications, or SharePoint sites. Select any resource category and then select a resource from that category.
 
@@ -78,7 +78,7 @@ To include resources in an access package, the resources must exist in a catalog
 
 8. When finished, click **Add**. These resources can now be included in access packages within the catalog.
 
-## Add additional catalog owners
+#### Task 3 - Add additional catalog owners
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
@@ -94,7 +94,7 @@ The user that created a catalog becomes the first catalog owner. To delegate man
 
 5. Review the newly added role in the Roles and administrators list.
 
-## Edit a catalog
+#### Task 4 - Edit a catalog
 
 You can edit the name and description for a catalog. Users see this information in an access package's details.
 
@@ -108,7 +108,7 @@ You can edit the name and description for a catalog. Users see this information 
 
 4. Select **Save**.
 
-## Delete a catalog
+#### Task 5 - Delete a catalog
 
 You can delete a catalog, but only if it does not have any access packages.
 
