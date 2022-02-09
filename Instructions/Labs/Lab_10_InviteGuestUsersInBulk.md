@@ -2,7 +2,7 @@
 lab:
     title: 10 - Invite guest users in bulk'
     learning path: '01'
-    module: 'Module 03 - Implement and manage external identities'
+    module: 'Module 01 - Implement an identity management solution'
 ---
 
 # Lab 10: Invite guest users in bulk
