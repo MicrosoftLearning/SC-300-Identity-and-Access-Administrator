@@ -1,8 +1,8 @@
 ---
 lab:
-    title: '02 - Working with tenant properties'
+    title: '02 - Working with Tenant Properties'
     learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+    module: 'Module 01 - Implement an Identity Management Solution'
 ---
 
 # Lab 02: Working with tenant properties
@@ -13,9 +13,9 @@ You need to identify and update the different properties associated with your te
 
 #### Estimated time: 10 minutes
 
-## Exercise 1 - Changing the tenant display name
+### Exercise 1 - Changing the tenant display name
 
-### Task 1 - Set the tenant name and technical contact
+#### Task 1 - Set the tenant name and technical contact
 
 1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
@@ -36,7 +36,7 @@ You need to identify and update the different properties associated with your te
 
       ##### You will notice the name change immediately upon completions of the save.
 
-## Task 2 - Review the Country or region and other values associated with your tenant
+#### Task 2 - Review the Country or region and other values associated with your tenant
 
 1. In the **Azure Active Directory** blade, in the Manage section, select **Properties**.
 
@@ -48,7 +48,7 @@ You need to identify and update the different properties associated with your te
 
     ![Screen image showing the Azure Active Directory Properties blade with the Country or region and Location settings highlighted](./media/azure-active-directory-properties-country-location.png)
 
-## Task 3 - Finding the tenant ID
+#### Task 3 - Finding the tenant ID
 
 Azure subscriptions have a trust relationship with Azure Active Directory (Azure AD). Azure AD is trusted to authenticate users, services, and devices for the subscription. Each subscription has a tenant ID associated with it, and there are a few ways you can find the tenant ID for your subscription.
 
@@ -58,9 +58,9 @@ Azure subscriptions have a trust relationship with Azure Active Directory (Azure
 
     ![Screen image displaying the Tenant properties page with the Tenant ID box highlighted](./media/portal-tenant-id.png)
 
-## Exercise 2 - Setting your privacy information
+### Exercise 2 - Setting your privacy information
 
-### Task 1 - Adding your privacy info on Azure AD, including Global privacy contact and Privacy statement URL
+#### Task 1 - Adding your privacy info on Azure AD, including Global privacy contact and Privacy statement URL
 
 Microsoft strongly recommends you add both your global privacy contact and your organization's privacy statement, so your internal employees and external guests can review your policies. Because privacy statements are uniquely created and tailored for each business, we strongly recommend you contact a lawyer for assistance.
 
@@ -72,7 +72,7 @@ You add your organization's privacy information in the **Properties** area of 
 
     ![Screen image displaying tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted](./media/properties-area.png)
 
-1. Add your privacy info for your employees:
+2. Add your privacy info for your employees:
 
 - **Global privacy contact** - `AllanD@` **your Azure lab domain**
      - Allan Deyoung is a built-in users in your Azure lab tenant who works as an IT Admin, we will use him as the Privacy contact.
@@ -86,9 +86,9 @@ You add your organization's privacy information in the **Properties** area of 
 
     ![B2B Collaboration Review permissions box with message](./media/active-directory-no-privacy-statement-or-contact.png)
 
-1. Select **Save**.
+3. Select **Save**.
 
-### Task 2 - Check your Privacy Statement
+#### Task 2 - Check your Privacy Statement
 
 1. Return to the Azure Home screen - Dashboard.
 2. In the upper-righthand corner of the UI, click on your username.
