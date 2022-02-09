@@ -2,7 +2,7 @@
 lab:
     title: '04 - Restore a deleted user'
     learning path: '01'
-    module: 'Module 02 - Create, configure, and manage identities'
+    module: 'Module 01 - Implement an identity management solution'
 ---
 
 # Lab 04: Restore a deleted user
