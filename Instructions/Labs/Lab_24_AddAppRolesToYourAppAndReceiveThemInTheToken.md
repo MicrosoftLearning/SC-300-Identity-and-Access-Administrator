@@ -2,7 +2,7 @@
 lab:
     title: '24 - Add app roles to your app and receive them in the token'
     learning path: '03'
-    module: 'Module 03 - Implement app registrations'
+    module: 'Module 03 - Implement Access Management for Apps'
 ---
 
 # Lab 24: Add app roles to your app and receive them in the token
@@ -13,10 +13,11 @@ Role-based access control (RBAC) is a popular mechanism to enforce authorization
 
 #### Estimated time: 10 minutes
 
-## Declare app roles using the App roles UI
+### Exercise 1 - Adding roles to your apps
 
->[!IMPORTANT]
->The app roles portal UI feature is in public preview. This preview is provided without a service-level agreement and isn't recommended for production workloads. Certain features might be unsupported or have constrained capabilities.
+#### Task 1 - Declare app roles using the App roles UI
+
+   **IMPORTANT** - The app roles portal UI feature is in public preview. This preview is provided without a service-level agreement and isn't recommended for production workloads. Certain features might be unsupported or have constrained capabilities.
 
 To create an app role by using the Azure portal's user interface:
 
@@ -44,7 +45,7 @@ To create an app role by using the Azure portal's user interface:
 
 11. Verify the **Do you want to enable this app role** is selected and then select **Apply.**
 
-## Assign users and groups to roles
+#### Task 2 - Assign users and groups to roles
 
 Once you've added app roles in your application, you can assign users and groups to the roles. Assign users and groups to roles through the portal's UI or programmatically using [https://docs.microsoft.com/graph/api/user-post-approleassignments](https://docs.microsoft.com/graph/api/user-post-approleassignments). When the users assigned to the various app roles sign in to the application, their tokens will have their assigned roles in the roles claim.
 
