@@ -2,7 +2,7 @@
 lab:
     title: '14 - Enable Azure AD multi-factor authentication'
     learning path: '02'
-    module: 'Module 03 -Plan, implement, and administer conditional access'
+    module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
 # Lab 14 - Working with security defaults
@@ -23,29 +23,29 @@ To be able to enable Security Defaults, you have to delete or disable any existi
 3. From the Security section of the menu select **Security** then select **Conditional Access**.
 4. Click on any Conditional Access policy that is set to On or Report-Only and change them to Off.
 
+### Exercise 1 - Enabling Security Defaults
 
-
-## Enabling security defaults
+#### Task 1 - Turn on security defaults
 
 To enable security defaults in your directory:
 
 1. Browse to [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
-1. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
+2. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
 
     ![Azure portal menu with Azure Active Directory selected](./media/azure-portal-menu-aad.png)
 
-1. In the left navigation, in the Manage section, select **Properties**.
+3. In the left navigation, in the Manage section, select **Properties**.
 
-1. At the bottom of the Properties blade, select **Manage Security defaults**.
+4. At the bottom of the Properties blade, select **Manage Security defaults**.
 
-1. Set the **Enable security defaults** toggle to **Yes**.
+5. Set the **Enable security defaults** toggle to **Yes**.
 
-1. This may already be enabled.
+6. This may already be enabled.
 
-1. Select **Save**.
+7. Select **Save**.
 
-### Disabling security defaults
+#### Task 2 - Disabling security defaults
 
 Organizations that choose to implement Conditional Access policies that replace security defaults must disable security defaults.
 
@@ -53,12 +53,12 @@ To disable security defaults in your directory:
 
 1. Browse to the [https://portal.azure.com](https://portal.azure.com/) and sign in using a Global administrator account for the directory.
 
-1. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
+2. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
 
-1. At the bottom of the Properties blade, select **Manage Security defaults**.
+3. At the bottom of the Properties blade, select **Manage Security defaults**.
 
-1. Set the **Enable security defaults** toggle to **No**.
+4. Set the **Enable security defaults** toggle to **No**.
 
     ![Screen image of security defaults being disabled and selection of the required reason for disabling. In this case, the organization is using Conditional Access.](./media/security-defaults-disable-before-conditional-access.png)
 
-1. Select **Save**.
+5. Select **Save**.
