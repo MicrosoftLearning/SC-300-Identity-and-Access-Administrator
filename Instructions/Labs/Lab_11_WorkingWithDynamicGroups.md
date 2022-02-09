@@ -1,8 +1,8 @@
 ---
 lab:
     title: '11 - Working  with dynamic groups'
-    learning path: '01'
-    module: 'Module 03 - Implement and manage external identities'
+    learning path: '02'
+    module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
 # Lab 11: Working  with dynamic groups
@@ -13,9 +13,9 @@ As your company grows, manually group management is too time consuming. Since st
 
 #### Estimated time: 10 minutes
 
-## Exercise 1 - Creating a dynamic group with all users as members
+### Exercise 1 - Creating a dynamic group with all users as members
 
-### Task 1 - Create the dynamic group
+#### Task 1 - Create the dynamic group
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) with an account that is assigned the Global administrator or User administrator role in the tenant.
 
@@ -49,7 +49,7 @@ As your company grows, manually group management is too time consuming. Since st
 
 12. On the New group page, select **Create** to create the group.
 
-### Task 2 - Verify the members have been added
+#### Task 2 - Verify the members have been added
 
 1. Click on the **Home** `Azure Active Directory`.
 2. Launch **Azure Active Directory**.
@@ -60,7 +60,7 @@ As your company grows, manually group management is too time consuming. Since st
 7. Click on **Members** in the **Manage** menu.
 8. Review the members.
 
-### Task 3 - Experiment with alternate rules
+#### Task 3 - Experiment with alternate rules
 
 1. Try making a group with only **Guest** users:
    - (user.objectid -ne null) and (user.userType -eq "Guest")
