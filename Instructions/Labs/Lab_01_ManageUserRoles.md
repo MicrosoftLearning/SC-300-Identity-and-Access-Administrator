@@ -83,7 +83,7 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
 8. Click the **Refesh** button.
 
-##### The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
+   The newly assigned Application administrator role appears on the user’s **Assigned roles** page.
 
 #### Task 2 - Check application permissions
 
@@ -100,7 +100,7 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 5. Notice that **+ New Application** is available now.
 6. Click **+ New Application**
 
-##### This role now has the ability to add applications to the tenant.  We will experiment more with this feature in later labs.
+   This role now has the ability to add applications to the tenant.  We will experiment more with this feature in later labs.
 
 7. Sign out of the Chris Green instance of the Azure Portal and close the browser.
 
@@ -114,7 +114,7 @@ This task will use an alternative method to remove the assigned role; it will us
 2. In the search box type **Azure Active Directory** and launch Azure AD.
 3. In **Azure Active Directory**, select **Roles and administrators**, and then select the **Application administrator** role from the list.
 
-##### Note that you could select multiple roles at this point to perform some bulk activities.
+   Note that you could select multiple roles at this point to perform some bulk activities.
 
 4. On the **Application administrator | Assignments** page you should see Chris Green's name listed.
 5. Put a check in the box next to Chris Green.
