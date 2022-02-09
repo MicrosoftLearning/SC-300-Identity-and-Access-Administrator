@@ -13,15 +13,17 @@ Part of your duties as an Azure AD administrator is to create different types of
 
 #### Estimated time: 5 minutes
 
-## Create an Microsoft 365 group in Azure Active Directory
+### Exercise 1 - Create an Microsoft 365 group in Azure Active Directory
+
+#### Task 1 - Create the group
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
-1. In the left navigation, under **Manage**, select **Groups**.
+2. In the left navigation, under **Manage**, select **Groups**.
 
-1. In the Groups blade, on the menu, select **New group**.
+3. In the Groups blade, on the menu, select **New group**.
 
-1. Create a group using the following information:
+4. Create a group using the following information:
 
     | **Setting**| **Value**|
     | :--- | :--- |
@@ -33,4 +35,4 @@ Part of your duties as an Azure AD administrator is to create different types of
 
     ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-o365-group.png)
 
-1. When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
+5. When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
