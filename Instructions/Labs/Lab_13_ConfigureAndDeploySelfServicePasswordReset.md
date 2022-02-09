@@ -2,7 +2,7 @@
 lab:
     title: '13 - Enable Azure AD self service password reset'
     learning path: '02'
-    module: 'Module 02 - Manage user authentication'
+    module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
 # Lab 13 - Configure and deploy self-service password reset
@@ -12,9 +12,9 @@ The company has decided to empower the employees and enable self-service passwor
 
 #### Estimated time: 15 minutes
 
-## Exercise 1 - Create a group with SSPR enabled and add users to it
+### Exercise 1 - Create a group with SSPR enabled and add users to it
 
-### Task 1 - Create a group to assign SSPR to
+#### Task 1 - Create a group to assign SSPR to
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
@@ -37,7 +37,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
     ![Screen image displaying the New Group blade with group type, group name, and create highlighted](./media/lp2-mod2-create-sspr-security-group.png)
 
-### Task 2 - Enable SSPR for you test group
+#### Task 2 - Enable SSPR for you test group
 
 Enable SSPR for the group.
 
@@ -59,7 +59,7 @@ Enable SSPR for the group.
 
     **Note** it is important to have **phone** selected as one of the authentication methods for the rest of this lab, but you can have other options as well.
 
-### Taks 3 - Register for SSPR with Alex
+#### Taks 3 - Register for SSPR with Alex
 
 Now that the SSPR configuration is complete, register a mobile phone number for the user you created.
 
@@ -91,7 +91,7 @@ Now that the SSPR configuration is complete, register a mobile phone number for 
 
 11. Close the browser. You do not need to complete the sign in process.
 
-### Task 4 - Test SSPR
+#### Task 4 - Test SSPR
 
 Now let's test whether the user can reset their password.
 
@@ -125,6 +125,6 @@ Now let's test whether the user can reset their password.
 
 11. When finished, close your browser.
 
-### Task 5 - What happens if you try a user not in SSPRTesters group?
+#### Task 5 - What happens if you try a user not in SSPRTesters group?
 
 1. As a test, open a new InPrivate browser window and try to log into the Azure Portal as GradyA, and select **Forgot my password** option.
