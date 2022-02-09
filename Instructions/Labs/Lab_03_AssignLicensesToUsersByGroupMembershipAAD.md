@@ -44,7 +44,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
     | :--- | :--- |
     | Group type| Security|
     | Group name| sg-SC300-O365|
-    | `Membership type| Assigned|
+    | Membership type| Assigned|
     | Owners| *Assign your own administrator account as the group owner*|
 
 5. Click the **No members selected** text under Members.
