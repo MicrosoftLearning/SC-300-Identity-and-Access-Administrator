@@ -2,14 +2,16 @@
 lab:
     title: '22 - Register an application'
     learning path: '03'
-    module: 'Module 03 - Implement app registrations'
+    module: 'Module 03 - Implement Access Management for Apps'
 ---
 
 # Lab 22 - Register an application
 
 #### Estimated time: 20 minutes
 
-## Register an application
+### Exercise 1 - Register an application
+
+#### Task 1 - App registration
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
@@ -27,13 +29,13 @@ Registering your application establishes a trust relationship between your app a
 
 6. When complete, you will be directed to the **Demo app** blade.
 
-## Add a redirect URI
+#### Task 2 - Add a redirect URI
 
 A redirect URI is the location where the Microsoft identity platform redirects a user's client and sends security tokens after authentication. In a production web application, for example, the redirect URI is often a public endpoint where your app is running. During development, it's common to also add the endpoint where you run your app locally.
 
 1. Add and modify redirect URIs for your registered applications by configuring their platform settings.
 
-## Configure platform settings
+#### Task 3 - Configure platform settings
 
 Settings for each application type, including redirect URIs, are configured in **Platform configurations** in the Azure portal. Some platforms, like **Web** and **Single-page applications**, require you to manually specify a redirect URI. For other platforms, like mobile and desktop, you can select from redirect URIs generated for you when you configure their other settings.
 
@@ -59,7 +61,7 @@ To configure application settings based on the platform or device you're targeti
 
 5. Select **Configure** to complete the platform configuration.
 
-## Add credentials
+#### Task 4 - Add credentials
 
 Credentials are used by confidential client applications that access a web API. Examples of confidential clients include web apps, other web APIs, and service-type and daemon-type applications. Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime.
 
@@ -67,11 +69,11 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 ![Screenshot of Azure portal showing the Certificates and secrets pane in app registration](./media/portal-05-app-reg-04-credentials.png)
 
-## Add a certificate
+#### Task 5 - Add a certificate
 
 Sometimes called a *public key*, certificates are the recommended credential type, because as they provide a higher level of assurance than a client secret. When using a trusted public certificate, you can add the certificate using the Certificates & secrets feature. Your certificate must be one of the following file types: .cer, .pem, .crt.
 
-## Add a client secret
+#### Task 6 - Add a client secret
 
 The client secret, also known as an *application password*, is a string value your app can use in place of a certificate to identity itself. It's the easier of the two credential types to use. It's often used during development, but is considered less secure than a certificate. You should use certificates in your applications running in production.
 
@@ -87,7 +89,7 @@ The client secret, also known as an *application password*, is a string value y
 
 6. **Record the secret's value** for use in your client application code; The Certificate & Secrets page will display the new secret value. It's important you copy this value as it's only shown this one time; if you refresh your page and come back, it will only show as a masked value.
 
-## Register the web API
+#### Task 7 - Register the web API
 
 To provide scoped access to the resources in your web API, you must first register the API with the Microsoft identity platform.
 
@@ -99,7 +101,7 @@ To provide scoped access to the resources in your web API, you must first regist
 
 With your web API registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
 
-## Add a scope
+#### Task 8 - Add a scope
 
 The code in a client application requests permission to perform operations defined by your web API by passing an access token along with its requests to the protected resource (the web API). Your web API then performs the requested operation only if the access token it receives contains the scopes (also known as application permissions) required for the operation.
 
@@ -140,7 +142,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 
    4. If you followed this optional step, the client app is now a pre-authorized client app (PCA), and users won't be prompted for their consent when signing into it.
 
-## Add a scope requiring admin consent
+#### Task 9 - Add a scope requiring admin consent
 
 Next, add another example scope named Employees.Write.All that only admins can consent to. Scopes that require admin consent are typically used for providing access to higher-privileged operations, often by client applications that run as backend services or daemons that don't sign in a user interactively.
 
@@ -155,7 +157,7 @@ Next, add another example scope named Employees.Write.All that only admins can
     | User consent display name| None (leave empty)|
     | User consent description| None (leave empty)|
 
-## Verify the exposed scopes
+#### Task 10 - Verify the exposed scopes
 
 If you successfully added both example scopes described in the previous sections, they'll appear in the **Expose an API** pane of your web API's app registration, similar to this image:
 
@@ -167,7 +169,7 @@ For example, if your web API's application ID URI is `https://contoso.com/api`�
 
 `https://contoso.com/api/Employees.Read.All`
 
-## Using the exposed scopes
+#### Task 11 - Using the exposed scopes
 
 Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
 
