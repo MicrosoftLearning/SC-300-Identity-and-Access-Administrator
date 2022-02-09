@@ -2,7 +2,7 @@
 lab:
     title: '12 - Enable Azure AD multi-factor authentication'
     learning path: '02'
-    module: 'Module 01 - Plan and implement Azure multifactor authentication'
+    module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
 # Lab 12 - Enable Azure AD multi-factor authentication
@@ -15,9 +15,9 @@ To improve security in your organization, you've been directed to enable multi-f
 
 **IMPORTANT** - An Azure AD Premium license is required for this exercise.
 
-## Exercise 1 - Review and enable Multifactor Authentication in Azure
+### Exercise 1 - Review and enable Multifactor Authentication in Azure
 
-### Task 1 - Review Azure Multi-Factor Authentication options
+#### Task 1 - Review Azure Multi-Factor Authentication options
 
 1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
@@ -37,7 +37,7 @@ To improve security in your organization, you've been directed to enable multi-f
 
     You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Azure AD identity using a different password specific to that app.
 
-### Task 2 - Setup conditional access rules for MFA for Delia Dennis
+#### Task 2 - Setup conditional access rules for MFA for Delia Dennis
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
@@ -85,7 +85,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
     MFA is now enabled for your selected user and application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
 
-### Task 3 - Test Delia's login
+#### Task 3 - Test Delia's login
 
 1. Open a new InPrivate Browsing windows.
 2. Connect to https://www.office.com.
@@ -96,9 +96,9 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 You can see that because of the Conditional Access rule we created for Delia, MFA is reguired to launch Office 365 home page.
 
-## Exercise 2 - Configure MFA to be required for login
+### Exercise 2 - Configure MFA to be required for login
 
-### Task 1 - Configure Azure AD Per-User MFA
+#### Task 1 - Configure Azure AD Per-User MFA
 
 Finally, let's look at how to configure MFA for user accounts. This is another way to get to the multi-factor auth settings.
 
@@ -124,6 +124,6 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 10. You can select **service settings** to see the MFA setting screen, seen earlier in the lab.
 11. Close the MFA setting tab.
 
-### Task 2 -- Try logging in as Adele
+#### Task 2 -- Try logging in as Adele
 
 1. If you want to see another example of MFA login process, you can try to log in a Adele.
