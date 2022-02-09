@@ -2,7 +2,7 @@
 lab:
     title: '30 - Assign Azure resource roles in Privileged Identity Management'
     learning path: '04'
-    module: 'Module 03 - Plan and implement privileged access'
+    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
 # Lab 30: Assign Azure resource roles in Privileged Identity Management
