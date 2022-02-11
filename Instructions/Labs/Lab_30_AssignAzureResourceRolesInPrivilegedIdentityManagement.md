@@ -1,11 +1,14 @@
 ---
 lab:
-    title: '30 - Assign Azure resource roles in Privileged Identity Management'
+    title: 'OPTIONAL 30 - Assign Azure resource roles in Privileged Identity Management'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 30: Assign Azure resource roles in Privileged Identity Management
+# Lab 30 - OPTIONAL: Assign Azure resource roles in Privileged Identity Management
+
+## This lab requires an Azure Pass or subscription to perform, which is currently not provided with the course.  Apologies for any incovenience.  We are in the process of updating the labs and will have this lab reconfigured in the next few weeks.  Thank you for your patience and understanding.
+
 
 ## Lab scenario
 
