@@ -21,7 +21,7 @@ Occasionally, you may need to change the license assignment that are used by an 
 
 2. In the left navigation, under **Manage**, select **Groups**.
 
-3. Select the **Finance Team** group.
+3. Select the **Sales and Marketing** group.
 
 4. In the left navigation, under **Manage**, select **Licenses**.
 
