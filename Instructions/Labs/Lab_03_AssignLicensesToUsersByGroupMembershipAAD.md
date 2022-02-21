@@ -23,7 +23,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | Username | DeliaD@ <<you azure domain>>|
+    | Username | DeliaD@`your domain name.com`|
     | Password| Enter the password of the Global Admin from the Resources|
 
 4. You should connect to the Office.com website, but see a message indicating you don't have a license.
@@ -77,7 +77,7 @@ Your organization has decided to use security groups in Azure AD to manage licen
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | Username | DeliaD@ <<you azure domain>>|
+    | Username | DeliaD@`your domain name.com`|
     | Password| Enter the password of the Global Admin from the Resources|
 
 4. You should connect to the Office.com website, and see no messages regarding license. All of the Office applications are available on the left.
