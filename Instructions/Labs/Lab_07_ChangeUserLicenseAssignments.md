@@ -29,7 +29,7 @@ Some user accounts in your organization will not be provided all available produ
     **Warning** - To assign a license to a user, the user must assigned a usage location.
 
 6. Click the **Licenses** menu item in the left-hand menu.
-7. Ensure that Rual has "No license assignments found."
+7. Ensure that Raul has "No license assignments found."
 
 #### Task 2 - Update user license assignments
 
