@@ -44,7 +44,7 @@ You need to make a user eligible for an Azure resource role.
 
 7. When onboarding completes, close the Azure resources – Discovery blade.
 
-8. In the Azure resources blade, select the resource you just added.
+8. In the Azure resources blade, select the subscription.
 
     ![Screen image displaying the recently added Azure resource](./media/lp4-mod3-pim-az-resource-overview.png)
 
