@@ -184,7 +184,7 @@ Users can review and see the terms of use that they have accepted by using the f
 
 1. Browse to [https://myapps.microsoft.com](https://myapps.microsoft.com/) and then sign in using your user account.
 
-2. On the Overview page, select VIEW SETTINGS AND PRIVACY.
+2. Select the user profile photo and then select **View account**. On the Overview page, select VIEW SETTINGS AND PRIVACY.
 
     ![Screen image of a popup which says "View settings and privacy"](./media/lp4-mod1-myaccount-setting-and-privacy.png)
 
