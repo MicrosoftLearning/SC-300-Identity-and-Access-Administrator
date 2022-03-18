@@ -98,7 +98,7 @@ You add your organization's privacy information in the **Properties** area of 
 
 4. In the **Settings & Privacy** card pick **VIEW SETTINGS AND PRIVACY >**.
 5. Select **Privacy**.
-6. User **Organization's notice** click the **Veiw** item next to Contoso Marketing organizational privacy statement.
+6. Under **Organization's notice** select the **View** item next to Contoso Marketing organizational privacy statement.
 
      **A new browser tab will open with the Prvacy PDF file you linked to displayed.**
 
