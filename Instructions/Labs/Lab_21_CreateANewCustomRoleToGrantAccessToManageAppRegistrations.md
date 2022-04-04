@@ -44,6 +44,6 @@ You need to create a new custom role for app management. This new role should be
 
     ![Screen image displaying the New custom role Permissions tab with search, manage permissions, and Next highlighted](./media/lp3-mod1-custom-role-permissions.png)
 
-    **Why pick those two** - For application provisionsing these two items are the bare mimimum permissions needed to enable and enforce single sign-on for the application or service principal being created; and be able to assign the enterise application to a set of users or groups.  Other permissions could also be granted.  You can get a full list of available permissions at `https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`.
+    **Why pick those two** - For application provisionsing these two items are the bare minimum permissions needed to enable and enforce single sign-on for the application or service principal being created; and be able to assign the enterise application to a set of users or groups.  Other permissions could also be granted.  You can get a full list of available permissions at `https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`.
 
 10. Review the changes and then select **Create**.
