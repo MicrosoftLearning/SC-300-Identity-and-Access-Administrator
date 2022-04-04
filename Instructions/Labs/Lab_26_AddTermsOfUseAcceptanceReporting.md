@@ -156,7 +156,7 @@ The Terms of use blade shows a count of the users who have accepted and declined
 
     ![Terms of use consents pane listing the users that have accepted](./media/accepted-tou.png)
 
-4. To view the history for an individual user, select the ellipsis to the right of the user name and then **View History**.
+4. On the **Terms of Use Consents** page select **Download** to download a consents report.
 
 5. On the **Identity Governance | Terms of Use** page, highlight **Testing terms of use** and select **View selected audit logs** to view the audit logs activity.
 
