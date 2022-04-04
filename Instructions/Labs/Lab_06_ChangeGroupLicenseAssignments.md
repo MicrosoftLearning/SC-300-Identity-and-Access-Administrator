@@ -29,7 +29,7 @@ Occasionally, you may need to change the license assignment that are used by an 
 
     ![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted](./media/lp1-mod2-change-group-license.png)
 
-6. On the Update license assignments blade, select **Windows 10 Enterprise E3** license, clear the selection of an existing license, add or remove license options, or any combination.
+6. On the Update license assignments blade, select **Windows 10/11 Enterprise E3** license, clear the selection of an existing license, add or remove license options, or any combination.
 
 7. When complete, select **Save**.
 
