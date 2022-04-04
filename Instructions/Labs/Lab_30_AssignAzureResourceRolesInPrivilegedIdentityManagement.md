@@ -80,7 +80,7 @@ Follow these steps to update or remove an existing role assignment.
 
 2. Select **Azure resources**.
 
-3. Select the resource you want to manage to open its overview page.
+3. Select the subscription you want to manage to open its overview page.
 
 4. Under **Manage**, select **Assignments**.
 
