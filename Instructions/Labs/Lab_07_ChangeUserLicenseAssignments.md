@@ -43,7 +43,7 @@ Some user accounts in your organization will not be provided all available produ
 
 5. Select the **+ Assignments** button. 
 
-6. On the Update license assignments blade, select the check box for a **Windows 10 Enterprise E3** license.
+6. On the Update license assignments blade, select the check box for a **Windows 10/11 Enterprise E3** license.
 
     ![Screen image displaying the Update license assignments page and license options highlighted](./media/lp1-mod2-assign-user-license-options.png)
 
