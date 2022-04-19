@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '19 - Configure an Azure AD multi-factor authentication registration policy'
+    title: '15 - Configure an Azure AD multi-factor authentication registration policy'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 19 - Configure an Azure AD multi-factor authentication registration policy
+# Lab 15 - Configure an Azure AD multi-factor authentication registration policy
 
 ## Lab scenario
 

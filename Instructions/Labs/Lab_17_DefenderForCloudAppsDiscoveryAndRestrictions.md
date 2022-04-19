@@ -1,11 +1,15 @@
 ---
 lab:
-    title: '22 - Register an application'
+    title: '17 - Defender for Cloud Apps application discovery and enforcing restrictions'
     learning path: '03'
     module: 'Module 03 - Implement Access Management for Apps'
 ---
 
-# Lab 22 - Register an application
+# Lab 17 - Defender for Cloud Apps application discovery and enforcing restrictions
+
+## **TODO** Lab scenario
+
+Azure AD multi-factor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for Azure AD Multi-Factor Authentication. You must configure your Azure AD organization's MFA registration policy to be assigned to all users.
 
 #### Estimated time: 20 minutes
 
@@ -176,3 +180,46 @@ Next, you will configure a client app's registration with access to your web API
 Once a client app registration is granted permission to access your web API, the client can be issued an OAuth 2.0 access token by the Microsoft identity platform. When the client calls the web API, it presents an access token whose scope (scp) claim is set to the permissions you've specified in the client's app registration.
 
 You can expose additional scopes later as necessary. Consider that your web API can expose multiple scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
+
+# Lab 21 - Create a custom role to manage app registration
+
+## Lab scenario
+
+You need to create a new custom role for app management. This new role should be limited to only the specific permissions required to perform credential management.
+
+#### Estimated time: 5 minutes
+
+### Exercise 1 - Manage app registration with a custom role
+
+#### Task - Create a new custom role to grant access to manage app registrations
+
+1. Sign in to the [https://portal.azure.com](https://portal.azure.com) using a Global administrator account.
+
+2. Open the portal menu and then select **Azure Active Directory**.
+
+3. On the Azure Active Directory blade, under **Manage**, select **Roles and administrators**.
+
+4. On the Roles and administrators blade, on the menu, select **+New custom role**.
+
+    ![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
+
+5. In the New custom role blade, on the Basics tab, in the name box, enter **My custom app role**.
+
+6. Review the remaining options and then select **Next**.
+
+7. On the Permissions tab, review the available permissions.
+
+8. In the **Search by permission name or description** box, enter **credentials**.
+
+9. In the results, select the **Manage** permissions and then select **Next**.
+
+    ```
+       microsoft.directory/servicePrincipals/managePasswordSingleSignOnCredentials  -   Manage password single sign-on credentials or service principals.
+       microsoft.directory/servicePrincipals/synchronizationCredentials/manage    -   Manage application provisioning secrets and credentials.
+    ```
+
+    ![Screen image displaying the New custom role Permissions tab with search, manage permissions, and Next highlighted](./media/lp3-mod1-custom-role-permissions.png)
+
+    **Why pick those two** - For application provisionsing these two items are the bare minimum permissions needed to enable and enforce single sign-on for the application or service principal being created; and be able to assign the enterise application to a set of users or groups.  Other permissions could also be granted.  You can get a full list of available permissions at `https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`.
+
+10. Review the changes and then select **Create**.

@@ -86,3 +86,127 @@ Your organization has decided to use security groups in Azure AD to manage licen
     
 5. Close the browser window.
     
+# Lab 05: Adding groups to Azure AD
+
+## Lab scenario
+
+Part of your duties as an Azure AD administrator is to create different types of groups. You need to create a new Microsoft 365 group for your organization's sales department.
+
+#### Estimated time: 5 minutes
+
+### Exercise 1 - Create an Microsoft 365 group in Azure Active Directory
+
+#### Task 1 - Create the group
+
+1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+
+2. In the left navigation, under **Manage**, select **Groups**.
+
+3. In the Groups blade, on the menu, select **New group**.
+
+4. Create a group using the following information:
+
+    | **Setting**| **Value**|
+    | :--- | :--- |
+    | Group type| Microsoft 365|
+    | Group name| Northwest Sales|
+    | Membership type| Assigned|
+    | Owners| *Assign your own administrator account as the group owner*|
+    | Members| **Alex Wilber** and **Bianca Pisani**|
+
+    ![Screen image displaying the New Group blade with Group type, Group name, Owners, and Members highlighted](./media/lp1-mod2-create-o365-group.png)
+
+5. When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
+
+# Lab 06: Change group license assignments
+
+## Lab scenario
+
+Occasionally, you may need to change the license assignment that are used by an Azure AD security group. You must ensure you are familiar with the procedure for changing a group's license assignment.
+
+#### Estimated time: 5 minutes
+
+### Exercise 1 - Change group license assignments
+
+#### Task - Use Azure AD portal to make changes
+
+1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+
+2. In the left navigation, under **Manage**, select **Groups**.
+
+3. Select the **sg-Finance** group.
+
+4. In the left navigation, under **Manage**, select **Licenses**.
+
+5. Review the current assignments and then, on the menu, select **+ Assignments**.
+
+    ![Screen image displaying group license option selected with the current licenses and Assignments menu option highlighted](./media/lp1-mod2-change-group-license.png)
+
+6. On the Update license assignments blade, select **Windows 10/11 Enterprise E3** license, clear the selection of an existing license, add or remove license options, or any combination.
+
+7. When complete, select **Save**.
+
+8. On the group’s Licenses page, review the change.
+
+# Lab 11: Working  with dynamic groups
+
+## Lab scenario
+
+As your company grows, manually group management is too time consuming. Since standardizing the directory, you can now take advantage of dynamic groups. You must create a new dynamic group to ensure you're ready for dynamic group creation in production.
+
+#### Estimated time: 10 minutes
+
+### Exercise 1 - Creating a dynamic group with all users as members
+
+#### Task 1 - Create the dynamic group
+
+1. Sign in to the [https://portal.azure.com](https://portal.azure.com) with an account that is assigned the Global administrator or User administrator role in the tenant.
+
+2. Select **Azure Active Directory**.
+
+3. Under **Manage**, select **Groups**, and then select **New group**.
+
+4. On the New Group page, under **Group type**, select **Security**.
+
+5. In the **Group name** box, enter **SC300-myDynamicGroup**.
+
+6. Select the **Membership type** menu and then select **Dynamic User**.
+
+7. Under **Dynamic user members**, select **Add dynamic query**.
+
+8. On the right above the **Rule syntax** box, select **Edit**.
+
+9. In the Edit rule syntax pane, enter the following expression in the **Rule syntax** box:
+
+    ```powershell
+    user.objectid -ne null
+    ```
+
+    **Warning** - the `user.objectid` is case sensitive.
+
+10. Select **OK**. The rule appears in the Rule syntax box.
+
+    ![Screen image displaying the dynamic group membership rules blade with rule syntax highlighted](./media/lp1-mod3-dynamic-group-membership-rule.png)
+
+11. Select **Save**. The new dynamic group will now include B2B guest users as well as member users.
+
+12. On the New group page, select **Create** to create the group.
+
+#### Task 2 - Verify the members have been added
+
+1. Click on the **Home** `Azure Active Directory`.
+2. Launch **Azure Active Directory**.
+3. In the **Manage** menu click on **Groups**.
+4. In the filter box type **SC300** and your newly created group will be listed.
+5. Click on **SC300-myDynamicGroup** to open the group.
+6. Notice that it shows that it contains 30+ **Direct members*.
+7. Click on **Members** in the **Manage** menu.
+8. Review the members.
+
+#### Task 3 - Experiment with alternate rules
+
+1. Try making a group with only **Guest** users:
+   - (user.objectid -ne null) and (user.userType -eq "Guest")
+
+2. Try make a group with only **Members** of the Azure AD users.
+   - (user.objectid -ne null) and (user.userType -eq "Member")

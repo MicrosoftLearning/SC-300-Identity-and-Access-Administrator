@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '26 - Add terms of use and acceptance reporting'
+    title: '21 - Add terms of use and acceptance reporting'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 26: Add terms of use and acceptance reporting 
+# Lab 21: Add terms of use and acceptance reporting 
 
 ## Lab scenario
 
@@ -241,3 +241,4 @@ You may, on occasion, be required to update the terms of use document.
 6. Once you have uploaded your new pdf and decided on re-accept, select **Add**.
 
 7. You will now see the most recent version under the Document column.
+

@@ -1,19 +1,19 @@
 ---
 lab:
-    title: '09 - Add guest users to the directory'
+    title: '07 - Add Hybrid Identity with Azure AD Connect'
     learning path: '01'
     module: 'Module 01 - Implement an identity management solution'
 ---
 
-# Lab 09: Add guest users to the directory
+# Lab 07: Add Hybrid Identity with Azure AD Connect
 
 ## Lab scenario
 
-Your company works with many vendors and, on occasion, you need to add some vendor accounts to your directory as a guest.
+Your company works has Active Directory Domain Services on-premises.  They would like to continue to use on-premises Active Directory as their identity and access management solution, but also require the ability for users to access cloud applications with the same username and password.
 
 #### Estimated time: 5 minutes
 
-### Exercise 1 - Add guest users to the directory
+### **TODO** Exercise 1 - Add guest users to the directory
 
 #### Task - Add the guest user
 
@@ -36,3 +36,4 @@ Your company works with many vendors and, on occasion, you need to add some vend
 7. On the Users blade, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
 
 After you send the invitation, the user account is automatically added to the directory as a guest.
+

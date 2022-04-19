@@ -1,13 +1,13 @@
 ---
 lab:
-    title: '27 - Manage the lifecycle of external users in Azure AD Identity Governance settings'
+    title: '25 - Creating Access Reviews for Internal and External Users'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 27: Manage the lifecycle of external users in Azure AD Identity Governance settings  
+# Lab 25 - Creating Access Reviews for Internal and External Users  
 
-## Lab scenario
+## **TODO** Lab scenario
 
 You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
 

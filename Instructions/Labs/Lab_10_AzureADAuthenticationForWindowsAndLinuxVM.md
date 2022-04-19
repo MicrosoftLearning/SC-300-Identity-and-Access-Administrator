@@ -1,12 +1,12 @@
 ---
 lab:
-    title: '13 - Enable Azure AD self service password reset'
+    title: '10 - Azure AD Authentication for Windows and Linux Virtual Machines'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 13 - Configure and deploy self-service password reset
-## Lab scenario
+# Lab 10 - Azure AD Authentication for Windows and Linux Virtual Machines
+## **TODO** Lab scenario
 
 The company has decided to empower the employees and enable self-service password reset. You must configure this setting in your organization.
 

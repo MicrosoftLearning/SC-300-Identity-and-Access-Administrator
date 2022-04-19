@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '25 - Create and manage a catalog of resources in Azure AD entitlement management'
+    title: '22 - Create and manage a catalog of resources in Azure AD entitlement management'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 25: Create and manage a catalog of resources in Azure AD entitlement management
+# Lab 22: Create and manage a catalog of resources in Azure AD entitlement management
 
 ## Lab scenario
 

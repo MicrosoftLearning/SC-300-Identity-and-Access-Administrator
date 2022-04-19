@@ -125,3 +125,92 @@ This task will use an alternative method to remove the assigned role; it will us
 ## Experiment with managing users
 
 You can add and remove users with the Azure AD blade.  However, users can be created and roles can be assigned using the scripting.  Experiment with giving the Chris Green user account a different role using script.
+
+# Lab 04: Restore a deleted user
+
+## Lab scenario
+
+It may happen that an account is deleted and then needs to be recovered. You need to verify you can recover an account that has been deleted recently.
+
+#### Estimated time: 5 minutes
+
+### Exercise 1 - Remove a user from Azure Active Directory
+
+#### Task 1 - Remove a User
+
+1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+
+2. In the left navigation, under **Manage**, select **Users**.
+
+3. In the **Users** list, select the check box for a user that will be deleted. For example, select **Chris Green**.
+
+    **Tip** - Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s blade, you will only be managing that individual user.
+
+    ![Screen image displaying the All users users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.](./media/lp1-mod2-remove-user.png)
+
+4. With the user account selected, on the menu, select **Delete user**.
+
+5. Review the dialog box and then select **OK**.
+
+#### Task 2 - Restore a deleted user
+
+1. In the Users blade, in the left navigation, select **Deleted users**.
+
+2. Review the list of deleted users and select the user you just deleted.
+
+    **Important** - By default, deleted user accounts are permanently removed from Azure Active Directory automatically after 30 days.
+
+3. On the menu, select **Restore user**.
+
+4. Review the dialog box and then select **OK**.
+
+5. In the left navigation, select **All users**.
+
+6. Verify the user has been restored.
+
+
+# Lab 07: Change user account license assignments
+
+## Lab scenario
+
+Some user accounts in your organization will not be provided all available products in their assigned license or will need updates or additions to their license assignment. You need to ensure you are able to update a user account's license assignment in Azure AD.
+
+#### Estimated time: 5 minutes
+
+### Exercise 1 - Add a Windows 10 license to a user account
+
+#### Task 1 - Find your unlicensed user in Azure Active Directory
+
+1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+
+2. In the left navigation, under **Mange**, select **Users**.
+
+3. In the Users blade, enter **Raul** into the search box.
+
+4. Click on **Raul Razo**
+5. Review Raul's profile and ensure he has a Usage Location set.
+
+    **Warning** - To assign a license to a user, the user must assigned a usage location.
+
+6. Click the **Licenses** menu item in the left-hand menu.
+7. Ensure that Raul has "No license assignments found."
+
+#### Task 2 - Update user license assignments
+
+1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+
+2. In the left navigation, under **Manage**, select **Users**
+
+3. In the Users blade, select **Raul Razo**.
+
+4. In the left navigation, select **Licenses**.
+
+5. Select the **+ Assignments** button. 
+
+6. On the Update license assignments blade, select the check box for a **Windows 10/11 Enterprise E3** license.
+
+    ![Screen image displaying the Update license assignments page and license options highlighted](./media/lp1-mod2-assign-user-license-options.png)
+
+7. When complete, select **Save**.
+8. At the top of the screen click `Home > Contoso Marketing > User >` **Raul Razo**
+9. Notice that the license has been assigned.

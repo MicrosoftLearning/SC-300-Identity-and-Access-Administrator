@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '12 - Enable Azure AD multi-factor authentication'
+    title: '08 - Enable Azure AD multi-factor authentication'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 12 - Enable Azure AD multi-factor authentication
+# Lab 08 - Enable Azure AD multi-factor authentication
 
 ## Lab scenario
 

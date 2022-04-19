@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '18 - Enable sign in and user risk policies'
+    title: '14 - Enable sign in and user risk policies'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 18 - Enable sign in and user risk policies
+# Lab 14 - Enable sign in and user risk policies
 
 ## Lab scenario
 

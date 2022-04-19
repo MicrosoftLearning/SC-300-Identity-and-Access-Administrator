@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '17 - Manage Azure AD smart lockout values'
+    title: '12 - Manage Azure AD smart lockout values'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 17 - Manage Azure AD smart lockout values
+# Lab 12 - Manage Azure AD smart lockout values
 
 ## Lab scenario
 
