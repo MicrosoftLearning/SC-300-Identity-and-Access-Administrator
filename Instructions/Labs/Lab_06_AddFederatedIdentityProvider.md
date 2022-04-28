@@ -11,29 +11,26 @@ lab:
 
 Your company works with many vendors and, on occasion, you need to add some vendor accounts to your directory as a guest and allow them to use their Google account to sign-in.
 
-#### Estimated time: 5 minutes
+#### Estimated time: 10 minutes
 
-### **TODO** Exercise 1 - Add guest users to the directory
+### Exercise 1 - Configure identity providers
 
-#### Task - Add the guest user
+#### Task - Configure Google as an identity provider
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a user who is assigned a limited administrator directory role or the Guest Inviter role.
 
 2. Select **Azure Active Directory**.
 
-3. Under **Manage**, select **Users**.
+3. Under **Manage**, select **External Identities**.
 
-4. Select **New guest user**.
+4. Microsoft provides a direct federation for **Google** as an identity provider.  This can be initiated by selecting **+ Google** from the **External Identities | All identity providers** blade
+ 
+5. After selecting + Google, another blade will open with additional information that is required to configure Google as an identity provider.  To obtain this information, the Microsoft Azure Active Directory account must be configured within Google. 
 
-    ![Screen image displaying the Users blade with the New guest user menu option selected](./media/lp1-mod3-new-guest-user-menu-selection.png)
+    **NOTE** - Use this link to complete the steps for finding the Google Client ID and Client secret.
+    https://docs.microsoft.com/azure/active-directory/external-identities/google-federation
 
-5. On the New user page, select **Invite user** and then add your information as the guest user.
+6. This completes the configuration of Google as an identity provider.
 
-    **NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Azure AD does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
-
-6. When complete, select **Invite**.
-
-7. On the Users blade, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
-
-After you send the invitation, the user account is automatically added to the directory as a guest.
+Facebook can also easily be configured as an identity provider. These steps can be accessed here: https://docs.microsoft.com/azure/active-directory/external-identities/facebook-federation.
 

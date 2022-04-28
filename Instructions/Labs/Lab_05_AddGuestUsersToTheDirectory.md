@@ -11,7 +11,7 @@ lab:
 
 Your company works with many vendors and, on occasion, you need to add some vendor accounts to your directory as a guest.
 
-#### Estimated time: 5 minutes
+#### Estimated time: 20 minutes
 
 ### Exercise 1 - Add guest users to the directory
 
@@ -37,17 +37,12 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 After you send the invitation, the user account is automatically added to the directory as a guest.
 
-# Lab 10: Invite guest users in bulk
 
-## Lab scenario
+### Exercise 2 - Invite guest users in bulk
+
+#### Task 1 - Bulk user invite
 
 A recent partnership has been established with another company. For now, employees of the partner company will be added as guests. You need to ensure you can import multiple guest users at one time.
-
-#### Estimated time: 10 minutes
-
-### Exercise 1 - Invite guest users in bulk
-
-#### Task - Bulk user invite
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as your Global Administrator.
 
@@ -87,3 +82,41 @@ A recent partnership has been established with another company. For now, employe
     ![Screen image displaying the results of a bulk operation](./media/lp1-mod3-bulk-operations-results.png)
 
 13. When the job completes, you will see a notification that the bulk operation succeeded.
+
+#### Task 2 - Invite guest users with PowerShell
+
+1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator.  
+
+1. You will need to add the Azure AD PowerShell module, if you have not used it before.  Run the command: Install-Module AzureAD.  When prompted, select “Y” to continue.
+
+    ``` 
+    Install-Module AzureAD
+    ```
+
+1. Confirm that the module installed correctly by running the command:  
+
+    ```
+    Get-Module AzureAD 
+    ```
+
+1. Next, you will need to login to Azure by running:  
+
+    ```
+    Connect-AzureAD
+    ```
+    
+1. The Microsoft login window will appear for you to login to Azure AD.  
+
+1. To verify that you are connected and to see existing users, run:  
+
+    ```
+    Get-AzureADUser 
+    ```
+
+1. You are ready to invite a guest user.  The following command will be populated with the user information and run.  If you have more than one user to add, you can use a notepad txt file to add the user information and copy/paste into PowerShell. 
+
+    ```
+    New-AzureADMSInvitation -InvitedUserDisplayName "Display" -InvitedUserEmailAddress name@emaildomain.com -InviteRedirectURL https://myapps.microsoft.com -SendInvitationMessage $true 
+    ```
+
+You now know how to invite users within the Azure AD portal, Microsoft 365 Admin center, Bulk invitations with a csv file, and inviting users with PowerShell commands.

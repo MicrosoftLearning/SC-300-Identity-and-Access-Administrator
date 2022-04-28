@@ -11,7 +11,7 @@ lab:
 
 Your company recently hired a new employee who will perform duties as an application administrator. You must create a new user and assign the appropriate role.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 30 minutes
 
 ### Exercise 1 - Create a new user and test their application admin rights
 
@@ -64,6 +64,7 @@ Your company recently hired a new employee who will perform duties as an applica
 6. Click on **+ New application**. Notice that **+ Create your own application** is unavailable.
 7. Try clicking on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
 8. Click on **ChrisG** name in the upper-right corner and sign out.
+
 
 ### Exercise 2 - Assign the application admin role and create an app
 
@@ -122,21 +123,84 @@ This task will use an alternative method to remove the assigned role; it will us
 7. Answer **Yes** when the confirmation box opens.
 8. Close Azure Active Directory.
 
+### Exercise 4 - Bulk import of users
+
+#### Task 1 - Bulk operations for creating users with a .csv file
+
+1. In the Azure AD menu, select **Users** under **Manage**.
+
+1. On the **Users | All users** tile, select the **Bulk operations** drop-down arrow and then **Bulk create**.
+
+1. Selecting **Bulk create** will open a new tile. This tile provides a **Download** link to a template file that you will edit to populate with your user information and upload to add the bulk creation of users.
+
+1. Select **Download** to download the .csv file.
+
+1. The .csv template provides you with the fields included with the user profile. This includes the required username, display name, and initial password. You can also complete optional fields, such as Department and Usage location, at this time. The following screenshot is an example of how you can complete the .csvfile: 
+
+    ![Bulk import using csv file entry](./media/bulkimportexample.png)
+
+1. Once populated, save the changes and upload it to add the users.
+
+1. You will be notified that the file uploaded successfully.  Choose Submit to add the users. 
+
+After the users have been created, you will be prompted that the creation has succeeded.  Close the Bulk create users tile and the new users will be populated in the list of **Users | All users**. 
+
+#### Task 2 - Bulk addition of users using PowerShell
+
+1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator.
+
+1. You will need to add the Azure AD PowerShell module, if you have not used it before.  Run the command: Install-Module AzureAD.  When prompted, select “Y” to continue.
+
+    ```
+    Install-Module Azure AD
+    ```
+
+1. Confirm that the module installed correctly by running the command:  
+
+    ```
+    Get-Module AzureAD 
+    ```
+
+1. Next, you will need to login to Azure by running:  
+
+    ```
+    Connect-AzureAD 
+    ``` 
+
+1. The Microsoft login window will appear for you to login to Azure AD.  
+
+1. To verify that you are connected and to see existing users, run:  
+
+    ``` 
+    Get-AzureADUser 
+    ```
+    
+1. To assign a common temporary password to all new users, run the following command and replace the TempPW with the password that you would like to provide to your users.  
+
+    ``` 
+    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+    ```
+
+    ```
+    $PasswordProfile.Password = "TempPW" 
+    ```
+
+1. You are ready to create a new users.  The following command will be populated with the user information and run.  If you have more than one user to add, you can use a notepad txt file to add the user information and copy/paste into PowerShell. 
+
+    ```
+    New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"
+    ```
+
 ## Experiment with managing users
 
-You can add and remove users with the Azure AD blade.  However, users can be created and roles can be assigned using the scripting.  Experiment with giving the Chris Green user account a different role using script.
+You can add and remove users with the Azure AD blade.  However, users can be created and roles can be assigned using the scripting.  Experiment with giving the Chris Green user account a different role using script. 
+ 
 
-# Lab 04: Restore a deleted user
-
-## Lab scenario
-
-It may happen that an account is deleted and then needs to be recovered. You need to verify you can recover an account that has been deleted recently.
-
-#### Estimated time: 5 minutes
-
-### Exercise 1 - Remove a user from Azure Active Directory
+### Exercise 5 - Remove a user from Azure Active Directory
 
 #### Task 1 - Remove a User
+
+It may happen that an account is deleted and then needs to be recovered. You need to verify you can recover an account that has been deleted recently.
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
@@ -169,17 +233,11 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 6. Verify the user has been restored.
 
 
-# Lab 07: Change user account license assignments
-
-## Lab scenario
-
-Some user accounts in your organization will not be provided all available products in their assigned license or will need updates or additions to their license assignment. You need to ensure you are able to update a user account's license assignment in Azure AD.
-
-#### Estimated time: 5 minutes
-
-### Exercise 1 - Add a Windows 10 license to a user account
+### Exercise 6 - Add a Windows 10 license to a user account
 
 #### Task 1 - Find your unlicensed user in Azure Active Directory
+
+Some user accounts in your organization will not be provided all available products in their assigned license or will need updates or additions to their license assignment. You need to ensure you are able to update a user account's license assignment in Azure AD.
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 

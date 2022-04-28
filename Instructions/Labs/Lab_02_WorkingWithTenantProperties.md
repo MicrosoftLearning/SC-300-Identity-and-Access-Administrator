@@ -11,28 +11,45 @@ lab:
 
 You need to identify and update the different properties associated with your tenant.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 15 minutes
 
-### Exercise 1 - Changing the tenant display name
+### Exercise 1 - Create a custom subdomains 
 
-#### Task 1 - Set the tenant name and technical contact
+#### Task 1 - Create a custom subdomain name
 
 1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
-2. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
+1. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
 
     ![Azure portal menu with Azure Active Directory selected](./media/azure-portal-menu-aad.png)
 
-3. In the left navigation, in the Manage section, select **Properties**.
+1. In the **Manage** section of **Azure AD**, select **Custom domain names**.
 
-4. Change the Tenant Properties for the **Name** and **Technical contact** in the dialog.
+1. Select **Add custom domain**.
 
-| **Setting** | **Value** |
-| :--- | :--- |
-| Name | Contoso Marketing |
-| Technical contact | `your Global admin account` |
+1. In the **Custom domain name** field, create a custom subdomain for the lab tenant by putting **sales** in front of the **onmicrosoft.com** domain name.  The format will look similar to this:
 
-5. Select **Save** to update the tenant properties.
+    ```
+    sales.labtenant.onmicrosoft.com
+    ```
+
+1. Select **Add domain** to add the subdomain.
+
+
+### Exercise 2 - Changing the tenant display name
+
+#### Task 1 - Set the tenant name and technical contact
+
+1. From within Azure Active Directory, in the left navigation, in the **Manage** section, select **Properties**.
+
+1. Change the Tenant Properties for the **Name** and **Technical contact** in the dialog.
+
+    | **Setting** | **Value** |
+    | :--- | :--- |
+    | Name | Contoso Marketing |
+    | Technical contact | `your Global admin account` |
+
+1. Select **Save** to update the tenant properties.
 
    **You will notice the name change immediately upon completion of the save.**
 
@@ -58,7 +75,7 @@ Azure subscriptions have a trust relationship with Azure Active Directory (Azure
 
     ![Screen image displaying the Tenant properties page with the Tenant ID box highlighted](./media/portal-tenant-id.png)
 
-### Exercise 2 - Setting your privacy information
+### Exercise 3 - Setting your privacy information
 
 #### Task 1 - Adding your privacy info on Azure AD, including Global privacy contact and Privacy statement URL
 

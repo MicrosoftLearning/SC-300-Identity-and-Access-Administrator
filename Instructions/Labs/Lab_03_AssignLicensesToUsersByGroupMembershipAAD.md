@@ -11,7 +11,7 @@ lab:
 
 Your organization has decided to use security groups in Azure AD to manage licenses. You need to configure a new security group and assign a license to that group and verify group member license's have been updated.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 25 minutes
 
 ### Exercise 1 - Create a security group and add a user
 
@@ -86,17 +86,12 @@ Your organization has decided to use security groups in Azure AD to manage licen
     
 5. Close the browser window.
     
-# Lab 05: Adding groups to Azure AD
 
-## Lab scenario
-
-Part of your duties as an Azure AD administrator is to create different types of groups. You need to create a new Microsoft 365 group for your organization's sales department.
-
-#### Estimated time: 5 minutes
-
-### Exercise 1 - Create an Microsoft 365 group in Azure Active Directory
+### Exercise 2 - Create an Microsoft 365 group in Azure Active Directory
 
 #### Task 1 - Create the group
+
+Part of your duties as an Azure AD administrator is to create different types of groups. You need to create a new Microsoft 365 group for your organization's sales department.
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
@@ -118,17 +113,12 @@ Part of your duties as an Azure AD administrator is to create different types of
 
 5. When complete, verify the group named **Northwest sales** is shown in the **All groups** list.
 
-# Lab 06: Change group license assignments
 
-## Lab scenario
-
-Occasionally, you may need to change the license assignment that are used by an Azure AD security group. You must ensure you are familiar with the procedure for changing a group's license assignment.
-
-#### Estimated time: 5 minutes
-
-### Exercise 1 - Change group license assignments
+### Exercise 3 - Change group license assignments
 
 #### Task - Use Azure AD portal to make changes
+
+Occasionally, you may need to change the license assignment that are used by an Azure AD security group. You must ensure you are familiar with the procedure for changing a group's license assignment.
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
@@ -148,17 +138,12 @@ Occasionally, you may need to change the license assignment that are used by an 
 
 8. On the group’s Licenses page, review the change.
 
-# Lab 11: Working  with dynamic groups
 
-## Lab scenario
-
-As your company grows, manually group management is too time consuming. Since standardizing the directory, you can now take advantage of dynamic groups. You must create a new dynamic group to ensure you're ready for dynamic group creation in production.
-
-#### Estimated time: 10 minutes
-
-### Exercise 1 - Creating a dynamic group with all users as members
+### Exercise 4 - Creating a dynamic group with all users as members
 
 #### Task 1 - Create the dynamic group
+
+As your company grows, manually group management is too time consuming. Since standardizing the directory, you can now take advantage of dynamic groups. You must create a new dynamic group to ensure you're ready for dynamic group creation in production.
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) with an account that is assigned the Global administrator or User administrator role in the tenant.
 
