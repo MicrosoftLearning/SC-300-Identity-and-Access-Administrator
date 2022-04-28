@@ -5,76 +5,43 @@ lab:
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 13 - Working with security defaults
+# Lab 13 - Implement and test a conditional access policy
 
 ## Lab scenario
 
 You must configure the Azure Active Directory security default settings in your organization.
-    **This is a completely optional lab!!**  You can turn on / off Security Defaults, just to find out where the menu option is.  But the key points to remember are from the training.  Note that if you turn on Security Defaults, and do not disable it, later labs involving Conditional Access will not work.
+    **Note**  You can turn on / off Security Defaults, just to find out where the menu option is.  But the key points to remember are from the training.  Note that if you turn on Security Defaults, and do not disable it, later labs involving Conditional Access will not work.
 
-#### Estimated time: 7 minutes
+#### Estimated time: 30 minutes
 
-### Exercise - Prework
+### Exercise 1 - Disabling Security Defaults
 
-To be able to enable Security Defaults, you have to delete or disable any existing Conditional Access policies.  Reminder that in a previous lab we built a policy to enforce MFA for Delia.  You will need to disable that before you can perform the below steps.
-
-1. Log into the Azure portal.
-2. Open Azure Active Directory.
-3. From the Security section of the menu select **Security** then select **Conditional Access**.
-4. Click on any Conditional Access policy that is set to On or Report-Only and change them to Off.
-
-### Exercise 1 - Enabling Security Defaults
-
-#### Task 1 - Turn on security defaults
+#### Task 1 - Turn off security defaults
 
 To enable security defaults in your directory:
 
 1. Browse to [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
-2. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
+1. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
 
     ![Azure portal menu with Azure Active Directory selected](./media/azure-portal-menu-aad.png)
 
-3. In the left navigation, in the Manage section, select **Properties**.
+1. In the left navigation, in the Manage section, select **Properties**.
 
-4. At the bottom of the Properties blade, select **Manage Security defaults**.
+1. At the bottom of the Properties blade, select **Manage Security defaults**.
 
-5. Set the **Enable security defaults** toggle to **Yes**.
-
-6. This may already be enabled.
-
-7. Select **Save**.
-
-#### Task 2 - Disabling security defaults
-
-Organizations that choose to implement Conditional Access policies that replace security defaults must disable security defaults.
-
-To disable security defaults in your directory:
-
-1. Browse to the [https://portal.azure.com](https://portal.azure.com/) and sign in using a Global administrator account for the directory.
-
-2. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
-
-3. At the bottom of the Properties blade, select **Manage Security defaults**.
-
-4. Set the **Enable security defaults** toggle to **No**.
+1. Set the **Enable security defaults** toggle to **No**.
 
     ![Screen image of security defaults being disabled and selection of the required reason for disabling. In this case, the organization is using Conditional Access.](./media/security-defaults-disable-before-conditional-access.png)
 
-5. Select **Save**.
+1. Select **Save**.
 
 
-# Lab 15 - Implement and test a conditional access policy
-
-## Lab scenario
-
-Your organization needs to be able to limit user access to its internal applications. You must deploy an Azure Active Directory conditional access policy.
-
-#### Estimated time: 12 minutes
-
-### Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
+### Exercise 2 - Set a conditional access policy to block DebraB from accessing Yammer
 
 #### Task 1 -- Confirm DebraB has access to Yammer
+
+Your organization needs to be able to limit user access to its internal applications. You must deploy an Azure Active Directory conditional access policy.
 
 1. Launch a new InPrivate browser window.
 2. Connect to [https://www.office.com](https://www.office.com) 
@@ -155,17 +122,33 @@ You should test your conditional access policies to ensure they working as expec
 
 6. Under **Enable policy**, select **Off** and then select **Save**.
 
-# Lab 16 - Configure authentication session controls
+### Exercise 3 - Test conditional access policies with "What if"
 
-## Lab scenario
+#### Task - Use What if to test conditional access policies
 
-As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency.
+1. Open the portal menu and then select **Azure Active Directory**.
 
-#### Estimated time: 10 minutes
+1. On the Azure Active Directory blade, under **Manage**, select **Security**.
 
-### Exercise 1 - Configure sign in frequency controls using a conditional access policy
+1. On the Security blade, in the left navigation, select **Conditional access**.
+
+1. Select **What if**.
+
+1. Under **User or Workload identity**, select **No user or service principal selected**.
+
+1. Choose **DebraB** as the user.
+
+1. Under **Cloud apps, actions, or authentication context**, select **Yammer**. 
+
+1. Select **What if**. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
+
+This allows you to test the policies and their affectiveness before enabling the policies.
+
+### Exercise 4 - Configure sign in frequency controls using a conditional access policy
 
 #### Task - User the Azure Portal to configure conditional access
+
+As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency
 
 1. Browse to [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
@@ -207,7 +190,7 @@ As part of your company's larger security configuration, you must test a conditi
 
    **NOTE** - Report-only mode is a new Conditional Access policy state that allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. With the release of report-only mode:
     
-    - Conditional Access policies can be enabled in report-only mode.
-    - During sign-in, policies in report-only mode are evaluated but not enforced.
-    - Results are logged in the Conditional Access and Report-only tabs of the Sign-in log details.
-    - Customers with an Azure Monitor subscription can monitor the impact of their Conditional Access policies using the Conditional Access insights workbook.
+- Conditional Access policies can be enabled in report-only mode.
+- During sign-in, policies in report-only mode are evaluated but not enforced.
+- Results are logged in the Conditional Access and Report-only tabs of the Sign-in log details.
+- Customers with an Azure Monitor subscription can monitor the impact of their Conditional Access policies using the Conditional Access insights workbook.

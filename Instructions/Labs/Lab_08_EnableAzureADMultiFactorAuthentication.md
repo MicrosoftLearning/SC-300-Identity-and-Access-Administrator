@@ -15,7 +15,7 @@ To improve security in your organization, you've been directed to enable multi-f
 
 **IMPORTANT** - An Azure AD Premium license is required for this exercise.
 
-### Exercise 1 - Review and enable Multifactor Authentication in Azure
+### Exercise 1 - Review and enable Multi-factor Authentication in Azure
 
 #### Task 1 - Review Azure Multi-Factor Authentication options
 
