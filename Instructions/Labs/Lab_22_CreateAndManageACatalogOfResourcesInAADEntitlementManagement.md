@@ -108,7 +108,32 @@ You can edit the name and description for a catalog. Users see this information 
 
 4. Select **Save**.
 
-#### Task 5 - Delete a catalog
+#### Task 5 - Create Access reviews for guest users
+
+1. Access reviews can manage the access lifecycle.  Azure AD Identity Governance provides an overview dashboard showing the status of access reviews. Select **Access reviews** in the **Identity Governance** menu.
+
+1. Under the Access review menu, you can select Access reviews to configure an access review for guest users.  You will select + New access review to create your guest user access review.  The tile will open to configure the access review for guest users.
+
+1. Select **Teams + Groups** for **Select what to review**.
+
+1. Under **Select review scope**, select **All Microsoft 365 groups with guest users**
+
+1. Under **Select user scope**, select **Guest users only**.
+
+1. Select **Next: Reviews**.
+
+1. The next tile is where you configure who reviews and approves access, how often access will be reviewed, and when access will expire.
+
+1. Under **Select reviewers**, select **Group owners** as these reviewers. **Note**: Guest users should not be allowed to review their own access as a good identity governance practice.
+
+1. Enter a **Duration (in days)**, default is 3, choose a **Review recurrence** and **Start date** for the review.
+
+1. Select **Next: Settings** and configure the settings for how the review will take place and what happens when the guest user responds or does not respond.  A good practice is to select **Auto apply results to resource** and select **Remove access** for **If reviewers don't respond**. 
+
+1. Select **Next: Review + create**, and select **Create** to create the new **Access review**.
+
+
+#### Task 6 - Delete a catalog
 
 You can delete a catalog, but only if it does not have any access packages.
 

@@ -11,7 +11,7 @@ lab:
 
 A Privileged role administrator can customize Privileged Identity Management (PIM) in their Azure Active Directory (Azure AD) organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
 
-#### Estimated time: 15 minutes
+#### Estimated time: 30 minutes
 
 ### Exercise 1 - Configure Azure AD role settings
 
@@ -55,17 +55,14 @@ If setting multiple approvers, approval completes as soon as one of them approve
 
 # Lab 29: Assign Azure AD roles in Privileged Identity Management
 
-## Lab scenario
+
+### Exercise 2 - PIM with Azure AD roles
+
+#### Task 1 - Assign a role
 
 With Azure Active Directory (Azure AD), a Global administrator can make permanent Azure AD admin role assignments. These role assignments can be created using the Azure portal or using PowerShell commands.
 
 The Azure AD Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Azure AD admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
-
-#### Estimated time: 15 minutes
-
-### Exercise 1 - PIM with Azure AD roles
-
-#### Task 1 - Assign a role
 
 Follow these steps to make a user eligible for an Azure AD admin role.
 

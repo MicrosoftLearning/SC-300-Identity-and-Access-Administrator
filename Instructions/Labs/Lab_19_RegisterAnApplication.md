@@ -7,7 +7,7 @@ lab:
 
 # Lab 19 - Register an application
 
-#### Estimated time: 20 minutes
+#### Estimated time: 30 minutes
 
 ### Exercise 1 - Register an application
 
@@ -177,17 +177,12 @@ Once a client app registration is granted permission to access your web API, the
 
 You can expose additional scopes later as necessary. Consider that your web API can expose multiple scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
 
-# Lab 21 - Create a custom role to manage app registration
 
-## Lab scenario
-
-You need to create a new custom role for app management. This new role should be limited to only the specific permissions required to perform credential management.
-
-#### Estimated time: 5 minutes
-
-### Exercise 1 - Manage app registration with a custom role
+### Exercise 2 - Manage app registration with a custom role
 
 #### Task - Create a new custom role to grant access to manage app registrations
+
+You need to create a new custom role for app management. This new role should be limited to only the specific permissions required to perform credential management.
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) using a Global administrator account.
 

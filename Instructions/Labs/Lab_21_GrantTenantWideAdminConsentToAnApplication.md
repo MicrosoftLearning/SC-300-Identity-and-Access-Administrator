@@ -11,7 +11,7 @@ lab:
 
 For applications your organization has developed or for those that are registered directly in your Azure AD tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 15 minutes
 
 ### Exercise 1 - Admin Consent
 
@@ -57,15 +57,12 @@ You can grant tenant-wide admin consent through Enterprise applications if the a
 
 # Lab 24: Manage the lifecycle of external users in Azure AD Identity Governance settings  
 
-## Lab scenario
 
-You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
-
-#### Estimated time: 5 minutes
-
-### Exercise 1 - Azure AD Identity Governance settings
+### Exercise 2 - Azure AD Identity Governance settings
 
 #### Task 1 - Manage the lifecycle of external users in Azure AD Identity Governance settings
+
+You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
 
