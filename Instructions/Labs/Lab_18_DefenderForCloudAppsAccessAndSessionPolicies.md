@@ -7,37 +7,51 @@ lab:
 
 # 18 - Defender for Cloud Apps Access and Session Policies
 
-## **TODO** Lab scenario
+## Lab scenario
 
-Azure AD multi-factor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for Azure AD Multi-Factor Authentication. You must configure your Azure AD organization's MFA registration policy to be assigned to all users.
+Microsoft Defender for Cloud Apps  allows us to create additional Conditional Access policies specific to the cloud apps that we are monitoring.  Creating these policies can be done from within the Control menu within the Microsoft Defender for Cloud Apps  portal.
 
 #### Estimated time: 20 minutes
 
-### Exercise 1 - Register an application
+### Exercise 1 - Create a Defender for Cloud Apps Access policy
 
-#### Task 1 - App registration
+#### Task 1 - Access Microsoft Defender for Cloud Apps
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
-1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
+1. Sign in to [https://security.microsoft.com](https://security.microsoft.com) using a Global Administrator account.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+1. On the left menu, scroll to the bottom and select **More resources**.
 
-3. On the **Azure Active Directory** blade, under **Manage**, select **App registrations.**
+1. In the **More resources** window, locate and select **Open** under **Microsoft Defender for Cloud Apps**.  This will take you to the **Microsoft Defender for Cloud Apps** portal within the Microsoft 365 account.
 
-4. On the **App registrations** page, on the menu, select **+ New registration**.
 
-5. On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
+#### Task 2 - Create Conditional Access App Control
 
-    ![Screen image displaying the Register an application blade with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
+1. In the **Microsoft Defender for Cloud Apps** portal menu, select the drop-down arrow for **Disover** and select **Discovered Apps**.
 
-6. When complete, you will be directed to the **Demo app** blade.
+1. Select **Social network** under **Browse a category**.
 
-#### Task 2 - Add a redirect URI
+1. In the list of apps discovered, find and select an app with a low risk score, such as **TikTok**.
 
-A redirect URI is the location where the Microsoft identity platform redirects a user's client and sends security tokens after authentication. In a production web application, for example, the redirect URI is often a public endpoint where your app is running. During development, it's common to also add the endpoint where you run your app locally.
+1. A page for that app will open to provide more information on the app and the **Cloud app score**.  On the top right of the page, select the **Actions** drop-down arrow and select **Add to Conditional Access App Control** under **Deploy app**.
 
-1. Add and modify redirect URIs for your registered applications by configuring their platform settings.
+1. Another window will open for you to **Add a SAML application with your identity provider**.  
+
+    ![Choose a SAML application with your identity provider](./media/add-saml-idp.png)
+
+    **Note**: Having Conditional Access app control is a requirement to setting up Access policies in **Microsoft Defender for Cloud Apps**.
+
+1. 
+
+
+#### Task 2 - Create an Access policy
+
+1. In the **Microsoft Defender for Cloud Apps** portal menu, select the drop-down arrow for **Control** and select **Policies**.
+
+1. Locate **+ Create Policy** and select the drop-down arrow, and select **Access policy**.
+
+1. 
 
 #### Task 3 - Configure platform settings
 

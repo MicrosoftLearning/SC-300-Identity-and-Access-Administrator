@@ -7,38 +7,31 @@ lab:
 
 # Lab 25 - Creating Access Reviews for Internal and External Users  
 
-## **TODO** Lab scenario
+## Lab scenario
 
-You can select what happens when an external user, who was invited to your directory through an access package request being approved, no longer has any access package assignments. This can happen if the user relinquishes all their access package assignments, or their last access package assignment expires. By default, when an external user no longer has any access package assignments, they are blocked from signing in to your directory. After 30 days, their guest user account is removed from your directory.
+Privileged user access should be regularly reviewed in a similar manner.  Since these are elevated access assignments, the review of these should be done on a consistent basis as identified by the company.  Unused and unnecessary privileged assignments should be removed.  Automated removal should also be configured for users that are no longer with the company or have changed departments within the company.
 
 #### Estimated time: 5 minutes
 
-### Exercise 1 - Azure AD Identity Governance settings
+### Exercise 1 - Create an internal Access review
 
-#### Task 1 - Manage the lifecycle of external users in Azure AD Identity Governance settings
+#### Task - Create a new Access review
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
 
-2. An account with Global administrator or User administrator is required to complete these tasks.
+2. Access reviews can manage the access lifecycle.  Within **Privileged Identity Management**, this is found under the **Manage** menu.
 
-3. Open Azure Active Directory and the select **Identity Governance**.
+3. Name the access review and set the start date and frequency. Duration is how long the access review will run before it expires.  You can set the end to be a specific date or after a number of occurrence.  Then select the user scope of the access review.
 
-4. In the left navigation menu, under **Entitlement management**, select **Settings**.
+4. Select the scope for the roles that will be part of this scope.  You can add all roles or only select specific roles for certain reviews. 
 
-5. On the top menu, select **Edit**.
+5. The next step is to determine the reviewers.  These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
 
-    ![Screen image displaying the Identity governance settings page with manage the lifecycle of external users highlighted.](./media/lp4-mod1-manage-lifcycle-of-ext-users.png)
+6. The advanced settings allow you to put a message as part of the review.  Select start to initiate the access review.
 
-6. In the **Manage the lifecycle of external users** section, review the different settings for external users.
+7. When the access review is created, the access review list will populate with the roles and owners of the reviews.
 
-7. When an external user loses their last assignment to any access packages, if you want to block them from signing in to this directory, set the **Block external user from signing in to this directory** to **Yes**.
+8. Members that are being reviewed will receive an email when the review is initiated.
 
-8. If a user is blocked from signing in to the directory, the user will be unable to re-request the access package or request additional access in this directory. Do not configure blocking them from signing in if they will subsequently need to request access to other access packages.
+9. Selecting an access review of one of the roles will provide status on these access reviews.
 
-9. Once an external user loses their last assignment to any access packages, if you want to remove their guest user account in this directory, set **Remove external** user to **Yes**.
-
-    **Note** - Entitlement management only removes accounts that were invited through entitlement management. Also, note that a user will be blocked from signing in and removed from this directory even if that user was added to resources in this directory that were not access package assignments. If the guest was present in this directory prior to receiving access package assignments, they will remain. However, if the guest was invited through an access package assignment, and after being invited was also assigned to a OneDrive for Business or SharePoint Online site, they will still be removed.
-
-10. If you want to remove the guest user account in this directory, you can set the number of days before it is removed. If you want to remove the guest user account as soon as they lose their last assignment to any access packages, set **Number of days before removing external user from this directory** to **0**.
-
-11. If you’ve made any changes, select **Save**.
