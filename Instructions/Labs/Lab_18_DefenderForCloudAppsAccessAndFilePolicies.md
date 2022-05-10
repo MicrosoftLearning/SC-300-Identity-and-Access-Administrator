@@ -32,7 +32,7 @@ Registering your application establishes a trust relationship between your app a
 
 1. Select **Social network** under **Browse a category**.
 
-1. In the list of apps discovered, find and select an app with a low risk score, such as **TikTok**.
+1. In the list of apps discovered, find and select an app with a low risk score, such as **Pinterest**.
 
 1. A page for that app will open to provide more information on the app and the **Cloud app score**.  On the top right of the page, select the **Actions** drop-down arrow and select **Add to Conditional Access App Control** under **Deploy app**.
 
@@ -42,18 +42,15 @@ Registering your application establishes a trust relationship between your app a
 
     **Note**: Having Conditional Access app control is a requirement to setting up Access policies in **Microsoft Defender for Cloud Apps**.
 
-1. This task requires a **SAML** application provider to be created within your tenant.  Review the list of applications and note that **TikTok** does not support **Azure AD** integration.
+1. This task requires a **SAML** application provider to be created within your tenant.  Review the list of applications and note that Azure AD is not in the list, but you can select **Manage app with Azure AD**.
 
-1. In the list of apps discovered, find and select **LinkedIn**.
-
-1. A page for that app will open to provide more information on the app and the **Cloud app score**.  On the top right of the page, select the **Actions** drop-down arrow, **More Cloud app actions**, and select **Manage app with Azure AD**.
-
-1. You will be taken to the **Azure AD Gallery** and a tile will open for **LinkedIn Lookup**.
-
-    ![Azure AD Gallery LinkedIn Lookup tile](./media/linkedinlookup.png)
+1. Select **Manage app with Azure AD**. **Note**: the **Azure AD Gallery** and a tile will open for **Workplace for Facebook**.
 
 1. Select **Create**.  This will allow users to connect their LinkedIn profile into their Azure AD user account.
 
+1. This creates a single sign-on connection for **Facebook** utilizing **Azure AD**.  After the application is added, a new window will open with the **Application ID** and **Object ID**.  These will be needed for completing single sign on setup.
+
+1. Explore the options in this window before moving to the next task.
 
 
 #### Task 3 - Create a File policy
