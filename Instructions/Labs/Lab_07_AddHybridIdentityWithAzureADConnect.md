@@ -11,29 +11,25 @@ lab:
 
 Your company works has Active Directory Domain Services on-premises.  They would like to continue to use on-premises Active Directory as their identity and access management solution, but also require the ability for users to access cloud applications with the same username and password.
 
-#### Estimated time: 5 minutes
+#### Estimated time: 45 minutes
 
-### **TODO** Exercise 1 - Add guest users to the directory
+### Exercise 1 - Setup Azure AD Connect Pass Through Authentication
 
-#### Task - Add the guest user
+#### Task 1 - Create the on-premises Active Directory infrastructure
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a user who is assigned a limited administrator directory role or the Guest Inviter role.
+1. Open a browser and navigate to: [www.microsoftazurepass.com](www.microsoftazurepass.com).
 
-2. Select **Azure Active Directory**.
+1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
 
-3. Under **Manage**, select **Users**.
+1. Click the **Start** button to get started.
 
-4. Select **New guest user**.
+1. Verify that the username is the same as the lab provider tenant account.
 
-    ![Screen image displaying the Users blade with the New guest user menu option selected](./media/lp1-mod3-new-guest-user-menu-selection.png)
+1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
-5. On the New user page, select **Invite user** and then add your information as the guest user.
+1. Navigate to **Subscriptions** and verify that the Azure pass is activated. 
 
-    **NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Azure AD does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
+1. Follow the steps at this link [Hybrid Identity Cloud Workshop setup](https://cloudworkshop.blob.core.windows.net/hybrid-identity/Hands-on%20lab/Before%20the%20hands-on%20lab%20-%20Hybrid%20identity.html).
 
-6. When complete, select **Invite**.
-
-7. On the Users blade, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
-
-After you send the invitation, the user account is automatically added to the directory as a guest.
+1.
 
