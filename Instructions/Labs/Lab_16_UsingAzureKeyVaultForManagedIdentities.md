@@ -7,36 +7,90 @@ lab:
 
 # Lab 16 - Using Azure Key Vault for Managed Identities
 
-## **TODO** Lab scenario
+## Lab scenario
 
-Azure AD multi-factor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for Azure AD Multi-Factor Authentication. You must configure your Azure AD organization's MFA registration policy to be assigned to all users.
+When you use managed identities for Azure resources, your code can get access tokens to authenticate to resources that support Azure AD authentication.  However, not all Azure services support Azure AD authentication. To use managed identities for Azure resources with those services, store the service credentials in Azure Key Vault, and use the managed identity to access Key Vault to retrieve the credentials.
 
-#### Estimated time: 5 minutes
+#### Estimated time: 20 minutes
 
-### Exercise 1 - Set up MFA registration policy
+### Exercise 1 - Use Azure Key Vault to manage Virtual Machine identities
 
-#### Task - Policy configuration
+#### Task 1 - Create a Key Vault
 
 1. Sign in to the [https://portal.azure.com]( https://portal.azure.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+1. At the top of the left navigation bar, select Create a resource
 
-3. On the Azure Active Directory blade, under **Manage**, select **Security**.
+1. In the Search the Marketplace box type in **Key Vault**.  
 
-4. On the Security blade, in the left navigation, select **Identity protection**.
+1. Select **Key Vault** from the results.
 
-5. In the Identity protection blade, in the left navigation, select **MFA registration policy**.
+1. Select **Create**.
 
-    ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/lp2-mod4-browse-to-mfa-registration-policy.png)
+1. Provide a Name for the new **Key Vault**.
 
-6. Under **Assignments**
+1. Fill out all required information. Make sure that you choose the subscription and resource group that you're using for this tutorial.
 
-7. Under **Assignments**, select **All users** and review the available options.
+1. Select **Review + create**.
 
-8. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
+1. Select **Create**.
 
-9. Additionally, you can choose to exclude users from the policy.
 
-10. Under **Controls**, notice that the **Require Azure AD MFA registration** is selected and cannot be changed.
+#### Task 2 - Create a secret
 
-11. Under **Enforce Policy**, select **On** and then select **Save**.
+1. Navigate to your newly created Key Vault.
+
+1. Select **Secrets**, and select **Add**.
+
+1. Select **Generate/Import**.
+
+1. In the Create a secret screen, from Upload options leave Manual selected.
+
+1. Enter a name and value for the secret.  The value can be anything you want. 
+
+1. Leave the activation date and expiration date clear, and leave Enabled as Yes. 
+
+1. Select **Create** to create the secret.
+
+#### Task 3 - Grand access to Key Vault
+
+1. Navigate to your newly created Key Vault
+
+1. Select **Access Policy** from the menu on the left side.
+
+1. Select **Add Access Policy**.
+
+1. In the Add access policy section, under Configure from template (optional), choose Secret Management from the pull-down menu.
+
+1. Choose **Select Principal**, and in the search field enter the name of the VM you created earlier.  Select the VM in the result list and choose Select.
+
+1. Select **Add**.
+
+1. Select **Save**.
+
+#### Task 4 - Access data with Key Vault secret with PowerShell
+
+1. In the lab virtual machine, open PowerShell.  
+
+1. In PowerShell, invoke the web request on the tenant to get the token for the local host in the specific port for the VM.  
+
+    ```
+    $Response = Invoke-RestMethod -Uri 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fvault.azure.net' -Method GET -Headers @{Metadata="true"}
+    ```
+
+1. Next, extract the access token from the response.  
+
+    ```
+    $KeyVaultToken = $Response.access_token
+    ```
+
+1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the Essentials section of the Overview page of the Key Vault.  
+
+    ```
+    Invoke-RestMethod -Uri https://<your-key-vault-URL>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
+    ```
+1. You should receive a response that looks like the following: 
+    ```
+    'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16…
+    ```
+1. This secret can be used to authenticate to services that require a name and password.
