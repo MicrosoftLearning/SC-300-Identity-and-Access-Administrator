@@ -10,121 +10,97 @@ lab:
 
 The company has decided to empower the employees and enable self-service password reset. You must configure this setting in your organization.
 
-#### Estimated time: 15 minutes
+#### Estimated time: 30 minutes
 
-### Exercise 1 - Create a group with SSPR enabled and add users to it
+### Exercise 1 - Login to Windows Virtual Machines in Azure with Azure AD
 
-#### Task 1 - Create a group to assign SSPR to
+#### Task 1 - Redeem Azure Pass
 
-You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
+1. Open a browser and navigate to: [www.microsoftazurepass.com](www.microsoftazurepass.com).
 
-1. On the Azure Active Directory blade, under **Manage**, select **Groups** and select **+ New Group** on the right side window.
+1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
 
-2. Create a new group using the following information:
+1. Click the **Start** button to get started.
 
-    | **Setting**| **Value**|
-    | :--- | :--- |
-    | Group type| Security|
-    | Group name| SSPRTesters|
-    | Group description| Testers of SSPR rollout|
-    | Membership type| Assigned|
-    | Members| Alex Wilber |
-    | |  Allan Deyoung |
-    | | Bianca Pisani |
-  
-    
-3. Select **Create**.
+1. Verify that the username is the same as the lab provider tenant account.
 
-    ![Screen image displaying the New Group blade with group type, group name, and create highlighted](./media/lp2-mod2-create-sspr-security-group.png)
+1. Enter the Azure Pass voucher code in the **Enter Promo code** field. 
 
-#### Task 2 - Enable SSPR for you test group
+1. Enter address information in the **Profile** fiels.
+    - **Address line 1**: 1 Microsoft Way
+    - **City**: Redmond
+    - **State**: Washington
+    - **ZIP code**: 98052
 
-Enable SSPR for the group.
+1. Select the box to agree to the subscription agreement and select **Sign up**.
 
-1. Browse back to the Azure Active Directory blade.
+    ![Agree to subscription agreement and sign up](media/azurepassactivation.png)
 
-2. Under **Manage**, select **Password reset**.
+1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
-3. On the Password reset blade Properties page, under **Self service password reset enabled**, select **Selected**.
+1. Navigate to **Subscriptions** and verify that the **Azure Pass - Sponsorship** is showing **Active** status. 
 
-4. Select **Select group**.
+#### Task 2 - Create a Windows Virtual Machine with Azure AD login enabled
 
-5. In the Default password reset policy pane, select the **SSPRTesters** group.
+1. Browse to the [https://portal.azure.com](https://portal.azure.com)
 
-6. On the Password reset blade Properties page, select **Save**.
+1. Select **+ Create a resource**.
 
-    ![Screen image displaying the Password reset properties page with selected, select group, and save highlighted](./media/lp2-mod2-enable-password-reset-for-selected-group.png)
+1. Type **Windows Server** in Search the Marketplace search bar.
 
-7. Under **Manage**, select and review the default values for the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
+1. Select **Windows Server** and choose **Windows Server 2019 Datacenter** from Select a software plan dropdown.
 
-    **Note** it is important to have **phone** selected as one of the authentication methods for the rest of this lab, but you can have other options as well.
+1. You will have to create an administrator username and password for the VM on the basics tab.
 
-#### Taks 3 - Register for SSPR with Alex
+1. On the **Management** tab, check the box to Login with Azure AD under the Azure AD section.
 
-Now that the SSPR configuration is complete, register a mobile phone number for the user you created.
+1. Make sure **System assigned managed identity** under the Identity section is checked. This action should happen automatically once you enable Login with Azure AD.
 
-1. Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://aka.ms/ssprsetup](https://aka.ms/ssprsetup).
+1. Go through the rest of the experience of creating a virtual machine. 
 
-    This is to ensure you well be prompted for user authentication.
+1. Select Create.
 
-2. Sign in as **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` with the password = Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the admin password).
+#### Task 3 - Azure AD login for existing Azure Virtual Machines
 
-    **Note** - Replace the organization-domain-name with your domain name.
+1. Browse to **Virtual Machines** in the [https://portal.azure.com](https://portal.azure.com).
 
-3. If prompted to update your password, enter a new password of your choice. Be sure to record the new password.
+1. Select **Access control (IAM)**.
 
-4. In the **More information required** dialog box, select **Next**.
+1. Select Add > Add role assignment to open the Add role assignment page.
 
-5. On the Keep your account secure page, user the **Phone** option.
+1. Assign the following role. 
+    - **Role**: Virtual Machine Administrator Login or Virtual Machine User Login
+    - **Assign access to**: User, group, service principal, or managed identity
 
-    ![Screen image displaying the Keep your account secure page with the Choose a different method dialog box highlighted](./media/lp2-mod2-keep-your-account-secure-page.png)
+1. For detailed steps, see Assign Azure roles using the Azure portal.
 
-    **Note** - In this lab, you will use the **Phone** option. Enter your mobile phone details.
 
-6. Enter your personal cell phone number into the phone number field.
-7. Select **Text me a code**.
-8. Select **Next**.
+### Exercise 2 - Login to Linux Virtual Machines in Azure with Azure AD
 
-9. When you receive the code on your mobile phone, enter the code in the text box and then select **Next**.
+#### Task 1 - Create a Linux VM with system assigned managed identity
 
-10. After your phone has been registered, select **Next** and then select **Done**.
+1. Browse to the [https://portal.azure.com](https://portal.azure.com)
 
-11. Close the browser. You do not need to complete the sign in process.
+1. Select **+ Create a resource**.
 
-#### Task 4 - Test SSPR
+1. Click on **Create** under **Ubuntu Server 18.04 LTS** in the Popular view.
 
-Now let's test whether the user can reset their password.
+1. On the **Management** tab, check the box to enable **Login with Azure Active Directory (Preview)**.
 
-1. Open a different browser or open an InPrivate or Incognito browser session and then browse to [https://portal.azure.com](https://portal.azure.com).
+1. Ensure **System assigned managed identity** is checked.
 
-    This is to ensure you well be prompted for user authentication.
+1. Go through the rest of the experience of creating a virtual machine. During this preview, you’ll have to create an administrator account with username and password or SSH public key.
 
-2. Enter **AlexW@** `<<organization-domain-name>>.onmicrosoft.com` and then select **Next**.
+#### Task 2 - Azure AD login for existing Azure Virtual Machines
 
-    **Note** - Replace the organization-domain-name with your domain name.
+1. Browse to **Virtual Machines** in the [https://portal.azure.com](https://portal.azure.com).
 
-3. On the Enter password page, select **Forgot my password**.
+1. Select **Access control (IAM)**.
 
-4. On the Get back into your account page, complete the requested information and then select **Next**.
+1. Select Add > Add role assignment to open the Add role assignment page.
 
-    ![Screen image displaying the Get back into your account page with Email or Username, captcha box, and next button highlighted](./media/lp2-mod2-get-back-into-your-account-page.png)
+1. Assign the following role. 
+    - **Role**: Virtual Machine Administrator Login or Virtual Machine User Login
+    - **Assign access to**: User, group, service principal, or managed identity
 
-5. In the **verification step 1** task, select **Text my mobile phone**, enter your phone number and then select **Text**.
-
-    ![Screen image displaying verification step 1 with contact methods, phone number box, and text button highlighted](./media/lp2-mod2-sspr-verification-step-1.png)
-
-6. Enter your verification code and then select **Next**.
-
-7. In the choose a new password step, enter and then confirm your new password.  Recommend password = **Pass@w.rd1234**.
-
-8. When complete, select **Finish**.
-
-9. Sign in as **AlexW** with the new password you created.
-
-10. Enter your verification code and then verify you can complete the sign in process.
-
-11. When finished, close your browser.
-
-#### Task 5 - What happens if you try a user not in SSPRTesters group?
-
-1. As a test, open a new InPrivate browser window and try to log into the Azure Portal as GradyA, and select **Forgot my password** option.
+1. For detailed steps, see Assign Azure roles using the Azure portal.
