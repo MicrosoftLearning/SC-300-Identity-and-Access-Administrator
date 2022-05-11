@@ -7,175 +7,100 @@ lab:
 
 # Lab 27 - Microsoft Sentinel Kusto Queries for Azure AD data sources
 
-## **TODO** Lab scenario
+## Lab scenario
 
-A Privileged role administrator can customize Privileged Identity Management (PIM) in their Azure Active Directory (Azure AD) organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
+Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through connecting data sources from Microsoft and third-party security solutions, you have the ability to execute security operations tasks.  In this lab exercise, you will create a Microsoft Sentinel workspace with data connectors to Azure AD for executing hunting queries using Kusto Query Language (KQL). 
 
-#### Estimated time: 15 minutes
+#### Estimated time: 30 minutes
 
-### Exercise 1 - Configure Azure AD role settings
+### Exercise 1 - Configure Microsoft Sentinel for Kusto Queries
 
-#### Task 1 - Open role settings
+#### Task 1 - Redeem Azure Pass
 
-Follow these steps to open the settings for an Azure AD role.
+1. Open a browser and navigate to: [www.microsoftazurepass.com](www.microsoftazurepass.com).
+
+1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
+
+1. Click the **Start** button to get started.
+
+1. Verify that the username is the same as the lab provider tenant account.
+
+1. Enter the Azure Pass voucher code in the **Enter Promo code** field. 
+
+1. Enter address information in the **Profile** fiels.
+    - **Address line 1**: 1 Microsoft Way
+    - **City**: Redmond
+    - **State**: Washington
+    - **ZIP code**: 98052
+
+1. Select the box to agree to the subscription agreement and select **Sign up**.
+
+    ![Agree to subscription agreement and sign up](media/azurepassactivation.png)
+
+1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
+
+1. Navigate to **Subscriptions** and verify that the **Azure Pass - Sponsorship** is showing **Active** status. 
+
+
+#### Task 2 - Create a Microsoft Sentinel workspace
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
 
-2. Search for and then select **Azure AD Privileged Identity Management.**
+1. Search for and then select **Microsoft Sentinel**. 
 
-3. In the Privileged Identity Management blade, in the left navigation, select **Azure AD roles.**
+1. Select **Create Microsoft Sentinel**.
 
-4. On the Quick start page, in the left navigation, select **Settings.**
+1. In the **Add Microsoft Sentinel to a workspace** tile, select **Create a new workspace**.
 
-    ![Screen image displaying the Azure AD roles page with the Settings menu highlighted](./media/lp3-mod3-pim-ad-roles-settings.png)
+1. In **Resource group**, select **Create new** and enter **Sentinel-RG**.
 
-5. Review the list of roles and then, in the **Search by role name**, enter **compliance**.
+1. Name the workspace.  Example - SentinelLogAnalytics.
 
-6. In the results, select **Compliance Administrator**.
+1. Select a Region close to you.
 
-7. Review the role setting details information.
+1. Select **Review + Create** and then **Create**.
 
-#### Task 2 - Require approval to activate
+1. After the Log Analytics workspace deployment completes, select your workspace and select **Add**.  This will add the workspace to Microsoft Sentinel and open Microsoft Sentinel.
 
-If setting multiple approvers, approval completes as soon as one of them approves or denies. You cannot require approval from at least two users. To require approval to activate a role, follow these steps.
+1. If prompted, select **OK** to activate the Microsoft Sentinel free trial.
 
-1. In the Role setting details page, on the top menu, select **Edit**.
+#### Task 3 - Add Azure AD as a Data source
 
-    ![Screen image displaying the top portion of the Role setting details -Compliance Administrator page with Edit highlighted](./media/lp4-mod3-pim-edit-compliance-role.png)
+1. In **Microsoft Sentinel**, navigate on the menu to **Configuration** and select **Data connectors**.
 
-2. In the Edit role setting – Compliance Administrator blade, select the **Require approval to activate** check box.
+1. In the list of Data connectors, locate **Azure Active Directory** and select.
 
-3. Select **Select approvers**.
+1. To the right, a preview tile will open.  Select **Open connector page**.
 
-4. In the Select a member pane, select your administrator account and then select **Select**.
+1. In the connector page, the instructions and next steps will be provided for the data connector. Verify that a check-mark is next to each of the **Prerequisites** to continue with the **Configuration**.
 
-    ![Screen image displaying the edit role settings blade and select a member pane with the selected members highlighted](./media/lp4-mod3-pim-add-approver.png)
+1. Under **Configuration**, check the boxes for **Sign-in logs** and **Audit logs**. Additional log sources are available but are currently in **Preview** and out of scope for this course.
 
-5. Once you have configured the role settings, select **Update** to save your changes.
+1. Select **Apply Changes**. 
 
-# Lab 29: Assign Azure AD roles in Privileged Identity Management
+1. Notification will be provided that the changes were applied successfully. Navigate to the **Microsoft Sentinel** workspace by selecting the **X** on the top right of the connector page.
 
-## Lab scenario
+1. Select **Refresh** on the **Microsoft Sentinel | Data connectors** tile and the number 1 will show in the **Connected** count.
 
-With Azure Active Directory (Azure AD), a Global administrator can make permanent Azure AD admin role assignments. These role assignments can be created using the Azure portal or using PowerShell commands.
+    >**Note**: The Azure AD data connector may take a few minutes to show in the active count. 
 
-The Azure AD Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Azure AD admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
+#### Task 4 - Run Kusto query on User activity
 
-#### Estimated time: 15 minutes
+1. In **Microsoft Sentinel**, navigate to **Logs** under the **General** menu heading.
 
-### Exercise 1 - PIM with Azure AD roles
+1. Close the **Welcome to Log Analytics** window.
 
-#### Task 1 - Assign a role
+1. A window will open with sample queries, select **Audit**, and scroll to find **User IDs**.
 
-Follow these steps to make a user eligible for an Azure AD admin role.
+1. Select **Run**. 
 
-1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
+1. This will provide a list of User IDs on Azure AD.  Since we have just created the workspace, you may not see results.  Note the format of the query.
 
-2. Search for and then select **Azure AD Privileged Identity Management.**
+1. Under **Threat management** in the menu, select **Hunting**. 
 
-3. In the Privileged Identity Management blade, in the left navigation, select **Azure AD roles.**
+1. Scroll down to find the query **Anomalous sign-in location by user account and authenticating application**.  This query over Azure Active Directory sign-in considers all user sign-ins for each Azure Active Directory application and picks out the most anomalous change in location profile for a user within an individual application. The intent is to hunt for user account compromise, possibly via a specific application vector. 
 
-4. On the Quick start page, in the left navigation, select **Roles**.
+1. Select **View query results** to run the query.
 
-5. On the top menu, select **+ Add assignments.**
+1. This may not provide results with the new workspace, but you now have seen how queries can be run to gather information or for hunting potential threats.
 
-    ![Screen image displaying Azure AD roles with Add assignments menu highlighted](./media/lp4-mod3-pim-assign-role.png)
-
-6. In the Add assignments blade, on the **Membership** tab, review the settings.
-
-7. Select the **Select role** menu and then select **Compliance Administrator**.
-
-8. You can use the **Search role by name** filter to help located a role.
-
-9. Under **Select member(s),** select **No members selected**.
-
-10. In the Select a member pane, select **Miriam Graham** and then select **Select**.
-
-    ![Screen image displaying the select a member pane with a selected member highlighted](./media/lp4-mod3-pim-add-role-assignment.png)
-
-11. In the Add assignments blade, select **Next**.
-
-12. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
-
-    - Eligible assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
-    - Active assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
-
-13. Review the remaining settings and then select **Assign**.
-
-#### Task 2 - Log in with Miriam
-
-1. Open a new InPrivate browser window.
-2. Connect to the Azure Portal (https://portal.azure.com).
-3. If it opens with a user logged in, click on their name in the upper-right corner and select **Sign in as a different account**.
-4. Log in a Miriam.
-
-   | Field | Value |
-   | :--- | :--- |
-   | Username | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
-   | Password |  Enter the tenant's admin password(Refer the Lab Resources tab to retrieve the tenant admin password) |
-
-5. Close the **Welcome to Azure dialog**.
-6. From the **Search resource, services, and docs** bar look for Azure Active Directory, and open the blade.
-7. On the **Overview** page, look for the **My feed**.
-8. Select **View Profile** under Miriam Graham's name; this with open Miriam's profile page.
-9. Select **Assigned roles** then select **Eligible assignments**.
-10. Notice that the **Compliance Administrator** role is now available to Miriam.
-
-#### Task 3 - Activate your Azure AD roles
-
-When you need to assume an Azure AD role, you can request activation by opening **My roles** in Privileged Identity Management.
-
-1. From the **Search, resources, services, and docs** bar, look for Privileged.
-2. Open the **Azure AD Privileged Identity Management** blade.
-3. On the Privileged Identity Management blade, in the left navigation menu, select **My roles.**
-
-4. In the My roles blade, review the list of eligible assignments.
-
-    ![Screen image displaying My roles with eligible role assignments highlighted](./media/lp4-mod3-my-roles.png)
-
-5. In the Compliance Administrator role row, select **Activate**.
-
-6. In the Activate – Compliance Administrator pane, select **Additional verification required** and then follow the instructions to provide additional security verification. You are required to authenticate only once per session.
-
-    ![Screen image displaying a popup to activate the compliance administrator](./media/lp4-mod3-pim-activate-role.png)
-
-    **Verification** - Based on our current lab environment configuration, you will be required configure MFA and log in successfully.
-
-7. After you have completed the additional security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the **This is my justification for activating this role**.
-
-    **Important Note** - the principal of least prvilege, you should only activate the account for the amount of time you need it.  If the work needed to be done, only takes 1.5 hours, then set the duration to two hours.  Similarily, if you know that you won't be able to do the work until after 3pm, choose a Custom activation time.
-
-8. Select **Activate**.
-
-#### Task 4 - Assign a role with restricted scope
-
-For certain roles, the scope of the granted permissions can be restricted to a single admin unit, service principal, or application. This procedure is an example if assigning a role that has the scope of an administrative unit.
-
-1. Remember to close out the browser windows for MiriamG, then open the Azure Portal as your administrator account.
-2. Browse to the Privileged Identity Management blade, and in the left navigation menu, select Azure **Azure AD roles.**
-3. Select **Roles**.
-4. In the Roles blade, on the top menu, select **+ Add assignments.**
-
-5. In the Add assignments blade, select the **Select role** menu and then select **User administrator.**
-
-6. Select the **Scope type** menu and review the available options. For now, you will use the **Directory** scope type.
-
-   **Tip** - Go to [https://docs.microsoft.com/en-us/azure/active-directory/roles/admin-units-manage](https://docs.microsoft.com/en-us/azure/active-directory/roles/admin-units-manage) for more information about the administrative unit scope type.
-
-7. As you did when assigning a role without a restricted scope, you would add members and complete the settings options. For now, select **Cancel**.
-
-#### Task 5 - Update or remove an existing role assignment
-
-Follow these steps to update or remove an existing role assignment.
-
-1. In the Open Azure AD Privileged Identity Management > Azure AD roles blade, in the left navigation, select **Assignments**.
-
-2. In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
-
-    ![Screen image displaying the options listed in the action column of the Compliance Adminsitrator](./media/lp4-mod3-pim-edit-role-assignments.png)
-
-3. Select **Update** and review the options available in the Membership settings pane. When complete, close the pane.
-
-4. Select **Remove**.
-
-5. In the **Remove** dialog box, review the information and then select **Yes**.
