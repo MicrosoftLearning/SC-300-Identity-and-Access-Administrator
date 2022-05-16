@@ -115,6 +115,7 @@ Part of your duties as an Azure AD administrator is to create different types of
 
 
 ### Exercise 3 - Change group license assignments
+# RobertS --> Either we don't need this exercise - because it is the same as the Exercise with DeliaD above or we need to switch DeliaD to be a INHERITED license.  Then add the sg-SC300-O365 and put licenses and then add DeliaD to it, so we can show that she has a Direct Windows 11.  Or something like that.
 
 #### Task - Use Azure AD portal to make changes
 
@@ -157,6 +158,8 @@ As your company grows, manually group management is too time consuming. Since st
 
 6. Select the **Membership type** menu and then select **Dynamic User**.
 
+# RobertS --> Not a requirement, but good hygene to add an owner of the group?
+
 7. Under **Dynamic user members**, select **Add dynamic query**.
 
 8. On the right above the **Rule syntax** box, select **Edit**.
@@ -178,6 +181,7 @@ As your company grows, manually group management is too time consuming. Since st
 12. On the New group page, select **Create** to create the group.
 
 #### Task 2 - Verify the members have been added
+# RobertS --> From what I can tell, it takes up to 15 minutes for the membership to be populates on the Skillable lab environment.  Although for my testing today, it only took about 2 minutes.  Might want a note here for that.
 
 1. Click on the **Home** `Azure Active Directory`.
 2. Launch **Azure Active Directory**.
