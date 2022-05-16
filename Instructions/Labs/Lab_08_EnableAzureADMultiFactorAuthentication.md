@@ -42,6 +42,7 @@ To improve security in your organization, you've been directed to enable multi-f
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
 1. Switch back to the Azure portal and select **Azure Active Directory** > **Security** > **Conditional access**.
+# RobertS --> need to replace the ">" with a then or equivalent for screen readers.
 
 2. On the menu, click **+ New policy**. From the drop down select **Create new policy**.
 
@@ -93,6 +94,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 4. Enter **DeliaD@** `<<your domain address>>`.
 5. Enter the password = Enter the Global admin password of the tenant (Note : Refer the 'Lab Resources' tab to retrieve the admin password).
 6. At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Click the **Try Again** option in this case.
+# RobertS --> I know you copied this lab, and it works.  But the entire step-6 here probably should not be a lab step; but some sort of callout.
 
 You can see that because of the Conditional Access rule we created for Delia, MFA is reguired to launch Office 365 home page.
 
