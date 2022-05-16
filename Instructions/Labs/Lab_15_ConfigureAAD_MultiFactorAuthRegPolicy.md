@@ -15,6 +15,8 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 ### Exercise 1 - Set up MFA registration policy
 
+# RobertS - Passed without any issue.
+
 #### Task 1 - Policy configuration
 
 1. Sign in to the [https://portal.azure.com]( https://portal.azure.com) using a Global administrator account.
@@ -56,3 +58,5 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 1. Select **Save**.
 
 This will require the user to complete the MFA registration the next time they attempt to login.
+
+# RobertS - should we make a simple task that has the user log in to the Azure Portal to see the MFA requirement?  Not sure if it adds value or not.  They might or might-not be surprised
