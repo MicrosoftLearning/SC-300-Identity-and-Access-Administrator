@@ -13,6 +13,8 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 #### Estimated time: 10 minutes
 
+# RobertS - Passed without issue.  See the Commit-notes for a question. 
+
 ### Exercise 1 - Enable User risk policy
 
 #### Task 1 - Configure the policy
