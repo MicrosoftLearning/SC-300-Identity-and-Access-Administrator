@@ -31,6 +31,8 @@ Based on your organizational requirements, you can customize the Azure AD smart 
 
     ![Screen image displaying the Authentication methods blade and the highlighted selections to browse to Password authentication](./media/lp2-mod3-browse-to-password-protection.png)
 
+# RobertS -- This lab worked without issue.  I know it was a carry over lab without any real change.  I was curious if you see value in actually having someone test the lock-out.  Too many wrong passwords or something.  So we show it works.  Or is just enabling it enough?
+
 6. In the Password protection settings, in the **Lockout duration in seconds** box, set the value to **120**.
 
 7. Next to **Mode**, select **Enforced**.
