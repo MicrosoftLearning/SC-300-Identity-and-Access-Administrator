@@ -16,6 +16,8 @@ You must configure the Azure Active Directory security default settings in your 
 
 ### Exercise 1 - Disabling Security Defaults
 
+# RobertS -- This lab cannot work; because we have created at least on Conditional Access Policy earlier.  So we either need to move it much earlier in the list of labs; and we would need to remove the default Conditional Access policy that this tenant has on Skillable.  I know this an already existing lab.  Without disabling existing conditional access polocies, turning on Security Default, going through the polocies, and then turning it back off, I don't know how much value there is.  I  had this as a lab because there are two question on the exam.
+
 #### Task 1 - Turn off security defaults
 
 To enable security defaults in your directory:
