@@ -32,6 +32,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
     **NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Azure AD does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
 
 6. When complete, select **Invite**.
+# RobertS --> Do we want to invite a user here?  Just to show how on the User pages it shows GUEST and MEMBER as the differen types of user.  You can just make up a name similar to the PowerShell script. Something like First Name = SC300External, Last Name = LabUser, email = sc300externaluser1@contoso.com.  Again, just so you can see it create something.
 
 7. On the Users blade, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
 
