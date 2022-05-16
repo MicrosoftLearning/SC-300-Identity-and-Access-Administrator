@@ -34,6 +34,7 @@ You need to identify and update the different properties associated with your te
     ```
 
 1. Select **Add domain** to add the subdomain.
+# RobertS --> You do get a complete screen that allows you to MAKE PRIMARY or Delete.  We don't want to do either of these; but might want to mention in the lab steps.
 
 
 ### Exercise 2 - Changing the tenant display name
@@ -98,6 +99,7 @@ You add your organization's privacy information in the **Properties** area of 
 - **Privacy statement URL** -  `https://github.com/R-C-Stewart/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf`
      - In sample Privacy PDF is provided in your labs directory.
      - Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
+# RobertS --> Too funny that I remember when I added this step, but never realized that it pointed to my own GitHub.  We should probably move this into the AllFiles of the actual lab repo; and update the steps URL once published to be in the right location.
 
     **IMPORTANT** -If you don't include either your own privacy statement or your privacy contact, your external guests will see text in the Review Permissions box that says, **<your org name\>** has not provided links to their terms for you to review. For example, a guest user will see this message when they receive an invitation to access an organization through B2B collaboration.
 
