@@ -22,6 +22,8 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) can manag
 
 You need to make a user eligible for an Azure resource role.
 
+# RobertS - Lab worked for me without any real issue.  There was a small part of me that wanted to repull the graphics using the Skillable lab environment, so we show exactly what the user sees
+
 #### Estimated time: 10 minutes
 
 ### Exercise 1 - PIM with Azure resources
