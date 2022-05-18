@@ -52,3 +52,5 @@ Your organization requires that only specific users or groups have access to ent
     ![Screen image displaying adding a user account assignment to an app with the Select button highlighted ](./media/lp3-mod1-add-app-assignment.png)
 
 6. Select **Assign**.
+
+# RobertS -- worked without issue.
