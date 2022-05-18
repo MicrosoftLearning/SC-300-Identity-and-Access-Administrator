@@ -7,6 +7,8 @@ lab:
 
 # Lab 16 - Using Azure Key Vault for Managed Identities
 
+# RobertS - Key Vault appears to require a subscription.  At least it did for me.  Probably just add a note to the top that say subscription required.
+
 ## Lab scenario
 
 When you use managed identities for Azure resources, your code can get access tokens to authenticate to resources that support Azure AD authentication.  However, not all Azure services support Azure AD authentication. To use managed identities for Azure resources with those services, store the service credentials in Azure Key Vault, and use the managed identity to access Key Vault to retrieve the credentials.
@@ -31,6 +33,8 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Fill out all required information. Make sure that you choose the subscription and resource group that you're using for this tutorial.
 
+# RobertS - do we want to use the traditional table structure for Field / Value they need to input.  As for the resource group - I often have them make a resource group like sc300KeyVaultrg and then have them delete it at the end of the lab, so they don't burn resources.  Unless you want to RG or the Key Vault for a later lab.
+
 1. Select **Review + create**.
 
 1. Select **Create**.
@@ -41,8 +45,9 @@ When you use managed identities for Azure resources, your code can get access to
 1. Navigate to your newly created Key Vault.
 
 1. Select **Secrets**, and select **Add**.
+# RobertS - I did not get an Add button.  Just the Generate/Import.
 
-1. Select **Generate/Import**.
+1. Select **+ Generate/Import**.
 
 1. In the Create a secret screen, from Upload options leave Manual selected.
 
@@ -52,17 +57,20 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **Create** to create the secret.
 
-#### Task 3 - Grand access to Key Vault
+#### Task 3 - Grant access to Key Vault
 
 1. Navigate to your newly created Key Vault
 
 1. Select **Access Policy** from the menu on the left side.
+# RobertS - I have Acces polocies as the menu item.
 
 1. Select **Add Access Policy**.
 
 1. In the Add access policy section, under Configure from template (optional), choose Secret Management from the pull-down menu.
 
 1. Choose **Select Principal**, and in the search field enter the name of the VM you created earlier.  Select the VM in the result list and choose Select.
+# RobertS - this is one of the odd one where you have None selected, and that is what you are actually selecting; not the Select Principal title.
+# RobertS - I am not sure what VM is being talked about here.  We created a secret earlier in this lab and the Key Vault; but no VMs.  If you are referencing a VM from a previous lab - you probably need to synchronize naming of the VM, to make sure that it is available?
 
 1. Select **Add**.
 
@@ -94,3 +102,5 @@ When you use managed identities for Azure resources, your code can get access to
     'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16…
     ```
 1. This secret can be used to authenticate to services that require a name and password.
+
+# RobertS - I was not able to get this lab to work, mainly because of the missing VM.  I have used the Metadata Instance at least once before with success, so assume it is a doable lab.
