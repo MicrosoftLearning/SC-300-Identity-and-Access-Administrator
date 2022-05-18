@@ -35,6 +35,7 @@ Registering your application establishes a trust relationship between your app a
 1. In the list of apps discovered, find and select an app with a low risk score, such as **Pinterest**.
 
 1. A page for that app will open to provide more information on the app and the **Cloud app score**.  On the top right of the page, select the **Actions** drop-down arrow and select **Add to Conditional Access App Control** under **Deploy app**.
+# RobertS - I had to open a sub-menu of More Cloud App Actions
 
 1. Another window will open for you to **Add a SAML application with your identity provider**.  
 
@@ -43,10 +44,13 @@ Registering your application establishes a trust relationship between your app a
     **Note**: Having Conditional Access app control is a requirement to setting up Access policies in **Microsoft Defender for Cloud Apps**.
 
 1. This task requires a **SAML** application provider to be created within your tenant.  Review the list of applications and note that Azure AD is not in the list, but you can select **Manage app with Azure AD**.
+# RobertS - This step was confusing.  You opened the SAML dialog box shown in the pricture above this comment, and that worked. If you use the dropdown I agree that you don't see Azure AD.  But you also don't see Manage with Azure AD in this SAML dialog.  You have to close the dialog; and go back to the ACTIONS mention, then choose More Actions, and then you can find Manage with Azure AD.
 
 1. Select **Manage app with Azure AD**. **Note**: the **Azure AD Gallery** and a tile will open for **Workplace for Facebook**.
+# RobertS - So when I open the Manage app with Azure AD it does go to the AD Galleary.  But it is highlighting the PINTEREST page, because that is what we had open in the Defender for Cloud Apps page.  There does not appear to be anything I can do here but close the Pinterest page.  The Sign-up for Pinterest is greyed out.
 
 1. Select **Create**.  This will allow users to connect their LinkedIn profile into their Azure AD user account.
+# RobertS - If I close the Pinterest dialog in the Azure AD Gallery - then I don't have a CREATE option.  I do get a +Create your own application item.  Is that what you want me to click.  It does not have anything to do with Facebook, which I see in the next step.  If you go back to the Defender for Cloud Apps page (close the gallery) and switch to Facebook.  Then the steps seem to match again.
 
 1. This creates a single sign-on connection for **Facebook** utilizing **Azure AD**.  After the application is added, a new window will open with the **Application ID** and **Object ID**.  These will be needed for completing single sign on setup.
 
@@ -60,6 +64,7 @@ Registering your application establishes a trust relationship between your app a
 1. Locate **+ Create Policy** and select the drop-down arrow, and select **File policy**.
  
 1. Unlike a **Conditional Access policy** within Azure AD, **Microsoft Defender for Cloud Apps** policies provide templates that you can utilize to create your policy and provide several pre-configured filters.  For this exercise, we will select the File shared with personal email addresses template.   
+# RobertS - probably want to bold the template name.  I read the instruction several times before I keyed on the fact that it was a name.
 
 1. When asked to confirm that this will overwrite all current values, select apply template. 
 
@@ -80,3 +85,5 @@ Registering your application establishes a trust relationship between your app a
 1. Governance actions **SharePoint** are the same as **OneDrive for Business**.  Again, leave these as the defaults. 
 
 1. The final action is to create the policy.  There is a note in the portal that clarifies that this policy is only scanning online files and folders, nothing external per Microsoft privacy standards. 
+
+# RobertS - Is there any way to actually test this policy by having a user try to send an email message with some attachment?
