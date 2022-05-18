@@ -44,3 +44,6 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 1. Once the application has been blocked as unsanctioned, the application will not be accessible through browser, in-private browser, or store download.
 
+# RobertS -- The lab steps worked; however I never got blocked from DropBox.  I have seen this work in the past, so there must be something about timing when running in the Skillable environment.
+
+
