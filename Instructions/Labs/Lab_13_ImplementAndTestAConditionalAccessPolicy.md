@@ -9,41 +9,17 @@ lab:
 
 ## Lab scenario
 
-You must configure the Azure Active Directory security default settings in your organization.
-    **Note**  You can turn on / off Security Defaults, just to find out where the menu option is.  But the key points to remember are from the training.  Note that if you turn on Security Defaults, and do not disable it, later labs involving Conditional Access will not work.
+Your organization needs to be able to limit user access to its internal applications. You must deploy an Azure Active Directory conditional access policy.
+
+>**Note**  For Conditional Access Policies, you can turn off Security Defaults, the key points to remember are from the training.  Additional information on Security defaults can be found at this link: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
 #### Estimated time: 30 minutes
 
-### Exercise 1 - Disabling Security Defaults
 
-# RobertS -- This lab cannot work; because we have created at least on Conditional Access Policy earlier.  So we either need to move it much earlier in the list of labs; and we would need to remove the default Conditional Access policy that this tenant has on Skillable.  I know this an already existing lab.  Without disabling existing conditional access polocies, turning on Security Default, going through the polocies, and then turning it back off, I don't know how much value there is.  I  had this as a lab because there are two question on the exam.
-
-#### Task 1 - Turn off security defaults
-
-To enable security defaults in your directory:
-
-1. Browse to [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
-
-1. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
-
-    ![Azure portal menu with Azure Active Directory selected](./media/azure-portal-menu-aad.png)
-
-1. In the left navigation, in the Manage section, select **Properties**.
-
-1. At the bottom of the Properties blade, select **Manage Security defaults**.
-
-1. Set the **Enable security defaults** toggle to **No**.
-
-    ![Screen image of security defaults being disabled and selection of the required reason for disabling. In this case, the organization is using Conditional Access.](./media/security-defaults-disable-before-conditional-access.png)
-
-1. Select **Save**.
-
-
-### Exercise 2 - Set a conditional access policy to block DebraB from accessing Yammer
+### Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
 
 #### Task 1 -- Confirm DebraB has access to Yammer
 
-Your organization needs to be able to limit user access to its internal applications. You must deploy an Azure Active Directory conditional access policy.
 
 1. Launch a new InPrivate browser window.
 2. Connect to [https://www.office.com](https://www.office.com) 
@@ -54,7 +30,7 @@ Your organization needs to be able to limit user access to its internal applicat
     | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
     | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
     
-4. Click on the Yammer icon to see that it loads correctly.
+4. Select on the Yammer icon to see that it loads correctly.
 
 #### Task 2 -  Create a conditional access policy
 
@@ -64,13 +40,13 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 2. Open the portal menu and then select **Azure Active Directory**.
 
-3. On the Azure Active Directory blade, under **Manage**, select **Security**.
+3. On the Azure Active Directory page, under **Manage**, select **Security**.
 
-4. On the Security blade, in the left navigation, select **Conditional access**.
+4. On the Security page, in the left navigation, select **Conditional access**.
 
 5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
 
-    ![Screen image displaying the Conditional Access blade with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
+    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
 6. In the **Name** box, enter **Block Yammer for DebraB**.
 
@@ -118,21 +94,21 @@ You should test your conditional access policies to ensure they working as expec
     
      **Note** - If your are auto-logged into Yammer as DebraB, then you will need to manually log out.  You credentials / access were cached.  Once you log out and sign-in, your Yammer session should deny access.
 
-4. Close the tab and return to the Conditional Access blade.
+4. Close the tab and return to the Conditional Access page.
 
 5. Select the **Yammer conditional access** policy.
 
 6. Under **Enable policy**, select **Off** and then select **Save**.
 
-### Exercise 3 - Test conditional access policies with "What if"
+### Exercise 2 - Test conditional access policies with "What if"
 
 #### Task - Use What if to test conditional access policies
 
 1. Open the portal menu and then select **Azure Active Directory**.
 
-1. On the Azure Active Directory blade, under **Manage**, select **Security**.
+1. On the Azure Active Directory page, under **Manage**, select **Security**.
 
-1. On the Security blade, in the left navigation, select **Conditional access**.
+1. On the Security page, in the left navigation, select **Conditional access**.
 
 1. Select **What if**.
 
@@ -146,7 +122,7 @@ You should test your conditional access policies to ensure they working as expec
 
 This allows you to test the policies and their affectiveness before enabling the policies.
 
-### Exercise 4 - Configure sign in frequency controls using a conditional access policy
+### Exercise 3 - Configure sign in frequency controls using a conditional access policy
 
 #### Task - User the Azure Portal to configure conditional access
 
@@ -156,13 +132,13 @@ As part of your company's larger security configuration, you must test a conditi
 
 2. Open the portal menu and then select **Azure Active Directory**.
 
-3. On the Azure Active Directory blade, under **Manage**, select **Security**.
+3. On the Azure Active Directory page, under **Manage**, select **Security**.
 
-4. On the Security blade, in the left navigation, select **Conditional access**.
+4. On the Security page, in the left navigation, select **Conditional access**.
 
 5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
 
-    ![Screen image displaying the Conditional Access blade with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
+    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
 6. In the **Name** box, enter **Sign in frequency**.
 

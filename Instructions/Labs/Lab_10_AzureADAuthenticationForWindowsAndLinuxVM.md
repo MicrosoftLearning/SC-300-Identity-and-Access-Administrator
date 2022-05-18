@@ -6,9 +6,9 @@ lab:
 ---
 
 # Lab 10 - Azure AD Authentication for Windows and Linux Virtual Machines
-## **TODO** Lab scenario
+## Lab scenario
 
-The company has decided to empower the employees and enable self-service password reset. You must configure this setting in your organization.
+The company has decided that Azure Active Directory should be used to login to virtual machines for remote access.  This lab will show how this can be setup for Windows and Linux virtual machines.
 
 #### Estimated time: 30 minutes
 
@@ -20,7 +20,7 @@ The company has decided to empower the employees and enable self-service passwor
 
 1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
 
-1. Click the **Start** button to get started.
+1. Select the **Start** button to get started.
 
 1. Verify that the username is the same as the lab provider tenant account.
 
@@ -83,7 +83,7 @@ The company has decided to empower the employees and enable self-service passwor
 
 1. Select **+ Create a resource**.
 
-1. Click on **Create** under **Ubuntu Server 18.04 LTS** in the Popular view.
+1. Select on **Create** under **Ubuntu Server 18.04 LTS** in the Popular view.
 
 1. On the **Management** tab, check the box to enable **Login with Azure Active Directory (Preview)**.
 

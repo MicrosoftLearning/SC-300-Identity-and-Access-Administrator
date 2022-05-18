@@ -22,7 +22,6 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) can manag
 
 You need to make a user eligible for an Azure resource role.
 
-# RobertS - Lab worked for me without any real issue.  There was a small part of me that wanted to repull the graphics using the Skillable lab environment, so we show exactly what the user sees
 
 #### Estimated time: 10 minutes
 
@@ -34,19 +33,19 @@ You need to make a user eligible for an Azure resource role.
 
 2. Search for and then select **Azure AD Privileged Identity Management.**
 
-3. In the Privileged Identity Management blade, in the left navigation, select **Azure resources.**
+3. In the Privileged Identity Management page, in the left navigation, select **Azure resources.**
 
 4. On the top menu, select **Discover resources**.
 
-5. In the Azure resources – Discovery blade, select your subscription and then, on the top menu, select **Manage resource**.
+5. In the Azure resources – Discovery page, select your subscription and then, on the top menu, select **Manage resource**.
 
-    ![Screen image displaying the Azure resources discovery blade with the subscription and manage resource highlighted](./media/lp4-mod3-pim-azure-resource-management.png)
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lp4-mod3-pim-azure-resource-management.png)
 
 6. In the **Onboarding selected resource for management** dialog box, review the information and then select **OK**.
 
-7. When onboarding completes, close the Azure resources – Discovery blade.
+7. When onboarding completes, close the Azure resources – Discovery page.
 
-8. In the Azure resources blade, select the subscription.
+8. In the Azure resources page, select the subscription.
 
     ![Screen image displaying the recently added Azure resource](./media/lp4-mod3-pim-az-resource-overview.png)
 
@@ -54,7 +53,7 @@ You need to make a user eligible for an Azure resource role.
 
 10. On the top menu, select + **Add assignments**.
 
-11. In the Add assignments blade, select the **Select role** menu and then select **API Management Service Contributor.**
+11. In the Add assignments page, select the **Select role** menu and then select **API Management Service Contributor.**
 
 12. Under **Select member(s),** select **No member selected**.
 

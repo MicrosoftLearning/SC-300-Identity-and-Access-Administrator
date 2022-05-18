@@ -60,14 +60,14 @@ Your company recently hired a new employee who will perform duties as an applica
     | New Password| Pa$$w.rd1234|
     | Confirm Password| Pa$$w.rd1234|
 
-4. If you see a **Welcome to Microsoft Azure** tour dialog, click the **Maybe Later** button.
+4. If you see a **Welcome to Microsoft Azure** tour dialog, Select the **Maybe Later** button.
 
 5. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
-7. Click on **+ New application**. Notice that **+ Create your own application** is unavailable.
+7. Select on **+ New application**. Notice that **+ Create your own application** is unavailable.
 # RobertS --> I think you need to close the New Application page to get back to the Enterprise Apps menu, before the next step.
 
-9. Try clicking on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
-10. Click on **ChrisG** name in the upper-right corner and sign out.
+9. Try Selecting on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
+10. Select on **ChrisG** name in the upper-right corner and sign out.
 
 
 ### Exercise 2 - Assign the application admin role and create an app
@@ -77,19 +77,18 @@ Your company recently hired a new employee who will perform duties as an applica
 Using Azure Active Directory (Azure AD), you can designate limited administrators to manage identity tasks in less-privileged roles. Administrators can be assigned for such purposes as adding or changing users, assigning administrative roles, resetting user passwords, managing user licenses, and managing domain names.
 
 1. If you are not already logged in as a Global Administrator role, open the Azure Portal and log in.
-2. Navigae to Azure Active Directory blade.
-# RobertS --> We are trying to limit the use of blade.  I generally use page or app.
-
-4. Click on **Users** under the Manage section of the menu.
-5. Click on **Chris Green** account.
-6. Choose **Assigned roles** from the Manage menu.
-7. Click **+ Add assignments** and mark the `Application administrator` role.
-8. Click **Add**
-# RobertS --> This one is a PROBLEM-CHILD.  If you have added your Azure AD Premium 2, then you get the PIM (Privileged Identity Manager UI).  So your steps and UI are wrong for this one.  You get a Next button and have to pick if Eligible / Permanent.  I don't have a good fix, as it is unpredictable on Skillable lab platform when you will get standard user role assignment versus PIM.  Unless you know a way in the UI to force it not to use PIM.
+2. Navigate to Azure Active Directory page.
+3. Select on **Users** under the Manage section of the menu.
+4. Select on **Chris Green** account.
+5. Choose **Assigned roles** from the Manage menu.
+6. Select **+ Add assignments** and mark the `Application administrator` role.
+7. Select **Add**
 
     ![Assigned roles page - showing the selected role](./media/directory-role-select-role.png)
 
-8. Click the **Refesh** button.
+>**Note**: If the lab environment has already activated Azure AD Premium P2, Privileged Identity Management (PIM) will be enabled and you wll need to select **Next** and assign a Permanent role to this user.
+
+8. Select the **Refesh** button.
 
    **Note - The newly assigned Application administrator role appears on the user’s Assigned roles page.**
 
@@ -103,10 +102,10 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
     | User name| ChrisG@`your domain name.com`|
     | Password| Pa$$w.rd1234|
 
-3. If you see a **Welcome to Microsoft Azure** tour dialog, click the **Maybe Later** button.
+3. If you see a **Welcome to Microsoft Azure** tour dialog, Select the **Maybe Later** button.
 4. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
 5. Notice that **+ New Application** is available now.
-6. Click **+ New Application**
+6. Select **+ New Application**
 
    **Note - This role now has the ability to add applications to the tenant.  We will experiment more with this feature in later labs.**
 
@@ -121,13 +120,13 @@ This task will use an alternative method to remove the assigned role; it will us
 1. If you are not already logged in as your Global Admin, launch the Azure Portal and log in now.
 2. In the search box type **Azure Active Directory** and launch Azure AD.
 3. In **Azure Active Directory**, select **Roles and administrators**, and then select the **Application administrator** role from the list.
-# RobertS --> Same challenge as above, I get the PIM interface, instead of the normal UI.
 
-   **Note - You could select multiple roles at this point to perform some bulk activities.**
+>**Note**: If the lab environment has already activated Azure AD Premium P2, Privileged Identity Management (PIM) will be enabled and you wll need to select **Next** and assign a Permanent role to this user.
+
 
 4. On the **Application administrator | Assignments** page you should see Chris Green's name listed.
 5. Put a check in the box next to Chris Green.
-6. Click **X Remove assignments** from the options at the top of the dialog.
+6. Select **X Remove assignments** from the options at the top of the dialog.
 7. Answer **Yes** when the confirmation box opens.
 8. Close Azure Active Directory.
 
@@ -155,15 +154,15 @@ After the users have been created, you will be prompted that the creation has su
 
 #### Task 2 - Bulk addition of users using PowerShell
 
-1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator.
-# RobertS --> In the Skillable platform I get Windows PowerShell, Windows PowerShell ISE, and PowerShell 7 to launch.  I am pretty sure you want Windows PowerShell, but think we should be specific.
+1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
+
+>**Note**: Select PowerShell and not PowerShell ISE.
 
 1. You will need to add the Azure AD PowerShell module, if you have not used it before.  Run the command: Install-Module AzureAD.  When prompted, select “Y” to continue.
 
     ```
-    Install-Module Azure AD
+    Install-Module AzureAD
     ```
-# RobertS --> I think you wanted AzureAD without a " " like the line below.
 
 1. Confirm that the module installed correctly by running the command:  
 
@@ -192,19 +191,19 @@ After the users have been created, you will be prompted that the creation has su
     ```
 
     ```
-    $PasswordProfile.Password = "TempPW" 
+    $PasswordProfile.Password = "Pass@word1" 
     ```
 
 1. You are ready to create a new users.  The following command will be populated with the user information and run.  If you have more than one user to add, you can use a notepad txt file to add the user information and copy/paste into PowerShell. 
 
     ```
-    New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser"
+    New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@labtenantname.com" -AccountEnabled $true -MailNickName "Newuser"
     ```
-# RobertS --> @contoso.com is not a valid domain name; you have to use the Skillable provided tenant name.  Also, the password does not meet complexity standards so the command fails that way also; I updated to "Pass@word1" and it worked.
+>**Note**: Replace **labtenantname.com** with the **onmicrosoft.com** name assigned by the lab tenant.
 
 ## Experiment with managing users
 
-You can add and remove users with the Azure AD blade.  However, users can be created and roles can be assigned using the scripting.  Experiment with giving the Chris Green user account a different role using script. 
+You can add and remove users with the Azure AD page.  However, users can be created and roles can be assigned using the scripting.  Experiment with giving the Chris Green user account a different role using script. 
  
 
 ### Exercise 5 - Remove a user from Azure Active Directory
@@ -219,22 +218,19 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 3. In the **Users** list, select the check box for a user that will be deleted. For example, select **Chris Green**.
 
-    **Tip** - Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s blade, you will only be managing that individual user.
+    **Tip** - Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user’s page, you will only be managing that individual user.
 
     ![Screen image displaying the All users users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.](./media/lp1-mod2-remove-user.png)
 
-4. With the user account selected, on the menu, select **Delete user**.
-# RobertS --> The UI only has Delete (not Delete user) now.
+4. With the user account selected, on the menu, select **Delete**.
 
-5. Review the dialog box and then select **OK**.
-# RobertS --> And the confirmation is Yes / No.
+5. Review the dialog box and then select **Yes**.
 
 #### Task 2 - Restore a deleted user
 
-1. In the Users blade, in the left navigation, select **Deleted users**.
+1. In the Users page, in the left navigation, select **Deleted users**.
 
-2. Review the list of deleted users and select the user you just deleted.
-# RobertS --> Do we want to just say "Chris Green" since that is the user we just asked them to delete?
+2. Review the list of deleted users and select **Chris Green**.
 
     **Important** - By default, deleted user accounts are permanently removed from Azure Active Directory automatically after 30 days.
 
@@ -257,35 +253,35 @@ Some user accounts in your organization will not be provided all available produ
 
 2. In the left navigation, under **Mange**, select **Users**.
 
-3. In the Users blade, enter **Raul** into the search box.
+3. In the Users page, enter **Raul** into the search box.
 
-4. Click on **Raul Razo**
+4. Select on **Raul Razo**.
+
 5. Review Raul's profile and ensure he has a Usage Location set.
 
     **Warning** - To assign a license to a user, the user must assigned a usage location.
 
-6. Click the **Licenses** menu item in the left-hand menu.
+6. Select the **Licenses** menu item in the left-hand menu.
+
 7. Ensure that Raul has "No license assignments found."
 
-#### Task 2 - Update user license assignments
-# RobertS --> Not sure this would be split into two tasks.  In the original version (group licensing lab, 3 I think) it had you check the No Licenses, then log on as the user and try to launch office to watch it fail.  Then add the license in a task.  Then try again to launch office to show it works.  I have gotten through enough labs yet to see.  But if that is not the plan; then you can probably just have 1 task here.
 
 1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
 2. In the left navigation, under **Manage**, select **Users**
 
-3. In the Users blade, select **Raul Razo**.
+3. In the Users page, select **Raul Razo**.
 
 4. In the left navigation, select **Licenses**.
 
 5. Select the **+ Assignments** button. 
 
-6. On the Update license assignments blade, select the check box for a **Windows 10/11 Enterprise E3** license.
+6. On the Update license assignments page, select the check box for a **Windows 10/11 Enterprise E3** license.
 
     ![Screen image displaying the Update license assignments page and license options highlighted](./media/lp1-mod2-assign-user-license-options.png)
 
 7. When complete, select **Save**.
-8. At the top of the screen click `Home > Contoso Marketing > User >` **Raul Razo**
-# RobertS --> Note that we at this point the Domain / Tenant name is just Contoso, not Contoso Marketing in the Skillable platform.
+
+8. At the top of the screen Select **Home**, then select **Contoso**, then select **User**, and select **Raul Razo**.
 
 10. Notice that the license has been assigned.

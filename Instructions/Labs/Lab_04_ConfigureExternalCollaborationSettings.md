@@ -20,12 +20,12 @@ You must enable external collaboration settings for your organization for approv
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a tenant administrator.
 2. Select **Azure Active Directory**.
 3. Select **External Identities > External collaboration settings**.
-4. Click the **Email one-time passcode** notification link you see near the top of the screen.
+4. Select the **Email one-time passcode** notification link you see near the top of the screen.
 
     **Note** - A one-time passcode is a very secure way to invite a user to join your organization.
 
-5. Click on `Home > Contoso Marketing >` **External Identities** to return to the previous screen.
-6. Click **External Collaboration Settings** on the left
+5. Select on `Home > Contoso Marketing >` **External Identities** to return to the previous screen.
+6. Select **External Collaboration Settings** on the left
 
 7. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
 

@@ -21,7 +21,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
 
-1. Click the **Start** button to get started.
+1. Select the **Start** button to get started.
 
 1. Verify that the username is the same as the lab provider tenant account.
 
@@ -55,7 +55,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
    
    > **Note**: The VM that is required for this lab is **DC1**.  If you are using an Azure Pass, there is a limitation of 2 VMs, so the Client VM may fail.  This is not needed for this lab.
 
-3. On the **Custom deployment** blade, specify the following settings, then select **Review + Create** then **Create**.
+3. On the **Custom deployment** page, specify the following settings, then select **Review + Create** then **Create**.
 
     -   Subscription: The name of the target Azure subscription where you want to provision the lab environment Azure VMs.
 
@@ -178,9 +178,9 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 4. On the **Create Users/Group for Active Directory Demo/Test Environment** page, select the **CreateDemoUsers.csv** link (directly above the PowerShell code section) and save the corresponding csv file to the same location as the **CreateDemoUsers.ps1** file.
 
-5. Within the Remote Desktop session to **DC1**, start File Explorer, navigate to the folder where you downloaded both files, right-click on the file **CreateDemoUsers.ps1**, select **Properties**, in the **CreateDemoUsers.ps1 Properties** dialog box, check the **Unblock** checkbox and select **OK**.
+5. Within the Remote Desktop session to **DC1**, start File Explorer, navigate to the folder where you downloaded both files, right-Select on the file **CreateDemoUsers.ps1**, select **Properties**, in the **CreateDemoUsers.ps1 Properties** dialog box, check the **Unblock** checkbox and select **OK**.
 
-6. Within the File Explorer window, right-click on the file **CreateDemoUsers.ps1** again and select **Edit**. 
+6. Within the File Explorer window, right-Select on the file **CreateDemoUsers.ps1** again and select **Edit**. 
 
 7. In the **Administrator: Windows PowerShell ISE** window, change line **148** from:
 
@@ -248,11 +248,11 @@ In this task, you will create an Azure Active Directory tenant with the followin
 
 3. On the lab computer, in the Azure portal, select **+ Create a resource**.
 
-4. On the **New** blade, in the **Search the Marketplace** text box, type **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
+4. On the **New** page, in the **Search the Marketplace** text box, type **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
 
-5. On the **Azure Active Directory** blade, select **Create**.
+5. On the **Azure Active Directory** page, select **Create**.
 
-6. On the **Create directory** blade, specify the following settings and select **Create**:
+6. On the **Create directory** page, specify the following settings and select **Create**:
 
     -   Organization name: **Contoso**
 
@@ -260,21 +260,21 @@ In this task, you will create an Azure Active Directory tenant with the followin
 
     -   Country or region: **United States**
 
-7. Once it's created, navigate to your subscription blade. Select **Change directory**.
+7. Once it's created, navigate to your subscription page. Select **Change directory**.
 
-8. In the **Change the directory** blade on the right, select **Contoso** in the dropdown and select **Change**. 
+8. In the **Change the directory** page on the right, select **Contoso** in the dropdown and select **Change**. 
 
 9. In the portal's left navigation, select **Azure Active Directory**. 
 
-10. In the **Azure Active Directory** blade, select **Switch tenant** then select the **Contoso** box and select **Switch**. 
+10. In the **Azure Active Directory** page, select **Switch tenant** then select the **Contoso** box and select **Switch**. 
 
     >**Note**: It may take a few minutes for everything to display properly.
 
-11. On the **Contoso - Overview** blade, select **Licenses** under **Manage** on the left navigation.
+11. On the **Contoso - Overview** page, select **Licenses** under **Manage** on the left navigation.
 
-12. On the **Contoso - Licenses**, blade, select **All Products** and select **+ Try/Buy**.
+12. On the **Contoso - Licenses**, page, select **All Products** and select **+ Try/Buy**.
 
-13. On the **Activate** blade, in the **ENTERPRISE MOBILITY + SECURITY E5** section, select **Free trial** and then select **Activate**.
+13. On the **Activate** page, in the **ENTERPRISE MOBILITY + SECURITY E5** section, select **Free trial** and then select **Activate**.
 
    > **Note**: Activation typically takes about 5 minutes.
 
@@ -304,25 +304,25 @@ In this task, you will configure Azure AD user accounts in the newly created Azu
     
 - Department: **Leave blank**
 
-1. From the lab computer, in the Azure portal, navigate back to the **Contoso - Overview** blade.
+1. From the lab computer, in the Azure portal, navigate back to the **Contoso - Overview** page.
 
-2. On the **Contoso - Overview** blade, select **Users** under **Manage** in the left navigation.
+2. On the **Contoso - Overview** page, select **Users** under **Manage** in the left navigation.
 
-3. On the **Users - All users** blade, select the entry representing your user account.
+3. On the **Users - All users** page, select the entry representing your user account.
 
-4. On the **Profile** blade of your user account, select **Edit**.
+4. On the **Profile** page of your user account, select **Edit**.
 
 5. In the **Settings** section, in the **Usage location** drop-down list, select the **United States** entry and select **Save**.
 
-6. On the **Profile** blade of your user account, select **Licenses** under **Manage** on the left. 
+6. On the **Profile** page of your user account, select **Licenses** under **Manage** on the left. 
 
-7. On the **Licenses** blade, select **+ Assignments**.
+7. On the **Licenses** page, select **+ Assignments**.
 
-8. On the **Update license assignments** blade, enable the **Enterprise Mobility + Security E5** checkbox, ensure that all the corresponding license options are enabled, and select **Save**.
+8. On the **Update license assignments** page, enable the **Enterprise Mobility + Security E5** checkbox, ensure that all the corresponding license options are enabled, and select **Save**.
 
-9. On the **Users - All users** blade, select **+ New user**.
+9. On the **Users - All users** page, select **+ New user**.
 
-10. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings, and select **Create**:
+10. On the **New user** page, ensure that the **Create user** option is selected, specify the following settings, and select **Create**:
 
     - User name: **john.doe\@*your Azure AD tenant domain name*** where ***your Azure AD tenant domain name*** is the domain name you specified when creating the Contoso Azure AD tenant.
 
@@ -351,27 +351,27 @@ In this task, you will configure Azure AD user accounts in the newly created Azu
 
     > **Note**: Copy the **User name** and **Password** values into Notepad. You will need them later in this lab.
 
-11. On the **Users - All users** blade, select the entry representing the newly created user account.
+11. On the **Users - All users** page, select the entry representing the newly created user account.
 
-12. On the **john.doe - Profile** blade, select **Licenses** under **Manage** on the left.
+12. On the **john.doe - Profile** page, select **Licenses** under **Manage** on the left.
 
-13. On the **john.doe - Licenses** blade, select **+ Assignments**.
+13. On the **john.doe - Licenses** page, select **+ Assignments**.
 
-14. On the **Update license assignments** blade, enable the **Enterprise Mobility + Security E5** checkbox, ensure that all the corresponding license options are enabled, and select **Save**.
+14. On the **Update license assignments** page, enable the **Enterprise Mobility + Security E5** checkbox, ensure that all the corresponding license options are enabled, and select **Save**.
 
 ### Task 3: Purchase a custom domain name
 
 In this task, you will purchase a custom DNS domain name by leveraging the functionality described at <https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain>.
 
-1. On the lab computer, in the browser displaying the Azure portal, navigate to your subscription blade and select **Change directory**. In the **Change the directory** blade on the right, select **Default Directory** in the dropdown and select **Change**. 
+1. On the lab computer, in the browser displaying the Azure portal, navigate to your subscription page and select **Change directory**. In the **Change the directory** page on the right, select **Default Directory** in the dropdown and select **Change**. 
    
-2. Return to the **Azure Active Directory** overview blade. Select **Switch tenant** and select the **Default Directory** associated with the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises then select **Switch**. 
+2. Return to the **Azure Active Directory** overview page. Select **Switch tenant** and select the **Default Directory** associated with the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises then select **Switch**. 
 
 3. In the Azure portal's left navigation, select **+ Create a resource**.
 
-4. On the **New** blade, select **Create** within **Web App**.
+4. On the **New** page, select **Create** within **Web App**.
 
-5. On the **Basics** tab of the **Web App** blade, specify the following settings and select **Next: Deployment** and then **Next: Monitoring**:
+5. On the **Basics** tab of the **Web App** page, specify the following settings and select **Next: Deployment** and then **Next: Monitoring**:
 
     - Subscription: The name of the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises.
 
@@ -391,15 +391,15 @@ In this task, you will purchase a custom DNS domain name by leveraging the funct
 
     - SKU and size: **Shared D1** (If necessary, select **Change size**, select Dev/Test, select **D1** and select **Apply**)
   
-6. On the **Monitoring** tab of the **Web App** blade, specify the following setting and select **Review + create** then **Create**:
+6. On the **Monitoring** tab of the **Web App** page, specify the following setting and select **Review + create** then **Create**:
 
     - Enable Application Insights: **No**
 
 7. In the Azure portal, search for and select **App Service Domains** on the top search bar.
 
-8. On the **App Service Domains** blade, select **Create App Service Domain**.
+8. On the **App Service Domains** page, select **Create App Service Domain**.
 
-9. On the **Create App Service Domains** blade, select the **contosohilab-RG** resource group. Then in the **Search for domains...** text box, type the domain name you want to purchase and select the box next to one of the available domain names listed below the text box. Make sure you make note of the domain you choose. 
+9. On the **Create App Service Domains** page, select the **contosohilab-RG** resource group. Then in the **Search for domains...** text box, type the domain name you want to purchase and select the box next to one of the available domain names listed below the text box. Make sure you make note of the domain you choose. 
 
 10. Select **Next: Contact information**, type required information.
 
@@ -413,15 +413,15 @@ In this task, you will assign a newly purchased custom DNS domain name to the Co
 
 1. On the lab computer, in the Azure portal, select the **Directory + Subscription** icon in the toolbar of the Azure portal (to the right of the **Cloud Shell** icon) and switch to the Contoso Azure AD tenant. 
 
-2. In the Azure portal's left navigation, select **Azure Active Directory** to navigate to the **Contoso - Overview** blade.
+2. In the Azure portal's left navigation, select **Azure Active Directory** to navigate to the **Contoso - Overview** page.
 
-3. On the **Contoso - Overview** blade, select **Custom domain names** under **Manage** on the left.
+3. On the **Contoso - Overview** page, select **Custom domain names** under **Manage** on the left.
 
-4. On the **Contoso - Custom domain names** blade, select **+ Add custom domain**.
+4. On the **Contoso - Custom domain names** page, select **+ Add custom domain**.
 
-5. On the **Add custom domain** blade that appears on the right, in the **Custom domain name** text box, type the domain name you purchased in the previous task and select **Add domain**. You will be redirected to a new blade displaying your custom domain name settings.
+5. On the **Add custom domain** page that appears on the right, in the **Custom domain name** text box, type the domain name you purchased in the previous task and select **Add domain**. You will be redirected to a new page displaying your custom domain name settings.
 
-6. Identify the value of the **TXT** record on the custom domain name blade. 
+6. Identify the value of the **TXT** record on the custom domain name page. 
 
 7. On the lab computer, start another browser tab and navigate to the Azure portal.
 
@@ -429,11 +429,11 @@ In this task, you will assign a newly purchased custom DNS domain name to the Co
 
 9.  In the Azure portal, select **All services** in the portal's left navigation. In the **Search All** textbox, type **DNS zones**, and then select the **DNS zones** entry in the listing of search results.
 
-10. On the **DNS zones** blade, select the entry with the name matching the custom domain name you purchased in the previous task.
+10. On the **DNS zones** page, select the entry with the name matching the custom domain name you purchased in the previous task.
 
-11. On the DNS zone blade, select **+ Record set**. 
+11. On the DNS zone page, select **+ Record set**. 
 
-12. On the **Add record set** blade, specify the following settings and select **OK**:
+12. On the **Add record set** page, specify the following settings and select **OK**:
 
     - Name: **\@**
 
@@ -443,9 +443,9 @@ In this task, you will assign a newly purchased custom DNS domain name to the Co
 
     - TTL unit: **Hours**
 
-    - Value: The value of **DESTINATION OR POINTS TO ADDRESS** entry you identified on the **Custom domain name** blade.
+    - Value: The value of **DESTINATION OR POINTS TO ADDRESS** entry you identified on the **Custom domain name** page.
 
-13. Switch back to the browser window displaying the custom domain name blade and select **Verify**. Ensure that the verification was successful. 
+13. Switch back to the browser window displaying the custom domain name page and select **Verify**. Ensure that the verification was successful. 
 
 14. Select **Make primary** and confirm the change when prompted. 
 
@@ -455,13 +455,13 @@ In this task, you will configure the DNS suffix of the Contoso Active Directory 
 
 1. On the lab computer, in the Azure portal, verify that you are signed into the Azure AD tenant associated with the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises (the **Default Directory**). If not, select the **Directory + Subscription** icon in the toolbar of the Azure portal (to the right of the **Cloud Shell** icon) to switch to that Azure AD tenant. 
 
-2. In the Azure portal, navigate to the blade of the **DC1** virtual machine.
+2. In the Azure portal, navigate to the page of the **DC1** virtual machine.
 
-3. On the **DC1** virtual machine blade, connect to **DC1** via Remote Desktop. When prompted to sign in, use the **demouser** name and the **demo\@pass123** password. 
+3. On the **DC1** virtual machine page, connect to **DC1** via Remote Desktop. When prompted to sign in, use the **demouser** name and the **demo\@pass123** password. 
 
 4. Within the Remote Desktop session to **DC1**, on the **Server Manager** window, start the **Active Directory Domains and Trusts** console under **Tools**. 
 
-5. In the **Active Directory Domains and Trusts** console, right-click **Active Directory Domains and Trusts [DC1.corp.contoso.com]** on the left and select **Properties**.
+5. In the **Active Directory Domains and Trusts** console, right-Select **Active Directory Domains and Trusts [DC1.corp.contoso.com]** on the left and select **Properties**.
 
 6. On the **UPN Suffixes** tab of the **Active Directory Domains and Trusts [DC1.corp.contoso.com]** window, in the **Alternative UPN suffixes** textbox, type the name of the custom domain you verified in the previous task, select **Add**, and then select **OK**.
 
@@ -507,11 +507,11 @@ In this task, you will install Azure AD Connect.
 
 6. If presented with the **Welcome to Microsoft Azure** dialog box, select **Maybe later**. 
 
-7. In the Azure portal, select **Azure Active Directory** on the portal's left navigation to navigate to the **Contoso - Overview** blade.
+7. In the Azure portal, select **Azure Active Directory** on the portal's left navigation to navigate to the **Contoso - Overview** page.
 
-8. On the **Contoso - Overview** blade, select **Azure AD Connect** under **Manage** on the left.
+8. On the **Contoso - Overview** page, select **Azure AD Connect** under **Manage** on the left.
 
-9.  On the **Azure AD Connect** blade, select the **Download Azure AD Connect** link.
+9.  On the **Azure AD Connect** page, select the **Download Azure AD Connect** link.
 
 10. On the **Microsoft Azure Active Directory Connect** web page of the Microsoft Downloads site, select **Download**.
 
@@ -566,7 +566,7 @@ In this task, you will enable Recycle Bin in the Contoso Active Directory domain
 1. Within the Remote Desktop session to **DC1**, on the Tools menu in the Server Manager console, start **Active Directory Administrative Center**.
 
 
-2. In the **Active Directory Administrative Center** console, right-click **corp (local)** on the left and select **Enable Recycle Bin**. When prompted to confirm, select **OK**.
+2. In the **Active Directory Administrative Center** console, right-Select **corp (local)** on the left and select **Enable Recycle Bin**. When prompted to confirm, select **OK**.
 
 
 3. When prompted to refresh AD Administrative Center, select **OK**.
@@ -673,7 +673,7 @@ In this task, you will configure Azure AD Connect attribute level filtering that
 
 ### Task 9: Initiate and verify directory synchronization
 
-1. Within the Remote Desktop session to **DC1**, double-click the **Azure AD Connect** desktop shortcut.
+1. Within the Remote Desktop session to **DC1**, double-Select the **Azure AD Connect** desktop shortcut.
 
 2. On the **Welcome to Azure AD Connect** page, select **Configure**. 
 
@@ -693,13 +693,13 @@ In this task, you will configure Azure AD Connect attribute level filtering that
 
 10. On the **Configuration complete** page, select **Exit**.
 
-11. Within the Remote Desktop session to **DC1**, in the Edge browser window displaying the Azure portal, navigate to the **Users - All users** blade of the Contoso Azure AD tenant.
+11. Within the Remote Desktop session to **DC1**, in the Edge browser window displaying the Azure portal, navigate to the **Users - All users** page of the Contoso Azure AD tenant.
 
-12. On the **Users - All users** blade, note that the list of user objects includes all user accounts with the UPN suffix matching the custom domain name of the Azure AD tenant. You may need to refresh the page or wait a few minutes to see the change.
+12. On the **Users - All users** page, note that the list of user objects includes all user accounts with the UPN suffix matching the custom domain name of the Azure AD tenant. You may need to refresh the page or wait a few minutes to see the change.
 
-13. In the Azure portal, navigate to the **Groups - All groups** blade of the Contoso Azure AD tenant and note that all the corp.contoso.com domain groups have been synchronized as well. 
+13. In the Azure portal, navigate to the **Groups - All groups** page of the Contoso Azure AD tenant and note that all the corp.contoso.com domain groups have been synchronized as well. 
 
-14. In the Azure portal, navigate to the **Contoso - Azure AD Connect** blade and select **Azure AD Connect** on the left. Verify that the following settings are set: 
+14. In the Azure portal, navigate to the **Contoso - Azure AD Connect** page and select **Azure AD Connect** on the left. Verify that the following settings are set: 
 
     - Azure AD Connect Sync Status: **Enabled** 
   
@@ -719,7 +719,7 @@ In this task, you will configure Azure AD Connect attribute level filtering that
 
 In this task, you will configure Azure AD Connect device synchronization options.
 
-1. Within the Remote Desktop session to **DC1**, double-click the **Azure AD Connect** desktop shortcut.
+1. Within the Remote Desktop session to **DC1**, double-Select the **Azure AD Connect** desktop shortcut.
 
 2. On the **Welcome to Azure AD Connect** page, select **Configure**. 
 
@@ -752,9 +752,9 @@ In this task, you will configure Azure AD Connect device synchronization options
 
 1. On the lab computer, in the Azure portal, verify that you are signed into the Azure AD tenant associated with the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises (the **Default directory**). If not, select the **Directory + Subscription** icon in the toolbar of the Azure portal (to the right of the **Cloud Shell** icon) to switch to that Azure AD tenant. 
 
-2. In the Azure portal, navigate to the blade of the **APP1** virtual machine.
+2. In the Azure portal, navigate to the page of the **APP1** virtual machine.
 
-3. On the **APP1** virtual machine blade, connect to **APP1** via Remote Desktop. When prompted to sign in, use the **AGAyers\@<custom_domain_name>** user name with the **demo@pass123** password (where **<custom_domain_name>** placeholder represents the custom DNS domain name you assigned to the Contoso Azure AD tenant earlier in this exercise.
+3. On the **APP1** virtual machine page, connect to **APP1** via Remote Desktop. When prompted to sign in, use the **AGAyers\@<custom_domain_name>** user name with the **demo@pass123** password (where **<custom_domain_name>** placeholder represents the custom DNS domain name you assigned to the Contoso Azure AD tenant earlier in this exercise.
 
 4. Within the Remote Desktop session to **APP1**, on the **Server Manager** window, start **Task Scheduler** under **Tools**. 
 
@@ -832,7 +832,7 @@ In this task, you will configure Azure AD Connect device synchronization options
          PreReqResult : WillNotProvision
 
    ```
-11. Switch back to the Remote Desktop session to **DC1**, in the Edge browser window displaying the Azure portal, navigate to the **Devices - All devices** blade of the Contoso Azure AD tenant and verify that there is an entry representing the APP1 server, with the **Join Type** set to **Hybrid Azure AD joined**.
+11. Switch back to the Remote Desktop session to **DC1**, in the Edge browser window displaying the Azure portal, navigate to the **Devices - All devices** page of the Contoso Azure AD tenant and verify that there is an entry representing the APP1 server, with the **Join Type** set to **Hybrid Azure AD joined**.
 
    > **Note**: You might need to wait until the Azure AD registration status is correctly reported and its Azure AD object appears in the Azure portal.
 

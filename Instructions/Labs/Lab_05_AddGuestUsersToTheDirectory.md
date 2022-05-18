@@ -25,16 +25,17 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 4. Select **New guest user**.
 
-    ![Screen image displaying the Users blade with the New guest user menu option selected](./media/lp1-mod3-new-guest-user-menu-selection.png)
+    ![Screen image displaying the Users page with the New guest user menu option selected](./media/lp1-mod3-new-guest-user-menu-selection.png)
 
 5. On the New user page, select **Invite user** and then add your information as the guest user.
 
-    **NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Azure AD does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
+    >**NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Azure AD does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
 
-6. When complete, select **Invite**.
-# RobertS --> Do we want to invite a user here?  Just to show how on the User pages it shows GUEST and MEMBER as the differen types of user.  You can just make up a name similar to the PowerShell script. Something like First Name = SC300External, Last Name = LabUser, email = sc300externaluser1@contoso.com.  Again, just so you can see it create something.
+6. Enter an email address, such as **sc300externaluser1@sc300email.com**.
 
-7. On the Users blade, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
+7. When complete, select **Invite**.
+
+8. On the Users page, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
 
 After you send the invitation, the user account is automatically added to the directory as a guest.
 
@@ -51,7 +52,7 @@ A recent partnership has been established with another company. For now, employe
 
 3. Under **Manage**, select **Users**.
 
-4. On the Users blade, on the menu, select **Bulk operations > Bulk invite**.
+4. On the Users page, on the menu, select **Bulk operations > Bulk invite**.
 
      ![Screen image displaying the All user page with the Bulk operations and Bulk invite menu options highlighted](./media/lp1-mod3-bulk-invite-option.png)
 
@@ -78,7 +79,7 @@ A recent partnership has been established with another company. For now, employe
 
 11. When your file passes validation, select **Submit** to start the Azure bulk operation that adds the invitations.
 
-12. To view the job status, select **Click here to view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.
+12. To view the job status, select **Select here to view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.
 
     ![Screen image displaying the results of a bulk operation](./media/lp1-mod3-bulk-operations-results.png)
 

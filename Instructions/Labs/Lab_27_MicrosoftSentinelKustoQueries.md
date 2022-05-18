@@ -21,7 +21,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
 
-1. Click the **Start** button to get started.
+1. Select the **Start** button to get started.
 
 1. Verify that the username is the same as the lab provider tenant account.
 

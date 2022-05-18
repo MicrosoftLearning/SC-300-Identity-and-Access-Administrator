@@ -19,15 +19,15 @@ Registering your application establishes a trust relationship between your app a
 
 2. Open the portal menu and then select **Azure Active Directory**.
 
-3. On the **Azure Active Directory** blade, under **Manage**, select **App registrations.**
+3. On the **Azure Active Directory** page, under **Manage**, select **App registrations.**
 
 4. On the **App registrations** page, on the menu, select **+ New registration**.
 
-5. On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
+5. On the **register an application** page, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
 
-    ![Screen image displaying the Register an application blade with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
+    ![Screen image displaying the Register an application page with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
 
-6. When complete, you will be directed to the **Demo app** blade.
+6. When complete, you will be directed to the **Demo app** page.
 
 #### Task 2 - Add a redirect URI
 
@@ -188,13 +188,13 @@ You need to create a new custom role for app management. This new role should be
 
 2. Open the portal menu and then select **Azure Active Directory**.
 
-3. On the Azure Active Directory blade, under **Manage**, select **Roles and administrators**.
+3. On the Azure Active Directory page, under **Manage**, select **Roles and administrators**.
 
-4. On the Roles and administrators blade, on the menu, select **+New custom role**.
+4. On the Roles and administrators page, on the menu, select **+New custom role**.
 
-    ![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
+    ![Screen image displaying the Roles and administrators page with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
 
-5. In the New custom role blade, on the Basics tab, in the name box, enter **My custom app role**.
+5. In the New custom role page, on the Basics tab, in the name box, enter **My custom app role**.
 
 6. Review the remaining options and then select **Next**.
 

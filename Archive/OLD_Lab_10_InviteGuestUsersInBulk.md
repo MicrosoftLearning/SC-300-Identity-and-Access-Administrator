@@ -50,7 +50,7 @@ A recent partnership has been established with another company. For now, employe
 
 11. When your file passes validation, select **Submit** to start the Azure bulk operation that adds the invitations.
 
-12. To view the job status, select **Click here to view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.
+12. To view the job status, select **Select here to view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.
 
     ![Screen image displaying the results of a bulk operation](./media/lp1-mod3-bulk-operations-results.png)
 

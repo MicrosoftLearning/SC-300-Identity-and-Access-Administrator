@@ -23,11 +23,11 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 2. Open the portal menu and then select **Azure Active Directory**.
 
-3. On the Azure Active Directory blade, under **Manage**, select **Security**.
+3. On the Azure Active Directory page, under **Manage**, select **Security**.
 
-4. On the Security blade, in the left navigation, select **Identity protection**.
+4. On the Security page, in the left navigation, select **Identity protection**.
 
-5. In the Identity protection blade, in the left navigation, select **MFA registration policy**.
+5. In the Identity protection page, in the left navigation, select **MFA registration policy**.
 
     ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/lp2-mod4-browse-to-mfa-registration-policy.png)
 
@@ -59,4 +59,5 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 This will require the user to complete the MFA registration the next time they attempt to login.
 
-# RobertS - should we make a simple task that has the user log in to the Azure Portal to see the MFA requirement?  Not sure if it adds value or not.  They might or might-not be surprised
+1. From a private browser, navigate to <login.microsoftonline.com>. Enter a user name and password from the tenant.  Note the additional security information requirements that the user is asked to enter.
+

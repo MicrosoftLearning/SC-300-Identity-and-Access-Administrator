@@ -18,8 +18,7 @@ The company has decided to empower the employees and enable self-service passwor
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
-1. On the Azure Active Directory blade, under **Manage**, select **Groups** and select **+ New Group** on the right side window.
-# RobertS --> no + on the New Group.  Probably and old error of mine <smile>.
+1. On the Azure Active Directory page, under **Manage**, select **Groups** and select **New Group** on the right side window.
 
 2. Create a new group using the following information:
 
@@ -36,24 +35,23 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
     
 3. Select **Create**.
 
-    ![Screen image displaying the New Group blade with group type, group name, and create highlighted](./media/lp2-mod2-create-sspr-security-group.png)
+    ![Screen image displaying the New Group page with group type, group name, and create highlighted](./media/lp2-mod2-create-sspr-security-group.png)
 
 #### Task 2 - Enable SSPR for you test group
 
 Enable SSPR for the group.
 
-1. Browse back to the Azure Active Directory blade.
+1. Browse back to the Azure Active Directory page.
 
 2. Under **Manage**, select **Password reset**.
 
-3. On the Password reset blade Properties page, under **Self service password reset enabled**, select **Selected**.
+3. On the Password reset page Properties page, under **Self service password reset enabled**, select **Selected**.
 
-4. Select **Select group**.
-# RobertS --> By default on the Skillable tenant we have, there is already a group called SSPRSecurityGroupUser. You have to select that and change it to a new value of the group we created.
+4. Select **Select group** and choose **SSPRSecurityGroupUser**.
 
 5. In the Default password reset policy pane, select the **SSPRTesters** group.
 
-6. On the Password reset blade Properties page, select **Save**.
+6. On the Password reset page Properties page, select **Save**.
 
     ![Screen image displaying the Password reset properties page with selected, select group, and save highlighted](./media/lp2-mod2-enable-password-reset-for-selected-group.png)
 

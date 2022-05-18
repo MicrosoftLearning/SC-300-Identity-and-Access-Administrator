@@ -21,7 +21,7 @@ To be able to enable Security Defaults, you have to delete or disable any existi
 1. Log into the Azure portal.
 2. Open Azure Active Directory.
 3. From the Security section of the menu select **Security** then select **Conditional Access**.
-4. Click on any Conditional Access policy that is set to On or Report-Only and change them to Off.
+4. Select on any Conditional Access policy that is set to On or Report-Only and change them to Off.
 
 ### Exercise 1 - Enabling Security Defaults
 

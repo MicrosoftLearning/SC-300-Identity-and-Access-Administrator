@@ -17,52 +17,52 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 #### Task 1 - Configure Google to be used as an identity provider
 
->**Note**: For this exercise, you will need a Gmail account on Google. You can create a new account or use an existing account.
+>**Note**: For this exercise, you will need a Gmail account on Google. Create a new Google account and then follow the steps for the exercise.
 
-# RobertS --> I like the lab and it worked for me (once I figured out my Google Account / Password).  However, we generally get a bunch of pushback in our labs when we ask them to use an existing account.  So we might want to make this an actual, create new GMail account and then follow the steps.
 
 1. Go to the Google APIs at https://console.developers.google.com, and sign in with your Google account. We recommend that you use a shared team Google account.
 
 1. Accept the terms of service if you're prompted to do so.
 
-1. Create a new project: At the top of the page, select the project menu to open the Select a project page. Choose New Project.
-# RobertS --> I assume you don't need Location set.  Mine defaulted to No Organization.  We should say leave the default or something, if not needed.
+1. Create a new project: At the top of the page, select the project menu to open the Select a project page. Choose New Project.  Leave the remaining fields with the default settings.
 
-1. On the New Project page, give the project a name (for example, MyB2BApp), and then select **Create**.
+1. On the New Project page, give the project a name (for example, **MyB2BApp**), and then select **Create**.
 
 1. Open the new project by selecting the link in the Notifications message box or by using the project menu at the top of the page.
 
-1. In the left menu, select APIs & Services, and then select OAuth consent screen.
+1. In the left menu, select **APIs & Services**, and then select **OAuth consent screen**.
 
-1. Under User Type, select External, and then select Create.
+1. Under User Type, select **External**, and then select **Create**.
 
-1. On the OAuth consent screen, under App information, enter an App name.
-# RobertS --> I think we should suppy the App Name, or at least a stater name.
+1. On the **OAuth consent screen**, under App information, enter an App name, such as **Azure AD**.
 
-1. Under User support email, select an email address.
+1. Under User support email, select an email address. This should include the email address that you used to log into Google.
 
-1. Under Authorized domains, select Add domain, and then add the microsoftonline.com domain.
-# RobertS --> We have to give them the exact entry value, or as close to it as possible.  Is the value really always microsoftonline.com, if so we should mark it as code so it can be copy/pasted.  If it is supposed to be the Skillable Tenant domain name, then we can tell them to use that.  For my first test, I am just using MICROSOFTONLINE.COM as the lab step states. 
+1. Under Authorized domains, select **Add domain**, and then add the microsoftonline.com domain.
 
-1. Under Developer contact information, enter an email address.
-# RobertS --> I used my Skillable lab admin account.  It has a mailbox that we can check.
+    ```
+    microsoftonline.com
+    ```
+
+1. Under Developer contact information, enter the email address for the lab account that you used to sign into the portal.
 
 1. Select **Save and continue**.
 
 1. In the left menu, select **Credentials**.
 
-1. Select ** + Create credentials**, and then select **OAuth client ID**.
-# RobertS --> I think the space after the double-asterik is causing this to fail to display bold in the labs.
+1. Select **+ Create credentials**, and then select **OAuth client ID**.
 
 1. In the Application type menu, select Web application. Give the application a suitable name, like Azure AD B2B. Under **Authorized redirect URIs**, add the following URIs:
 
-    - https://login.microsoftonline.com
-    - https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp
-    (where <tenant ID> is your tenant ID)
-    - https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp
-    (where <tenant name> is your tenant name)
+    ```
+        - https://login.microsoftonline.com
+        - https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp
+        (where <tenant ID> is your tenant ID)
+        - https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp
+        (where <tenant name> is your tenant name)
+    ```
 
-1. Select Create. Copy your client ID and client secret. You'll use them when you add the identity provider in the Azure portal.
+1. Select Create. Copy your **client ID** and **client secret**. You'll use them when you add the identity provider in the Azure portal.
 
 1. You can leave your project at a publishing status of Testing and add test users to the OAuth consent screen. Or you can select the Publish app button on the OAuth consent screen to make the app available to any user with a Google Account.
 
@@ -74,14 +74,15 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. Under **Manage**, select **External Identities**.
 
-1. Microsoft provides a direct federation for **Google** as an identity provider.  This can be initiated by selecting **+ Google** from the **External Identities | All identity providers** blade
+1. Microsoft provides a direct federation for **Google** as an identity provider.  This can be initiated by selecting **+ Google** from the **External Identities | All identity providers** page
  
-1. After selecting + Google, another blade will open with additional information that is required to configure Google as an identity provider.  
+1. After selecting + Google, another page will open with additional information that is required to configure Google as an identity provider.  
 
 1. Enter the client ID and client secret you obtained earlier. Select Save.
 
 1. This completes the configuration of Google as an identity provider.
-# Roberts --> I got a Failed to add Google as a social identity provider message.  No details to let me troublshoot.  Just the failure message.
+
+>**Note**: You may receive a failed to add Google as a social identity provider message.  Navigate out of that screen and back to the External Identities and Google should be available in the list.
 
 1. If you used an existing Gmail account, remember to delete the account with **External Identities | All identity providers**. You can also return to the Google developer console and delete the project that you created.
 
@@ -92,4 +93,11 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
     > **Note**: Facebook can also easily be configured as an identity provider. These steps can be accessed here: https://docs.microsoft.com/azure/active-directory/external-identities/facebook-federation. If you prefer to use a Facebook account and not Google for this exercise, you may complete this option.
 
-# RobertS - Assuming thet setup works - is there any way to do a quick test?  Log in with a Google account or something?
+1. Once the setup is complete, you can open a private browser and enter the following web address:
+
+    ```
+    login.microsoftonline.com
+    ```
+
+1. Enter the **Google** email address and password that you created.  You should then enter the Microsoft online portal for app access.
+

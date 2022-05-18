@@ -13,7 +13,6 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 #### Estimated time: 10 minutes
 
-# RobertS - Passed without issue.  See the Commit-notes for a question. 
 
 ### Exercise 1 - Enable User risk policy
 
@@ -23,11 +22,11 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 2. Open the portal menu and then select **Azure Active Directory**.
 
-3. On the Azure Active Directory blade, under **Manage**, select **Security**.
+3. On the Azure Active Directory page, under **Manage**, select **Security**.
 
-4. On the Security blade, in the left navigation, select **Identity protection**.
+4. On the Security page, in the left navigation, select **Identity protection**.
 
-5. In the Identity protection blade, in the left navigation, select **User risk policy**.
+5. In the Identity protection page, in the left navigation, select **User risk policy**.
 
     ![Screen image displaying the User risk policy page and highlighted browsing path](./media/lp2-mod4-browse-to-identity-protection.png)
 
@@ -53,7 +52,7 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 #### Task 2 - Enable Sign-in risk policy
 
-1. On the Identity protection blade, in the left navigation, select **Sign-in risk policy**.
+1. On the Identity protection page, in the left navigation, select **Sign-in risk policy**.
 
 2. As with the User risk policy, the Sign-in risk policy can be assigned to users and groups and allows you to exclude users from the policy.
 

@@ -23,9 +23,9 @@ The Global Administrator role is required in order to provide admin consent for 
 
 1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Azure Active Directory > App registrations > Demo app.**
 
-2. On the **Demo app** blade, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
+2. On the **Demo app** page, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
 
-    ![Screen image displaying the Demo app blade with the directory ID highlighted](./media/lp3-mod3-demo-app-directory-id.png)
+    ![Screen image displaying the Demo app page with the directory ID highlighted](./media/lp3-mod3-demo-app-directory-id.png)
 
 3. In the left navigation, under **Manage**, select **API permissions**.
 
@@ -43,7 +43,7 @@ You can grant tenant-wide admin consent through Enterprise applications if the a
 
 1. In Microsoft Azure, browse to **Azure Active Directory > Enterprise applications > Demo app.**
 
-2. On the **Demo app** blade, in the left navigation, under **Security,** select **Permissions.**
+2. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.**
 
 3. Under **Permissions,** select **Grant admin consent.**
 

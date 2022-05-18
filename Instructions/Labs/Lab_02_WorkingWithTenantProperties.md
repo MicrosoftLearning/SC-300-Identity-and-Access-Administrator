@@ -56,21 +56,21 @@ You need to identify and update the different properties associated with your te
 
 #### Task 2 - Review the Country or region and other values associated with your tenant
 
-1. In the **Azure Active Directory** blade, in the Manage section, select **Properties**.
+1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
 
 2. Under **Tenant properties**, locate **Country or region** and review the information.
 
     **IMPORTANT** - When the tenant is created, the Country or region are specified at that time. This setting cannot be changed later.
 
-3. In the **Properties** blade, under **Tenant properties**, locate **Location** and review the information.
+3. In the **Properties** page, under **Tenant properties**, locate **Location** and review the information.
 
-    ![Screen image showing the Azure Active Directory Properties blade with the Country or region and Location settings highlighted](./media/azure-active-directory-properties-country-location.png)
+    ![Screen image showing the Azure Active Directory Properties page with the Country or region and Location settings highlighted](./media/azure-active-directory-properties-country-location.png)
 
 #### Task 3 - Finding the tenant ID
 
 Azure subscriptions have a trust relationship with Azure Active Directory (Azure AD). Azure AD is trusted to authenticate users, services, and devices for the subscription. Each subscription has a tenant ID associated with it, and there are a few ways you can find the tenant ID for your subscription.
 
-1. In the **Azure Active Directory** blade, in the Manage section, select **Properties**.
+1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
 
 2. Under **Tenant properties**, locate **Tenant ID**. This is your unique tenant identifier.
 
@@ -86,7 +86,7 @@ Microsoft strongly recommends you add both your global privacy contact and your 
 
 You add your organization's privacy information in the **Properties** area of Azure AD. To access the Properties area and add your privacy information:
 
-1. In the **Azure Active Directory** blade, in the Manage section, select **Properties**.
+1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
 
     ![Screen image displaying tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted](./media/properties-area.png)
 
@@ -96,10 +96,10 @@ You add your organization's privacy information in the **Properties** area of 
      - Allan Deyoung is a built-in users in your Azure lab tenant who works as an IT Admin, we will use him as the Privacy contact.
      - This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your global administrators.
 
-- **Privacy statement URL** -  `https://github.com/R-C-Stewart/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf`
+- **Privacy statement URL** -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
+
      - In sample Privacy PDF is provided in your labs directory.
      - Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
-# RobertS --> Too funny that I remember when I added this step, but never realized that it pointed to my own GitHub.  We should probably move this into the AllFiles of the actual lab repo; and update the steps URL once published to be in the right location.
 
     **IMPORTANT** -If you don't include either your own privacy statement or your privacy contact, your external guests will see text in the Review Permissions box that says, **<your org name\>** has not provided links to their terms for you to review. For example, a guest user will see this message when they receive an invitation to access an organization through B2B collaboration.
 
@@ -110,7 +110,7 @@ You add your organization's privacy information in the **Properties** area of 
 #### Task 2 - Check your Privacy Statement
 
 1. Return to the Azure Home screen - Dashboard.
-2. In the upper-righthand corner of the UI, click on your username.
+2. In the upper-righthand corner of the UI, Select on your username.
 3. Choose **View account** from the dropdown menu.
 
      **A new browser tab will open automatically.**

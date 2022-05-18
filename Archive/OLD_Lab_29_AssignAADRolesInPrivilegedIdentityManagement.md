@@ -58,7 +58,7 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 
 1. Open a new InPrivate browser window.
 2. Connect to the Azure Portal (https://portal.azure.com).
-3. If it opens with a user logged in, click on their name in the upper-right corner and select **Sign in as a different account**.
+3. If it opens with a user logged in, Select on their name in the upper-right corner and select **Sign in as a different account**.
 4. Log in a Miriam.
 
    | Field | Value |

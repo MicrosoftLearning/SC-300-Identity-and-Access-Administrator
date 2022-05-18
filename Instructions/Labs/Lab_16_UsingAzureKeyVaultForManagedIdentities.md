@@ -7,8 +7,6 @@ lab:
 
 # Lab 16 - Using Azure Key Vault for Managed Identities
 
-# RobertS - Key Vault appears to require a subscription.  At least it did for me.  Probably just add a note to the top that say subscription required.
-
 ## Lab scenario
 
 When you use managed identities for Azure resources, your code can get access tokens to authenticate to resources that support Azure AD authentication.  However, not all Azure services support Azure AD authentication. To use managed identities for Azure resources with those services, store the service credentials in Azure Key Vault, and use the managed identity to access Key Vault to retrieve the credentials.
@@ -17,7 +15,51 @@ When you use managed identities for Azure resources, your code can get access to
 
 ### Exercise 1 - Use Azure Key Vault to manage Virtual Machine identities
 
-#### Task 1 - Create a Key Vault
+#### Task 1 - Redeem Azure Pass
+
+1. Open a browser and navigate to: [www.microsoftazurepass.com](www.microsoftazurepass.com).
+
+1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
+
+1. Select the **Start** button to get started.
+
+1. Verify that the username is the same as the lab provider tenant account.
+
+1. Enter the Azure Pass voucher code in the **Enter Promo code** field. 
+
+1. Enter address information in the **Profile** fiels.
+    - **Address line 1**: 1 Microsoft Way
+    - **City**: Redmond
+    - **State**: Washington
+    - **ZIP code**: 98052
+
+1. Select the box to agree to the subscription agreement and select **Sign up**.
+
+    ![Agree to subscription agreement and sign up](media/azurepassactivation.png)
+
+1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
+
+1. Navigate to **Subscriptions** and verify that the **Azure Pass - Sponsorship** is showing **Active** status. 
+
+#### Task 2 - Create a Windows Virtual Machine
+
+1. Browse to the [https://portal.azure.com](https://portal.azure.com)
+
+1. Select **+ Create a resource**.
+
+1. Type **Windows Server** in Search the Marketplace search bar.
+
+1. Select **Windows Server** and choose **Windows Server 2019 Datacenter** from Select a software plan dropdown.
+
+1. You will have to create an administrator username and password for the VM on the basics tab.
+
+1. On the **Management** tab, check the box to Login with Azure AD under the Azure AD section.
+
+1. Go through the rest of the experience of creating a virtual machine. 
+
+1. Select Create.
+
+#### Task 3 - Create a Key Vault
 
 1. Sign in to the [https://portal.azure.com]( https://portal.azure.com) using a Global administrator account.
 
@@ -29,27 +71,26 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **Create**.
 
-1. Provide a Name for the new **Key Vault**.
+1. Fill out all required information as shown below. Make sure that you choose the subscription that you're using for this lab.
 
-1. Fill out all required information. Make sure that you choose the subscription and resource group that you're using for this tutorial.
+ - **Resource group** - sc300KeyVaultrg
+ - **Key vault name** - sc300keyvault
 
-# RobertS - do we want to use the traditional table structure for Field / Value they need to input.  As for the resource group - I often have them make a resource group like sc300KeyVaultrg and then have them delete it at the end of the lab, so they don't burn resources.  Unless you want to RG or the Key Vault for a later lab.
 
 1. Select **Review + create**.
 
 1. Select **Create**.
 
 
-#### Task 2 - Create a secret
+#### Task 3 - Create a secret
 
 1. Navigate to your newly created Key Vault.
 
-1. Select **Secrets**, and select **Add**.
-# RobertS - I did not get an Add button.  Just the Generate/Import.
+1. Select **Secrets**.
 
 1. Select **+ Generate/Import**.
 
-1. In the Create a secret screen, from Upload options leave Manual selected.
+1. In the Create a secret screen, from Upload options leave **Manual** selected.
 
 1. Enter a name and value for the secret.  The value can be anything you want. 
 
@@ -57,26 +98,23 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **Create** to create the secret.
 
-#### Task 3 - Grant access to Key Vault
+#### Task 4 - Grant access to Key Vault
 
 1. Navigate to your newly created Key Vault
 
-1. Select **Access Policy** from the menu on the left side.
-# RobertS - I have Acces polocies as the menu item.
+1. Select **Access Policies** from the menu on the left side.
 
 1. Select **Add Access Policy**.
 
 1. In the Add access policy section, under Configure from template (optional), choose Secret Management from the pull-down menu.
 
-1. Choose **Select Principal**, and in the search field enter the name of the VM you created earlier.  Select the VM in the result list and choose Select.
-# RobertS - this is one of the odd one where you have None selected, and that is what you are actually selecting; not the Select Principal title.
-# RobertS - I am not sure what VM is being talked about here.  We created a secret earlier in this lab and the Key Vault; but no VMs.  If you are referencing a VM from a previous lab - you probably need to synchronize naming of the VM, to make sure that it is available?
+1. For **Select Principal**, choose **None selected** to open the list of principals to select. In the search field enter the name of the VM you created in task 2.  Select the VM in the result list and choose Select.
 
 1. Select **Add**.
 
 1. Select **Save**.
 
-#### Task 4 - Access data with Key Vault secret with PowerShell
+#### Task 5 - Access data with Key Vault secret with PowerShell
 
 1. In the lab virtual machine, open PowerShell.  
 
@@ -103,4 +141,4 @@ When you use managed identities for Azure resources, your code can get access to
     ```
 1. This secret can be used to authenticate to services that require a name and password.
 
-# RobertS - I was not able to get this lab to work, mainly because of the missing VM.  I have used the Metadata Instance at least once before with success, so assume it is a doable lab.
+
