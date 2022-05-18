@@ -19,21 +19,22 @@ Registering your application establishes a trust relationship between your app a
 
 2. Open the portal menu and then select **Azure Active Directory**.
 
-3. On the **Azure Active Directory** page, under **Manage**, select **App registrations.**
+3. On the **Azure Active Directory** blade, under **Manage**, select **App registrations.**
 
 4. On the **App registrations** page, on the menu, select **+ New registration**.
 
-5. On the **register an application** page, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
+5. On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
 
-    ![Screen image displaying the Register an application page with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
+    ![Screen image displaying the Register an application blade with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
 
-6. When complete, you will be directed to the **Demo app** page.
+6. When complete, you will be directed to the **Demo app** blade.
 
 #### Task 2 - Add a redirect URI
 
 A redirect URI is the location where the Microsoft identity platform redirects a user's client and sends security tokens after authentication. In a production web application, for example, the redirect URI is often a public endpoint where your app is running. During development, it's common to also add the endpoint where you run your app locally.
 
 1. Add and modify redirect URIs for your registered applications by configuring their platform settings.
+# RobertS - This does not really feel like a separate task.  And I assume you wanted me to click the "Add a Redirect URI" link.  This opens the page for what appears to be Task 3. I do see that you are getting to Task 3 in a completely different way.  So, I am not sure of the best way to handle this as a standalone or connected task.
 
 #### Task 3 - Configure platform settings
 
@@ -88,6 +89,7 @@ The client secret, also known as an *application password*, is a string value y
 5. Select **Add**.
 
 6. **Record the secret's value** for use in your client application code; The Certificate & Secrets page will display the new secret value. It's important you copy this value as it's only shown this one time; if you refresh your page and come back, it will only show as a masked value.
+# RobertS - Record it where?  For now I have just copied to the clipboard and will keep moving.
 
 #### Task 7 - Register the web API
 
@@ -100,6 +102,8 @@ To provide scoped access to the resources in your web API, you must first regist
 3. Skip the **Add credentials** section for now. Only if your API accesses a downstream API would it need its own credentials—a scenario not covered in this article.
 
 With your web API registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
+# RobertS - From what I can tell, task 7 does not actually have you do anything.  It says to perform steps above in step 1 but then in step 2 and 3 you skip those steps.  So a little confused.
+
 
 #### Task 8 - Add a scope
 
@@ -118,6 +122,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
     ![An app registration's Expose an API pane in the Azure portal](./media/portal-02-expose-api.png)
 
 5. You're prompted to set an **Application ID URI** if you haven't yet configured one. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://\<application-client-id\>, or specify a more readable URI like `https://contoso.com/api`.
+# RobertS - you have to select the Save and Continue button.
 
 6. Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.
 
@@ -168,6 +173,7 @@ As shown in the image, a scope's full string is the concatenation of your web AP
 For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is:
 
 `https://contoso.com/api/Employees.Read.All`
+# RobertS - I did not get this one to work.  Was they an actual, test the URL, or just an example of what it would look like.
 
 #### Task 11 - Using the exposed scopes
 
@@ -181,6 +187,7 @@ You can expose additional scopes later as necessary. Consider that your web API 
 ### Exercise 2 - Manage app registration with a custom role
 
 #### Task - Create a new custom role to grant access to manage app registrations
+# RobertS - no task number listed.
 
 You need to create a new custom role for app management. This new role should be limited to only the specific permissions required to perform credential management.
 
@@ -188,13 +195,13 @@ You need to create a new custom role for app management. This new role should be
 
 2. Open the portal menu and then select **Azure Active Directory**.
 
-3. On the Azure Active Directory page, under **Manage**, select **Roles and administrators**.
+3. On the Azure Active Directory blade, under **Manage**, select **Roles and administrators**.
 
-4. On the Roles and administrators page, on the menu, select **+New custom role**.
+4. On the Roles and administrators blade, on the menu, select **+New custom role**.
 
-    ![Screen image displaying the Roles and administrators page with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
+    ![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
 
-5. In the New custom role page, on the Basics tab, in the name box, enter **My custom app role**.
+5. In the New custom role blade, on the Basics tab, in the name box, enter **My custom app role**.
 
 6. Review the remaining options and then select **Next**.
 
@@ -214,3 +221,5 @@ You need to create a new custom role for app management. This new role should be
     **Why pick those two** - For application provisionsing these two items are the bare minimum permissions needed to enable and enforce single sign-on for the application or service principal being created; and be able to assign the enterise application to a set of users or groups.  Other permissions could also be granted.  You can get a full list of available permissions at `https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`.
 
 10. Review the changes and then select **Create**.
+
+# RobertS - This works overall.  Just a few questions / tweaks above.
