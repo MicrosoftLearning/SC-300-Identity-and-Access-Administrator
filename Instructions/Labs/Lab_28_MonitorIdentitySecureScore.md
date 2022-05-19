@@ -31,7 +31,7 @@ Azure AD Identity Protection provides automated detection and remediation to ide
 
 #### Task 2 - Execute an improvement action
 
-1. To improve one area of the identity security posture, select **Turn on sigh-in risk policy**.
+1. To improve one area of the identity security posture, select **Turn on sign-in risk policy**.
 
 1. In the tile that opens, scroll down and select **Get Started**.
 
@@ -48,4 +48,6 @@ Azure AD Identity Protection provides automated detection and remediation to ide
 1. You have created a Sign-in risk policy that should now increase your Identity Secure Score.  This will take up to 24 hours to take affect in your Identity Secure Score.
 
 1. Review other improvement actions and the steps to create and enable them.
+
+# RobertS -- Do you know if there is any way to force the Identity Secure Score to recalculate.  I know you said it will take 24-hours.  I searched in DOCS but did not find anything that might force the update.
 
