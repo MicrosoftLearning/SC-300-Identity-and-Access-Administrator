@@ -53,4 +53,3 @@ Your organization requires that only specific users or groups have access to ent
 
 6. Select **Assign**.
 
-# RobertS -- worked without issue.
