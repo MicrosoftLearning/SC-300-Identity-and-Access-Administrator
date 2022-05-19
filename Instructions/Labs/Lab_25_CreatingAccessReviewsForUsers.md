@@ -7,6 +7,8 @@ lab:
 
 # Lab 25 - Creating Access Reviews for Internal and External Users  
 
+# RobertS -- Is thie an Access Review in PIM?  I don't have that as an option.  I have Review Access under tasks.  Or was this supposed to be a lab under Access Reviews in Identity Governance?
+
 ## Lab scenario
 
 Privileged user access should be regularly reviewed in a similar manner.  Since these are elevated access assignments, the review of these should be done on a consistent basis as identified by the company.  Unused and unnecessary privileged assignments should be removed.  Automated removal should also be configured for users that are no longer with the company or have changed departments within the company.
