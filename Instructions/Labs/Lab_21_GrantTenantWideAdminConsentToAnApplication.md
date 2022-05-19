@@ -22,8 +22,10 @@ For applications your organization has developed or for those that are registere
 The Global Administrator role is required in order to provide admin consent for application permissions to the Microsoft Graph API.
 
 1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Azure Active Directory > App registrations > Demo app.**
+# RobertS -- need to use THEN instead of the ">" for accesibility purposes.
 
 2. On the **Demo app** page, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
+# RobertS -- Demo App only exists if you completed the previous labs.
 
     ![Screen image displaying the Demo app page with the directory ID highlighted](./media/lp3-mod3-demo-app-directory-id.png)
 
@@ -56,7 +58,7 @@ You can grant tenant-wide admin consent through Enterprise applications if the a
 5. In the **Permissions requested** dialog box, review the information and then select **Accept**.
 
 # Lab 24: Manage the lifecycle of external users in Azure AD Identity Governance settings  
-
+# RobertS -- Did you really want to have a Lab 24 embedded into this lab?
 
 ### Exercise 2 - Azure AD Identity Governance settings
 
@@ -81,6 +83,7 @@ You can select what happens when an external user, who was invited to your direc
 7. When an external user loses their last assignment to any access packages, if you want to block them from signing in to this directory, set the **Block external user from signing in to this directory** to **Yes**.
 
 8. If a user is blocked from signing in to the directory, the user will be unable to re-request the access package or request additional access in this directory. Do not configure blocking them from signing in if they will subsequently need to request access to other access packages.
+# RobertS - should this be a step or a note?
 
 9. Once an external user loses their last assignment to any access packages, if you want to remove their guest user account in this directory, set **Remove external** user to **Yes**.
 
