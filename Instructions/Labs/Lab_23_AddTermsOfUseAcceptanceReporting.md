@@ -6,6 +6,7 @@ lab:
 ---
 
 # Lab 21: Add terms of use and acceptance reporting 
+# RobertS -- Wrong lab number!
 
 ## Lab scenario
 
@@ -140,8 +141,8 @@ Once you have finalized your terms of use document, use the following procedure 
 7. You can choose to **Accept** or **Decline**.
 
     **Note** - If you choose **decline** then during a future login as AdeleV you will again be required to view and accept the Terms of Use.
-    
-
+ # RobertS - Wonder if we need to add a second note that it might take a couple of minutes for the ToU to show up.  I had to log in a second time for the ToU screen to show up.
+ 
 #### Task 3 - View report of who has accepted and declined
 
 The Terms of use page shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
