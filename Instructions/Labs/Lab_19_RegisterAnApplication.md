@@ -109,7 +109,8 @@ First, follow these steps to create an example scope named Employees.Read.All:
     ![An app registration's Expose an API pane in the Azure portal](./media/portal-02-expose-api.png)
 
 5. You're prompted to set an **Application ID URI** if you haven't yet configured one. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://\<application-client-id\>, or specify a more readable URI like `https://contoso.com/api`.
-# RobertS - you have to select the Save and Continue button.
+
+6. Select **Save and continue**.
 
 6. Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.
 

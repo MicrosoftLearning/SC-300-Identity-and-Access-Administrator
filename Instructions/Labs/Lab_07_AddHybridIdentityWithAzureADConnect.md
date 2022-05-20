@@ -7,6 +7,8 @@ lab:
 
 # Lab 07: Add Hybrid Identity with Azure AD Connect
 
+>**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
+
 ## Lab scenario
 
 Your company works has Active Directory Domain Services on-premises.  They would like to continue to use on-premises Active Directory as their identity and access management solution, but also require the ability for users to access cloud applications with the same username and password.
@@ -15,33 +17,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 ### Exercise 1 - Setup On-Premises infrastructure
 
-#### Task 1 - Redeem Azure Pass
-
-1. Open a browser and navigate to: [www.microsoftazurepass.com](www.microsoftazurepass.com).
-
-1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
-
-1. Select the **Start** button to get started.
-
-1. Verify that the username is the same as the lab provider tenant account.
-
-1. Enter the Azure Pass voucher code in the **Enter Promo code** field. 
-
-1. Enter address information in the **Profile** fiels.
-    - **Address line 1**: 1 Microsoft Way
-    - **City**: Redmond
-    - **State**: Washington
-    - **ZIP code**: 98052
-
-1. Select the box to agree to the subscription agreement and select **Sign up**.
-
-    ![Agree to subscription agreement and sign up](media/azurepassactivation.png)
-
-1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
-
-1. Navigate to **Subscriptions** and verify that the **Azure Pass - Sponsorship** is showing **Active** status. 
-
-#### Task 2 - Create the on-premises Active Directory infrastructure
+#### Task 1 - Create the on-premises Active Directory infrastructure
 
 1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm).
 
@@ -95,7 +71,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 6. Wait for the deployment to complete. This might take about 60 minutes.
 
 
-### Task 3 - Configure the lab environment Azure VMs
+### Task 2 - Configure the lab environment Azure VMs
 
 1. In the browser window displaying the Azure portal, navigate to the **DC1** Azure VM and connect to it via Remote Desktop. When prompted, sign in by using the following credentials:
 
@@ -145,7 +121,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
     Invoke-Command -ComputerName $vmNames {Set-WebConfigurationProperty -Filter "/system.webServer/security/authentication/windowsAuthentication" -Name Enabled -Value True -PSPath IIS:\ -Location "Default Web Site"}
     ```
 
-### Task 4 - Restart the Azure VMs
+### Task 3 - Restart the Azure VMs
 
 1. Within the **Windows PowerShell ISE** window, from the console pane, run the following to restart **APP1**:
 

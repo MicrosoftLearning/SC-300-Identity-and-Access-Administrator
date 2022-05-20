@@ -7,8 +7,7 @@ lab:
 
 # Lab 11 - Assign Azure resource roles in Privileged Identity Management
 
-## This lab requires an Azure Pass or subscription to perform, which is currently not provided with the course.  Apologies for any inconvenience.  We are in the process of updating the labs and will have this lab reconfigured in the next few weeks.  Thank you for your patience and understanding.
-
+>**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
 
 ## Lab scenario
 

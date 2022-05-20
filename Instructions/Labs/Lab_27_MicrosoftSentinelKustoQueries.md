@@ -7,6 +7,8 @@ lab:
 
 # Lab 27 - Microsoft Sentinel Kusto Queries for Azure AD data sources
 
+>**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
+
 ## Lab scenario
 
 Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through connecting data sources from Microsoft and third-party security solutions, you have the ability to execute security operations tasks.  In this lab exercise, you will create a Microsoft Sentinel workspace with data connectors to Azure AD for executing hunting queries using Kusto Query Language (KQL). 
@@ -15,34 +17,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 ### Exercise 1 - Configure Microsoft Sentinel for Kusto Queries
 
-#### Task 1 - Redeem Azure Pass
-
-1. Open a browser and navigate to: [www.microsoftazurepass.com](www.microsoftazurepass.com).
-
-1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
-
-1. Select the **Start** button to get started.
-
-1. Verify that the username is the same as the lab provider tenant account.
-
-1. Enter the Azure Pass voucher code in the **Enter Promo code** field. 
-
-1. Enter address information in the **Profile** fiels.
-    - **Address line 1**: 1 Microsoft Way
-    - **City**: Redmond
-    - **State**: Washington
-    - **ZIP code**: 98052
-
-1. Select the box to agree to the subscription agreement and select **Sign up**.
-
-    ![Agree to subscription agreement and sign up](media/azurepassactivation.png)
-
-1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
-
-1. Navigate to **Subscriptions** and verify that the **Azure Pass - Sponsorship** is showing **Active** status. 
-
-
-#### Task 2 - Create a Microsoft Sentinel workspace
+#### Task 1 - Create a Microsoft Sentinel workspace
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
 
@@ -64,7 +39,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. If prompted, select **OK** to activate the Microsoft Sentinel free trial.
 
-#### Task 3 - Add Azure AD as a Data source
+#### Task 2 - Add Azure AD as a Data source
 
 1. In **Microsoft Sentinel**, navigate on the menu to **Configuration** and select **Data connectors**.
 
@@ -84,7 +59,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
     >**Note**: The Azure AD data connector may take a few minutes to show in the active count. 
 
-#### Task 4 - Run Kusto query on User activity
+#### Task 3 - Run Kusto query on User activity
 
 1. In **Microsoft Sentinel**, navigate to **Logs** under the **General** menu heading.
 
