@@ -7,8 +7,6 @@ lab:
 
 # Lab 26: Configure Privileged Identity Management for Azure AD roles
 
-# RobertS -- This lab worked without issue.  I was able to assign and the log in as Miriam and test the assignment.  No changes needed, but to delete this note.
-
 ## Lab scenario
 
 A Privileged role administrator can customize Privileged Identity Management (PIM) in their Azure Active Directory (Azure AD) organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.

@@ -49,5 +49,4 @@ Azure AD Identity Protection provides automated detection and remediation to ide
 
 1. Review other improvement actions and the steps to create and enable them.
 
-# RobertS -- Do you know if there is any way to force the Identity Secure Score to recalculate.  I know you said it will take 24-hours.  I searched in DOCS but did not find anything that might force the update.
 

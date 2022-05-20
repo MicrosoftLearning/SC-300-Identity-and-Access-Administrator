@@ -39,11 +39,9 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 6. In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
 
-7. **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
+7. Under **Enabled, select No**.
 
-# RobertS -- Technically the Enabled (step 8) comes before External Users (step 7) in the UI.  To me, it makes more sense to rerevse these two items.
-
-8. Under **Enabled, select No**.
+8. **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
 
 9. You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
 
@@ -84,10 +82,9 @@ To include resources in an access package, the resources must exist in a catalog
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
-1. If necessary, in the Azure portal, browse to **Azure Active Directory** > **Identity Governance > Catalogs** and then select **Marketing**.
-# RobertS - Replace the ">" with then or next.  Also on Step 2 - do we want to BOLD the Roles and Administrators?
+1. If necessary, in the Azure portal, browse to **Azure Active Directory**, then select **Identity Governance** and select **Catalogs** and then select **Marketing**.
 
-2. In the Marketing catalog page, in the left navigation menu, select Roles and administrators.
+2. In the Marketing catalog page, in the left navigation menu, select **Roles and administrators**.
 
     ![Screen image displaying the Roles and administrators page for the Marketing catalog](./media/lp4-mod1-catalog-roles-and-admins.png)
 
@@ -115,8 +112,7 @@ You can edit the name and description for a catalog. Users see this information 
 
 1. Access reviews can manage the access lifecycle.  Azure AD Identity Governance provides an overview dashboard showing the status of access reviews. Select **Access reviews** in the **Identity Governance** menu.
 
-1. Under the Access review menu, you can select Access reviews to configure an access review for guest users.  You will select + New access review to create your guest user access review.  The tile will open to configure the access review for guest users.
-# RobertS -- BOLD the + New Access Review.
+1. Under the Access review menu, you can select **Access reviews** to configure an access review for guest users.  You will select **+ New access review** to create your guest user access review.  The tile will open to configure the access review for guest users.
 
 1. Select **Teams + Groups** for **Select what to review**.
 

@@ -7,8 +7,6 @@ lab:
 
 # Lab 25 - Creating Access Reviews for Internal and External Users  
 
-# RobertS -- Is thie an Access Review in PIM?  I don't have that as an option.  I have Review Access under tasks.  Or was this supposed to be a lab under Access Reviews in Identity Governance?
-
 ## Lab scenario
 
 Privileged user access should be regularly reviewed in a similar manner.  Since these are elevated access assignments, the review of these should be done on a consistent basis as identified by the company.  Unused and unnecessary privileged assignments should be removed.  Automated removal should also be configured for users that are no longer with the company or have changed departments within the company.
@@ -21,7 +19,7 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
 
-2. Access reviews can manage the access lifecycle.  Within **Privileged Identity Management**, this is found under the **Manage** menu.
+2. Access reviews can manage the access lifecycle.  Within **Azure Active Directory**, find **Identity Governance** under the **Manage** menu.  In **Identity Goverance**, select **Access reviews**.
 
 3. Name the access review and set the start date and frequency. Duration is how long the access review will run before it expires.  You can set the end to be a specific date or after a number of occurrence.  Then select the user scope of the access review.
 

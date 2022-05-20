@@ -1,12 +1,11 @@
 ---
 lab:
-    title: '21 - Add terms of use and acceptance reporting'
+    title: '23 - Add terms of use and acceptance reporting'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 21: Add terms of use and acceptance reporting 
-# RobertS -- Wrong lab number!
+# Lab 23: Add terms of use and acceptance reporting 
 
 ## Lab scenario
 
@@ -140,8 +139,9 @@ Once you have finalized your terms of use document, use the following procedure 
 6. View the Terms of Use.
 7. You can choose to **Accept** or **Decline**.
 
-    **Note** - If you choose **decline** then during a future login as AdeleV you will again be required to view and accept the Terms of Use.
- # RobertS - Wonder if we need to add a second note that it might take a couple of minutes for the ToU to show up.  I had to log in a second time for the ToU screen to show up.
+    >**Note** - If you choose **decline** then during a future login as AdeleV you will again be required to view and accept the Terms of Use.
+
+    >**Note**: Terms of Use may take a few minutes to appear or you can logout and log back in to the portal.
  
 #### Task 3 - View report of who has accepted and declined
 
