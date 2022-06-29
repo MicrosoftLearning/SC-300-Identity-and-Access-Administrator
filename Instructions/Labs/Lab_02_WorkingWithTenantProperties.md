@@ -11,54 +11,72 @@ lab:
 
 You need to identify and update the different properties associated with your tenant.
 
-#### Estimated time: 10 minutes
+#### Estimated time: 15 minutes
 
-### Exercise 1 - Changing the tenant display name
+### Exercise 1 - Create a custom subdomains 
 
-#### Task 1 - Set the tenant name and technical contact
+#### Task 1 - Create a custom subdomain name
 
 1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
 
-2. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
+1. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
 
     ![Azure portal menu with Azure Active Directory selected](./media/azure-portal-menu-aad.png)
 
-3. In the left navigation, in the Manage section, select **Properties**.
+1. In the **Manage** section of **Azure AD**, select **Custom domain names**.
 
-4. Change the Tenant Properties for the **Name** and **Technical contact** in the dialog.
+1. Select **Add custom domain**.
 
-| **Setting** | **Value** |
-| :--- | :--- |
-| Name | Contoso Marketing |
-| Technical contact | `your Global admin account` |
+1. In the **Custom domain name** field, create a custom subdomain for the lab tenant by putting **sales** in front of the **onmicrosoft.com** domain name.  The format will look similar to this:
 
-5. Select **Save** to update the tenant properties.
+    ```
+    sales.labtenant.onmicrosoft.com
+    ```
+
+1. Select **Add domain** to add the subdomain.
+# RobertS --> You do get a complete screen that allows you to MAKE PRIMARY or Delete.  We don't want to do either of these; but might want to mention in the lab steps.
+
+
+### Exercise 2 - Changing the tenant display name
+
+#### Task 1 - Set the tenant name and technical contact
+
+1. From within Azure Active Directory, in the left navigation, in the **Manage** section, select **Properties**.
+
+1. Change the Tenant Properties for the **Name** and **Technical contact** in the dialog.
+
+    | **Setting** | **Value** |
+    | :--- | :--- |
+    | Name | Contoso Marketing |
+    | Technical contact | `your Global admin account` |
+
+1. Select **Save** to update the tenant properties.
 
    **You will notice the name change immediately upon completion of the save.**
 
 #### Task 2 - Review the Country or region and other values associated with your tenant
 
-1. In the **Azure Active Directory** blade, in the Manage section, select **Properties**.
+1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
 
 2. Under **Tenant properties**, locate **Country or region** and review the information.
 
     **IMPORTANT** - When the tenant is created, the Country or region are specified at that time. This setting cannot be changed later.
 
-3. In the **Properties** blade, under **Tenant properties**, locate **Location** and review the information.
+3. In the **Properties** page, under **Tenant properties**, locate **Location** and review the information.
 
-    ![Screen image showing the Azure Active Directory Properties blade with the Country or region and Location settings highlighted](./media/azure-active-directory-properties-country-location.png)
+    ![Screen image showing the Azure Active Directory Properties page with the Country or region and Location settings highlighted](./media/azure-active-directory-properties-country-location.png)
 
 #### Task 3 - Finding the tenant ID
 
 Azure subscriptions have a trust relationship with Azure Active Directory (Azure AD). Azure AD is trusted to authenticate users, services, and devices for the subscription. Each subscription has a tenant ID associated with it, and there are a few ways you can find the tenant ID for your subscription.
 
-1. In the **Azure Active Directory** blade, in the Manage section, select **Properties**.
+1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
 
 2. Under **Tenant properties**, locate **Tenant ID**. This is your unique tenant identifier.
 
     ![Screen image displaying the Tenant properties page with the Tenant ID box highlighted](./media/portal-tenant-id.png)
 
-### Exercise 2 - Setting your privacy information
+### Exercise 3 - Setting your privacy information
 
 #### Task 1 - Adding your privacy info on Azure AD, including Global privacy contact and Privacy statement URL
 
@@ -68,7 +86,7 @@ Microsoft strongly recommends you add both your global privacy contact and your 
 
 You add your organization's privacy information in the **Properties** area of Azure AD. To access the Properties area and add your privacy information:
 
-1. In the **Azure Active Directory** blade, in the Manage section, select **Properties**.
+1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
 
     ![Screen image displaying tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted](./media/properties-area.png)
 
@@ -78,7 +96,8 @@ You add your organization's privacy information in the **Properties** area of 
      - Allan Deyoung is a built-in users in your Azure lab tenant who works as an IT Admin, we will use him as the Privacy contact.
      - This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your global administrators.
 
-- **Privacy statement URL** -  `https://github.com/R-C-Stewart/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf`
+- **Privacy statement URL** -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
+
      - In sample Privacy PDF is provided in your labs directory.
      - Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
 
@@ -91,7 +110,7 @@ You add your organization's privacy information in the **Properties** area of 
 #### Task 2 - Check your Privacy Statement
 
 1. Return to the Azure Home screen - Dashboard.
-2. In the upper-righthand corner of the UI, click on your username.
+2. In the upper-righthand corner of the UI, Select on your username.
 3. Choose **View account** from the dropdown menu.
 
      **A new browser tab will open automatically.**

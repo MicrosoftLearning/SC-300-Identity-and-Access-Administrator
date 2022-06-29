@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '26 - Add terms of use and acceptance reporting'
+    title: '23 - Add terms of use and acceptance reporting'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 26: Add terms of use and acceptance reporting 
+# Lab 23: Add terms of use and acceptance reporting 
 
 ## Lab scenario
 
@@ -127,7 +127,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. Open a new InPrivate browser window.
 2. Connect to https://portal.azure.com.
-3. If if comes up saying you are already logged in, click on the logged in users name in the upper-right of the screen and choose **Sign in with a different account**.
+3. If if comes up saying you are already logged in, Select on the logged in users name in the upper-right of the screen and choose **Sign in with a different account**.
 4. Log in as Adele:
 
     | Setting | Value to enter |
@@ -139,12 +139,13 @@ Once you have finalized your terms of use document, use the following procedure 
 6. View the Terms of Use.
 7. You can choose to **Accept** or **Decline**.
 
-    **Note** - If you choose **decline** then during a future login as AdeleV you will again be required to view and accept the Terms of Use.
-    
+    >**Note** - If you choose **decline** then during a future login as AdeleV you will again be required to view and accept the Terms of Use.
 
+    >**Note**: Terms of Use may take a few minutes to appear or you can logout and log back in to the portal.
+ 
 #### Task 3 - View report of who has accepted and declined
 
-The Terms of use blade shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
+The Terms of use page shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
 
 1. In Microsoft Azure, in **Identity Governance > Terms of use**, locate your terms of use.
 
@@ -241,3 +242,4 @@ You may, on occasion, be required to update the terms of use document.
 6. Once you have uploaded your new pdf and decided on re-accept, select **Add**.
 
 7. You will now see the most recent version under the Document column.
+

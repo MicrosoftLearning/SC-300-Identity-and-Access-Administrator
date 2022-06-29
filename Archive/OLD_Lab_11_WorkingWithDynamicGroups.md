@@ -51,13 +51,13 @@ As your company grows, manually group management is too time consuming. Since st
 
 #### Task 2 - Verify the members have been added
 
-1. Click on the **Home** `Azure Active Directory`.
+1. Select on the **Home** `Azure Active Directory`.
 2. Launch **Azure Active Directory**.
-3. In the **Manage** menu click on **Groups**.
+3. In the **Manage** menu Select on **Groups**.
 4. In the filter box type **SC300** and your newly created group will be listed.
-5. Click on **SC300-myDynamicGroup** to open the group.
+5. Select on **SC300-myDynamicGroup** to open the group.
 6. Notice that it shows that it contains 30+ **Direct members*.
-7. Click on **Members** in the **Manage** menu.
+7. Select on **Members** in the **Manage** menu.
 8. Review the members.
 
 #### Task 3 - Experiment with alternate rules

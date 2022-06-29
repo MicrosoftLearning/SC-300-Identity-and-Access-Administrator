@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '27 - Manage the lifecycle of external users in Azure AD Identity Governance settings'
+    title: '24 - Manage the lifecycle of external users in Azure AD Identity Governance settings'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 27: Manage the lifecycle of external users in Azure AD Identity Governance settings  
+# Lab 24: Manage the lifecycle of external users in Azure AD Identity Governance settings  
 
 ## Lab scenario
 

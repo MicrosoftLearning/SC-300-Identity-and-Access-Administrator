@@ -1,14 +1,13 @@
 ---
 lab:
-    title: 'OPTIONAL 30 - Assign Azure resource roles in Privileged Identity Management'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+    title: '11 - Assign Azure resource roles in Privileged Identity Management'
+    learning path: '02'
+    module: 'Module 02 - Implement an authentication and access management solution'
 ---
 
-# Lab 30 - OPTIONAL: Assign Azure resource roles in Privileged Identity Management
+# Lab 11 - Assign Azure resource roles in Privileged Identity Management
 
-## This lab requires an Azure Pass or subscription to perform, which is currently not provided with the course.  Apologies for any incovenience.  We are in the process of updating the labs and will have this lab reconfigured in the next few weeks.  Thank you for your patience and understanding.
-
+>**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
 
 ## Lab scenario
 
@@ -22,6 +21,7 @@ Azure Active Directory (Azure AD) Privileged Identity Management (PIM) can manag
 
 You need to make a user eligible for an Azure resource role.
 
+
 #### Estimated time: 10 minutes
 
 ### Exercise 1 - PIM with Azure resources
@@ -32,19 +32,19 @@ You need to make a user eligible for an Azure resource role.
 
 2. Search for and then select **Azure AD Privileged Identity Management.**
 
-3. In the Privileged Identity Management blade, in the left navigation, select **Azure resources.**
+3. In the Privileged Identity Management page, in the left navigation, select **Azure resources.**
 
 4. On the top menu, select **Discover resources**.
 
-5. In the Azure resources – Discovery blade, select your subscription and then, on the top menu, select **Manage resource**.
+5. In the Azure resources – Discovery page, select your subscription and then, on the top menu, select **Manage resource**.
 
-    ![Screen image displaying the Azure resources discovery blade with the subscription and manage resource highlighted](./media/lp4-mod3-pim-azure-resource-management.png)
+    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lp4-mod3-pim-azure-resource-management.png)
 
 6. In the **Onboarding selected resource for management** dialog box, review the information and then select **OK**.
 
-7. When onboarding completes, close the Azure resources – Discovery blade.
+7. When onboarding completes, close the Azure resources – Discovery page.
 
-8. In the Azure resources blade, select the subscription.
+8. In the Azure resources page, select the subscription.
 
     ![Screen image displaying the recently added Azure resource](./media/lp4-mod3-pim-az-resource-overview.png)
 
@@ -52,7 +52,7 @@ You need to make a user eligible for an Azure resource role.
 
 10. On the top menu, select + **Add assignments**.
 
-11. In the Add assignments blade, select the **Select role** menu and then select **API Management Service Contributor.**
+11. In the Add assignments page, select the **Select role** menu and then select **API Management Service Contributor.**
 
 12. Under **Select member(s),** select **No member selected**.
 

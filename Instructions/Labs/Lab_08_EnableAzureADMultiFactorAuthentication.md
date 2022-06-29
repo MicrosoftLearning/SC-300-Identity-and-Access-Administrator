@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '12 - Enable Azure AD multi-factor authentication'
+    title: '08 - Enable Azure AD multi-factor authentication'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 12 - Enable Azure AD multi-factor authentication
+# Lab 08 - Enable Azure AD multi-factor authentication
 
 ## Lab scenario
 
@@ -15,7 +15,7 @@ To improve security in your organization, you've been directed to enable multi-f
 
 **IMPORTANT** - An Azure AD Premium license is required for this exercise.
 
-### Exercise 1 - Review and enable Multifactor Authentication in Azure
+### Exercise 1 - Review and enable Multi-factor Authentication in Azure
 
 #### Task 1 - Review Azure Multi-Factor Authentication options
 
@@ -42,8 +42,9 @@ To improve security in your organization, you've been directed to enable multi-f
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
 1. Switch back to the Azure portal and select **Azure Active Directory** > **Security** > **Conditional access**.
+# RobertS --> need to replace the ">" with a then or equivalent for screen readers.
 
-2. On the menu, click **+ New policy**. From the drop down select **Create new policy**.
+2. On the menu, Select **+ New policy**. From the drop down select **Create new policy**.
 
     ![creenshot highlighting the New Policy button in the Azure portal](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
 
@@ -89,10 +90,11 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Open a new InPrivate Browsing windows.
 2. Connect to https://www.office.com.
-3. Click the sign-in option.
+3. Select the sign-in option.
 4. Enter **DeliaD@** `<<your domain address>>`.
 5. Enter the password = Enter the Global admin password of the tenant (Note : Refer the 'Lab Resources' tab to retrieve the admin password).
-6. At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Click the **Try Again** option in this case.
+ >**Note**: At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Select the **Try Again** option in this case.
+
 
 You can see that because of the Conditional Access rule we created for Delia, MFA is reguired to launch Office 365 home page.
 

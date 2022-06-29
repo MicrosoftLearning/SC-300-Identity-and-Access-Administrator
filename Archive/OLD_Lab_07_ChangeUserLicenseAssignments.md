@@ -23,12 +23,12 @@ Some user accounts in your organization will not be provided all available produ
 
 3. In the Users blade, enter **Raul** into the search box.
 
-4. Click on **Raul Razo**
+4. Select on **Raul Razo**
 5. Review Raul's profile and ensure he has a Usage Location set.
 
     **Warning** - To assign a license to a user, the user must assigned a usage location.
 
-6. Click the **Licenses** menu item in the left-hand menu.
+6. Select the **Licenses** menu item in the left-hand menu.
 7. Ensure that Raul has "No license assignments found."
 
 #### Task 2 - Update user license assignments
@@ -48,5 +48,5 @@ Some user accounts in your organization will not be provided all available produ
     ![Screen image displaying the Update license assignments page and license options highlighted](./media/lp1-mod2-assign-user-license-options.png)
 
 7. When complete, select **Save**.
-8. At the top of the screen click `Home > Contoso Marketing > User >` **Raul Razo**
+8. At the top of the screen Select `Home > Contoso Marketing > User >` **Raul Razo**
 9. Notice that the license has been assigned.

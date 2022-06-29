@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '13 - Enable Azure AD self service password reset'
+    title: '09 - Enable Azure AD self service password reset'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 13 - Configure and deploy self-service password reset
+# Lab 09 - Configure and deploy self-service password reset
 ## Lab scenario
 
 The company has decided to empower the employees and enable self-service password reset. You must configure this setting in your organization.
@@ -18,7 +18,7 @@ The company has decided to empower the employees and enable self-service passwor
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
-1. On the Azure Active Directory blade, under **Manage**, select **Groups** and select **+ New Group** on the right side window.
+1. On the Azure Active Directory page, under **Manage**, select **Groups** and select **New Group** on the right side window.
 
 2. Create a new group using the following information:
 
@@ -35,23 +35,23 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
     
 3. Select **Create**.
 
-    ![Screen image displaying the New Group blade with group type, group name, and create highlighted](./media/lp2-mod2-create-sspr-security-group.png)
+    ![Screen image displaying the New Group page with group type, group name, and create highlighted](./media/lp2-mod2-create-sspr-security-group.png)
 
 #### Task 2 - Enable SSPR for you test group
 
 Enable SSPR for the group.
 
-1. Browse back to the Azure Active Directory blade.
+1. Browse back to the Azure Active Directory page.
 
 2. Under **Manage**, select **Password reset**.
 
-3. On the Password reset blade Properties page, under **Self service password reset enabled**, select **Selected**.
+3. On the Password reset page Properties page, under **Self service password reset enabled**, select **Selected**.
 
-4. Select **Select group**.
+4. Select **Select group** and choose **SSPRSecurityGroupUser**.
 
 5. In the Default password reset policy pane, select the **SSPRTesters** group.
 
-6. On the Password reset blade Properties page, select **Save**.
+6. On the Password reset page Properties page, select **Save**.
 
     ![Screen image displaying the Password reset properties page with selected, select group, and save highlighted](./media/lp2-mod2-enable-password-reset-for-selected-group.png)
 
