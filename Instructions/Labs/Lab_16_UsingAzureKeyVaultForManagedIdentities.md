@@ -7,7 +7,7 @@ lab:
 
 # Lab 16 - Using Azure Key Vault for Managed Identities
 
->**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
+**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
 ## Lab scenario
 
@@ -51,7 +51,6 @@ When you use managed identities for Azure resources, your code can get access to
 
  - **Resource group** - sc300KeyVaultrg
  - **Key vault name** - sc300keyvault
-
 
 1. Select **Review + create**.
 
@@ -116,5 +115,3 @@ When you use managed identities for Azure resources, your code can get access to
     'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16…
     ```
 1. This secret can be used to authenticate to services that require a name and password.
-
-
