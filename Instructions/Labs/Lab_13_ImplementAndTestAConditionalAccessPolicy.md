@@ -11,10 +11,9 @@ lab:
 
 Your organization needs to be able to limit user access to its internal applications. You must deploy an Azure Active Directory conditional access policy.
 
->**Note**  For Conditional Access Policies, you can turn off Security Defaults, the key points to remember are from the training.  Additional information on Security defaults can be found at this link: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
+**Note** - For Conditional Access Policies, you can turn off Security Defaults, the key points to remember are from the training.  Additional information on Security defaults can be found at this link: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
 #### Estimated time: 30 minutes
-
 
 ### Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
 
@@ -25,10 +24,10 @@ Your organization needs to be able to limit user access to its internal applicat
 2. Connect to [https://www.office.com](https://www.office.com) 
 3. When prompted, log in as DebraB:
 
-    | Setting | Value |
-    | :--- | :--- |
-    | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-    | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
+   | Setting | Value |
+   | :--- | :--- |
+   | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
+   | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
     
 4. Select on the Yammer icon to see that it loads correctly.
 
@@ -46,11 +45,11 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
 
-    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
+   ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
 6. In the **Name** box, enter **Block Yammer for DebraB**.
 
-    **Note** - Using this naming to help you quickly recognize the policy and its function.
+   **Note** - Using this naming to help you quickly recognize the policy and its function.
 
 7. Under **Assignments**, select **Users or workload identities**.
 
@@ -68,31 +67,31 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 14. In the Grant pane, select **Block access** and then select **Select**.
 
-    **Note** - This policy is being configure for the exercise only and is being used to quickly demonstrate a conditional access policy.
+   **Note** - This policy is being configure for the exercise only and is being used to quickly demonstrate a conditional access policy.
 
 15. Under **Enable policy**, select **On**, and then select **Create**.
 
-    ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-conditional-access-policy.png)
+   ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-conditional-access-policy.png)
 
 #### Task 3 - Test the conditional access policy
 
 You should test your conditional access policies to ensure they working as expected.
 
 1. Open a new 'Inprivate' browser tab and then browse to [https://www.yammer.com/office365](https://www.yammer.com/office365).
-     - When prompted, log in as DebraB:
+    - When prompted, log in as DebraB:
 
-    | Setting | Value |
-    | :--- | :--- |
-    | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-    | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
-      
+   | Setting | Value |
+   | :--- | :--- |
+   | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
+   | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
+     
 2. Verify you are prevented from successfully access Microsoft Yammer.
 
-    ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](./media/lp2-mod3-test-conditional-access-policy.png)
+   ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](./media/lp2-mod3-test-conditional-access-policy.png)
 
 3. If you are signed in, close the tab, wait 1 minute, and then retry.
     
-     **Note** - If your are auto-logged into Yammer as DebraB, then you will need to manually log out.  You credentials / access were cached.  Once you log out and sign-in, your Yammer session should deny access.
+   **Note** - If your are auto-logged into Yammer as DebraB, then you will need to manually log out.  You credentials / access were cached.  Once you log out and sign-in, your Yammer session should deny access.
 
 4. Close the tab and return to the Conditional Access page.
 
@@ -138,7 +137,7 @@ As part of your company's larger security configuration, you must test a conditi
 
 5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
 
-    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
+   ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
 6. In the **Name** box, enter **Sign in frequency**.
 
@@ -164,7 +163,7 @@ As part of your company's larger security configuration, you must test a conditi
 
 17. Under **Enable policy**, select **Report-only**, and then select **Create**.
 
-    ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-session-conditional-access-policy.png)
+   ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-session-conditional-access-policy.png)
 
    **NOTE** - Report-only mode is a new Conditional Access policy state that allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. With the release of report-only mode:
     
