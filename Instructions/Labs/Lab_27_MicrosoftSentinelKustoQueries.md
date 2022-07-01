@@ -7,7 +7,7 @@ lab:
 
 # Lab 27 - Microsoft Sentinel Kusto Queries for Azure AD data sources
 
->**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
+**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
 ## Lab scenario
 
@@ -57,7 +57,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. Select **Refresh** on the **Microsoft Sentinel | Data connectors** tile and the number 1 will show in the **Connected** count.
 
-    >**Note**: The Azure AD data connector may take a few minutes to show in the active count. 
+   **Note** - The Azure AD data connector may take a few minutes to show in the active count. 
 
 #### Task 3 - Run Kusto query on User activity
 
@@ -78,4 +78,3 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 1. Select **View query results** to run the query.
 
 1. This may not provide results with the new workspace, but you now have seen how queries can be run to gather information or for hunting potential threats.
-
