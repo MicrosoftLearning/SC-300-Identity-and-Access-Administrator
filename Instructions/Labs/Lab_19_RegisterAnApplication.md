@@ -75,7 +75,7 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 1. Select your application in **App registrations** in the Azure portal.
 
-2. Select **Certificates & secrets** > **+ New client secret**.
+2. Select **Certificates & secrets**, then **+ New client secret**.
 
 3. Add a description for your client secret.
 
@@ -104,7 +104,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 
 3. Select **Azure Active Directory** > **App registrations**, and then select your API's app registration.
 
-4. Select **Expose an API** > **+ Add a scope**.
+4. Select **Expose an API**, then **+ Add a scope**.
 
     ![An app registration's Expose an API pane in the Azure portal](./media/portal-02-expose-api.png)
 
