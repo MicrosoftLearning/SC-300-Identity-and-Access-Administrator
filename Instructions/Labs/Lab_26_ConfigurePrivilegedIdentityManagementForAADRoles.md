@@ -53,9 +53,6 @@ If setting multiple approvers, approval completes as soon as one of them approve
 
 5. Once you have configured the role settings, select **Update** to save your changes.
 
-# Lab 29: Assign Azure AD roles in Privileged Identity Management
-
-
 ### Exercise 2 - PIM with Azure AD roles
 
 #### Task 1 - Assign a role
