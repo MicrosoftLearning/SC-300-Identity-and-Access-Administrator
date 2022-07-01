@@ -41,8 +41,7 @@ To improve security in your organization, you've been directed to enable multi-f
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Azure portal and select **Azure Active Directory** > **Security** > **Conditional access**.
-# RobertS --> need to replace the ">" with a then or equivalent for screen readers.
+1. Switch back to the Azure portal and select **Azure Active Directory**, then **Security**, and then **Conditional access**.
 
 2. On the menu, Select **+ New policy**. From the drop down select **Create new policy**.
 
@@ -59,16 +58,16 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 5. Select **Cloud apps or actions**.
 
-    - In the dropdown, make sure **Cloud apps** is selected.
-    - Under Include, mark **All cloud apps** and note the warning the pops up about possibly locking yourself out. 
-    - Now under Include, change your choice to **Select apps** item.
-    - In the newly opened dialog, choose **Office 365**.
-        - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
-    - Choose **Select**.
+   - In the dropdown, make sure **Cloud apps** is selected.
+   - Under Include, mark **All cloud apps** and note the warning the pops up about possibly locking yourself out. 
+   - Now under Include, change your choice to **Select apps** item.
+   - In the newly opened dialog, choose **Office 365**.
+      - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
+   - Choose **Select**.
 
 6. Review the Conditions section.
 
-    - Select **Locations** and then configure it for **Any location**.
+   - Select **Locations** and then configure it for **Any location**.
 
 7. Under **Access Controls** select **Grant** and verify **Grant access** is selected.
 
@@ -93,8 +92,8 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 3. Select the sign-in option.
 4. Enter **DeliaD@** `<<your domain address>>`.
 5. Enter the password = Enter the Global admin password of the tenant (Note : Refer the 'Lab Resources' tab to retrieve the admin password).
- >**Note**: At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Select the **Try Again** option in this case.
 
+**Note** - At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Select the **Try Again** option in this case.
 
 You can see that because of the Conditional Access rule we created for Delia, MFA is reguired to launch Office 365 home page.
 
@@ -110,13 +109,13 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 
 3. At the top of the Users pane, select **Per-user MFA**.
 
-    ![Screenshot showing the MFA option](./media/lp2-mod1-users-mfa.png)
+   ![Screenshot showing the MFA option](./media/lp2-mod1-users-mfa.png)
 
 4. A new browser tab/window will open with a multi-factor authentication user settings dialog.
 
-    You can enable or disable MFA on a user basis by selecting a user and then using the quick steps on the right side.
+   You can enable or disable MFA on a user basis by selecting a user and then using the quick steps on the right side.
 
-    ![Screenshot showing the MFA options](./media/lp2-mod1-mfa-service-settings-and-users.png)
+   ![Screenshot showing the MFA options](./media/lp2-mod1-mfa-service-settings-and-users.png)
 
 5. Select **Adele Vance** with a check-mark.
 6. Select the **Enable** option under quick steps.
