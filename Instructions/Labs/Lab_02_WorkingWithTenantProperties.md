@@ -34,7 +34,6 @@ You need to identify and update the different properties associated with your te
     ```
 
 1. Select **Add domain** to add the subdomain.
-# RobertS --> You do get a complete screen that allows you to MAKE PRIMARY or Delete.  We don't want to do either of these; but might want to mention in the lab steps.
 
 
 ### Exercise 2 - Changing the tenant display name
