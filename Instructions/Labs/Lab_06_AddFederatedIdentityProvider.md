@@ -17,8 +17,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 #### Task 1 - Configure Google to be used as an identity provider
 
->**Note**: For this exercise, you will need a Gmail account on Google. Create a new Google account and then follow the steps for the exercise.
-
+**Note** - For this exercise, you will need a Gmail account on Google. Create a new Google account and then follow the steps for the exercise.
 
 1. Go to the Google APIs at https://console.developers.google.com, and sign in with your Google account. We recommend that you use a shared team Google account.
 
@@ -40,9 +39,9 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. Under Authorized domains, select **Add domain**, and then add the microsoftonline.com domain.
 
-    ```
-    microsoftonline.com
-    ```
+   ```
+   microsoftonline.com
+   ```
 
 1. Under Developer contact information, enter the email address for the lab account that you used to sign into the portal.
 
@@ -54,13 +53,13 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. In the Application type menu, select Web application. Give the application a suitable name, like Azure AD B2B. Under **Authorized redirect URIs**, add the following URIs:
 
-    ```
-        - https://login.microsoftonline.com
-        - https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp
-        (where <tenant ID> is your tenant ID)
-        - https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp
-        (where <tenant name> is your tenant name)
-    ```
+   ```
+       - https://login.microsoftonline.com
+       - https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp
+       (where <tenant ID> is your tenant ID)
+       - https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp
+       (where <tenant name> is your tenant name)
+   ```
 
 1. Select Create. Copy your **client ID** and **client secret**. You'll use them when you add the identity provider in the Azure portal.
 
@@ -82,22 +81,19 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. This completes the configuration of Google as an identity provider.
 
->**Note**: You may receive a failed to add Google as a social identity provider message.  Navigate out of that screen and back to the External Identities and Google should be available in the list.
+**Note** - You may receive a failed to add Google as a social identity provider message.  Navigate out of that screen and back to the External Identities and Google should be available in the list.
 
 1. If you used an existing Gmail account, remember to delete the account with **External Identities | All identity providers**. You can also return to the Google developer console and delete the project that you created.
 
+   **NOTE** - Use this link to complete the steps for finding the Google Client ID and Client secret.
+   https://docs.microsoft.com/azure/active-directory/external-identities/google-federation
 
-    >**NOTE** - Use this link to complete the steps for finding the Google Client ID and Client secret.
-    https://docs.microsoft.com/azure/active-directory/external-identities/google-federation
-
-
-    > **Note**: Facebook can also easily be configured as an identity provider. These steps can be accessed here: https://docs.microsoft.com/azure/active-directory/external-identities/facebook-federation. If you prefer to use a Facebook account and not Google for this exercise, you may complete this option.
+   **Note** - Facebook can also easily be configured as an identity provider. These steps can be accessed here: https://docs.microsoft.com/azure/active-directory/external-identities/facebook-federation. If you prefer to use a Facebook account and not Google for this exercise, you may complete this option.
 
 1. Once the setup is complete, you can open a private browser and enter the following web address:
 
-    ```
-    login.microsoftonline.com
-    ```
+   ```
+   login.microsoftonline.com
+   ```
 
 1. Enter the **Google** email address and password that you created.  You should then enter the Microsoft online portal for app access.
-
