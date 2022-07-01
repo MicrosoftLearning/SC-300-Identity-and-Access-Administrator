@@ -7,7 +7,7 @@ lab:
 
 # Lab 11 - Assign Azure resource roles in Privileged Identity Management
 
->**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
+**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
 ## Lab scenario
 
@@ -38,7 +38,7 @@ You need to make a user eligible for an Azure resource role.
 
 5. In the Azure resources – Discovery page, select your subscription and then, on the top menu, select **Manage resource**.
 
-    ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lp4-mod3-pim-azure-resource-management.png)
+   ![Screen image displaying the Azure resources discovery page with the subscription and manage resource highlighted](./media/lp4-mod3-pim-azure-resource-management.png)
 
 6. In the **Onboarding selected resource for management** dialog box, review the information and then select **OK**.
 
@@ -46,7 +46,7 @@ You need to make a user eligible for an Azure resource role.
 
 8. In the Azure resources page, select the subscription.
 
-    ![Screen image displaying the recently added Azure resource](./media/lp4-mod3-pim-az-resource-overview.png)
+   ![Screen image displaying the recently added Azure resource](./media/lp4-mod3-pim-az-resource-overview.png)
 
 9. In the left navigation menu, under **Manage**, select **Roles** to see the list of roles for Azure resources.
 
@@ -62,9 +62,9 @@ You need to make a user eligible for an Azure resource role.
 
 15. On the **Settings** tab, under **Assignment type**, select **Eligible**.
 
-    - **Eligible** assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
+   - **Eligible** assignments require the member of the role to perform an action to use the role. Actions might include performing a multi-factor authentication (MFA) check, providing a business justification, or requesting approval from designated approvers.
 
-    - **Active** assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
+   - **Active** assignments do not require the member to perform any action to use the role. Members assigned as active have the privileges always assigned to the role.
 
 16. Specify an assignment duration by changing the start and end dates and times.
 
