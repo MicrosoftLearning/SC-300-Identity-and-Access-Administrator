@@ -7,7 +7,7 @@ lab:
 
 # Lab 10 - Azure AD Authentication for Windows and Linux Virtual Machines
 
->**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
+**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
 ## Lab scenario
 
@@ -43,14 +43,13 @@ The company has decided that Azure Active Directory should be used to login to v
 
 1. Select **Access control (IAM)**.
 
-1. Select Add > Add role assignment to open the Add role assignment page.
+1. Select **Add**, then **Add role assignment** to open the Add role assignment page.
 
 1. Assign the following role. 
     - **Role**: Virtual Machine Administrator Login or Virtual Machine User Login
     - **Assign access to**: User, group, service principal, or managed identity
 
 1. For detailed steps, see Assign Azure roles using the Azure portal.
-
 
 ### Exercise 2 - Login to Linux Virtual Machines in Azure with Azure AD
 
