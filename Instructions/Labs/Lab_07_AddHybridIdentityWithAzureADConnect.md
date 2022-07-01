@@ -7,7 +7,7 @@ lab:
 
 # Lab 07: Add Hybrid Identity with Azure AD Connect
 
->**Note**: This lab requires an Azure Pass. Please see lab 00 for directions.
+**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
 ## Lab scenario
 
@@ -21,52 +21,41 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm).
 
-    >**Note to learners and MCTs**: The deployment of this template can take 30-60 minutes, so be ready to take a break at this step or run the deployment before a lecture section of the course.
+    **Note to learners and MCTs** - The deployment of this template can take 30-60 minutes, so be ready to take a break at this step or run the deployment before a lecture section of the course.
 
-    >**Note to Lab providers**: If possible, it would be helpful to students to complete and deploy as part of the lab environment setup.
+    **Note to Lab providers** - If possible, it would be helpful to students to complete and deploy as part of the lab environment setup.
 
 2. On the **TLG (Test Lab Guide) - 3 VM Base Configuration (v1.0)** page, select **Deploy to Azure**.
 
-   > **Note**: The 3 VM Base Configuration provisions a Windows Server 2016 Active Directory domain controller named DC1 using the domain name you specify, and a domain member server named APP1 running Windows Server 2016. It also offers an option to provision a client VM running Windows 10, however we will not be using it in our lab (primarily due to licensing requirements applicable when running Windows 10 VMs in Azure). The domain member server (APP1) has automatically installed .NET 4.5 and IIS.  
+   **Note** - The 3 VM Base Configuration provisions a Windows Server 2016 Active Directory domain controller named DC1 using the domain name you specify, and a domain member server named APP1 running Windows Server 2016. It also offers an option to provision a client VM running Windows 10, however we will not be using it in our lab (primarily due to licensing requirements applicable when running Windows 10 VMs in Azure). The domain member server (APP1) has automatically installed .NET 4.5 and IIS.  
    
-   > **Note**: The VM that is required for this lab is **DC1**.  If you are using an Azure Pass, there is a limitation of 2 VMs, so the Client VM may fail.  This is not needed for this lab.
+   **Note** - The VM that is required for this lab is **DC1**.  If you are using an Azure Pass, there is a limitation of 2 VMs, so the Client VM may fail.  This is not needed for this lab.
 
 3. On the **Custom deployment** page, specify the following settings, then select **Review + Create** then **Create**.
 
-    -   Subscription: The name of the target Azure subscription where you want to provision the lab environment Azure VMs.
-
-    -   Resource group: (Create new) **hybrididentity-RG**
-
-    -   Location: The name of the Azure region that will host the lab environment Azure VMs.
-
-    -   Config Name: **TlgBaseConfig-01**
-
-    -   Domain Name: **corp.contoso.com**
-
-    -   Server OS: **2016-Datacenter**
-
-    -   Admin Username: **demouser**
-
-    -   Admin Password: **demo@pass123**
-
-    -   Deploy Client VM: **No**
-
-    -   Client VHD URI: **leave blank**
-
-    -   VM Size: **Standard_D2s_v3**
+   -   Subscription: The name of the target Azure subscription where you want to provision the lab environment Azure VMs.
+   -   Resource group: (Create new) **hybrididentity-RG**
+   -   Location: The name of the Azure region that will host the lab environment Azure VMs.
+   -   Config Name: **TlgBaseConfig-01**
+   -   Domain Name: **corp.contoso.com**
+   -   Server OS: **2016-Datacenter**
+   -   Admin Username: **demouser**
+   -   Admin Password: **demo@pass123**
+      - **It is strongly recommended that you enter a secure password that you know and can remember.**
+   -   Deploy Client VM: **No**
+   -   Client VHD URI: **leave blank**
+   -   VM Size: **Standard_D2s_v3**
    
-    **Note**: Use a similar VM size if your subscription does not support the listed size. Documentation is linked here: <https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes>.
+   **Note** - Use a similar VM size if your subscription does not support the listed size. Documentation is linked here: <https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes>.
 
-    -   DNS Label Prefix: **Any valid, globally unique DNS name (a unique string consisting of letters, digits, and hyphens, starting with a letter and up to 47 characters long).**
+   -   DNS Label Prefix: **Any valid, globally unique DNS name (a unique string consisting of letters, digits, and hyphens, starting with a letter and up to 47 characters long).**
 
-    -   _artifacts Location: **Accept the default**
+   -   _artifacts Location: **Accept the default**
+   -   _artifacts Location Sas Token: **leave blank**
 
-    -   _artifacts Location Sas Token: **leave blank**
-
-   4. Select **Review + Create**.
+4. Select **Review + Create**.
 
 5. After validation has passed, select **Create**.
-
     
 6. Wait for the deployment to complete. This might take about 60 minutes.
 
@@ -75,9 +64,9 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 1. In the browser window displaying the Azure portal, navigate to the **DC1** Azure VM and connect to it via Remote Desktop. When prompted, sign in by using the following credentials:
 
-    -   Username: **demouser**
-
-    -   Password: **demo\@pass123**
+   -   Username: **demouser**
+   -   Password: **demo\@pass123**
+      - **It is strongly recommended that you enter a secure password that you can remember.**
 
 2.  Within the Remote Desktop session to **DC1**, start **Windows PowerShell ISE**, add the following script to the script pane, and run it to disable Internet Explorer enhanced security configuration and User Access Control on both **DC1** and **APP1** Azure VMs:
 
@@ -143,6 +132,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
     -   Username: **demouser**
 
     -   Password: **demo\@pass123**
+       - **It is strongly recommended that you enter a secure password that you can remember.**
 
 2.  Within the Remote Desktop session to **DC1**, start Internet Explorer and navigate to the link below.
 
