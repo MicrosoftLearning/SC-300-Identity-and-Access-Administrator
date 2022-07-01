@@ -82,5 +82,4 @@ Registering your application establishes a trust relationship between your app a
 
 1. Navigate to **Outlook** from <login.microsoftonline.com> to view the **Inbox** for an alert. You should see tht **Access to Microsoft Exchange Online is monitored** when selected. This is based on a Conditional Access policy that is in place from the lab provider.
 
-    >**Note**: There may be a delay for this policy to take affect and provide an alert.
-
+   **Note** -  There may be a delay for this policy to take affect and provide an alert.
