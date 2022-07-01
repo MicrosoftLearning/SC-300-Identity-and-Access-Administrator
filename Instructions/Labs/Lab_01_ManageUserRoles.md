@@ -21,8 +21,7 @@ Your company recently hired a new employee who will perform duties as an applica
 
 2. Search for and then select **Azure Active Directory**.
 
-3. In the left navigation menu, under **Manage**, select **Users > + New User**.
-# RobertS --> Probably need to swap the > for a ", then select" for screen read purposes.
+3. In the left navigation menu, under **Manage**, select **Users**, then select **+ New User**.
 
 4. Ensure that Create User is selected.  Create a user using the following information:
 
@@ -35,10 +34,9 @@ Your company recently hired a new employee who will perform duties as an applica
 
 5. Mark the **Let me create the password**
 
-6. Use password = **Pass@word1**
+6. Use password - **Enter a secure password that you can remember.**
 
      *You will have to change the password upon first login to this account*
-# RobertS --> Task 1, Step 6 and Task 2, Step 3 – Do we want to use those passwords?  With the hacks that have occurred in the past, I think we were going with “Enter a secure password that you will remember.”  I know you copied this directly out of the existing labs, and that the lab will be hosted in an unknown Tenant.  So this is an ask for your opinion, not an ask to change at this point.
 
 7. Select **Create**. The user is now created and registered to your organization.
 
@@ -64,7 +62,6 @@ Your company recently hired a new employee who will perform duties as an applica
 
 5. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
 7. Select on **+ New application**. Notice that **+ Create your own application** is unavailable.
-# RobertS --> I think you need to close the New Application page to get back to the Enterprise Apps menu, before the next step.
 
 9. Try Selecting on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
 10. Select on **ChrisG** name in the upper-right corner and sign out.
@@ -86,11 +83,11 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
     ![Assigned roles page - showing the selected role](./media/directory-role-select-role.png)
 
->**Note**: If the lab environment has already activated Azure AD Premium P2, Privileged Identity Management (PIM) will be enabled and you wll need to select **Next** and assign a Permanent role to this user.
+**Note** - If the lab environment has already activated Azure AD Premium P2, Privileged Identity Management (PIM) will be enabled and you wll need to select **Next** and assign a Permanent role to this user.
 
 8. Select the **Refesh** button.
 
-   **Note - The newly assigned Application administrator role appears on the user’s Assigned roles page.**
+**Note - The newly assigned Application administrator role appears on the user’s Assigned roles page.**
 
 #### Task 2 - Check application permissions
 
@@ -121,8 +118,7 @@ This task will use an alternative method to remove the assigned role; it will us
 2. In the search box type **Azure Active Directory** and launch Azure AD.
 3. In **Azure Active Directory**, select **Roles and administrators**, and then select the **Application administrator** role from the list.
 
->**Note**: If the lab environment has already activated Azure AD Premium P2, Privileged Identity Management (PIM) will be enabled and you wll need to select **Next** and assign a Permanent role to this user.
-
+**Note** - If the lab environment has already activated Azure AD Premium P2, Privileged Identity Management (PIM) will be enabled and you wll need to select **Next** and assign a Permanent role to this user.
 
 4. On the **Application administrator | Assignments** page you should see Chris Green's name listed.
 5. Put a check in the box next to Chris Green.
@@ -136,19 +132,19 @@ This task will use an alternative method to remove the assigned role; it will us
 
 1. In the Azure AD menu, select **Users** under **Manage**.
 
-1. On the **Users | All users** tile, select the **Bulk operations** drop-down arrow and then **Bulk create**.
+2. On the **Users | All users** tile, select the **Bulk operations** drop-down arrow and then **Bulk create**.
 
-1. Selecting **Bulk create** will open a new tile. This tile provides a **Download** link to a template file that you will edit to populate with your user information and upload to add the bulk creation of users.
+3. Selecting **Bulk create** will open a new tile. This tile provides a **Download** link to a template file that you will edit to populate with your user information and upload to add the bulk creation of users.
 
-1. Select **Download** to download the .csv file.
+4. Select **Download** to download the .csv file.
 
-1. The .csv template provides you with the fields included with the user profile. This includes the required username, display name, and initial password. You can also complete optional fields, such as Department and Usage location, at this time. The following screenshot is an example of how you can complete the .csvfile: 
+5. The .csv template provides you with the fields included with the user profile. This includes the required username, display name, and initial password. You can also complete optional fields, such as Department and Usage location, at this time. The following screenshot is an example of how you can complete the .csvfile: 
 
     ![Bulk import using csv file entry](./media/bulkimportexample.png)
 
-1. Once populated, save the changes and upload it to add the users.
+6. Once populated, save the changes and upload it to add the users.
 
-1. You will be notified that the file uploaded successfully.  Choose Submit to add the users. 
+7. You will be notified that the file uploaded successfully.  Choose Submit to add the users. 
 
 After the users have been created, you will be prompted that the creation has succeeded.  Close the Bulk create users tile and the new users will be populated in the list of **Users | All users**. 
 
@@ -156,35 +152,35 @@ After the users have been created, you will be prompted that the creation has su
 
 1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
 
->**Note**: Select PowerShell and not PowerShell ISE.
+**Note** - Select PowerShell and not PowerShell ISE.
 
-1. You will need to add the Azure AD PowerShell module, if you have not used it before.  Run the command: Install-Module AzureAD.  When prompted, select “Y” to continue.
+2. You will need to add the Azure AD PowerShell module, if you have not used it before.  Run the command: Install-Module AzureAD.  When prompted, select “Y” to continue.
 
     ```
     Install-Module AzureAD
     ```
 
-1. Confirm that the module installed correctly by running the command:  
+3. Confirm that the module installed correctly by running the command:  
 
     ```
     Get-Module AzureAD 
     ```
 
-1. Next, you will need to login to Azure by running:  
+4. Next, you will need to login to Azure by running:  
 
     ```
     Connect-AzureAD 
     ``` 
 
-1. The Microsoft login window will appear for you to login to Azure AD.  
+5. The Microsoft login window will appear for you to login to Azure AD.  
 
-1. To verify that you are connected and to see existing users, run:  
+6. To verify that you are connected and to see existing users, run:  
 
     ``` 
     Get-AzureADUser 
     ```
     
-1. To assign a common temporary password to all new users, run the following command and replace the TempPW with the password that you would like to provide to your users.  
+7. To assign a common temporary password to all new users, run the following command and replace the TempPW with the password that you would like to provide to your users.  
 
     ``` 
     $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
@@ -194,12 +190,12 @@ After the users have been created, you will be prompted that the creation has su
     $PasswordProfile.Password = "Pass@word1" 
     ```
 
-1. You are ready to create a new users.  The following command will be populated with the user information and run.  If you have more than one user to add, you can use a notepad txt file to add the user information and copy/paste into PowerShell. 
+8. You are ready to create a new users.  The following command will be populated with the user information and run.  If you have more than one user to add, you can use a notepad txt file to add the user information and copy/paste into PowerShell. 
 
     ```
     New-AzureADUser -DisplayName "New User" -PasswordProfile $PasswordProfile -UserPrincipalName "NewUser@labtenantname.com" -AccountEnabled $true -MailNickName "Newuser"
     ```
->**Note**: Replace **labtenantname.com** with the **onmicrosoft.com** name assigned by the lab tenant.
+**Note** - Replace **labtenantname.com** with the **onmicrosoft.com** name assigned by the lab tenant.
 
 ## Experiment with managing users
 
@@ -265,23 +261,22 @@ Some user accounts in your organization will not be provided all available produ
 
 7. Ensure that Raul has "No license assignments found."
 
+8. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
 
-1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+9. In the left navigation, under **Manage**, select **Users**
 
-2. In the left navigation, under **Manage**, select **Users**
+10. In the Users page, select **Raul Razo**.
 
-3. In the Users page, select **Raul Razo**.
+11. In the left navigation, select **Licenses**.
 
-4. In the left navigation, select **Licenses**.
+12. Select the **+ Assignments** button. 
 
-5. Select the **+ Assignments** button. 
-
-6. On the Update license assignments page, select the check box for a **Windows 10/11 Enterprise E3** license.
+13. On the Update license assignments page, select the check box for a **Windows 10/11 Enterprise E3** license.
 
     ![Screen image displaying the Update license assignments page and license options highlighted](./media/lp1-mod2-assign-user-license-options.png)
 
-7. When complete, select **Save**.
+14. When complete, select **Save**.
 
-8. At the top of the screen Select **Home**, then select **Contoso**, then select **User**, and select **Raul Razo**.
+15. At the top of the screen Select **Home**, then select **Contoso**, then select **User**, and select **Raul Razo**.
 
-10. Notice that the license has been assigned.
+16. Notice that the license has been assigned.
