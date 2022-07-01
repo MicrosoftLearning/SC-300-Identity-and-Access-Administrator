@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '23 - Grant tenant-wide admin consent to an application'
+    title: '21 - Grant tenant-wide admin consent to an application'
     learning path: '03'
     module: 'Module 03 - Implement Access Management for Apps'
 ---
 
-# Lab 23: Grant tenant-wide admin consent to an application
+# Lab 21: Grant tenant-wide admin consent to an application
 
 ## Lab scenario
 
