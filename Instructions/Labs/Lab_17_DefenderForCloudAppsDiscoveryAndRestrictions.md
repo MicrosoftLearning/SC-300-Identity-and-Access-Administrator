@@ -23,7 +23,7 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 1. In the **More resources** window, locate and select **Open** under **Microsoft Defender for Cloud Apps**.  This will take you to the **Microsoft Defender for Cloud Apps** portal within the Microsoft 365 account.
 
-1. Select the **Discover** drop-down in the left menu and select **Discovered apps**.
+1. Select the **Discover** drop-down in the left menu and select **Cloud App catalog**.
 
 1. In **Browse by category**, select **Cloud storage**.
 
