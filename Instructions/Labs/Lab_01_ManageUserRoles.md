@@ -147,7 +147,7 @@ This task will use an alternative method to remove the assigned role; it will us
 6. A sample CSV has been provided in the Allfiles/Lab1 folder -- **SC300BulkUser.csv**.
    1. Open Notepad.
    2. Open the SC300BulkUser.csv file
-   3. Change the **<<<enter your domain name>>** to the domain of your Azure lab environment.
+   3. Change the **enter your domain name** to the domain of your Azure lab environment.
    4. Save the file.
 
 7. On the **Bulk create users** dialog, select the file folder icon on step 3.
