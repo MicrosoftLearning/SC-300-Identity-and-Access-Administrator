@@ -1,0 +1,13 @@
+﻿version:v1.0,,,,,,,,,,,,,,,,
+Name [displayName] Required,User name [userPrincipalName] Required,Initial password [passwordProfile] Required,Block sign in (Yes/No) [accountEnabled] Required,First name [givenName],Last name [surname],Job title [jobTitle],Department [department],Usage location [usageLocation],Street address [streetAddress],State or province [state],Country or region [country],Office [physicalDeliveryOfficeName],City [city],ZIP or postal code [postalCode],Office phone [telephoneNumber],Mobile phone [mobile]
+Example: Chris Green, chris@contoso.com, myPassword1234, No,,,,,,,,,,,,,
+Malik Barden,MalikB@<<<enter your domain name>>>,samplePassword1234$, No,Malik,Barden,,Sales,,,,,,,,,
+Amina Hadzic,AminaH@<<<enter your domain name>>>,samplePassword1234$, No,Amina,Hadzic,,Sales,,,,,,,,,
+Lejla Selimagic,LejlaS@<<<enter your domain name>>>,samplePassword1234$, No,Lejla,Selimagic,,Sales,,,,,,,,,
+Omar Bennett,OmarB@<<<enter your domain name>>>,samplePassword1234$, No,Omar,Bennett,,Sales,,,,,,,,,
+Jurgis Zukas,JurgisZ@<<<enter your domain name>>>,samplePassword1234$, No,Jurgis,Zukas,,Sales,,,,,,,,,
+Bidisha Patowary,BidishaP@<<<enter your domain name>>>,samplePassword1234$, No,Bidisha,Patowary,,Sales,,,,,,,,,
+Andre Lawson,AndreL@<<<enter your domain name>>>,samplePassword1234$, No,Andre,Lawson,,Marketing,,,,,,,,,
+Monica Thomson,MonicaT@<<<enter your domain name>>>,samplePassword1234$, No,Monica,Thompson,,Marketing,,,,,,,,,
+Edita Gabryte,EditaG@<<<enter your domain name>>>,samplePassword1234$, No,Edita,Gabryte,,Marketing,,,,,,,,,
+Jelena Maric,JelenaM@<<<enter your domain name>>>,samplePassword1234$, No,Jelena,Maric,,Marketing,,,,,,,,,
