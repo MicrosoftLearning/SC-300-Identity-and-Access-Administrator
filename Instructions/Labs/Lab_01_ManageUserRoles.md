@@ -142,9 +142,21 @@ This task will use an alternative method to remove the assigned role; it will us
 
     ![Bulk import using csv file entry](./media/bulkimportexample.png)
 
-6. Once populated, save the changes and upload it to add the users.
+    You can modify this file to add users in bulk.  Note that you do not need to fill out all the field.  As per the sample data provide, you mainly need to add the name and username information.
 
-7. You will be notified that the file uploaded successfully.  Choose Submit to add the users. 
+6. A sample CSV has been provided in the Allfiles/Lab1 folder -- **SC300BulkUser.csv**.
+   1. Open Notepad.
+   2. Open the SC300BulkUser.csv file
+   3. Change the **<<<enter your domain name>>** to the domain of your Azure lab environment.
+   4. Save the file.
+
+7. On the **Bulk create users** dialog, select the file folder icon on step 3.
+
+8. Path to the Allfiles/Lab1 folder and select **SC300BulkUser.csv** file.
+
+9. Select **Open**.
+
+7. You will be notified that the file uploaded successfully.  Choose **Submit** to add the users. 
 
 After the users have been created, you will be prompted that the creation has succeeded.  Close the Bulk create users tile and the new users will be populated in the list of **Users | All users**. 
 
