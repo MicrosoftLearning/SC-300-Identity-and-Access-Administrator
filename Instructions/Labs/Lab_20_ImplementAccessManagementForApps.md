@@ -13,7 +13,7 @@ Your organization requires that only specific users or groups have access to ent
 
 #### Estimated time: 5 minutes
 
-### Exercise 1 - Configure and Enterprise App
+### Exercise 1 - Configure an Enterprise App
 
 #### Task 1 - Add an app to your Azure AD tenant
 
