@@ -51,7 +51,7 @@ The tasks in this exercise and the exercises in this learning path require you t
 
 1. Enter the Azure Pass voucher code in the **Enter Promo code** field. 
 
-1. Enter address information in the **Profile** fiels.
+1. Enter address information in the **Profile** fields.
     - **Address line 1**: 1 Microsoft Way
     - **City**: Redmond
     - **State**: Washington
