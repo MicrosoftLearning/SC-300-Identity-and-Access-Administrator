@@ -166,10 +166,11 @@ After the users have been created, you will be prompted that the creation has su
 
 **Note** - Select PowerShell and not PowerShell ISE.
 
-2. You will need to add the Azure AD PowerShell module, if you have not used it before.  Run the command: Install-Module AzureAD.  When prompted, select “Y” to continue.
+2. You will need to add and import the Azure AD PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 
     ```
     Install-Module AzureAD
+    Import-Module AzureAD
     ```
 
 3. Confirm that the module installed correctly by running the command:  
