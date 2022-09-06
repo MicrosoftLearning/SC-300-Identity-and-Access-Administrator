@@ -42,7 +42,7 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 **Note**: There is a delay between unsanctioning an application and that application being blocked.
 
-1. Once the application has been blocked as unsanctioned, the application will not be accessible through browser, in-private browser, or store download.
+Once the application has been blocked as unsanctioned, the application will not be accessible through browser, in-private browser, or store download on a Client that is onboarded to MDE (Microsoft Defender for Endpoint) and Microsoft Defender for Cloud Apps is connected with MDE.
 
 
 
