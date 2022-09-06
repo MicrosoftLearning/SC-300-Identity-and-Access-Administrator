@@ -95,7 +95,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 **Note** - At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Select the **Try Again** option in this case.
 
-You can see that because of the Conditional Access rule we created for Delia, MFA is reguired to launch Office 365 home page.
+You can see that because of the Conditional Access rule we created for Delia, MFA is required to launch Office 365 home page.
 
 ### Exercise 2 - Configure MFA to be required for login
 
