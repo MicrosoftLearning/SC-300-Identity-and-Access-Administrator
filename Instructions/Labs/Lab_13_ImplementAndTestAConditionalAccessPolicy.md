@@ -123,7 +123,7 @@ This allows you to test the policies and their affectiveness before enabling the
 
 ### Exercise 3 - Configure sign in frequency controls using a conditional access policy
 
-#### Task - User the Azure Portal to configure conditional access
+#### Task - Use the Azure Portal to configure conditional access
 
 As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency
 
