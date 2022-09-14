@@ -9,9 +9,7 @@ lab:
 
 **Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
-**Note 2** - This lab should be treated as optional, if you have ever worked with Azure AD Connect before.  This lab require at least 30 minutes of setup time to deploy and configure the Domain Controler with the script.  If you are going to do the lab, it is recommended that you launch the script and work on other activities while it runs in the background.
-
-
+**Note 2** - We are fully removing this lab for the next month while we define a better and more straight-forward lab for the students.
 
 ## Lab scenario
 
