@@ -19,34 +19,32 @@ Azure AD Identity Protection provides automated detection and remediation to ide
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
 
-1. Search for and then select **Azure AD Identity Protection**.
+2. Search for and then select **Azure AD Identity Protection**.
 
-1. In the **Overview** tile, you will find **Identity Secure Score**.
+3. In the **Overview** tile, you will find **Identity Secure Score**.
 
-1. Select **Identity Secure Score**.  This will take you to the Identity Secure Score dashboard.
+4. Select **Identity Secure Score**.  This will take you to the Identity Secure Score dashboard.
 
-1. Scroll down to view the **Improvement actions**.
+5. Scroll down to view the **Improvement actions**.
 
-1. In contrast to the improvement actions in Microsoft Defender for Cloud and Microsoft 365 Defender, these improvement actions are specific to identity.  This provides a more focused list of potential actions to your security posture management.  Any improvement actions initiated from this list will also provide an impact to your overall tenant security posture. 
+6. In contrast to the improvement actions in Microsoft Defender for Cloud and Microsoft 365 Defender, these improvement actions are specific to identity.  This provides a more focused list of potential actions to your security posture management.  Any improvement actions initiated from this list will also provide an impact to your overall tenant security posture. 
 
 #### Task 2 - Execute an improvement action
 
-1. To improve one area of the identity security posture, select **Turn on sign-in risk policy**.
+1. To improve one area of the identity security posture, select **Protect all users with a sign-in risk policy**.
 
-1. In the tile that opens, scroll down and select **Get Started**.
+2. In the tile that opens, scroll down and select **Get Started**.
 
-1. A new tab will open for **Identity Protection | Sign-in risk policy**.
+3. A new tab will open for **Identity Protection | Sign-in risk policy**.
 
-1. Select **All users** under **Assignments**.
+4. Select **All users** under **Assignments**.
 
-1. Select **Medium and above** under **Sign-in risk**.
+5. Select **Medium and above** under **Sign-in risk**.
 
-1. Select **Allow** - **Require multi-factor authentication** under **Controls**.
+6. Select **Allow** - **Require multi-factor authentication** under **Controls**.
 
-1. Turn the **Enforce policy** to **On**, and select **Save**.
+7. Turn the **Enforce policy** to **On**, and select **Save**.
 
-1. You have created a Sign-in risk policy that should now increase your Identity Secure Score.  This will take up to 24 hours to take affect in your Identity Secure Score.
+8. You have created a Sign-in risk policy that should now increase your Identity Secure Score.  This will take up to 24 hours to take affect in your Identity Secure Score.
 
-1. Review other improvement actions and the steps to create and enable them.
-
-
+9. Review other improvement actions and the steps to create and enable them.

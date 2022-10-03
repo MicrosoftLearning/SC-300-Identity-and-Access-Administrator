@@ -21,17 +21,28 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 2. Access reviews can manage the access lifecycle.  Within **Azure Active Directory**, find **Identity Governance** under the **Manage** menu.  In **Identity Goverance**, select **Access reviews**.
 
-3. Name the access review and set the start date and frequency. Duration is how long the access review will run before it expires.  You can set the end to be a specific date or after a number of occurrence.  Then select the user scope of the access review.
+3. Select **+ New access review**.
 
-4. Select the scope for the roles that will be part of this scope.  You can add all roles or only select specific roles for certain reviews. 
+4. In the **Select what to review** box choose **Teams + Groups** from the dropdown.
 
-5. The next step is to determine the reviewers.  These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
+5. Select **Select Teams + groups** and pick the **Sales and Marketing** group from the list, and hit **Select**.
 
-6. The advanced settings allow you to put a message as part of the review.  Select start to initiate the access review.
+6. Set the **Scope** to **All users**.
 
-7. When the access review is created, the access review list will populate with the roles and owners of the reviews.
+7. Select the **Reviews** option for move forward in the wizard.
 
-8. Members that are being reviewed will receive an email when the review is initiated.
+8. The next step is to determine the reviewers.  These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
 
-9. Selecting an access review of one of the roles will provide status on these access reviews.
+9. Pick a reviewer.  Then select **Settings**.
 
+10. The advanced settings allow you to put a message as part of the review.
+
+11. Select **Review and Creat** to finalize the access review.
+
+12. Name the access review **SC300 Access Review Test**.
+
+13. Select **Create**. When the access review is created, the access review list will populate with the roles and owners of the reviews.
+
+14. Members that are being reviewed will receive an email when the review is initiated.
+
+15. Selecting an access review of one of the roles will provide status on these access reviews.
