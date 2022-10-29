@@ -45,33 +45,33 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
 
-   ![Image 3.docx](https://github.com/m-sangodare/Real-Project/files/9878964/Image.3.docx)
+   ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
 6. In the **Name** box, enter **Block Yammer for DebraB**.
 
    **Note** - Using this naming to help you quickly recognize the policy and it's function.
 
-7. Under **Assignments**, from the drop down on the right hand Click on **Users or workload identities**.
+7. Under **Assignments**, from the drop down on the right hand Choose on **Users or workload identities**.
 
 8. On the Include tab, check the box for **Users and groups**.
 
-9. In the Search pane on the right hand side search for **DebraB** account and then click **Select**.
+9. In the Search pane on the right hand side search for **DebraB** account and then Choose **Select**.
 
 10. On the **Cloud apps or actions**, from the drop down select the policy applies to as **Cloud apps** and under include check the box **select apps**.
 
-11. Verify **Cloud apps** is selected and then click on **Select apps**.
+11. Verify **Cloud apps** is selected and then choose **Select apps**.
 
-12. On the right hand bottom where **Select cloud apps** is, search for **Yammer** and select **Office 365 Yammer** and then click on **Select**.
+12. On the right hand bottom where **Select cloud apps** is, search for **Yammer** and choose **Office 365 Yammer** and choose **Select**.
 
 13. Under **Access controls** on the right, select **Grant**.
 
-14. In the Grant pane,under Control access enforcement to block or Block access, check the box **Block access** and then click on **Select**.
+14. In the Grant pane,under Control access enforcement to block or Block access, check the box **Block access** and then choose **Select**.
 
    **Note** - This policy is being configure for the exercise only and is being used to quickly demonstrate a conditional access policy.
 
-15. Under **Enable policy**, toggle to **On**, and then click on **Create**.
+15. Under **Enable policy**, toggle to **On**, and then select **Create**.
 
-   !https://github.com/m-sangodare/Real-Project/issues/1#issue-1425470380
+  ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-conditional-access-policy.png)
 
 #### Task 3 - Test the conditional access policy
 
@@ -87,7 +87,7 @@ You should test your conditional access policies to ensure they are working as e
      
 2. Verify you are prevented from successfully access Microsoft Yammer.
 
-   ![Image 2.docx](https://github.com/m-sangodare/Real-Project/files/9878968/Image.2.docx)
+   ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](./media/lp2-mod3-test-conditional-access-policy.png)
 
 3. If you are signed in, close the tab, wait 1 minute, and then retry.
     
@@ -97,13 +97,13 @@ You should test your conditional access policies to ensure they are working as e
 
 5. Select the **Yammer conditional access** policy.
 
-6. Under **Enable policy**, select **Off** and then select **Save**.
+6. Under **Enable policy**, toggle on **Off** and then select **Save**.
 
 ### Exercise 2 - Test conditional access policies with "What if"
 
 #### Task - Use What if to test conditional access policies
 
-1. Open the portal menu and then select **Azure Active Directory**.
+1. Open the portal menu and then choose **Azure Active Directory**.
 
 1. On the Azure Active Directory page, under **Manage**, select **Security**.
 
@@ -115,13 +115,13 @@ You should test your conditional access policies to ensure they are working as e
 
 1. Choose **DebraB** as the user.
 
-1. Under **Cloud apps, actions, or authentication context**, select **Yammer**. 
+1. Under **Cloud apps, actions, or authentication context**, choose  **Yammer**. 
 
 1. Select **What if**. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
 
 This allows you to test the policies and their affectiveness before enabling the policies.
 
-### Exercise 3 - Configure sign in frequency controls using a conditional access policy
+### Exercise 3 - Configure sign in frequency control using a conditional access policy
 
 #### Task - Use the Azure Portal to configure conditional access
 
@@ -135,23 +135,23 @@ As part of your company's larger security configuration, you must test a conditi
 
 4. On the Security page, in the left navigation, select **Conditional access**.
 
-5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
+5. On the top menu, select **+ New policy** from the drop-down choose **Create a new policy**.
 
-   ![Image 3.docx](https://github.com/m-sangodare/Real-Project/files/9878964/Image.3.docx)
+   ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
 6. In the **Name** box, enter **Sign in frequency**.
 
-7. Under **Assignments**, select **Users or workload identities**.
+7. Under **Assignments**, choose **Users or workload identities**.
 
-8. On the Include tab, select the **Users and groups** check box.
+8. On the Include tab, select the check box for **Users and groups**.
 
-9. In the Select pane, select your **Grady Archie** account and then select **Select**.
+9. In the Select pane, choose your **Grady Archie** account and then select **Select**.
 
 10. Select **Cloud apps or actions**.
 
 11. Verify **Cloud apps** is selected and then select **Select apps**.
 
-12. In the Select pane, select **Office 365** and then select **Select**.
+12. In the Select pane, choose **Office 365** and then select **Select**.
 
 13. Under **Access controls**, select **Session**.
 
@@ -159,11 +159,11 @@ As part of your company's larger security configuration, you must test a conditi
 
 15. In the value box, enter **30**.
 
-16. Select the units menu, select **Days**, and then select **Select**.
+16. Select the units menu, to choose **Days**, and then select **Select**.
 
-17. Under **Enable policy**, select **Report-only**, and then select **Create**.
+17. Under **Enable policy**, toggle to **Report-only**, and then select **Create**.
 
-   ![Image 2.docx](https://github.com/m-sangodare/Real-Project/files/9878968/Image.2.docx)
+   ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-session-conditional-access-policy.png)
 
    **NOTE** - Report-only mode is a new Conditional Access policy state that allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. With the release of report-only mode:
     
