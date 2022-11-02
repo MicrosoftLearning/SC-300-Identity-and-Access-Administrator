@@ -24,21 +24,29 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 3. On the Azure Active Directory page, under **Manage**, select **Security**.
 
-4. On the Security page, in the left navigation, select **Identity protection**.
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/lp2-mod4-browse-to-Manage-security.png)
 
-5. In the Identity protection page, in the left navigation, select **User risk policy**.
+4. On the Security page, in the left navigation,under **Protect** select **Identity protection**.
 
-    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/lp2-mod4-browse-to-identity-protection.png)
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/lp2-mod5-browse-to-Security-Identity-Protection.png)
+
+5. In the Identity protection page, in the left navigation,under **Protect** select **User risk policy**.
+
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/lp2-mod6-browse-to-Protect-User-risk-icy.png)
 
 6. Under **Assignments**, select **All users** and review the available options.
 
 7. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
+
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./media/lp2-mod10-browse-to-PolicyName-individuals-and-groups.png)
 
 8. Additionally, you can choose to exclude users from the policy.
 
 9. Under **User risk**, select **Low and above**.
 
 10. In the User risk pane, select **High** and then select **Done**.
+
+    ![Screen image displaying the User risk policy page and highlighted browsing path](./lp2-mod11-browse-to-Sign-risk-policy-High.png)
 
 11. Under **Controls** > **Access**, select **Block access**.
 
@@ -48,7 +56,12 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 13. Select the **Require password change** check box and then select **Done**.
 
+   ![Screen image displaying the User risk policy page and highlighted browsing path](./lp2-mod8-browse-to-User-risk-remediationPolicy-Allowaccess.png)
+
 14. Under **Enforce Policy**, select **On** and then select **Save**.
+
+   ![Screen image displaying the User risk policy page and highlighted browsing path](./lp2-mod8-browse-to-User-risk-remediationPolicy-Allowaccess.png)
+
 
 #### Task 2 - Enable Sign-in risk policy
 
@@ -63,5 +76,7 @@ As an additional layer of security, you need to enable and configure your Azure 
 5. Under **Controls** > **Access**, select **Block access**.
 
 6. Select the **Require multi-factor authentication** check box and then select **Done**.
+
+Note: It is expected behaviour by granting password change is as good as **Mult-ifactor authentication**.
 
 7. Under **Enforce Policy**, select **On** and then select **Save**.
