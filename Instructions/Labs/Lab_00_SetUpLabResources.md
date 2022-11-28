@@ -41,7 +41,7 @@ The tasks in this exercise and the exercises in this learning path require you t
 
 #### Redeem Azure Pass
 
-1. Open a browser and navigate to: [www.microsoftazurepass.com](www.microsoftazurepass.com).
+1. Open a browser and navigate to: [www.microsoftazurepass.com](https://www.microsoftazurepass.com).
 
 1. It is recommended you close all browsers and open a new In-Private Browser session. Other log-ins can persist and cause errors during the activation step.
 
@@ -49,7 +49,7 @@ The tasks in this exercise and the exercises in this learning path require you t
 
 1. Verify that the username is the same as the lab provider tenant account.
 
-1. Enter the Azure Pass voucher code in the **Enter Promo code** field. 
+1. Enter the Azure Pass voucher code in the **Enter Promo code** field. And verify you are a human if requested. 
 
 1. Enter address information in the **Profile** fields.
     - **Address line 1**: 1 Microsoft Way
