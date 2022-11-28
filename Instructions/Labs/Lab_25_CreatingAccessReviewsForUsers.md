@@ -33,7 +33,7 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 8. The next step is to determine the reviewers.  These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
 
-9. Pick a reviewer.  Then select **Settings**.
+9. Pick a reviewer and review recurrence option.  Then select **Settings**.
 
 10. The advanced settings allow you to put a message as part of the review.
 
