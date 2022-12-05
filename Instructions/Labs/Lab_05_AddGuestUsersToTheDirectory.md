@@ -23,13 +23,11 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 3. Under **Manage**, select **Users**.
 
-4. Select **New guest user**.
+4. Select **+ New user**.
 
-    ![Screen image displaying the Users page with the New guest user menu option selected](./media/lp1-mod3-new-guest-user-menu-selection.png)
+5. On the New user menu, select **Invite external user** and then add your information as the guest user.
 
-5. On the New user page, select **Invite user** and then add your information as the guest user.
-
-    >**NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Azure AD does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
+    **NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Azure AD does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
 
 6. Enter an email address, such as **sc300externaluser1@sc300email.com**.
 
