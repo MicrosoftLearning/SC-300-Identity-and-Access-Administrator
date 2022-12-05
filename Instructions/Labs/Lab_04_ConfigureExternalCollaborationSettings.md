@@ -19,15 +19,17 @@ You must enable external collaboration settings for your organization for approv
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a tenant administrator.
 2. Select **Azure Active Directory**.
-3. Select **External Identities > External collaboration settings**.
+3. Select **External Identities > All identity providers**.
 4. Select the **Email one-time passcode** notification link you see near the top of the screen.
 
     **Note** - A one-time passcode is a very secure way to invite a user to join your organization.
+    
+5. Ensure that **Yes** is selected.
+6. Select **Save** if needed.
+7. Otherwise, select `Home > Contoso Marketing >` **External Identities** to return to the previous screen.
+8. Select **External Collaboration Settings** on the left
 
-5. Select on `Home > Contoso Marketing >` **External Identities** to return to the previous screen.
-6. Select **External Collaboration Settings** on the left
-
-7. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
+9. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
 
     **NOTE**
     - Guest users have the same access as members (most inclusive): This option gives guests the same access to Azure AD resources and directory data as member users.
@@ -36,7 +38,7 @@ You must enable external collaboration settings for your organization for approv
 
     ![Screen image displaying guest user access restriction options](./media/lp1-mod3-guest-user-access-restrictions.png)
 
-8. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**!
+10. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**!
 
     **NOTE**
     - Anyone in the organization can invite guest users including guests and non-admins (most inclusive): To allow guests in the organization to invite other guests including those who are not members of an organization, select this radio button.
@@ -47,7 +49,7 @@ You must enable external collaboration settings for your organization for approv
 
     ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-user-invite-settings.png)
 
-9. Under **Collaboration restrictions**, review the available options and accept the default settings.
+11. Under **Collaboration restrictions**, review the available options and accept the default settings.
 
     **IMPORTANT**
     - You can create either an allow list or a deny list. You can't set up both types of lists. By default, whatever domains are not in the allow list are on the deny list, and vice versa.
@@ -56,4 +58,4 @@ You must enable external collaboration settings for your organization for approv
     - This list works independently from OneDrive for Business and SharePoint Online allow/block lists. If you want to restrict individual file sharing in SharePoint Online, you need to set up an allow or deny list for OneDrive for Business and SharePoint Online.
     - The list does not apply to external users who have already redeemed the invitation. The list will be enforced after the list is set up. If a user invitation is in a pending state, and you set a policy that blocks their domain, the user's attempt to redeem the invitation will fail.
 
-10. When finished, **save** your changes.
+12. When finished, **save** your changes.
