@@ -50,7 +50,7 @@ When you use managed identities for Azure resources, your code can get access to
 1. Fill out all required information as shown below. Make sure that you choose the subscription that you're using for this lab.
 
  - **Resource group** - sc300KeyVaultrg
- - **Key vault name** - sc300keyvault
+ - **Key vault name** - <create a unique name, i.e. yourinitialsTodaysDatekeyvault (TR121422eyvault)
 
 1. Select **Review + create**.
 
@@ -79,15 +79,15 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **Access Policies** from the menu on the left side.
 
-1. Select **Add Access Policy**.
+1. Select **Create**.
 
-1. In the Add access policy section, under Configure from template (optional), choose Secret Management from the pull-down menu.
+1. In the Add access policy section, under Configure from template (optional), choose **Secret Management** from the pull-down menu.
 
 1. For **Select Principal**, choose **None selected** to open the list of principals to select. In the search field enter the name of the VM you created in task 2.  Select the VM in the result list and choose Select.
 
-1. Select **Add**.
+1. Select **Next** 2 times.
 
-1. Select **Save**.
+1. Select **Create**.
 
 #### Task 5 - Access data with Key Vault secret with PowerShell
 
