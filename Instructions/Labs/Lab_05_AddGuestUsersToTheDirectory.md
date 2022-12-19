@@ -93,12 +93,6 @@ A recent partnership has been established with another company. For now, employe
     Install-Module AzureAD
     ```
 
-1. Confirm that the module installed correctly by running the command:  
-
-    ```
-    Get-Module AzureAD 
-    ```
-
 1. Next, you will need to login to Azure by running:  
 
     ```
