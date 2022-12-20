@@ -46,7 +46,7 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 
 9. Select **Select apps**, and then choose **Microsoft Forms**, and select **Select**. 
 
-10. Under **Access controls**, select **Session** and **controls selected**.
+10. Under **Access controls**, select **Session** and ** 0 controls selected**.
 
 11. Select the **Use Conditional Access App Control** box, leave the default of **Monitor only**, and select **Select**.
 
