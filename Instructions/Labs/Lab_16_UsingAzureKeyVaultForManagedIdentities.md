@@ -48,9 +48,10 @@ When you use managed identities for Azure resources, your code can get access to
 1. Select **Create**.
 
 1. Fill out all required information as shown below. Make sure that you choose the subscription that you're using for this lab.
+    **Note** The Key vault name must be unique. Look for a green checkmark to the right of the field.
 
  - **Resource group** - sc300KeyVaultrg
- - **Key vault name** - sc300keyvault
+ - **Key vault name** - *anyuniquevalue*
 
 1. Select **Review + create**.
 
