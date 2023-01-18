@@ -18,7 +18,7 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 #### Task 1 - Confirm that PradeepG has unconditional access to FORMS
 
 1. Launch a new **InPrivate browsing** window.
-2. Connect to [https://forms.microsot.com](https://forms.microsot.com).
+2. Connect to [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Select the login  in the upper-right corner of the page.
 4. Log in as Pradeep Gupta.
    - Username = PradeepG@<<<your lab hoster provided domain>>>
