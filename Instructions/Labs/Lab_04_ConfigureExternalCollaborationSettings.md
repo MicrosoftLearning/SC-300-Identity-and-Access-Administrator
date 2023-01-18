@@ -15,7 +15,16 @@ You must enable external collaboration settings for your organization for approv
 
 ### Exercise 1 - Allowing guest users to be invited into your organization
 
-#### Task - Configure external collaboration settings
+#### Task 1 - Enable Guest Users to perform self service sign-up
+
+1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a tenant administrator.
+2. Select **Azure Active Directory**.
+3. Select **User Settings**.
+4. Select **Manage external user collaboration settings**.
+5. Ensure that **YES** is marked for the setting **Enable guest self-service sign up via user flows**.
+6. Select **Save** at the top of the screen.
+
+#### Task 2 - Configure external collaboration settings
 
 1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a tenant administrator.
 2. Select **Azure Active Directory**.
