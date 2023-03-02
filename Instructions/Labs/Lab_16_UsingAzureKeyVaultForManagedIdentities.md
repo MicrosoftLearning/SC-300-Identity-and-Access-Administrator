@@ -23,13 +23,13 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **+ Create a resource**.
 
-1. Type **Windows Server** in Search the Marketplace search bar.
+1. Type **Windows Client** in Search the Marketplace search bar.
 
-1. Select **Windows Server** and choose **Windows Server 2019 Datacenter** from Select a software plan dropdown.
+1. Select **Windows Client** and from the plan dropdown choose **Windows 10 Enterprise N (x65)**. Then choose **Create**.
 
 1. You will have to create an administrator username and password for the VM on the basics tab.
 
-1. On the **Management** tab, check the box to Login with Azure AD under the Azure AD section.
+1. On the **Management** tab, check the box to **Enable system assigned managed identity**.
 
 1. Go through the rest of the experience of creating a virtual machine. 
 
@@ -80,7 +80,7 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **Access Policies** from the menu on the left side.
 
-1. Select **Add Access Policy**.
+1. Select **+ Create**.
 
 1. In the Add access policy section, under Configure from template (optional), choose Secret Management from the pull-down menu.
 
@@ -106,10 +106,10 @@ When you use managed identities for Azure resources, your code can get access to
     $KeyVaultToken = $Response.access_token
     ```
 
-1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the Essentials section of the Overview page of the Key Vault.  
+1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the Essentials section of the Overview page of the Key Vault.  Reminder - URI for Key Vault is on the Overview tab.
 
     ```
-    Invoke-RestMethod -Uri https://<your-key-vault-URL>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
+    Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
     ```
 1. You should receive a response that looks like the following: 
     ```
