@@ -21,9 +21,9 @@ Your company recently hired a new employee who will perform duties as an applica
 
 2. Search for and then select **Azure Active Directory**.
 
-3. In the left navigation menu, under **Manage**, select **Users**, then select **+ New User**.
+3. In the left navigation menu, under **Manage**, select **Users**, then select **+ New User** and **Create new user**.
 
-4. Ensure that Create User is selected.  Create a user using the following information:
+4. Mark the **Create user** button. Then, create a user with the following information:
 
     | **Setting**| **Value**|
     | :--- | :--- |
@@ -32,9 +32,9 @@ Your company recently hired a new employee who will perform duties as an applica
     | First name| Chris|
     | Last name| Green|
 
-5. Mark the **Let me create the password**
+5. Mark the **Auto-generate password** option.
 
-6. Use password - **Enter a secure password that you can remember.**
+6. Copy the generated password to a location you can remember it for the next task.
 
      *You will have to change the password upon first login to this account*
 
@@ -48,13 +48,13 @@ Your company recently hired a new employee who will perform duties as an applica
     | **Setting**| **Value**|
     | :--- | :--- |
     | User name| ChrisG@`your domain name.com`|
-    | Password| Pass@word1|
+    | Password| Enter the auto-generated password from previous task. |
 
 3. Update your password.
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | Current Password| Pass@word1|
+    | Current Password| Use auto-generated password|
     | New Password| Pa$$w.rd1234|
     | Confirm Password| Pa$$w.rd1234|
 
@@ -85,7 +85,7 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
 
 **Note** - If the lab environment has already activated Azure AD Premium P2, Privileged Identity Management (PIM) will be enabled and you wll need to select **Next** and assign a Permanent role to this user.
 
-8. Select the **Refesh** button.
+8.Select the **Refesh** button.
 
 **Note - The newly assigned Application administrator role appears on the user’s Assigned roles page.**
 
@@ -146,9 +146,10 @@ This task will use an alternative method to remove the assigned role; it will us
 
 6. A sample CSV has been provided in the Allfiles/Lab1 folder -- **SC300BulkUser.csv**.
    1. Open Notepad.
-   2. Open the SC300BulkUser.csv file
-   3. Change the **enter your domain name** to the domain of your Azure lab environment.
-   4. Save the file.
+     - Inside the lab environment, select the START button and type Notepad.  
+   1. Open the SC300BulkUser.csv file
+   1. Change the **enter your domain name** to the domain of your Azure lab environment.
+   1. Save the file.
 
 7. On the **Bulk create users** dialog, select the file folder icon on step 3.
 
