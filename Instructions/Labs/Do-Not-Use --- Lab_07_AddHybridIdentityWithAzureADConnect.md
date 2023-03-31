@@ -2,7 +2,7 @@
 lab:
     title: '07 - Add Hybrid Identity with Azure AD Connect'
     learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'  Retired
+    module: 'Module 01 - Implement an identity management solution'
 ---
 
 # Lab 07: Add Hybrid Identity with Azure AD Connect
@@ -99,6 +99,8 @@ Your company works has Active Directory Domain Services on-premises.  They would
     Invoke-Command -ComputerName $vmNames {New-Item 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -Force}
     Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'Enabled' -value 1 –PropertyType DWORD}
     Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'DisabledByDefault' -value 0 –PropertyType DWORD}
+    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'Enabled' -value 1 –PropertyType DWORD}
+    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'DisabledByDefault' -value 0 –PropertyType DWORD}
     Invoke-Command -ComputerName $vmNames {New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -name 'SchUseStrongCrypto' -value 1 –PropertyType DWORD}
     ```
 
@@ -222,55 +224,31 @@ In this task, you will create an Azure Active Directory tenant with the followin
 
 6. On the **Create directory** page, specify the following settings and select **Create**:
 
+Basic tab:
+    -   Select a tenant type: Choose **Azure Active Directory**
+
+Configuration tab:
     -   Organization name: **Contoso**
 
     -   Initial domain name: Any valid, unique domain name.
 
     -   Country or region: **United States**
 
-7. Once it's created, navigate to your subscription page. Select **Change directory**.
+7. Once it's created, open **Azure Active Directory**.
 
-8. In the **Change the directory** page on the right, select **Contoso** in the dropdown and select **Change**. 
+8. On the Overview page choose **Manage tenant**.
 
-9. In the portal's left navigation, select **Azure Active Directory**. 
+9. Put a check in your newly created directory.
 
-10. In the **Azure Active Directory** page, select **Switch tenant** then select the **Contoso** box and select **Switch**. 
+10. Choose **Switch** at the top of the page.
 
     >**Note**: It may take a few minutes for everything to display properly.
 
-11. On the **Contoso - Overview** page, select **Licenses** under **Manage** on the left navigation.
+11. On the **Contoso - Overview** page, select **Users**.
 
-12. On the **Contoso - Licenses**, page, select **All Products** and select **+ Try/Buy**.
+12. Note that you only have a single ExternalAzureAD user in this new tenant.
 
-13. On the **Activate** page, in the **ENTERPRISE MOBILITY + SECURITY E5** section, select **Free trial** and then select **Activate**.
-
-   > **Note**: Activation typically takes about 5 minutes.
-
-### Task 2: Create and configure Azure AD users
-
-In this task, you will configure Azure AD user accounts in the newly created Azure AD tenant with the following settings. This will include assigning EM+S E5 licenses to the user account you are using for this lab as well as creating a new Azure AD user account with the following settings and assigning to it the Global Administrator role as well as the EM+S E5 license.
-
-- Name: **john.doe**
-
-- First name: **John**
-
-- Last name: **Doe**
-    
-- Password: **Auto-generate password**
-    
-- Show Password: **Enabled**
-
-- Groups: **0 group selected**
-    
-- Roles: **Global Administrator**
-    
-- Block sign in: **No**
-    
-- Usage location: **United States**
-    
-- Job title: **Leave blank**
-    
-- Department: **Leave blank**
+### Task 2: Create and configure Azure AD user to administer this directory
 
 1. From the lab computer, in the Azure portal, navigate back to the **Contoso - Overview** page.
 
@@ -282,17 +260,11 @@ In this task, you will configure Azure AD user accounts in the newly created Azu
 
 5. In the **Settings** section, in the **Usage location** drop-down list, select the **United States** entry and select **Save**.
 
-6. On the **Profile** page of your user account, select **Licenses** under **Manage** on the left. 
+#### Create the new administrator
 
-7. On the **Licenses** page, select **+ Assignments**.
+6. On the **New user** page, ensure that the **Create user** option is selected, specify the following settings, and select **Create**:
 
-8. On the **Update license assignments** page, enable the **Enterprise Mobility + Security E5** checkbox, ensure that all the corresponding license options are enabled, and select **Save**.
-
-9. On the **Users - All users** page, select **+ New user**.
-
-10. On the **New user** page, ensure that the **Create user** option is selected, specify the following settings, and select **Create**:
-
-    - User name: **john.doe\@*your Azure AD tenant domain name*** where ***your Azure AD tenant domain name*** is the domain name you specified when creating the Contoso Azure AD tenant.
+    - User name: **john.doe *@your Azure AD tenant domain name* ** where ***your Azure AD tenant domain name*** is the domain name you specified when creating the Contoso Azure AD tenant.
 
     - Name: **john.doe**
 
@@ -302,7 +274,7 @@ In this task, you will configure Azure AD user accounts in the newly created Azu
     
     - Password: **Auto-generate password**
     
-    - Show Password: **Enabled**
+    - Show Password: **Enabled** then make sure to copy the password.
 
     - Groups: **0 group selected**
     
@@ -316,106 +288,8 @@ In this task, you will configure Azure AD user accounts in the newly created Azu
     
     - Department: **Leave blank**
 
-
     > **Note**: Copy the **User name** and **Password** values into Notepad. You will need them later in this lab.
 
-11. On the **Users - All users** page, select the entry representing the newly created user account.
-
-12. On the **john.doe - Profile** page, select **Licenses** under **Manage** on the left.
-
-13. On the **john.doe - Licenses** page, select **+ Assignments**.
-
-14. On the **Update license assignments** page, enable the **Enterprise Mobility + Security E5** checkbox, ensure that all the corresponding license options are enabled, and select **Save**.
-
-### Task 3: Purchase a custom domain name
-
-In this task, you will purchase a custom DNS domain name by leveraging the functionality described at <https://docs.microsoft.com/en-us/azure/app-service/manage-custom-dns-buy-domain>.
-
-1. On the lab computer, in the browser displaying the Azure portal, navigate to your subscription page and select **Change directory**. In the **Change the directory** page on the right, select **Default Directory** in the dropdown and select **Change**. 
-   
-2. Return to the **Azure Active Directory** overview page. Select **Switch tenant** and select the **Default Directory** associated with the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises then select **Switch**. 
-
-3. In the Azure portal's left navigation, select **+ Create a resource**.
-
-4. On the **New** page, select **Create** within **Web App**.
-
-5. On the **Basics** tab of the **Web App** page, specify the following settings and select **Next: Deployment** and then **Next: Monitoring**:
-
-    - Subscription: The name of the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises.
-
-    - Resource Group: **(Create new) contosohilab-RG**.
-
-    - Name: Any valid, globally unique name.
-    
-    - Publish: **Code**
-
-    - Runtime stack: **.NET Core 3.1 (LTS)**
-
-    - Operating system: **Windows**
-
-    - Region: Any Azure region in which you can create Azure Web Apps in the target subscription.
-
-    - App Service plan: Accept the default.
-
-    - SKU and size: **Shared D1** (If necessary, select **Change size**, select Dev/Test, select **D1** and select **Apply**)
-  
-6. On the **Monitoring** tab of the **Web App** page, specify the following setting and select **Review + create** then **Create**:
-
-    - Enable Application Insights: **No**
-
-7. In the Azure portal, search for and select **App Service Domains** on the top search bar.
-
-8. On the **App Service Domains** page, select **Create App Service Domain**.
-
-9. On the **Create App Service Domains** page, select the **contosohilab-RG** resource group. Then in the **Search for domains...** text box, type the domain name you want to purchase and select the box next to one of the available domain names listed below the text box. Make sure you make note of the domain you choose. 
-
-10. Select **Next: Contact information**, type required information.
-
-11. Select **Next: Advanced**, ensure that **Enable privacy protection** is set to **Disable**.
-
-12. Select **Review + Create** then **Create**. 
-
-### Task 4: Assign a custom domain name to the Contoso Azure AD tenant
-
-In this task, you will assign a newly purchased custom DNS domain name to the Contoso Azure AD tenant. 
-
-1. On the lab computer, in the Azure portal, select the **Directory + Subscription** icon in the toolbar of the Azure portal (to the right of the **Cloud Shell** icon) and switch to the Contoso Azure AD tenant. 
-
-2. In the Azure portal's left navigation, select **Azure Active Directory** to navigate to the **Contoso - Overview** page.
-
-3. On the **Contoso - Overview** page, select **Custom domain names** under **Manage** on the left.
-
-4. On the **Contoso - Custom domain names** page, select **+ Add custom domain**.
-
-5. On the **Add custom domain** page that appears on the right, in the **Custom domain name** text box, type the domain name you purchased in the previous task and select **Add domain**. You will be redirected to a new page displaying your custom domain name settings.
-
-6. Identify the value of the **TXT** record on the custom domain name page. 
-
-7. On the lab computer, start another browser tab and navigate to the Azure portal.
-
-8. In the Azure portal, select the **Directory + Subscription** icon in the toolbar of the Azure portal (to the right of the **Cloud Shell** icon) to switch to the Azure AD tenant associated with the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises (the **Default Directory**). 
-
-9.  In the Azure portal, select **All services** in the portal's left navigation. In the **Search All** textbox, type **DNS zones**, and then select the **DNS zones** entry in the listing of search results.
-
-10. On the **DNS zones** page, select the entry with the name matching the custom domain name you purchased in the previous task.
-
-11. On the DNS zone page, select **+ Record set**. 
-
-12. On the **Add record set** page, specify the following settings and select **OK**:
-
-    - Name: **\@**
-
-    - Type: **TXT**
-
-    - TTL: **1**
-
-    - TTL unit: **Hours**
-
-    - Value: The value of **DESTINATION OR POINTS TO ADDRESS** entry you identified on the **Custom domain name** page.
-
-13. Switch back to the browser window displaying the custom domain name page and select **Verify**. Ensure that the verification was successful. 
-
-14. Select **Make primary** and confirm the change when prompted. 
 
 ### Task 5: Configure DNS suffix in the Contoso Active Directory forest
 
@@ -479,7 +353,7 @@ In this task, you will install Azure AD Connect.
 
 8. On the **Contoso - Overview** page, select **Azure AD Connect** under **Manage** on the left.
 
-9.  On the **Azure AD Connect** page, select the **Download Azure AD Connect** link.
+9.  On the **Azure AD Connect** page, select the **Download Azure AD Connect** link.  Then choose **Connect Sync** from the menu.
 
 10. On the **Microsoft Azure Active Directory Connect** web page of the Microsoft Downloads site, select **Download**.
 
@@ -504,7 +378,7 @@ In this task, you will install Azure AD Connect.
 
     >**Note**: This is expected, since some users are still configured with the **contoso.local** UPN suffix, which is not routable and cannot be configured as a verified custom domain name of an Azure AD tenant.
 
-20. On the **Domain and OU filtering** page, ensure that only the **DemoAccounts** OU and all its children OUs are selected and select **Next**. 
+20. On the **Domain and OU filtering** page; choose **Sync selected domains and OUs** then ensure that only the **DemoAccounts** OU and all its children OUs are selected and select **Next**. 
 
 
 21. On the **Uniquely identifying your users** page, accept the default settings and select **Next**. 
@@ -712,8 +586,6 @@ In this task, you will configure Azure AD Connect device synchronization options
 11. On the **Ready to configure** page, select **Configure**.
 
 12. On the **Configuration complete** page verify that the task completed successfully and select **Exit**.
-
-   > **Note**: For more information regarding configuring hybrid Azure Active Directory join for managed domains, refer to <https://docs.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join>.
 
 
 ### Task 11: Perform Hybrid Azure AD join
