@@ -2,7 +2,7 @@
 lab:
     title: '07 - Add Hybrid Identity with Azure AD Connect'
     learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'  Retired
+    module: 'Module 01 - Implement an identity management solution'
 ---
 
 # Lab 07: Add Hybrid Identity with Azure AD Connect
