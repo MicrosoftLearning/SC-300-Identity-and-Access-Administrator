@@ -82,17 +82,23 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **+ Create**.
 
-1. In the Add access policy section, under Configure from template (optional), choose Secret Management from the pull-down menu.
+1. In the Add access policy section, under Configure from template, choose **Secret Management** from the pull-down menu, and click **Next**
 
-1. For **Select Principal**, choose **None selected** to open the list of principals to select. In the search field enter the name of the VM you created in task 2.  Select the VM in the result list and choose Select.
+1. In the search field enter the name of the VM you created in task 2.  Select the VM in the result list and click **Next**.
 
-1. Select **Add**.
+1. On the **Application (optional)** page, click **Next**.
 
-1. Select **Save**.
+1. Click **Create**.
 
 #### Task 5 - Access data with Key Vault secret with PowerShell
 
-1. In the lab virtual machine, open PowerShell.  
+1. In the Azure portal, select **Virtual Machines**
+
+1. Click on the Windows 10 vm name you just created.
+
+1. Connect to the Windows 10 vm and log in.
+
+1. In the Window 10 vm, open PowerShell.  
 
 1. In PowerShell, invoke the web request on the tenant to get the token for the local host in the specific port for the VM.  
 
@@ -106,12 +112,13 @@ When you use managed identities for Azure resources, your code can get access to
     $KeyVaultToken = $Response.access_token
     ```
 
-1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the Essentials section of the Overview page of the Key Vault.  Reminder - URI for Key Vault is on the Overview tab.
+1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the **Essentials** section of the **Overview** page of the Key Vault.  You will need the Secrets name which can be found in the **Secrets** section in your vault.
+**Note** You will need to replace both <https://your-key-vault-URI> and <secret-name> with values you collected above.
 
     ```
-    Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
+    Invoke-RestMethod -Uri <https://your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
     ```
-1. You should receive a response that looks like the following: 
+1. You should receive a response that include the headings of value, id, and attributes and looks like the following: 
     ```
     'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16…
     ```
