@@ -48,7 +48,7 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 13. Select the **Require password change** check box and then select **Done**.
 
-14. Under **Enforce Policy**, select **On** and then select **Save**.
+14. Under **Policy enforcement**, select **On** and then select **Save**.
 
 #### Task 2 - Enable Sign-in risk policy
 
@@ -64,4 +64,4 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 6. Select the **Require multi-factor authentication** check box and then select **Done**.
 
-7. Under **Enforce Policy**, select **On** and then select **Save**.
+7. Under **Policy enforcement**, select **On** and then select **Save**.
