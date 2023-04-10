@@ -43,7 +43,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 4. On the Security page, in the left navigation, select **Conditional access**.
 
-5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
+5. On the **Overview (Preview)**, click **+Create new policy**.
 
    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
@@ -109,7 +109,9 @@ You should test your conditional access policies to ensure they working as expec
 
 1. On the Security page, in the left navigation, select **Conditional access**.
 
-1. Select **What if**.
+1. In the navigation pane, select **Policies**.
+
+1. Select **What If**.
 
 1. Under **User or Workload identity**, select **No user or service principal selected**.
 
