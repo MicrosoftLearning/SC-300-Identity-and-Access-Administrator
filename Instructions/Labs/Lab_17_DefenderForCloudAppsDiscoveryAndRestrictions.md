@@ -19,13 +19,9 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 1. Sign in to [https://security.microsoft.com](https://security.microsoft.com) using a Global Administrator account.
 
-1. On the left menu, scroll to the bottom and select **More resources**.
+1. On the left menu, scroll to the heading named **Cloud Apps** and click **Cloud App Catalog**.
 
-1. In the **More resources** window, locate and select **Open** under **Microsoft Defender for Cloud Apps**.  This will take you to the **Microsoft Defender for Cloud Apps** portal within the Microsoft 365 account.
-
-1. Select the **Discover** drop-down in the left menu and select **Cloud App catalog**.
-
-1. In **Browse by category**, select **Cloud storage**.
+1. In **Browse by category** pane, select **Cloud storage**.
 
 1. In the list of apps, note the **Risk score** next to the app name.  
 
@@ -37,6 +33,8 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 #### Task 2 - Restrict Apps in Defender for Cloud Apps
 
 1. Return to the **Discovered apps** tile and select the **Tag as unsanctioned** for Dropbox.  **Note**: This is located next to the circled check-mark.
+
+1. Click **Save**
 
 1. This process allows you to block applications that are not sanctioned within your company policy, limiting Shadow IT within your organization.
 
