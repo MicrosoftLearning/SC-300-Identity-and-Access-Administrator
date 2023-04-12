@@ -55,7 +55,7 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 #### Task 3 - Log into Forms and validate that conditional access is monitoring
 
 1. Launch a new **InPrivate browsing** window.
-2. Connect to [https://forms.microsot.com](https://forms.microsot.com).
+2. Connect to [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Select the login  in the upper-right corner of the page.
 4. Log in as Pradeep Gupta.
    - Username = PradeepG@<<<your lab hoster provided domain>>>
@@ -99,7 +99,7 @@ Registering your application establishes a trust relationship between your app a
 #### Task 2 - Log in as Pradeep to Forms to trigger activity
 
 1. Launch a new **InPrivate browsing** window.
-2. Connect to [https://forms.microsot.com](https://forms.microsot.com).
+2. Connect to [https://forms.microsoft.com](https://forms.microsoft.com).
 3. Select the login  in the upper-right corner of the page.
 4. Log in as Pradeep Gupta.
    - Username = PradeepG@<<<your lab hoster provided domain>>>
