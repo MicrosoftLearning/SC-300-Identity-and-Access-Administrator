@@ -33,16 +33,30 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 8. The next step is to determine the reviewers.  These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
 
-9. Pick a reviewer and review recurrence option.  Then select **Settings**.
+9. Select **Multi-stage review**
 
-10. The advanced settings allow you to put a message as part of the review.
+10. Under **First stage review**  in **Select reviewers** choose **Group owner(s)**.  
 
-11. Select **Review and Creat** to finalize the access review.
+11. In the **Stage duration (in days) type in 5
 
-12. Name the access review **SC300 Access Review Test**.
+12. Under **Second stage review**  in **Select reviewers** choose **Managers of users**
 
-13. Select **Create**. When the access review is created, the access review list will populate with the roles and owners of the reviews.
+13. In the **Stage duration (in days) type in 5
 
-14. Members that are being reviewed will receive an email when the review is initiated.
+14. In the **Review recurrence** field, select **Quarterly**.
 
-15. Selecting an access review of one of the roles will provide status on these access reviews.
+15. In the **Reviewees going to the next stage** select **Select all** checkbox.
+
+16. Select **Next:Settings**.
+
+17. The advanced settings allow you to put a message as part of the review.
+
+18. Select **Next:Review + Create** to finalize the access review.
+
+19. Name the access review **SC300 Access Review Test**.
+
+20. Select **Create**. When the access review is created, the access review list will populate with the roles and owners of the reviews.
+
+21. Members that are being reviewed will receive an email when the review is initiated.
+
+22. Selecting an access review will provide status on these access reviews.
