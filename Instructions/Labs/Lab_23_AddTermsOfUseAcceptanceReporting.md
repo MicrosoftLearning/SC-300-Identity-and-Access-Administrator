@@ -57,7 +57,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
     ![Expire consents settings to set start date, frequency, and duration](./media/lp4-mod1-new-terms-of-use-create.png)
 
-14. Use the **Expire starting on** and **Frequency** settings to specify the schedule for terms of use expirations. The following table shows the result for a couple of example settings:
+14. Use the **Expire starting on** (set to 1 week from now) and **Frequency** (set to 90 days) settings to specify the schedule for terms of use expirations. The following table shows the result for a couple of example settings:
 
     | Expire starting on | Frequency | Result |
     |---|---|---|
@@ -99,19 +99,19 @@ Once you have finalized your terms of use document, use the following procedure 
 
 18. When the terms of use is created, you will automatically be redirected to the Conditional access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
 
-19. Under **Assignments**, select **Users or workload identities**.
+19. Under **Assignments**, select **0 users and groups selected**.
 
-20. On the include tab, select **Users and groups** check box.
+20. On the include tab, select **Select users and groups** radio button, then the **Users and groups** check box.
 
-21. In the Select pane, select **Adele Vance** to use to test the terms of use policy.
+21. In the Select pane, select **Adele Vance** to use to test the terms of use policy, then click **Select**.
 
-   **Warning** - If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
+   **Warning** - If you choose your administrator account, like all conditional access policies, be sure you have break glass accounts with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome. You can read more here [https://learn.microsoft.com/en-us/azure/active-directory/roles/security-emergency-access](https://learn.microsoft.com/en-us/azure/active-directory/roles/security-emergency-access)
 
-22. Select **Cloud apps or actions.**
+22. Select **No cloud apps,actions or authentication contexts selected.**
 
 23. Select **All cloud apps**.
 
-24. Under **Access controls**, select **Grant**.
+24. Under **Access controls**, select **0 controls selected**.
 
 25. In the Grant pane, select **Testing terms of use** and then select **Select**.
 
@@ -137,7 +137,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 5. Validate Adele's login with the MFA request.
 6. View the Terms of Use.
-7. You can choose to **Accept** or **Decline**.
+7. You can choose to **Accept** or **Decline** your choice.
 
     >**Note** - If you choose **decline** then during a future login as AdeleV you will again be required to view and accept the Terms of Use.
 
@@ -147,21 +147,23 @@ Once you have finalized your terms of use document, use the following procedure 
 
 The Terms of use page shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use.
 
-1. In Microsoft Azure, in **Identity Governance > Terms of use**, locate your terms of use.
+1. In Microsoft Azure, in **Identity Governance > Terms of use**, locate and click on your terms of use.
 
-2. For a terms of use, select the numbers under **Accepted** or **Declined** to view the current state for users.
+2. On the **Terms of use document details** pane, you will find numbers under **Users accepted** or **Uers declined** sections.
 
     ![Screen image displaying the terms of use with the Accepted and Declined columns highlighted](./media/lp4-mod1-terms-of-use-accept-decline.png)
 
-3. In this exercise you may not have any accepted or declined terms of use. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.
+3. In this exercise you may not have any accepted or declined terms of use values appear yet. In the following example, the **Accepted** value was selected. You can see the reported user information for those that have accepted the terms of use.
 
     ![Terms of use consents pane listing the users that have accepted](./media/accepted-tou.png)
 
-4. On the **Terms of Use Consents** page select **Download** to download a consents report.
+4. On the **Terms of use document details** pane, select the number under  **Users accepted** to download a consents report.
 
-5. On the **Identity Governance | Terms of Use** page, highlight **Testing terms of use** and select **View selected audit logs** to view the audit logs activity.
+5. In the **Terms of use content** pane, select **Download** to download a consents report.  Note how you can filter results using the **Decision** drop down.
 
-#### Task 4 - What terms of use looks like for users
+6. On the **Identity Governance | Terms of Use** page, select **Testing terms of use** (do not click the name of the ToU but just to the right of the name) select **View selected audit logs** to view the audit logs activity.
+
+#### Task 4 - What terms of use looks like for users (no actions to complete)
 
 1. Once a terms of use is created and enforced, users who are in scope will see the terms of use page.
 
@@ -175,7 +177,7 @@ The Terms of use page shows a count of the users who have accepted and declined.
 
     ![Example terms of use that appears when a user signs in on a mobile device](./media/mobile-tou.png)
 
-#### Task 5 - How users can review their terms of use
+#### Task 5 - How users can review their terms of use (nothing to complete)
 
 Users can review and see the terms of use that they have accepted by using the following procedure.
 
@@ -201,7 +203,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
 3. In the left navigation menu, under **Terms of use**, select **Terms of use**.
 
-4. Select the terms of use you want to edit.
+4. Select the terms of use you want to edit (do not click the name of the ToU but just to the right of the name).
 
 5. On the top menu, select **Edit terms**.
 
@@ -213,7 +215,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
     - **Require users to expand the terms of use** – Setting this to **On** will force the end use to expand the terms of use document before accepting it.
 
-    - **Update an existing terms of use** document.
+    - **Update** an existing terms of use document.
 
     - You can add a language to an existing ToU If there are other settings you would like to change, such as require users to consent on every device, expire consents, duration before reacceptance, or Conditional Access policy, you must create a new terms of use.
 
@@ -235,11 +237,13 @@ You may, on occasion, be required to update the terms of use document.
 
 4. In the Update terms of use version pane, you can upload a new version of your terms of use document.
 
-5. Additionally, you can use the **Require reaccept** toggle button if you want to require your users to accept this new version the next time they sign in. If you do not require your users to re-accept, their previous consent will stay current and only new users who have not consented before or whose consent expires will see the new version.
+5. Additionally, you can use the **Require re-accept** toggle button if you want to require your users to accept this new version the next time they sign in. If you do not require your users to re-accept, their previous consent will stay current and only new users who have not consented before or whose consent expires will see the new version.
 
     ![Screen image displaying the update terms of use version pane with the upload required pdf and require re-accept highlighted](./media/lp4-mod1-update-terms-of-use-version.png)
 
 6. Once you have uploaded your new pdf and decided on re-accept, select **Add**.
 
 7. You will now see the most recent version under the Document column.
+
+8. Close any open windows.
 
