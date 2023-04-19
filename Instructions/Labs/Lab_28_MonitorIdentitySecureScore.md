@@ -43,7 +43,7 @@ Azure AD Identity Protection provides automated detection and remediation to ide
 
 6. Select **Allow** - **Require multi-factor authentication** under **Controls**.
 
-7. Turn the **Enforce policy** to **On**, and select **Save**.
+7. Turn the **Policy enforcement** to **Enabled** (if not done so already), and select **Save**.
 
 8. You have created a Sign-in risk policy that should now increase your Identity Secure Score.  This will take up to 24 hours to take affect in your Identity Secure Score.
 
