@@ -5,11 +5,11 @@ lab:
     module: 'Module 01 - Implement an identity management solution'
 ---
 
-# Lab 07: Add Hybrid Identity with Azure AD Connect
+# Lab 07: OPTIONAL --- Add Hybrid Identity with Azure AD Connect
 
 **Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
-**Note 2** - We are fully removing this lab for the next month while we define a better and more straight-forward lab for the students.
+**Note 2** - This lab is titled Optional.  It takes at least 1 hour to complete and does require that you are detailed in your lab steps.  Please feel free to computer it as time permits.  If your company has already set up its Hybrid configuration, or you don't plan to use Azure AD Connect, please jump over this lab.
 
 ## Lab scenario
 
@@ -42,8 +42,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
    -   Domain Name: **corp.contoso.com**
    -   Server OS: **2016-Datacenter**
    -   Admin Username: **demouser**
-   -   Admin Password: **demo@pass123**
-      - **It is strongly recommended that you enter a secure password that you know and can remember.**
+   -   Admin Password: **Enter a secure password that you will remember**
    -   Deploy Client VM: **No**
    -   Client VHD URI: **leave blank**
    -   VM Size: **Standard_D2s_v3**
@@ -67,8 +66,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 1. In the browser window displaying the Azure portal, navigate to the **DC1** Azure VM and connect to it via Remote Desktop. When prompted, sign in by using the following credentials:
 
    -   Username: **demouser**
-   -   Password: **demo\@pass123**
-      - **It is strongly recommended that you enter a secure password that you can remember.**
+   -   Password: **Use the secure password you created in Task 1**
 
 2.  Within the Remote Desktop session to **DC1**, start **Windows PowerShell ISE**, add the following script to the script pane, and run it to disable Internet Explorer enhanced security configuration and User Access Control on both **DC1** and **APP1** Azure VMs:
 
