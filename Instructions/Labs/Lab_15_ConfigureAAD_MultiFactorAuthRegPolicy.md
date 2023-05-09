@@ -56,4 +56,4 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 This will require the user to complete the MFA registration the next time they attempt to login.
 
-1. From a private browser, navigate to login.microsoftonline.com. Enter a user name and password from the tenant.  Note the additional security information requirements that the user is asked to enter.
+1. From a private browser, navigate to `https://login.microsoftonline.com`. Enter a user name and password from the tenant.  Note the additional security information requirements that the user is asked to enter.

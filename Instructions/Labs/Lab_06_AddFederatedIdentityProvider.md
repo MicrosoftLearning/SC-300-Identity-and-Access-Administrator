@@ -150,7 +150,7 @@ This completes the configuration of Google as an identity provider.
  
 28. Choose **Sign in to an organization**.
 
-29. Enter your **<<lab tenant domain name>> in the box and select **Next**.
+29. Enter your **lab tenant domain name** in the box and select **Next**.
 
 30. Enter the **Google** email address and password that you created.
 At this point, you should see your account passed to Google for confirmation; then enter the Microsoft Office portal.

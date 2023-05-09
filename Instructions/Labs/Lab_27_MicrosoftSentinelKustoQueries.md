@@ -35,7 +35,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. Select **Review + Create** and then **Create**.
 
-1. After the Log Analytics workspace deployment completes, select your workspace and select **Add**.  This will add the workspace to Microsoft Sentinel and open Microsoft Sentinel.
+1. After the Log Analytics workspace deployment completes, choose the **Refresh** button. Then select your workspace and select **Add**.  This will add the workspace to Microsoft Sentinel and open Microsoft Sentinel.
 
 1. If prompted, select **OK** to activate the Microsoft Sentinel free trial.
 
