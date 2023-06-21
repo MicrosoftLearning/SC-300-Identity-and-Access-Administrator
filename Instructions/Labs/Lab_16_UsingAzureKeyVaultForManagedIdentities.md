@@ -52,7 +52,7 @@ When you use managed identities for Azure resources, your code can get access to
 
  - **Resource group** - sc300KeyVaultrg
  - **Key vault name** - *anyuniquevalue*
-
+ - On the **Access Configuration** page, select the **Vault Access Policy** radio button.
 1. Select **Review + create**.
 
 1. Select **Create**.
