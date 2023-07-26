@@ -25,7 +25,7 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Type **Windows Client** in Search the Marketplace search bar.
 
-1. Select **Windows Client** and from the plan dropdown choose **Windows 10 Enterprise N (x65)**. Then choose **Create**.
+1. Select **Windows Client** and from the plan dropdown choose **Windows 10 Enterprise, version 22H2 - x64 Gen 1**. Then choose **Create**.
 
 1. You will have to create an administrator username and password for the VM on the basics tab.
 
