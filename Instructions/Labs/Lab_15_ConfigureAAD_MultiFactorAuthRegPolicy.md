@@ -25,7 +25,7 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 4. On the Security page, in the left navigation, select **Identity protection**.
 
-5. In the Identity protection page, in the left navigation, select **MFA registration policy**.
+5. In the Identity protection page, in the left navigation under **Protect**, select **Multifactor authentication registration policy**.
 
     ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/lp2-mod4-browse-to-mfa-registration-policy.png)
 
@@ -39,7 +39,6 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 10. Under **Controls**, notice that the **Require Azure AD MFA registration** is selected and cannot be changed.
 
-11. Under **Enforce Policy**, select **On** and then select **Save**.
 
 #### Task 2 - Configure Azure AD Identity Protection policy for MFA registration
 
@@ -51,10 +50,10 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 1. Under **Assignments**, select **All users** under Users, and select a user to enforce MFA.
 
-1. Change **Enforce policy** from **Off** to **On**.
+1. Change **Policy enforcement** from **Off** to **On**.
 
 1. Select **Save**.
 
 This will require the user to complete the MFA registration the next time they attempt to login.
 
-1. From a private browser, navigate to <login.microsoftonline.com>. Enter a user name and password from the tenant.  Note the additional security information requirements that the user is asked to enter.
+1. From a private browser, navigate to `https://login.microsoftonline.com`. Enter a user name and password from the tenant.  Note the additional security information requirements that the user is asked to enter.

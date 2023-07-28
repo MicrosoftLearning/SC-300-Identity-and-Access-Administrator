@@ -5,6 +5,11 @@ lab:
     module: 'Module 01 - Implement an Identity Management Solution'
 ---
 
+# WWL Tenants - Terms of Use
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
+
+
+
 # Lab 01: Manage user roles
 
 ## Lab scenario
@@ -55,8 +60,8 @@ Your company recently hired a new employee who will perform duties as an applica
     | **Setting**| **Value**|
     | :--- | :--- |
     | Current Password| Use auto-generated password|
-    | New Password| Pa$$w.rd1234|
-    | Confirm Password| Pa$$w.rd1234|
+    | New Password| Enter a unique and secure password |
+    | Confirm Password| Reenter a unique and secure password |
 
 4. If you see a **Welcome to Microsoft Azure** tour dialog, Select the **Maybe Later** button.
 
@@ -97,7 +102,7 @@ Using Azure Active Directory (Azure AD), you can designate limited administrator
     | **Setting**| **Value**|
     | :--- | :--- |
     | User name| ChrisG@`your domain name.com`|
-    | Password| Pa$$w.rd1234|
+    | Password| Enter the unique and secure password you created earlier |
 
 3. If you see a **Welcome to Microsoft Azure** tour dialog, Select the **Maybe Later** button.
 4. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
@@ -201,7 +206,7 @@ After the users have been created, you will be prompted that the creation has su
     ```
 
     ```
-    $PasswordProfile.Password = "Pass@word1" 
+    $PasswordProfile.Password = "<<enter a secure password you will remember>>" 
     ```
 
 8. You are ready to create a new users.  The following command will be populated with the user information and run.  If you have more than one user to add, you can use a notepad txt file to add the user information and copy/paste into PowerShell. 
