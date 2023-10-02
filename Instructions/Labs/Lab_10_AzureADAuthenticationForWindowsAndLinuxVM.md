@@ -42,6 +42,8 @@ The company has decided that Azure Active Directory should be used to login to v
 
 1. Browse to **Virtual Machines** in the [https://portal.azure.com](https://portal.azure.com).
 
+1. Select the newly created Virtual Machine from Task 1.
+
 1. Select **Access control (IAM)**.
 
 1. Select **+ Add**, then **Add role assignment** to open the Add role assignment page.
