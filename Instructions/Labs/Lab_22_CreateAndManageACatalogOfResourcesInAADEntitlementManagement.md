@@ -41,7 +41,7 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 7. Under **Enabled, select No**.
 
-    - **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
+- - **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
 
 9. You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
 
