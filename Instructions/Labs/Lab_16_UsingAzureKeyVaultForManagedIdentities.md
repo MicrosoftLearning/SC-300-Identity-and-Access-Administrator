@@ -92,7 +92,7 @@ When you use managed identities for Azure resources, your code can get access to
 
 #### Task 5 - Access data with Key Vault secret with PowerShell
 
-1. In the lab virtual machine, open PowerShell.  
+1. In the virtual machine created earlier in the lab, sign in and open **PowerShell**.  
 
 1. In PowerShell, invoke the web request on the tenant to get the token for the local host in the specific port for the VM.  
 
@@ -106,7 +106,7 @@ When you use managed identities for Azure resources, your code can get access to
     $KeyVaultToken = $Response.access_token
     ```
 
-1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the Essentials section of the Overview page of the Key Vault.  Reminder - URI for Key Vault is on the Overview tab.
+1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the Essentials section of the Overview page of the Key Vault and the name of the secret.  Reminder - URI for Key Vault is on the Overview tab.
 
     ```
     Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
