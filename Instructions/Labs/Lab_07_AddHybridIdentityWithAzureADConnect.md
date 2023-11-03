@@ -1,15 +1,22 @@
 ---
 lab:
-    title: '07 - Add Hybrid Identity with Azure AD Connect'
+    title: '07 - Optional --- Add Hybrid Identity with Microsoft Entra Connect'
     learning path: '01'
     module: 'Module 01 - Implement an identity management solution'
 ---
 
-# Lab 07: OPTIONAL --- Add Hybrid Identity with Azure AD Connect
+# Lab 07: OPTIONAL --- Add Hybrid Identity with Microsoft Entra Connect
+
+
+
+# This lab is currently not functioning.  Due to a licensing change in Microsoft Entra ID, the lab is failing.  We are currently troubleshooting and updating the lab, and should have it back online within a week.  Please move to the next lab.
+
+
+
 
 **Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
-**Note 2** - This lab is titled Optional.  It takes at least 1 hour to complete and does require that you are detailed in your lab steps.  Please feel free to computer it as time permits.  If your company has already set up its Hybrid configuration, or you don't plan to use Azure AD Connect, please jump over this lab.
+**Note 2** - This lab is titled Optional.  It takes at least 1 hour to complete and does require that you are detailed in your lab steps.  Please feel free to computer it as time permits.  If your company has already set up its Hybrid configuration, or you don't plan to use Microsoft Entra Connect, please jump over this lab.
 
 ## Lab scenario
 
@@ -68,7 +75,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
    -   Username: **demouser**
    -   Password: **Use the secure password you created in Task 1**
 
-2.  Within the Remote Desktop session to **DC1**, start **Windows PowerShell ISE**, add the following script to the script pane, and run it to disable Internet Explorer enhanced security configuration and User Access Control on both **DC1** and **APP1** Azure VMs:
+2.  Within the Remote Desktop session to **DC1**, start **Windows PowerShell ISE**, then open the Script pane.  Next, add the following script to the script pane, and run it to disable Internet Explorer enhanced security configuration and User Access Control on both **DC1** and **APP1** Azure VMs:
 
     ```pwsh
 
@@ -139,7 +146,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 2.  Within the Remote Desktop session to **DC1**, start Internet Explorer and navigate to the link below.
 
     ```
-    https://github.com/microsoft/MCW-Hybrid-identity/tree/main/Hands-on%20lab/studentfiles
+    https://github.com/microsoft/MCW-Hybrid-identity/tree/main/Archive/Hands-on%20lab/studentfiles
     ```
 
 3. On the **Create Users/Group for Active Directory Demo/Test Environment** page, select the **CreateDemoUsers.ps1** link, accept the licensing terms, and save the corresponding script to the local file system.
@@ -323,9 +330,9 @@ In this task, you will configure the DNS suffix of the Contoso Active Directory 
     }
     ```
 
-### Task 6: Install Azure AD Connect
+### Task 6: Install Microsoft Entra Connect
 
-In this task, you will install Azure AD Connect.
+In this task, you will install Microsoft Entra Connect.
 
 1. Within the Remote Desktop session to **DC1**, in Server Manager, select **Local Server**, and ensure that **IE Enhanced Security Configuration** is disabled. If not, then select the **On** link next to **IE Enhanced Security Configuration**, set the **Administrators** settings to **Off**, and select **OK**.
 
@@ -337,7 +344,7 @@ In this task, you will install Azure AD Connect.
 
 2. Within the Remote Desktop session to **DC1**, start the Chrome browser and navigate to the Azure portal at <https://portal.azure.com>.
 
-3. When prompted to sign in, enter the credentials of the **john.doe** Azure AD user account, which you copied into Notepad earlier in this exercise.
+3. When prompted to sign in, enter the credentials of the **john.doe** Microsoft Entra user account, which you copied into Notepad earlier in this exercise.
 
 4. When prompted, change the password for the **john.doe** user account. 
   
@@ -347,13 +354,13 @@ In this task, you will install Azure AD Connect.
 
 6. If presented with the **Welcome to Microsoft Azure** dialog box, select **Maybe later**. 
 
-7. In the Azure portal, select **Azure Active Directory** on the portal's left navigation to navigate to the **Contoso - Overview** page.
+7. In the Azure portal, search for **Microsoft Entra Connect**.
 
-8. On the **Contoso - Overview** page, select **Azure AD Connect** under **Manage** on the left.
+8. On the search results page, select **Microsoft Entra Connect**.
 
-9.  On the **Azure AD Connect** page, select the **Download Azure AD Connect** link.  Then choose **Connect Sync** from the menu.
+9.  On the **Microsoft Entra Connect** page, select the **Download Microsoft Entra Connect** link.  Then choose **Connect Sync** from the menu.
 
-10. On the **Microsoft Azure Active Directory Connect** web page of the Microsoft Downloads site, select **Download**.
+10. On the **Microsoft Azure Active Directory Connect v2** web page of the Microsoft Downloads site, select **Download**.
 
 11. When prompted whether to run or save **AzureADConnect.msi**, select **Run**. This will download the file and automatically start the **Microsoft Azure Active Directory Connect** wizard. 
 

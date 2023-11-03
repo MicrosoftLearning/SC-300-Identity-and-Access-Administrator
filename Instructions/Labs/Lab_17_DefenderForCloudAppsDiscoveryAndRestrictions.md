@@ -25,7 +25,7 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 1. In the list of apps, note the **Risk score** next to the app name.  
 
-1. Open another browser tab and navigate to **Dropbox.com**.
+1. Open another browser tab and navigate to **www.dropbox.com**.
 
 1. You will be able to access this website.
 

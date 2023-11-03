@@ -17,18 +17,18 @@ You must enable external collaboration settings for your organization for approv
 
 #### Task 1 - Enable Guest Users to perform self service sign-up
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a tenant administrator.
-2. Select **Azure Active Directory**.
-3. Select **User Settings**.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a tenant administrator.
+2. Select **Identity**, then select **Users**.
+3. Open the **All users** menu item, then select **User Settings**.
 4. Select **Manage external user collaboration settings**.
 5. Ensure that **YES** is marked for the setting **Enable guest self-service sign up via user flows**.
 6. Select **Save** at the top of the screen.
 
 #### Task 2 - Configure external collaboration settings
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a tenant administrator.
-2. Select **Azure Active Directory**.
-3. Select **External Identities > All identity providers**.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a tenant administrator.
+2. Select **Identity**.
+3. Select **External Identities**, and then select **All identity providers**.
 4. Select the **Email one-time passcode** notification link you see near the top of the screen.
 
     **Note** - A one-time passcode is a very secure way to invite a user to join your organization.
@@ -41,7 +41,7 @@ You must enable external collaboration settings for your organization for approv
 9. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
 
     **NOTE**
-    - Guest users have the same access as members (most inclusive): This option gives guests the same access to Azure AD resources and directory data as member users.
+    - Guest users have the same access as members (most inclusive): This option gives guests the same access to Microsoft Entra resources and directory data as member users.
     - Guest users have limited access to properties and memberships of directory objects: (Default) This setting blocks guests from certain directory tasks, like enumerating users, groups, or other directory resources. Guests can see membership of all non-hidden groups.
     - Guest user access is restricted to properties and memberships of their own directory objects (most restrictive): With this setting, guests can access only their own profiles. Guests are not allowed to see other users' profiles, groups, or group memberships.
 

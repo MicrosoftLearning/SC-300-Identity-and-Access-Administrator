@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-Your organization has decided to use security groups in Azure AD to manage licenses. You need to configure a new security group and assign a license to that group and verify group member license's have been updated.
+Your organization has decided to use security groups in Microsoft Entra ID to manage licenses. You need to configure a new security group and assign a license to that group and verify group member license's have been updated.
 
 #### Estimated time: 25 minutes
 
@@ -32,11 +32,11 @@ Your organization has decided to use security groups in Azure AD to manage licen
     
 5. Close the browser window.
 
-#### Task 2 -  Create a security group in Azure Active Directory
+#### Task 2 -  Create a security group in Microsoft Entra ID
 
-1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com).
 
-2. In the left navigation, under **Manage**, select **Groups**.
+2. In the left navigation, under **Identity**, select **Groups**, then select **All groups**.
 3. In the Groups page, on the menu, select **New group**.
 4. Create a group using the following information:
 
@@ -86,15 +86,15 @@ Your organization has decided to use security groups in Azure AD to manage licen
     
 5. Close the browser window. 
 
-### Exercise 2 - Create an Microsoft 365 group in Azure Active Directory
+### Exercise 2 - Create an Microsoft 365 group in Microsoft Entra ID
 
 #### Task 1 - Create the group
 
-Part of your duties as an Azure AD administrator is to create different types of groups. You need to create a new Microsoft 365 group for your organization's sales department.
+Part of your duties as an Microsoft Entra administrator is to create different types of groups. You need to create a new Microsoft 365 group for your organization's sales department.
 
-1. Browse to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview]( https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Browse to [https://entra.microsoft.com]( https://entra.microsoft.com).
 
-2. In the left navigation, under **Manage**, select **Groups**.
+2. In the left navigation, under **Identity**, select **Groups**, then select **All Groups**.
 
 3. In the Groups page, on the menu, select **New group**.
 
@@ -118,11 +118,11 @@ Part of your duties as an Azure AD administrator is to create different types of
 
 As your company grows, manually group management is too time consuming. Since standardizing the directory, you can now take advantage of dynamic groups. You must create a new dynamic group to ensure you're ready for dynamic group creation in production.
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) with an account that is assigned the Global administrator or User administrator role in the tenant.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) with an account that is assigned the Global administrator or User administrator role in the tenant.
 
-2. Select **Azure Active Directory**.
+2. Select **Identity**.
 
-3. Under **Manage**, select **Groups**, and then select **New group**.
+3. Under **Groups**, select **All groups**, and then select **New group**.
 
 4. On the New Group page, under **Group type**, select **Security**.
 
@@ -156,9 +156,9 @@ As your company grows, manually group management is too time consuming. Since st
 
 **Note** - The population of Dynamic group membership may take up to 15 minutes.
 
-1. Select on the **Home** `Azure Active Directory`.
-2. Launch **Azure Active Directory**.
-3. In the **Manage** menu Select on **Groups**.
+1. Select on the **Home** `Microsoft Entra admin center`.
+2. Launch **Identity**.
+3. In the **Groups** menu Select on **All groups**.
 4. In the filter box type **SC300** and your newly created group will be listed.
 5. Select on **SC300-myDynamicGroup** to open the group.
 6. Notice that it shows that it contains 30+ **Direct members*.
@@ -171,6 +171,6 @@ As your company grows, manually group management is too time consuming. Since st
 
    - (user.objectid -ne null) and (user.userType -eq "Guest")
 
-2. Try make a group with only **Members** of the Azure AD users.
+2. Try make a group with only **Members** of the Microsoft Entra users.
 
    - (user.objectid -ne null) and (user.userType -eq "Member")

@@ -1,11 +1,11 @@
 ---
 lab:
-    title: '22 - Create and manage a catalog of resources in Azure AD entitlement management'
+    title: '22 - Create and manage a catalog of resources in Microsoft Entra entitlement management'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 22: Create and manage a catalog of resources in Azure AD entitlement management
+# Lab 22: Create and manage a catalog of resources in Microsoft Entra entitlement management
 
 ## Lab scenario
 
@@ -17,21 +17,21 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 #### Task 1 - Create a catalog
 
-1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
+1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using a Global Administrator account.
 
-    **Important** - To use and configure Azure AD terms of use, you must have:
-    - Azure AD Premium P1, P2, EMS E3, or EMS E5 subscription.
-    - If you don't have one of these subscriptions, you can get Azure AD Premium or enable Azure AD Premium trial.
+    **Important** - To use and configure Microsoft Entra ID terms of use, you must have:
+    - Microsoft Entra ID Premium P1, P2, EMS E3, or EMS E5 subscription.
+    - If you don't have one of these subscriptions, you can get Microsoft Entra ID Premium trial.
     - One of the following administrator accounts for the directory you want to configure:
         - Global Administrator
         - Security Administrator
         - Conditional Access Administrator
 
-2. Open **Azure Active Directory** and the select **Identity Governance**.
+2. Open the **Identity** menu, and then select **Identity Governance**.
 
 3. In the left menu, under **Entitlement management**, select **Catalogs**.
 
-4. On the top menu, select **+New Catalog**.
+4. On the top menu, select **+ New Catalog**.
 
     ![Screen image displaying the Identity governance catalog page with the New catalog menu highlighted ](./media/lp4-mod1-identity-governance-new-catalog.png)
 
@@ -51,7 +51,7 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 #### Task 2 - Add resources to a catalog
 
-To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Azure AD security groups. The applications can be Azure AD enterprise applications, including both SaaS applications and your own applications federated to Azure AD. The sites can be SharePoint Online sites or SharePoint Online site collections.
+To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Microsoft Entra security groups. The applications can be Microsoft Entra enterprise applications, including both SaaS applications and your own applications federated to Microsoft Entra ID. The sites can be SharePoint Online sites or SharePoint Online site collections.
 
 1. On the Identity Governance page, if necessary, select **Catalogs**.
 
@@ -59,7 +59,7 @@ To include resources in an access package, the resources must exist in a catalog
 
 3. In the left navigation, under **Manage**, select **Resources**.
 
-4. On the menu, select + **Add resources**.
+4. On the menu, select **+ Add resources**.
 
 5. In the Add resources to catalog page, review the available options.  Add the following items:
 
@@ -82,7 +82,7 @@ To include resources in an access package, the resources must exist in a catalog
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
-1. If necessary, in the Azure portal, browse to **Azure Active Directory**, then select **Identity Governance** and select **Catalogs** and then select **Marketing**.
+1. If necessary, in the Microsoft Entra admin center, browse to **Identity**, then select **Identity Governance** and select **Catalogs** and then select **Marketing**.
 
 2. In the Marketing catalog page, in the left navigation menu, select **Roles and administrators**.
 
@@ -110,7 +110,7 @@ You can edit the name and description for a catalog. Users see this information 
 
 #### Task 5 - Create Access reviews for guest users
 
-1. Access reviews can manage the access lifecycle.  Azure AD Identity Governance provides an overview dashboard showing the status of access reviews. Select **Access reviews** in the **Identity Governance** menu.
+1. Access reviews can manage the access lifecycle.  Microsoft Entra Identity Governance provides an overview dashboard showing the status of access reviews. Select **Access reviews** in the **Identity Governance** menu.
 
 1. Under the Access review menu, you can select **Access reviews** to configure an access review for guest users.  You will select **+ New access review** to create your guest user access review.  The tile will open to configure the access review for guest users.
 

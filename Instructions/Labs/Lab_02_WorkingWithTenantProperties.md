@@ -17,15 +17,11 @@ You need to identify and update the different properties associated with your te
 
 #### Task 1 - Create a custom subdomain name
 
-1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
+1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-1. Select the **Show portal menu** hamburger icon and then select **Azure Active Directory**.
+1. In the **Identity** menu open the **Settings** menu, select **Domain names**.
 
-    ![Azure portal menu with Azure Active Directory selected](./media/azure-portal-menu-aad.png)
-
-1. In the **Manage** section of **Azure AD**, select **Custom domain names**.
-
-1. Select **Add custom domain**.
+1. Select **+ Add custom domain**.
 
 1. In the **Custom domain name** field, create a custom subdomain for the lab tenant by putting **sales** in front of the **onmicrosoft.com** domain name.  The format will look similar to this:
 
@@ -40,7 +36,9 @@ You need to identify and update the different properties associated with your te
 
 #### Task 1 - Set the tenant name and technical contact
 
-1. From within Azure Active Directory, in the left navigation, in the **Manage** section, select **Properties**.
+1. From within Microsoft Entra admin center, open the **Identity** menu.
+
+1. In the left navigation, select **Overview** menu item, then select **Properties**.
 
 1. Change the Tenant Properties for the **Name** and **Technical contact** in the dialog.
 
@@ -55,7 +53,7 @@ You need to identify and update the different properties associated with your te
 
 #### Task 2 - Review the Country or region and other values associated with your tenant
 
-1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
+1. In the **Identity** menu, select **Overview**, then select **Properties**.
 
 2. Under **Tenant properties**, locate **Country or region** and review the information.
 
@@ -67,11 +65,13 @@ You need to identify and update the different properties associated with your te
 
 #### Task 3 - Finding the tenant ID
 
-Azure subscriptions have a trust relationship with Azure Active Directory (Azure AD). Azure AD is trusted to authenticate users, services, and devices for the subscription. Each subscription has a tenant ID associated with it, and there are a few ways you can find the tenant ID for your subscription.
+Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft Entra ID is trusted to authenticate users, services, and devices for the subscription. Each subscription has a tenant ID associated with it, and there are a few ways you can find the tenant ID for your subscription.
 
-1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
+1. Open the Microsoft Entra admin center [https://entra.microsoft.com](https://entra.microsoft.com)
 
-2. Under **Tenant properties**, locate **Tenant ID**. This is your unique tenant identifier.
+1. In the **Identity** menu, select **Overview**, then select **Properties**.
+
+1. Under **Tenant properties**, locate **Tenant ID**. This is your unique tenant identifier.
 
     ![Screen image displaying the Tenant properties page with the Tenant ID box highlighted](./media/portal-tenant-id.png)
 
@@ -85,7 +85,7 @@ Microsoft strongly recommends you add both your global privacy contact and your 
 
 You add your organization's privacy information in the **Properties** area of Azure AD. To access the Properties area and add your privacy information:
 
-1. In the **Azure Active Directory** page, in the Manage section, select **Properties**.
+1. In the **Identity** menu, select **Overview**, then select **Properties**.
 
     ![Screen image displaying tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted](./media/properties-area.png)
 

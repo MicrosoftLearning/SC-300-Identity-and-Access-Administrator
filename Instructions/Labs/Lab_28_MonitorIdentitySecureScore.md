@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-Azure AD Identity Protection provides automated detection and remediation to identity-based risks, and provides data in the portal to investigate potential risks. Azure AD Identity Protection also provide an Identity Secure Score to monitor and improve your identity security posture.  In the same manner as Microsoft 365 Defender and Microsoft Defender for Cloud, Identity Secure Score provides improvement actions and recommendations that can improve your overall security posture for identity in Azure Active Directory.  This lab will explore this capability. 
+Microsoft Entra Identity Protection provides automated detection and remediation to identity-based risks, and provides data in the portal to investigate potential risks. Microsoft Entra Identity Protection also provide an Identity Secure Score to monitor and improve your identity security posture.  In the same manner as Microsoft 365 Defender and Microsoft Defender for Cloud, Identity Secure Score provides improvement actions and recommendations that can improve your overall security posture for identity in Microsoft Entra ID.  This lab will explore this capability. 
 
 #### Estimated time: 15 minutes
 
@@ -17,9 +17,9 @@ Azure AD Identity Protection provides automated detection and remediation to ide
 
 #### Task 1 - Review Identity Secure Score and improvement actions
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
 
-2. Search for and then select **Azure AD Identity Protection**.
+2. Open the **Protection** menu and select **Identity Secure Score**
 
 3. In the **Overview** tile, you will find **Identity Secure Score**.
 

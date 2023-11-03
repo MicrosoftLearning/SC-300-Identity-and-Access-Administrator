@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-For applications your organization has developed or for those that are registered directly in your Azure AD tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
+For applications your organization has developed or for those that are registered directly in your Microsoft Entra tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
 #### Estimated time: 15 minutes
 
@@ -21,12 +21,11 @@ For applications your organization has developed or for those that are registere
 
 The Global Administrator role is required in order to provide admin consent for application permissions to the Microsoft Graph API.
 
-1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Azure Active Directory**, then select **App registrations**, and then select **Demo app**.
-
+1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Entra admin center, browse to **Identity**, **Applications**, then select **App registrations**, and then select **Demo app**.
 
 2. On the **Demo app** page, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
 
-    >**Note**: **Demo app** is created in the previous labs. Please complete these labs before this lab.
+    **Note** - **Demo app** is created in the previous labs. Please complete these labs before this lab.
 
     ![Screen image displaying the Demo app page with the directory ID highlighted](./media/lp3-mod3-demo-app-directory-id.png)
 
@@ -44,7 +43,7 @@ The Global Administrator role is required in order to provide admin consent for 
 
 You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
 
-1. In Microsoft Azure, browse to **Azure Active Directory > Enterprise applications > Demo app.**
+1. In Microsoft Entra admin center, browse to **Identity > Applications > Enterprise applications > Demo app.**
 
 2. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.**
 

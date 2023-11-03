@@ -15,19 +15,19 @@ lab:
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
-1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
+1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using a Global Administrator account.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the **Azure Active Directory** blade, under **Manage**, select **App registrations.**
+3. On the **Identity** menu, under **Applications**, select **App registrations.**
 
 4. On the **App registrations** page, on the menu, select **+ New registration**.
 
 5. On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
 
-    ![Screen image displaying the Register an application blade with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
+    ![Screen image displaying the Register an application page with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
 
-6. When complete, you will be directed to the **Demo app** blade.
+6. When complete, you will be directed to the **Demo app** page.
 
 
 #### Task 2 - Configure platform settings
@@ -36,10 +36,9 @@ Settings for each application type, including redirect URIs, are configured in 
 
 To configure application settings based on the platform or device you're targeting:
 
+Add and modify redirect URIs for your registered applications by configuring their platform settings.
 
-1. Add and modify redirect URIs for your registered applications by configuring their platform settings.
-
-1. Select your application in **App registrations** in the Azure portal.
+1. Select your application in **App registrations** in the Microsoft Entra admin center.
 
 2. Under **Manage**, select **Authentication**.
 
@@ -67,11 +66,10 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 ![Screenshot of Azure portal showing the Certificates and secrets pane in app registration](./media/portal-05-app-reg-04-credentials.png)
 
+    **Note**: Sometimes called a *public key*, certificates are the recommended credential type, because as they provide a higher level of assurance than a client secret. When using a trusted public certificate, you can add the certificate using the Certificates & secrets feature. Your certificate must be one of the following file types: .cer, .pem, .crt.
 
->**Note**: Sometimes called a *public key*, certificates are the recommended credential type, because as they provide a higher level of assurance than a client secret. When using a trusted public certificate, you can add the certificate using the Certificates & secrets feature. Your certificate must be one of the following file types: .cer, .pem, .crt.
 
-
->**Note**: The client secret, also known as an *application password*, is a string value your app can use in place of a certificate to identity itself. It's the easier of the two credential types to use. It's often used during development, but is considered less secure than a certificate. You should use certificates in your applications running in production.
+    **Note**: The client secret, also known as an *application password*, is a string value your app can use in place of a certificate to identity itself. It's the easier of the two credential types to use. It's often used during development, but is considered less secure than a certificate. You should use certificates in your applications running in production.
 
 1. Select your application in **App registrations** in the Azure portal.
 
@@ -85,9 +83,9 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 6. **Save the secret's value in notepad** for use in your client application code; The Certificate & Secrets page will display the new secret value. It's important you copy this value as it's only shown this one time; if you refresh your page and come back, it will only show as a masked value.
 
-1. Skip the **Add a redirect URI** and **Configure platform settings** sections. You don't need to configure a redirect URI for a web API since no user is logged in interactively.
+7. Skip the **Add a redirect URI** and **Configure platform settings** sections. You don't need to configure a redirect URI for a web API since no user is logged in interactively.
 
-1. Skip the **Add credentials** section for now. Only if your API accesses a downstream API would it need its own credentials—a scenario not covered in this article.
+8. Skip the **Add credentials** section for now. Only if your API accesses a downstream API would it need its own credentials—a scenario not covered in this article.
 
 With your web API registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
 
@@ -98,11 +96,11 @@ The code in a client application requests permission to perform operations defin
 
 First, follow these steps to create an example scope named Employees.Read.All:
 
-1. Sign in to the Azure portal.
+1. Sign in to the Microsoft Entra admin center.
 
 2. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant containing your client app's registration.
 
-3. Select **Azure Active Directory** > **App registrations**, and then select your API's app registration.
+3. Select **Identity**, then **Application ** and finally select **App registrations**, and then select your API's app registration.
 
 4. Select **Expose an API**, then **+ Add a scope**.
 
@@ -156,14 +154,11 @@ Next, add another example scope named Employees.Write.All that only admins can
 
     As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
 
-1. Test the API using the **Application ID URI** with "/Employees.Read.All" added to the end of the URI.
-
-    >**Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
+        **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
 
 
-    >**Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
-    Once a client app registration is granted permission to access your web API, the client can be issued an OAuth 2.0 access token by the Microsoft identity platform. When the client calls the web API, it presents an access token whose scope (scp) claim is set to the permissions you've specified in the client's app registration.
-    You can expose additional scopes later as necessary. Consider that your web API can expose multiple scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
+        **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
+    Once a client app registration is granted permission to access your web API, the client can be issued an OAuth 2.0 access token by the Microsoft identity platform. When the client calls the web API, it presents an access token whose scope (scp) claim is set to the permissions you've specified in the client's app registration. You can expose additional scopes later as necessary. Consider that your web API can expose multiple scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
 
 
 ### Exercise 2 - Manage app registration with a custom role
@@ -172,17 +167,17 @@ Next, add another example scope named Employees.Write.All that only admins can
 
 You need to create a new custom role for app management. This new role should be limited to only the specific permissions required to perform credential management.
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) using a Global administrator account.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the Azure Active Directory blade, under **Manage**, select **Roles and administrators**.
+3. On the lefthand menu, under **Identity**, select **Roles and administrators**.
 
-4. On the Roles and administrators blade, on the menu, select **+New custom role**.
+4. Then select **Roles & admins** item, then select **+ New custom role**.
 
     ![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
 
-5. In the New custom role blade, on the Basics tab, in the name box, enter **My custom app role**.
+5. In the New custom role dialog, on the Basics tab, in the name box, enter **My custom app role**.
 
 6. Review the remaining options and then select **Next**.
 

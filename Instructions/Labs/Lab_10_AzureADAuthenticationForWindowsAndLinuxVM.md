@@ -5,7 +5,7 @@ lab:
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 10 - Azure AD Authentication for Windows and Linux Virtual Machines
+# Lab 10 - Microsoft Entra Authentication for Windows and Linux Virtual Machines
 
 **Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
@@ -23,16 +23,18 @@ The company has decided that Azure Active Directory should be used to login to v
 
 1. Select **+ Create a resource**.
 
-1. Type **Windows Server** in Search the Marketplace search bar.
+1. Type **Windows 11** in Search the Marketplace search bar.
 
-1. Select **Windows Server** and choose **Windows Server 2022 Datacenter** from Select a software plan dropdown.
+1. From the **Windows 11** box, choose **Windows 11 Enterprise 22H2** from Select a software plan dropdown.
 
 1. You will have to create an administrator username and password for the VM on the basics tab.
    - Use a username you will remember and a secure password.
 
-1. On the **Management** tab, check the box to Login with Azure AD under the Azure AD section.
+1. On the **Management** tab, check the box to **Login with Azure AD** under the Azure AD section.
 
-1. You will notice that the **System assigned managed identity** under the Identity section is auto-matically checked and turned grey. This action should happen automatically once you enable Login with Azure AD.
+    NOTE: As of 11/1/2023, this UI has not been updated to show Microsoft Entra ID, it still references Azure AD.
+
+    NOTE2: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Azure AD.
 
 1. Go through the rest of the experience of creating a virtual machine. 
 

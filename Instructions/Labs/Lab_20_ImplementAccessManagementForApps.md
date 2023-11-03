@@ -15,21 +15,21 @@ Your organization requires that only specific users or groups have access to ent
 
 ### Exercise 1 - Configure an Enterprise App
 
-#### Task 1 - Add an app to your Azure AD tenant
+#### Task 1 - Add an app to your Microsoft Entra tenant
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) using a Global administrator account.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the Azure Active Directory page, under **Manage**, select **Enterprise applications**.
+3. On the Identity menu, under **Applications**, select **Enterprise applications**.
 
 4. In the Enterprise applications pane, select **+ New application**.
 
     ![Screen image displaying the Enterprise applications page with New application highlighted](./media/lp3-mod1-new-enterprise-application.png)
 
-5. In the Browse Azure AD Gallery (Preview) page, in the **Search application** box, enter **GitHub**.
+5. In the Browse Microsoft Entra Gallery page, in the **Search application** box, enter **GitHub**.
 
-    ![Screen image displaying the Browse Azure AD Gallery (Preview) page with the search box highlighted](./media/lp3-mod1-azure-ad-gallery-search.png)
+    ![Screen image displaying the Browse Microsoft Entra Gallery page with the search box highlighted](./media/lp3-mod1-azure-ad-gallery-search.png)
 
 6. In the results, select **GitHub Enterprise Cloud – Enterprise Account**.
 
@@ -43,9 +43,9 @@ Your organization requires that only specific users or groups have access to ent
 
 2. Alternatively, in the left navigation, under **Manage**, you can select **Users and groups**.
 
-3. On the Users and groups page, on the menu, select **+Add user/group**.
+3. On the Users and groups page, on the menu, select **+ Add user/group**.
 
-4. On the Add Assignment page, select **Users and groups**.
+4. On the Add Assignment page, select **None selected** in the **Users and groups** section.
 
 5. In the Users and groups pane, select your administrator account and then select **Select**.
 

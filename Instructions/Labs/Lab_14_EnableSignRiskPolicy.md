@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-As an additional layer of security, you need to enable and configure your Azure AD organization's sign in and user risk policies.
+As an additional layer of security, you need to enable and configure your Microsoft Entra organization's sign in and user risk policies.
 
 #### Estimated time: 10 minutes
 
@@ -18,11 +18,11 @@ As an additional layer of security, you need to enable and configure your Azure 
 
 #### Task 1 - Configure the policy
 
-1. Sign in to the [https://portal.azure.com]( https://portal.azure.com) using a Global administrator account.
+1. Sign in to the [https://entra.microsoft.com]( https://entra.microsoft.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the Azure Active Directory page, under **Manage**, select **Security**.
+3. On the lefthand menu, under **Identity**, select **Protection**.
 
 4. On the Security page, in the left navigation, select **Identity protection**.
 

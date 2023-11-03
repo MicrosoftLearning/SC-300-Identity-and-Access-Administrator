@@ -1,15 +1,15 @@
 ---
 lab:
-    title: '15 - Configure an Azure AD multi-factor authentication registration policy'
+    title: '15 - Configure an Multifactor authentication registration policy'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 15 - Configure an Azure AD multi-factor authentication registration policy
+# Lab 15 - Configure an Multifactor authentication registration policy
 
 ## Lab scenario
 
-Azure AD multi-factor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for Azure AD Multi-Factor Authentication. You must configure your Azure AD organization's MFA registration policy to be assigned to all users.
+Multifactor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for Microsoft Entra Multifactor Authentication. You must configure your Microsoft Entra organization's MFA registration policy to be assigned to all users.
 
 #### Estimated time: 10 minutes
 
@@ -17,11 +17,11 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 #### Task 1 - Policy configuration
 
-1. Sign in to the [https://portal.azure.com]( https://portal.azure.com) using a Global administrator account.
+1. Sign in to the [https://entra.microsoft.com]( https://entra.microsoft.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the Azure Active Directory page, under **Manage**, select **Security**.
+3. On the lefthand men, under **Identity**, select **Protection**.
 
 4. On the Security page, in the left navigation, select **Identity protection**.
 
@@ -37,16 +37,16 @@ Azure AD multi-factor authentication provides a means to verify who you are usin
 
 9. Additionally, you can choose to exclude users from the policy.
 
-10. Under **Controls**, notice that the **Require Azure AD MFA registration** is selected and cannot be changed.
+10. Under **Controls**, notice that the **Require Microsoft Entra ID multifactor authentication registration** is selected and cannot be changed.
 
 
-#### Task 2 - Configure Azure AD Identity Protection policy for MFA registration
+#### Task 2 - Configure Microsoft Entra Identity Protection policy for MFA registration
 
-**Note**: Azure AD Identity Protection requires Azure AD Premium P2 to be activated. 
+**Note**: Microsoft Entra Identity Protection requires Microsoft Entra ID Premium P2 to be activated. 
 
-1. In the Azure portal, navigate to **Azure AD Identity Protection** in the search bar.
+1. In the Microsoft Entra admin center, navigate to **Microsoft Entra Identity Protection** in the search bar.
 
-1. Under **Protect** in the menu, select **MFA registration policy**.
+1. Under **Protect** in the menu, select **Multifactor authentication registration policy**.
 
 1. Under **Assignments**, select **All users** under Users, and select a user to enforce MFA.
 

@@ -26,27 +26,27 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 5. Confirm that Microsoft Forms opens and that you do not get any warning messages.
 6. Close the InPrivate browsing window.
 
-#### Task 2 - Configure Azure AD to work with Defender for Cloud Apps
+#### Task 2 - Configure Microsoft Entra ID to work with Defender for Cloud Apps
 
-1. Navigate to [portal.azure.com](portal.azure.com) and go to Azure Active Directory.
+1. Navigate to [https://entra.microsoft.com](https://entra.microsoft.com) and go to Microsoft Entra ID.
 
-2. Under **Manage**, select **Security**.
+2. Under **Identity**, select **Protection**.
 
-3. Under **Protect**, select **Conditional Access**.
+3. Then select **Conditional Access**.
 
-4. Select **+ New policy** drop-down and select **Create new policy**.
+4. Select **+ Create new policy**.
 
 5. Enter a policy name, such as **Monitor Pradeep using Forms**.
 
-6. Under **Users or workload identities**, select **Specific users included**, select **Select users and groups** and mark the **Users and groups**.
+6. Under **Assignments**, choose **0 users and groups selected**, select **Specific users included**, select **Select users and groups** and mark the **Users and groups**.
 
 7. Choose the **Pradeep Gupta** account for the lab tenant and select **Select**.
 
-8. Under **Cloud apps or actions**, select **No cloud apps, actions, or authentication contexts selected**.
+8. Under **Target resources**, select **No target resources selected**.
 
 9. Select **Select apps**, and then choose **Microsoft Forms**, and select **Select**. 
 
-10. Under **Access controls**, select **Session** and ** 0 controls selected**.
+10. Under **Access controls**, select **Session** and **0 controls selected**.
 
 11. Select the **Use Conditional Access App Control** box, leave the default of **Monitor only**, and select **Select**.
 
@@ -84,7 +84,7 @@ Registering your application establishes a trust relationship between your app a
 
 1. Leave the **Category** as **Access control**.
 
-1. Under **Activities matching all of the following**, select the drop-down for **Intune compliant, Hybrid Azure AD joined** and unselect **Hybrid Azure AD joined**.
+1. Under **Activities matching all of the following**, select the drop-down for **Intune compliant, Microsoft Entra Hybrid joined** and unselect **Microsoft Entra Hybrid joined**.
 
 1. Select the drop-down for **Select apps**.  Select **Microsoft Forms**.
 

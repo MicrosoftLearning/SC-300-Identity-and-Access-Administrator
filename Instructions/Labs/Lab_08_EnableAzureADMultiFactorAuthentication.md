@@ -1,29 +1,31 @@
 ---
 lab:
-    title: '08 - Enable Azure AD multi-factor authentication'
+    title: '08 - Enable multi-factor authentication'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
 
-# Lab 08 - Enable Azure AD multi-factor authentication
+# Lab 08 - Enable multi-factor authentication
 
 ## Lab scenario
 
-To improve security in your organization, you've been directed to enable multi-factor authentication for Azure Active Directory.
+To improve security in your organization, you've been directed to enable multi-factor authentication for Microsoft Entra ID.
 
 #### Estimated time: 15 minutes
 
-**IMPORTANT** - An Azure AD Premium license is required for this exercise.
+**IMPORTANT** - A Microsoft Entra ID Premium license is required for this exercise.
 
 ### Exercise 1 - Review and enable Multi-factor Authentication in Azure
 
 #### Task 1 - Review Azure Multi-Factor Authentication options
 
-1. Browse to the [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
+1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-2. Use the search feature and search for **multi-factor**.
+2. Use the search feature and search for **multifactor**.
 
-3. In the search results, select **Multi-Factor Authentication**.
+3. In the search results, select **Multifactor authentication**.
+
+    Alternatively, you can open **Identity**, then select **Protection**, and select **Multifactor authentication**.
 
 4. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
 
@@ -35,17 +37,17 @@ To improve security in your organization, you've been directed to enable multi-f
 
     This is where you would select the supported authentication methods, in the screen above, all of them are selected.
 
-    You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Azure AD identity using a different password specific to that app.
+    You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Microsoft Entra identity using a different password specific to that app.
 
 #### Task 2 - Setup conditional access rules for MFA for Delia Dennis
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Azure portal and select **Azure Active Directory**, then **Security**, and then **Conditional access**.
+1. Switch back to the Microsoft Entra admin center and select **Identity**, then **Protection**, and then **Conditional access**.
 
-2. On the menu, Select **+ New policy**. From the drop down select **Create new policy**.
+2. On the menu, Select **+ New policy**. From the drop down select **+ Create new policy**.
 
-    ![creenshot highlighting the New Policy button in the Azure portal](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
+    ![Screenshot highlighting the New Policy button in the Microsoft Entra admin center.](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
 
 3. Name your policy, for example **MFA_for_Delia**.
 
@@ -56,7 +58,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
     - Check **Users and groups** (available users will be populated to the right)
     - Choose **Delia Dennis** from the list of users then choose **Select** button.
 
-5. Select **Cloud apps or actions**.
+5. Select **No target resources selected** in Target resources.
 
    - In the dropdown, make sure **Cloud apps** is selected.
    - Under Include, mark **All cloud apps** and note the warning the pops up about possibly locking yourself out. 
@@ -69,9 +71,9 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
    - Select **Locations** and then configure it for **Any location**.
 
-7. Under **Access Controls** select **Grant** and verify **Grant access** is selected.
+7. Under **Access Controls**, find the **Grant** section and select **0 controls selected** is selected.
 
-8. Select the **Require multi-factor authentication** check box to enforces MFA.
+8. Select the **Require multifactor authentication** check box to enforces MFA.
 
 9. Ensure that **Require all the slected controls** is selected.
 
@@ -99,13 +101,13 @@ You can see that because of the Conditional Access rule we created for Delia, MF
 
 ### Exercise 2 - Configure MFA to be required for login
 
-#### Task 1 - Configure Azure AD Per-User MFA
+#### Task 1 - Configure Microsoft Entra Per-User MFA
 
 Finally, let's look at how to configure MFA for user accounts. This is another way to get to the multi-factor auth settings.
 
-1. Switch back to the Azure Active Directory dashboard in the Azure portal.
+1. Switch back to the Microsoft Entra admin center and find the Indentity left-hand navigation menu.
 
-2. Select **Users**.
+2. Select **Users**, then select **All users**.
 
 3. At the top of the Users pane, select **Per-user MFA**.
 

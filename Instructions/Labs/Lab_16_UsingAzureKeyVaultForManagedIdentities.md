@@ -11,7 +11,7 @@ lab:
 
 ## Lab scenario
 
-When you use managed identities for Azure resources, your code can get access tokens to authenticate to resources that support Azure AD authentication.  However, not all Azure services support Azure AD authentication. To use managed identities for Azure resources with those services, store the service credentials in Azure Key Vault, and use the managed identity to access Key Vault to retrieve the credentials.
+When you use managed identities for Azure resources, your code can get access tokens to authenticate to resources that support Microsoft Entra authentication.  However, not all Azure services support Microsoft Entra authentication. To use managed identities for Azure resources with those services, store the service credentials in Azure Key Vault, and use the managed identity to access Key Vault to retrieve the credentials.
 
 #### Estimated time: 20 minutes
 
@@ -23,9 +23,9 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **+ Create a resource**.
 
-1. Type **Windows Client** in Search the Marketplace search bar.
+1. Type **Windows 11** in Search the Marketplace search bar.
 
-1. Select **Windows Client** and from the plan dropdown choose **Windows 10 Enterprise, version 22H2 - x64 Gen 1**. Then choose **Create**.
+1. Select **Windows 11** and from the plan dropdown choose **Windows 11 Enterprise, version 21H2**. Then choose **Create**.
 
 1. You will have to create an administrator username and password for the VM on the basics tab.
 

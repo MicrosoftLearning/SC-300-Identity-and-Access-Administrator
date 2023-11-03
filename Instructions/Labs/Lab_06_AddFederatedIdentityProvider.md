@@ -34,7 +34,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 7. Under User Type, select **External**, and then select **Create**.
 
-8. On the **OAuth consent screen**, under App information, enter an App name, such as **Azure AD**.
+8. On the **OAuth consent screen**, under App information, enter an App name, such as **Microsoft Entra ID**.
 
 9. Under User support email, select an email address. This should include the email address that you used to log into Google.
 
@@ -52,7 +52,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 14. Select **+ Create credentials**, and then select **OAuth client ID**.
 
-15. In the Application type menu, select Web application. Give the application a suitable name, like Azure AD B2B. Under **Authorized redirect URIs**, add the following URIs:
+15. In the Application type menu, select Web application. Give the application a suitable name, like Microsoft Entra B2B. Under **Authorized redirect URIs**, add the following URIs:
 
    ```
       https://login.microsoftonline.com
@@ -80,12 +80,12 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 ### Exercise 2 - Configure Azure to work with an External identity provider
 
-#### Task 1 - Configure Azure AD for Google federation
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as an admin.
+#### Task 1 - Configure Microsoft Entra ID for Google federation
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as an admin.
 
-2. Select **Azure Active Directory**.
+2. Select **Microsoft Entra ID**.
 
-3. Under **Manage**, select **External Identities**.
+3. Under **Identity**, select **External Identities**.
 
 4. Choose **All identity providers** from the menu on the left.
 
@@ -102,9 +102,9 @@ This completes the configuration of Google as an identity provider.
 #### Task 2 - Invite you Test User account
 9. If you used an existing Gmail account, remember to delete the account with **External Identities | All identity providers**. You can also return to the Google developer console and delete the project that you created.
 
-10. Open Azure Active Directory (Azure AD).
+10. Open Microsoft Entra ID.
 
-11. Go to Users.
+11. Go to Users and select **All users**.
 
 12. Select **+ New User**.
 

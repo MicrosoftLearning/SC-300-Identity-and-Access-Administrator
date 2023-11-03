@@ -17,9 +17,9 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 #### Task - Create a new Access review
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
 
-2. Access reviews can manage the access lifecycle.  Within **Azure Active Directory**, find **Identity Governance** under the **Manage** menu.  In **Identity Goverance**, select **Access reviews**.
+2. Access reviews can manage the access lifecycle.  Within **Microsoft Entra ID**, find **Identity Governance**, then select **Access reviews**.
 
 3. Select **+ New access review**.
 
@@ -29,7 +29,7 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 6. Set the **Scope** to **All users**.
 
-7. Select the **Reviews** option for move forward in the wizard.
+7. Select the **Next: Reviews** to move forward in the wizard.
 
 8. The next step is to determine the reviewers.  These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
 
@@ -37,11 +37,13 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 10. The advanced settings allow you to put a message as part of the review.
 
-11. Select **Review and Creat** to finalize the access review.
+11. Switch to the **Review + Create** tab to finalize the access review.
 
 12. Name the access review **SC300 Access Review Test**.
 
-13. Select **Create**. When the access review is created, the access review list will populate with the roles and owners of the reviews.
+13. Select **Create** at the bottom of the page.
+
+    **Note** - When the access review is created, the access review list will populate with the roles and owners of the reviews.
 
 14. Members that are being reviewed will receive an email when the review is initiated.
 

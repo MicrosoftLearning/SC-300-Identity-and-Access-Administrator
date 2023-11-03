@@ -1,33 +1,33 @@
 ---
 lab:
-    title: '26 - Configure Privileged Identity Management for Azure AD roles'
+    title: '26 - Configure Privileged Identity Management for Microsoft Entra roles'
     learning path: '04'
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 26: Configure Privileged Identity Management for Azure AD roles
+# Lab 26: Configure Privileged Identity Management for Microsoft Entra roles
 
 ## Lab scenario
 
-A Privileged role administrator can customize Privileged Identity Management (PIM) in their Azure Active Directory (Azure AD) organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
+A Privileged role administrator can customize Privileged Identity Management (PIM) in their Microsoft Entra organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
 
 #### Estimated time: 30 minutes
 
-### Exercise 1 - Configure Azure AD role settings
+### Exercise 1 - Configure Microsoft Entra role settings
 
 #### Task 1 - Open role settings
 
-Follow these steps to open the settings for an Azure AD role.
+Follow these steps to open the settings for an Microsoft Entra role.
 
-1. Sign in to the [https://portal.azure.com](https://portal.azure.com) as a Global administrator.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
 
-2. Search for and then select **Azure AD Privileged Identity Management.**
+2. Search for and then select **Privileged Identity Management.**
 
-3. In the Privileged Identity Management page, in the left navigation, select **Azure AD roles.**
+3. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles.**
 
 4. On the Quick start page, in the left navigation, select **Settings.**
 
-    ![Screen image displaying the Azure AD roles page with the Settings menu highlighted](./media/lp3-mod3-pim-ad-roles-settings.png)
+    ![Screen image displaying the Microsoft Entra roles page with the Settings menu highlighted](./media/lp3-mod3-pim-ad-roles-settings.png)
 
 5. Review the list of roles and then, in the **Search by role name**, enter **compliance**.
 
@@ -53,27 +53,29 @@ If setting multiple approvers, approval completes as soon as one of them approve
 
 5. Once you have configured the role settings, select **Update** to save your changes.
 
-### Exercise 2 - PIM with Azure AD roles
+### Exercise 2 - PIM with Microsoft Entra roles
 
 #### Task 1 - Assign a role
 
-With Azure Active Directory (Azure AD), a Global administrator can make permanent Azure AD admin role assignments. These role assignments can be created using the Azure portal or using PowerShell commands.
+With Microsoft Entra ID, a Global administrator can make permanent Microsoft Entra admin role assignments. These role assignments can be created using the Microsoft Entra admin center, the Azure portal, or using PowerShell commands.
 
-The Azure AD Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Azure AD admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
+The Privileged Identity Management (PIM) service also allows Privileged role administrators to make permanent admin role assignments. Additionally, Privileged role administrators can make users eligible for Microsoft Entra admin roles. An eligible administrator can activate the role when they need it, and then their permissions expire once they're done.
 
-Follow these steps to make a user eligible for an Azure AD admin role.
+Follow these steps to make a user eligible for an Microsoft Entra admin role.
 
-1. Sign in to [https://portal.azure.com](https://portal.azure.com) using a Global Administrator account.
+1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using a Global Administrator account.
 
-2. Search for and then select **Azure AD Privileged Identity Management.**
+2. Search for and then select **Privileged Identity Management.**
 
-3. In the Privileged Identity Management page, in the left navigation, select **Azure AD roles.**
+    **Note** - you can find it in the menu at Identity - Identity Governance - Privileged Identity Management.
+
+3. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles.**
 
 4. On the Quick start page, in the left navigation, select **Roles**.
 
 5. On the top menu, select **+ Add assignments.**
 
-    ![Screen image displaying Azure AD roles with Add assignments menu highlighted](./media/lp4-mod3-pim-assign-role.png)
+    ![Screen image displaying Microsoft Entra roles with Add assignments menu highlighted](./media/lp4-mod3-pim-assign-role.png)
 
 6. In the Add assignments page, on the **Membership** tab, review the settings.
 
@@ -99,31 +101,30 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 #### Task 2 - Log in with Miriam
 
 1. Open a new InPrivate browser window.
-2. Connect to the Azure Portal (https://portal.azure.com).
-3. If it opens with a user logged in, Select on their name in the upper-right corner and select **Sign in as a different account**.
-4. Log in a Miriam.
+2. Connect to the Microsoft Entra admin center (https://entra.microsoft.com).
+    **Note** - If it opens with a user logged in, Select on their name in the upper-right corner and select **Sign in as a different account**.
+3. Log in a Miriam.
 
    | Field | Value |
    | :--- | :--- |
    | Username | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
    | Password |  Enter the tenant's admin password(Refer the Lab Resources tab to retrieve the tenant admin password) |
 
-5. Close the **Welcome to Azure dialog**.
-6. From the **Search resource, services, and docs** bar look for Azure Active Directory, and open the page.
-7. On the **Overview** page, look for the **My feed**.
-8. Select **View Profile** under Miriam Graham's name; this with open Miriam's profile page.
-9. Select **Assigned roles** then select **Eligible assignments**.
-10. Notice that the **Compliance Administrator** role is now available to Miriam.
+4. From the **Identity** menu, open **Users** and then select **All users**.
+5. Find **Miriam** in the list of users
+6. On the **Overview** page, look for the **Assigned roles**.
+7. Select **Eligible assignments**.
+1. Notice that the **Compliance Administrator** role is now available to Miriam.
 
-#### Task 3 - Activate your Azure AD roles
+#### Task 3 - Activate your Microsoft Entra roles
 
-When you need to assume an Azure AD role, you can request activation by opening **My roles** in Privileged Identity Management.
+When you need to assume an Microsoft Entra role, you can request activation by opening **My roles** in Privileged Identity Management.
 
 1. From the **Search, resources, services, and docs** bar, look for Privileged.
-2. Open the **Azure AD Privileged Identity Management** page.
+2. Open the **Privileged Identity Management** page.
 3. On the Privileged Identity Management page, in the left navigation menu, select **My roles.**
 
-4. In the My roles page, review the list of eligible assignments.
+4. In the My roles page, review the list of **Eligible assignments**.
 
     ![Screen image displaying My roles with eligible role assignments highlighted](./media/lp4-mod3-my-roles.png)
 
@@ -145,8 +146,8 @@ When you need to assume an Azure AD role, you can request activation by opening 
 
 For certain roles, the scope of the granted permissions can be restricted to a single admin unit, service principal, or application. This procedure is an example if assigning a role that has the scope of an administrative unit.
 
-1. Remember to close out the browser windows for MiriamG, then open the Azure Portal as your administrator account.
-2. Browse to the Privileged Identity Management page, and in the left navigation menu, select Azure **Azure AD roles.**
+1. Remember to close out the browser windows for MiriamG, then open the Microsoft Entra admin center with your administrator account.
+2. Browse to the Privileged Identity Management page, and in the left navigation menu, select Azure **Microsoft Entra roles.**
 3. Select **Roles**.
 4. In the Roles page, on the top menu, select **+ Add assignments.**
 
@@ -162,7 +163,7 @@ For certain roles, the scope of the granted permissions can be restricted to a s
 
 Follow these steps to update or remove an existing role assignment.
 
-1. In the Open Azure AD Privileged Identity Management > Azure AD roles page, in the left navigation, select **Assignments**.
+1. In the Open Privileged Identity Management > Microsoft Entra roles page, in the left navigation, select **Assignments**.
 
 2. In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
 

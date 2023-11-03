@@ -1,6 +1,6 @@
 ---
 lab:
-    title: '09 - Enable Azure AD self service password reset'
+    title: '09 - Enable Microsoft Entra self service password reset'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
@@ -18,7 +18,8 @@ The company has decided to empower the employees and enable self-service passwor
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
-1. On the Azure Active Directory page, under **Manage**, select **Groups** and select **New Group** on the right side window.
+1. On the Microsoft Entra admin center, open the **Identity** navigation menu on the left.
+1. Under **Groups**, select **All groups** and select **New Group** on the right side window.
 
 2. Create a new group using the following information:
 
@@ -41,9 +42,9 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 Enable SSPR for the group.
 
-1. Browse back to the Azure Active Directory page.
+1. Browse back to the **Identity** navigation menu.
 
-2. Under **Manage**, select **Password reset**.
+2. Under **Protection**, select **Password reset**.
 
 3. On the Password reset page Properties page, under **Self service password reset enabled**, select **Selected**.
 
@@ -55,7 +56,7 @@ Enable SSPR for the group.
 
     ![Screen image displaying the Password reset properties page with selected, select group, and save highlighted](./media/lp2-mod2-enable-password-reset-for-selected-group.png)
 
-7. Under **Manage**, select and review the default values for the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
+7. On the **Password reset** screen, look under **Manage*, select and review the default values for each of the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
 
     **Note** it is important to have **phone** selected as one of the authentication methods for the rest of this lab, but you can have other options as well.
 

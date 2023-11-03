@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-Your organization needs to be able to limit user access to its internal applications. You must deploy an Azure Active Directory conditional access policy.
+Your organization needs to be able to limit user access to its internal applications. You must deploy an Microsoft Entra conditional access policy.
 
 **Note** - For Conditional Access Policies, you can turn off Security Defaults, the key points to remember are from the training.  Additional information on Security defaults can be found at this link: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
@@ -29,41 +29,41 @@ Your organization needs to be able to limit user access to its internal applicat
    | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
    | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
     
-4. Select on the Yammer icon to see that it loads correctly.
+4. Select on the **Sway** icon to see that it loads correctly.
 
 #### Task 2 -  Create a conditional access policy
 
-Azure Active Directory conditional access is an advanced feature of Azure AD that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
+Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
 
-1. Browse to [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
+1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the Azure Active Directory page, under **Manage**, select **Security**.
+3. On the menu, under **Identity**, select **Protection**.
 
 4. On the Security page, in the left navigation, select **Conditional access**.
 
-5. On the **Overview (Preview)**, click **+Create new policy**.
+5. On the **Overview (Preview)**, click **+ Create new policy**.
 
    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
-6. In the **Name** box, enter **Block Yammer for DebraB**.
+6. In the **Name** box, enter **Block Sway for DebraB**.
 
    **Note** - Using this naming to help you quickly recognize the policy and its function.
 
-7. Under **Assignments**, select **Users or workload identities**.
+7. Under **Assignments**, select **0 users and groups selected**.
 
-8. On the Include tab, select the **Users and groups** check box.
+8. On the Include tab, select **Select users and groups**, and then mark **Users and groups** check box.
 
 9. In the Select pane, select **DebraB** account and then select **Select**.
 
-10. Select **Cloud apps or actions**.
+10. In the **Target resources**, select **No target resource selected**.
 
-11. Verify **Cloud apps** is selected and then select **Select apps**.
+11. Verify **Cloud apps** is selected and then select **Select apps**, then select **None** in the select section.
 
-12. In the Select pane, search for **Yammer** and select **Office 365 Yammer** and then select **Select**.
+12. In the Select pane, search for **Sway** and select **Sway** and then select **Select**.
 
-13. Under **Access controls**, select **Grant**.
+13. Under **Access controls**, within the **Grant** section, select **0 controls selected**.
 
 14. In the Grant pane, select **Block access** and then select **Select**.
 
@@ -77,7 +77,7 @@ Azure Active Directory conditional access is an advanced feature of Azure AD tha
 
 You should test your conditional access policies to ensure they working as expected.
 
-1. Open a new 'Inprivate' browser tab and then browse to [https://www.yammer.com/office365](https://www.yammer.com/office365).
+1. Open a new 'InPrivate' browser tab and then browse to [https://sway.office.com](https://sway.office.com).
     - When prompted, log in as DebraB:
 
    | Setting | Value |
@@ -85,17 +85,17 @@ You should test your conditional access policies to ensure they working as expec
    | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
    | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
      
-2. Verify you are prevented from successfully access Microsoft Yammer.
+2. Verify you are prevented from accessing Microsoft Sway.
 
    ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](./media/lp2-mod3-test-conditional-access-policy.png)
 
 3. If you are signed in, close the tab, wait 1 minute, and then retry.
     
-   **Note** - If your are auto-logged into Yammer as DebraB, then you will need to manually log out.  You credentials / access were cached.  Once you log out and sign-in, your Yammer session should deny access.
+   **Note** - If your are auto-logged into Sway as DebraB, then you will need to manually log out.  You credentials / access were cached.  Once you log out and sign-in, your Yammer session should deny access.
 
 4. Close the tab and return to the Conditional Access page.
 
-5. Select the **Yammer conditional access** policy.
+5. Select the **Block Sway for DebraB** policy.
 
 6. Under **Enable policy**, select **Off** and then select **Save**.
 
@@ -103,9 +103,9 @@ You should test your conditional access policies to ensure they working as expec
 
 #### Task - Use What if to test conditional access policies
 
-1. Open the portal menu and then select **Azure Active Directory**.
+1. Open the Microsoft Entra admin center menu and then select **Microsoft Entra ID**.
 
-1. On the Azure Active Directory page, under **Manage**, select **Security**.
+1. On the menu, under **Identity**, select **Protection**.
 
 1. On the Security page, in the left navigation, select **Conditional access**.
 
@@ -117,7 +117,7 @@ You should test your conditional access policies to ensure they working as expec
 
 1. Choose **DebraB** as the user.
 
-1. Under **Cloud apps, actions, or authentication context**, select **Yammer**. 
+1. Under **Cloud apps, actions, or authentication context**, select **Sway**. 
 
 1. Select **What if**. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
 
@@ -125,17 +125,17 @@ This allows you to test the policies and their affectiveness before enabling the
 
 ### Exercise 3 - Configure sign in frequency controls using a conditional access policy
 
-#### Task - Use the Azure Portal to configure conditional access
+#### Task - Use the Microsoft Entra admin center to configure conditional access
 
 As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency
 
-1. Browse to [https://portal.azure.com](https://portal.azure.com) and sign in using a Global administrator account for the directory.
+1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-2. Open the portal menu and then select **Azure Active Directory**.
+2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the Azure Active Directory page, under **Manage**, select **Security**.
+3. On the menu, under **Identity**, select **Protection**.
 
-4. On the Security page, in the left navigation, select **Conditional access**.
+4. On the Protection menu, in the left navigation, select **Conditional access**.
 
 5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
 
@@ -143,9 +143,9 @@ As part of your company's larger security configuration, you must test a conditi
 
 6. In the **Name** box, enter **Sign in frequency**.
 
-7. Under **Assignments**, select **Users or workload identities**.
+7. Under **Assignments**, select **0 users and groups selected**.
 
-8. On the Include tab, select the **Users and groups** check box.
+8. On the Include tab, mark **Select users and groups**, then select the **Users and groups** check box.
 
 9. In the Select pane, select your **Grady Archie** account and then select **Select**.
 
