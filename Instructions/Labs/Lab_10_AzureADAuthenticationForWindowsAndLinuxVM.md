@@ -91,11 +91,11 @@ The company has decided that Azure Active Directory should be used to login to v
 1. **Exit** the virtual machine RDP session.
 
 
-#### Task 4 - Modify your RDP file to support the Azure AD login
+#### Task 4 - Modify your RDP file to support the Microsoft Entra ID login
 
 1. Open the **Downloads** folder in file manager.
 
-1. **Make a copy** of the RDP file and add **-AzureAD** to the end of the filename.
+1. **Make a copy** of the RDP file and add **-EntraID** to the end of the filename.
 
 1. Edit the new version of the RDP file you just copied using Notepad. Add the these two lines of text to the bottom of the of the file:
      ```
@@ -105,11 +105,11 @@ The company has decided that Azure Active Directory should be used to login to v
  
  1. **Save** the RDP file.  You should now have two versions of the file:
       - <<virtual machine name>>.RDP
-      - <<virtual machine name>>-AzureAD.RDP
+      - <<virtual machine name>>-EntraID.RDP
 
-#### Task 5 - Connect to the Windows Server 2022 Datacenter using Azure AD login
+#### Task 5 - Connect to the Windows virtual machine using Microsoft Entra ID login
 
-1. Open the **<<virtual machine name>>-AzureAD.RDP
+1. Open the **<<virtual machine name>>-EntraID.RDP
 
 1. Select **Connect** when the dialog opens.
 
@@ -129,19 +129,17 @@ The company has decided that Azure Active Directory should be used to login to v
 
 1. Windows Server should confirm the login and open to the normal Server Manager Dashboard.
 
-#### Task 6 -- Optional testing to explore the Azure AD login
+#### Task 6 -- Optional testing to explore the Microsoft Entra ID login
 
 1. Check to see that JoniS was the only user added to the Administrators group.
 
-1. From the Server Manager Dashboard, select the **Tools** menu in the upper left.
-
-1. Launch the **Computer Management** tool.
+1. Use the secondary mouse click on the START button, then select **Computer Management** in the popup menu.
 
 1. Open **Local Users and Groups** then navigate to **Groups, Administrators**.
 
 1. You should see **Azure\JoniSherman....** in the list.
 
-1. Check to see if other Azure AD members can log in.
+1. Check to see if other Microsoft Entra ID members can log in.
 
 1. Exit out of the remote desktop session.
 
