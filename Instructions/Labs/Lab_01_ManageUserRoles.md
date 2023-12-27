@@ -209,7 +209,7 @@ After the users have been created, you will be prompted that the creation has su
         -DisplayName "New PW User" `
         -GivenName "New" -Surname "User" `
         -MailNickname "newuser" `
-        -UsageLocation "USA" `
+        -UsageLocation "US" `
         -UserPrincipalName "newuser@<labtenantname.com>" `
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Research" -JobTitle "Trainer"
