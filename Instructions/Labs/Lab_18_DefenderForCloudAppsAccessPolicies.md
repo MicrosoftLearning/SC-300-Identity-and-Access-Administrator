@@ -72,11 +72,9 @@ Registering your application establishes a trust relationship between your app a
 
 1. Sign in to [https://security.microsoft.com](https://security.microsoft.com) using a Global Administrator account.
 
-1. On the left menu, scroll to the bottom and select **More resources**.
+1. On the left menu, scroll to and select **Polices** in the **Cloud Apps** section of the menu on the left..
 
-1. In the **More resources** window, locate and select **Open** under **Microsoft Defender for Cloud Apps**.  This will take you to the **Microsoft Defender for Cloud Apps** portal within the Microsoft 365 account.
-
-1. In the **Microsoft Defender for Cloud Apps** portal menu, select the drop-down arrow for **Control** and select **Policies**.
+1. In the **Policies** menu, locate and select **Policy Management**.
 
 1. Select **+ Create policy**. Select **Access policy**.
 
@@ -90,7 +88,7 @@ Registering your application establishes a trust relationship between your app a
 
 1. Leave **Actions** as **Test**.
 
-1. Under **Alerts**, leave **Create an alert...** checked and select **Sent alert as email**.
+1. Under **Alerts**, leave **Create an alert...** checked and select **Send alert as email**.
 
 1. Enter the lab admin email address and select **Enter** on your keyboard.
 
