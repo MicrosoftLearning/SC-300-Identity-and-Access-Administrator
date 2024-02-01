@@ -15,9 +15,9 @@ Your organization needs to be able to limit user access to its internal applicat
 
 #### Estimated time: 30 minutes
 
-### Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
+### Exercise 1 - Set a conditional access policy to block DebraB from accessing Sway
 
-#### Task 1 -- Confirm DebraB has access to Yammer
+#### Task 1 -- Confirm DebraB has access to Sway
 
 
 1. Launch a new InPrivate browser window.
