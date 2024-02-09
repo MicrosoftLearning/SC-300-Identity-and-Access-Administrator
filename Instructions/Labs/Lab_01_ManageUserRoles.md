@@ -190,7 +190,7 @@ After the users have been created, you will be prompted that the creation has su
 5. To verify that you are connected and to see existing users, run:  
 
     ``` 
-    Get-AzureADUser 
+    Get-MgUser 
     ```
     
 7. To assign a common temporary password to all new users, run the following command and replace the <Enter a complex Password> with the password that you would like to provide to your users.  
@@ -209,7 +209,7 @@ After the users have been created, you will be prompted that the creation has su
         -DisplayName "New PW User" `
         -GivenName "New" -Surname "User" `
         -MailNickname "newuser" `
-        -UsageLocation "USA" `
+        -UsageLocation "US" `
         -UserPrincipalName "newuser@<labtenantname.com>" `
         -PasswordProfile $PWProfile -AccountEnabled `
         -Department "Research" -JobTitle "Trainer"
