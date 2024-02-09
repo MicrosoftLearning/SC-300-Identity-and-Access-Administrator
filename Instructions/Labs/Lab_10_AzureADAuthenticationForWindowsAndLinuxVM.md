@@ -159,7 +159,9 @@ The company has decided that Azure Active Directory should be used to login to v
 
 1. Select **+ Create a resource**.
 
-1. Select on **Create** under **Ubuntu Server 18.04 LTS** in the Popular view.
+1. Search for **Ubuntu**.
+
+1. Select on **Create** under **Ubuntu Server 22.04 LTS**. You may use other Linux servers for this test lab.
 
 1. On the **Management** tab, check the box to enable **Login with Azure Active Directory (Preview)**.
 

@@ -15,9 +15,9 @@ Your organization needs to be able to limit user access to its internal applicat
 
 #### Estimated time: 30 minutes
 
-### Exercise 1 - Set a conditional access policy to block DebraB from accessing Yammer
+### Exercise 1 - Set a conditional access policy to block DebraB from accessing Sway
 
-#### Task 1 -- Confirm DebraB has access to Yammer
+#### Task 1 -- Confirm DebraB has access to Sway
 
 
 1. Launch a new InPrivate browser window.
@@ -91,7 +91,7 @@ You should test your conditional access policies to ensure they working as expec
 
 3. If you are signed in, close the tab, wait 1 minute, and then retry.
     
-   **Note** - If your are auto-logged into Sway as DebraB, then you will need to manually log out.  You credentials / access were cached.  Once you log out and sign-in, your Yammer session should deny access.
+   **Note** - If you are auto-logged into Sway as DebraB, then you will need to manually log out.  Your credentials / access were cached.  Once you log out and sign-in, your Sway session should deny access.
 
 4. Close the tab and return to the Conditional Access page.
 

@@ -25,7 +25,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. Select **+ Create** in the upper left corner.
 
-1. In the **Add Microsoft Sentinel to a workspace** tile, select **Create a new workspace**.
+1. In the **Add Microsoft Sentinel to a workspace** tile, select **+ Create a new workspace**.
 
 1. In **Resource group**, select **Create new** and enter **Sentinel-RG**.
 
@@ -40,11 +40,11 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 1. If prompted, select **OK** to activate the Microsoft Sentinel free trial.
 
 #### Task 2 - Add Azure AD as a Data source
-    **Note** - As of 11/1/2023, the data source is still Azure AD (not Microsoft Entra ID)
+    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. In **Microsoft Sentinel**, navigate on the menu to **Content management** and select **Content hub**.
 
-1. Use the search box to look for **Azure** in the list of connectors, locate **Azure Active Directory** and mark the checkbox.
+1. Use the search box to look for **Entra** in the list of connectors, locate **Microsoft Entra ID** and mark the checkbox.
 
 1. To the right, a preview tile will open.  Select **Install**.
 
@@ -64,7 +64,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. Select **Refresh** on the **Microsoft Sentinel | Data connectors** tile and the number 1 will show in the **Connected** count.
 
-   **Note** - The Azure AD data connector may take a few minutes to show in the active count. 
+   **Note** - The Microsoft Entra ID data connector may take a few minutes to show in the active count. 
 
 #### Task 3 - Run Kusto query on User activity
 
