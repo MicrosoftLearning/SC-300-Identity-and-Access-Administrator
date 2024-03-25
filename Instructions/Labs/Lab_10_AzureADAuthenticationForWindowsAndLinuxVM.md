@@ -1,6 +1,6 @@
 ---
 lab:
-    title: '10 - Azure AD Authentication for Windows and Linux Virtual Machines'
+    title: '10 - Microsoft Entra ID Authentication for Windows and Linux Virtual Machines'
     learning path: '02'
     module: 'Module 02 - Implement an Authentication and Access Management Solution'
 ---
@@ -11,13 +11,13 @@ lab:
 
 ## Lab scenario
 
-The company has decided that Azure Active Directory should be used to login to virtual machines for remote access.  This lab will show how this can be setup for Windows and Linux virtual machines.
+The company has decided that Microsoft Entra ID should be used to login to virtual machines for remote access.  This lab will show how this can be setup for Windows and Linux virtual machines.
 
 #### Estimated time: 30 minutes
 
-### Exercise 1 - Login to Windows Virtual Machines in Azure with Azure AD
+### Exercise 1 - Login to Windows Virtual Machines in Azure with Microsoft Entra ID
 
-#### Task 1 - Create a Windows Virtual Machine with Azure AD login enabled
+#### Task 1 - Create a Windows Virtual Machine with Microsoft Entra ID login enabled
 
 1. Browse to the [https://portal.azure.com](https://portal.azure.com)
 
@@ -30,17 +30,15 @@ The company has decided that Azure Active Directory should be used to login to v
 1. You will have to create an administrator username and password for the VM on the basics tab.
    - Use a username you will remember and a secure password.
 
-1. On the **Management** tab, check the box to **Login with Azure AD** under the Azure AD section.
+1. On the **Management** tab, check the box to **Login with Microsoft Entra ID** under the Microsoft Entra ID section.
 
-    NOTE: As of 11/1/2023, this UI has not been updated to show Microsoft Entra ID, it still references Azure AD.
-
-    NOTE2: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Azure AD.
+        NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
 1. Go through the rest of the experience of creating a virtual machine. 
 
 1. Select Create.
 
-#### Task 2 - Azure AD login for existing Azure Virtual Machines
+#### Task 2 - Microsoft Entra ID login for existing Azure Virtual Machines
 
 1. Browse to **Virtual Machines** in the [https://portal.azure.com](https://portal.azure.com).
 
@@ -57,7 +55,7 @@ The company has decided that Azure Active Directory should be used to login to v
 
 1. Select **Review + assign** to complete the process
 
-#### Task 3 - Update the Server VM to support the Azure AD login
+#### Task 3 - Update the Server VM to support the Microsoft Entra ID login
 
 1. Select the **Connect** menu item.
 
@@ -89,7 +87,6 @@ The company has decided that Azure Active Directory should be used to login to v
 1. Select **Apply** and then **OK**.
 
 1. **Exit** the virtual machine RDP session.
-
 
 #### Task 4 - Modify your RDP file to support the Microsoft Entra ID login
 
