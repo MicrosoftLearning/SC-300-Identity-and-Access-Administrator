@@ -77,13 +77,13 @@ Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft
 
 ### Exercise 3 - Setting your privacy information
 
-#### Task 1 - Adding your privacy info on Azure AD, including Global privacy contact and Privacy statement URL
+#### Task 1 - Adding your privacy info on Microsoft Entra ID, including Global privacy contact and Privacy statement URL
 
 Microsoft strongly recommends you add both your global privacy contact and your organization's privacy statement, so your internal employees and external guests can review your policies. Because privacy statements are uniquely created and tailored for each business, we strongly recommend you contact a lawyer for assistance.
 
    **NOTE** - For information about viewing or deleting personal data, see [https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure). For more information about GDPR, see the [https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
-You add your organization's privacy information in the **Properties** area of Azure AD. To access the Properties area and add your privacy information:
+You add your organization's privacy information in the **Properties** area of Microsoft Entra ID. To access the Properties area and add your privacy information:
 
 1. In the **Identity** menu, select **Overview**, then select **Properties**.
 
