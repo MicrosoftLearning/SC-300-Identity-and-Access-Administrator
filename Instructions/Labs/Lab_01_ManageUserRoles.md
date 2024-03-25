@@ -110,13 +110,13 @@ Using Microsoft Entra ID, you can designate limited administrators to manage ide
 
    **Note - This role now has the ability to add applications to the tenant.  We will experiment more with this feature in later labs.**
 
-7. Sign out of the Chris Green instance of the Azure Portal and close the browser.
+7. Sign out of the Chris Green instance of the portal and close the browser.
 
 ### Exercise 3 - Remove a role assignment
 
 #### Task 1 - Remove the application administrator from Chris Green
 
-This task will use an alternative method to remove the assigned role; it will use the **Roles and administrators** option in Azure AD.
+This task will use an alternative method to remove the assigned role; it will use the **Roles and administrators** option in Micrisoft Entra ID.
 
 1. If you are not already logged in as your Global Admin, launch the Microsoft Entra admin center and log in now.
 2. In the search box type **Roles and** then launch Microsoft Entra ID roles and administration.
