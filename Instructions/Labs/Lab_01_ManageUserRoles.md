@@ -95,7 +95,7 @@ Using Microsoft Entra ID, you can designate limited administrators to manage ide
 #### Task 2 - Check application permissions
 
 1. Launch a new InPrivate browser window.
-2. Open the Microsoft Entra admin center [https://entra.microsoftcom](https://entra.microsoft.com) as Chris Green.
+2. Open the Microsoft Entra admin center [https://entra.microsoft.com](https://entra.microsoft.com) as Chris Green.
 
     | **Setting**| **Value**|
     | :--- | :--- |
