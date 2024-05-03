@@ -19,7 +19,9 @@ You need to identify and update the different properties associated with your te
 
 1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-1. In the **Identity** menu open the **Settings** menu, select **Domain names**.
+1. In the **Identity** menu, use the **Show more* option at the bottom.
+
+1.  Open the **Settings** menu, select **Domain names**.
 
 1. Select **+ Add custom domain**.
 
@@ -28,6 +30,8 @@ You need to identify and update the different properties associated with your te
     ```
     sales.labtenant.onmicrosoft.com
     ```
+
+1. **Note** - You will be prompted to open the Microsoft 365 Admin center to complete this action.
 
 1. Select **Add domain** to add the subdomain.
 

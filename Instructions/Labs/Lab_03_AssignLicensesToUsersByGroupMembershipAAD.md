@@ -86,7 +86,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
     
 5. Close the browser window. 
 
-### Exercise 2 - Create an Microsoft 365 group in Microsoft Entra ID
+### Exercise 2 - Create a Microsoft 365 group in Microsoft Entra ID
 
 #### Task 1 - Create the group
 

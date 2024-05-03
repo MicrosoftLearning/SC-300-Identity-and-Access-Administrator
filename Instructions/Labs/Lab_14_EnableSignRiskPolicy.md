@@ -22,7 +22,7 @@ As an additional layer of security, you need to enable and configure your Micros
 
 2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the lefthand menu, under **Identity**, select **Protection**.
+3. On menu, under **Identity**, select **Protection**.
 
 4. On the Security page, in the left navigation, select **Identity protection**.
 
