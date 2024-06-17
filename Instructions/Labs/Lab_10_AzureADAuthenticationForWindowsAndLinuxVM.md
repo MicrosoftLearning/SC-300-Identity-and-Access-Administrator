@@ -146,7 +146,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. You should notice that each of these users are denied access.
 
-### Optional Exercise 2 - Login to Linux Virtual Machines in Azure with Azure AD
+### Optional Exercise 2 - Login to Linux Virtual Machines in Azure with Microsoft Entra ID
 
 #### Task 1 - Create a Linux VM with system assigned managed identity
 
@@ -158,13 +158,13 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Select on **Create** under **Ubuntu Server 22.04 LTS**. You may use other Linux servers for this test lab.
 
-1. On the **Management** tab, check the box to enable **Login with Azure Active Directory (Preview)**.
+1. On the **Management** tab, check the box to enable **Login with Microsoft Entra ID**.
 
 1. Ensure **System assigned managed identity** is checked.
 
 1. Go through the rest of the experience of creating a virtual machine. During this preview, you’ll have to create an administrator account with username and password or SSH public key.
 
-#### Task 2 - Azure AD login for existing Azure Virtual Machines
+#### Task 2 - Microsoft Entra ID login for existing Azure Virtual Machines
 
 1. Browse to **Virtual Machines** in the [https://portal.azure.com](https://portal.azure.com).
 
