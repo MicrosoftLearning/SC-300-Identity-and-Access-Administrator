@@ -185,7 +185,7 @@ After the users have been created, you will be prompted that the creation has su
     ```
     Connect-MgGraph -Scopes "User.ReadWrite.All"
     ``` 
-    The Edge browser will open and you will be prompted to sign-in.  Use the MOD Administrator account to connect.  Accpet the permissions request; then close the browser window.
+    The Edge browser will open and you will be prompted to sign-in.  Use the MOD Administrator account to connect.  Accept the permissions request; then close the browser window.
 
 5. To verify that you are connected and to see existing users, run:  
 
