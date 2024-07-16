@@ -99,7 +99,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 16. When the terms of use is created, you will automatically be redirected to the Conditional access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
 
-17. Under **Assignments**, select **Users or workload identities**.
+17. Under **Assignments**, select **Users identities**.
 
 18. On the include tab, select **Users and groups** check box.
 
@@ -107,7 +107,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
    **Warning** - If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
 
-20. Select **Cloud apps or actions.**
+20. Select **Target resources.**
 
 21. Select **All cloud apps**.
 
@@ -202,6 +202,7 @@ You can edit some details of terms of use, but you can't modify an existing docu
 3. In the left navigation menu, under **Entitlement management**, select **Terms of use**.
 
 4. Select the terms of use you want to edit.
+ - Note: You have to click on open space, not directly on name of the Terms or Use.
 
 5. On the top menu, select **Edit terms**.
 

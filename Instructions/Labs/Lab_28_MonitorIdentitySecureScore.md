@@ -35,16 +35,30 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 2. In the tile that opens, scroll down and select **Get Started**.
 
-3. A new tab will open for **Identity Protection | Sign-in risk policy**.
+3. A new tab will open for **Conditional Access**.
+ **Note** - by default the Get Started button will open in Azure Portal. You can use the portal or return to the Entra admin center. Either wil work.
 
-4. Select **All users** under **Assignments**.
+4. Select **+ New policy**.
 
-5. Select **Medium and above** under **Sign-in risk**.
+5. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
 
-6. Select **Allow** - **Require multi-factor authentication** under **Controls**.
+6. Under Assignments, select Users or workload identities.
 
-7. Turn the **Policy enforcement** to **Enabled** (if not done so already), and select **Save**.
+7. Under Include, select All users.
 
-8. You have created a Sign-in risk policy that should now increase your Identity Secure Score.  This will take up to 24 hours to take affect in your Identity Secure Score.
+8. Under Exclude, select Users and groups and choose any accounts that must maintain the ability to use legacy authentication. Microsoft recommends you exclude at least one account to prevent yourself from being locked out.
 
-9. Review other improvement actions and the steps to create and enable them.
+9. Under Target resources > Cloud apps > Include, select All cloud apps.
+
+10. Under Conditions > Client apps, set Configure to Yes.
+ - Check only the boxes Exchange ActiveSync clients and Other clients.
+
+11. Select Done.
+
+12. Under Access controls > Grant, select Block access.
+
+13. Select Select.
+
+14. Confirm your settings and set Enable policy to Report-only.
+
+15. Select Create to create to enable your policy.

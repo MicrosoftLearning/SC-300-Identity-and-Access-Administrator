@@ -13,6 +13,8 @@ A Privileged role administrator can customize Privileged Identity Management (PI
 
 #### Estimated time: 30 minutes
 
+NOTE - There have been on-going changes to requiring MFA in lab environments.  When you switch between users to complete this lab, you may be prompted to set up MFA.
+
 ### Exercise 1 - Configure Microsoft Entra role settings
 
 #### Task 1 - Open role settings
