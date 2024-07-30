@@ -119,7 +119,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 1. Select **OK**.
 
 1. In the login dialog enter the following information:
-   - Username = **AzureAD\JoniS@<<your lab domainname>>
+   - Username = **AzureAD\JoniS@ your domain name**
    - Password = Enter the password provided by your lab provider
 
    NOTE: JoniS is the user we granted access to log in as administrator during Task 1.
