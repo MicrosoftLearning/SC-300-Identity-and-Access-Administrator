@@ -63,7 +63,7 @@ You need to identify and update the different properties associated with your te
 
     **IMPORTANT** - When the tenant is created, the Country or region are specified at that time. This setting cannot be changed later.
 
-3. In the **Properties** page, under **Tenant properties**, locate **Location** and review the information.
+3. In the **Properties** page, under **Tenant properties**, locate ** Data Location** and review the information.
 
     ![Screen image showing the Azure Active Directory Properties page with the Country or region and Location settings highlighted](./media/azure-active-directory-properties-country-location.png)
 
