@@ -31,7 +31,7 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 #### Task 2 - Execute an improvement action
 
-1. To improve one area of the identity security posture, select **Protect all users with a sign-in risk policy**.
+1. To improve one area of the identity security posture, select **Enable Microsoft Entra ID Identity Protection sign-in risk policies**.
 
 2. In the tile that opens, scroll down and select **Get Started**.
 
