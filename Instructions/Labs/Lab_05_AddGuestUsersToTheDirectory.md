@@ -122,7 +122,7 @@ A recent partnership has been established with another company. For now, employe
     }
     ```
 
-6. Sent the MgInvitation command to invite the External user:
+6. Send the MgInvitation command to invite the External user:
 
     ```
     New-MgInvitation -BodyParameter $params

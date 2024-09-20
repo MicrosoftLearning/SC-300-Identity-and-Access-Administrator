@@ -61,7 +61,7 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
    - Username = PradeepG@<<<your lab hoster provided domain>>>
    - Password = the password from your resources tab
 5. Confirm that Pradeep has access and that you get a new message:
-   - Your company is monitoring the usage of this application.
+   - Access to Microsoft Forms is monitored.
 6. Close the InPrivate browsing window.
 
 ### Exercise 2 - Setup alerts in Microsoft Defender for Cloud Apps
@@ -103,7 +103,7 @@ Registering your application establishes a trust relationship between your app a
    - Username = PradeepG@<<<your lab hoster provided domain>>>
    - Password = the password from your resources tab
 5. Confirm that Pradeep has access and that you get a new message:
-   - Your company is monitoring the usage of this application.
+   - Access to Microsoft Forms is monitored.
 6. Close the InPrivate browsing window.
 
 #### Task 3 - Review the Activity in Defender for Cloud Apps

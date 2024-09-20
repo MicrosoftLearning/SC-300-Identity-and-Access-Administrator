@@ -50,7 +50,7 @@ Multifactor authentication provides a means to verify who you are using more tha
 
 1. Under **Assignments**, select **All users** under Users, and select a user to enforce MFA.
 
-1. Change **Policy enforcement** from **Off** to **On**.
+1. Change **Policy enforcement** from **Disabled** to **Enabled**.
 
 1. Select **Save**.
 
