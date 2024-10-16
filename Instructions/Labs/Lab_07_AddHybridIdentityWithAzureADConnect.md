@@ -9,7 +9,7 @@ lab:
 
 
 
-# This lab is currently not functioning.  Due to a licensing change in Microsoft Entra ID, the lab is failing.  We are currently troubleshooting and updating the lab, and should have it back online within a week.  Please move to the next lab.
+# This lab will only function in a non-lab-hoster environment. If you want to try it using a personal account, it should work. You will not be able to perform within the class.
 
 
 

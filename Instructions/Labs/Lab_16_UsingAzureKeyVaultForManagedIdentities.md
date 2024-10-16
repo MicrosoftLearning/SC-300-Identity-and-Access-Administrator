@@ -7,7 +7,7 @@ lab:
 
 # Lab 16 - Using Azure Key Vault for Managed Identities
 
-**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
+# This lab should use the login that looks lie --> User1-#####@LodsProdMCA.onmicrosoft.com.
 
 ## Lab scenario
 
@@ -17,29 +17,11 @@ When you use managed identities for Azure resources, your code can get access to
 
 ### Exercise 1 - Use Azure Key Vault to manage Virtual Machine identities
 
-#### Task 1 - Create a Windows Virtual Machine
-
-1. Browse to the [https://portal.azure.com](https://portal.azure.com)
-
-1. Select **+ Create a resource**.
-
-1. Type **Windows 11** in Search the Marketplace search bar.
-
-1. Select **Windows 11** and from the plan dropdown choose **Windows 11 Enterprise, version 21H2**. Then choose **Create**.
-
-1. You will have to create an administrator username and password for the VM on the basics tab.
-
-1. On the **Management** tab, check the box to **Enable system assigned managed identity**.
-
-1. Go through the rest of the experience of creating a virtual machine. 
-
-1. Select Create.
-
-#### Task 2 - Create a Key Vault
+#### Task 1 - Create a Key Vault
 
 1. Sign in to the [https://portal.azure.com]( https://portal.azure.com) using a Global administrator account.
 
-1. At the top of the left navigation bar, select Create a resource
+1. At the top of the left navigation bar, select **+ Create a resource**.
 
 1. In the Search the Marketplace box type in **Key Vault**.  
 
@@ -50,19 +32,42 @@ When you use managed identities for Azure resources, your code can get access to
 1. Fill out all required information as shown below. Make sure that you choose the subscription that you're using for this lab.
     **Note** The Key vault name must be unique. Look for a green checkmark to the right of the field.
 
- - **Resource group** - sc300KeyVaultrg
+ - **Resource group** - rgSC300KeyVault
  - **Key vault name** - *anyuniquevalue*
  - On the **Access Configuration** page, select the **Vault Access Policy** radio button.
 1. Select **Review + create**.
 
 1. Select **Create**.
 
+#### Task 2 - Create a Windows Virtual Machine
+
+1. Select **+ Create a resource**.
+
+1. Type **Windows 11** in Search the Marketplace search bar.
+
+1. Select **Windows 11** and from the plan dropdown choose **Windows 11 Enterprise, version 22H2**. Then choose **Create**.
+
+  | Field | Values |
+  | :--   | :--    |
+  | VM Name | vmKeyVault |
+  | Availability options | No infrastructure redundancy required |
+  | Admin Username | adminKeyVault |
+  | Password | Set a secure password that you can remember |
+  | Licensing | Confirm you have an eligible license |
+
+1. Use the **Next** button to get to the **Management** tab.
+
+1. On the **Management** tab, check the box next to **Enable system assigned managed identity**.
+
+1. Go through the rest of the experience of creating a virtual machine. 
+
+1. Choose **Review + Create** then select **Create**.
 
 #### Task 3 - Create a secret
 
 1. Navigate to your newly created Key Vault.
 
-1. Select **Secrets**.
+1. Open **Objects** on the left menu then Select **Secrets**.
 
 1. Select **+ Generate/Import**.
 
@@ -82,15 +87,19 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **+ Create**.
 
-1. In the Add access policy section, under Configure from template (optional), choose Secret Management from the pull-down menu.
+1. In the Add access policy section, under Configure from template (optional), choose **Secret Management** from the pull-down menu.
 
-1. For **Select Principal**, choose **None selected** to open the list of principals to select. In the search field enter the name of the VM you created in task 2.  Select the VM in the result list and choose Select.
+1. Use the Next button to move to the **Principal** tab.
 
-1. Select **Add**.
+1. In the search field enter the name of the VM you created in task 2 - **vmKeyVault**.  Select the VM in the result list and choose Select.
 
-1. Select **Save**.
+1. Use the Next button to move to the **Review + Create** tab.
+
+1. Select **Create**.
 
 #### Task 5 - Access data with Key Vault secret with PowerShell
+
+1. Go to **vmKeyVault** and use RDP to connect to your virtual machine as **adminKeyVault**.
 
 1. In the lab virtual machine, open PowerShell.  
 
@@ -107,6 +116,9 @@ When you use managed identities for Azure resources, your code can get access to
     ```
 
 1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the Essentials section of the Overview page of the Key Vault.  Reminder - URI for Key Vault is on the Overview tab.
+
+  - Key Vault URI -- get from Key Vaults Overview page in Azure Portal
+  - Secrete Name -- get from Objects - Secrets page in the Key Vault
 
     ```
     Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}

@@ -7,6 +7,8 @@ lab:
 
 # Lab 15 - Configure an Multifactor authentication registration policy
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 Multifactor authentication provides a means to verify who you are using more than just a username and password. It provides a second layer of security to user sign-ins. For users to be able to respond to MFA prompts, they must first register for Microsoft Entra Multifactor Authentication. You must configure your Microsoft Entra organization's MFA registration policy to be assigned to all users.
@@ -44,13 +46,13 @@ Multifactor authentication provides a means to verify who you are using more tha
 
 **Note**: Microsoft Entra Identity Protection requires Microsoft Entra ID Premium P2 to be activated. 
 
-1. In the Microsoft Entra admin center, navigate to **Microsoft Entra Identity Protection** in the search bar.
+1. In the Microsoft Entra admin center, navigate to **Microsoft Entra ID Protection** in the search bar.
 
 1. Under **Protect** in the menu, select **Multifactor authentication registration policy**.
 
 1. Under **Assignments**, select **All users** under Users, and select a user to enforce MFA.
 
-1. Change **Policy enforcement** from **Disabled** to **Enabled**.
+1. Change **Policy enforcement** **Enabled**.
 
 1. Select **Save**.
 

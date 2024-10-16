@@ -7,6 +7,8 @@ lab:
 
 # Lab 17 - Defender for Cloud Apps application discovery and enforcing restrictions
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify the applications that users are accessing.  Traffic logs from on-premises firewalls will provide a snapshot report on the most common applications and the users that are accessing these apps.  Traffic from managed devices will be fed into the Microsoft Defender for Cloud Apps discovery overview dashboard
@@ -29,6 +31,11 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 1. You will be able to access this website.
 
+1. Close the tab for Dropbox.
+
+1. Return to the Defender for Cloud Apps screen, and select the three-dot to the right of Dropbox.
+
+1. Choose **Sanctioned** and then the **Next** button. 
 
 #### Task 2 - Restrict Apps in Defender for Cloud Apps
 
@@ -38,9 +45,6 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 1. This process allows you to block applications that are not sanctioned within your company policy, limiting Shadow IT within your organization.
 
-**Note**: There is a delay between unsanctioning an application and that application being blocked.
+**Note**: There is a delay when sactioning and unsanctioning an application and that application. You may have to wait up to 5 minutes.
 
 Once the application has been blocked as unsanctioned, the application will not be accessible through browser, in-private browser, or store download on a Client that is onboarded to MDE (Microsoft Defender for Endpoint) integrated with Microsoft Defender for Cloud Apps.
-
-
-

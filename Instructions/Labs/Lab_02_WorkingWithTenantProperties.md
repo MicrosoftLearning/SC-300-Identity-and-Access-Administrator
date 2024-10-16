@@ -7,6 +7,8 @@ lab:
 
 # Lab 02: Working with tenant properties
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 You need to identify and update the different properties associated with your tenant.
@@ -17,9 +19,11 @@ You need to identify and update the different properties associated with your te
 
 #### Task 1 - Create a custom subdomain name
 
+You would use Microsoft Entra ID to create a domain that you have purchased.  If you want to create a subdomain to divide your existing .onmicrosoft.com domain, you have to use the Microsoft 365 admin center.
+
 1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-1. In the **Identity** menu, use the **Show more* option at the bottom.
+1. In the **Identity** menu, use the **Show more** option at the bottom.
 
 1.  Open the **Settings** menu, select **Domain names**.
 
@@ -28,13 +32,18 @@ You need to identify and update the different properties associated with your te
 1. In the **Custom domain name** field, create a custom subdomain for the lab tenant by putting **sales** in front of the **onmicrosoft.com** domain name.  The format will look similar to this:
 
     ```
-    sales.labtenant.onmicrosoft.com
+    mydomain.com
     ```
 
 1. **Note** - You will be prompted to open the Microsoft 365 Admin center to complete this action.
 
 1. Select **Add domain** to add the subdomain.
 
+1. Enter the subdomain name `sales.tenantname.onmicrosoft.com` into the dialog.
+
+1. Select the **Use this domain** button at the bottom of the screen.
+
+1. Select the **Close** button when the next screen opens up.  For the purpose of this lab we will not set up the DNS.
 
 ### Exercise 2 - Changing the tenant display name
 
@@ -63,7 +72,7 @@ You need to identify and update the different properties associated with your te
 
     **IMPORTANT** - When the tenant is created, the Country or region are specified at that time. This setting cannot be changed later.
 
-3. In the **Properties** page, under **Tenant properties**, locate ** Data Location** and review the information.
+3. In the **Properties** page, under **Tenant properties**, locate **Location** and review the information.
 
     ![Screen image showing the Azure Active Directory Properties page with the Country or region and Location settings highlighted](./media/azure-active-directory-properties-country-location.png)
 
@@ -113,12 +122,12 @@ You add your organization's privacy information in the **Properties** area of 
 #### Task 2 - Check your Privacy Statement
 
 1. Return to the Azure Home screen - Dashboard.
-2. In the upper-righthand corner of the UI, Select on your username.
+2. In the upper-right corner of the UI, Select on your username.
 3. Choose **View account** from the dropdown menu.
 
      **A new browser tab will open automatically.**
 
-4. Select the **Settings & Privacy** on the left-hand menu.
+4. Select the **Settings & Privacy** on the left menu.
 5. Select **Privacy**.
 6. Under **Organization's notice** select the **View** item next to Contoso Marketing organizational privacy statement.
 

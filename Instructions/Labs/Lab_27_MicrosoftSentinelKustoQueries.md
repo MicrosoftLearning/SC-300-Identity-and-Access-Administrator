@@ -7,7 +7,7 @@ lab:
 
 # Lab 27 - Microsoft Sentinel Kusto Queries for Microsoft Entra data sources
 
-**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
+### This lab should use the login that looks lie --> User1-#####@LodsProdMCA.onmicrosoft.com.
 
 ## Lab scenario
 
@@ -40,7 +40,6 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 1. If prompted, select **OK** to activate the Microsoft Sentinel free trial.
 
 #### Task 2 - Add Microsoft Entra ID as a Data source
-    **Note** - As of 2/8/2024, the data source is now Microsoft Entra ID.
 
 1. In **Microsoft Sentinel**, navigate on the menu to **Content management** and select **Content hub**.
 

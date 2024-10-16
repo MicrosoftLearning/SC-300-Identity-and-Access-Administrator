@@ -5,7 +5,9 @@ lab:
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 25 - Creating Access Reviews for Internal and External Users  
+# Lab 25 - Creating Access Reviews for Internal and External Users
+
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
 
 ## Lab scenario
 
@@ -33,11 +35,11 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 8. The next step is to determine the reviewers.  These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
 
-9. Pick a reviewer and review recurrence option.  Then select **Settings**.
+9. Pick a reviewer **Alex Wilber** and review recurrence option **Annually**.  Then select **Next: Settings**.
 
 10. The advanced settings allow you to put a message as part of the review.
 
-11. Switch to the **Review + Create** tab to finalize the access review.
+11. Switch to the **Next: Review + Create** tab to finalize the access review.
 
 12. Name the access review **SC300 Access Review Test**.
 

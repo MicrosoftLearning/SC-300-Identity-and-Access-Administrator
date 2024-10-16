@@ -7,6 +7,8 @@ lab:
 
 # Lab 04: Configure external collaboration settings
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 You must enable external collaboration settings for your organization for approved guests access.
@@ -35,7 +37,7 @@ You must enable external collaboration settings for your organization for approv
     
 5. Ensure that **Yes** is selected.
 6. Select **Save** if needed.
-7. Otherwise, select `Home > Contoso Marketing >` **External Identities** to return to the previous screen.
+7. Return to the **External Identities** menu.
 8. Select **External Collaboration Settings** on the left
 
 9. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
@@ -67,4 +69,4 @@ You must enable external collaboration settings for your organization for approv
     - This list works independently from OneDrive for Business and SharePoint Online allow/block lists. If you want to restrict individual file sharing in SharePoint Online, you need to set up an allow or deny list for OneDrive for Business and SharePoint Online.
     - The list does not apply to external users who have already redeemed the invitation. The list will be enforced after the list is set up. If a user invitation is in a pending state, and you set a policy that blocks their domain, the user's attempt to redeem the invitation will fail.
 
-12. When finished, **save** your changes.
+12. When finished, **Save** your changes.

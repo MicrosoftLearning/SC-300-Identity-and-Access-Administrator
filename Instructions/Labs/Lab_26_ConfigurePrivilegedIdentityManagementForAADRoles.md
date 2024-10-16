@@ -7,6 +7,8 @@ lab:
 
 # Lab 26: Configure Privileged Identity Management for Microsoft Entra roles
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 A Privileged role administrator can customize Privileged Identity Management (PIM) in their Microsoft Entra organization, including changing the experience for a user who is activating an eligible role assignment. You must become familiar with configuring PIM.
@@ -55,7 +57,7 @@ If setting multiple approvers, approval completes as soon as one of them approve
 
 5. Once you have configured the role settings, select **Update** to save your changes.
 
-### Exercise 2 - PIM with Microsoft Entra roles
+### Exercise 2 - Use PIM to assign Microsoft Entra roles
 
 #### Task 1 - Assign a role
 

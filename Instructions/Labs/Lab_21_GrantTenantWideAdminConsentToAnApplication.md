@@ -7,6 +7,8 @@ lab:
 
 # Lab 21: Grant tenant-wide admin consent to an application
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 For applications your organization has developed or for those that are registered directly in your Microsoft Entra tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
@@ -43,16 +45,20 @@ The Global Administrator role is required in order to provide admin consent for 
 
 You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
 
-1. In Microsoft Entra admin center, browse to **Identity > Applications > Enterprise applications > Demo app.**
+1. In Microsoft Entra admin center, browse to **Identity** and  **Applications**.
 
-2. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.**
+2. From the menu open **Enterprise applications**.
 
-3. Under **Permissions,** select **Grant admin consent.**
+3. From the list of Enterprise applications pick the **Demo app** that we registered earlier.
+
+4. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.**
+
+5. Under **Permissions,** select **Grant admin consent.**
 
     ![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](./media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
 
    **Warning** - Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
 
-4. When prompted, sign in using your Global Administrator account.
+6. When prompted, sign in using your Global Administrator account.
 
-5. In the **Permissions requested** dialog box, review the information and then select **Accept**.
+7. In the **Permissions requested** dialog box, review the information and then select **Accept**.

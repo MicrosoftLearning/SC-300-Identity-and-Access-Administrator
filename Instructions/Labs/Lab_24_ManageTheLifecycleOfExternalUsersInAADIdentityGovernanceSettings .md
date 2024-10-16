@@ -5,7 +5,9 @@ lab:
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 24: Manage the lifecycle of external users in Microsoft Entra Identity Governance settings  
+# Lab 24: Manage the lifecycle of external users in Microsoft Entra Identity Governance settings
+
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
 
 ## Lab scenario
 

@@ -7,6 +7,8 @@ lab:
 
 # Lab 05: Add guest users to the directory
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 Your company works with many vendors and, on occasion, you need to add some vendor accounts to your directory as a guest.
@@ -90,7 +92,7 @@ A recent partnership has been established with another company. For now, employe
 
 1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
 
-**Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, follow the instructions on the screen to go to https://aka.ms/PowerShell-Release?tag=7.3.9. Scroll down to the assets section and select powershell-7.3.1-win-x64.msi. When the download has completed, select Open file. Install using all the defaults.
+**Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, please update or this portion of the lab will fail.
 
 2. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 
@@ -109,7 +111,7 @@ A recent partnership has been established with another company. For now, employe
     ```
     Connect-MgGraph -Scopes "User.ReadWrite.All"
     ``` 
-    The Edge browser will open and you will be prompted to sign-in.  Use the MOD Administrator account to connect.  Accpet the permissions request; then close the browser window.
+    The Edge browser will open and you will be prompted to sign-in.  Use the MOD Administrator account to connect.  Mark the consent box, then accpet the permissions request; then close the browser window.
 
 5. Set the values for the email and redirect for the External user:
 
@@ -122,7 +124,7 @@ A recent partnership has been established with another company. For now, employe
     }
     ```
 
-6. Send the MgInvitation command to invite the External user:
+6. Sent the MgInvitation command to invite the External user:
 
     ```
     New-MgInvitation -BodyParameter $params

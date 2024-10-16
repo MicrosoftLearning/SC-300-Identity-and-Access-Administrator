@@ -5,7 +5,9 @@ lab:
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 23: Add terms of use and acceptance reporting 
+# Lab 23: Add terms of use and acceptance reporting
+
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
 
 ## Lab scenario
 
@@ -82,26 +84,30 @@ Once you have finalized your terms of use document, use the following procedure 
 
 14. Under **Conditional Access**, select **Custom policy**.
 
-    | Template | Description |
-    |---|---|
-    | **Access to cloud apps for all guests** | A Conditional Access policy will be created for all guests and all cloud apps. This policy impacts the Azure portal. Once this is created, you might be required to sign-out and sign-in. | 
-    |**Access to cloud apps for all users** | A Conditional Access policy will be created for all users and all cloud apps. This policy impacts the Azure portal. Once this is created, you will be required to sign-out and sign-in. |
-    | **Custom policy** | Select the users, groups, and apps that this terms of use will be applied to. |
-    | **Create Conditional Access policy later** | This terms of use will appear in the grant control list when creating a Conditional Access policy. |
+ - Possible choices and when to use them:
 
-    **IMPORTANT** - Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
+  | Template | Description |
+  |---|---|
+  | **Access to cloud apps for all guests** | A Conditional Access policy will be created for all guests and all cloud apps. This policy impacts the Azure portal. Once this is created, you might be required to sign-out and sign-in. | 
+  |**Access to cloud apps for all users** | A Conditional Access policy will be created for all users and all cloud apps. This policy impacts the Azure portal. Once this is created, you will be required to sign-out and sign-in. |
+  | **Custom policy** | Select the users, groups, and apps that this terms of use will be applied to. |
+  | **Create Conditional Access policy later** | This terms of use will appear in the grant control list when creating a Conditional Access policy. |
 
-    Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
+  **IMPORTANT** - Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
+
+  Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
 
 15. When complete, select **Create**.
 
     ![Screen image displaying the New terms of use page with configured options highlighted](./media/lp4-mod1-new-terms-of-use-create.png)
 
+#### Continued Task 1 - Create the Conditional Access Policy
+
 16. When the terms of use is created, you will automatically be redirected to the Conditional access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
 
 17. Under **Assignments**, select **Users identities**.
 
-18. On the include tab, select **Users and groups** check box.
+18. On the Include tab choose **Select users and groups**, then select **Users and groups** check box.
 
 19. In the Select pane, select **Adele Vance** to use to test the terms of use policy.
 
@@ -113,7 +119,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 22. Under **Access controls**, select **Grant**.
 
-23. In the Grant pane, select **Testing terms of use** and then select **Select**.
+23. In the Grant pane, select **Contoso Terms of Use** and then select **Select**.
 
 24. Under **Enable policy**, select **On**.
 

@@ -7,6 +7,8 @@ lab:
 
 # Lab 12 - Manage Microsoft Entra smart lockout values
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 You must configure the additional password protection settings for your organization.

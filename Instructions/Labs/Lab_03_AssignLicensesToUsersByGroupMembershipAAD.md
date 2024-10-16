@@ -7,6 +7,8 @@ lab:
 
 # Lab 03: Assigning licenses using group membership
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 ## Lab scenario
 
 Your organization has decided to use security groups in Microsoft Entra ID to manage licenses. You need to configure a new security group and assign a license to that group and verify group member license's have been updated.
@@ -56,18 +58,41 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 8. Select the **Create** button.
 9. When complete, verify the group named **sg-SC300-O365** is shown in the **All groups** list.
 
-#### Task 3 - Assign a license to a group
+#### Task 3 - Add an Office license to sg-SC300-O365
 
-1. In the **All groups** list, select **sg-SC300-O365**.
-2. In the Marketing page, under **Manage**, select **Licenses**.
-3. On the menu, select **+ Assignments**.
-4. In the update license assignments page, under **Select licenses**, review the list of available licenses and then select the check box for **Office 365 E3**.
+You have to add and remove licenses via the Microsoft 365 admin center. This is a relatively new change.
 
-   **Tip** - When multiple licenses are selected, you can use the Review license options menu to select a specific license and view the license option for that license.
+1. Open a new tab in your browser.
 
-   ![Screen image displaying licenses selected and assigned to a group. The review license menu is also selected displaying multiple selection options.](./media/lp1-mod2-assign-license-group.png)
+2. Connect to the Microsoft 365 admin center at http://admin.microsoft.com.
 
-6. Select **Save**.
+3. Log in as your administrator account if prompted.
+
+4. From the menu on the left, select **Billing** and then select **Licenses**.
+
+5. Select **Office 365 E3** license from the list.
+
+6. Select the **Groups** tab on the licensing screen.
+
+7. Choose the **+ Add license** item.
+
+8. Search for **sg-SC300-O365** group the select it from the list.
+
+8. Once you have added Raul, select **Assign**.
+ 
+9. Close the confirmation message.
+
+10. Return to the browser tab with **Microsoft Entra admin center** open.
+
+11. Navigate back to the **All groups** in the left navigation, under **Identity**, select **Groups**
+
+12. In the Users page, select **sg-SC300-O365**.
+
+13. In the left navigation, select **Licenses**.
+
+14. Notice that the Office 365 E3 license has been assigned.
+
+15. You can exit out of the license screen.
 
 #### Taks 4 - Confirm the Office 365 license
 

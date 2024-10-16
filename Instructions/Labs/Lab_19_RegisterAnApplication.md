@@ -7,6 +7,8 @@ lab:
 
 # Lab 19 - Register an application
 
+### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+
 #### Estimated time: 30 minutes
 
 ### Exercise 1 - Register an application
@@ -27,8 +29,9 @@ Registering your application establishes a trust relationship between your app a
 
     ![Screen image displaying the Register an application page with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
 
-6. When complete, you will be directed to the **Demo app** page.
+6. Select the **Register** button.
 
+7. When complete, you will be directed to the **Demo app** page.
 
 #### Task 2 - Configure platform settings
 
@@ -56,7 +59,11 @@ Add and modify redirect URIs for your registered applications by configuring the
     | Android| Enter the app **Package name**, which you can find in the AndroidManifest.xml file, and generate and enter the **Signature hash**. A redirect URI is generated for you when you specify these settings.|
     | Mobile and desktop applications| Select one of the **Suggested redirect URIs** or specify a **Custom redirect URI**. For desktop applications, we recommend: [https://login.microsoftonline.com/common/oauth2/nativeclient](https://login.microsoftonline.com/common/oauth2/nativeclient). Select this platform for mobile applications that aren't using the latest Microsoft Authentication Library (MSAL) or are not using a broker. Also select this platform for desktop applications.|
 
-5. Select **Configure** to complete the platform configuration.
+5. Select **Web** as your platform.
+
+6. Enter `https://localhost` for the Redirect URI.
+
+7. Select **Configure** to complete the platform configuration.
 
 #### Task 3 - Add credentials, certificate and client secret
 
@@ -75,20 +82,16 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 2. Select **Certificates & secrets**, then **+ New client secret**.
 
-3. Add a description for your client secret.
+3. Add a description for your client secret and duration
 
-4. Select a duration.
+ - Description = SC300 lab secret
+ - Duration = 90 days (3 months)
 
-5. Select **Add**.
+4. Select **Add**.
 
-6. **Save the secret's value in notepad** for use in your client application code; The Certificate & Secrets page will display the new secret value. It's important you copy this value as it's only shown this one time; if you refresh your page and come back, it will only show as a masked value.
+5. **Save the secret's value in notepad** for use in your client application code; The Certificate & Secrets page will display the new secret value. It's important you copy this value as it's only shown this one time; if you refresh your page and come back, it will only show as a masked value.
 
-7. Skip the **Add a redirect URI** and **Configure platform settings** sections. You don't need to configure a redirect URI for a web API since no user is logged in interactively.
-
-8. Skip the **Add credentials** section for now. Only if your API accesses a downstream API would it need its own credentials—a scenario not covered in this article.
-
-With your web API registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
-
+With your web App registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
 
 #### Task 5 - Add a scope
 
@@ -96,23 +99,21 @@ The code in a client application requests permission to perform operations defin
 
 First, follow these steps to create an example scope named Employees.Read.All:
 
-1. Sign in to the Microsoft Entra admin center.
+1. Select **Identity**, then **Application** and finally select **App registrations**, and then select your API's app registration.
 
-2. If you have access to multiple tenants, use the **Directory + subscription** filter in the top menu to select the tenant containing your client app's registration.
-
-3. Select **Identity**, then **Application ** and finally select **App registrations**, and then select your API's app registration.
-
-4. Select **Expose an API**, then **+ Add a scope**.
+2. Select **Expose an API**, then **+ Add a scope**.
 
     ![An app registration's Expose an API pane in the Azure portal](./media/portal-02-expose-api.png)
 
-5. You're prompted to set an **Application ID URI** if you haven't yet configured one. The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://\<application-client-id\>, or specify a more readable URI like `https://contoso.com/api`.
+3. You're prompted to set an **Application ID URI**. Set the value to **api://DemoAppAPI**
 
-6. Select **Save and continue**.
+  - Note - The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id\>, or specify a more readable URI like `https://contoso.com/api`.
 
-6. Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, you can use the example values or specify your own.
+4. Select **Save and continue**.
 
-    | Field| Description| Example|
+5. Next, specify the scope's attributes in the **Add a scope pane**. For this walk-through, use the values in the 3rd column - **Value**.
+
+    | Field| Description| Value |
     | :--- | :--- | :--- |
     | Scope name| The name of your scope. A common scope naming convention is resource.operation.constraint.| Employees.Read.All|
     | Who can consent| Whether this scope can be consented to by users or if admin consent is required. Select Admins only for higher-privileged permissions.| Admins and users|
@@ -148,17 +149,18 @@ Next, add another example scope named Employees.Write.All that only admins can
     | User consent display name| None (leave empty)|
     | User consent description| None (leave empty)|
 
-    >**Note**: If you successfully added both example scopes described in the previous sections, they'll appear in the **Expose an API** pane of your web API's app registration, similar to this image:
+2. Make sure the State is set to **Enabled** then select **Add Scope**.
 
-    ![Screenshot of the Expose an API pane showing two exposed scopes.](./media/portal-03-scopes-list.png)
+  - **Note**: If you successfully added both example scopes described in the previous sections, they'll appear in the **Expose an API** pane of your web API's app registration, similar to this image:
 
-    As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
+  ![Screenshot of the Expose an API pane showing two exposed scopes.](./media/portal-03-scopes-list.png)
 
-        **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
+  As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
 
+  **Note**: For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
 
-        **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
-    Once a client app registration is granted permission to access your web API, the client can be issued an OAuth 2.0 access token by the Microsoft identity platform. When the client calls the web API, it presents an access token whose scope (scp) claim is set to the permissions you've specified in the client's app registration. You can expose additional scopes later as necessary. Consider that your web API can expose multiple scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
+  **Note**: Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
+  Once a client app registration is granted permission to access your web API, the client can be issued an OAuth 2.0 access token by the Microsoft identity platform. When the client calls the web API, it presents an access token whose scope (scp) claim is set to the permissions you've specified in the client's app registration. You can expose additional scopes later as necessary. Consider that your web API can expose multiple scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
 
 
 ### Exercise 2 - Manage app registration with a custom role
@@ -171,7 +173,7 @@ You need to create a new custom role for app management. This new role should be
 
 2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the lefthand menu, under **Identity**, select **Roles and administrators**.
+3. On the lefthand menu, under **Identity**, select **Roles and admins**.
 
 4. Then select **Roles & admins** item, then select **+ New custom role**.
 
@@ -196,5 +198,7 @@ You need to create a new custom role for app management. This new role should be
 
     **Why pick those two** - For application provisionsing these two items are the bare minimum permissions needed to enable and enforce single sign-on for the application or service principal being created; and be able to assign the enterise application to a set of users or groups.  Other permissions could also be granted.  You can get a full list of available permissions at `https://docs.microsoft.com/azure/active-directory/roles/custom-enterprise-app-permissions`.
 
-10. Review the changes and then select **Create**.
+10. Select **Next**.
+
+11. Review the changes and then select **Create**.
 
