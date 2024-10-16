@@ -1,6 +1,6 @@
 ---
 lab:
-    title: '00 - Lab Setup'
+    title: '00 - Lab Setup Testing'
     learning path: '01'
     module: 'Module 01 - Implement an identity management solution'
 ---
