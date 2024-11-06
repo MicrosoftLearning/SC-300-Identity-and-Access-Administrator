@@ -7,7 +7,7 @@ lab:
 
 # Lab 16 - Using Azure Key Vault for Managed Identities
 
-# This lab should use the login that looks lie --> User1-#####@LodsProdMCA.onmicrosoft.com.
+### Login type = Azure Resource login
 
 ## Lab scenario
 
