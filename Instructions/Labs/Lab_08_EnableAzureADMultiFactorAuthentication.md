@@ -7,7 +7,7 @@ lab:
 
 # Lab 08 - Enable multi-factor authentication
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
