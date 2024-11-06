@@ -7,7 +7,7 @@ lab:
 
 # Lab 22: Create and manage a catalog of resources in Microsoft Entra entitlement management
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
