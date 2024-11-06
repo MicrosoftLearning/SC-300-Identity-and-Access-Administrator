@@ -7,7 +7,7 @@ lab:
 
 # Lab 13 - Implement and test a conditional access policy
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
