@@ -7,7 +7,7 @@ lab:
 
 # Lab 10 - Microsoft Entra Authentication for Windows and Linux Virtual Machines
 
-# This lab should use the login that looks lie --> User1-#####@LodsProdMCA.onmicrosoft.com.
+### Login type = Azure Resource login
 
 ## Lab scenario
 
