@@ -7,7 +7,7 @@ lab:
 
 # Lab 25 - Creating Access Reviews for Internal and External Users
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
