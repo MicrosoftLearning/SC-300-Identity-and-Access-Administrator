@@ -21,7 +21,7 @@ You will be told which login to use in each of the labs.
 
 # Lab 01: Manage user roles
 
-### Login type = Microsoft 365
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
