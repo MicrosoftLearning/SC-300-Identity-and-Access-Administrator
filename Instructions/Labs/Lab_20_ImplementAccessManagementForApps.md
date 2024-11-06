@@ -7,7 +7,7 @@ lab:
 
 # Lab 20 - Implement access management for apps
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
