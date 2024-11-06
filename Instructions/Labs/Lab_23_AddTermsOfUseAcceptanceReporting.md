@@ -7,7 +7,7 @@ lab:
 
 # Lab 23: Add terms of use and acceptance reporting
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
