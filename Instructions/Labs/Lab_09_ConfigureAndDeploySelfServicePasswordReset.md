@@ -7,7 +7,7 @@ lab:
 
 # Lab 09 - Configure and deploy self-service password reset
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
