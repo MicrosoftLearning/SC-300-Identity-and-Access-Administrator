@@ -7,7 +7,7 @@ lab:
 
 # Lab 21: Grant tenant-wide admin consent to an application
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
