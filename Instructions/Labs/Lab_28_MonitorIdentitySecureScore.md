@@ -7,7 +7,7 @@ lab:
 
 # Lab 28 - Monitor and managed security posture with Identity Secure Score
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
