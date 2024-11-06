@@ -7,7 +7,7 @@ lab:
 
 # Lab 19 - Register an application
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 #### Estimated time: 30 minutes
 
