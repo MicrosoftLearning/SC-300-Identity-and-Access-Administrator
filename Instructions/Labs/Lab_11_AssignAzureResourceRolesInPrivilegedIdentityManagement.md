@@ -7,7 +7,7 @@ lab:
 
 # Lab 11 - Assign Azure resource roles in Privileged Identity Management
 
-### You will perform this lab with the tenant login - User1-#####@LodsProdMCA.onmicrosoft.com
+### Login type = Azure Resource login
 
 **Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
