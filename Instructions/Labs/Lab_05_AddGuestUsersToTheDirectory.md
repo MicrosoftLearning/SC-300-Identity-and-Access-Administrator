@@ -7,7 +7,7 @@ lab:
 
 # Lab 05: Add guest users to the directory
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
