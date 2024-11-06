@@ -11,10 +11,11 @@ If you are being provided with a tenant as a part of an instructor-led training 
 
 # Two different log in options
 
-This lab has two different log in options, used to different parts of the lab.  Some of the labs will use cloud user account and will use a log in that looks like:
-  - User1-#####@LodsProdMCA.onmicrosoft.com
-The second log in is for Microsoft 365 and it will look like this:
-  - admin@LODSm#####.onmicrosoft.com
+This lab has two different log in options, used to different parts of the lab. One log-in style is for labs that require Azure resources, the other is for labs that only need Microsoft Entra and Microsoft 365 resources. Log-in types:
+
+  - Azure Resource based log-in
+  - Microsoft 365 + E5 tenant log-in
+
 You will be told which login to use in each of the labs.
 
 
@@ -33,7 +34,7 @@ Your company recently hired a new employee who will perform duties as an applica
 #### Task 1 - Add a new user
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
- - Use the **admind@LODM####.onmicrosoft.com** account.
+ - Use the **Microsoft 365 admin** account.
 
 2. In the menu on the left select **Identity**.
 
