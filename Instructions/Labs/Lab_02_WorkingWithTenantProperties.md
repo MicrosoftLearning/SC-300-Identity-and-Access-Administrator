@@ -7,7 +7,7 @@ lab:
 
 # Lab 02: Working with tenant properties
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### You will perform this lab with the tenant login - Microsoft 365 admin login
 
 ## Lab scenario
 
