@@ -7,7 +7,7 @@ lab:
 
 # Lab 17 - Defender for Cloud Apps application discovery and enforcing restrictions
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
