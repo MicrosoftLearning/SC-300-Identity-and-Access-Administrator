@@ -7,7 +7,7 @@ lab:
 
 # Lab 27 - Microsoft Sentinel Kusto Queries for Microsoft Entra data sources
 
-### This lab should use the login that looks lie --> User1-#####@LodsProdMCA.onmicrosoft.com.
+### Login type = Azure Resource login
 
 ## Lab scenario
 
