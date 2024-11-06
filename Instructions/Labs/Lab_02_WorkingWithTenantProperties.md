@@ -7,7 +7,7 @@ lab:
 
 # Lab 02: Working with tenant properties
 
-### You will perform this lab with the tenant login - Microsoft 365 admin login
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
