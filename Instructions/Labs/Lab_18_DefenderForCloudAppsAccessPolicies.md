@@ -7,7 +7,7 @@ lab:
 
 # 18 - Defender for Cloud Apps Access and Session Policies
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
