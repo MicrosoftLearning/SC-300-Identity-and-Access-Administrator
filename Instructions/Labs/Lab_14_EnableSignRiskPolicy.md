@@ -7,7 +7,7 @@ lab:
 
 # Lab 14 - Enable sign in and user risk policies
 
-### You will perform this lab with the tenant login - admind@LODM#####.onmicrosoft.com
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
