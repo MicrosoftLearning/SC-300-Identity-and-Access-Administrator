@@ -7,6 +7,8 @@ lab:
 
 # Lab 12 - Manage Microsoft Entra smart lockout values
 
+### Login type = Microsoft 365 admin
+
 ## Lab scenario
 
 You must configure the additional password protection settings for your organization.

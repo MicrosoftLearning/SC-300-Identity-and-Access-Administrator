@@ -7,6 +7,8 @@ lab:
 
 # Lab 20 - Implement access management for apps
 
+### Login type = Microsoft 365 admin
+
 ## Lab scenario
 
 Your organization requires that only specific users or groups have access to enterprise applications. You must assign a user to a specific application.
@@ -47,9 +49,11 @@ Your organization requires that only specific users or groups have access to ent
 
 4. On the Add Assignment page, select **None selected** in the **Users and groups** section.
 
-5. In the Users and groups pane, select your administrator account and then select **Select**.
+5. In the Users and groups pane, select Adele Vance and your MOD administrator account.
+
+6. Select **Select**.
 
     ![Screen image displaying adding a user account assignment to an app with the Select button highlighted ](./media/lp3-mod1-add-app-assignment.png)
 
-6. Select **Assign**.
+7. Select **Assign**.
 

@@ -6,11 +6,22 @@ lab:
 ---
 
 # WWL Tenants - Terms of Use
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training. Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time. 
 
+If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the interactive labs in the instructor-led training. Tenants should not be shared or used for purposes outside of interactive labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension. Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
+
+# Two different log in options
+
+This lab has two different log in options, used to different parts of the lab. One log-in style is for labs that require Azure resources, the other is for labs that only need Microsoft Entra and Microsoft 365 resources. Log-in types:
+
+  - Azure Resource based log-in
+  - Microsoft 365 + E5 tenant log-in
+
+You will be told which login to use in each of the labs.
 
 
 # Lab 01: Manage user roles
+
+### Login type = Microsoft 365 admin
 
 ## Lab scenario
 
@@ -22,9 +33,10 @@ Your company recently hired a new employee who will perform duties as an applica
 
 #### Task 1 - Add a new user
 
-1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
+ - Use the **Microsoft 365 admin** account.
 
-2. In the left-hand menu select **Identity**.
+2. In the menu on the left select **Identity**.
 
 3. In the left navigation menu, under **Users**, select **All Users**, then select **+ New User** and **Create new user**.
 
@@ -61,13 +73,13 @@ Your company recently hired a new employee who will perform duties as an applica
     | New Password| Enter a unique and secure password |
     | Confirm Password| Reenter a unique and secure password |
 
-4. If you see a **tour dialog**, select the **Maybe Later** button.
+4. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
 
-5. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
-7. Select on **+ New application**. Notice that **+ Create your own application** is unavailable.
+5. Select on **+ New application**. Notice that **+ Create your own application** is unavailable.
 
-9. Try Selecting on some of the other settings like **Application Proxy**, **User settings**, and others to see the **Chris Green** does not have rights.
-10. Select on **ChrisG** name in the upper-right corner and sign out.
+6. Try Selecting on some of the other settings like **Application Proxy**, **User settings**, and others to see that **Chris Green** does not have rights.
+
+7. Select on **ChrisG** name in the upper-right corner and sign out.
 
 
 ### Exercise 2 - Assign the application admin role and create an app
@@ -276,24 +288,38 @@ Some user accounts in your organization will not be provided all available produ
 
     **Warning** - To assign a license to a user, the user must assigned a usage location.
 
-6. Select the **Licenses** menu item in the left-hand menu.
+6. Select the **Licenses** menu item in the menu on the left.
 
 7. Ensure that Raul has "No license assignments found."
 
-8. Navigate back to the **All Users** in the left navigation, under **Identity**, select **Users**
+#### Task 2 - Add a Windows license to Raul
 
-9. In the Users page, select **Raul Razo**.
+You have to add and remove licenses via the Microsoft 365 admin center. This is a relatively new change.
 
-10. In the left navigation, select **Licenses**.
+1. Open a new tab in your browser.
 
-11. Select the **+ Assignments** button. 
+2. Connect to the Microsoft 365 admin center at http://admin.microsoft.com.
 
-12. On the Update license assignments page, select the check box for a **Windows 10/11 Enterprise E3** license.
+3. Log in as your administrator account if prompted.
 
-    ![Screen image displaying the Update license assignments page and license options highlighted](./media/lp1-mod2-assign-user-license-options.png)
+4. From the menu on the left, select **Billing** and then select **Licenses**.
 
-13. When complete, select **Save**.
+5. Select **Windows 10/11 Enterprise E3** license from the list.
 
-14. At the top of the screen Select **Home**, then select **Contoso**, then select **User**, and select **Raul Razo**.
+6. Choose the **+ Add license** item.
 
-15. Notice that the license has been assigned.
+7. Search for **Raul Razo** in the list.
+
+8. Once you have added Raul, select **Assign**.
+
+9. Return to the browser tab with **Microsoft Entra admin center** open.
+
+10. Navigate back to the **All Users** in the left navigation, under **Identity**, select **Users**
+
+11. In the Users page, select **Raul Razo**.
+
+12. In the left navigation, select **Licenses**.
+
+13. Notice that the license has been assigned.
+
+14. You can exit out of the license screen.

@@ -7,7 +7,7 @@ lab:
 
 # Lab 10 - Microsoft Entra Authentication for Windows and Linux Virtual Machines
 
-**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
+### Login type = Azure Resource login
 
 ## Lab scenario
 
@@ -28,9 +28,10 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 1. From the **Windows 11** box, select the **Create v** and choose **Windows 11 Enterprise, version 22H2** from the menu that opens.
 
 1. Create the VM using the following values on the **Basics** tab:
+
   | Field | Value to use |
   | :-- | :-- |
-  | Subscription | Azure Pass - Sponsorship |
+  | Subscription | Accept the defualt |
   | Resource Group | Create New - rgEntraLogin |
   | Virtual machine name | vmEntraLogin |
   | Region | *default* |
@@ -43,13 +44,13 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. You will not need to change anything on the **Disks** or **Networking** tabs, but you can review the values.
 
-1. Move to the **Management** tab, check the box to **Login with Microsoft Entra ID** under the Microsoft Entra ID section.
+1. On the **Management** tab, check the box to **Login with Microsoft Entra ID** under the Microsoft Entra ID section.
 
         NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
-1. Select **Review + Create**
+1. Go through the rest of the experience of creating a virtual machine. 
 
-1. Once your Select **Create**.
+1. Select **Review + create** then choose **Create**.
 
 #### Task 2 - Microsoft Entra ID login for existing Azure Virtual Machines
 
@@ -62,15 +63,15 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 1. Select **+ Add**, then **Add role assignment** to open the Add role assignment page.
 
 1. Assign the following settings:
-    - **Assignment type**: Job function roles
-    - **Role**: Virtual Machine Administrator Login
-    - **Members**: Choose User, group, or service principal.  Then use **+ Select members** to add **Joni Sherman** as a specific user for the VM.
+  - **Job function roles**
+  - **Role**: Virtual Machine Administrator Login
+  - **Members**: Choose User, group, or service principal.  Then use **+ Select members** to add **Joni Sherman** as a specific user for the VM.
 
-1. Select **Review + assign** to complete the process
+1. Select **Review + assign** to complete the process.
 
-#### Task 3 - Update the Server VM to support the Microsoft Entra ID login
+#### Task 3 - Update the Virtual Machine to allow the Microsoft Entra ID login
 
-1. On the **Connect** menu, select the **Connect** item.
+1. Select the **Connect** menu item.
 
 1. On the **RDP** tab select the **Download RDP File**.  If prompted choose the **Keep** option for the file.  It will be saved into your Downloads folder.
 
@@ -80,10 +81,10 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Choose to log in as Alternate User.
 
-1. Use the Admin username and Password you create when setting up the virtual machine.
+1. Use the Admin (vmEntraAdmin) username and Password you create when setting up the virtual machine.
    - If prompted, say yes to allow access to the virtual machine or RDP session.
 
-1. Wait for the VM to open and all the software to load.
+1. Wait for the virtual machine to open and all the software to load.
 
 1. Select the **Start button** in the virtual machine.
 
@@ -92,8 +93,6 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 1. Select **System and Security** from the list of settings.
 
 1. From the **System** setting, select the **Allow remote access** option.
-
-  NOTE - you do not have to open the System submenu. The option is available under the System header.
 
 1. At the bottom of the dialog box that opens you will see a **Remote Desktop** section.
 
@@ -109,7 +108,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. **Make a copy** of the RDP file and add **-EntraID** to the end of the filename.
 
-1. Edit the new version of the RDP file you just copied using Notepad. Add the these two lines of text to the bottom of the of the file:
+1. Edit the new version of the RDP file you just copied using **Notepad**. Add the these two lines of text to the bottom of the of the file:
      ```
         enablecredsspsupport:i:0
         authentication level:i:2
@@ -139,7 +138,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
    NOTE: JoniS is the user we granted access to log in as administrator during Task 1.
 
-1. Windows should confirm the login and open to the normal screen.
+1. Windows Server should confirm the login and open to the normal Server Manager Dashboard.
 
 #### Task 6 -- Optional testing to explore the Microsoft Entra ID login
 
@@ -155,9 +154,9 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Exit out of the remote desktop session.
 
-1. Launch the **<<server name>>-EntraID.RDP** file again.
+1. Launch the **<<server name>>-AzureAD.RDP** file again.
 
-1. Try to log in as other Microsoft Entra users like AdeleV or AlexW or DiegoS.
+1. Try to log in as other Azure AD members like AdeleV or AlexW or DiegoS.
 
 1. You should notice that each of these users are denied access.
 

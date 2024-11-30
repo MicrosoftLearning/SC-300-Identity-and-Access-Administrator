@@ -7,6 +7,8 @@ lab:
 
 # Lab 06: Add a federated identity provider
 
+### Login type = Microsoft 365 admin
+
 ## Lab scenario
 
 Your company works with many vendors and, on occasion, you need to add some vendor accounts to your directory as a guest and allow them to use their Google account to sign-in.

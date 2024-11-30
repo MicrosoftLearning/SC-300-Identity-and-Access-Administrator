@@ -7,9 +7,11 @@ lab:
 
 # Lab 08 - Enable multi-factor authentication
 
+### Login type = Microsoft 365 admin
+
 ## Lab scenario
 
-To improve security in your organization, you've been directed to enable multi-factor authentication for Microsoft Entra ID.
+To improve security in your organization, you've been directed to enable multifactor authentication for Microsoft Entra ID.
 
 #### Estimated time: 15 minutes
 
@@ -62,14 +64,15 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
    - In the dropdown, make sure **Cloud apps** is selected.
    - Under Include, mark **All cloud apps** and note the warning the pops up about possibly locking yourself out. 
-   - Now under Include, change your choice to **Select apps** item.
+   - Now under Select section, choose the **None** item.
    - In the newly opened dialog, choose **Office 365**.
       - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
    - Choose **Select**.
 
 6. Review the Conditions section.
 
-   - Select **Locations** and then configure it for **Any location**.
+   - Choose **Yes** for the configure slider.
+   - Select **Any network or location**.
 
 7. Under **Access Controls**, find the **Grant** section and select **0 controls selected** is selected.
 
@@ -110,6 +113,7 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 2. Select **Users**, then select **All users**.
 
 3. At the top of the Users pane, select **Per-user MFA**.
+  - NOTE: you may have to use the elipsis (...) to get to the Per-user MFA menu item.
 
    ![Screenshot showing the MFA option](./media/lp2-mod1-users-mfa.png)
 
@@ -120,7 +124,7 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
    ![Screenshot showing the MFA options](./media/lp2-mod1-mfa-service-settings-and-users.png)
 
 5. Select **Adele Vance** with a check-mark.
-6. Select the **Enable** option under quick steps.
+6. Select the **Enable MFA** option under quick steps.
 7. Read the notification popup if you get it, then select **enable multi-factor auth** button.
 8. Select **Close**.
 9. Notice that Adele now has **Enabled** as her MFA status.

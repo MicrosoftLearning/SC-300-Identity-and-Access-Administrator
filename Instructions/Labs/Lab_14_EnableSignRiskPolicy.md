@@ -7,6 +7,8 @@ lab:
 
 # Lab 14 - Enable sign in and user risk policies
 
+### Login type = Microsoft 365 admin
+
 ## Lab scenario
 
 As an additional layer of security, you need to enable and configure your Microsoft Entra organization's sign in and user risk policies.
@@ -48,7 +50,7 @@ As an additional layer of security, you need to enable and configure your Micros
 
 13. Select the **Require password change** check box and then select **Done**.
 
-14. Under **Policy enforcement**, select **Enable** and then select **Save**.
+14. Under **Policy enforcement**, select **Enabled** and then select **Save**.
 
 #### Task 2 - Enable Sign-in risk policy
 
@@ -64,4 +66,4 @@ As an additional layer of security, you need to enable and configure your Micros
 
 6. Select the **Require multi-factor authentication** check box and then select **Done**.
 
-7. Under **Policy enforcement**, select **Enable** and then select **Save**.
+7. Under **Policy enforcement**, select **Enabled** and then select **Save**.

@@ -7,6 +7,8 @@ lab:
 
 # 18 - Defender for Cloud Apps Access and Session Policies
 
+### Login type = Microsoft 365 admin
+
 ## Lab scenario
 
 Microsoft Defender for Cloud Apps  allows us to create additional Conditional Access policies specific to the cloud apps that we are monitoring.  Creating these policies can be done from within the Control menu within the Microsoft Defender for Cloud Apps  portal.
@@ -61,7 +63,7 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
    - Username = PradeepG@<<<your lab hoster provided domain>>>
    - Password = the password from your resources tab
 5. Confirm that Pradeep has access and that you get a new message:
-   - Access to Microsoft Forms is monitored.
+   - Your company is monitoring the usage of this application.
 6. Close the InPrivate browsing window.
 
 ### Exercise 2 - Setup alerts in Microsoft Defender for Cloud Apps
@@ -103,7 +105,7 @@ Registering your application establishes a trust relationship between your app a
    - Username = PradeepG@<<<your lab hoster provided domain>>>
    - Password = the password from your resources tab
 5. Confirm that Pradeep has access and that you get a new message:
-   - Access to Microsoft Forms is monitored.
+   - Your company is monitoring the usage of this application.
 6. Close the InPrivate browsing window.
 
 #### Task 3 - Review the Activity in Defender for Cloud Apps

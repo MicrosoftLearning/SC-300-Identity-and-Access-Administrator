@@ -7,13 +7,15 @@ lab:
 
 # Lab 13 - Implement and test a conditional access policy
 
+### Login type = Microsoft 365 admin
+
 ## Lab scenario
 
 Your organization needs to be able to limit user access to its internal applications. You must deploy an Microsoft Entra conditional access policy.
 
 **Note** - For Conditional Access Policies, you can turn off Security Defaults, the key points to remember are from the training.  Additional information on Security defaults can be found at this link: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
-#### Estimated time: 30 minutes
+#### Estimated time: 20 minutes
 
 ### Exercise 1 - Set a conditional access policy to block DebraB from accessing Sway
 
@@ -24,12 +26,16 @@ Your organization needs to be able to limit user access to its internal applicat
 2. Connect to [https://www.office.com](https://www.office.com) 
 3. When prompted, log in as DebraB:
 
-   | Setting | Value |
-   | :--- | :--- |
-   | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-   | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
+  | Setting | Value |
+  | :--- | :--- |
+  | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
+  | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
     
-4. Select on the **Sway** icon to see that it loads correctly.
+4. Bypass the welcome and introduction screens.
+
+5. Open the **Apps** page, then then select on the **Sway** icon to see that it loads correctly.
+
+6. Log out of Office and close your browser session.
 
 #### Task 2 -  Create a conditional access policy
 
@@ -122,6 +128,7 @@ You should test your conditional access policies to ensure they working as expec
 1. Select **What if**. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
 
 This allows you to test the policies and their affectiveness before enabling the policies.
+
 
 ### Exercise 3 - Configure sign in frequency controls using a conditional access policy
 

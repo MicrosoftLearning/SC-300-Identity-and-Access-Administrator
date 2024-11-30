@@ -7,6 +7,8 @@ lab:
 
 # Lab 22: Create and manage a catalog of resources in Microsoft Entra entitlement management
 
+### Login type = Microsoft 365 admin
+
 ## Lab scenario
 
 A catalog is a container of resources and access packages. You create a catalog when you want to group related resources and access packages. Whoever creates the catalog becomes the first catalog owner. A catalog owner can add additional catalog owners. You must create and configure a catalog in your organization.
@@ -39,15 +41,15 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 6. In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
 
-7. Under **Enabled, select No**.
+7. Under **Enabled**, select **Yes**.
 
-- - **Enabled for external users** allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
+  - **Enabled for external users** select **No**.  This setting allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
 
 9. You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
 
-    ![Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted](./media/lp4-mod1-new-catalog-marketing.png)
+  ![Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted](./media/lp4-mod1-new-catalog-marketing.png)
 
-10. Select Create.
+10. Select **Create**.
 
 #### Task 2 - Add resources to a catalog
 
@@ -68,7 +70,7 @@ To include resources in an access package, the resources must exist in a catalog
    |  **Groups and Teams** | Retail |
    |  **Applications** | Box |
    |  **Applications** | Salesforce |
-   |  **SharePoint sites** | Brand SharePoint <<<pick from your list of available SharePoint sites |
+   |  **SharePoint sites** | Brand - pick this SharePoint from your list of available sites |
 
 6. You may not have any resources in Groups and Teams, Applications, or SharePoint sites. Select any resource category and then select a resource from that category.
 
@@ -124,13 +126,15 @@ You can edit the name and description for a catalog. Users see this information 
 
 1. The next tile is where you configure who reviews and approves access, how often access will be reviewed, and when access will expire.
 
-1. Under **Select reviewers**, select **Group owners** as these reviewers. **Note**: Guest users should not be allowed to review their own access as a good identity governance practice.
+1. Under **Select reviewers**, select **Group owners** as these reviewers.
+
+  - **Note**: Guest users should not be allowed to review their own access as a good identity governance practice.
 
 1. Enter a **Duration (in days)**, default is 3, choose a **Review recurrence** and **Start date** for the review.
 
 1. Select **Next: Settings** and configure the settings for how the review will take place and what happens when the guest user responds or does not respond.  A good practice is to select **Auto apply results to resource** and select **Remove access** for **If reviewers don't respond**. 
 
-1. Select **Next: Review + create**, and select **Create** to create the new **Access review**.
+1. Select **Next: Review + create**, and select **Create** to create the new Access review.
 
 
 #### Task 6 - Delete a catalog
