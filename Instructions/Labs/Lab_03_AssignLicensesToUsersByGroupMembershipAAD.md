@@ -109,7 +109,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
    ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a license is assigned.](./media/delia-office-license.png)
     
-5. Close the browser window. 
+5. Close the browser window.
 
 ### Exercise 2 - Create a Microsoft 365 group in Microsoft Entra ID
 

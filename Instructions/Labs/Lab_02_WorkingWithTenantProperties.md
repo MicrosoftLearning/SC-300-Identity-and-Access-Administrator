@@ -32,10 +32,10 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
 1. In the **Custom domain name** field, create a custom subdomain for the lab tenant by putting **sales** in front of the **onmicrosoft.com** domain name.  The format will look similar to this:
 
     ```
-    mydomain.com
+    Sales.###onmicrosoft.com
     ```
 
-1. **Note** - You will be prompted to open the Microsoft 365 Admin center to complete this action.
+**Note** - You will be prompted to open the Microsoft 365 Admin center to complete this action.
 
 1. Select **Add domain** to add the subdomain.
 

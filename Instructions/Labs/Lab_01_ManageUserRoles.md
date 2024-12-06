@@ -131,11 +131,11 @@ Using Microsoft Entra ID, you can designate limited administrators to manage ide
 This task will use an alternative method to remove the assigned role; it will use the **Roles and administrators** option in Micrisoft Entra ID.
 
 1. If you are not already logged in as your Global Admin, launch the Microsoft Entra admin center and log in now.
-2. In the search box type **Roles and** then launch Microsoft Entra ID roles and administration.
+2. In the search box type **Roles** and then launch Microsoft Entra ID roles and administration.
 3. In **All roles** of **Roles and administrators**, select the **Application administrator** role from the list.
 4. On the **Application administrator | Assignments** page you should see Chris Green's name listed.
-5. Put a check in the box next to Chris Green.
-6. Select **X Remove assignments** from the options at the top of the dialog.
+5. Scroll all the way to the right on Chris Green.
+6. Select **Remove** from the options at the top of the dialog.
 7. Answer **Yes** when the confirmation box opens.
 8. Close the screen.
 
