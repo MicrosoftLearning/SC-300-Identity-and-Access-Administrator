@@ -156,9 +156,9 @@ As part of your company's larger security configuration, you must test a conditi
 
 9. In the Select pane, select your **Grady Archie** account and then select **Select**.
 
-10. Select **Cloud apps or actions**.
+10. Select **Target Resources - No target resources selected**.
 
-11. Verify **Cloud apps** is selected and then select **Select apps**.
+11. Within the **Include** make sure **Select resources** is selected, then choose **None** in the Select section.
 
 12. In the Select pane, select **Office 365** and then select **Select**.
 
