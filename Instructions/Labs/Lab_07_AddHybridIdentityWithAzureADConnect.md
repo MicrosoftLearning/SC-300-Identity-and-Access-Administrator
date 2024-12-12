@@ -7,16 +7,13 @@ lab:
 
 # Lab 07: OPTIONAL --- Add Hybrid Identity with Microsoft Entra Connect
 
-
-
 # This lab will only function in a non-lab-hoster environment. If you want to try it using a personal account, it should work. You will not be able to perform within the class.
 
 
 
 
-**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
 
-**Note 2** - This lab is titled Optional.  It takes at least 1 hour to complete and does require that you are detailed in your lab steps.  Please feel free to computer it as time permits.  If your company has already set up its Hybrid configuration, or you don't plan to use Microsoft Entra Connect, please jump over this lab.
+**Note** - This lab is titled Optional.  It takes at least 1 hour to complete and does require that you are detailed in your lab steps.  Please feel free to computer it as time permits.  If your company has already set up its Hybrid configuration, or you don't plan to use Microsoft Entra Connect, please jump over this lab.
 
 ## Lab scenario
 
@@ -38,7 +35,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
    **Note** - The 3 VM Base Configuration provisions a Windows Server 2016 Active Directory domain controller named DC1 using the domain name you specify, and a domain member server named APP1 running Windows Server 2016. It also offers an option to provision a client VM running Windows 10, however we will not be using it in our lab (primarily due to licensing requirements applicable when running Windows 10 VMs in Azure). The domain member server (APP1) has automatically installed .NET 4.5 and IIS.  
    
-   **Note** - The VM that is required for this lab is **DC1**.  If you are using an Azure Pass, there is a limitation of 2 VMs, so the Client VM may fail.  This is not needed for this lab.
+   **Note** - The VM that is required for this lab is **DC1**.
 
 3. On the **Custom deployment** page, specify the following settings, then select **Review + Create** then **Create**.
 
