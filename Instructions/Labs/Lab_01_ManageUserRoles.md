@@ -157,7 +157,7 @@ This task will use an alternative method to remove the assigned role; it will us
 
     You can modify this file to add users in bulk.  Note that you do not need to fill out all the field.  As per the sample data provide, you mainly need to add the name and username information.
 
-6. A sample CSV has been provided in the Allfiles/Lab1 folder -- **SC300BulkUser.csv**.
+6. A sample CSV has been provided in the Allfiles/Labs/Lab1 folder -- **SC300BulkUser.csv**.
    1. Open Notepad.
      - Inside the lab environment, select the START button and type Notepad.  
    1. Open the SC300BulkUser.csv file
