@@ -19,19 +19,17 @@ Registering your application establishes a trust relationship between your app a
 
 1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using a Global Administrator account.
 
-2. Open the portal menu and then select **Microsoft Entra ID**.
+1. On the **Identity** menu, under **Applications**, select **App registrations.**
 
-3. On the **Identity** menu, under **Applications**, select **App registrations.**
+1. On the **App registrations** page, on the menu, select **+ New registration**.
 
-4. On the **App registrations** page, on the menu, select **+ New registration**.
-
-5. On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
+1. On the **register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
 
     ![Screen image displaying the Register an application page with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
 
-6. Select the **Register** button.
+1. Select the **Register** button.
 
-7. When complete, you will be directed to the **Demo app** page.
+1. When complete, you will be directed to the **Demo app** page.
 
 #### Task 2 - Configure platform settings
 
@@ -80,16 +78,18 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 1. Select your application in **App registrations** in the Azure portal.
 
-2. Select **Certificates & secrets**, then **+ New client secret**.
+1. Select **Certificates & secrets**, then **+ New client secret**.
 
-3. Add a description for your client secret and duration
+1. Add a description for your client secret and duration
+    
+    | Field | Value |
+    | :--- | :--- |
+    | Description | SC300 lab secret |
+    | Duration | 90 days (3 months) |
 
- - Description = SC300 lab secret
- - Duration = 90 days (3 months)
+1. Select **Add**.
 
-4. Select **Add**.
-
-5. **Save the secret's value in notepad** for use in your client application code; The Certificate & Secrets page will display the new secret value. It's important you copy this value as it's only shown this one time; if you refresh your page and come back, it will only show as a masked value.
+1. **Save the secret's value in notepad** for use in your client application code; The Certificate & Secrets page will display the new secret value. It's important you copy this value as it's only shown this one time; if you refresh your page and come back, it will only show as a masked value.
 
 With your web App registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
 
