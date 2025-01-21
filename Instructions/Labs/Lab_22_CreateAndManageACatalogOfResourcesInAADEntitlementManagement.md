@@ -41,11 +41,9 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 6. In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
 
-7. Under **Enabled**, select **Yes**.
+7. Under **Enabled**, select **No**, and under **Enabled for external users** select **No**.  This setting allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
 
-  - **Enabled for external users** select **No**.  This setting allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
-
-9. You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
+- You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
 
   ![Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted](./media/lp4-mod1-new-catalog-marketing.png)
 
