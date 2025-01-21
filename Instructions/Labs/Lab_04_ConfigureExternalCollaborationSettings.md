@@ -31,7 +31,7 @@ You must enable external collaboration settings for your organization for approv
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a tenant administrator.
 2. Select **Identity**.
 3. Select **External Identities**, and then select **All identity providers**.
-4. Select the **Email one-time passcode** notification link you see near the top of the screen.
+4. Locate the **Email one-time passcode** entry in the list of providers, then select **Configured**.
 
     **Note** - A one-time passcode is a very secure way to invite a user to join your organization.
     
