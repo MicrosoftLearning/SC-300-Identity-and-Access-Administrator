@@ -112,7 +112,7 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
    | Field | Value |
    | :--- | :--- |
    | Username | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
-   | Password |  Enter the tenant's admin password(Refer the Lab Resources tab to retrieve the tenant admin password) |
+   | Password |  Enter the tenant's user password(Refer the Lab Resources tab to retrieve the tenant admin password) |
 
 4. From the **Identity** menu, open **Users** and then select **All users**.
 5. Find **Miriam** in the list of users
