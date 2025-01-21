@@ -69,7 +69,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
       - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
    - Choose **Select**.
 
-6. Review the Conditions section.
+6. Review the Conditions section, then select **Not configured** in the Locations condition.
 
    - Choose **Yes** for the configure slider.
    - Select **Any network or location**.
