@@ -21,8 +21,6 @@ Your organization requires that only specific users or groups have access to ent
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Microsoft Entra ID**.
-
 3. On the Identity menu, under **Applications**, select **Enterprise applications**.
 
 4. In the Enterprise applications pane, select **+ New application**.
