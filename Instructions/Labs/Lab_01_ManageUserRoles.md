@@ -166,7 +166,7 @@ This task will use an alternative method to remove the assigned role; it will us
 
 7. On the **Bulk create users** dialog, select the file folder icon on step 3.
 
-8. Path to the Allfiles/Lab1 folder and select **SC300BulkUser.csv** file.
+8. Path to the Allfiles/Labs/Lab1 folder and select **SC300BulkUser.csv** file.
 
 9. Select **Open**.
 
@@ -192,7 +192,7 @@ After the users have been created, you will be prompted that the creation has su
     ```
     
 
-4. Next, you will need to login to Azure by running:  
+4. Next, you will need to login to the Graph API by running:  
 
     ```
     Connect-MgGraph -Scopes "User.ReadWrite.All"
@@ -298,7 +298,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
 1. Open a new tab in your browser.
 
-2. Connect to the Microsoft 365 admin center at http://admin.microsoft.com.
+2. Connect to the Microsoft 365 admin center at  [https://admin.microsoft.com]( https://admin.microsoft.com).
 
 3. Log in as your administrator account if prompted.
 
@@ -306,7 +306,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
 5. Select **Windows 10/11 Enterprise E3** license from the list.
 
-6. Choose the **+ Add license** item.
+6. Choose the **+ Assign licenses** item.
 
 7. Search for **Raul Razo** in the list.
 
