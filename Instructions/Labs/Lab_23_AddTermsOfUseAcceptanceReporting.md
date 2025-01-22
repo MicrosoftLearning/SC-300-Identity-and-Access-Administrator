@@ -39,15 +39,17 @@ Once you have finalized your terms of use document, use the following procedure 
 
 6. Select the **Terms of use document box**, browse to your finalized terms of use PDF and select it.
 
-   **ToU File Provided** - browse to the github repo AllFiles/Labs/Lab26 to get a sample Terms-of-User PDF document for use in this lab.
+   **ToU File Provided** - browse to the github repo AllFiles/Labs/Lab23 to get a sample Terms-of-User PDF document for use in this lab.
 
-7. In the **Display name** box, enter **Contoso Terms of Use**.
-
-    **Note** - This is the title that users see when they sign in.
-
-8. Select **English** for the language for your terms of use document.
+7. Select **English** for the language for your terms of use document.
 
    **Note** - The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
+
+
+
+8. In the **Display name** box, enter **Contoso Terms of Use**.
+
+    **Note** - This is the title that users see when they sign in.
 
 9. To require end users to view the terms of use prior to accepting them, set **Require users to expand the terms of use** to **On**.
 
@@ -115,11 +117,11 @@ Once you have finalized your terms of use document, use the following procedure 
 
 20. Select **Target resources.**
 
-21. Select **All cloud apps**.
+21. Select **All resources**.
 
 22. Under **Access controls**, select **Grant**.
 
-23. In the Grant pane, select **Contoso Terms of Use** and then select **Select**.
+23. In the Grant pane, select **Testing Terms of Use** and then select **Select**.
 
 24. Under **Enable policy**, select **On**.
 
@@ -139,7 +141,7 @@ Once you have finalized your terms of use document, use the following procedure 
     | Setting | Value to enter |
     | :--- | :--- |
     | User Name | **AdeleV@** `<<your domain name>>.onmicrosoft.com` |
-    | Password | Enter the tenant's admin password(Refer the Lab Resources tab to retrieve the tenant admin password) |
+    | Password | Enter the user password(Refer the Lab Resources tab to retrieve the tenant admin password) |
 
 5. Validate Adele's login with the MFA request.
 6. View the Terms of Use.
