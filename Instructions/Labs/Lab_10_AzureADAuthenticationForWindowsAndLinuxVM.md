@@ -138,23 +138,23 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
    NOTE: JoniS is the user we granted access to log in as administrator during Task 1.
 
-1. Windows Server should confirm the login and open to the normal Server Manager Dashboard.
+1. Windows Server should confirm the login and open to the normal Windows desktop.
 
 #### Task 6 -- Optional testing to explore the Microsoft Entra ID login
 
-1. Check to see that JoniS was the only user added to the Administrators group.
+1. Check to see that Joni Sherman was the only user added to the Administrators group.
 
 1. Use the secondary mouse click on the START button, then select **Computer Management** in the popup menu.
 
 1. Open **Local Users and Groups** then navigate to **Groups, Administrators**.
 
-1. You should see **Azure\JoniSherman....** in the list.
+1. You should see **Azure\JoniS....** in the list.
 
 1. Check to see if other Microsoft Entra ID members can log in.
 
 1. Exit out of the remote desktop session.
 
-1. Launch the **<<server name>>-AzureAD.RDP** file again.
+1. Launch the **<<server name>>-EntraID.RDP** file again.
 
 1. Try to log in as other Azure AD members like AdeleV or AlexW or DiegoS.
 
