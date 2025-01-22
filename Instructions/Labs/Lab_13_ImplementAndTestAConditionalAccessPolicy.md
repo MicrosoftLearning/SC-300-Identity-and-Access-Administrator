@@ -29,7 +29,7 @@ Your organization needs to be able to limit user access to its internal applicat
   | Setting | Value |
   | :--- | :--- |
   | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-  | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
+  | Password | Enter the user password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
     
 4. Bypass the welcome and introduction screens.
 
@@ -83,13 +83,13 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
 You should test your conditional access policies to ensure they working as expected.
 
-1. Open a new 'InPrivate' browser tab and then browse to [https://sway.office.com](https://sway.office.com).
+1. Open a new 'InPrivate' browser tab and then browse to [https://sway.cloud.microsoft](https://sway.cloud.microsoft).
     - When prompted, log in as DebraB:
 
    | Setting | Value |
    | :--- | :--- |
    | Username | **DebraB@** `<<your lab domain>>.onmicrosoft.com` |
-   | Password | Enter the admin password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
+   | Password | Enter the user password of the tenant(Refer the Lab Resources tab to retrieve the tenant's admin password). |
      
 2. Verify you are prevented from accessing Microsoft Sway.
 
