@@ -26,7 +26,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
    | **Setting**| **Value**|
    | :--- | :--- |
    | Username | DeliaD@`your domain name.com`|
-   | Password| Enter the password of the Global Admin from the Resources|
+   | Password| Enter the password of the "User Password" from the Resources|
 
 4. You should connect to the Office.com website, but see a message indicating you don't have a license.
 
@@ -74,7 +74,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
 6. Select the **Groups** tab on the licensing screen.
 
-7. Choose the **+ Add license** item.
+7. Choose the **+ Assign licenses** item.
 
 8. Search for **sg-SC300-O365** group the select it from the list.
 
@@ -86,7 +86,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
 11. Navigate back to the **All groups** in the left navigation, under **Identity**, select **Groups**
 
-12. In the Users page, select **sg-SC300-O365**.
+12. In the Groups page, select **sg-SC300-O365**.
 
 13. In the left navigation, select **Licenses**.
 
@@ -94,7 +94,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
 15. You can exit out of the license screen.
 
-#### Taks 4 - Confirm the Office 365 license
+#### Task 4 - Confirm the Office 365 license
 
 1. Launch a new InPrivate browser window.
 2. Connect to [https://www.office.com](https://www.office.com).
@@ -103,7 +103,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
    | **Setting**| **Value**|
    | :--- | :--- |
    | Username | DeliaD@`your domain name.com`|
-   | Password| Enter the password of the Global Admin from the Resources|
+   | Password| Enter the password of the User Password from the Resources|
 
 4. You should connect to the Office.com website, and see no messages regarding license. All of the Office applications are available on the left.
 
