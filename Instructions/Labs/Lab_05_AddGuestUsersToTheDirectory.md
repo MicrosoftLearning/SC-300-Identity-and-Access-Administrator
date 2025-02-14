@@ -57,7 +57,7 @@ A recent partnership has been established with another company. For now, employe
 
 4. On the Users page, on the menu, select **Bulk operations > Bulk invite**.
 
-     ![Screen image displaying the All user page with the Bulk operations and Bulk invite menu options highlighted](./media/lp1-mod3-bulk-invite-option.png)
+   ![Screen image displaying the All user page with the Bulk operations and Bulk invite menu options highlighted](./media/lp1-mod3-bulk-invite-option.png)
 
 5. In the Bulk invite users pane, select **Download** to a sample CSV template with invitation properties.
 
@@ -69,6 +69,8 @@ A recent partnership has been established with another company. For now, employe
     - **Redirection url** - the URL to which the invited user is forwarded after accepting the invitation.
 
     ![Screen image displaying the example bulk invite guests template CSV](./media/lp1-mod3-template-csv.png)
+
+**Lab Tip** - The users listed in the screenshot and the template files are examples, they don't really exist.  You will have to add a real users to fully test this feature.
 
 8. Save the file.
 
@@ -93,6 +95,8 @@ A recent partnership has been established with another company. For now, employe
 1. Open PowerShell as an administrator. This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
 
 **Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, please update or this portion of the lab will fail.
+
+**Lab Tip** - The TouchType feature in the lab environment has issues typing into PowerShell. If you launch Notepad in your lab, then use TouchType to load the PowerShell instructions into Notepad, you can use **Cut & Paste** to enter them into PowerShell without typing.
 
 2. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 

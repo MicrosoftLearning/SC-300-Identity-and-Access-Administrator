@@ -15,13 +15,14 @@ This lab has two different log in options, used to different parts of the lab. O
 
   - Azure Resource based log-in
   - Microsoft 365 + E5 tenant log-in
+      - MOD Administrator account
 
 You will be told which login to use in each of the labs.
 
 
 # Lab 01: Manage user roles
 
-### Login type = Microsoft 365 admin
+### Login type = Microsoft 365 + E5 tenant log-in
 
 ## Lab scenario
 
@@ -93,14 +94,17 @@ Using Microsoft Entra ID, you can designate limited administrators to manage ide
 3. Select on **All users** under the Manage section of the menu.
 4. Select on **Chris Green** account.
 5. Choose **Assigned roles** from the Manage menu.
-6. Select **+ Add assignments** and mark the `Application administrator` role.
-7. Select **Add**
+6. Select **+ Add assignments**.
+7. Select `Application administrator` role in the dropdown.
+8. Select the **Next** button.
+9. Mark the **Active** value for **Assignment Type**.
+10. Select **Assign**
 
     ![Assigned roles page - showing the selected role](./media/directory-role-select-role.png)
 
 **Note** - If the lab environment has already activated Microsoft Entra ID Premium P2, Privileged Identity Management (PIM) will be enabled and you wll need to select **Next** and assign a Permanent role to this user.
 
-9.Select the **Refesh** button.
+11. Select the **Refesh** button.
 
 **Note - The newly assigned Application administrator role appears on the user’s Assigned roles page.**
 
@@ -118,11 +122,11 @@ Using Microsoft Entra ID, you can designate limited administrators to manage ide
 4. Search on and select **Enterprise applications** in the search dialog at the top of the screen.
 5. Notice that **+ New Application** is available now.
 6. Select **+ New Application**
-7. View the **"**+ Create your own application** is not grayed out.  If you pick a gallery app, you will see the **Create** button is available.
+7. View the **+ Create your own application** is not grayed out.  If you pick a gallery app, you will see the **Create** button is available.
 
    **Note - This role now has the ability to add applications to the tenant.  We will experiment more with this feature in later labs.**
 
-7. Sign out of the Chris Green instance of the portal and close the browser.
+8. Sign out of the Chris Green instance of the portal and close the browser.
 
 ### Exercise 3 - Remove a role assignment
 
@@ -179,6 +183,8 @@ After the users have been created, you will be prompted that the creation has su
 1. Open PowerShell as an administrator.  This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
 
 **Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, follow the instructions on the screen to go to https://aka.ms/PowerShell-Release?tag=7.3.9. Scroll down to the assets section and select powershell-7.3.1-win-x64.msi. When the download has completed, select Open file. Install using all the defaults.
+
+**Lab Tip** - TouchType does not work with PowerShell well in the lab environment.  To work around this issue, you open Notepad in you lab environment. Next use the TouchType feature to place the script into Notepad, then finally use Copy & Paste to put the command into PowerShell.  Apologies for this extra step.
 
 2. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 

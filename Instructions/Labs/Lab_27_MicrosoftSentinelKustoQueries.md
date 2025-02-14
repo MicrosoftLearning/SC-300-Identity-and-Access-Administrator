@@ -5,7 +5,9 @@ lab:
     module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
 ---
 
-# Lab 27 - Microsoft Sentinel Kusto Queries for Microsoft Entra data sources
+# Lab 27 OPTIONAL - Microsoft Sentinel Kusto Queries for Microsoft Entra data sources
+
+**Note** - This lab cannot be completed in the provided training lab environment at this time.  We are leaving the lab step here, so you can optionally try it on your Bring You Own Subscription (BYOS) environment.  Please read over the steps to see what is possible.  We actively working to update this lab to find a work-around in the lab environment, and will update it soon.
 
 ### Login type = Azure Resource login
 

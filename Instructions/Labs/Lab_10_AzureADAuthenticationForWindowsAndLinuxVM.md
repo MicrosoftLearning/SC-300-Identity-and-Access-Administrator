@@ -65,7 +65,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 1. Assign the following settings:
   - **Job function roles**
   - **Role**: Virtual Machine Administrator Login
-  - **Members**: Choose User, group, or service principal.  Then use **+ Select members** to add **Joni Sherman** as a specific user for the VM.
+  - **Members**: Choose User, group, or service principal.  Then use **+ Select members** to add **User2** as a specific user for the VM.
 
 1. Select **Review + assign** to complete the process.
 
@@ -81,7 +81,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Choose to log in as Alternate User.
 
-1. Use the Admin (vmEntraAdmin) username and Password you create when setting up the virtual machine.
+1. Use the Admin (vmEntraAdmin) username and Password you created when setting up the virtual machine.
    - If prompted, say yes to allow access to the virtual machine or RDP session.
 
 1. Wait for the virtual machine to open and all the software to load.
@@ -133,30 +133,30 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 1. Select **OK**.
 
 1. In the login dialog enter the following information:
-   - Username = **AzureAD\JoniS@ your domain name**
+   - Username = **AzureAD\User2@ your domain name**
    - Password = Enter the password provided by your lab provider
 
-   NOTE: JoniS is the user we granted access to log in as administrator during Task 1.
+   NOTE: User2 is the user we granted access to log in as administrator during Task 1.
 
 1. Windows Server should confirm the login and open to the normal Server Manager Dashboard.
 
 #### Task 6 -- Optional testing to explore the Microsoft Entra ID login
 
-1. Check to see that JoniS was the only user added to the Administrators group.
+1. Check to see that User2 was the only user added to the Administrators group.
 
 1. Use the secondary mouse click on the START button, then select **Computer Management** in the popup menu.
 
 1. Open **Local Users and Groups** then navigate to **Groups, Administrators**.
 
-1. You should see **Azure\JoniSherman....** in the list.
+1. You should see **Azure\User2....** in the list.
 
 1. Check to see if other Microsoft Entra ID members can log in.
 
 1. Exit out of the remote desktop session.
 
-1. Launch the **<<server name>>-AzureAD.RDP** file again.
+1. Launch the **<<server name>>-EntraID.RDP** file again.
 
-1. Try to log in as other Azure AD members like AdeleV or AlexW or DiegoS.
+1. Try to log in as other Microsoft Entra ID members like AdeleV or AlexW or DiegoS.
 
 1. You should notice that each of these users are denied access.
 

@@ -7,7 +7,7 @@ lab:
 
 # Lab 08 - Enable multi-factor authentication
 
-### Login type = Microsoft 365 admin
+### Login type = Microsoft 365 + E5 tenant log-in
 
 ## Lab scenario
 
@@ -63,28 +63,29 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 5. Select **No target resources selected** in Target resources.
 
    - In the dropdown, make sure **Cloud apps** is selected.
-   - Under Include, mark **All cloud apps** and note the warning the pops up about possibly locking yourself out. 
-   - Now under Select section, choose the **None** item.
+   - Under Include, mark **Resources (formerly cloud apps)** and note the warning the pops up about possibly locking yourself out. 
+   - Now under Include section, choose the **Select resources** item.
+   - In the **Select** section select the **None** link.
    - In the newly opened dialog, choose **Office 365**.
       - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
    - Choose **Select**.
 
-6. Review the Conditions section.
+6. Choose a network location in the Conditions section.
 
-   - Choose **Yes** for the configure slider.
+   - In the **Conditions** section choose the **0 conditions selected** link.
+   - At the bottom of the newly opened menu find the **Locations** section, and select **Not configured**.
+   - Choose **Yes** for the **Configure** item.
    - Select **Any network or location**.
 
-7. Under **Access Controls**, find the **Grant** section and select **0 controls selected** is selected.
+7. Under **Access Controls**, find the **Grant** section and select the **0 controls selected** link.
 
-8. Select the **Require multifactor authentication** check box to enforces MFA.
+   - Select the **Require multifactor authentication** check box to enforces MFA.
+   - Ensure that **Require all the slected controls** is selected.
+   - Select **Select**.
 
-9. Ensure that **Require all the slected controls** is selected.
+8. Set **Enable policy** to **On**.
 
-10. Select **Select**.
-
-11. Set **Enable policy** to **On**.
-
-12. Hit **Create** to create the policy.
+9. Select the **Create** button to create the policy.
 
     ![Screenshot showing the complete Add Policy dialog](./media/lp2-mod1-conditional-access-new-policy-complete.png)
 

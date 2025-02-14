@@ -35,6 +35,8 @@ You need to make a user eligible for an Azure resource role.
 
 3. In the Privileged Identity Management page, in the left navigation, select **Azure resources.**
 
+**Lab Tip** - The next few steps are written for the Legacy Azure Resource experience.  You can switch to the old experience at the top of your screen. Or you can complete the exercise in the new experience without the step-by-step.
+
 4. In the Subscriptions dropdown choose the MOC Subscription##### item. Then at bottom of the screen, select **Manage resources**.
 
 5. In the Azure resources – Discovery page, select your subscription.
@@ -42,6 +44,8 @@ You need to make a user eligible for an Azure resource role.
 6. In the **Overview** page, review the information.
 
    ![Screen image displaying the recently added Azure resource](./media/lp4-mod3-pim-az-resource-overview.png)
+
+   **Lab Tip** - due to the nature of the lab environment, you won't see any resources. Refer to the picture for a sample.
 
 7. In the left navigation menu, under **Manage**, select **Roles** to see the list of roles for Azure resources.
 
@@ -68,6 +72,8 @@ You need to make a user eligible for an Azure resource role.
 16. After the new role assignment is created, a status notification is displayed.
 
 #### Task 2 - Update or remove an existing resource role assignment
+
+**Note** - Due to the security enforced on this lab environment, you cannot complete these steps.  Please review the steps in the user interface, but you won't be able to apply changes.  We are actively working on getting a work-around in place for this.
 
 Follow these steps to update or remove an existing role assignment.
 

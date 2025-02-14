@@ -66,6 +66,13 @@ Your company works with many vendors and, on occasion, you need to add some vend
        (where <tenant name> is your tenant name)
    ```
 
+**Lab Tip** - Results should look similar to this, with your Tenant ID and Tenant Name.
+| URI # | Link |
+| :--- | :--- |
+| URIs 1 | https://login.microsoftonline.com |
+| URIs 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
+| URIs 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+
 16. Select **Create**. Copy your **client ID** and **client secret**. You'll use them when you add the identity provider in the Azure portal.
 
 17. You can leave your project at a publishing status of Testing.

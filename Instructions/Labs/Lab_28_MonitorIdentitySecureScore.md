@@ -13,7 +13,7 @@ lab:
 
 Microsoft Entra Identity Protection provides automated detection and remediation to identity-based risks, and provides data in the portal to investigate potential risks. Microsoft Entra Identity Protection also provides an Identity Secure Score to monitor and improve your identity security posture.  In the same manner as Microsoft Defender XDR and Microsoft Defender for Cloud, Identity Secure Score provides improvement actions and recommendations that can improve your overall security posture for identity in Microsoft Entra ID.  This lab will explore this capability. 
 
-**Note** - Since this lab is running on a new created tenant environment, you will probably get an Identity Secure Score of 0.00%.  It takes about 24 hours for valuable data to enter the calculation to give you a valid score.
+**Note** - Since this lab is running on a new created tenant environment, you will probably get an Identity Secure Score of 30% or less.  It takes about 24 hours for viable data to enter the calculation to give you a valid score.
 
 #### Estimated time: 15 minutes
 
@@ -31,7 +31,7 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 5. Scroll down to view the **Improvement actions**.
 
-6. In contrast to the improvement actions in Microsoft Defender for Cloud and Microsoft Defender XDR, these improvement actions are specific to identity.  This provides a more focused list of potential actions to your security posture management.  Any improvement actions initiated from this list will also provide an impact to your overall tenant security posture. 
+**Lab Tip** - In contrast to the improvement actions in Microsoft Defender for Cloud and Microsoft Defender XDR, these improvement actions are specific to identity.  This provides a more focused list of potential actions to your security posture management.  Any improvement actions initiated from this list will also provide an impact to your overall tenant security posture. 
 
 #### Task 2 - Execute an improvement action
 
