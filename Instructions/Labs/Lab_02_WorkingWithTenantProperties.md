@@ -32,14 +32,14 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
 1. In the **Custom domain name** field, create a custom subdomain for the lab tenant by putting **sales** in front of the **onmicrosoft.com** domain name.  The format will look similar to this:
 
     ```
-    Sales.###onmicrosoft.com
+    Sales.labTenantName.onmicrosoft.com
     ```
 
 **Note** - You will be prompted to open the Microsoft 365 Admin center to complete this action.
 
 1. Select **Add domain** to add the subdomain.
 
-1. Enter the subdomain name `sales.tenantname.onmicrosoft.com` into the dialog.
+1. Enter the subdomain name `sales.tenantname.onmicrosoft.com` into the dialog. Remember to replace *tenantname* with the name of your tenant.
 
 1. Select the **Use this domain** button at the bottom of the screen.
 
@@ -87,6 +87,8 @@ Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft
 1. Under **Tenant properties**, locate **Tenant ID**. This is your unique tenant identifier.
 
     ![Screen image displaying the Tenant properties page with the Tenant ID box highlighted](./media/portal-tenant-id.png)
+
+**Note** - It is helpful if you record your Tenant-Id note Notepad or other location for use in future labs.
 
 ### Exercise 3 - Setting your privacy information
 

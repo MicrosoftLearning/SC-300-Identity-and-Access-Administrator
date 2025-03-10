@@ -17,7 +17,7 @@ lab:
 
 Registering your application establishes a trust relationship between your app and the Microsoft identity platform. The trust is unidirectional: Your app trusts the Microsoft identity platform—not the other way around.
 
-1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using a Global Administrator account.
+1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using the provided Administrator account.
 
 2. Open the portal menu and then select **Microsoft Entra ID**.
 

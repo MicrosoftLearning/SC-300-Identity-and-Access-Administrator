@@ -19,9 +19,9 @@ Your organization requires that only specific users or groups have access to ent
 
 #### Task 1 - Add an app to your Microsoft Entra tenant
 
-1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using a Global administrator account.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) using the provided Administrator account.
 
-2. Open the portal menu and then select **Microsoft Entra ID**.
+2. Look at the menu on the left side of the screen.
 
 3. On the Identity menu, under **Applications**, select **Enterprise applications**.
 

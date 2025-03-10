@@ -138,7 +138,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
    NOTE: User2 is the user we granted access to log in as administrator during Task 1.
 
-1. Windows Server should confirm the login and open to the normal Server Manager Dashboard.
+1. Windows should confirm the login and open to the normal Desktop.
 
 #### Task 6 -- Optional testing to explore the Microsoft Entra ID login
 
@@ -156,7 +156,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Launch the **<<server name>>-EntraID.RDP** file again.
 
-1. Try to log in as other Microsoft Entra ID members like AdeleV or AlexW or DiegoS.
+1. Try to log in as other Microsoft Entra ID members.
 
 1. You should notice that each of these users are denied access.
 

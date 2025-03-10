@@ -55,6 +55,8 @@ When you use managed identities for Azure resources, your code can get access to
   | Password | Set a secure password that you can remember |
   | Licensing | Confirm you have an eligible license |
 
+1. Make sure you mark the **Confirm licensing** checkbox.
+
 1. Use the **Next** button to get to the **Management** tab.
 
 1. On the **Management** tab, check the box next to **Enable system assigned managed identity**.

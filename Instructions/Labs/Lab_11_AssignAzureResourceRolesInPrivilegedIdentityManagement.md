@@ -29,7 +29,7 @@ You need to make a user eligible for an Azure resource role.
 
 #### Task 1 - Assign Azure resource roles
 
-1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using a Global Administrator account.
+1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using the provided administrator account.
 
 2. Search for and then select **Privileged Identity Management.**
 
