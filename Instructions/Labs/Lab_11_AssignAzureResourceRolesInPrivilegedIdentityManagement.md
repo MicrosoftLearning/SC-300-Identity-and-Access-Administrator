@@ -9,8 +9,6 @@ lab:
 
 ### Login type = Azure Resource login
 
-**Note** - This lab requires an Azure Pass. Please see lab 00 for directions.
-
 ## Lab scenario
 
 Microsoft Entra Privileged Identity Management (PIM) can manage the built-in Azure resource roles, as well as custom roles, including (but not limited to):

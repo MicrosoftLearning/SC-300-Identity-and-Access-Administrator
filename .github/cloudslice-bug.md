@@ -1,6 +1,6 @@
 ---
-name: 'CloudSlice Bug '
-about: Template for CloudSlice subscription related bugs from Skillable platform
+name: 'Lab Bug '
+about: Template for bugs from lab platform
 title: ''
 labels: 'cloudSlice'
 assignees: ''
