@@ -245,7 +245,7 @@ You can add and remove users with the Microsoft Entra ID page.  However, users c
 
 It may happen that an account is deleted and then needs to be recovered. You need to verify you can recover an account that has been deleted recently.
 
-1. Browse to [https://entra.micrososft.com](Microsoft Entra admin center).
+1. Browse to [https://entra.microsoft.com](Microsoft Entra admin center).
 
 2. In the left navigation, under **Identity**, select **Users**.
 

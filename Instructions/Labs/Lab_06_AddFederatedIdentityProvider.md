@@ -28,63 +28,83 @@ Your company works with many vendors and, on occasion, you need to add some vend
 **Create a new project:**
 3. At the top of the page, select the project menu to open the Select a project page. Choose **New Project**.  Leave the remaining fields with the default settings.
 
-4. On the New Project page, give the project a name (for example, **MyB2BApp**), and then select **Create**.
+4. On the New Project page, give the project a name: +++MyB2BApp+++, and then select **Create**.
 
 5. Open the new project by selecting the link in the Notifications message box or by using the project menu at the top of the page.
 
 6. In the left menu, select **APIs & Services**, and then select **OAuth consent screen**.
 
-7. Under User Type, select **External**, and then select **Create**.
+7. Select the **Get Started** button.
 
-8. On the **OAuth consent screen**, under App information, enter an App name, such as **Microsoft Entra ID**.
+8. On the Application information screen enter the following information:
 
-9. Under User support email, select an email address. This should include the email address that you used to log into Google.
+| Section | Field Name | Value |
+| :---    | :---    | :---  |
+| 1 App Information | | |
+|            | App name | +++Microsoft Entra ID+++ |
+|            | User support email | Select the email name from the drop down |
+| 2 Audience | | |
+|            | Internal / External | **External** |
+| 3 Contact Information | | |
+|            | Email addresses | Use the same email address as above |
+| 4 Finish | | |
+|            | Agreement | Mark the checkbox |
 
-10. Under Authorized domains, select **+ Add domain**, and then add the microsoftonline.com domain.
+9. Select the **Create** button to continue.
 
-   ```
-   microsoftonline.com
-   ```
+10. Select the **Create OAuth client** button.
 
-11. Under Developer contact information, enter the email address for the lab account that you used to sign into the portal.
+11. Choose **Application type = Web Application**.
 
-12. Select **Save and continue**.
+12. Accept the default name for the application.
 
-13. In the left menu, select **Credentials**.
+13. Within the **Authorized JavaScript origins**, select the **+ Add URI** button.
 
-14. Select **+ Create credentials**, and then select **OAuth client ID**.
+14. Enter the URI +++https://microsoftonline.com+++ for the value.
 
-15. In the Application type menu, select Web application. Give the application a suitable name, like Microsoft Entra B2B. Under **Authorized redirect URIs**, add the following URIs:
+15. Within the **Authorized redirect URIs**, select **+ Add URI** button.  You will need to add three different URI's in this section:
 
-   ```
-      https://login.microsoftonline.com
-   ```
-      https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp
-       (where <tenant ID> is your tenant ID)
-   ```
-      https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp
-       (where <tenant name> is your tenant name)
-   ```
+ - **First URI** = +++https://login.microsoftonline.com+++
+ - **Second URI** = +++https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp+++ (where <tenant ID> is your tenant ID)
+ - **Third URI** = +++https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp+++ (where <tenant name> is your tenant name)
 
-**Lab Tip** - Results should look similar to this, with your Tenant ID and Tenant Name.
+**Lab Tip** - you may find this step easier if you use Notepad in the lab VM to create these URI, and then copy and paste from there.
+
+**Lab Tip 2** - Results should look similar to this, with your Tenant ID and Tenant Name.
+
 | URI # | Link |
 | :--- | :--- |
 | URIs 1 | https://login.microsoftonline.com |
 | URIs 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
 | URIs 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
 
-16. Select **Create**. Copy your **client ID** and **client secret**. You'll use them when you add the identity provider in the Azure portal.
+16. Select the **Create** button.
 
-17. You can leave your project at a publishing status of Testing.
+17. When the item is created, copy the **Client ID** and the **Client Secret** into Notepad for user later.
+
+18. You can lease your project in this state, we don't need to publish.
 
 #### Task 2 - Add a test user
-18. Select the **OAuth consent screen** under APIs and Services menu.
 
-19. In the **Test Users* section of the page, choose **+ Add Users**.
+1. From the menu on the left, select the **Audience** item.
 
-20. Enter the gmail account you created (or are using) for this lab.
+2. In the **Test Users** section of the page, choose **+ Add Users**.
 
-21. Select **Save**
+3. Enter the gmail account you are using for this lab.
+
+4. Select **Save**
+
+#### Task 3 - Add authorized domain to Branding
+
+1. From the menu on the left, select the **Branding** item.
+
+2. Scroll to the very bottom of the page.
+
+3. In the **Authorized domains** section, add the domain **microsoftonline.com**.
+
+4. In the **Developer contact information** add they email address you are using for this lab.
+
+5. Select **Save**.
 
 
 ### Exercise 2 - Configure Azure to work with an External identity provider
@@ -109,57 +129,68 @@ Your company works with many vendors and, on occasion, you need to add some vend
 This completes the configuration of Google as an identity provider.
 
 #### Task 2 - Invite you Test User account
-9. If you used an existing Gmail account, remember to delete the account with **External Identities | All identity providers**. You can also return to the Google developer console and delete the project that you created.
+1. If you used an existing Gmail account, remember to delete the account with **External Identities | All identity providers**. You can also return to the Google developer console and delete the project that you created.
 
-10. Open Microsoft Entra ID.
+2. Open Microsoft Entra ID.
 
-11. Go to Users and select **All users**.
+3. Go to Users and select **All users**.
 
-12. Select **+ New User**.
+4. Select **+ New User**.
 
-13. Choose **Invite external user** from the dropdown menu.
+5. Choose **Invite external user** from the dropdown menu.
 
-14. Enter the information for the gmail account you set up as a test user for the Google App in Exercise 1 Task 2.
+6. Enter the information for the gmail account you set up as a test user for the Google App in Exercise 1 Task 2.
 
-15. Enter a personal message as you want.
+7. Enter a personal message as you want.
 
-16. Select **Invite**.
+8. Select **Review & Invite** then select **Invite**.
+
+
+| **Security Note** |
+| ----: |
+| If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment.  Passkey requires BlueTooth, which cannot be enabled through the VM.  You can still complete the lab, just do these last few tasks in an InPrivate brower running outside the lab environment. |
+
 
 #### Task 3 - Accept the invitation and login
-17. Use an InPrivate browser to log into your gmail account.
 
-18. Open the **Microsoft Invitation on behalf of** in the Inbox.
+1. Use an InPrivate browser to log into your gmail account.
 
-19. Select the **Accept invitation** link in the message.
+2. Open the **Microsoft Invitation on behalf of** in the Inbox.
 
-20. Enter your username and password as requested in the login dialog (if requested).
+3. Select the **Accept invitation** link in the message.
+
+3. Enter your username and password as requested in the login dialog (if requested).
+
    **NOTE** If the ferderation is working correctly, this is where you will see the first results of your new Google External Identity provider.  You will go to the login screen and be able to log in with your gmail credentials.  If the federation is not work, or has not been set up, the user would be sent and ACCOUNT VERIFICATION email after the log in, to confirm the account.  With the federation, no extra verification is needed.
 
    **NOTE** If you get an access error 500, wait about 30 seconds and refresh the page.  Choose to RESUBMIT.  This error is a timing issue only in the lab environment.
 
-21. Read over the new **Permissions requested by:** message that you get.  This message is coming from your Azure Lab Domain.
+4. Read over the new **Permissions requested by:** message that you get.  This message is coming from your Azure Lab Domain.
 
-22. Choose **Accept**.
+5. Choose **Accept**.
 
-23. Once login is complete, you will be sent MyApplications.
+6. Once login is complete, you will be sent MyApplications.
 
 #### Task 4 - Login to Microsoft 365 using your Google account
-24. Once you have finished the external user invite process of Task 3, you can log directly into Microsoft Online.
 
-25. Open a new tab in the browser you have open.
+1. Once you have finished the external user invite process of Task 3, you can log directly into Microsoft Online.
+
+2. Open a new tab in the browser you have open.
+
    **NOTE** if you did not open a new InPrivate browser in Task 3, you should do so for this step.
 
-26. Enter the following web address:
+3. Enter the following web address:
 
    ```
    login.microsoftonline.com
    ```
 
-27. Select **Sign-in options** on the dialog.
+4. Select **Sign-in options** on the dialog.
  
-28. Choose **Sign in to an organization**.
+5. Choose **Sign in to an organization**.
 
-29. Enter your **lab tenant domain name** in the box and select **Next**.
+6. Enter your **lab tenant domain name** in the box and select **Next**.
 
-30. Enter the **Google** email address and password that you created.
+7. Enter the **Google** email address and password that you created.
+
 At this point, you should see your account passed to Google for confirmation; then enter the Microsoft Office portal.
