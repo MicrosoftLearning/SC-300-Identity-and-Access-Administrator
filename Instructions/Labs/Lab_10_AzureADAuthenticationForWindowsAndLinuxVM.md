@@ -190,4 +190,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
     - **Role**: Virtual Machine Administrator Login or Virtual Machine User Login
     - **Assign access to**: User, group, service principal, or managed identity
 
-1. For detailed steps, see Assign Azure roles using the Azure portal.
+##### Challenge lab portion
+
+Please try to complete the rest of this lab on your own. It is very similar to the Windows version. If you are looking for detailed steps, see Assign Azure roles using the Azure portal in the Learn Docs.
+

@@ -92,7 +92,7 @@ A recent partnership has been established with another company. For now, employe
 
 #### Task 2 - Invite guest users with PowerShell
 
-1. Open PowerShell as an administrator. This can be done by searching for PowerShell in Windows and choosing Run as administrator. 
+1. Open PowerShell. This can be done by searching for PowerShell in Windows.
 
 **Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, please update or this portion of the lab will fail.
 
@@ -101,7 +101,7 @@ A recent partnership has been established with another company. For now, employe
 2. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 
     ```
-    Install-Module Microsoft.Graph
+    Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
 3. Confirm the Microsoft.Graph module is installed:
 
