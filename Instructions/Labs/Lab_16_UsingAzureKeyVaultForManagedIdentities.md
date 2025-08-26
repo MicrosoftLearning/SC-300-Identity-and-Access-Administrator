@@ -13,7 +13,7 @@ lab:
 
 When you use managed identities for Azure resources, your code can get access tokens to authenticate to resources that support Microsoft Entra authentication.  However, not all Azure services support Microsoft Entra authentication. To use managed identities for Azure resources with those services, store the service credentials in Azure Key Vault, and use the managed identity to access Key Vault to retrieve the credentials.
 
-#### Estimated time: 20 minutes
+#### Estimated time: 35 minutes
 
 ### Exercise 1 - Use Azure Key Vault to manage Virtual Machine identities
 
@@ -103,7 +103,7 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Go to **vmKeyVault** and use RDP to connect to your virtual machine as **adminKeyVault**.
 
-1. In the lab virtual machine, open PowerShell.  
+1. Open the **Windows 11 virtual machine** deployed earlier in this lab. In the lab virtual machine, open PowerShell.  
 
 1. In PowerShell, invoke the web request on the tenant to get the token for the local host in the specific port for the VM.  
 
