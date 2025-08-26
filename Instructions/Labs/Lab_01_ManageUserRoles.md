@@ -37,7 +37,7 @@ Your company recently hired a new employee who will perform duties as an applica
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
  - Use the **Microsoft 365 admin** account.
 
-2. In the menu on the left select **Identity**.
+2. In the menu on the left expand the **Entra ID** dropdown, if not already open.
 
 3. In the left navigation menu, under **Users**, select **All Users**, then select **+ New User** and **Create new user**.
 
