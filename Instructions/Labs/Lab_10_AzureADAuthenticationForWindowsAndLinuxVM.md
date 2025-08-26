@@ -21,11 +21,13 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Browse to the [https://portal.azure.com](https://portal.azure.com)
 
+**Lab tip** - if prompted to save your credentials, choose Never.  And cancel the tour, unless this is your first time in the Azure Portal.
+
 1. Select **+ Create a resource**.
 
 1. Type **Windows 11** in Search the Marketplace search bar, then **Enter**.
 
-1. From the **Windows 11** box, select the **Create v** and choose **Windows 11 Enterprise, version 22H2** from the menu that opens.
+1. Find the **Microsoft Windows 11** box, then select the **Create v** and choose **Windows 11 Enterprise, version 22H2** from the menu that opens.
 
 1. Create the VM using the following values on the **Basics** tab:
 
