@@ -75,8 +75,8 @@ Your company works with many vendors and, on occasion, you need to add some vend
 | URI # | Link |
 | :--- | :--- |
 | URIs 1 | https://login.microsoftonline.com |
-| URIs 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc |
-| URIs 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth |
+| URIs 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc/oauth2/authresp |
+| URIs 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth2/authresp |
 
 16. Select the **Create** button.
 
