@@ -22,13 +22,11 @@ As an additional layer of security, you need to enable and configure your Micros
 
 1. Sign in to the [https://entra.microsoft.com]( https://entra.microsoft.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Microsoft Entra ID**.
+2. Open the portal menu and then select **Entra ID**.
 
-3. On menu, under **Identity**, select **Protection**.
+3. On menu, under **ID Protection**, select **Dashboard**.
 
-4. On the Security page, in the left navigation, select **Identity protection**.
-
-5. In the Identity protection page, in the left navigation, select **User risk policy**.
+4. 5. In the Identity protection Dashboard, in the left navigation, select **User risk policy**.
 
     ![Screen image displaying the User risk policy page and highlighted browsing path](./media/lp2-mod4-browse-to-identity-protection.png)
 
