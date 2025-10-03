@@ -110,7 +110,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. **Make a copy** of the RDP file and add **-EntraID** to the end of the filename.
 
-1. Edit the new version of the RDP file you just copied using **Notepad**. Add the these two lines of text to the bottom of the of the file:
+1. Edit the new version of the RDP file you just copied using **Notepad**. Add the these two lines of text to the bottom of the file:
      ```
         enablecredsspsupport:i:0
         authentication level:i:2
