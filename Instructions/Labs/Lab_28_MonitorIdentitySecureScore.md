@@ -21,45 +21,51 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 #### Task 1 - Review Identity Secure Score and improvement actions
 
-1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
+1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as an administrator.
 
-2. Open the **Protection** menu and select **Identity Secure Score**
+2. From the left menu and select **Identity Secure Score**
 
-3. In the **Overview** tile, you will find **Identity Secure Score**.
+3. Review the information provided in the dashboard page page.
 
-4. Select **Identity Secure Score**.  This will take you to the Identity Secure Score dashboard.
+4. Notice the value to **Identity Secure Score**, your **Score History** and other information.
 
-5. Scroll down to view the **Improvement actions**.
+5. Scroll down to view the **Recommdendations**.
 
-**Lab Tip** - In contrast to the improvement actions in Microsoft Defender for Cloud and Microsoft Defender XDR, these improvement actions are specific to identity.  This provides a more focused list of potential actions to your security posture management.  Any improvement actions initiated from this list will also provide an impact to your overall tenant security posture. 
+**Lab Tip** - In contrast to the recommendations in Microsoft Defender for Cloud and Microsoft Defender XDR, these actions are specific to identity.  This provides a more focused list of potential actions to your security posture management for identity. Any recommendations initiated from this list will also provide an impact to your overall tenant security posture. 
 
 #### Task 2 - Execute an improvement action
 
-1. To improve one area of the identity security posture, select **Enable Microsoft Entra ID Protection sign-in risk policy**.
+1. To improve one area of the identity security posture, select **Protect all users with a sign-in risk policy**.
 
-2. In the tile that opens, scroll down and select **Get Started**.
+2. In the page that opens, review the risk. You should have 33 users that are unprotected. Additionally, you see an **Action plan** on how to resolve the threat.
 
-3. A new tab will open for **Identity Protection | Sign-in risk policy**.
- **Note** - by default the Get Started button will open in Azure Portal. You can use the portal or return to the Entra admin center. Either wil work.
+3. Select the link **Follow these steps to create a Conditional Access policy from scratch or by using a template**. Review the steps in the article.
 
-6. Under Assignments, the **All Users** text.
+4. Close the article tab, and return to the tab with **Microsoft Entra ID** opened.
 
-7. Under Include, select All users.
+5. From the menu on the left, select **Conditional Access**.
 
-8. Under Exclude, select Users and groups and choose your **MOD Administrator** account.
+6. Select **+ Create new policy**.
 
-  - Microsoft recommends you exclude at least one account to prevent yourself from being locked out.
+7. Use the following values to create the policy:
 
-9. Under Sign-in risk - select the text that says **Low and above**.
+| Field | Value |
+| :--- | :--- |
+| Name | **Sign-in risk protection policy |
+| Assignments | 1. Select **0 users or agents (Preview) selected |
+|             | 2. On the **Include** tab mark **All users** |
+|             | 3. On the **Excdlue** tab, use the **Users and groups** to exclude **MOD Administrator** |
+| Target resources | **All resources (formerly All cloud resource)** |
+| Network | Leave at default |
+| Conditions | 1. Select **0 conditions selected** |
+|            | 2. Under **Sign-in risk** select the **Not configured** link. |
+|            | 3. Set **Configure = Yes** and mark the box next to **High** and **Medium**. |
+|            | 4. Select **Done** to save changes. |
+| Access controls | 1. Under **Grant** select **0 controls selected**. |
+|                 | 2. Select **Require risk remediation**. |
+|                 | 3. Under the **Require authentication strength** select **Phishing-resistant MFA**. |
+| Session | Leave at default |
 
-10. Choose **Medium and above** then select **Done**.
+8. Set **Enable policy** to **Report-only**.  You can use the WhatIf function to verify the policy before you enable it.
 
-10. In the **Controls** section choose the text that says **Block access**.
-
-11. Select **Allow access - Require multifactor authentication**.
-
-11. Select Done.
-
-14. Confirm your settings and set policy enforcement to **Enabled**.
-
-15. Select **Save**.
+9. Select **Create**.
