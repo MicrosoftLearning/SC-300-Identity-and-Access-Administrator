@@ -45,7 +45,7 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Type **Windows 11** in Search the Marketplace search bar.
 
-1. Select **Windows 11** and from the plan dropdown choose **Windows 11 Enterprise, version 22H2**. Then choose **Create**.
+1. Select **Windows 11** and from the plan dropdown choose **Windows 11 Enterprise, version 25H2** or any newer version. Then choose **Create**.
 
   | Field | Values |
   | :--   | :--    |
