@@ -40,6 +40,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
   | Availability options | No infrastructure redundancy required |
   | Security Type | Standard |
   | Size | Standard DC1s_v3 - 1 vcpu, 8 GiB memory |
+  | | **Lab tip** - if the exact specified size is not available, try a similar size in the same series.|
   | Admin Username | vmEntraAdmin |
   | Admin Password | Use the one provided by the lab environment or make us a secure password you can remember |
   | Licensing | Confirm you have a license |
