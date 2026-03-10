@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '19 - Register an application'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 19 - Register an application
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: 'Registering your application establishes a trust relationship between
+    your app and the Microsoft identity platform. The trust is unidirectional: Your
+    app trusts the Microsoft identity platform—not the other way around.'
+  duration: 30 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab 19 - Register an application
