@@ -1,8 +1,18 @@
 ---
 lab:
-    title: '15 - Configure an Multifactor authentication registration policy'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 15 - Configure an Multifactor authentication registration policy
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: Multifactor authentication provides a means to verify who you are using
+    more than just a username and password. It provides a second layer of security
+    to user sign-ins. For users to be able to respond to MFA prompts, they must first
+    register for Microsoft Entra Multifactor Authentication. You must configure your
+    Microsoft Entra organization's MFA registration policy to be assigned to all users.
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Microsoft Entra
 ---
 
 # Lab 15 - Configure an Multifactor authentication registration policy
