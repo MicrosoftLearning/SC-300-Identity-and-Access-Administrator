@@ -1,8 +1,17 @@
 ---
 lab:
-    title: '03 - Assigning licenses using group membership'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 03 - Assigning licenses using group membership
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: Your organization has decided to use security groups in Microsoft Entra
+    ID to manage licenses. You need to configure a new security group and assign a
+    license to that group and verify group member license's have been updated.
+  duration: 25 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Microsoft Entra
+  - Microsoft Entra ID
 ---
 
 # Lab 03: Assigning licenses using group membership
