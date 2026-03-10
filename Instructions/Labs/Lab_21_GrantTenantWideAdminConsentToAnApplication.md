@@ -1,8 +1,18 @@
 ---
 lab:
-    title: '21 - Grant tenant-wide admin consent to an application'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 21 - Grant tenant-wide admin consent to an application
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: For applications your organization has developed or for those that
+    are registered directly in your Microsoft Entra tenant, you can grant tenant-wide
+    admin consent from App registrations in the Azure portal.
+  duration: 15 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure Portal
+  - Microsoft Entra
 ---
 
 # Lab 21: Grant tenant-wide admin consent to an application
