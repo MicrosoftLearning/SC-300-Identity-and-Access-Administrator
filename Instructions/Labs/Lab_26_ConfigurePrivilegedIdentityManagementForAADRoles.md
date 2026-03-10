@@ -1,8 +1,17 @@
 ---
 lab:
-    title: '26 - Configure Privileged Identity Management for Microsoft Entra roles'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 26 - Configure Privileged Identity Management for Microsoft Entra roles
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: A Privileged role administrator can customize Privileged Identity Management
+    (PIM) in their Microsoft Entra organization, including changing the experience
+    for a user who is activating an eligible role assignment. You must become familiar
+    with configuring PIM.
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Microsoft Entra
 ---
 
 # Lab 26: Configure Privileged Identity Management for Microsoft Entra roles
