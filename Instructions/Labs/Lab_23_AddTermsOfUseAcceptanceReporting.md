@@ -1,8 +1,17 @@
 ---
 lab:
-    title: '23 - Add terms of use and acceptance reporting'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 23 - Add terms of use and acceptance reporting
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: Microsoft Entra terms of use policies provide a simple method that
+    organizations can use to present information to end users. This presentation ensures
+    users see relevant disclaimers for legal or compliance requirements. This article
+    describes how to get started with terms of use (ToU) policies.
+  duration: 20 minutes
+  level: 100
+  islab: true
+  primarytopics:
+  - Microsoft Entra
 ---
 
 # Lab 23: Add terms of use and acceptance reporting
