@@ -1,8 +1,15 @@
 ---
 lab:
-    title: '09 - Enable Microsoft Entra self service password reset'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 09 - Enable Microsoft Entra self service password reset
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: The company has decided to empower the employees and enable self-service
+    password reset. You must configure this setting in your organization.
+  duration: 15 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Microsoft Entra
 ---
 
 # Lab 09 - Configure and deploy self-service password reset
