@@ -1,8 +1,18 @@
 ---
 lab:
-    title: '22 - Create and manage a catalog of resources in Microsoft Entra entitlement management'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 22 - Create and manage a catalog of resources in Microsoft Entra entitlement
+    management
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: A catalog is a container of resources and access packages. You create
+    a catalog when you want to group related resources and access packages. Whoever
+    creates the catalog becomes the first catalog owner. A catalog owner can add additional
+    catalog owners. You must create and configure a catalog in your organization.
+  duration: 15 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Microsoft Entra
 ---
 
 # Lab 22: Create and manage a catalog of resources in Microsoft Entra entitlement management
