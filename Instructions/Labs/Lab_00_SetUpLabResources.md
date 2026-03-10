@@ -1,8 +1,15 @@
 ---
 lab:
-    title: '00 - Lab Setup'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 00 - Lab Setup
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: You need to create a new Azure subscription and request a Azure AD
+    P2 license to be ready to complete the upcoming labs.
+  duration: 5 minutes
+  level: 100
+  islab: true
+  primarytopics:
+  - Azure
 ---
 
 # Lab 00: Lab Environment Setup
