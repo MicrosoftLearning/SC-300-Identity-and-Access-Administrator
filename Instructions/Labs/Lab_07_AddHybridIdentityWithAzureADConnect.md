@@ -1,8 +1,18 @@
 ---
 lab:
-    title: '07 - Optional --- Add Hybrid Identity with Microsoft Entra Connect'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 07 - Optional --- Add Hybrid Identity with Microsoft Entra Connect
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: '**Note** - This lab is titled Optional.  It takes at least 1 hour
+    to complete and does require that you are detailed in your lab steps.  Please
+    feel free to computer it as time permits.  If your company has already set up
+    its Hybrid configuration, or you don''t plan to use Microsoft Entra Connect, please
+    jump over this lab.'
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Microsoft Entra
 ---
 
 # Lab 07: OPTIONAL --- Add Hybrid Identity with Microsoft Entra Connect
