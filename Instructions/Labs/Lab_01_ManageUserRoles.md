@@ -1,8 +1,20 @@
 ---
 lab:
-    title: '01 - Manage User Roles'
-    learning path: '01'
-    module: 'Module 01 - Implement an Identity Management Solution'
+  title: 01 - Manage User Roles
+  learning path: '01'
+  module: Module 01 - Implement an Identity Management Solution
+  description: If you are being provided with a tenant as a part of an instructor-led
+    training delivery, please note that the tenant is made available for the purpose
+    of supporting the interactive labs in the instructor-led training. Tenants should
+    not be shared or used for purposes outside of interactive labs. The tenant used
+    in this course is a trial tenant and cannot be used or accessed after the class
+    is over and are not eligible for extension. Tenants must not be converted to a
+    paid subscription. Tenants obtained as a part of this course remain the property
+    of Microsoft Corporation and we reserve the right to obtain access and repossess
+    at any time.
+  duration: 30 minutes
+  level: 300
+  islab: true
 ---
 
 # WWL Tenants - Terms of Use
