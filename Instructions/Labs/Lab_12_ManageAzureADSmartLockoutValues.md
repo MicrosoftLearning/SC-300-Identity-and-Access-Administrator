@@ -1,8 +1,15 @@
 ---
 lab:
-    title: '12 - Manage Microsoft Entra smart lockout values'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 12 - Manage Microsoft Entra smart lockout values
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: You must configure the additional password protection settings for
+    your organization.
+  duration: 5 minutes
+  level: 100
+  islab: true
+  primarytopics:
+  - Microsoft Entra
 ---
 
 # Lab 12 - Manage Microsoft Entra smart lockout values
