@@ -1,8 +1,20 @@
 ---
 lab:
-    title: '17 - Defender for Cloud Apps application discovery and enforcing restrictions'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 17 - Defender for Cloud Apps application discovery and enforcing restrictions
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: Microsoft Defender for Cloud Apps utilizes logs from network traffic
+    to identify the applications that users are accessing.  Traffic logs from on-premises
+    firewalls will provide a snapshot report on the most common applications and the
+    users that are accessing these apps.  Traffic from managed devices will be fed
+    into the Microsoft Defender for Cloud Apps discovery overview dashboard
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Microsoft Defender
+  - Microsoft Defender for Cloud
+  - Microsoft Defender for Cloud Apps
 ---
 
 # Lab 17 - Defender for Cloud Apps application discovery and enforcing restrictions
