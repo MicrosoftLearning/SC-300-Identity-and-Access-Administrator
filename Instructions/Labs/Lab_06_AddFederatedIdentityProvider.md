@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '06 - Add a federated identity provider'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 06 - Add a federated identity provider
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: Your company works with many vendors and, on occasion, you need to
+    add some vendor accounts to your directory as a guest and allow them to use their
+    Google account to sign-in.
+  duration: 25 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab 06: Add a federated identity provider
