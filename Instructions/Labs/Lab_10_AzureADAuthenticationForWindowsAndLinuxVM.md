@@ -1,8 +1,18 @@
 ---
 lab:
-    title: '10 - Microsoft Entra ID Authentication for Windows and Linux Virtual Machines'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 10 - Microsoft Entra ID Authentication for Windows and Linux Virtual Machines
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: The company has decided that Microsoft Entra ID should be used to login
+    to virtual machines for remote access.  This lab will show how this can be setup
+    for Windows and Linux virtual machines.
+  duration: 30 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Microsoft Entra
+  - Microsoft Entra ID
+  - Windows
 ---
 
 # Lab 10 - Microsoft Entra Authentication for Windows and Linux Virtual Machines
