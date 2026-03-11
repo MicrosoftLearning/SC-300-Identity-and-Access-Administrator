@@ -1,8 +1,16 @@
 ---
 lab:
-    title: '10 - Microsoft Entra ID Authentication for Windows and Linux Virtual Machines'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 10 - Microsoft Entra ID Authentication for Windows and Linux Virtual Machines
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: 'NOTE: You will notice that the System assigned managed identity under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.'
+  duration: 30 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Entra
+    - Microsoft Entra ID
+    - Windows
 ---
 
 # Lab 10 - Microsoft Entra Authentication for Windows and Linux Virtual Machines
