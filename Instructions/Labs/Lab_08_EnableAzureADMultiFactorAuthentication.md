@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '08 - Enable multi-factor authentication'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 08 - Enable multi-factor authentication
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Microsoft Entra identity using a different password specific to that app.
+  duration: 15 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 08 - Enable multi-factor authentication
