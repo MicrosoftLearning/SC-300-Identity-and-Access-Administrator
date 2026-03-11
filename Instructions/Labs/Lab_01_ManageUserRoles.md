@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '01 - Manage User Roles'
-    learning path: '01'
-    module: 'Module 01 - Implement an Identity Management Solution'
+  title: 01 - Manage User Roles
+  learning path: '01'
+  module: Module 01 - Implement an Identity Management Solution
+  description: Explore the different methods to create, remove, and add roles to new users in your Microsoft Entra tenant.
+  duration: 30 minutes
+  level: 300
+  islab: true
 ---
 
 # WWL Tenants - Terms of Use

@@ -1,8 +1,18 @@
 ---
 lab:
-    title: '28 - Monitor and managed security posture with Identity Secure Score'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 28 - Monitor and managed security posture with Identity Secure Score
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: Microsoft Entra Identity Protection provides automated detection and remediation to identity-based risks, and provides data in the portal to investigate potential risks. Microsoft Entra Identity Protection also provides an Identity Secure Score to monitor and improve your identity security posture. Review and execute an improvement action.
+  duration: 15 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Defender
+    - Microsoft Defender for Cloud
+    - Microsoft Defender XDR
+    - Microsoft Entra
+    - Microsoft Entra ID
 ---
 
 # Lab 28 - Monitor and managed security posture with Identity Secure Score

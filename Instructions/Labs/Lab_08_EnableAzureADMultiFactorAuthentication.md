@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '08 - Enable multi-factor authentication'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 08 - Enable multi-factor authentication
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: Roll out a multifactor authentication system to your Microsoft Entra tenant. Explore different authentication methods based on your companies security goals.
+  duration: 15 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 08 - Enable multi-factor authentication

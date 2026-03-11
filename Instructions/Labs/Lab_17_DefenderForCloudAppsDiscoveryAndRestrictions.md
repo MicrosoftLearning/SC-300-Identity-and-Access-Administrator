@@ -1,8 +1,15 @@
 ---
 lab:
-    title: '17 - Defender for Cloud Apps application discovery and enforcing restrictions'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 17 - Defender for Cloud Apps application discovery and enforcing restrictions
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: Block unsanctioned apps using Microsoft Defender for Cloud Apps. Explore the features and use of the Defender portal.
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Defender for Cloud Apps
+    - Microsoft Entra
 ---
 
 # Lab 17 - Defender for Cloud Apps application discovery and enforcing restrictions

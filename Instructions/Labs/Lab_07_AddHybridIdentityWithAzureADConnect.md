@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '07 - Optional --- Add Hybrid Identity with Microsoft Entra Connect'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 07 - Optional --- Add Hybrid Identity with Microsoft Entra Connect
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: Configure Azure AD Connect attribute level filtering that will limit synchronization of user accounts to those with the UPN suffix matching the custom domain name of the target Azure AD tenant.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 07: OPTIONAL --- Add Hybrid Identity with Microsoft Entra Connect

@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '20 - Implement access management for apps'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 20 - Implement access management for apps
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: Your organization requires that only specific users or groups have access to enterprise applications. You must assign a user to a specific application.
+  duration: 5 minutes
+  level: 100
+  islab: true
 ---
 
 # Lab 20 - Implement access management for apps

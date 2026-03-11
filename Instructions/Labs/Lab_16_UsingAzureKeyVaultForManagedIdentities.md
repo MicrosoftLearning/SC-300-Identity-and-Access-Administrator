@@ -1,8 +1,15 @@
 ---
 lab:
-    title: '16 - Using Azure Key Vault for Managed Identities'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 16 - Using Azure Key Vault for Managed Identities
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: Create and configure and Azure Key Vault.  Then use it to store secrets, passwords, and key for use by applications and resources running in your cloud environment.
+  duration: 35 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure Key Vault
+    - Microsoft Entra
 ---
 
 # Lab 16 - Using Azure Key Vault for Managed Identities

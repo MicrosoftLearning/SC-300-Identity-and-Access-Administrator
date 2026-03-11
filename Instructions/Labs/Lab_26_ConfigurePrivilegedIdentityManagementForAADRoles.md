@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '26 - Configure Privileged Identity Management for Microsoft Entra roles'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 26 - Configure Privileged Identity Management for Microsoft Entra roles
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: When you need to assume an Microsoft Entra role, you can request activation by opening My roles in Privileged Identity Management.
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 26: Configure Privileged Identity Management for Microsoft Entra roles

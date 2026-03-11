@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '15 - Configure an Multifactor authentication registration policy'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 15 - Configure an Multifactor authentication registration policy
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: Create, configure, and deploy a multifactor authentication registry policy, then track the adoption with built-in reporting.
+  duration: 10 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 15 - Configure an Multifactor authentication registration policy

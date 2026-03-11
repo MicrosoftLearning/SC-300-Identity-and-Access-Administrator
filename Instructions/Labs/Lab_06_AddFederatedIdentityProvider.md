@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '06 - Add a federated identity provider'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 06 - Add a federated identity provider
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: Add and external federated identity provide to your Microsoft Entra tenant.
+  duration: 25 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab 06: Add a federated identity provider

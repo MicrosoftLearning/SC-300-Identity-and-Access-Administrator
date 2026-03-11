@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '21 - Grant tenant-wide admin consent to an application'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 21 - Grant tenant-wide admin consent to an application
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
+  duration: 15 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab 21: Grant tenant-wide admin consent to an application

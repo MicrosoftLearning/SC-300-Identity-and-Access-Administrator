@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '22 - Create and manage a catalog of resources in Microsoft Entra entitlement management'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 22 - Create and manage a catalog of resources in Microsoft Entra entitlement management
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: Create and deploy an entitlement package using Microsoft Entra Entitlement Management. Then work as a user to request, and use the entitlement.
+  duration: 15 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 22: Create and manage a catalog of resources in Microsoft Entra entitlement management

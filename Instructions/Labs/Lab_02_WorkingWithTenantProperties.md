@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '02 - Working with Tenant Properties'
-    learning path: '01'
-    module: 'Module 01 - Implement an Identity Management Solution'
+  title: 02 - Working with Tenant Properties
+  learning path: '01'
+  module: Module 01 - Implement an Identity Management Solution
+  description: You need to identify and update the different properties associated with your tenant.
+  duration: 15 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab 02: Working with tenant properties

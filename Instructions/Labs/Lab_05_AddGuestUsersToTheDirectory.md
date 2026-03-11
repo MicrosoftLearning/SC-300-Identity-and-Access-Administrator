@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '05 - Add guest users to the directory'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 05 - Add guest users to the directory
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: Explore how to invite external users into your Microsoft Entra tenant from several external tenants.
+  duration: 20 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab 05: Add guest users to the directory

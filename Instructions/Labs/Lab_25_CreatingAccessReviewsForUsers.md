@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '25 - Creating Access Reviews for Internal and External Users'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 25 - Creating Access Reviews for Internal and External Users
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: Privileged user access should be regularly reviewed in a similar manner. Automate this review of access rights using Microsoft Entra Access Review.
+  duration: 5 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab 25 - Creating Access Reviews for Internal and External Users

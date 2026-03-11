@@ -1,8 +1,15 @@
 ---
 lab:
-    title: '11 - Assign Azure resource roles in Privileged Identity Management'
-    learning path: '02'
-    module: 'Module 02 - Implement an authentication and access management solution'
+  title: 11 - Assign Azure resource roles in Privileged Identity Management
+  learning path: '02'
+  module: Module 02 - Implement an authentication and access management solution
+  description: Assign priviledged access to Azure Resources using Privileged Identity Management (PIM).
+  duration: 10 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Microsoft Entra
 ---
 
 # Lab 11 - Assign Azure resource roles in Privileged Identity Management

@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '14 - Enable sign in and user risk policies'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 14 - Enable sign in and user risk policies
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: As an additional layer of security, you need to enable and configure your Microsoft Entra organization's sign in and user risk policies.
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 14 - Enable sign in and user risk policies
