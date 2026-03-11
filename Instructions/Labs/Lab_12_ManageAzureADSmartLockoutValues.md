@@ -1,8 +1,15 @@
 ---
 lab:
-    title: '12 - Manage Microsoft Entra smart lockout values'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 12 - Manage Microsoft Entra smart lockout values
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: Based on your organizational requirements, you can customize the Microsoft Entra smart lockout values. Customization of the smart lockout settings, with values specific to your organization, requires Microsoft Entra ID Premium P1 or higher licenses for your users.
+  duration: 5 minutes
+  level: 100
+  islab: true
+  primarytopics:
+    - Microsoft Entra
+    - Microsoft Entra ID
 ---
 
 # Lab 12 - Manage Microsoft Entra smart lockout values
