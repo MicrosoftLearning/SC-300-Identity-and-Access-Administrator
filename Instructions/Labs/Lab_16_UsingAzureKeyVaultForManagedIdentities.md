@@ -1,8 +1,16 @@
 ---
 lab:
-    title: '16 - Using Azure Key Vault for Managed Identities'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 16 - Using Azure Key Vault for Managed Identities
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: When you use managed identities for Azure resources, your code can get access tokens to authenticate to resources that support Microsoft Entra authentication. However, not all Azure services support Microsoft Entra authentication. To use managed identities for Azure resources with those services, store the service credentials in Azure Key Vault, and use the managed identity to access Key Vault to retrieve the credentials.
+  duration: 35 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Key Vault
+    - Microsoft Entra
 ---
 
 # Lab 16 - Using Azure Key Vault for Managed Identities
