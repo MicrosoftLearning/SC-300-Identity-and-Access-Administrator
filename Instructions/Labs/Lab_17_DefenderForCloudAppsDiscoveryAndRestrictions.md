@@ -1,8 +1,17 @@
 ---
 lab:
-    title: '17 - Defender for Cloud Apps application discovery and enforcing restrictions'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 17 - Defender for Cloud Apps application discovery and enforcing restrictions
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: Once the application has been blocked as unsanctioned, the application will not be accessible through browser, in-private browser, or store download on a Client that is onboarded to MDE (Microsoft Defender for Endpoint) integrated with Microsoft Defender for Cloud Apps.
+  duration: 10 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Defender
+    - Microsoft Defender for Cloud
+    - Microsoft Defender for Cloud Apps
+    - Microsoft Defender for Endpoint
 ---
 
 # Lab 17 - Defender for Cloud Apps application discovery and enforcing restrictions
