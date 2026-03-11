@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '19 - Register an application'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 19 - Register an application
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: 'To configure application settings based on the platform or device you''re targeting:'
+  duration: 30 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab 19 - Register an application
