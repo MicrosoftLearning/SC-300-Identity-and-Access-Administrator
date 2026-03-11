@@ -1,8 +1,16 @@
 ---
 lab:
-    title: '27 - Microsoft Sentinel Kusto Queries for Microsoft Entra data sources'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 27 - Microsoft Sentinel Kusto Queries for Microsoft Entra data sources
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution. Through connecting data sources from Microsoft and third-party security solutions, you have the ability to execute security operations tasks. In this lab exercise, you will create a Microsoft Sentinel workspace with data connectors to Microsoft Entra ID for executing hunting queries using Kusto Query Language (KQL).
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
+    - Microsoft Entra ID
+    - Microsoft Sentinel
 ---
 
 # Lab 27 OPTIONAL - Microsoft Sentinel Kusto Queries for Microsoft Entra data sources
