@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '23 - Add terms of use and acceptance reporting'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 23 - Add terms of use and acceptance reporting
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: You must create and enforce a ToU policy for your organization.
+  duration: 20 minutes
+  level: 100
+  islab: true
 ---
 
 # Lab 23: Add terms of use and acceptance reporting
