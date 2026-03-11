@@ -3,9 +3,9 @@ lab:
   title: 06 - Add a federated identity provider
   learning path: '01'
   module: Module 01 - Implement an identity management solution
-  description: This completes the configuration of Google as an identity provider.
+  description: Add and external federated identity provide to your Microsoft Entra tenant.
   duration: 25 minutes
-  level: 200
+  level: 300
   islab: true
 ---
 

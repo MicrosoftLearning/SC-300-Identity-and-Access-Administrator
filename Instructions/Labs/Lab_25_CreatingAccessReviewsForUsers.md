@@ -3,7 +3,7 @@ lab:
   title: 25 - Creating Access Reviews for Internal and External Users
   learning path: '04'
   module: Module 04 - Plan and Implement and Identity Governance Strategy
-  description: Privileged user access should be regularly reviewed in a similar manner. Since these are elevated access assignments, the review of these should be done on a consistent basis as identified by the company. Unused and unnecessary privileged assignments should be removed. Automated removal should also be configured for users that are no longer with the company or have changed departments within the company.
+  description: Privileged user access should be regularly reviewed in a similar manner. Automate this review of access rights using Microsoft Entra Access Review.
   duration: 5 minutes
   level: 200
   islab: true

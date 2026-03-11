@@ -5,7 +5,7 @@ lab:
   module: Module 01 - Implement an Identity Management Solution
   description: You need to identify and update the different properties associated with your tenant.
   duration: 15 minutes
-  level: 100
+  level: 200
   islab: true
 ---
 

@@ -3,7 +3,7 @@ lab:
   title: 19 - Register an application
   learning path: '03'
   module: Module 03 - Implement Access Management for Apps
-  description: 'To configure application settings based on the platform or device you''re targeting:'
+  description: Register an application in your Microsoft Entra tenant using Application Registration.
   duration: 30 minutes
   level: 300
   islab: true

@@ -3,7 +3,7 @@ lab:
   title: 01 - Manage User Roles
   learning path: '01'
   module: Module 01 - Implement an Identity Management Solution
-  description: After the users have been created, you will be prompted that the creation has succeeded. Close the Bulk create users tile and the new users will be populated in the list of Users | All users.
+  description: Explore the different methods to create, remove, and add roles to new users in your Microsoft Entra tenant.
   duration: 30 minutes
   level: 300
   islab: true

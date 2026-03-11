@@ -3,9 +3,9 @@ lab:
   title: 10 - Microsoft Entra ID Authentication for Windows and Linux Virtual Machines
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-  description: 'NOTE: You will notice that the System assigned managed identity under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.'
+  description: The company has decided that Microsoft Entra ID should be used to login to virtual machines for remote access.  This lab will show how this can be setup for Windows and Linux virtual machines.
   duration: 30 minutes
-  level: 200
+  level: 300
   islab: true
   primarytopics:
     - Microsoft Entra

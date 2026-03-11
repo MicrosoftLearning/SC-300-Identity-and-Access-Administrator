@@ -5,7 +5,7 @@ lab:
   module: Module 04 - Plan and Implement and Identity Governance Strategy
   description: You must create and enforce a ToU policy for your organization.
   duration: 20 minutes
-  level: 100
+  level: 200
   islab: true
 ---
 
