@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '05 - Add guest users to the directory'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 05 - Add guest users to the directory
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: The Edge browser will open and you will be prompted to sign-in. Use the MOD Administrator account to connect. Mark the consent box, then accpet the permissions request; then close the browser window.
+  duration: 20 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab 05: Add guest users to the directory
