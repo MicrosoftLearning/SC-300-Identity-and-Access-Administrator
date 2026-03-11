@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '13 - Implement and test a conditional access policy'
-    learning path: '02'
-    module: 'Module 02 - Implement an Authentication and Access Management Solution'
+  title: 13 - Implement and test a conditional access policy
+  learning path: '02'
+  module: Module 02 - Implement an Authentication and Access Management Solution
+  description: Your organization needs to be able to limit user access to its internal applications. You must deploy an Microsoft Entra conditional access policy.
+  duration: 20 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 13 - Implement and test a conditional access policy
