@@ -1,8 +1,14 @@
 ---
 lab:
-    title: '22 - Create and manage a catalog of resources in Microsoft Entra entitlement management'
-    learning path: '04'
-    module: 'Module 04 - Plan and Implement and Identity Governance Strategy'
+  title: 22 - Create and manage a catalog of resources in Microsoft Entra entitlement management
+  learning path: '04'
+  module: Module 04 - Plan and Implement and Identity Governance Strategy
+  description: The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
+  duration: 15 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Entra
 ---
 
 # Lab 22: Create and manage a catalog of resources in Microsoft Entra entitlement management
