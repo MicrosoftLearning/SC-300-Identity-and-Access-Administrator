@@ -1,8 +1,12 @@
 ---
 lab:
-    title: '04 - Configure external collaboration settings'
-    learning path: '01'
-    module: 'Module 01 - Implement an identity management solution'
+  title: 04 - Configure external collaboration settings
+  learning path: '01'
+  module: Module 01 - Implement an identity management solution
+  description: You must enable external collaboration settings for your organization for approved guests access.
+  duration: 5 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab 04: Configure external collaboration settings
