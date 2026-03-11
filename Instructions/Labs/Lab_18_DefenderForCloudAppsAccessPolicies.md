@@ -1,8 +1,16 @@
 ---
 lab:
-    title: '18 - Defender for Cloud Apps Access Policies'
-    learning path: '03'
-    module: 'Module 03 - Implement Access Management for Apps'
+  title: 18 - Defender for Cloud Apps Access Policies
+  learning path: '03'
+  module: Module 03 - Implement Access Management for Apps
+  description: Microsoft Defender for Cloud Apps allows us to create additional Conditional Access policies specific to the cloud apps that we are monitoring. Creating these policies can be done from within the Control menu within the Microsoft Defender for Cloud Apps portal.
+  duration: 20 minutes
+  level: 200
+  islab: true
+  primarytopics:
+    - Microsoft Defender
+    - Microsoft Defender for Cloud
+    - Microsoft Defender for Cloud Apps
 ---
 
 # 18 - Defender for Cloud Apps Access and Session Policies
