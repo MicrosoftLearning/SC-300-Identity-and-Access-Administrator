@@ -42,7 +42,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
   | Field | Value to use |
   | :-- | :-- |
   | Subscription | Accept the defualt |
-  | Resource Group | Create New - rgEntraLogin |
+  | Resource Group | Create New - rgEL |
   | Virtual machine name | vmEntraLogin |
   | Region | *default* |
   | Availability options | No infrastructure redundancy required |
@@ -131,7 +131,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 #### Task 5 - Connect to the Windows virtual machine using Microsoft Entra ID login
 
-1. Open the **<<virtual machine name>>-EntraID.RDP
+1. Open the **<<virtual machine name>>-EntraID.RDP**
 
 1. Select **Connect** when the dialog opens.
 
