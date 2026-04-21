@@ -45,7 +45,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com).
 
-2. In the left navigation, under **Identity**, select **Groups**, then select **All groups**.
+2. In the left navigation, under **Entra ID**, select **Groups**, then select **All groups**.
 3. In the Groups page, on the menu, select **New group**.
 4. Create a group using the following information:
 
@@ -91,7 +91,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 10. Return to the browser tab with **Microsoft Entra admin center** open.
 
-11. Navigate back to the **All groups** in the left navigation, under **Identity**, select **Groups**
+11. Navigate back to the **All groups** in the left navigation, under **Entra ID**, select **Groups**
 
 12. In the Groups page, select **sg-SC300-O365**.
 
@@ -126,7 +126,7 @@ Part of your duties as an Microsoft Entra administrator is to create different t
 
 1. Browse to [https://entra.microsoft.com]( https://entra.microsoft.com).
 
-2. In the left navigation, under **Identity**, select **Groups**, then select **All Groups**.
+2. In the left navigation, under **Entra ID**, select **Groups**, then select **All Groups**.
 
 3. In the Groups page, on the menu, select **New group**.
 
@@ -152,7 +152,7 @@ As your company grows, manually group management is too time consuming. Since st
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) with an provided administrator account. You need at least User Administrator role in the tenant.
 
-2. Select **Identity**.
+2. Select **Entra ID**.
 
 3. Under **Groups**, select **All groups**, and then select **New group**.
 
@@ -189,7 +189,7 @@ As your company grows, manually group management is too time consuming. Since st
 **Note** - The population of Dynamic group membership may take up to 15 minutes.
 
 1. Select on the **Home** `Microsoft Entra admin center`.
-2. Launch **Identity**.
+2. Launch **Entra ID**.
 3. In the **Groups** menu Select on **All groups**.
 4. In the filter box type **SC300** and your newly created group will be listed.
 5. Select on **SC300-myDynamicGroup** to open the group.
