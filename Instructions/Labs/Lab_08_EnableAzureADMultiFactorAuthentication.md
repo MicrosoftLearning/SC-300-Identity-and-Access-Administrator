@@ -33,7 +33,7 @@ To improve security in your organization, you've been directed to enable multifa
 
 3. In the search results, select **Multifactor authentication**.
 
-    Alternatively, you can open **Identity**, then select **Protection**, and select **Multifactor authentication**.
+    Alternatively, you can open **Entra ID**, then select **Protection**, and select **Multifactor authentication**.
 
 4. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
 
@@ -51,7 +51,7 @@ To improve security in your organization, you've been directed to enable multifa
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Microsoft Entra admin center and select **Identity**, then **Protection**, and then **Conditional access**.
+1. Switch back to the Microsoft Entra admin center and select **Entra ID**, then **Protection**, and then **Conditional access**.
 
 2. On the menu, Select **+ New policy**. From the drop down select **+ Create new policy**.
 
