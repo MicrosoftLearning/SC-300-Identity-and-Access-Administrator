@@ -74,7 +74,7 @@ A recent partnership has been established with another company. For now, employe
 
     ![Screen image displaying the example bulk invite guests template CSV](./media/lp1-mod3-template-csv.png)
 
-**Lab Tip** - The users listed in the screenshot and the template files are examples, they don't really exist.  You will have to add a real users to fully test this feature.
+    **Lab Tip** - The users listed in the screenshot and the template files are examples, they don't really exist.  You will have to add a real users to fully test this feature.
 
 8. Save the file.
 
