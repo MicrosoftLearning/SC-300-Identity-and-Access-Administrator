@@ -118,7 +118,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 2. Select **Microsoft Entra ID**.
 
-3. Under **Identity**, select **External Identities**.
+3. Under **Entra ID**, select **External Identities**.
 
 4. Choose **All identity providers** from the menu on the left.
 
