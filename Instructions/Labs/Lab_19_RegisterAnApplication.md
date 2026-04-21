@@ -25,7 +25,7 @@ Registering your application establishes a trust relationship between your app a
 
 2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the **Identity** menu, under **Applications**, select **App registrations.**
+3. On the **Entra ID** menu, select **App registrations.**
 
 4. On the **App registrations** page, on the menu, select **+ New registration**.
 
@@ -103,7 +103,7 @@ The code in a client application requests permission to perform operations defin
 
 First, follow these steps to create an example scope named Employees.Read.All:
 
-1. Select **Identity**, then **Application** and finally select **App registrations**, and then select your API's app registration.
+1. Select **Entra ID**, select **App registrations**, and then select your API's app registration.
 
 2. Select **Expose an API**, then **+ Add a scope**.
 
@@ -177,7 +177,7 @@ You need to create a new custom role for app management. This new role should be
 
 2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the lefthand menu, under **Identity**, select **Roles and admins**.
+3. On the lefthand menu, under **Entra ID**, select **Roles and admins**.
 
 4. Then select **Roles & admins** item, then select **+ New custom role**.
 
