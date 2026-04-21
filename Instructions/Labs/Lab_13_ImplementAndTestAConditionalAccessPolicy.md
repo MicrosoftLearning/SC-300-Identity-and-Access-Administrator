@@ -53,7 +53,7 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
 3. On the menu, under **Entra ID**, select **Conditional access**.
 
-4. On the **Overview (Preview)**, click **+ Create new policy**.
+4. On the **Conditional Access | Overview** blade, click **+ Create new policy**.
 
    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
