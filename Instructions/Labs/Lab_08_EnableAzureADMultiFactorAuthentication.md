@@ -33,7 +33,7 @@ To improve security in your organization, you've been directed to enable multifa
 
 3. In the search results, select **Multifactor authentication**.
 
-    Alternatively, you can open **Entra ID**, then select **Protection**, and select **Multifactor authentication**.
+    Alternatively, you can open **Entra ID** and select **Multifactor authentication**.
 
 4. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
 
