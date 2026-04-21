@@ -27,25 +27,21 @@ Multifactor authentication provides a means to verify who you are using more tha
 
 1. Sign in to the [https://entra.microsoft.com]( https://entra.microsoft.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Microsoft Entra ID**.
+2. Open the portal menu and then select **ID Protection**.
 
-3. On the lefthand men, under **Identity**, select **Protection**.
+3. On the left-hand menu, under **ID Protection**, select **Dashboard**.
 
-4. On the Security page, in the left navigation, select **Identity protection**.
-
-5. In the Identity protection page, in the left navigation under **Protect**, select **Multifactor authentication registration policy**.
+4. On the **ID Protection | Dashboard** blade, under **Protect** in the left-hand menu, select **Multifactor authentication registration policy**.
 
     ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/lp2-mod4-browse-to-mfa-registration-policy.png)
 
-6. Under **Assignments**
+5. Under **Assignments**, select **All users** and review the available options.
 
-7. Under **Assignments**, select **All users** and review the available options.
+6. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
 
-8. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
+7. Additionally, you can choose to exclude users from the policy.
 
-9. Additionally, you can choose to exclude users from the policy.
-
-10. Under **Controls**, notice that the **Require Microsoft Entra ID multifactor authentication registration** is selected and cannot be changed.
+8. Under **Controls**, notice that the **Require Microsoft Entra ID multifactor authentication registration** is selected and cannot be changed.
 
 
 #### Task 2 - Configure Microsoft Entra Identity Protection policy for MFA registration
@@ -54,7 +50,7 @@ Multifactor authentication provides a means to verify who you are using more tha
 
 1. In the Microsoft Entra admin center, navigate to **Microsoft Entra ID Protection** in the search bar.
 
-1. Under **Protect** in the menu, select **Multifactor authentication registration policy**.
+1. Under **Protect** in the left-hand menu, select **Multifactor authentication registration policy**.
 
 1. Under **Assignments**, select **All users** under Users, and select a user to enforce MFA.
 
