@@ -27,7 +27,7 @@ The company has decided to empower the employees and enable self-service passwor
 
 You want to roll out SSPR to a limited set of users first to make sure your SSPR configuration works as expected. Let's create a security group for the limited rollout and add a user to the group.
 
-1. On the Microsoft Entra admin center, open the **Identity** navigation menu on the left.
+1. On the Microsoft Entra admin center, open the **Entra ID** navigation menu on the left.
 1. Under **Groups**, select **All groups** and select **New Group** on the right side window.
 
 2. Create a new group using the following information:
@@ -51,7 +51,7 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 Enable SSPR for the group.
 
-1. Browse back to the **Identity** navigation menu.
+1. Browse back to the **Entra ID** navigation menu.
 
 2. Under **Protection**, select **Password reset**.
 
