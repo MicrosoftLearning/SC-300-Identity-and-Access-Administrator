@@ -49,11 +49,11 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
 1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-2. Open the portal menu and then select **Microsoft Entra ID**.
+2. Open the portal menu and open **Microsoft Entra ID** and select **Conditional access**.
 
-3. On the menu, under **Entra ID**, select **Conditional access**.
+3. On the left menu select **Policies**.
 
-4. On the **Conditional Access | Overview** blade, click **+ Create new policy**.
+4. On the **Conditional Access | Policies** blade, click **+ New policy**.
 
    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
