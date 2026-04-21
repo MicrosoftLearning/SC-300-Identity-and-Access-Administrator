@@ -121,15 +121,19 @@ You should test your conditional access policies to ensure they working as expec
 
 1. Select **What If**.
 
-1. Under **User or Workload identity**, select **No user or service principal selected**.
+1. Under **Select identity type** verify that **Users** is selected, and then select the **Edit user** link.
 
 1. Choose **DebraB** as the user.
 
-1. Under **Cloud apps, actions, or authentication context**, select **Sway**. 
+1. Under **Select target type** verify that **Cloud apps** is selected, select the **Select cloud app** link, and then search for and select **Sway**.
 
-1. Select **What if**. You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
+1. Under **Device platform** select **Windows**.
 
-This allows you to test the policies and their affectiveness before enabling the policies.
+2. Under **Client app** select **Browser**.
+
+1. Note the other options available, then scroll down and select **What if**.  You will be provided with a report at the bottom of the tile for **Policies that will apply** and **Policies that will not apply**.
+
+This allows you to test the policies and their effectiveness with different conditions.
 
 
 ### Exercise 3 - Configure sign in frequency controls using a conditional access policy
