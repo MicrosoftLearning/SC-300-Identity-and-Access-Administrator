@@ -51,37 +51,35 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
 2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the menu, under **Identity**, select **Protection**.
+3. On the menu, under **Entra ID**, select **Conditional access**.
 
-4. On the Security page, in the left navigation, select **Conditional access**.
-
-5. On the **Overview (Preview)**, click **+ Create new policy**.
+4. On the **Overview (Preview)**, click **+ Create new policy**.
 
    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
-6. In the **Name** box, enter **Block Sway for DebraB**.
+5. In the **Name** box, enter **Block Sway for DebraB**.
 
    **Note** - Using this naming to help you quickly recognize the policy and its function.
 
-7. Under **Assignments**, select **0 users and groups selected**.
+6. Under **Assignments**, select **0 users and groups selected**.
 
-8. On the Include tab, select **Select users and groups**, and then mark **Users and groups** check box.
+7. On the Include tab, select **Select users and groups**, and then mark **Users and groups** check box.
 
-9. In the Select pane, select **DebraB** account and then select **Select**.
+8. In the Select pane, select **DebraB** account and then select **Select**.
 
-10. In the **Target resources**, select **No target resource selected**.
+9. In the **Target resources**, select **No target resource selected**.
 
-11. Verify **Cloud apps** is selected and then select **Select apps**, then select **None** in the select section.
+10. Verify **Cloud apps** is selected and then select **Select apps**, then select **None** in the select section.
 
-12. In the Select pane, search for **Sway** and select **Sway** and then select **Select**.
+11. In the Select pane, search for **Sway** and select **Sway** and then select **Select**.
 
-13. Under **Access controls**, within the **Grant** section, select **0 controls selected**.
+12. Under **Access controls**, within the **Grant** section, select **0 controls selected**.
 
-14. In the Grant pane, select **Block access** and then select **Select**.
+13. In the Grant pane, select **Block access** and then select **Select**.
 
    **Note** - This policy is being configure for the exercise only and is being used to quickly demonstrate a conditional access policy.
 
-15. Under **Enable policy**, select **On**, and then select **Create**.
+14. Under **Enable policy**, select **On**, and then select **Create**.
 
    ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-conditional-access-policy.png)
 
@@ -117,9 +115,7 @@ You should test your conditional access policies to ensure they working as expec
 
 1. Open the Microsoft Entra admin center menu and then select **Microsoft Entra ID**.
 
-1. On the menu, under **Identity**, select **Protection**.
-
-1. On the Security page, in the left navigation, select **Conditional access**.
+1. On the menu, under **Entra ID**, select **Conditional access**.
 
 1. In the navigation pane, select **Policies**.
 
@@ -146,37 +142,35 @@ As part of your company's larger security configuration, you must test a conditi
 
 2. Open the portal menu and then select **Microsoft Entra ID**.
 
-3. On the menu, under **Identity**, select **Protection**.
+3. On the menu, under **Entra ID**, select **Conditional access**.
 
-4. On the Protection menu, in the left navigation, select **Conditional access**.
-
-5. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
+4. On the top menu, select **+ New policy** from the drop-down select **Create a new policy**.
 
    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
-6. In the **Name** box, enter **Sign in frequency**.
+5. In the **Name** box, enter **Sign in frequency**.
 
-7. Under **Assignments**, select **0 users and groups selected**.
+6. Under **Assignments**, select **0 users and groups selected**.
 
-8. On the Include tab, mark **Select users and groups**, then select the **Users and groups** check box.
+7. On the Include tab, mark **Select users and groups**, then select the **Users and groups** check box.
 
-9. In the Select pane, select your **Grady Archie** account and then select **Select**.
+8. In the Select pane, select your **Grady Archie** account and then select **Select**.
 
-10. Select **Target Resources - No target resources selected**.
+9. Select **Target Resources - No target resources selected**.
 
-11. Within the **Include** make sure **Select resources** is selected, then choose **None** in the Select section.
+10. Within the **Include** make sure **Select resources** is selected, then choose **None** in the Select section.
 
-12. In the Select pane, select **Office 365** and then select **Select**.
+11. In the Select pane, select **Office 365** and then select **Select**.
 
-13. Under **Access controls**, select **Session**.
+12. Under **Access controls**, select **Session**.
 
-14. In the Session pane, select **Sign-in frequency**.
+13. In the Session pane, select **Sign-in frequency**.
 
-15. In the value box, enter **30**.
+14. In the value box, enter **30**.
 
-16. Select the units menu, select **Days**, and then select **Select**.
+15. Select the units menu, select **Days**, and then select **Select**.
 
-17. Under **Enable policy**, select **Report-only**, and then select **Create**.
+16. Under **Enable policy**, select **Report-only**, and then select **Create**.
 
    ![Screen image displaying a new conditional access policy with policy settings highlighted](./media/lp2-mod3-create-session-conditional-access-policy.png)
 
