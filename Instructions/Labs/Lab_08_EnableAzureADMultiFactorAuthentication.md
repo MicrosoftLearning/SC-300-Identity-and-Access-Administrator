@@ -47,13 +47,13 @@ To improve security in your organization, you've been directed to enable multifa
 
     You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Microsoft Entra identity using a different password specific to that app.
 
-#### Task 2 - Setup conditional access rules for MFA for Delia Dennis
+#### Task 2 - Setup Conditional Access rules for MFA for Delia Dennis
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Microsoft Entra admin center and select **Entra ID** and then **Conditional access**.
+1. Switch back to the Microsoft Entra admin center and select **Entra ID** and then **Conditional Access**.
 
-2. On the menu, Select **+ New policy**. From the drop down select **+ Create new policy**.
+2. On the menu, Select **+ New policy**.
 
     ![Screenshot highlighting the New Policy button in the Microsoft Entra admin center.](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
 
