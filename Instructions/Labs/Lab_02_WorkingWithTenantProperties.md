@@ -27,7 +27,7 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
 
 1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-1. In the **Identity** menu, use the **Show more** option at the bottom.
+1. In the **Entra ID** menu, use the **Show more** option at the bottom.
 
 1.  Open the **Settings** menu, select **Domain names**.
 
@@ -53,7 +53,7 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
 
 #### Task 1 - Set the tenant name and technical contact
 
-1. From within Microsoft Entra admin center, open the **Identity** menu.
+1. From within Microsoft Entra admin center, open the **Entra ID** menu.
 
 1. In the left navigation, select **Overview** menu item, then select **Properties**.
 
@@ -70,7 +70,7 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
 
 #### Task 2 - Review the Country or region and other values associated with your tenant
 
-1. In the **Identity** menu, select **Overview**, then select **Properties**.
+1. In the **Entra ID** menu, select **Overview**, then select **Properties**.
 
 2. Under **Tenant properties**, locate **Country or region** and review the information.
 
@@ -86,7 +86,7 @@ Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft
 
 1. Open the Microsoft Entra admin center [https://entra.microsoft.com](https://entra.microsoft.com)
 
-1. In the **Identity** menu, select **Overview**, then select **Properties**.
+1. In the **Entra ID** menu, select **Overview**, then select **Properties**.
 
 1. Under **Tenant properties**, locate **Tenant ID**. This is your unique tenant identifier.
 
@@ -104,7 +104,7 @@ Microsoft strongly recommends you add both your global privacy contact and your 
 
 You add your organization's privacy information in the **Properties** area of Microsoft Entra ID. To access the Properties area and add your privacy information:
 
-1. In the **Identity** menu, select **Overview**, then select **Properties**.
+1. In the **Entra ID** menu, select **Overview**, then select **Properties**.
 
     ![Screen image displaying tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted](./media/properties-area.png)
 
