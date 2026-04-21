@@ -68,10 +68,9 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 5. Select **No target resources selected** in Target resources.
 
-   - In the dropdown, make sure **Cloud apps** is selected.
-   - Under Include, mark **Resources (formerly cloud apps)** and note the warning the pops up about possibly locking yourself out. 
-   - Now under Include section, choose the **Select resources** item.
-   - In the **Select** section select the **None** link.
+   - In the dropdown, make sure **Resources (formerly cloud apps)** is selected.
+   - Under Include choose the **Select resources** item.
+   - In the **Select specific resources** section select the **None** link.
    - In the newly opened dialog, choose **Office 365**.
       - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
    - Choose **Select**.
