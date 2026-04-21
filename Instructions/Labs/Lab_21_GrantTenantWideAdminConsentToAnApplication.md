@@ -27,7 +27,7 @@ For applications your organization has developed or for those that are registere
 
 The Global Administrator role is required in order to provide admin consent for application permissions to the Microsoft Graph API.
 
-1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Entra admin center, browse to **Identity**, **Applications**, then select **App registrations**, and then select **Demo app**.
+1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Entra admin center, browse to **Entra ID**, then select **App registrations**, and then select **Demo app**.
 
 2. On the **Demo app** page, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
 
@@ -49,20 +49,18 @@ The Global Administrator role is required in order to provide admin consent for 
 
 You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
 
-1. In Microsoft Entra admin center, browse to **Identity** and  **Applications**.
+1. In Microsoft Entra admin center, browse to **Entra ID** and select **Enterprise applications**.
 
-2. From the menu open **Enterprise applications**.
+2. From the list of Enterprise applications pick the **Demo app** that we registered earlier.
 
-3. From the list of Enterprise applications pick the **Demo app** that we registered earlier.
+3. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.**
 
-4. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.**
-
-5. Under **Permissions,** select **Grant admin consent.**
+4. Under **Permissions,** select **Grant admin consent.**
 
     ![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](./media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
 
    **Warning** - Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
 
-6. When prompted, sign in using your Global Administrator account.
+5. When prompted, sign in using your Global Administrator account.
 
-7. In the **Permissions requested** dialog box, review the information and then select **Accept**.
+6. In the **Permissions requested** dialog box, review the information and then select **Accept**.
