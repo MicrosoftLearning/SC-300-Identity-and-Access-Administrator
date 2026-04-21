@@ -49,7 +49,7 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
 1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-2. Open the portal menu and open **Microsoft Entra ID** and select **Conditional access**.
+2. Open the portal menu and select **Microsoft Entra ID**, and then select **Conditional access**.
 
 3. On the left menu select **Policies**.
 
