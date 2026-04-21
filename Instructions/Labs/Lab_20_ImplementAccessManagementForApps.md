@@ -27,7 +27,7 @@ Your organization requires that only specific users or groups have access to ent
 
 2. Look at the menu on the left side of the screen.
 
-3. On the Identity menu, under **Applications**, select **Enterprise applications**.
+3. On the **Entra ID** menu, select **Enterprise applications**.
 
 4. In the Enterprise applications pane, select **+ New application**.
 
