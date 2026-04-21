@@ -93,7 +93,7 @@ Your company recently hired a new employee who will perform duties as an applica
 
 #### Task 1 - Assign a role to a user
 
-Using Microsoft Entra ID, you can designate limited administrators to manage Entra ID tasks in less-privileged roles. Administrators can be assigned for such purposes as adding or changing users, assigning administrative roles, resetting user passwords, managing user licenses, and managing domain names.
+Using Microsoft Entra ID, you can designate limited administrators to manage identity tasks in less-privileged roles. Administrators can be assigned for such purposes as adding or changing users, assigning administrative roles, resetting user passwords, managing user licenses, and managing domain names.
 
 1. If you are not already logged in as an Administrator role, open the Microsoft Entra admin center and log in.
 2. Navigate to Entra ID and then select Users page.
