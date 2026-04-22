@@ -28,9 +28,9 @@ As an additional layer of security, you need to enable and configure your Micros
 
 1. Sign in to the [https://entra.microsoft.com]( https://entra.microsoft.com) using a Global administrator account.
 
-2. Open the portal menu and then select **Entra ID**.
+2. Open the portal menu and then select **ID Protection**.
 
-3. On menu, under **ID Protection**, select **Dashboard**.
+3. On the menu, under **ID Protection**, select **Dashboard**.
 
 4. In the Identity protection Dashboard, in the left navigation, select **User risk policy**.
 
