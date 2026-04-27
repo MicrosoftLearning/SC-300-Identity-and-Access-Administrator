@@ -77,7 +77,7 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
 
 2. Search for and then select **Privileged Identity Management.**
 
-    **Note** - you can find it in the menu at Identity - Identity Governance - Privileged Identity Management.
+    **Note** - you can find it in the Entra menu at **ID Governance** - **Privileged Identity Management**.
 
 3. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles.**
 
