@@ -120,7 +120,7 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
    | Username | **MiriamG@** `<<your domain.onmicrosoft.com>>` |
    | Password |  Enter the provided tenant admin password |
 
-4. From the **Identity** menu, open **Users** and then select **All users**.
+4. From the **Entra ID** menu, open **Users** and then select **All users**.
 5. Find **Miriam** in the list of users
 6. On the **Overview** page, look for the **Assigned roles**.
 7. Select **Eligible assignments**.
