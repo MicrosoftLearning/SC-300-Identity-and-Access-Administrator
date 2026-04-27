@@ -31,7 +31,7 @@ Follow these steps to open the settings for an Microsoft Entra role.
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
 
-2. Search for and then select **Privileged Identity Management.**
+2. Search for and then select **Microsoft Entra Privileged Identity Management**.
 
 3. In the Privileged Identity Management page, in the left navigation, select **Microsoft Entra roles.**
 
@@ -75,7 +75,7 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
 
 1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using a Global Administrator account.
 
-2. Search for and then select **Privileged Identity Management.**
+2. Search for and then select **Microsoft Entra Privileged Identity Management**.
 
     **Note** - you can find it in the Entra menu at **ID Governance** - **Privileged Identity Management**.
 
@@ -121,7 +121,7 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
    | Password |  Enter the provided tenant admin password |
 
 4. From the **Entra ID** menu, open **Users** and then select **All users**.
-5. Find **Miriam** in the list of users
+5. Find and select **Miriam Graham** in the list of users
 6. On the **Overview** page, look for the **Assigned roles**.
 7. Select **Eligible assignments**.
 1. Notice that the **Compliance Administrator** role is now available to Miriam.
@@ -130,8 +130,8 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
 
 When you need to assume an Microsoft Entra role, you can request activation by opening **My roles** in Privileged Identity Management.
 
-1. From the **Search, resources, services, and docs** bar, look for Privileged.
-2. Open the **Privileged Identity Management** page.
+1. From the **Search, resources, services, and docs** bar, search for **Privileged**.
+2. Open the **Microsoft Entra Privileged Identity Management** page.
 3. On the Privileged Identity Management page, in the left navigation menu, select **My roles.**
 
 4. In the My roles page, review the list of **Eligible assignments**.
