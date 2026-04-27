@@ -140,11 +140,11 @@ When you need to assume an Microsoft Entra role, you can request activation by o
 
 5. In the Compliance Administrator role row, select **Activate**.
 
-6. In the Activate – Compliance Administrator pane, select **Additional verification required** and then follow the instructions to provide additional security verification. You are required to authenticate only once per session.
+6. In the Activate – Compliance Administrator pane, select **Additional verification required** and then follow the instructions to provide additional security verification.
 
     ![Screen image displaying a popup to activate the compliance administrator](./media/lp4-mod3-pim-activate-role.png)
 
-    **Verification** - Based on our current lab environment configuration, you will be required configure MFA and log in successfully.
+    **Verification** - Based on our current lab environment configuration, you will be required configure MFA and log in successfully. However, if you had previously signed in using MFA, you may not see this window (You are required to authenticate only once per session).
 
 7. After you have completed the additional security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the **This is my justification for activating this role**.
 
