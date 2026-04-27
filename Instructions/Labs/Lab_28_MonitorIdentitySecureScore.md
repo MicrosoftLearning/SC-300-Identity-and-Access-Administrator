@@ -33,7 +33,7 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as an administrator.
 
-2. From the left menu and select **Identity Secure Score**
+2. Open **Entra ID** from the left menu and select **Identity Secure Score**
 
 3. Review the information provided in the dashboard page page.
 
@@ -61,8 +61,8 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 | Field | Value |
 | :--- | :--- |
-| Name | **Sign-in risk protection policy |
-| Assignments | 1. Select **0 users or agents (Preview) selected |
+| Name | **Sign-in risk protection policy** |
+| Assignments | 1. Select **0 users or agents (Preview) selected** |
 |             | 2. On the **Include** tab mark **All users** |
 |             | 3. On the **Excdlue** tab, use the **Users and groups** to exclude **MOD Administrator** |
 | Target resources | **All resources (formerly All cloud resource)** |
