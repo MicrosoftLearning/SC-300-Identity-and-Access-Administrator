@@ -63,21 +63,21 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 | :--- | :--- |
 | Name | **Sign-in risk protection policy** |
 | Assignments | 1. Select **0 users or agents (Preview) selected** |
-|             | 2. On the **Include** tab mark **All users** |
+|             | 2. On the **Include** tab, mark **All users** |
 |             | 3. On the **Excdlue** tab, use the **Users and groups** to exclude **MOD Administrator** |
 | Target resources | 1. Select **No target resources selected** |
 |                  | 2. Under **Include**, select **All resources (formerly 'All cloud apps')** |
 | Network | Leave at default |
 | Conditions | 1. Select **0 conditions selected** |
-|            | 2. Under **Sign-in risk** select the **Not configured** link |
+|            | 2. Under **Sign-in risk**, select the **Not configured** link |
 |            | 3. Set **Configure = Yes** and mark the box next to **High** and **Medium** |
 |            | 4. Select **Done** to save changes |
-| Access controls | 1. Under **Grant** select **0 controls selected** |
+| Access controls | 1. Under **Grant**, select **0 controls selected** |
 |                 | 2. Select **Grant access** |
 |                 | 3. Select **Require authentication strength** |
 |                 | 4. Under **Require authentication strength**, select **Phishing-resistant MFA** |
 |                 | 5. Scroll down and click **Select** to save the changes |
-| Session | 1. Under **Session** select **0 controls selected** |
+| Session | 1. Under **Session**, select **0 controls selected** |
 |         | 2. Select **Sign-in fequency** |
 |         | 3. Under **Sign-in fequency**, select **Every time** |
 |         | 4. Scroll down and click **Select** to save the changes |
