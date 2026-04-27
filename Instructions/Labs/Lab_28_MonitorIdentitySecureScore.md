@@ -65,7 +65,7 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 | Assignments | 1. Select **0 users or agents (Preview) selected** |
 |             | 2. On the **Include** tab mark **All users** |
 |             | 3. On the **Excdlue** tab, use the **Users and groups** to exclude **MOD Administrator** |
-| Target resources | **All resources (formerly All cloud resource)** |
+| Target resources | **All resources (formerly 'All cloud apps')** |
 | Network | Leave at default |
 | Conditions | 1. Select **0 conditions selected** |
 |            | 2. Under **Sign-in risk** select the **Not configured** link. |
