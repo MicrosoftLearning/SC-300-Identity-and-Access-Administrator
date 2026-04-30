@@ -33,7 +33,7 @@ To improve security in your organization, you've been directed to enable multifa
 
 3. In the search results, select **Multifactor authentication**.
 
-    Alternatively, you can open **Identity**, then select **Protection**, and select **Multifactor authentication**.
+    Alternatively, you can open **Entra ID** and select **Multifactor authentication**.
 
 4. On the Getting started page, under **Configure**, select **Additional cloud-based MFA settings**.
 
@@ -47,13 +47,13 @@ To improve security in your organization, you've been directed to enable multifa
 
     You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Microsoft Entra identity using a different password specific to that app.
 
-#### Task 2 - Setup conditional access rules for MFA for Delia Dennis
+#### Task 2 - Setup Conditional Access rules for MFA for Delia Dennis
 
 Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
 
-1. Switch back to the Microsoft Entra admin center and select **Identity**, then **Protection**, and then **Conditional access**.
+1. Switch back to the Microsoft Entra admin center and select **Entra ID** and then **Conditional Access**.
 
-2. On the menu, Select **+ New policy**. From the drop down select **+ Create new policy**.
+2. On the menu, Select **+ New policy**.
 
     ![Screenshot highlighting the New Policy button in the Microsoft Entra admin center.](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
 
@@ -68,10 +68,9 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 5. Select **No target resources selected** in Target resources.
 
-   - In the dropdown, make sure **Cloud apps** is selected.
-   - Under Include, mark **Resources (formerly cloud apps)** and note the warning the pops up about possibly locking yourself out. 
-   - Now under Include section, choose the **Select resources** item.
-   - In the **Select** section select the **None** link.
+   - In the dropdown, make sure **Resources (formerly cloud apps)** is selected.
+   - Under Include choose the **Select resources** item.
+   - In the **Select specific resources** section select the **None** link.
    - In the newly opened dialog, choose **Office 365**.
       - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
    - Choose **Select**.

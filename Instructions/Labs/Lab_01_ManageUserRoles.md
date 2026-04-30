@@ -96,7 +96,7 @@ Your company recently hired a new employee who will perform duties as an applica
 Using Microsoft Entra ID, you can designate limited administrators to manage identity tasks in less-privileged roles. Administrators can be assigned for such purposes as adding or changing users, assigning administrative roles, resetting user passwords, managing user licenses, and managing domain names.
 
 1. If you are not already logged in as an Administrator role, open the Microsoft Entra admin center and log in.
-2. Navigate to Identity and then select Users page.
+2. Navigate to Entra ID and then select Users page.
 3. Select on **All users** under the Manage section of the menu.
 4. Select on **Chris Green** account.
 5. Choose **Assigned roles** from the Manage menu.
@@ -152,7 +152,7 @@ This task will use an alternative method to remove the assigned role; it will us
 
 #### Task 1 - Bulk operations for creating users with a .csv file
 
-1. In the Microsoft Entra ID menu, first open **Identity**, then select **Users** and then select **All users**.
+1. In the Microsoft Entra ID menu, first open **Entra ID**, then select **Users** and then select **All users**.
 
 2. On the **Users | All users** tile, select the **Bulk operations** drop-down arrow and then **Bulk create**.
 
@@ -252,7 +252,7 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
 1. Browse to [https://entra.microsoft.com](Microsoft Entra admin center).
 
-2. In the left navigation, under **Identity**, select **Users**.
+2. In the left navigation, under **Entra ID**, select **Users**.
 
 3. Open the **All users** list, select the check box for a user that will be deleted. For example, select **Chris Green**.
 
@@ -289,7 +289,7 @@ Some user accounts in your organization will not be provided all available produ
 
 1. Browse to [https://entra.microsoft.com]( https://entra.microsoft.com).
 
-2. In the left navigation, under **Identity**, select **Users**, then select **All users**.
+2. In the left navigation, under **Entra ID**, select **Users**, then select **All users**.
 
 3. In the Users page, enter **Raul** into the search box.
 
@@ -325,7 +325,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
 9. Return to the browser tab with **Microsoft Entra admin center** open.
 
-10. Navigate back to the **All Users** in the left navigation, under **Identity**, select **Users**
+10. Navigate back to the **All Users** in the left navigation, under **Entra ID**, select **Users**
 
 11. In the Users page, select **Raul Razo**.
 

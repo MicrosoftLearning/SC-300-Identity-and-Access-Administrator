@@ -25,9 +25,9 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
 
-2. Access reviews can manage the access lifecycle.  Within **Microsoft Entra ID**, find **Identity Governance**, then select **Access reviews**.
+2. Access reviews can manage the access lifecycle.  Open **ID Governance**, then select **Access reviews**.
 
-3. Select **+ New access review**.
+3. Select **+ New access review**. Under **Review access to a resource type** click **Select**.
 
 4. In the **Select what to review** box choose **Teams + Groups** from the dropdown.
 

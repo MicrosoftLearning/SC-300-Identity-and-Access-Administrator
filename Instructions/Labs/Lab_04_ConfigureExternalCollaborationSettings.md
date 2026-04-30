@@ -24,7 +24,7 @@ You must enable external collaboration settings for your organization for approv
 #### Task 1 - Enable Guest Users to perform self service sign-up
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a tenant administrator.
-2. Select **Identity**, then select **Users**.
+2. Select **Entra ID**, then select **Users**.
 3. Open the **All users** menu item, then select **User Settings**.
 4. Select **Manage external user collaboration settings**.
 5. Ensure that **YES** is marked for the setting **Enable guest self-service sign up via user flows**.
@@ -33,7 +33,7 @@ You must enable external collaboration settings for your organization for approv
 #### Task 2 - Configure external collaboration settings
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a tenant administrator.
-2. Select **Identity**.
+2. Select **Entra ID**.
 3. Select **External Identities**, and then select **All identity providers**.
 4. Select the **Email one-time passcode** item in the list of providers, then select **Configured**.
 

@@ -35,9 +35,9 @@ A catalog is a container of resources and access packages. You create a catalog 
         - Security Administrator
         - Conditional Access Administrator
 
-2. Open the **Identity** menu, and then select **Identity Governance**.
+2. Open the **ID Governance** menu, and then select **Entitlement management**.
 
-3. In the left menu, under **Entitlement management**, select **Catalogs**.
+3. In the left menu, under **Catalogs**, select **Catalogs**.
 
 4. On the top menu, select **+ New Catalog**.
 
@@ -61,7 +61,7 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 To include resources in an access package, the resources must exist in a catalog. The types of resources you can add are groups, applications, and SharePoint Online sites. The groups can be cloud-created Microsoft 365 Groups or cloud-created Microsoft Entra security groups. The applications can be Microsoft Entra enterprise applications, including both SaaS applications and your own applications federated to Microsoft Entra ID. The sites can be SharePoint Online sites or SharePoint Online site collections.
 
-1. On the Identity Governance page, if necessary, select **Catalogs**.
+1. On the **Identity Governance** page, if necessary, select **Catalogs**.
 
 2. In the **Catalogs** list, select **Marketing**.
 
@@ -90,7 +90,7 @@ To include resources in an access package, the resources must exist in a catalog
 
 The user that created a catalog becomes the first catalog owner. To delegate management of a catalog, you add users to the catalog owner role. This helps share the catalog management responsibilities.
 
-1. If necessary, in the Microsoft Entra admin center, browse to **Identity**, then select **Identity Governance** and select **Catalogs** and then select **Marketing**.
+1. If necessary, in the Microsoft Entra admin center, browse to **ID Governance**, then select **Entitlement management** and select **Catalogs** and then select **Marketing**.
 
 2. In the Marketing catalog page, in the left navigation menu, select **Roles and administrators**.
 
@@ -118,7 +118,7 @@ You can edit the name and description for a catalog. Users see this information 
 
 #### Task 5 - Create Access reviews for guest users
 
-1. Access reviews can manage the access lifecycle.  Microsoft Entra Identity Governance provides an overview dashboard showing the status of access reviews. Select **Access reviews** in the **Identity Governance** menu.
+1. Access reviews can manage the access lifecycle.  Microsoft Entra Identity Governance provides an overview dashboard showing the status of access reviews. Select **Access reviews** in the **ID Governance** menu.
 
 1. Under the Access review menu, you can select **Access reviews** to configure an access review for guest users.  You will select **+ New access review** to create your guest user access review.  The tile will open to configure the access review for guest users.
 

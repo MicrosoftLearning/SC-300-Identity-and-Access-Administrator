@@ -29,9 +29,9 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. Sign in to [https://entra.microsoft.com](https://entra.microsoft.com) using a Global Administrator account.
 
-2. Open select **Identity Governance** in the lefthand navigation menu.
+2. Under **ID Governance** in the lefthand navigation menu select **Entitlement management**.
 
-3. In the menu, under **Entitlement management**, select **Terms of use**.
+3. On the **Identity Governance | Getting started** blade, in the left menu, under **Terms of use**, select **Terms of use**.
 
 4. On the Terms of use page, on the top menu, select **+ New terms**
 
@@ -207,9 +207,9 @@ You can edit some details of terms of use, but you can't modify an existing docu
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
 
-2. Open Microsoft Entra ID item and the select **Identity Governance** from the menu.
+2. Open Microsoft **ID Governance** item and the select **Entitlement management** from the menu.
 
-3. In the left navigation menu, under **Entitlement management**, select **Terms of use**.
+3. In the left navigation menu, under **Terms of use**, select **Terms of use**.
 
 4. Select the terms of use you want to edit.
  - Note: You have to click on open space, not directly on name of the Terms or Use.

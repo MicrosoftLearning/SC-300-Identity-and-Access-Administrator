@@ -30,13 +30,11 @@ Based on your organizational requirements, you can customize the Microsoft Entra
 
 1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
 
-2. Open the portal menu and then select **Identity**.
+2. Open the portal menu and then select **Entra ID**.
 
-3. On the Identity menu, open the **Protection** menu.
+3. In the left navigation, select **Authentication methods**.
 
-4. In the left navigation, select **Authentication methods**.
-
-5. Then select **Password protection**.
+4. Then select **Password protection**.
 
     ![Screen image displaying the Authentication methods page and the highlighted selections to browse to Password authentication](./media/lp2-mod3-browse-to-password-protection.png)
 

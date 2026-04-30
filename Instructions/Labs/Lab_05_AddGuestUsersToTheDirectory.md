@@ -25,7 +25,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. Sign in to the [https://entra.Microsoft.com](https://entra.microsoft.com) as a user who is assigned a limited administrator directory role or the Guest Inviter role, or as Global Administrator.
 
-2. Select **Identity**.
+2. Select **Entra ID**.
 
 3. Under **Users**, select **All users**.
 
@@ -55,7 +55,7 @@ A recent partnership has been established with another company. For now, employe
 
 1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as your Global Administrator.
 
-2. In the navigation pane, select **Identity**.
+2. In the navigation pane, select **Entra ID**.
 
 3. Under **Users**, select **All users**.
 
@@ -74,7 +74,7 @@ A recent partnership has been established with another company. For now, employe
 
     ![Screen image displaying the example bulk invite guests template CSV](./media/lp1-mod3-template-csv.png)
 
-**Lab Tip** - The users listed in the screenshot and the template files are examples, they don't really exist.  You will have to add a real users to fully test this feature.
+    **Lab Tip** - The users listed in the screenshot and the template files are examples, they don't really exist.  You will have to add a real users to fully test this feature.
 
 8. Save the file.
 
