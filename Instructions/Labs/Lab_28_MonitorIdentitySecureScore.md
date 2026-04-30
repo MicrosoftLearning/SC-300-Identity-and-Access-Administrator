@@ -45,9 +45,9 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 #### Task 2 - Execute an improvement action
 
-1. To improve one area of the identity security posture, select **Protect all users with a sign-in risk policy**.
+1. To improve one area of the identity security posture, select **Protect all users with a user risk policy**.
 
-2. In the page that opens, review the risk. You should have 33 users that are unprotected. Additionally, you see an **Action plan** on how to resolve the threat.
+2. In the page that opens, review the risk. You should have users that are unprotected. Additionally, you see an **Action plan** on how to resolve the threat.
 
 3. Select the link **Follow these steps to create a Conditional Access policy from scratch or by using a template**. Review the steps in the article.
 
@@ -55,33 +55,20 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 5. From the menu on the left, select **Conditional Access**.
 
-6. Select **+ Create new policy**.
+6. Name the policy: **User Risk remediation**.
 
-7. Use the following values to create the policy:
+7. Under **Users or Agents (Preview)** select **0 users or agents (Preview)** and then, on the **Include** tab, select **All users**.
 
-    | Field | Value |
-    | :--- | :--- |
-    | Name | **Sign-in risk protection policy** |
-    | Assignments | 1. Select **0 users or agents (Preview) selected** |
-    |             | 2. On the **Include** tab, mark **All users** |
-    |             | 3. On the **Excdlue** tab, use the **Users and groups** to exclude **MOD Administrator** |
-    | Target resources | 1. Select **No target resources selected** |
-    |                  | 2. Under **Include**, select **All resources (formerly 'All cloud apps')** |
-    | Network | Leave at default |
-    | Conditions | 1. Select **0 conditions selected** |
-    |            | 2. Under **Sign-in risk**, select the **Not configured** link |
-    |            | 3. Set **Configure = Yes** and mark the box next to **High** and **Medium** |
-    |            | 4. Select **Done** to save changes |
-    | Access controls | 1. Under **Grant**, select **0 controls selected** |
-    |                 | 2. Select **Grant access** |
-    |                 | 3. Select **Require authentication strength** |
-    |                 | 4. Under **Require authentication strength**, select **Phishing-resistant MFA** |
-    |                 | 5. Scroll down and click **Select** to save the changes |
-    | Session | 1. Under **Session**, select **0 controls selected** |
-    |         | 2. Select **Sign-in fequency** |
-    |         | 3. Under **Sign-in fequency**, select **Every time** |
-    |         | 4. Scroll down and click **Select** to save the changes |
+8.  On the **Exclude** tab, use **Users and groups** to exclude **MOD Administrator**
 
-8. Set **Enable policy** to **Report-only**.  You can use the WhatIf function to verify the policy before you enable it.
+9. Under **Target resources** select **No target resources selected** and then **All resources (formerly 'All cloud apps')**.
 
-9. Select **Create**.
+10. Under **Conditions** select **0 conditions selected** and then, under **User risk**, select **Not configured**.
+
+11. Under **User risk** select **Configure - Yes** and then the checkboxes for **Medium** and **High** and then select **Done**.
+
+12. Under **Access controls > Grant** select **0 controls selected**, scroll down and select the checkbox for **Require risk remediation**. Read the warning and scroll up to verify that **Require authentication strength > Multifactor authentication** was automatically selected and then scroll down and select the **Select** button. Note that **Access controls > Session** has also been updated to show **Sign-in frequency - Every time**.
+
+13. Under **Enable Policy** select **On** and then select **Create**.
+
+14. You have created a User risk policy that should now increase your Identity Secure Score.  This will take up to 24 hours to take affect in your Identity Secure Score.
