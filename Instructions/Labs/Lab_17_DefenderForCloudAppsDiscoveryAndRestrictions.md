@@ -26,32 +26,43 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 #### Task 1 - Discovery apps in Defender for Cloud Apps
 
-1. Sign in to [https://security.microsoft.com](https://security.microsoft.com) using a Global Administrator account.
+1. Sign in to **Microsoft Defender portal** at `https://security.microsoft.com` using a Global Administrator account.
 
-1. On the left menu, scroll to the heading named **Cloud Apps** and click **Cloud App Catalog**.
+1. On the **Microsoft Defender portal**, in the left navigation menu, expand the **Cloud Apps**, select **Cloud App Catalog**.
 
-1. In **Browse by category** pane, select **Cloud storage**.
+1. In the filter bar, set **Category** to **Cloud storage**.
 
-1. In the list of apps, note the **Risk score** next to the app name.  
+1. From the list of apps, select **Dropbox**.
 
-1. Open another browser tab and navigate to **www.dropbox.com**.
+1. In the app details pane, review the **Risk score** shown under the **General** tab.
+
+1. Open a new browser tab and go to **Dropbox** at `https://www.dropbox.com`.
 
 1. You will be able to access this website.
 
 1. Close the tab for Dropbox.
 
-1. Return to the Defender for Cloud Apps screen, and select the three-dot to the right of Dropbox.
+1. Return to the Defender for Cloud Apps screen.
 
-1. Choose **Sanctioned** and then the **Next** button. 
+1. In the **Dropbox** details pane, select **Sanction**.
 
 #### Task 2 - Restrict Apps in Defender for Cloud Apps
 
-1. Return to the **Discovered apps** tile and select the **Tag as unsanctioned** for Dropbox.  **Note**: This is located next to the circled check-mark.
+1. Return to the **Cloud app catalog** in the Microsoft Defender portal.
 
-1. Click **Save**
+1. In the list of apps, locate **Dropbox**.
 
-1. This process allows you to block applications that are not sanctioned within your company policy, limiting Shadow IT within your organization.
+1. In the **Dropbox** details pane, select **Unsanction**.
 
-**Note**: There is a delay when sactioning and unsanctioning an application and that application. You may have to wait up to 5 minutes.
+1. Select **Save** to apply the change.
 
-Once the application has been blocked as unsanctioned, the application will not be accessible through browser, in-private browser, or store download on a Client that is onboarded to MDE (Microsoft Defender for Endpoint) integrated with Microsoft Defender for Cloud Apps.
+> **Note:** There may be a delay when sanctioning or unsanctioning an application. Changes can take up to 5 minutes to take effect.
+
+Once an application is marked as **unsanctioned**, access to the app is blocked on devices that are onboarded to **Microsoft Defender for Endpoint** and integrated with **Microsoft Defender for Cloud Apps**, including:
+- Browser access
+- InPrivate or Incognito browser sessions
+- App downloads from stores
+
+### Exercise summary
+
+In this exercise, you reviewed cloud app discovery data and configured app restrictions in Microsoft Defender for Cloud Apps. This exercise showed how to identify and govern shadow IT in the organization.
