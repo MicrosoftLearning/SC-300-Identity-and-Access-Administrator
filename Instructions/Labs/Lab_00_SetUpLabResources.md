@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-You need to create a new Azure subscription and request a Azure AD P2 license to be ready to complete the upcoming labs.
+You need to create a new Azure subscription and request an Azure AD P2 license to be ready to complete the upcoming labs.
 
 #### Estimated time: 5 minutes
 
@@ -17,7 +17,7 @@ You need to create a new Azure subscription and request a Azure AD P2 license to
 
 The tasks in this exercise and the exercises in this learning path require you to already have an Azure subscription that you can use or to sign up for an Azure trial account. If you already have your own Azure subscription, you may skip this task and continue to the next.
 
-1. In a web browser, go to [https://azure.microsoft.com/free](https://azure.microsoft.com/free).
+1. Open a web browser and go to **`https://azure.microsoft.com/free`**.
 
 1. Scroll down through the page to learn more about the benefits and free services available.
 
@@ -25,7 +25,7 @@ The tasks in this exercise and the exercises in this learning path require you t
 
 1. Use the wizard to sign up for your Azure trial subscription.
 
-1. You will need to an Azure AD P2 license to complete some of the exercises. In the organization you created, search for and then select **Azure Active Directory**.
+1. You will need an Azure AD P2 license to complete some of the exercises. In the organization you created, search for and then select **Azure Active Directory**.
 
 1. In the left navigation menu, select **Getting started**.
 
