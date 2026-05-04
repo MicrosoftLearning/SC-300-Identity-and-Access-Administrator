@@ -23,28 +23,37 @@ You must enable external collaboration settings for your organization for approv
 
 #### Task 1 - Enable Guest Users to perform self service sign-up
 
-1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a tenant administrator.
-2. Select **Identity**, then select **Users**.
-3. Open the **All users** menu item, then select **User Settings**.
-4. Select **Manage external user collaboration settings**.
-5. Ensure that **YES** is marked for the setting **Enable guest self-service sign up via user flows**.
-6. Select **Save** at the top of the screen.
+1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
+
+1. In the left navigation menu, under **Entra ID**, select **Users**.
+
+1. Open the **All users** menu item, then select **User Settings**.
+
+1. Select **Manage external user collaboration settings**.
+
+1. Ensure that **YES** is marked for the setting **Enable guest self-service sign up via user flows**.
+
+1. Select **Save** at the top of the screen.
 
 #### Task 2 - Configure external collaboration settings
 
-1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a tenant administrator.
-2. Select **Identity**.
-3. Select **External Identities**, and then select **All identity providers**.
-4. Select the **Email one-time passcode** item in the list of providers, then select **Configured**.
+1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
-    **Note** - A one-time passcode is a very secure way to invite a user to join your organization.
+1. In the left navigation menu, under **Entra ID**, select **External Identities**, and then select **All identity providers**.
+
+1. Select the **Email one-time passcode** item in the list of providers, then select **Configured**.
+
+    >**Note:** A one-time passcode is a very secure way to invite a user to join your organization.
     
-5. Ensure that **Yes** is selected.
-6. Select **Save** if needed.
-7. Return to the **External Identities** menu.
-8. Select **External Collaboration Settings** on the left
+1. Ensure that **Yes** is selected.
 
-9. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
+1. Select **Save** if needed.
+
+1. Return to the **External Identities** menu.
+
+1. Select **External Collaboration Settings** on the left
+
+1. Under **Guest user access**, review access levels that are available and then select **Guest user access is restricted to properties and memberships of their own directory objects (most restrictive)**.
 
     **NOTE**
     - Guest users have the same access as members (most inclusive): This option gives guests the same access to Microsoft Entra resources and directory data as member users.
@@ -53,7 +62,7 @@ You must enable external collaboration settings for your organization for approv
 
     ![Screen image displaying guest user access restriction options](./media/lp1-mod3-guest-user-access-restrictions.png)
 
-10. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**!
+1. Under **Guest invite settings**,  select **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**!
 
     **NOTE**
     - Anyone in the organization can invite guest users including guests and non-admins (most inclusive): To allow guests in the organization to invite other guests including those who are not members of an organization, select this radio button.
@@ -64,7 +73,7 @@ You must enable external collaboration settings for your organization for approv
 
     ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-user-invite-settings.png)
 
-11. Under **Collaboration restrictions**, review the available options and accept the default settings.
+1. Under **Collaboration restrictions**, review the available options and accept the default settings.
 
     **IMPORTANT**
     - You can create either an allow list or a deny list. You can't set up both types of lists. By default, whatever domains are not in the allow list are on the deny list, and vice versa.
@@ -73,4 +82,8 @@ You must enable external collaboration settings for your organization for approv
     - This list works independently from OneDrive for Business and SharePoint Online allow/block lists. If you want to restrict individual file sharing in SharePoint Online, you need to set up an allow or deny list for OneDrive for Business and SharePoint Online.
     - The list does not apply to external users who have already redeemed the invitation. The list will be enforced after the list is set up. If a user invitation is in a pending state, and you set a policy that blocks their domain, the user's attempt to redeem the invitation will fail.
 
-12. When finished, **Save** your changes.
+1. When finished, **Save** your changes.
+
+### Exercise summary
+
+In this exercise, you enabled guest self-service sign-up and configured external collaboration settings, including guest access level, invite permissions, and collaboration restrictions. This exercise showed how to govern guest access at the tenant level.
