@@ -133,7 +133,7 @@ You add your organization's privacy information in the **Properties** area of 
 
 #### Task 2 - Check your Privacy Statement
 
-1. Return to the Azure Home screen - Dashboard.
+1. Return to the Microsoft Entra admin center - Dashboard.
 
 1. In the upper-right corner of the UI, Select on your username.
 
