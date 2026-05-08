@@ -38,7 +38,7 @@ Your company recently hired a new employee who will perform duties as an applica
 
 #### Task 1 - Add a new user
 
-1. Open Microsoft Edge, go to **`https://entra.microsoft.com`**, and sign in as a Global Administrator using the Microsoft 365 admin credentials provided by your authorized lab hoster (ALH).
+1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`**, and sign in using a Global Administrator account provided by your authorized lab hoster (ALH).
 
 1. In the left navigation menu, under **Entra ID**, select **Users**.
 
