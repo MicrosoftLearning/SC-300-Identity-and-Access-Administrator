@@ -79,13 +79,13 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 5. Select **Office 365 E3** license from the list.
 
-6. Select the **Groups** tab on the licensing screen.
+6. Scroll to the bottom of the licensing screen to see a list of Users and Groups eligible for the licnese.
 
-7. Choose the **+ Assign licenses** item.
+7. Select the **Assign licenses** item.
 
-8. Search for **sg-SC300-O365** group the select it from the list.
+7. Use the search to find **sg-SC300-O365** group the select it from the list.
 
-8. Once you have added the group, select **Assign**.
+8. Once you have added the group, select **Assign licenses**.
  
 9. Close the confirmation message.
 
