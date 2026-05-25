@@ -63,7 +63,7 @@ Enable SSPR for the group.
 
     ![Screen image displaying the Password reset properties page with selected, select group, and save highlighted](./media/lp2-mod2-enable-password-reset-for-selected-group.png)
 
-6. On the **Password reset** screen, look under **Manage*, select and review the default values for each of the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
+6. On the **Password reset** screen, look under **Manage**, select and review the default values for each of the **Authentication methods**, **Registration**, **Notifications**, and **Customization** settings.
 
     **Note** it is important to have **phone** selected as one of the authentication methods for the rest of this lab, but you can have other options as well.
 
