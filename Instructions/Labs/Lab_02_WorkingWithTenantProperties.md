@@ -27,6 +27,8 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
 
 1. Browse to the **Microsoft Entra admin center** at **`https://entra.microsoft.com`**, and sign in using a Global administrator account for the directory.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation, under **Entra ID**, select **Domain names**.
 
 1. In the **Custom domain name** page, select **+ Add custom domain**.
@@ -86,7 +88,7 @@ In this exercise, you reviewed the steps to add a custom subdomain in Microsoft 
 
 Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft Entra ID is trusted to authenticate users, services, and devices for the subscription. Each subscription has a tenant ID associated with it, and there are a few ways you can find the tenant ID for your subscription.
 
-1. Open the Microsoft Entra admin center at **`https://entra.microsoft.com`**.
+1. Open the **Microsoft Entra admin center** at **`https://entra.microsoft.com`**.
 
 1. In the left navigation, select **Overview**, then select **Properties**.
 
@@ -133,7 +135,7 @@ You add your organization's privacy information in the **Properties** area of 
 
 #### Task 2 - Check your Privacy Statement
 
-1. Return to the Microsoft Entra admin center - Dashboard.
+1. Return to the **Microsoft Entra admin center** Dashboard.
 
 1. In the upper-right corner of the UI, Select on your username.
 
