@@ -120,6 +120,8 @@ In this exercise, you registered a Google project and prepared OAuth client cred
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation menu, under **Entra ID**, select **External Identities**.
 
 1. Select **All identity providers** from the menu on the left.
