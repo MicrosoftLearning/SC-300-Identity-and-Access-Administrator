@@ -47,7 +47,7 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 #### Task 2 - Execute an improvement action
 
-1. To improve one area of the identity security posture, select **Protect all users with a sign-in risk policy**.
+1. To improve one area of the identity security posture, select **Protect all users with a user risk policy**.
 
 1. In the page that opens, review the risk. You should have 33 users that are unprotected. Additionally, you see an **Action plan** on how to resolve the threat.
 
@@ -63,7 +63,7 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 | Field | Value |
 | :--- | :--- |
-| Name | **Sign-in risk protection policy** |
+| Name | **User risk protection policy** |
 | Assignments | 1. Select **0 users or agents (Preview) selected** |
 |             | 2. On the **Include** tab mark **All users** |
 |             | 3. On the **Exclude** tab, use the **Users and groups** to exclude **MOD Administrator** |
