@@ -23,6 +23,8 @@ Registering your application establishes a trust relationship between your app a
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation, under **Entra ID**, select **App registrations**.
 
 1. On the **App registrations** page, on the menu, select **+ New registration**.
