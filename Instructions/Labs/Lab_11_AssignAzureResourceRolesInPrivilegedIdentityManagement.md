@@ -34,7 +34,9 @@ You need to make a user eligible for an Azure resource role.
 
 #### Task 1 - Assign Azure resource roles
 
-1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** using a Global administrator account.
+1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** using a Global Administrator account.
+
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. Search for and then select **Microsoft Entra Privileged Identity Management**.
 
