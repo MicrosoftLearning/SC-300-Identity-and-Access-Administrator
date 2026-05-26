@@ -25,6 +25,8 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation menu, expand the **ID Governance**, select **Access reviews**.
 
 1. On the **Identity Governance | Access reviews** page, select **+ New access review**.
