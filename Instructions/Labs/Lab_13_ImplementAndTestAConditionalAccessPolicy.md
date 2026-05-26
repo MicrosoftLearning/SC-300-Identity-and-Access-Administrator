@@ -48,7 +48,9 @@ Your organization needs to be able to limit user access to its internal applicat
 
 Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID that allows you to specify detailed policies that control who can access your resources. Using Conditional Access, you can protect your applications by limiting users' access based on things like groups, device type, location, and role.
 
-1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** using a Global administrator account.
+1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** using a Global Administrator account.
+
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. In the left navigation, under **Entra ID**, select **Conditional access**.
 
