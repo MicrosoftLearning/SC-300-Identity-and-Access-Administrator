@@ -31,6 +31,8 @@ Follow these steps to open the settings for an Microsoft Entra role.
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation menu, expand the **ID Governance**, select **Privileged Identity Management**.
 
 1. On the **Privileged Identity Management** page, in the left navigation, select **Microsoft Entra roles**.
@@ -126,6 +128,8 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
    | :--- | :--- |
    | Username | `MiriamG@<your domain.onmicrosoft.com>` |
    | Password |  Enter the provided tenant admin password |
+
+   > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. In the left navigation, under **Entra ID**, select **Users**, then select **All users**.
 
