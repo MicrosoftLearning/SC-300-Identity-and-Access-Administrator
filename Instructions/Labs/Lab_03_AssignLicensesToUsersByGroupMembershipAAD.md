@@ -45,7 +45,9 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 #### Task 2 -  Create a security group in Microsoft Entra ID
 
-1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`**.
+1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`**, and sign in using a Global administrator account for the directory.
+
+  > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. In the left navigation, under **Entra ID**, select **Groups**, then select **All groups**.
 
