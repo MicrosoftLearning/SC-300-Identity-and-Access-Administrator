@@ -38,7 +38,9 @@ Your company recently hired a new employee who will perform duties as an applica
 
 #### Task 1 - Add a new user
 
-1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`**, and sign in using a Global Administrator account provided by your authorized lab hoster (ALH).
+1. Open Microsoft Edge and navigate to the **Microsoft Entra admin center** at **`https://entra.microsoft.com`**. Sign in using a Global Administrator account provided by your authorized lab hoster (ALH).
+
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. In the left navigation menu, under **Entra ID**, select **Users**.
 
@@ -63,12 +65,14 @@ Your company recently hired a new employee who will perform duties as an applica
 
 1. Launch a new InPrivate browser window.
 
-1. Open the Microsoft Entra admin center at **`https://entra.microsoft.com`** and sign in as **Chris Green**.
+1. Open **Microsoft Entra admin center** at **`https://entra.microsoft.com`** and sign in as **Chris Green**.
 
     | **Setting**| **Value**|
     | :--- | :--- |
     | User name| Enter the user name from previous task. |
     | Password| Enter the auto-generated password from previous task. |
+
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. Update your password.
 
@@ -348,9 +352,7 @@ You have to add and remove licenses via the Microsoft 365 admin center. This is 
 
 1. Open a new browser tab.
 
-1. Go to the **Microsoft 365 admin center** at **`https://admin.microsoft.com`**.
-
-1. Sign in with your administrator account if prompted.
+1. Go to the **Microsoft 365 admin center** at **`https://admin.microsoft.com`**. Sign in with your administrator account if prompted.
 
 1. In the left navigation menu, select **Billing**, and then select **Licenses**.
 
