@@ -29,6 +29,8 @@ The Global Administrator role is required in order to provide admin consent for 
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation menu, go to **Entra ID**, select **App registrations**, select **All applications** tab, then select the **Demo app** you created in the previous exercise.
 
 1. On the **Demo app** page, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
