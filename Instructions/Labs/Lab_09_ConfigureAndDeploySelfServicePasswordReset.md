@@ -29,6 +29,8 @@ You want to roll out SSPR to a limited set of users first to make sure your SSPR
 
 1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** using a Global administrator account.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. On the **Microsoft Entra admin center**, in the left navigation, under **Entra ID**, select **Groups**.
 
 1. Open **All groups** menu item, and select **New Group** on the right side window.
