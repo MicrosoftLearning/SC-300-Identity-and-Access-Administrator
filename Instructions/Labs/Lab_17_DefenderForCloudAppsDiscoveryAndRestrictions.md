@@ -28,6 +28,8 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 1. Sign in to **Microsoft Defender portal** at `https://security.microsoft.com` using a Global Administrator account.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. On the **Microsoft Defender portal**, in the left navigation menu, expand the **Cloud Apps**, select **Cloud App Catalog**.
 
 1. In the filter bar, set **Category** to **Cloud storage**.
