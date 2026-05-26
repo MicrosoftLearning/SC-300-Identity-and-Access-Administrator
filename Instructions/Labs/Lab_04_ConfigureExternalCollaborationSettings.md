@@ -25,6 +25,8 @@ You must enable external collaboration settings for your organization for approv
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation menu, under **Entra ID**, select **Users**.
 
 1. Open the **All users** menu item, then select **User Settings**.
@@ -36,8 +38,6 @@ You must enable external collaboration settings for your organization for approv
 1. Select **Save** at the top of the screen.
 
 #### Task 2 - Configure external collaboration settings
-
-1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
 1. In the left navigation menu, under **Entra ID**, select **External Identities**, and then select **All identity providers**.
 
