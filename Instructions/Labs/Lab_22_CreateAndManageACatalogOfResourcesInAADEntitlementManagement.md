@@ -27,6 +27,8 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
     **Important** - To use and configure Microsoft Entra ID terms of use, you must have:
     - Microsoft Entra ID Premium P1, P2, EMS E3, or EMS E5 subscription.
     - If you don't have one of these subscriptions, you can get Microsoft Entra ID Premium trial.
