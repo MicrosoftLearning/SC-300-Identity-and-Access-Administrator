@@ -27,7 +27,9 @@ You can select what happens when an external user, who was invited to your direc
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
-1. In the left navigation menu, expand the **ID Governance**, and then select **Entitlement management**.
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
+1. In the left navigation menu, expand the **ID Governance**, then select **Entitlement management**.
 
 1. On the **Identity Governance | Getting Started** page, in the left navigation, under **Entitlement management** select **Control configurations**.
 
@@ -39,7 +41,7 @@ You can select what happens when an external user, who was invited to your direc
 
 1. To block external users from signing in after they lose their last access package assignment, select **Block external user from signing in to directory**.
 
-     >**Note:** If an external user is blocked from signing in, they cannot request additional access packages. Do not enable this setting if the user will need future access.
+    >**Note:** If an external user is blocked from signing in, they cannot request additional access packages. Do not enable this setting if the user will need future access.
 
 1. To automatically remove external users after they lose their last access package assignment, select **Remove external user**.
 
