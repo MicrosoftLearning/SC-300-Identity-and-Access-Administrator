@@ -56,6 +56,8 @@ A recent partnership has been established with another company. For now, employe
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation, under **Entra ID**, select **Users**, then select **All users**.
 
 1. On the Users page, on the menu, select **Bulk operations > Bulk invite**.
