@@ -29,6 +29,8 @@ To improve security in your organization, you've been directed to enable multifa
 
 1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** using a Global administrator account.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. Use the search feature and search for **multifactor**.
 
 1. In the search results, select **Multifactor authentication**.
@@ -57,37 +59,41 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
     ![Screenshot highlighting the New Policy button in the Microsoft Entra admin center.](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
 
-1. Name your policy, for example **MFA_for_Delia**.
+1. In the **Name** box, enter **MFA_for_Delia**.
 
-1. Select **Users or workload identities** under Assignments.
+1. Under **Assignments**, in the **Users or agents (Preview)** section, select **0 users or agents (Preview) selected**.
 
-    - Select **0 users or workload identities selected**  
-    - On the right side screen, select **Select users and groups** check box to configure.
-    - Check **Users and groups** (available users will be populated to the right)
-    - Choose **Delia Dennis** from the list of users then choose **Select** button.
+1. On the **Include** tab, mark **Select users and groups**, then select the **Users and groups** check box.
 
-1. Select **No target resources selected** in Target resources.
+1. In the **Select users and groups** pane, select **Delia Dennis** account and then select **Select**.
 
-   - In the dropdown, make sure **Cloud apps** is selected.
-   - Under Include, mark **Resources (formerly cloud apps)** and note the warning the pops up about possibly locking yourself out. 
-   - Now under Include section, choose the **Select resources** item.
-   - In the **Select** section select the **None** link.
-   - In the newly opened dialog, choose **Office 365**.
-      - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
-   - Choose **Select**.
+1. In the **Target resources** section, select **No target resources selected**.
 
-1. Choose a network location in the Conditions section, then select **Not configured**.
+1. In the dropdown, make sure **Resources (formerly cloud apps)** is selected.
 
-   - In the **Conditions** section choose the **0 conditions selected** link.
-   - At the bottom of the newly opened menu find the **Locations** section, and select **Not configured**.
-   - Choose **Yes** for the **Configure** item.
-   - Select **Any network or location**.
+1. In the **Include** tab, select **Select resources**, then in the **Select specific resources** select **None**.
 
-1. Under **Access Controls**, find the **Grant** section and select the **0 controls selected** link.
+1. In the **Resources** pane, search for **Office 365**, then select it.
 
-   - Select the **Require multifactor authentication** check box to enforces MFA.
-   - Ensure that **Require all the selected controls** is selected.
-   - Select **Select**.
+    - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
+
+1. Under **Network**, select **Not configured**, then set **Configure** to **Yes**.
+
+1. In the **Include** tab, select **Any network or location**.
+
+    > **Note:** You can also configure network locations under **Conditions** > **Locations**. Both options open the same configuration pane.
+
+<!-- 1. Under **Conditions** section, select **0 conditions selected**.
+
+1. At the bottom of the newly opened menu find the **Locations** section, and select **Not configured**, then set **Configure** to **Yes**. 
+
+1. In the **Include** tab, select **Any network or location**. -->
+
+1. Under **Access controls**, in the **Grant** section, select **0 controls selected**.
+
+1. Select the **Require multifactor authentication** check box to enforces MFA.
+
+1. Ensure that **Require all the selected controls** is selected, then select **Select**.
 
 1. Set **Enable policy** to **On**.
 
