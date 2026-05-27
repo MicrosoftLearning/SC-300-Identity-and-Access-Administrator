@@ -27,21 +27,25 @@ For applications your organization has developed or for those that are registere
 
 The Global Administrator role is required in order to provide admin consent for application permissions to the Microsoft Graph API.
 
-1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Entra admin center, browse to **Identity**, **Applications**, then select **App registrations**, and then select **Demo app**.
+1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
-2. On the **Demo app** page, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
-    **Note** - **Demo app** is created in the previous labs. Please complete these labs before this lab.
+1. In the left navigation menu, go to **Entra ID**, select **App registrations**, select **All applications** tab, then select the **Demo app** you created in the previous exercise.
+
+1. On the **Demo app** page, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
+
+    >**Note:** **Demo app** is created in the previous labs. Please complete these labs before this lab.
 
     ![Screen image displaying the Demo app page with the directory ID highlighted](./media/lp3-mod3-demo-app-directory-id.png)
 
-3. In the left navigation, under **Manage**, select **API permissions**.
+1. In the left navigation, under **Manage**, select **API permissions**.
 
-4. Under **Configured permissions**, select **Grant admin consent**.
+1. Under **Configured permissions**, select **Grant admin consent**.
 
     ![Screen image displaying the API permission page with Grant admin consent for Contoso highlighted](./media/lp3-mod3-api-permissions-admin-consent.png)
 
-5. Review the dialogue box, and then select **Yes.**
+1. Review the dialogue box, and then select **Yes**.
 
    **Warning** - Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
 
@@ -49,20 +53,24 @@ The Global Administrator role is required in order to provide admin consent for 
 
 You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
 
-1. In Microsoft Entra admin center, browse to **Identity** and  **Applications**.
+1. Browse to **Microsoft Entra admin center**.
 
-2. From the menu open **Enterprise applications**.
+1. In the left navigation menu, under **Entra ID**, select **Enterprise apps**.
 
-3. From the list of Enterprise applications pick the **Demo app** that we registered earlier.
+1. From the list of Enterprise applications pick the **Demo app** that we registered earlier.
 
-4. On the **Demo app** page, in the left navigation, under **Security,** select **Permissions.**
+1. On the **Demo app** page, in the left navigation, under **Security**, select **Permissions**.
 
-5. Under **Permissions,** select **Grant admin consent.**
+1. Under **Permissions**, select **Grant admin consent**.
 
     ![Screen image displaying the Demo app permissions page with Grant admin consent for Contoso highlighted](./media/lp3-mod3-grant-admin-consent-in-enterprise-app.png)
 
    **Warning** - Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
 
-6. When prompted, sign in using your Global Administrator account.
+1. When prompted, sign in using your Global Administrator account.
 
-7. In the **Permissions requested** dialog box, review the information and then select **Accept**.
+1. In the **Permissions requested** dialog box, review the information and then select **Accept**.
+
+### Exercise summary
+
+In this exercise, you granted tenant-wide admin consent to an application. This exercise showed how administrators can pre-approve permissions on behalf of all users.
