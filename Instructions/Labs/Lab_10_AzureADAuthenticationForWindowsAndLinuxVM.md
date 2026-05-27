@@ -27,7 +27,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 #### Task 1 - Create a Windows Virtual Machine with Microsoft Entra ID login enabled
 
-1. Browse to the [https://portal.azure.com](https://portal.azure.com)
+1. Browse to the Azure portal at `https://portal.azure.com`.
 
 **Lab tip** - if prompted to save your credentials, choose Never.  And cancel the tour, unless this is your first time in the Azure Portal.
 
@@ -41,31 +41,31 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
   | Field | Value to use |
   | :-- | :-- |
-  | Subscription | Accept the defualt |
-  | Resource Group | Create New - rgEL |
-  | Virtual machine name | vmEntraLogin |
+  | Subscription | Accept the default |
+  | Resource Group | Select **rgEL** |
+  | Virtual machine name | **vmEntraLogin** |
   | Region | *default* |
-  | Availability options | No infrastructure redundancy required |
-  | Security Type | Standard |
-  | Size | Standard DC1s_v3 - 1 vcpu, 8 GiB memory |
+  | Availability options | **No infrastructure redundancy required** |
+  | Security Type | **Standard** |
+  | Size | **Standard DC1s_v3 - 1 vcpu, 8 GiB memory** |
   | | **Lab tip** - if the exact specified size is not available, try a similar size in the same series.|
-  | Admin Username | vmEntraAdmin |
+  | Admin Username | **vmEntraAdmin** |
   | Admin Password | Use the one provided by the lab environment or make us a secure password you can remember |
   | Licensing | Confirm you have a license |
 
 1. You will not need to change anything on the **Disks** or **Networking** tabs, but you can review the values.
 
-1. On the **Management** tab, check the box to **Login with Microsoft Entra ID** under the Microsoft Entra ID section.
+1. On the **Management** tab, under **Microsoft Entra ID** section, select the **Login with Microsoft Entra ID** checkbox.
 
-        NOTE: You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
+      >**Note:** You will notice that the **System assigned managed identity** under the Identity section is automatically checked and turned grey. This action should happen automatically once you enable Login with Microsoft Entra ID.
 
 1. Go through the rest of the experience of creating a virtual machine. 
 
-1. Select **Review + create** then choose **Create**.
+1. Select **Review + create** then select **Create**.
 
 #### Task 2 - Microsoft Entra ID login for existing Azure Virtual Machines
 
-1. Browse to **Virtual Machines** in the [https://portal.azure.com](https://portal.azure.com).
+1. In the Azure portal, go to **Virtual Machines**.
 
 1. Select the newly created Virtual Machine from Task 1.
 
@@ -82,13 +82,13 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 #### Task 3 - Update the Virtual Machine to allow the Microsoft Entra ID login
 
-1. Select the **Connect** menu item.
+1. On the virtual machine page, select **Connect** from the top menu, and then select **Connect**.
 
-1. On the **RDP** tab select the **Download RDP File**.  If prompted choose the **Keep** option for the file.  It will be saved into your Downloads folder.
+1. On the **Connect** page, under **Native RDP**, select **Download RDP file**.
 
-1. Open the **Downloads** folder in File Manager.
+1. In the browser prompt, select **Keep**, and then open the downloaded RDP file.
 
-1. Open the RDP.
+1. On the **Remote Desktop Connection** security warning dialog box, select **Connect**.
 
 1. Choose to log in as Alternate User.
 
@@ -144,10 +144,10 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 1. Select **OK**.
 
 1. In the login dialog enter the following information:
-   - Username = **AzureAD\User2@ your domain name**
+   - Username = `AzureAD\User2@<your domain name>`
    - Password = Enter the password provided by your lab provider
 
-   NOTE: User2 is the user we granted access to log in as administrator during Task 1.
+    >**Note:** User2 is the user we granted access to log in as administrator during Task 1.
 
 1. Windows should confirm the login and open to the normal Desktop.
 
@@ -175,7 +175,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 #### Task 1 - Create a Linux VM with system assigned managed identity
 
-1. Browse to the [https://portal.azure.com](https://portal.azure.com)
+1. Browse to the **Microsoft Azure** portal at `https://portal.azure.com`.
 
 1. Select **+ Create a resource**.
 
@@ -191,7 +191,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 #### Task 2 - Microsoft Entra ID login for existing Azure Virtual Machines
 
-1. Browse to **Virtual Machines** in the [https://portal.azure.com](https://portal.azure.com).
+1. In the **Microsoft Azure** portal, go to **Virtual Machines**.
 
 1. Select **Access control (IAM)**.
 
@@ -205,3 +205,6 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 Please try to complete the rest of this lab on your own. It is very similar to the Windows version. If you are looking for detailed steps, see Assign Azure roles using the Azure portal in the Learn Docs.
 
+### Exercise summary
+
+In this exercise, you signed in to an Azure VM using a Microsoft Entra ID account and reviewed the Linux equivalent. This exercise showed how Microsoft Entra authentication works for Azure compute resources without local accounts.
