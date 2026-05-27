@@ -23,29 +23,30 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 #### Task - Add the guest user
 
-1. Sign in to the [https://entra.Microsoft.com](https://entra.microsoft.com) as a user who is assigned a limited administrator directory role or the Guest Inviter role, or as Global Administrator.
+1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as a user who is assigned a limited administrator directory role or the Guest Inviter role, or as Global Administrator.
 
-2. Select **Identity**.
+1. In the left navigation, under **Entra ID**, select **Users**, then select **All users**.
 
-3. Under **Users**, select **All users**.
+1. On the Users page, on the menu, select **+ New user**.
 
-4. Select **+ New user**.
-
-5. On the New user menu, select **Invite external user** and then add your information as the guest user.
+1. On the New user menu, select **Invite external user** and then add your information as the guest user.
 
     **NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Microsoft Entra ID does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
 
-6. Enter an email address, such as **sc300externaluser1@sc300email.com**.
+1. Enter an email address, such as `sc300externaluser1@sc300email.com`.
 
-7. Select the **Properties** tab.
+1. Select the **Properties** tab.
 
-8. On the Users page, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
+1. On the Users page, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
 
-9. When complete, select **Review + Invite**, then select **Invite**.
+1. When complete, select **Review + Invite**, then select **Invite**.
 
 
 After you send the invitation, the user account is automatically added to the directory as a guest.
 
+### Exercise summary
+
+In this exercise, you invited a guest user to the directory through the Microsoft Entra admin center. This exercise showed how external users are onboarded into Microsoft Entra ID for B2B collaboration.
 
 ### Exercise 2 - Invite guest users in bulk
 
@@ -53,21 +54,21 @@ After you send the invitation, the user account is automatically added to the di
 
 A recent partnership has been established with another company. For now, employees of the partner company will be added as guests. You need to ensure you can import multiple guest users at one time.
 
-1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as your Global Administrator.
+1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
-2. In the navigation pane, select **Identity**.
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
-3. Under **Users**, select **All users**.
+1. In the left navigation, under **Entra ID**, select **Users**, then select **All users**.
 
-4. On the Users page, on the menu, select **Bulk operations > Bulk invite**.
+1. On the Users page, on the menu, select **Bulk operations > Bulk invite**.
 
    ![Screen image displaying the All user page with the Bulk operations and Bulk invite menu options highlighted](./media/lp1-mod3-bulk-invite-option.png)
 
-5. In the Bulk invite users pane, select **Download** to a sample CSV template with invitation properties.
+1. In the Bulk invite users pane, select **Download** to a sample CSV template with invitation properties.
 
-6. Using an editor to view the CSV file, review the template.
+1. Using an editor to view the CSV file, review the template.
 
-7. Open the .csv template and add a line for each guest user. Required values are:
+1. Open the .csv template and add a line for each guest user. Required values are:
 
     - **Email address to invite** - the user who will receive an invitation
     - **Redirection url** - the URL to which the invited user is forwarded after accepting the invitation.
@@ -76,52 +77,53 @@ A recent partnership has been established with another company. For now, employe
 
 **Lab Tip** - The users listed in the screenshot and the template files are examples, they don't really exist.  You will have to add a real users to fully test this feature.
 
-8. Save the file.
+1. Save the file.
 
-9. On the Bulk invite users page, under **Upload your csv file**, browse to the file.
+1. On the Bulk invite users page, under **Upload your csv file**, browse to the file.
 
-     **Note** - When you select the file, validation of the .csv file starts.
+    >**Note:** When you select the file, validation of the .csv file starts.
 
-10. After the file contents are validated, you will see **File uploaded successfully**. If there are errors, you must fix them before you can submit the job.
+1. After the file contents are validated, you will see **File uploaded successfully**. If there are errors, you must fix them before you can submit the job.
 
     ![Screen image displaying Bulk invite users with File uploaded successfully message highlighted](./media/lp1-mod3-bulk-invite-users-upload-csv.png)
 
-11. When your file passes validation, select **Submit** to start the Azure bulk operation that adds the invitations.
+1. When your file passes validation, select **Submit** to start the Azure bulk operation that adds the invitations.
 
-12. To view the job status, select **Select here to view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.
+1. To view the job status, select **Select here to view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **# Success**, **# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.
 
     ![Screen image displaying the results of a bulk operation](./media/lp1-mod3-bulk-operations-results.png)
 
-13. When the job completes, you will see a notification that the bulk operation succeeded.
+1. When the job completes, you will see a notification that the bulk operation succeeded.
 
 #### Task 2 - Invite guest users with PowerShell
 
 1. Open PowerShell. This can be done by searching for PowerShell in Windows.
 
-**Note** - You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, please update or this portion of the lab will fail.
+    >**Note:** You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, please update or this portion of the lab will fail.
 
-**Lab Tip** - The TouchType feature in the lab environment has issues typing into PowerShell. If you launch Notepad in your lab, then use TouchType to load the PowerShell instructions into Notepad, you can use **Cut & Paste** to enter them into PowerShell without typing.
+    **Lab Tip** - The TouchType feature in the lab environment has issues typing into PowerShell. If you launch Notepad in your lab, then use TouchType to load the PowerShell instructions into Notepad, you can use **Cut & Paste** to enter them into PowerShell without typing.
 
-2. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
+1. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 
     ```
     Install-Module Microsoft.Graph -Scope CurrentUser -Verbose
     ```
-3. Confirm the Microsoft.Graph module is installed:
+1. Confirm the Microsoft.Graph module is installed:
 
     ```
     Get-InstalledModule Microsoft.Graph
     ```
     
 
-4. Next, you will need to login to Azure by running:  
+1. Next, you will need to login to Azure by running:  
 
     ```
     Connect-MgGraph -Scopes "User.ReadWrite.All"
     ``` 
-    The Edge browser will open and you will be prompted to sign-in.  Use the MOD Administrator account to connect.  Mark the consent box, then accpet the permissions request; then close the browser window.
 
-5. Set the values for the email and redirect for the External user:
+    The Edge browser will open and you will be prompted to sign-in.  Use the MOD Administrator account to connect.  Mark the consent box, then accept the permissions request; then close the browser window.
+
+1. Set the values for the email and redirect for the External user:
 
     ```
     Import-Module Microsoft.Graph.Identity.SignIns
@@ -132,12 +134,16 @@ A recent partnership has been established with another company. For now, employe
     }
     ```
 
-6. Sent the MgInvitation command to invite the External user:
+1. Sent the MgInvitation command to invite the External user:
 
     ```
     New-MgInvitation -BodyParameter $params
     ```
 
-7. You can close PowerShell at this point.
+1. You can close PowerShell at this point.
     
-You now know how to invite users within the Microsoft Entra admin center, Microsoft 365 Admin center, Bulk invitations with a csv file, and inviting users with PowerShell commands.  You can go into the Microsoft Entra admin center, and check All Users to see that ADMIN has been added as an external suer.
+You now know how to invite users within the Microsoft Entra admin center, Microsoft 365 Admin center, Bulk invitations with a csv file, and inviting users with PowerShell commands.  You can go into the Microsoft Entra admin center, and check All Users to see that ADMIN has been added as an external user.
+
+### Exercise summary
+
+In this exercise, you invited multiple guest users at once by uploading a CSV file and by running Microsoft Graph PowerShell. This exercise showed how to scale B2B onboarding beyond individual invitations.
