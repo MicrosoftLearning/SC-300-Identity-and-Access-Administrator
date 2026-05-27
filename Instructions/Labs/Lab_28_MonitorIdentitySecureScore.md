@@ -33,6 +33,8 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+
 1. In the left navigation menu, under **Entra ID**, select **Identity Secure Score**.
 
 1. On the **Security | Identity Secure Score**, review the information provided.
