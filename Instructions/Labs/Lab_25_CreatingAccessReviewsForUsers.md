@@ -23,34 +23,53 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 #### Task - Create a new Access review
 
-1. Sign in to the [https://entra.microsoft.com](https://entra.microsoft.com) as a Global administrator.
+1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
-2. Access reviews can manage the access lifecycle.  Within **Microsoft Entra ID**, find **Identity Governance**, then select **Access reviews**.
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
-3. Select **+ New access review**.
+1. In the left navigation menu, expand the **ID Governance**, select **Access reviews**.
 
-4. In the **Select what to review** box choose **Teams + Groups** from the dropdown.
+1. On the **Identity Governance | Access reviews** page, select **+ New access review**.
 
-5. Select **Select Teams + groups** and pick the **Sales and Marketing** group from the list, and hit **Select**.
+1. On the **Create an access review** page, under **Choose an Access Review** template, on the **Resource review** tile, select **Select**.
 
-6. Set the **Scope** to **All users**.
+1. On the **New access review** page, under the **Select what to review**, open the **Select review** dropdown and select **Teams + Groups**.
 
-7. Select the **Next: Reviews** to move forward in the wizard.
+1. Under the **Review scope**, select **Select Teams + groups**.
 
-8. The next step is to determine the reviewers.  These reviewers can be the member themselves to do a self-review or can be assigned to supervisors if reviewing access for an entire department. You can also set the action when a reviewer does not respond to automatically remove that privileged access from the member.
+1. Under the **Group**, select **+ Select group(s)**.
 
-9. Pick a reviewer **Alex Wilber** and review recurrence option **Annually**.  Then select **Next: Settings**.
+1. From the **Select group** pane, select **Sales and Marketing** group from the list, and select **Select**.
 
-10. The advanced settings allow you to put a message as part of the review.
+1. Under the **Scope**, select **All users**.
 
-11. Switch to the **Next: Review + Create** tab to finalize the access review.
+1. Select **Next: Reviews** to move forward in the wizard.
 
-12. Name the access review **SC300 Access Review Test**.
+  > **Note:** You can assign reviewers to perform self-reviews, group owners, managers, or selected users and groups. You can also configure what happens if a reviewer does not respond.
 
-13. Select **Create** at the bottom of the page.
+1. On the **Reviews** tab, under **Specify reviewers**, open the **Select reviewers** dropdown and select **Selected user(s) or group(s)**.
 
-    **Note** - When the access review is created, the access review list will populate with the roles and owners of the reviews.
+1. Under **Users or Groups**, select **+ Select reviewers**.
 
-14. Members that are being reviewed will receive an email when the review is initiated.
+1. In the **Select reviewers** pane, search for **Alex Wilber**, select the user, and then select **Select**.
 
-15. Selecting an access review of one of the roles will provide status on these access reviews.
+1. Under **Specify recurrence of review**, configure the following:
+   - **Duration (in days)**: keep the default value
+   - **Review recurrence**: **Annually**
+   - **Start date**: keep the default value
+
+1. Select **Next: Settings**.
+
+1. On the **Settings** tab, review the available options and leave the default values unchanged.
+
+1. Select **Next: Review + Create**.
+
+1. On the **Review + Create** tab, enter **SC300 Access Review Test** for **Review name**.
+
+1. Select **Create**.
+
+  > **Note:** After the access review is created, it appears in the access reviews list, and the selected reviewers receive an email notification when the review starts.
+
+### Exercise summary
+
+In this exercise, you created an internal access review in the Microsoft Entra admin center. You defined the review scope, selected a reviewer, and configured a review schedule. This exercise showed how access reviews are used to regularly validate group access and support identity governance.
