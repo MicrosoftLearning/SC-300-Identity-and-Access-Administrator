@@ -3,7 +3,7 @@ lab:
   title: 16 - Using Azure Key Vault for Managed Identities
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-  description: Create and configure and Azure Key Vault.  Then use it to store secrets, passwords, and key for use by applications and resources running in your cloud environment.
+  description: Create and configure an Azure Key Vault.  Then use it to store secrets, passwords, and key for use by applications and resources running in your cloud environment.
   duration: 35 minutes
   level: 400
   islab: true
@@ -14,7 +14,7 @@ lab:
 
 # Lab 16 - Using Azure Key Vault for Managed Identities
 
-### Login type = Azure Resource login
+### Login type: Azure Resource login
 
 ## Lab scenario
 
@@ -26,7 +26,7 @@ When you use managed identities for Azure resources, your code can get access to
 
 #### Task 1 - Create a Key Vault
 
-1. Sign in to the [https://portal.azure.com]( https://portal.azure.com) using a Global administrator account.
+1. Sign in to **Microsoft Azure** portal at `https://portal.azure.com` using a Global administrator account.
 
 1. At the top of the left navigation bar, select **+ Create a resource**.
 
@@ -37,11 +37,16 @@ When you use managed identities for Azure resources, your code can get access to
 1. Select **Create**.
 
 1. Fill out all required information as shown below. Make sure that you choose the subscription that you're using for this lab.
-    **Note** The Key vault name must be unique. Look for a green checkmark to the right of the field.
 
- - **Resource group** - rgSC300KeyVault
+    >**Note:** The Key vault name must be unique. Look for a green checkmark to the right of the field.
+
+ - **Resource group** - **rgSC300KeyVault**
  - **Key vault name** - *anyuniquevalue*
+
+ 1. Select **Next**.
+
  - On the **Access Configuration** page, select the **Vault Access Policy** radio button.
+
 1. Select **Review + create**.
 
 1. Select **Create**.
@@ -52,13 +57,13 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Type **Windows 11** in Search the Marketplace search bar.
 
-1. Select **Windows 11** and from the plan dropdown choose **Windows 11 Enterprise, version 25H2** or any newer version. Then choose **Create**.
+1. Select **Windows 11** and from the plan dropdown choose **Windows 11 Enterprise, version 25H2** or any newer version. Then select **Create**.
 
-  | Field | Values |
+  | **Field** | **Values** |
   | :--   | :--    |
-  | VM Name | vmKeyVault |
+  | VM Name | **vmKeyVault** |
   | Availability options | No infrastructure redundancy required |
-  | Admin Username | adminKeyVault |
+  | Admin Username | **adminKeyVault** |
   | Password | Set a secure password that you can remember |
   | Licensing | Confirm you have an eligible license |
 
@@ -70,7 +75,7 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Go through the rest of the experience of creating a virtual machine. 
 
-1. Choose **Review + Create** then select **Create**.
+1. Select **Review + Create** then select **Create**.
 
 #### Task 3 - Create a secret
 
@@ -108,32 +113,47 @@ When you use managed identities for Azure resources, your code can get access to
 
 #### Task 5 - Access data with Key Vault secret with PowerShell
 
-1. Go to **vmKeyVault** and use RDP to connect to your virtual machine as **adminKeyVault**.
+1. Go to **vmKeyVault** virtual machine, select **Connect**. Select **Download RDP file**, Keep the downloads file, Open the file and Connect. Then enter the password from Task 2 and select Yes on the Remote Desktop Connection. On Choose privacy settings for your device select Next then Accept.
 
 1. Open the **Windows 11 virtual machine** deployed earlier in this lab. In the lab virtual machine, open PowerShell.  
 
 1. In PowerShell, invoke the web request on the tenant to get the token for the local host in the specific port for the VM.  
 
-    ```
+    ```powershell
     $Response = Invoke-RestMethod -Uri 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https%3A%2F%2Fvault.azure.net' -Method GET -Headers @{Metadata="true"}
     ```
 
 1. Next, extract the access token from the response.  
 
-    ```
+    ```powershell
     $KeyVaultToken = $Response.access_token
     ```
 
-1. Use PowerShell’s Invoke-WebRequest command to retrieve the secret you created earlier in the Key Vault, passing the access token in the Authorization header.  You’ll need the URL of your Key Vault, which is in the Essentials section of the Overview page of the Key Vault.  Reminder - URI for Key Vault is on the Overview tab.
+1. Run the following command to retrieve the secret from Key Vault using the access token:
 
-  - Key Vault URI -- get from Key Vaults Overview page in Azure Portal
-  - Secrete Name -- get from Objects - Secrets page in the Key Vault
+   > **Note**
+   > Replace the placeholder values:
+   > - `<key-vault-name>`: Get from the Key Vault **Overview** page in the Azure portal.
+   > - `<secret-name>`: Get from the **Secrets** page in the Key Vault.
+  
+    ```powershell
+    Invoke-RestMethod -Uri https://<key-vault-name>.vault.azure.net/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
+    ```
 
-    ```
-    Invoke-RestMethod -Uri https://<your-key-vault-URI>/secrets/<secret-name>?api-version=2016-10-01 -Method GET -Headers @{Authorization="Bearer $KeyVaultToken"}
-    ```
 1. You should receive a response that looks like the following: 
+
+    ```powershell
+    'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16... }
     ```
-    'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/50644e90b13249b584c44b9f712f2e51 @{enabled=True; created=16…
+
+1. Verify that the response includes the secret value, its URI, and attributes (for example, enabled and created), similar to the following:
+
+    ```powershell
+    'My Secret' https://mi-lab-vault.vault.azure.net/secrets/mi-test/<version-id> @{enabled=True; created=...}
     ```
+
 1. This secret can be used to authenticate to services that require a name and password.
+
+### Exercise summary
+
+In this exercise, you created a Key Vault, deployed a virtual machine with a system-assigned managed identity, granted it access to the vault, and retrieved a secret using the managed identity. This exercise showed how to access secrets without storing credentials in code.
