@@ -14,7 +14,7 @@ lab:
 
 # Lab 12 - Manage Microsoft Entra smart lockout values
 
-### Login type = Microsoft 365 admin
+### Login type: Microsoft 365 admin
 
 ## Lab scenario
 
@@ -28,25 +28,27 @@ You must configure the additional password protection settings for your organiza
 
 Based on your organizational requirements, you can customize the Microsoft Entra smart lockout values. Customization of the smart lockout settings, with values specific to your organization, requires Microsoft Entra ID Premium P1 or higher licenses for your users.
 
-1. Browse to [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
+1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** using a Global administrator account.
 
-2. Open the portal menu and then select **Identity**.
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
-3. On the Identity menu, open the **Protection** menu.
+1. In the left navigation, under **Entra ID**, select **Authentication methods**.
 
-4. In the left navigation, select **Authentication methods**.
-
-5. Then select **Password protection**.
+1. Then select **Password protection**.
 
     ![Screen image displaying the Authentication methods page and the highlighted selections to browse to Password authentication](./media/lp2-mod3-browse-to-password-protection.png)
 
-6. In the Password protection settings, in the **Lockout duration in seconds** box, set the value to **120**.
+1. In the Password protection settings, in the **Lockout duration in seconds** box, set the value to **120**.
 
-7. Next to **Mode**, select **Enforced**.
+1. Next to **Mode**, select **Enforced**.
 
-8. Save your changes.
+1. Select **Save**.
 
-    **NOTE** - When the smart lockout threshold is triggered, you will get the following message while the account is locked:
+    >**Note:** When the smart lockout threshold is triggered, you will get the following message while the account is locked:
     - Your account is temporarily locked to prevent unauthorized use. Try again later, and if you still have trouble, contact your admin.
 
-9. This can be tested by choosing a user in your Microsoft Entra tenant, navigate in a private browser to <login.microsoftonline.com> and enter an incorrect password until the account gets notification that it is locked out.
+1. This can be tested by choosing a user in your Microsoft Entra tenant, navigate in a private browser to <login.microsoftonline.com> and enter an incorrect password until the account gets notification that it is locked out.
+
+### Exercise summary
+
+In this exercise, you reviewed and adjusted Microsoft Entra smart lockout thresholds. This exercise showed how to balance protection against brute-force attempts with user productivity.
