@@ -25,13 +25,13 @@ You need to identify and update the different properties associated with your te
 
 You would use Microsoft Entra ID to create a domain that you have purchased.  If you want to create a subdomain to divide your existing .onmicrosoft.com domain, you have to use the Microsoft 365 admin center.
 
-1. Browse to the [https://entra.microsoft.com](https://entra.microsoft.com) and sign in using a Global administrator account for the directory.
+1. Browse to the **Microsoft Entra admin center** at **`https://entra.microsoft.com`**, and sign in using a Global administrator account for the directory.
 
-1. In the **Identity** menu, use the **Show more** option at the bottom.
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
-1.  Open the **Settings** menu, select **Domain names**.
+1. In the left navigation, under **Entra ID**, select **Domain names**.
 
-1. Select **+ Add custom domain**.
+1. In the **Custom domain name** page, select **+ Add custom domain**.
 
 1. In the **Custom domain name** field, create a custom subdomain for the lab tenant by putting **sales** in front of the **onmicrosoft.com** domain name.  The format will look similar to this:
 
@@ -39,15 +39,19 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
     Sales.labTenantName.onmicrosoft.com
     ```
 
-**Note** - You will be prompted to open the Microsoft 365 Admin center to complete this action.
+    >**Note:** After entering an **.onmicrosoft.com** domain, a restriction message appears indicating that managing **onmicrosoft.com** domains is restricted in Microsoft Entra ID. Select the **Microsoft 365 Admin Center** link shown in the message to complete this action.
 
-1. Select **Add domain** to add the subdomain.
+1. On the **Microsoft 365 Admin Center**, in the **Domains** page, select **Add domain** to add the subdomain.
 
 1. Enter the subdomain name `sales.tenantname.onmicrosoft.com` into the dialog. Remember to replace *tenantname* with the name of your tenant.
 
 1. Select the **Use this domain** button at the bottom of the screen.
 
 1. Select the **Close** button when the next screen opens up.  For the purpose of this lab we will not set up the DNS.
+
+### Exercise summary
+
+In this exercise, you reviewed the steps to add a custom subdomain in Microsoft Entra ID. This exercise showed how organizations bind their public DNS namespace to their tenant.
 
 ### Exercise 2 - Changing the tenant display name
 
@@ -61,22 +65,22 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
 
     | **Setting** | **Value** |
     | :--- | :--- |
-    | Name | Contoso Marketing |
-    | Technical contact | `your Global admin account` |
+    | Name | **Contoso Marketing** |
+    | Technical contact | **your Global admin account** |
 
 1. Select **Save** to update the tenant properties.
 
-   **You will notice the name change immediately upon completion of the save.**
+   **You will notice the name change immediately upon completion of the save**.
 
 #### Task 2 - Review the Country or region and other values associated with your tenant
 
-1. In the **Identity** menu, select **Overview**, then select **Properties**.
+1. In the left navigation, select **Overview**, then select **Properties**.
 
-2. Under **Tenant properties**, locate **Country or region** and review the information.
+1. Under **Tenant properties**, locate **Country or region** and review the information.
 
     **IMPORTANT** - When the tenant is created, the Country or region are specified at that time. This setting cannot be changed later.
 
-3. In the **Properties** page, under **Tenant properties**, locate **Location** and review the information.
+1. In the **Properties** page, under **Tenant properties**, locate **Location** and review the information.
 
     ![Screen image showing the Azure Active Directory Properties page with the Country or region and Location settings highlighted](./media/azure-active-directory-properties-country-location.png)
 
@@ -84,15 +88,19 @@ You would use Microsoft Entra ID to create a domain that you have purchased.  If
 
 Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft Entra ID is trusted to authenticate users, services, and devices for the subscription. Each subscription has a tenant ID associated with it, and there are a few ways you can find the tenant ID for your subscription.
 
-1. Open the Microsoft Entra admin center [https://entra.microsoft.com](https://entra.microsoft.com)
+1. Open the **Microsoft Entra admin center** at **`https://entra.microsoft.com`**.
 
-1. In the **Identity** menu, select **Overview**, then select **Properties**.
+1. In the left navigation, select **Overview**, then select **Properties**.
 
 1. Under **Tenant properties**, locate **Tenant ID**. This is your unique tenant identifier.
 
     ![Screen image displaying the Tenant properties page with the Tenant ID box highlighted](./media/portal-tenant-id.png)
 
-**Note** - It is helpful if you record your Tenant-Id note Notepad or other location for use in future labs.
+    >**Note:** It is helpful if you record your Tenant-Id in Notepad or other location for use in future labs.
+
+### Exercise summary
+
+In this exercise, you updated the tenant display name and reviewed identifying tenant properties such as country, location, and Tenant ID. This exercise showed how branding and identifying information are managed at the tenant level.
 
 ### Exercise 3 - Setting your privacy information
 
@@ -100,17 +108,17 @@ Azure subscriptions have a trust relationship with Microsoft Entra ID. Microsoft
 
 Microsoft strongly recommends you add both your global privacy contact and your organization's privacy statement, so your internal employees and external guests can review your policies. Because privacy statements are uniquely created and tailored for each business, we strongly recommend you contact a lawyer for assistance.
 
-   **NOTE** - For information about viewing or deleting personal data, see [https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure). For more information about GDPR, see the [https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
+   >**Note:** For information about viewing or deleting personal data, see [https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure). For more information about GDPR, see the [https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
 You add your organization's privacy information in the **Properties** area of Microsoft Entra ID. To access the Properties area and add your privacy information:
 
-1. In the **Identity** menu, select **Overview**, then select **Properties**.
+1. In the left navigation, select **Overview**, then select **Properties**.
 
     ![Screen image displaying tenant properties with the Technical contact, Global contact, and Privacy statement boxes highlighted](./media/properties-area.png)
 
-2. Add your privacy info for your employees:
+1. Add your privacy info for your employees:
 
-- **Global privacy contact** - `AllanD@` **your Azure lab domain**
+- **Global privacy contact** - `AllanD@<your Azure lab domain>`
      - Allan Deyoung is a built-in users in your Azure lab tenant who works as an IT Admin, we will use him as the Privacy contact.
      - This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your global administrators.
 
@@ -123,22 +131,32 @@ You add your organization's privacy information in the **Properties** area of 
 
     ![B2B Collaboration Review permissions box with message](./media/active-directory-no-privacy-statement-or-contact.png)
 
-3. Select **Save**.
+1. Select **Save**.
 
 #### Task 2 - Check your Privacy Statement
 
-1. Return to the Azure Home screen - Dashboard.
-2. In the upper-right corner of the UI, Select on your username.
-3. Choose **View account** from the dropdown menu.
+1. Return to the **Microsoft Entra admin center** Dashboard.
 
-     **A new browser tab will open automatically.**
+1. In the upper-right corner of the UI, Select on your username.
 
-4. Select the **Settings & Privacy** on the left menu.
-5. Select **Privacy**.
-6. Under **Organization's notice** select the **View** item next to Contoso Marketing organizational privacy statement.
+1. Choose **View account** from the dropdown menu.
 
-     **A new browser tab will open with the Prvacy PDF file you linked to displayed.**
+     **A new browser tab will open automatically**.
 
-7. Review the sample Privacy statement.
-8. Close the browser tab with the PDF in it.
-9. Close the browser tab displaying the **My Account** items.
+1. Select the **Settings & Privacy** on the left menu.
+
+1. Select **Privacy**.
+
+1. Under **Organization's notice** select the **View** item next to Contoso Marketing organizational privacy statement.
+
+     **A new browser tab will open with the Privacy PDF file you linked to displayed**.
+
+1. Review the sample Privacy statement.
+
+1. Close the browser tab with the PDF in it.
+
+1. Close the browser tab displaying the **My Account** items.
+
+### Exercise summary
+
+In this exercise, you configured the tenant privacy contact and privacy statement URL, and verified the link from a user account. This exercise showed how to surface required organizational notices to internal and external users.
