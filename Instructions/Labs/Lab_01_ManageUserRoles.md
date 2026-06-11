@@ -82,7 +82,7 @@ Your company recently hired a new employee who will perform duties as an applica
     | New Password| Enter a unique and secure password |
     | Confirm Password| Reenter a unique and secure password |
 
-  **Lab Tip** - it is recommended that you use the User Password provided in the lab environment.
+    **Lab Tip** - it is recommended that you use the User Password provided in the lab environment.
 
 1. In the search box at the top of the page, search for **Enterprise applications**, and then select it from the results.
 
@@ -204,8 +204,7 @@ In this exercise, you removed the Application Administrator role from the user t
     You can modify this file to add users in bulk.  Note that you do not need to fill out all the fields.  As per the sample data provide, you mainly need to add the name and username information.
 
 1. A sample CSV has been provided in the Allfiles/Labs/Lab1 folder -- **SC300BulkUser.csv**.
-   1. Open Notepad.
-     - Inside the lab environment, select the START button and type Notepad.  
+   1. Open Notepad: inside the lab environment, select the **Start** button and type **Notepad**.  
    1. Open the SC300BulkUser.csv file
    1. Change the **enter your domain name** to the domain of your Azure lab environment.
    1. Save the file.
