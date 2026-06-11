@@ -82,7 +82,7 @@ Your company recently hired a new employee who will perform duties as an applica
     | New Password| Enter a unique and secure password |
     | Confirm Password| Reenter a unique and secure password |
 
-  **Lab Tip** - it is recommended that you use the User Password provided in the lab environment.
+    **Lab Tip** - it is recommended that you use the User Password provided in the lab environment.
 
 1. In the search box at the top of the page, search for **Enterprise applications**, and then select it from the results.
 
