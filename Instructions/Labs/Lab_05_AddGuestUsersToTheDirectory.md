@@ -31,7 +31,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. On the New user menu, select **Invite external user** and then add your information as the guest user.
 
-    **NOTE** - Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Microsoft Entra ID does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
+    > **Note:** Group email addresses are not supported; enter the email address for an individual. Also, some email providers allow users to add a plus symbol (+) and additional text to their email addresses to help with things like inbox filtering. However, Microsoft Entra ID does not currently support plus symbols in email addresses. To avoid delivery issues, omit the plus symbol and any characters following it up to the @ symbol.
 
 1. Enter an email address, such as `sc300externaluser1@sc300email.com`.
 
@@ -40,7 +40,6 @@ Your company works with many vendors and, on occasion, you need to add some vend
 1. On the Users page, verify your account is listed and, in the **User type** column, verify **Guest** is shown.
 
 1. When complete, select **Review + Invite**, then select **Invite**.
-
 
 After you send the invitation, the user account is automatically added to the directory as a guest.
 
@@ -75,7 +74,7 @@ A recent partnership has been established with another company. For now, employe
 
     ![Screen image displaying the example bulk invite guests template CSV](./media/lp1-mod3-template-csv.png)
 
-**Lab Tip** - The users listed in the screenshot and the template files are examples, they don't really exist.  You will have to add a real users to fully test this feature.
+	**Lab Tip** - The users listed in the screenshot and the template files are examples, they don't really exist.  You will have to add a real users to fully test this feature.
 
 1. Save the file.
 
@@ -114,7 +113,6 @@ A recent partnership has been established with another company. For now, employe
     Get-InstalledModule Microsoft.Graph
     ```
     
-
 1. Next, you will need to login to Azure by running:  
 
     ```
