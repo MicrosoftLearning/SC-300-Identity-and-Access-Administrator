@@ -118,16 +118,16 @@ You add your organization's privacy information in the **Properties** area of 
 
 1. Add your privacy info for your employees:
 
-- **Global privacy contact** - `AllanD@<your Azure lab domain>`
-     - Allan Deyoung is a built-in users in your Azure lab tenant who works as an IT Admin, we will use him as the Privacy contact.
-     - This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your global administrators.
+    - **Global privacy contact** - `AllanD@<your Azure lab domain>`
+        - Allan Deyoung is a built-in users in your Azure lab tenant who works as an IT Admin, we will use him as the Privacy contact.
+        - This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your global administrators.
 
-- **Privacy statement URL** -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
+    - **Privacy statement URL** -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
 
-     - In sample Privacy PDF is provided in your labs directory.
-     - Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
+        - In sample Privacy PDF is provided in your labs directory.
+        - Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
 
-    **IMPORTANT** -If you don't include either your own privacy statement or your privacy contact, your external guests will see text in the Review Permissions box that says, **<your org name\>** has not provided links to their terms for you to review. For example, a guest user will see this message when they receive an invitation to access an organization through B2B collaboration.
+    >**IMPORTANT:** If you don't include either your own privacy statement or your privacy contact, your external guests will see text in the Review Permissions box that says, **<your org name\>** has not provided links to their terms for you to review. For example, a guest user will see this message when they receive an invitation to access an organization through B2B collaboration.
 
     ![B2B Collaboration Review permissions box with message](./media/active-directory-no-privacy-statement-or-contact.png)
 
