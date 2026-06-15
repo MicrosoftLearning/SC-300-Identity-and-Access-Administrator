@@ -40,12 +40,12 @@ When you use managed identities for Azure resources, your code can get access to
 
     >**Note:** The Key vault name must be unique. Look for a green checkmark to the right of the field.
 
- - **Resource group** - **rgSC300KeyVault**
- - **Key vault name** - *anyuniquevalue*
+    - **Resource group** - **rgSC300KeyVault**
+    - **Key vault name** - *anyuniquevalue*
 
  1. Select **Next**.
 
- - On the **Access Configuration** page, select the **Vault Access Policy** radio button.
+    - On the **Access Configuration** page, select the **Vault Access Policy** radio button.
 
 1. Select **Review + create**.
 
@@ -59,13 +59,13 @@ When you use managed identities for Azure resources, your code can get access to
 
 1. Select **Windows 11** and from the plan dropdown choose **Windows 11 Enterprise, version 25H2** or any newer version. Then select **Create**.
 
-  | **Field** | **Values** |
-  | :--   | :--    |
-  | VM Name | **vmKeyVault** |
-  | Availability options | No infrastructure redundancy required |
-  | Admin Username | **adminKeyVault** |
-  | Password | Set a secure password that you can remember |
-  | Licensing | Confirm you have an eligible license |
+    | **Field** | **Values** |
+    | :--   | :--    |
+    | VM Name | **vmKeyVault** |
+    | Availability options | No infrastructure redundancy required |
+    | Admin Username | **adminKeyVault** |
+    | Password | Set a secure password that you can remember |
+    | Licensing | Confirm you have an eligible license |
 
 1. Make sure you mark the **Confirm licensing** checkbox.
 
