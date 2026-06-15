@@ -88,8 +88,8 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 1. Add a description for your client secret and duration
 
- - Description = **SC300 lab secret**
- - Duration = **90 days (3 months)**
+    - Description: **SC300 lab secret**
+    - Duration: **90 days (3 months)**
 
 1. Select **Add**.
 
@@ -97,7 +97,7 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 With your web App registered, you're ready to add the scopes that your API's code can use to provide granular permission to consumers of your API.
 
-#### Task 5 - Add a scope
+#### Task 4 - Add a scope
 
 The code in a client application requests permission to perform operations defined by your web API by passing an access token along with its requests to the protected resource (the web API). Your web API then performs the requested operation only if the access token it receives contains the scopes (also known as application permissions) required for the operation.
 
@@ -138,7 +138,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 
    4. If you followed this optional step, the client app is now a pre-authorized client app (PCA), and users won't be prompted for their consent when signing into it.
 
-#### Task 6 - Add a scope requiring admin consent
+#### Task 5 - Add a scope requiring admin consent
 
 Next, add another example scope named Employees.Write.All that only admins can consent to. Scopes that require admin consent are typically used for providing access to higher-privileged operations, often by client applications that run as backend services or daemons that don't sign in a user interactively.
 
@@ -157,13 +157,13 @@ Next, add another example scope named Employees.Write.All that only admins can
 
     >**Note:** If you successfully added both example scopes described in the previous sections, they'll appear in the **Expose an API** pane of your web API's app registration, similar to this image:
 
-  ![Screenshot of the Expose an API pane showing two exposed scopes.](./media/portal-03-scopes-list.png)
+    ![Screenshot of the Expose an API pane showing two exposed scopes.](./media/portal-03-scopes-list.png)
 
-  As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
+    As shown in the image, a scope's full string is the concatenation of your web API's **Application ID URI** and the scope's **Scope name**.
 
-   >**Note:** For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
+    >**Note:** For example, if your web API's application ID URI is `https://contoso.com/api` and the scope name is Employees.Read.All, the full scope is: `https://contoso.com/api/Employees.Read.All`
 
-   >**Note:** Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
+    >**Note:** Next, you will configure a client app's registration with access to your web API and the scopes you defined by following the steps above.
   Once a client app registration is granted permission to access your web API, the client can be issued an OAuth 2.0 access token by the Microsoft identity platform. When the client calls the web API, it presents an access token whose scope (scp) claim is set to the permissions you've specified in the client's app registration. You can expose additional scopes later as necessary. Consider that your web API can expose multiple scopes associated with several operations. Your resource can control access to the web API at runtime by evaluating the scope (scp) claim(s) in the OAuth 2.0 access token it receives.
 
 ### Exercise summary
