@@ -11,7 +11,7 @@ lab:
 
 # Lab 25 - Creating Access Reviews for Internal and External Users
 
-### Login type = Microsoft 365 admin
+### Login type: Microsoft 365 admin
 
 ## Lab scenario
 
@@ -25,7 +25,7 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 1. Sign in to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
 
-    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+    >**Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. In the left navigation menu, expand the **ID Governance**, select **Access reviews**.
 
@@ -45,7 +45,7 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 1. Select **Next: Reviews** to move forward in the wizard.
 
-  > **Note:** You can assign reviewers to perform self-reviews, group owners, managers, or selected users and groups. You can also configure what happens if a reviewer does not respond.
+    >**Note:** You can assign reviewers to perform self-reviews, group owners, managers, or selected users and groups. You can also configure what happens if a reviewer does not respond.
 
 1. On the **Reviews** tab, under **Specify reviewers**, open the **Select reviewers** dropdown and select **Selected user(s) or group(s)**.
 
@@ -68,7 +68,7 @@ Privileged user access should be regularly reviewed in a similar manner.  Since
 
 1. Select **Create**.
 
-  > **Note:** After the access review is created, it appears in the access reviews list, and the selected reviewers receive an email notification when the review starts.
+  >**Note:** After the access review is created, it appears in the access reviews list, and the selected reviewers receive an email notification when the review starts.
 
 ### Exercise summary
 
