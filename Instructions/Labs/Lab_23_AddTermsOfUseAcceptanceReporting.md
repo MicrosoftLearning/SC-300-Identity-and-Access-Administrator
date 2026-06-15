@@ -11,7 +11,7 @@ lab:
 
 # Lab 23: Add terms of use and acceptance reporting
 
-### Login type = Microsoft 365 admin
+### Login type: Microsoft 365 admin
 
 ## Lab scenario
 
@@ -45,7 +45,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. Select the **Terms of use document** box, browse to your finalized terms of use PDF and select it.
 
-   **ToU File Provided** - browse to the github repo AllFiles/Labs/Lab26 to get a sample Terms-of-User PDF document for use in this lab.
+    **ToU File Provided** - browse to the github repo AllFiles/Labs/Lab26 to get a sample Terms-of-User PDF document for use in this lab.
 
 1. Select **English** for the language for your terms of use document.
 
@@ -90,18 +90,18 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. Under **Conditional Access**, select **Custom policy**.
 
- - Possible choices and when to use them:
+    - Possible choices and when to use them:
 
-  | Template | Description |
-  |---|---|
-  | **Access to cloud apps for all guests** | A Conditional Access policy will be created for all guests and all cloud apps. This policy impacts the Azure portal. Once this is created, you might be required to sign-out and sign-in. | 
-  |**Access to cloud apps for all users** | A Conditional Access policy will be created for all users and all cloud apps. This policy impacts the Azure portal. Once this is created, you will be required to sign-out and sign-in. |
-  | **Custom policy** | Select the users, groups, and apps that this terms of use will be applied to. |
-  | **Create Conditional Access policy later** | This terms of use will appear in the grant control list when creating a Conditional Access policy. |
+    | Template | Description |
+    |---|---|
+    | **Access to cloud apps for all guests** | A Conditional Access policy will be created for all guests and all cloud apps. This policy impacts the Azure portal. Once this is created, you might be required to sign-out and sign-in. | 
+    |**Access to cloud apps for all users** | A Conditional Access policy will be created for all users and all cloud apps. This policy impacts the Azure portal. Once this is created, you will be required to sign-out and sign-in. |
+    | **Custom policy** | Select the users, groups, and apps that this terms of use will be applied to. |
+    | **Create Conditional Access policy later** | This terms of use will appear in the grant control list when creating a Conditional Access policy. |
 
-  **IMPORTANT** - Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
+    **IMPORTANT** - Conditional Access policy controls (including terms of use) do not support enforcement on service accounts. We recommend excluding all service accounts from the Conditional Access policy.
 
-  Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
+    Custom Conditional Access policies enable granular terms of use, down to a specific cloud application or group of users. For more information, see [https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-tou).
 
 1. When complete, select **Create**.
 
@@ -117,7 +117,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. In the **Select users and groups** pane, select ***Adele Vance** account and then select **Select**.
 
-   **Warning** - If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
+    **Warning** - If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
 
 1. In the **Target resources**, select **No target resource selected**.
 
