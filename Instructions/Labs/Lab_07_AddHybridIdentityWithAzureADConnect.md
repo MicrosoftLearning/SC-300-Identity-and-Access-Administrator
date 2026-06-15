@@ -1,6 +1,6 @@
 ---
 lab:
-  title: 07 - Optional --- Add Hybrid Identity with Microsoft Entra Connect
+  title: 07 - Optional - Add Hybrid Identity with Microsoft Entra Connect
   learning path: '01'
   module: Module 01 - Implement an identity management solution
   description: Configure Azure AD Connect attribute level filtering that will limit synchronization of user accounts to those with the UPN suffix matching the custom domain name of the target Azure AD tenant.
@@ -11,7 +11,7 @@ lab:
     - Microsoft Entra
 ---
 
-# Lab 07: OPTIONAL --- Add Hybrid Identity with Microsoft Entra Connect
+# Lab 07: OPTIONAL - Add Hybrid Identity with Microsoft Entra Connect
 
 # This lab will only function in a non-lab-hoster environment. If you want to try it using a personal account, it should work. You will not be able to perform within the class.
 
@@ -133,7 +133,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
     Restart-Computer -ComputerName 'DC1'
     ```
 
-### Task 5 - Configure contoso.local Active Directory
+### Task 4 - Configure contoso.local Active Directory
 
 1. Connect again to the **DC1** Azure VM via Remote Desktop. When prompted, sign in by using the following credentials:
 
@@ -228,15 +228,15 @@ In this task, you will create an Azure Active Directory tenant with the followin
 
 1. On the **Create directory** page, specify the following settings and select **Create**:
 
-Basic tab:
-    -   Select a tenant type: Choose **Azure Active Directory**
+    Basic tab:
+    - Select a tenant type: Choose **Azure Active Directory**
 
-Configuration tab:
-    -   Organization name: **Contoso**
+    Configuration tab:
+    - Organization name: **Contoso**
 
-    -   Initial domain name: Any valid, unique domain name.
+    - Initial domain name: Any valid, unique domain name.
 
-    -   Country or region: **United States**
+    - Country or region: **United States**
 
 1. Once it's created, open **Azure Active Directory**.
 
@@ -295,7 +295,7 @@ Configuration tab:
     > **Note**: Copy the **User name** and **Password** values into Notepad. You will need them later in this lab.
 
 
-### Task 5: Configure DNS suffix in the Contoso Active Directory forest
+### Task 3: Configure DNS suffix in the Contoso Active Directory forest
 
 In this task, you will configure the DNS suffix of the Contoso Active Directory forest to match the newly verified Azure AD custom domain name.
 
@@ -329,7 +329,7 @@ In this task, you will configure the DNS suffix of the Contoso Active Directory 
     }
     ```
 
-### Task 6: Install Microsoft Entra Connect
+### Task 4: Install Microsoft Entra Connect
 
 In this task, you will install Microsoft Entra Connect.
 
@@ -375,7 +375,6 @@ In this task, you will install Microsoft Entra Connect.
 
 1. On the **Connect your directories** page, ensure that the **corp.contoso.com** entry appears in the **FOREST** drop-down list and select **Add Directory**. In the **AD forest account**, ensure that the **Create new AD account** option is selected, in the **ENTERPRISE ADMIN USERNAME** textbox, type **CORP.CONTOSO.COM\\demouser**, in the **PASSWORD** textbox, type **demo\@pass123**, and select **OK**.
 
-
 1. Back on the **Connect your directories** page, select **Next**.
 
 1. On the **Azure AD sign-in configuration** page, ensure that your custom domain name is listed as the verified **Active Directory UPN Suffix**, and that the **userPrincipalName** entry appears in the **USER PRINCIPAL NAME** drop-down list. Note the warning stating **Users will not be able to sign into Azure AD with on-premises credentials if the UPN suffix does not match a verified domain name**. Check the **Continue without matching all UPN suffixes to verified domain** box and select **Next**. 
@@ -384,9 +383,7 @@ In this task, you will install Microsoft Entra Connect.
 
 1. On the **Domain and OU filtering** page; choose **Sync selected domains and OUs** then ensure that only the **DemoAccounts** OU and all its children OUs are selected and select **Next**. 
 
-
 1. On the **Uniquely identifying your users** page, accept the default settings and select **Next**. 
-
 
 1. On the **Filter users and devices** page, accept the default settings and select **Next**. 
 
@@ -394,9 +391,7 @@ In this task, you will install Microsoft Entra Connect.
 
 1. On the **Enable single sign-on** page, select **Enter credentials**, in the **Forest credentials** dialog box, sign in with the **CORP\\demouser** username and **demo\@pass123** password, and select **Next**.
 
-
 1. On the **Ready to configure** page, ensure that the **Start the synchronization process when configuration completes** checkbox is **NOT** selected and select **Install**.
-
 
    >**Note**: You will configure attribute-level filtering before enabling the synchronization process.
 
@@ -404,22 +399,19 @@ In this task, you will install Microsoft Entra Connect.
 
 1. On the **Configuration complete** page, select **Exit**.
 
-
-### Task 7: Enable Active Directory Recycle Bin
+### Task 5: Enable Active Directory Recycle Bin
 
 In this task, you will enable Recycle Bin in the Contoso Active Directory domain. 
 
 1. Within the Remote Desktop session to **DC1**, on the Tools menu in the Server Manager console, start **Active Directory Administrative Center**.
 
-
 1. In the **Active Directory Administrative Center** console, right-Select **corp (local)** on the left and select **Enable Recycle Bin**. When prompted to confirm, select **OK**.
-
 
 1. When prompted to refresh AD Administrative Center, select **OK**.
 
    >**Note**: For information regarding benefits of the Recycle Bin in hybrid scenarios, refer to `https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-recycle-bin`
 
-### Task 8: Configure Azure AD Connect attribute-level filtering
+### Task 6: Configure Azure AD Connect attribute-level filtering
 
 In this task, you will configure Azure AD Connect attribute level filtering that will limit synchronization of user accounts to those with the UPN suffix matching the custom domain name of the target Azure AD tenant.
 
@@ -427,9 +419,7 @@ In this task, you will configure Azure AD Connect attribute level filtering that
 
 1. Within the Remote Desktop session to **DC1**, start **Synchronization Rules Editor** under **Azure AD Connect** in the Start menu.
 
-
 1. In the Synchronization Rules Editor window, on the **View and manage your synchronization rules** page, ensure that **Inbound** appears in the **Direction** drop-down list and select **Add new rule**. This will launch the **Create inbound synchronization rule** wizard.
-
 
 1. On the **Create inbound synchronization rule - Description** page, specify the following settings and select **Next**:
 
@@ -452,7 +442,6 @@ In this task, you will configure Azure AD Connect attribute level filtering that
     - Enable Password Sync: **Leave empty**
 
     - Disabled: **Leave empty**
-
 
 1. On the **Create inbound scoping filter** page, select **Add Group**, select **Add clause** specify the following, and select **Next**:
 
@@ -500,7 +489,6 @@ In this task, you will configure Azure AD Connect attribute level filtering that
 
     - Disabled: **Leave empty**
 
-
 1. On the **Scoping filer** page, select **Next**.
 
 1. On the **Join Rules** page, select **Next**.
@@ -517,7 +505,7 @@ In this task, you will configure Azure AD Connect attribute level filtering that
 
     >**Note**: This should bring you back to the **View and manage your synchronization rules** interface, with the new rules listed at the top of the rule list. 
 
-### Task 9: Initiate and verify directory synchronization
+### Task 7: Initiate and verify directory synchronization
 
 1. Within the Remote Desktop session to **DC1**, double-Select the **Azure AD Connect** desktop shortcut.
 
@@ -561,7 +549,7 @@ In this task, you will configure Azure AD Connect attribute level filtering that
 
    >**Note**: In a production environment, you would install additional agents for redundancy. For more information, refer to `https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start`.
 
-### Task 10: Configure Hybrid Azure AD join
+### Task 8: Configure Hybrid Azure AD join
 
 In this task, you will configure Azure AD Connect device synchronization options.
 
@@ -591,8 +579,7 @@ In this task, you will configure Azure AD Connect device synchronization options
 
 1. On the **Configuration complete** page verify that the task completed successfully and select **Exit**.
 
-
-### Task 11: Perform Hybrid Azure AD join
+### Task 9: Perform Hybrid Azure AD join
 
 1. On the lab computer, in the Azure portal, verify that you are signed into the Azure AD tenant associated with the Azure subscription into which you deployed resources in the Before Hands-On Lab exercises (the **Default directory**). If not, select the **Directory + Subscription** icon in the toolbar of the Azure portal (to the right of the **Cloud Shell** icon) to switch to that Azure AD tenant. 
 
@@ -602,9 +589,7 @@ In this task, you will configure Azure AD Connect device synchronization options
 
 1. Within the Remote Desktop session to **APP1**, on the **Server Manager** window, start **Task Scheduler** under **Tools**. 
 
-
 1. In the **Task Scheduler** console, navigate to **Task Scheduler Library** > **Microsoft** > **Windows** > **Workplace Join**. From there, enable then run the **Automatic-Device-Join** task. 
-
 
 1. Switch to the Remote Desktop session to **DC1** and, from the console pane of the Windows PowerShell ISE window, start Azure AD Connect delta synchronization by running the following:
 
