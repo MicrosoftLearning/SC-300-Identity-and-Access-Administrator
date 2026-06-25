@@ -118,11 +118,11 @@ Follow these steps to make a user eligible for an Microsoft Entra admin role.
 
 1. Open a new InPrivate browser window.
 
-1. Connect to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** as your Global Administrator.
+1. Connect to **Microsoft Entra admin center** at **`https://entra.microsoft.com`**.
 
     >**Note:** If it opens with a user logged in, Select on their name in the upper-right corner and select **Sign in as a different account**.
 
-1. Log in a Miriam.
+1. Log in as Miriam.
 
    | Field | Value |
    | :--- | :--- |
