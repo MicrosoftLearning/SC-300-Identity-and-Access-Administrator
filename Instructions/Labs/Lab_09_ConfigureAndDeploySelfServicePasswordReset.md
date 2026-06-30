@@ -106,7 +106,7 @@ Now let's test whether the user can reset their password.
 
     This is to ensure you well be prompted for user authentication.
 
-1. Enter `AlexW@<organization-domain-name>.onmicrosoft.com` and then select **Next**.
+1. Enter `AllanD@<organization-domain-name>.onmicrosoft.com` and then select **Next**.
 
     >**Note:** Replace the organization-domain-name with your domain name.
 
