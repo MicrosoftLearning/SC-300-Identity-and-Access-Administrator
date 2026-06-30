@@ -11,7 +11,7 @@ lab:
 
 # Lab 06: Add a federated identity provider
 
-### Login type = Microsoft 365 admin
+### Login type: Microsoft 365 admin
 
 ## Lab scenario
 
@@ -29,7 +29,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. Accept the terms of service if you're prompted to do so.
 
-**Create a new project:**
+   **Create a new project:**
 1. At the top of the page, select the project menu to open the Select a project page. Choose **New Project**.  Leave the remaining fields with the default settings.
 
 1. On the New Project page, give the project a name: `MyB2BApp`, and then select **Create**.
@@ -42,17 +42,17 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. On the Application information screen enter the following information:
 
-| Section | Field Name | Value |
-| :---    | :---    | :---  |
-| 1 App Information | | |
-|            | App name | `Microsoft Entra ID` |
-|            | User support email | Select the email name from the drop down |
-| 2 Audience | | |
-|            | Internal / External | **External** |
-| 3 Contact Information | | |
-|            | Email addresses | Use the same email address as above |
-| 4 Finish | | |
-|            | Agreement | Mark the checkbox |
+    | Section | Field Name | Value |
+    | :---    | :---    | :---  |
+    | 1 App Information | | |
+    |            | App name | `Microsoft Entra ID` |
+    |            | User support email | Select the email name from the drop down |
+    | 2 Audience | | |
+    |            | Internal / External | **External** |
+    | 3 Contact Information | | |
+    |            | Email addresses | Use the same email address as above |
+    | 4 Finish | | |
+    |            | Agreement | Mark the checkbox |
 
 1. Select the **Create** button to continue.
 
@@ -68,19 +68,19 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. Within the **Authorized redirect URIs**, select **+ Add URI** button.  You will need to add three different URI's in this section:
 
- - **First URI** = `https://login.microsoftonline.com`
- - **Second URI** = `https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp` (where <tenant ID> is your tenant ID)
- - **Third URI** = `https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp` (where <tenant name> is your tenant name)
+    - **First URI** = `https://login.microsoftonline.com`
+    - **Second URI** = `https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp` (where <tenant ID> is your tenant ID)
+    - **Third URI** = `https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp` (where <tenant name> is your tenant name)
 
-**Lab Tip** - you may find this step easier if you use Notepad in the lab VM to create these URI, and then copy and paste from there.
+    **Lab Tip** - you may find this step easier if you use Notepad in the lab VM to create these URI, and then copy and paste from there.
 
-**Lab Tip 2** - Results should look similar to this, with your Tenant ID and Tenant Name.
+    **Lab Tip 2** - Results should look similar to this, with your Tenant ID and Tenant Name.
 
-| URI # | Link |
-| :--- | :--- |
-| URIs 1 | https://login.microsoftonline.com |
-| URIs 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc/oauth2/authresp |
-| URIs 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth2/authresp |
+    | URI # | Link |
+    | :--- | :--- |
+    | URIs 1 | https://login.microsoftonline.com |
+    | URIs 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc/oauth2/authresp |
+    | URIs 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth2/authresp |
 
 1. Select the **Create** button.
 
@@ -152,9 +152,9 @@ This completes the configuration of Google as an identity provider.
 
 1. Select **Review & Invite** then select **Invite**.
 
-| **Security Note** |
-| ----: |
-| If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment.  Passkey requires BlueTooth, which cannot be enabled through the VM.  You can still complete the lab, just do these last few tasks in an InPrivate brower running outside the lab environment. |
+    | **Security Note** |
+    | ----: |
+    | If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment.  Passkey requires BlueTooth, which cannot be enabled through the VM.  You can still complete the lab, just do these last few tasks in an InPrivate brower running outside the lab environment. |
 
 
 #### Task 3 - Accept the invitation and login
