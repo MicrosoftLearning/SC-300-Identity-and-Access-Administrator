@@ -47,7 +47,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`**, and sign in using a Global administrator account for the directory.
 
-  > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+   > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. In the left navigation, under **Entra ID**, select **Groups**, then select **All groups**.
 
@@ -76,7 +76,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 #### Task 3 - Add an Office license to sg-SC300-O365
 
-**Lab Tip** - You have to add and remove licenses via the Microsoft 365 admin center. This is a relatively new change.
+   **Lab Tip** - You have to add and remove licenses via the Microsoft 365 admin center. This is a relatively new change.
 
 1. Open a new tab in your browser.
 
