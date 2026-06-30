@@ -51,11 +51,11 @@ A catalog is a container of resources and access packages. You create a catalog 
 
 1. Under **Enabled**, select **Yes**.
 
-  - **Enabled for external users** select **No**.  This setting allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
+    - **Enabled for external users** select **No**.  This setting allows users in selected external directories to be able to request access packages in this catalog. No changes will be made to this setting.
 
 1. You may choose to enable the catalog for immediate use or disable if you intend to stage it or keep it unavailable until you intend to use it. For this exercise, the catalog does not need to be enabled.
 
-  ![Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted](./media/lp4-mod1-new-catalog-marketing.png)
+   ![Screen image displaying the New catalog pan with the Name, Description, Enabled, and Create options highlighted](./media/lp4-mod1-new-catalog-marketing.png)
 
 1. Select **Create**.
 
@@ -118,7 +118,7 @@ You can edit the name and description for a catalog. Users see this information 
 
 1. Select **Save**.
 
-## Task 5 – Create access reviews for guest users
+#### Task 5 – Create access reviews for guest users
 
 Microsoft Entra Identity Governance provides access reviews to help manage and control the access lifecycle for guest users.
 
