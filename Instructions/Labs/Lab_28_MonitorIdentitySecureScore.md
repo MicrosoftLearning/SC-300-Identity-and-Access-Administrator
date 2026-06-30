@@ -43,7 +43,7 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 1. Scroll down to view the **Recommendations**.
 
-**Lab Tip** - In contrast to the recommendations in Microsoft Defender for Cloud and Microsoft Defender XDR, these actions are specific to identity.  This provides a more focused list of potential actions to your security posture management for identity. Any recommendations initiated from this list will also provide an impact to your overall tenant security posture. 
+  **Lab Tip** - In contrast to the recommendations in Microsoft Defender for Cloud and Microsoft Defender XDR, these actions are specific to identity.  This provides a more focused list of potential actions to your security posture management for identity. Any recommendations initiated from this list will also provide an impact to your overall tenant security posture. 
 
 #### Task 2 - Execute an improvement action
 
@@ -61,22 +61,22 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
 1. Use the following values to create the policy:
 
-| Field | Value |
-| :--- | :--- |
-| Name | **User risk protection policy** |
-| Assignments | 1. Select **0 users or agents (Preview) selected** |
-|             | 2. On the **Include** tab mark **All users** |
-|             | 3. On the **Exclude** tab, use the **Users and groups** to exclude **MOD Administrator** |
-| Target resources | Select **No target resource selected**, and then select **All resources (formerly 'All cloud apps')** |
-| Network | Leave at default |
-| Conditions | 1. Select **0 conditions selected** |
-|            | 2. Under **User risk** select the **Not configured** link. |
-|            | 3. Set **Configure = Yes** and mark the box next to **High** and **Medium**. |
-|            | 4. Select **Done** to save changes. |
-| Access controls | 1. Under **Grant** select **0 controls selected**. |
-|                 | 2. Select **Require risk remediation**. |
-|                 | 3. Under the **Require authentication strength** select **Phishing-resistant MFA**. |
-| Session | Leave at default |
+   | Field | Value |
+   | :--- | :--- |
+   | Name | **User risk protection policy** |
+   | Assignments | 1. Select **0 users or agents (Preview) selected** |
+   |             | 2. On the **Include** tab mark **All users** |
+   |             | 3. On the **Exclude** tab, use the **Users and groups** to exclude **MOD Administrator** |
+   | Target resources | Select **No target resource selected**, and then select **All resources (formerly 'All cloud apps')** |
+   | Network | Leave at default |
+   | Conditions | 1. Select **0 conditions selected** |
+   |            | 2. Under **User risk** select the **Not configured** link. |
+   |            | 3. Set **Configure = Yes** and mark the box next to **High** and **Medium**. |
+   |            | 4. Select **Done** to save changes. |
+   | Access controls | 1. Under **Grant** select **0 controls selected**. |
+   |                 | 2. Select **Require risk remediation**. |
+   |                 | 3. Under the **Require authentication strength** select **Phishing-resistant MFA**. |
+   | Session | Leave at default |
 
 1. Set **Enable policy** to **Report-only**.  You can use the WhatIf function to verify the policy before you enable it.
 
