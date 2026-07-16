@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Lab 14 - Configure User Risk and Sign-in Risk Conditional Access Policies
+  title: 14 - Configure User Risk and Sign-in Risk Conditional Access Policies
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
   description: As an additional layer of security, you need to configure your Microsoft Entra organization's user risk and sign-in risk policies by using Conditional Access.
