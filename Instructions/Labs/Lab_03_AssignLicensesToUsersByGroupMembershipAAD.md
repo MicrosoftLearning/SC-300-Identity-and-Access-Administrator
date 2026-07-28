@@ -106,13 +106,15 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Notice that the Office 365 E3 license has been assigned.
 
+   > **Note:** It may take a few minutes for the license to appear.
+
 1. You can exit out of the license screen.
 
 #### Task 4 - Confirm the Office 365 license
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to Office at **`https://www.office.com`**.
+1. Connect to Office at **`https://www.m365.cloud.microsoft/apps`**.
 
 1. Select Sign in and connect as Delia Dennis.
 
@@ -124,6 +126,9 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 1. You should connect to the Office.com website, and see no messages regarding license. All of the Office applications are available on the left.
 
    ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a license is assigned.](./media/delia-office-license.png)
+
+   
+   > **Note:** It may take a few minutes for the license to be applied.
     
 1. Close the browser window.
 
