@@ -13,7 +13,7 @@ lab:
 
 # Lab 07: OPTIONAL - Add Hybrid Identity with Microsoft Entra Connect
 
-# This lab will only function in a non-lab-hoster environment. If you want to try it using a personal account, it should work. You will not be able to perform within the class.
+> **Note:** This lab provisions a separate on-premises Active Directory environment and requires subscription-level permissions that may not be available in the environment provided for this course. If you have access to a personal Azure subscription, you can complete this lab there; you may not be able to complete every step in the environment provided for this class.
 
 **Note** - This lab is titled Optional.  It takes at least 1 hour to complete and does require that you are detailed in your lab steps.  Please feel free to complete it as time permits.  If your company has already set up its Hybrid configuration, or you don't plan to use Microsoft Entra Connect, please jump over this lab.
 
@@ -51,7 +51,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
    -   Admin Password: **Enter a secure password that you will remember**
    -   Deploy Client VM: **No**
    -   Client VHD URI: **leave blank**
-   -   VM Size: **Standard_D2s_v3**
+   -   VM Size: **Standard_D2s_v5**
    
     >**Note:** Use a similar VM size if your subscription does not support the listed size. Documentation is linked here: `https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes`.
 

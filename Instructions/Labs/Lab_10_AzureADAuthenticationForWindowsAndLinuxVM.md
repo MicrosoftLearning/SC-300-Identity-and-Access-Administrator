@@ -42,12 +42,12 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
   | Field | Value to use |
   | :-- | :-- |
   | Subscription | Accept the default |
-  | Resource Group | Select **rgEL** |
+  | Resource Group | Select or create a new resource group for this lab |
   | Virtual machine name | **vmEntraLogin** |
   | Region | *default* |
   | Availability options | **No infrastructure redundancy required** |
   | Security Type | **Standard** |
-  | Size | **Standard DC1s_v3 - 1 vcpu, 8 GiB memory** |
+  | Size | **Standard D2s_v5 - 2 vcpus, 8 GiB memory** |
   | | **Lab tip** - if the exact specified size is not available, try a similar size in the same series.|
   | Admin Username | **vmEntraAdmin** |
   | Admin Password | Use the one provided by the lab environment or make us a secure password you can remember |
