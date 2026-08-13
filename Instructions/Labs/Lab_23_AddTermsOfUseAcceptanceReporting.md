@@ -148,7 +148,7 @@ Once you have finalized your terms of use document, use the following procedure 
     | Setting | Value to enter |
     | :--- | :--- |
     | User Name | `AdeleV@<your domain name>.onmicrosoft.com` |
-    | Password | Enter the tenant's admin password(Refer the Lab Resources tab to retrieve the tenant admin password) |
+    | Password | Enter the tenant admin password provided for this lab |
 
 1. Validate Adele's login with the MFA request.
 

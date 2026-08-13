@@ -17,7 +17,7 @@ lab:
 
 In this lab, you explore Microsoft Sentinel by working with Microsoft Entra ID data sources and running hunting queries using Kusto Query Language (KQL). You review how to connect data sources, create a Microsoft Sentinel workspace, and execute queries as part of security operations tasks.
 
- >**Note:** This lab cannot be completed in the provided training lab environment at this time. We are leaving the lab step here, so you can optionally try it on your Bring You Own Subscription (BYOS) environment.  Please read over the steps to see what is possible. We are actively working this lab to find a work-around in the lab environment, and will update it soon.
+ >**Note:** This lab cannot be completed in the provided training lab environment at this time. We are leaving the lab step here so you can optionally try it using a personal Azure subscription. Please read over the steps to see what is possible. We are actively working this lab to find a work-around in the lab environment, and will update it soon.
 
 ### Login type: Azure resource login
 
@@ -68,6 +68,8 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
     >**Note:** You should show 1 Connector installed and see **Microsoft Entra ID** listed.
 
 1. Select **Microsoft Entra ID** and then select **Open connector page**.
+
+    > **Note:** Connecting this data source requires Global Administrator or Security Administrator permissions, plus permission to configure diagnostic settings on the tenant. If the account used for this lab doesn't have these permissions, the **Prerequisites** checklist on the connector page will show missing items and you won't be able to complete steps 6-10. Review the remaining steps to understand the intended workflow, then continue on with Task 3.
 
 1. In the connector page, the instructions and next steps will be provided for the data connector. Verify that a check-mark is next to each of the **Prerequisites** to continue with the **Configuration**.
 

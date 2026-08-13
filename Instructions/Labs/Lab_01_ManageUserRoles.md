@@ -38,7 +38,7 @@ Your company recently hired a new employee who will perform duties as an applica
 
 #### Task 1 - Add a new user
 
-1. Open Microsoft Edge and navigate to the **Microsoft Entra admin center** at **`https://entra.microsoft.com`**. Sign in using a Global Administrator account provided by your authorized lab hoster (ALH).
+1. Open Microsoft Edge and navigate to the **Microsoft Entra admin center** at **`https://entra.microsoft.com`**. Sign in using the Global Administrator account provided for this lab.
 
     > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
@@ -197,15 +197,17 @@ In this exercise, you removed the Application Administrator role from the user t
 
 1. Select **Download** to download the **.csv** file.
 
-1. The .csv template provides you with the fields included with the user profile. This includes the required username, display name, and initial password. You can also complete optional fields, such as Department and Usage location, at this time. The following screenshot is an example of how you can complete the .csvfile: 
+    > **Note:** A ready-to-use sample CSV file is already provided in the **Allfiles/Labs/Lab1** folder — **SC300BulkUser.csv**. Use this file instead of manually filling out the downloaded template. Open it in **Notepad** (not Excel), update the domain name, and save it before continuing to the next step.
+
+1. The .csv template provides you with the fields included with the user profile. This includes the required username, display name, and initial password. You can also complete optional fields, such as Department and Usage location, at this time. The following screenshot is an example of how you can complete the .csv file, shown for reference only:
 
     ![Bulk import using csv file entry](./media/bulkimportexample.png)
 
-    You can modify this file to add users in bulk.  Note that you do not need to fill out all the fields.  As per the sample data provide, you mainly need to add the name and username information.
+    You do not need to fill out all the fields.  As per the sample data provided, you mainly need to add the name and username information.
 
-1. A sample CSV has been provided in the Allfiles/Labs/Lab1 folder -- **SC300BulkUser.csv**.
+1. To prepare the provided sample file:
    1. Open Notepad: inside the lab environment, select the **Start** button and type **Notepad**.  
-   1. Open the SC300BulkUser.csv file
+   1. Open the **SC300BulkUser.csv** file from the **Allfiles/Labs/Lab1** folder.
    1. Change the **enter your domain name** to the domain of your Azure lab environment.
    1. Save the file.
 
