@@ -35,8 +35,8 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 
 1. Sign in as **Pradeep Gupta**.
 
-   - **Username**: `PradeepG@<your lab hoster–provided domain>`
-   - **Password**: Use the password from the **Resources** tab.
+   - **Username**: `PradeepG@<the domain provided for this lab>`
+   - **Password**: Use the password provided for Pradeep Gupta.
 
 1. Confirm that Microsoft Forms opens and that no warning messages are displayed.
 
@@ -82,8 +82,8 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 
 1. Sign in as **Pradeep Gupta**.
 
-   - **Username**: `PradeepG@<your lab hoster–provided domain>`
-   - **Password**: Use the password from the **Resources** tab.
+   - **Username**: `PradeepG@<the domain provided for this lab>`
+   - **Password**: Use the password provided for Pradeep Gupta.
 
 1. Confirm that Pradeep has access and that the following message is displayed:
    - *Your company is monitoring the usage of this application.*
@@ -134,9 +134,9 @@ Registering your application establishes a trust relationship between your app a
 
 1. Sign in as **Pradeep Gupta**:
 
-   - **Username**: `PradeepG@<lab-hoster-domain>`
+   - **Username**: `PradeepG@<the domain provided for this lab>`
 
-   - **Password**: From the **Resources** tab.
+   - **Password**: Use the password provided for Pradeep Gupta.
 
 1. Confirm that Pradeep can access the service and that a message is displayed indicating company monitoring or usage of the application.
 
