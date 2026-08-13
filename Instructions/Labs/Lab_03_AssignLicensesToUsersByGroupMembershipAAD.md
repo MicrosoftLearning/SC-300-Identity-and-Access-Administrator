@@ -28,7 +28,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to Office at **`https://www.office.com`**.
+1. Connect to Office at **`https://www.m365.cloud.microsoft/apps`**.
 
 1. Select Sign in and connect as Delia Dennis.
 
@@ -37,7 +37,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
    | Username | DeliaD@`your domain name.com` |
    | Password| Enter the User password provided for DeliaD |
 
-1. You should connect to the Office.com website, but see a message indicating you don't have a license.
+1. Select **Install apps**, and the select **Microsoft 365 apps**. You should connect to the Office.com website but see a message indicating you don't have a license.
 
    ![Screen image the Office.com website with Delia Dennis logged in but no office applications are available, because no license is assigned.](./media/delia-no-office-license.png)
     
@@ -88,13 +88,11 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Select **Office 365 E3** license from the list.
 
-1. Select the **Groups** tab on the licensing screen.
-
-1. Choose the **+ Assign licenses** item.
+1. Choose the **Assign licenses** item.
 
 1. Search for **sg-SC300-O365** group the select it from the list.
 
-1. Once you have added the group, select **Assign**.
+1. Once you have added the group, select **Assign licenses**.
  
 1. Close the confirmation message.
 
@@ -108,13 +106,15 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Notice that the Office 365 E3 license has been assigned.
 
+   > **Note:** It may take a few minutes for the license to appear.
+
 1. You can exit out of the license screen.
 
 #### Task 4 - Confirm the Office 365 license
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to Office at **`https://www.office.com`**.
+1. Connect to Office at **`https://www.m365.cloud.microsoft/apps`**.
 
 1. Select Sign in and connect as Delia Dennis.
 
@@ -126,6 +126,9 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 1. You should connect to the Office.com website, and see no messages regarding license. All of the Office applications are available on the left.
 
    ![Screen image the Office.com website with Delia Dennis logged in with office applications available, because a license is assigned.](./media/delia-office-license.png)
+
+   
+   > **Note:** It may take a few minutes for the license to be applied.
     
 1. Close the browser window.
 

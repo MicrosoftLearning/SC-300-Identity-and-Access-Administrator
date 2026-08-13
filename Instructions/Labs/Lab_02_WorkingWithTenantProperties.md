@@ -57,7 +57,7 @@ In this exercise, you reviewed the steps to add a custom subdomain in Microsoft 
 
 #### Task 1 - Set the tenant name and technical contact
 
-1. From within Microsoft Entra admin center, open the **Identity** menu.
+1. From within Microsoft Entra admin center, open the **Entra ID** menu.
 
 1. In the left navigation, select **Overview** menu item, then select **Properties**.
 

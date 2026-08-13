@@ -203,7 +203,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 ##### Challenge lab portion
 
-Please try to complete the rest of this lab on your own. It is very similar to the Windows version. If you are looking for detailed steps, see Assign Azure roles using the Azure portal in the Learn Docs.
+Please try to complete the rest of this lab on your own. It is very similar to the Windows version. If you are looking for detailed steps, see [Assign Azure roles using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal) in the Learn Docs. [Sign in to a Linux virtual machine in Azure by using Microsoft Entra ID and OpenSSH](https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-linux)
 
 ### Exercise summary
 
