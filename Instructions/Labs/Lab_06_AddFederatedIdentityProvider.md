@@ -3,7 +3,7 @@ lab:
   title: 06 - Add a federated identity provider
   learning path: '01'
   module: Module 01 - Implement an identity management solution
-  description: Add and external federated identity provide to your Microsoft Entra tenant.
+    description: Add an external federated identity provider to your Microsoft Entra tenant.
   duration: 25 minutes
   level: 300
   islab: true
@@ -23,9 +23,11 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 #### Task 1 - Configure Google to be used as an identity provider
 
-**Important Note** - For this exercise, you will need a Gmail account on Google. Create a **new Google account** and then follow the steps for the exercise.  Be sure to note the email address and password, they are necessary to complete the lab.
+> **Important:** This exercise requires a learner-owned Google account that you can sign in to and access its Gmail inbox. Do not use a shared account. If you don't have an appropriate test account, review the Google configuration steps without entering credentials and continue when an account is available.
 
-1. Go to the Google APIs at `https://console.developers.google.com`, and sign in with your Google account. We recommend that you use a shared team Google account.
+1. Go to Google Cloud Console at `https://console.developers.google.com`.
+
+1. Before entering Google credentials, verify that the sign-in page is hosted at `accounts.google.com`, and then sign in with your test Google account.
 
 1. Accept the terms of service if you're prompted to do so.
 
@@ -62,15 +64,11 @@ Your company works with many vendors and, on occasion, you need to add some vend
 
 1. Accept the default name for the application.
 
-1. Within the **Authorized JavaScript origins**, select the **+ Add URI** button.
-
-1. Enter the URI `https://microsoftonline.com` for the value.
-
 1. Within the **Authorized redirect URIs**, select **+ Add URI** button.  You will need to add three different URI's in this section:
 
     - **First URI** = `https://login.microsoftonline.com`
-    - **Second URI** = `https://login.microsoftonline.com/te/**tenant ID**/oauth2/authresp` (where <tenant ID> is your tenant ID)
-    - **Third URI** = `https://login.microsoftonline.com/te/**tenant name**.onmicrosoft.com/oauth2/authresp` (where <tenant name> is your tenant name)
+    - **Second URI** = `https://login.microsoftonline.com/te/<tenant-ID>/oauth2/authresp` (where `<tenant-ID>` is your Microsoft Entra tenant ID)
+    - **Third URI** = `https://login.microsoftonline.com/te/<tenant-name>.onmicrosoft.com/oauth2/authresp` (where `<tenant-name>` is your tenant name)
 
     **Lab Tip** - you may find this step easier if you use Notepad in the lab VM to create these URI, and then copy and paste from there.
 
@@ -79,7 +77,7 @@ Your company works with many vendors and, on occasion, you need to add some vend
     | URI # | Link |
     | :--- | :--- |
     | URIs 1 | https://login.microsoftonline.com |
-    | URIs 2 | https://login.microsoftonline.com/te/aaaa1111bbbb2222cccc/oauth2/authresp |
+    | URIs 2 | https://login.microsoftonline.com/te/11111111-2222-3333-4444-555555555555/oauth2/authresp |
     | URIs 3 | https://login.microsoftonline.com/te/MyTenantName.onmicrosoft.com/oauth2/authresp |
 
 1. Select the **Create** button.
@@ -126,7 +124,7 @@ In this exercise, you registered a Google project and prepared OAuth client cred
 
 1. Select **All identity providers** from the menu on the left.
 
-1. Microsoft provides a direct federation for **Google** as an identity provider.  This can be initiated by selecting **+ Google** from the **External Identities | All identity providers** page
+1. In the **Google** row, select **Configure**.
  
 1. After selecting + Google, another page will open with additional information that is required to configure Google as an identity provider.  
 
@@ -136,9 +134,7 @@ In this exercise, you registered a Google project and prepared OAuth client cred
 
 This completes the configuration of Google as an identity provider.
 
-#### Task 2 - Invite you Test User account
-
-1. If you used an existing Gmail account, remember to delete the account with **External Identities | All identity providers**. You can also return to the Google developer console and delete the project that you created.
+#### Task 2 - Invite your test user account
 
 1. In the left navigation menu, under **Entra ID**, select **Users**.
 
@@ -150,11 +146,11 @@ This completes the configuration of Google as an identity provider.
 
 1. Enter a personal message as you want.
 
-1. Select **Review & Invite** then select **Invite**.
+1. Select **Review + invite**, then select **Invite**.
 
     | **Security Note** |
     | ----: |
-    | If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment.  Passkey requires BlueTooth, which cannot be enabled through the VM.  You can still complete the lab, just do these last few tasks in an InPrivate brower running outside the lab environment. |
+    | If the Gmail account has passkeys enabled, complete the remaining tasks in an InPrivate browser outside the lab VM. Passkey authentication might require Bluetooth or device capabilities that aren't available through the VM. |
 
 
 #### Task 3 - Accept the invitation and login
@@ -165,7 +161,7 @@ This completes the configuration of Google as an identity provider.
 
 1. Select the **Accept invitation** link in the message.
 
-1. Enter your username and password as requested in the login dialog (if requested).
+1. Verify that the authentication page redirects to `accounts.google.com` before entering your Google username or password. Then sign in if prompted.
 
     >**Note:** If the federation is working correctly, this is where you will see the first results of your new Google External Identity provider.  You will go to the login screen and be able to log in with your gmail credentials.  If the federation is not working, or has not been set up, the user would be sent an ACCOUNT VERIFICATION email after the log in, to confirm the account.  With the federation, no extra verification is needed.
 
@@ -188,7 +184,7 @@ This completes the configuration of Google as an identity provider.
 1. Enter the following web address:
 
    ```
-   login.microsoftonline.com
+    https://login.microsoftonline.com
    ```
 
 1. Select **Sign-in options** on the dialog.
@@ -197,9 +193,15 @@ This completes the configuration of Google as an identity provider.
 
 1. Enter your **lab tenant domain name** in the box and select **Next**.
 
-1. Enter the **Google** email address and password that you created.
+1. Enter the Google email address. Before entering its password, verify that authentication has redirected to `accounts.google.com`, and then complete Google sign-in.
 
 At this point, you should see your account passed to Google for confirmation; then enter the Microsoft Office portal.
+
+#### Task 5 - Clean up the test configuration
+
+1. After completing the federation tests, return to **External Identities** > **All identity providers** and remove the Google identity provider configuration created for this lab.
+
+1. Return to Google Cloud Console and delete the `MyB2BApp` project if you no longer need it.
 
 ### Exercise summary
 
