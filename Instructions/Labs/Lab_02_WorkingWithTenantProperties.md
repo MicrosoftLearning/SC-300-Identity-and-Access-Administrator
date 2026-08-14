@@ -135,28 +135,18 @@ You add your organization's privacy information in the **Properties** area of 
 
 #### Task 2 - Check your Privacy Statement
 
-1. Return to the **Microsoft Entra admin center** Dashboard.
+1. Return to the **Microsoft Entra admin center**.
 
-1. In the upper-right corner of the UI, Select on your username.
+1. Under **Entra ID**, select **Overview**, and then select the **Properties** tab.
 
-1. Choose **View account** from the dropdown menu.
+1. Verify that **Contoso Marketing** appears in the **Name** field and that the **Global privacy contact** and **Privacy statement URL** fields contain the values you saved.
 
-     **A new browser tab will open automatically**.
+1. Open the **Privacy statement URL** in a new browser tab.
 
-1. Select the **Settings & Privacy** on the left menu.
-
-1. Select **Privacy**.
-
-1. Under **Organization's notice** select the **View** item next to Contoso Marketing organizational privacy statement.
-
-     **A new browser tab will open with the Privacy PDF file you linked to displayed**.
-
-1. Review the sample Privacy statement.
+1. Verify that the sample privacy statement PDF opens.
 
 1. Close the browser tab with the PDF in it.
 
-1. Close the browser tab displaying the **My Account** items.
-
 ### Exercise summary
 
-In this exercise, you configured the tenant privacy contact and privacy statement URL, and verified the link from a user account. This exercise showed how to surface required organizational notices to internal and external users.
+In this exercise, you configured the tenant privacy contact and privacy statement URL, and verified the saved link. This exercise showed how to configure required organizational privacy information.
