@@ -227,7 +227,7 @@ After the users have been created, you will be prompted that the creation has su
 
     >**Note:** You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, follow the instructions on the screen to go to `https://aka.ms/PowerShell-Release?tag=7.3.9`. Scroll down to the assets section and select powershell-7.3.1-win-x64.msi. When the download has completed, select Open file. Install using all the defaults.
 
-    **Lab Tip** - TouchType does not work with PowerShell well in the lab environment.  To work around this issue, you open Notepad in your lab environment. Next use the TouchType feature to place the script into Notepad, then finally use Copy & Paste to put the command into PowerShell.  Apologies for this extra step.
+    **Lab Tip** - If entering a multiline command directly in PowerShell is unreliable, paste it into Notepad first, then copy it from Notepad into PowerShell.
 
 1. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 

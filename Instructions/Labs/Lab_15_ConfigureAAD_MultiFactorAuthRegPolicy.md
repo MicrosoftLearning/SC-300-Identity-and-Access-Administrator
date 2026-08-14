@@ -35,8 +35,6 @@ Multifactor authentication provides a means to verify who you are using more tha
 
 1. On the **Identity protection | Dashboard**, in the left navigation menu under the **Protect**, select **Multifactor authentication registration policy**.
 
-    ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/lp2-mod4-browse-to-mfa-registration-policy.png)
-
 1. Under **Assignments**
 
 1. Under **Assignments**, select **All users** and review the available options.
@@ -61,8 +59,6 @@ Multifactor authentication provides a means to verify who you are using more tha
 1. Find the field **Policy enforcement** in the dialog.  Set the value to **Enabled**.
 
 1. Select **Save**.
-
-   ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/lp2-mod4-browse-to-mfa-registration-policy1.png)
 
 This will require the user to complete the MFA registration the next time they attempt to login.
 

@@ -113,7 +113,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Enter `DeliaD@<your domain address>`.
 
-1. Enter the password = Enter the Global admin password of the tenant (Note : Refer the 'Lab Resources' tab to retrieve the admin password).
+1. Enter the password provided for Delia.
 
 >**Note:** At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Select the **Try Again** option in this case.
 

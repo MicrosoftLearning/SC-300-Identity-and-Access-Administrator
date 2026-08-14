@@ -100,7 +100,7 @@ A recent partnership has been established with another company. For now, employe
 
     >**Note:** You need to have PowerShell version 7.2 or higher for this lab to function.  When PowerShell opens you will get a version at the top of the screen, if you are running and older version, please update or this portion of the lab will fail.
 
-    **Lab Tip** - The TouchType feature in the lab environment has issues typing into PowerShell. If you launch Notepad in your lab, then use TouchType to load the PowerShell instructions into Notepad, you can use **Cut & Paste** to enter them into PowerShell without typing.
+    **Lab Tip** - If entering a multiline command directly in PowerShell is unreliable, paste it into Notepad first, then copy it from Notepad into PowerShell.
 
 1. You will need to Install the Microsoft.Graph PowerShell module if you have not used it before.  Run the following two commands and when prompted to confirm press Y:
 

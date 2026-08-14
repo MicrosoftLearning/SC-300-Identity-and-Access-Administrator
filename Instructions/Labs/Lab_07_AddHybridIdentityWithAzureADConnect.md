@@ -142,15 +142,7 @@ Your company works has Active Directory Domain Services on-premises.  They would
     -   Password: **demo\@pass123**
        - **It is strongly recommended that you enter a secure password that you can remember**.
 
-1.  Within the Remote Desktop session to **DC1**, start Internet Explorer and navigate to the link below.
-
-    ```
-    https://github.com/microsoft/MCW-Hybrid-identity/tree/main/Archive/Hands-on%20lab/studentfiles
-    ```
-
-1. On the **Create Users/Group for Active Directory Demo/Test Environment** page, select the **CreateDemoUsers.ps1** link, accept the licensing terms, and save the corresponding script to the local file system.
-
-1. On the **Create Users/Group for Active Directory Demo/Test Environment** page, select the **CreateDemoUsers.csv** link (directly above the PowerShell code section) and save the corresponding csv file to the same location as the **CreateDemoUsers.ps1** file.
+1. Within the Remote Desktop session to **DC1**, download [CreateDemoUsers.ps1](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/raw/master/Allfiles/Labs/Lab7/CreateDemoUsers.ps1) and [CreateDemoUsers.csv](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/raw/master/Allfiles/Labs/Lab7/CreateDemoUsers.csv). Save both files to the same folder on the local file system.
 
 1. Within the Remote Desktop session to **DC1**, start File Explorer, navigate to the folder where you downloaded both files, right-Select on the file **CreateDemoUsers.ps1**, select **Properties**, in the **CreateDemoUsers.ps1 Properties** dialog box, check the **Unblock** checkbox and select **OK**.
 
