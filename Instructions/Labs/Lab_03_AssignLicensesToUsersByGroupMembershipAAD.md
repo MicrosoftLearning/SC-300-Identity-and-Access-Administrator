@@ -28,7 +28,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to Office at **`https://www.m365.cloud.microsoft/apps`**.
+1. Connect to Office at **`https://m365.cloud.microsoft/apps`**.
 
 1. Select Sign in and connect as Delia Dennis.
 
@@ -114,7 +114,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to Office at **`https://www.m365.cloud.microsoft/apps`**.
+1. Connect to Office at **`https://m365.cloud.microsoft/apps`**.
 
 1. Select Sign in and connect as Delia Dennis.
 
