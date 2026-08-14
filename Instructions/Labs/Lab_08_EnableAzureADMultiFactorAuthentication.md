@@ -21,7 +21,7 @@ To improve security in your organization, you've been directed to enable multifa
 
 #### Estimated time: 15 minutes
 
-**IMPORTANT** - A Microsoft Entra ID Premium license is required for this exercise.
+> **Important:** Conditional Access requires Microsoft Entra ID P1 or P2. The target user must also be licensed for the application used in the sign-in test.
 
 ### Exercise 1 - Review and enable Multi-factor Authentication in Azure
 
@@ -29,7 +29,7 @@ To improve security in your organization, you've been directed to enable multifa
 
 1. Browse to **Microsoft Entra admin center** at **`https://entra.microsoft.com`** using a Global administrator account.
 
-    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
+    > **Note:** You may be prompted for multifactor authentication (MFA) during sign-in. Use only a lab-provided authentication method. Do not add a personal authentication method to the shared administrator account; stop if no lab-provided method is available.
 
 1. Use the search feature and search for **multifactor**.
 
@@ -45,13 +45,13 @@ To improve security in your organization, you've been directed to enable multifa
 
     ![Screenshot showing MFA configuration](./media/lp2-mod1-mfa-settings.png)
 
-    This is where you would select the supported authentication methods, in the screen above, all of them are selected.
+    This classic page contains legacy MFA service settings. Current authentication methods are managed under **Entra ID** > **Authentication methods** > **Policies**.
 
     You can also enable or disable app passwords here, which allow users to create unique account passwords for apps that don't support multi-factor authentication. This feature lets the user authenticate with their Microsoft Entra identity using a different password specific to that app.
 
 #### Task 2 - Setup Conditional Access rules for MFA for Delia Dennis
 
-Next let's examine how to set up Conditional Access policy rules that would enforce MFA for guest users accessing specific apps on your network.
+Next, examine how to set up a Conditional Access policy that enforces MFA for a member user accessing a specific application.
 
 1. Switch back to the Microsoft Entra admin center, in the left navigation, under **Entra ID**, select **Conditional Access**.
 
@@ -101,11 +101,11 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
     ![Screenshot showing the complete Add Policy dialog](./media/lp2-mod1-conditional-access-new-policy-complete.png)
 
-    MFA is now enabled for your selected user and application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.
+    MFA is now required for the selected user and application. The next time Delia signs in to that application, she should be prompted to register for MFA.
 
 #### Task 3 - Test Delia's login
 
-1. Open a new InPrivate Browsing windows.
+1. Open a new InPrivate browser window.
 
 1. Connect to Office at **`https://www.office.com`**.
 
@@ -115,9 +115,11 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Enter the password provided for Delia.
 
->**Note:** At this point one of two things will happen.  You should get a message that you need to set up Authenticator app and register for MFA.  Follow the prompts to complete using your personal phone.  NOTE - there is a chance that you might get a login failure message with several options on how to proceed.  Select the **Try Again** option in this case.
+> **Note:** Verify that Delia is prompted to set up an authentication method. This prompt proves that the Conditional Access policy requires MFA. Do not register a personal phone or authentication method in the shared lab tenant. If a transient sign-in failure appears, select **Try again** once.
 
 You can see that because of the Conditional Access rule we created for Delia, MFA is required to launch Office 365 home page.
+
+1. Close the InPrivate browser window without completing registration.
 
 ### Exercise summary
 
@@ -159,9 +161,27 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 
 1. Close the MFA setting tab.
 
-#### Task 2 -- Try logging in as Adele
+#### Task 2 - Test Adele's sign-in
 
-1. If you want to see another example of MFA login process, you can try to log in a Adele.
+1. Open a new InPrivate browser window and go to `https://m365.cloud.microsoft`.
+
+1. Sign in as Adele Vance using the credentials provided for the lab.
+
+1. Verify that Adele is prompted to set up an authentication method. Do not register a personal phone or authentication method.
+
+1. Close the InPrivate browser window without completing registration.
+
+#### Task 3 - Clean up MFA configuration
+
+1. Return to **Users** > **All users** > **Per-user MFA**.
+
+1. Select **Adele Vance**, select **Disable MFA**, confirm the action, and verify that her MFA status is **Disabled**.
+
+1. Return to **Conditional Access** > **Policies**.
+
+1. Select **MFA_for_Delia**, then select **Delete** and confirm.
+
+1. Verify that **MFA_for_Delia** no longer appears in the policy list.
 
 ### Exercise summary
 
