@@ -1,6 +1,5 @@
 ﻿version:v1.0,,,,,,,,,,,,,,,,
 Name [displayName] Required,User name [userPrincipalName] Required,Initial password [passwordProfile] Required,Block sign in (Yes/No) [accountEnabled] Required,First name [givenName],Last name [surname],Job title [jobTitle],Department [department],Usage location [usageLocation],Street address [streetAddress],State or province [state],Country or region [country],Office [physicalDeliveryOfficeName],City [city],ZIP or postal code [postalCode],Office phone [telephoneNumber],Mobile phone [mobile]
-Example: Chris Green, chris@contoso.com, myPassword1234, No,,,,,,,,,,,,,
 Malik Barden,MalikB@<<<enter your domain name>>>,samplePassword1234$, No,Malik,Barden,,Sales,,,,,,,,,
 Amina Hadzic,AminaH@<<<enter your domain name>>>,samplePassword1234$, No,Amina,Hadzic,,Sales,,,,,,,,,
 Lejla Selimagic,LejlaS@<<<enter your domain name>>>,samplePassword1234$, No,Lejla,Selimagic,,Sales,,,,,,,,,
