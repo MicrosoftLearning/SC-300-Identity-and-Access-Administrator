@@ -37,7 +37,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Find the **Microsoft Windows 11** box, then select the **Create v** and choose **Windows 11 Enterprise, version 25H2** from the menu that opens.
 
-1. Identify the instance number in your provided username. The username uses the format `User1-<instance-number>`. Use all characters after the hyphen as the instance number. For example, if the username is `User1-ABCDEFG`, the instance number is `ABCDEFG`.
+1. Identify the instance number in your provided Azure username. The username uses the format `User<number>-<instance-number>`. Use all characters after the hyphen as the instance number. For example, if the username is `User2-ABCDEFG`, the instance number is `ABCDEFG`.
 
 1. Create the VM using the following values on the **Basics** tab:
 
@@ -45,7 +45,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
   | :-- | :-- |
   | Subscription | Accept the default |
   | Resource Group | Select the existing **rgEL** resource group |
-  | Virtual machine name | Enter **elvm** followed immediately by your instance number. For example, use **elvmABCDEFG** for username **User1-ABCDEFG**. |
+  | Virtual machine name | Enter **elvm** followed immediately by your instance number. For example, use **elvmABCDEFG** for username **User2-ABCDEFG**. |
   | Region | *default* |
   | Availability options | **No infrastructure redundancy required** |
   | Security Type | **Standard** |
@@ -72,7 +72,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 #### Task 2 - Microsoft Entra ID login for existing Azure Virtual Machines
 
-> **Important:** The account performing this task must be able to create Azure role assignments at the VM scope or an ancestor scope. Use an account with **Role Based Access Control Administrator**, **User Access Administrator**, or **Owner**. **Contributor** alone cannot create the required assignment. If **Add role assignment** is disabled, contact the environment administrator rather than continuing to the sign-in test.
+> **Important:** The **Virtual Machine Administrator Login** role might already be assigned to User2 at the resource group scope. Check the existing role assignments before you add one.
 
 1. In the Azure portal, go to **Virtual Machines**.
 
@@ -80,7 +80,13 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Select **Access control (IAM)**.
 
+1. Select **Check access**, select **Check access**, and search for **User2**.
+
+1. Review User2's current role assignments. If **Virtual Machine Administrator Login** is inherited from the resource group, skip the remaining assignment steps and continue to Task 3.
+
 1. Select **+ Add**, then **Add role assignment** to open the Add role assignment page.
+
+  If **Add role assignment** is disabled and User2 doesn't already have **Virtual Machine Administrator Login**, contact the environment administrator before continuing.
 
 1. Assign the following settings:
   - **Job function roles**
