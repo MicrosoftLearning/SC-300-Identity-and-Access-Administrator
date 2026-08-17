@@ -45,7 +45,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
 1. Select the **Terms of use document** box, browse to your finalized terms of use PDF and select it.
 
-    **ToU File Provided** - browse to the github repo AllFiles/Labs/Lab26 to get a sample Terms-of-User PDF document for use in this lab.
+    **ToU file provided** - Download [Contoso_TermsOfUse.pdf](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/raw/master/Allfiles/Labs/Lab23/Contoso_TermsOfUse.pdf) and use it for this lab.
 
 1. Select **English** for the language for your terms of use document.
 

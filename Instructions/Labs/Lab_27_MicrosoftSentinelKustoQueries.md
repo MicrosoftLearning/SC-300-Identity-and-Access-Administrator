@@ -17,7 +17,10 @@ lab:
 
 In this lab, you explore Microsoft Sentinel by working with Microsoft Entra ID data sources and running hunting queries using Kusto Query Language (KQL). You review how to connect data sources, create a Microsoft Sentinel workspace, and execute queries as part of security operations tasks.
 
- >**Note:** This lab cannot be completed in the provided training lab environment at this time. We are leaving the lab step here so you can optionally try it using a personal Azure subscription. Please read over the steps to see what is possible. We are actively working this lab to find a work-around in the lab environment, and will update it soon.
+> **Choose your path:**
+>
+> - **Live-results path:** If the subscription used for this lab allows you to create a Log Analytics workspace and enable Microsoft Sentinel, complete each task and verify the stated results.
+> - **Guided-review path:** If resource creation or the Microsoft Entra ID connector is unavailable, follow each task to the point where the required control or configuration is visible, review the described settings, and do not submit the blocked action. Continue to the next task using the expected-results guidance.
 
 ### Login type: Azure resource login
 
@@ -47,6 +50,8 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. Select **Review + Create** and then **Create**.
 
+    > **Guided-review expected result:** The review page shows the selected subscription, **Sentinel-RG**, the workspace name, and region. In a live-results environment, validation succeeds and the deployment creates a Log Analytics workspace.
+
 1. After the deployment completes, select **Go to resource**.
 
 1. In the Microsoft Azure portal, search for and select **Microsoft Sentinel**.
@@ -54,6 +59,8 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 1. Select **+ Create**, select the existing workspace that you created early, and then select **Add** to onboard the workspace to Microsoft Sentinel.
 
 1. If prompted, select **OK** to activate the Microsoft Sentinel free trial.
+
+    > **Guided-review expected result:** After onboarding, the workspace appears in Microsoft Sentinel with navigation for content, connectors, logs, incidents, and hunting. If onboarding is blocked, review these areas from the Microsoft Sentinel overview and continue to Task 2.
 
 #### Task 2 - Add Microsoft Entra ID as a Data source
 
@@ -69,7 +76,7 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. Select **Microsoft Entra ID** and then select **Open connector page**.
 
-    > **Note:** Connecting this data source requires Global Administrator or Security Administrator permissions, plus permission to configure diagnostic settings on the tenant. If the account used for this lab doesn't have these permissions, the **Prerequisites** checklist on the connector page will show missing items and you won't be able to complete steps 6-10. Review the remaining steps to understand the intended workflow, then continue on with Task 3.
+    > **Note:** Connecting this data source requires Global Administrator or Security Administrator permissions, plus permission to configure diagnostic settings on the tenant. If the account used for this lab doesn't have these permissions, use the guided-review path for the remaining steps in this task.
 
 1. In the connector page, the instructions and next steps will be provided for the data connector. Verify that a check-mark is next to each of the **Prerequisites** to continue with the **Configuration**.
 
@@ -83,6 +90,8 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
    >**Note:** The Microsoft Entra ID data connector may take a few minutes to show in the active count. 
 
+    > **Guided-review expected result:** A configured connector shows the selected log categories and eventually reports a connected state. The connector sends Microsoft Entra sign-in and audit records to the workspace for querying.
+
 #### Task 3 - Run Kusto query on User activity
 
 1. In **Microsoft Sentinel**, navigate to **Logs** under the **General** menu heading.
@@ -95,6 +104,8 @@ Microsoft Sentinel is Microsoft's cloud-native SIEM and SOAR solution.  Through 
 
 1. This will provide a list of User IDs on Microsoft Entra ID.  Since we have just created the workspace, you may not see results.  Note the format of the query.
 
+    > **Guided-review expected result:** The query editor contains a KQL query against Microsoft Entra audit data. When data is available, the results table contains user identifiers and related activity fields. A new workspace can return no rows until data is ingested.
+
 ### Exercise summary
 
-In this exercise, you created a Microsoft Sentinel workspace, connected the Microsoft Entra ID data connector for sign-in and audit logs, and ran KQL hunting queries against the data. This exercise showed how to bring identity telemetry into a SIEM and investigate it with Kusto Query Language.
+In this exercise, you reviewed the workflow for creating a Microsoft Sentinel workspace, connecting Microsoft Entra sign-in and audit logs, and querying identity activity with Kusto Query Language. When the required subscription capabilities and permissions were available, you also completed the live configuration and query.

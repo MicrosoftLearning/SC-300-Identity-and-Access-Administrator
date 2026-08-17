@@ -27,17 +27,19 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 #### Task 1 - Create the on-premises Active Directory infrastructure
 
-1. Deployment template can be accessed at this link: [On-Premises Test Lab Guide](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm).
+1. In the Azure portal, search for and open **Subscriptions**. Confirm that an active subscription is listed and that your account has **Owner** or **Contributor** access. If no subscription is available, you can't complete this optional lab in the current environment.
+
+1. Review the source for the [On-Premises Test Lab Guide](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm).
 
     **Note to learners and MCTs** - The deployment of this template can take 30-60 minutes, so be ready to take a break at this step or run the deployment before a lecture section of the course.
 
     **Note to Lab providers** - If possible, it would be helpful to students to complete and deploy as part of the lab environment setup.
 
-1. On the **TLG (Test Lab Guide) - 3 VM Base Configuration (v1.0)** page, select **Deploy to Azure**.
+1. Open [Deploy the 3 VM Base Configuration to Azure](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmaxskunkworks%2Ftlg%2Fmaster%2Ftlg-base-config_3-vm%2Fazuredeploy.json).
 
     >**Note:** The 3 VM Base Configuration provisions a Windows Server 2016 Active Directory domain controller named DC1 using the domain name you specify, and a domain member server named APP1 running Windows Server 2016. It also offers an option to provision a client VM running Windows 10, however we will not be using it in our lab (primarily due to licensing requirements applicable when running Windows 10 VMs in Azure). The domain member server (APP1) has automatically installed .NET 4.5 and IIS.  
    
-    >**Note:** The VM that is required for this lab is **DC1**.
+    >**Note:** This lab requires both **DC1** and **APP1**. Do not deploy the optional client VM.
 
 1. On the **Custom deployment** page, specify the following settings, then select **Review + Create** then **Create**.
 
@@ -101,11 +103,11 @@ Your company works has Active Directory Domain Services on-premises.  They would
     $vmNames = @('dc1','app1')
     Invoke-Command -ComputerName $vmNames {New-Item 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -Force}
     Invoke-Command -ComputerName $vmNames {New-Item 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -Force}
-    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'Enabled' -value 1 –PropertyType DWORD}
-    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'DisabledByDefault' -value 0 –PropertyType DWORD}
-    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'Enabled' -value 1 –PropertyType DWORD}
-    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'DisabledByDefault' -value 0 –PropertyType DWORD}
-    Invoke-Command -ComputerName $vmNames {New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -name 'SchUseStrongCrypto' -value 1 –PropertyType DWORD}
+    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'Enabled' -value 1 -PropertyType DWORD}
+    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client' -name 'DisabledByDefault' -value 0 -PropertyType DWORD}
+    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'Enabled' -value 1 -PropertyType DWORD}
+    Invoke-Command -ComputerName $vmNames {New-ItemProperty -path 'HKLM:\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server' -name 'DisabledByDefault' -value 0 -PropertyType DWORD}
+    Invoke-Command -ComputerName $vmNames {New-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\.NETFramework\v4.0.30319' -name 'SchUseStrongCrypto' -value 1 -PropertyType DWORD}
     ```
 
 1.  Within the **Windows PowerShell ISE** window  add the following script to the script pane, and run it to configure Windows Integrated Authentication on the Default Web Site hosted on the **APP1** Azure VM:
@@ -133,24 +135,15 @@ Your company works has Active Directory Domain Services on-premises.  They would
     Restart-Computer -ComputerName 'DC1'
     ```
 
-### Task 4 - Configure contoso.local Active Directory
+### Task 4 - Configure the corp.contoso.com Active Directory domain
 
 1. Connect again to the **DC1** Azure VM via Remote Desktop. When prompted, sign in by using the following credentials:
 
     -   Username: **demouser**
 
-    -   Password: **demo\@pass123**
-       - **It is strongly recommended that you enter a secure password that you can remember**.
+    -   Password: **Use the secure password you created in Task 1**
 
-1.  Within the Remote Desktop session to **DC1**, start Internet Explorer and navigate to the link below.
-
-    ```
-    https://github.com/microsoft/MCW-Hybrid-identity/tree/main/Archive/Hands-on%20lab/studentfiles
-    ```
-
-1. On the **Create Users/Group for Active Directory Demo/Test Environment** page, select the **CreateDemoUsers.ps1** link, accept the licensing terms, and save the corresponding script to the local file system.
-
-1. On the **Create Users/Group for Active Directory Demo/Test Environment** page, select the **CreateDemoUsers.csv** link (directly above the PowerShell code section) and save the corresponding csv file to the same location as the **CreateDemoUsers.ps1** file.
+1. Within the Remote Desktop session to **DC1**, download [CreateDemoUsers.ps1](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/raw/master/Allfiles/Labs/Lab7/CreateDemoUsers.ps1) and [CreateDemoUsers.csv](https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/raw/master/Allfiles/Labs/Lab7/CreateDemoUsers.csv). Save both files to the same folder on the local file system.
 
 1. Within the Remote Desktop session to **DC1**, start File Explorer, navigate to the folder where you downloaded both files, right-Select on the file **CreateDemoUsers.ps1**, select **Properties**, in the **CreateDemoUsers.ps1 Properties** dialog box, check the **Unblock** checkbox and select **OK**.
 
@@ -303,7 +296,7 @@ In this task, you will configure the DNS suffix of the Contoso Active Directory 
 
 1. In the Azure portal, navigate to the page of the **DC1** virtual machine.
 
-1. On the **DC1** virtual machine page, connect to **DC1** via Remote Desktop. When prompted to sign in, use the **demouser** name and the **demo\@pass123** password. 
+1. On the **DC1** virtual machine page, connect to **DC1** via Remote Desktop. When prompted to sign in, use the **demouser** name and the secure password you created in Exercise 1, Task 1.
 
 1. Within the Remote Desktop session to **DC1**, on the **Server Manager** window, start the **Active Directory Domains and Trusts** console under **Tools**. 
 
@@ -357,11 +350,11 @@ In this task, you will install Microsoft Entra Connect.
 
 1. On the search results page, select **Microsoft Entra Connect**.
 
-1.  On the **Microsoft Entra Connect** page, select the **Download Microsoft Entra Connect** link.  Then choose **Connect Sync** from the menu.
+1. On the **Microsoft Entra Connect** page, select **Connect Sync**, and then select **Download Microsoft Entra Connect**.
 
-1. On the **Microsoft Azure Active Directory Connect v2** web page of the Microsoft Downloads site, select **Download**.
+1. Download the current supported Microsoft Entra Connect installer. Verify that its version is **2.6.84.0** or later.
 
-1. When prompted whether to run or save **AzureADConnect.msi**, select **Run**. This will download the file and automatically start the **Microsoft Azure Active Directory Connect** wizard. 
+1. When prompted whether to run or save **AzureADConnect.msi**, select **Run**. This downloads the file and starts the Microsoft Entra Connect wizard.
 
 1. On the **Welcome to Azure AD Connect** page, check the **I agree to the license terms and privacy notice** box and select **Continue**.
 
@@ -373,13 +366,13 @@ In this task, you will install Microsoft Entra Connect.
 
 1. On the **Connect to Azure AD** page, sign in by using the credentials of the **john.doe** account and select **Next**.
 
-1. On the **Connect your directories** page, ensure that the **corp.contoso.com** entry appears in the **FOREST** drop-down list and select **Add Directory**. In the **AD forest account**, ensure that the **Create new AD account** option is selected, in the **ENTERPRISE ADMIN USERNAME** textbox, type **CORP.CONTOSO.COM\\demouser**, in the **PASSWORD** textbox, type **demo\@pass123**, and select **OK**.
+1. On the **Connect your directories** page, ensure that the **corp.contoso.com** entry appears in the **FOREST** drop-down list and select **Add Directory**. In the **AD forest account**, ensure that the **Create new AD account** option is selected, in the **ENTERPRISE ADMIN USERNAME** textbox, type **CORP.CONTOSO.COM\\demouser**, enter the secure password you created in Exercise 1, Task 1, and select **OK**.
 
 1. Back on the **Connect your directories** page, select **Next**.
 
 1. On the **Azure AD sign-in configuration** page, ensure that your custom domain name is listed as the verified **Active Directory UPN Suffix**, and that the **userPrincipalName** entry appears in the **USER PRINCIPAL NAME** drop-down list. Note the warning stating **Users will not be able to sign into Azure AD with on-premises credentials if the UPN suffix does not match a verified domain name**. Check the **Continue without matching all UPN suffixes to verified domain** box and select **Next**. 
 
-    >**Note**: This is expected, since some users are still configured with the **contoso.local** UPN suffix, which is not routable and cannot be configured as a verified custom domain name of an Azure AD tenant.
+    >**Note**: This is expected because some users still use the **corp.contoso.com** UPN suffix rather than the verified custom domain of the Microsoft Entra tenant.
 
 1. On the **Domain and OU filtering** page; choose **Sync selected domains and OUs** then ensure that only the **DemoAccounts** OU and all its children OUs are selected and select **Next**. 
 
@@ -389,7 +382,7 @@ In this task, you will install Microsoft Entra Connect.
 
 1. On the **Optional features** page, accept the default settings and select **Next**.
 
-1. On the **Enable single sign-on** page, select **Enter credentials**, in the **Forest credentials** dialog box, sign in with the **CORP\\demouser** username and **demo\@pass123** password, and select **Next**.
+1. On the **Enable single sign-on** page, select **Enter credentials**. In the **Forest credentials** dialog box, sign in with the **CORP\\demouser** username and the secure password you created in Exercise 1, Task 1, and select **Next**.
 
 1. On the **Ready to configure** page, ensure that the **Start the synchronization process when configuration completes** checkbox is **NOT** selected and select **Install**.
 
@@ -571,7 +564,7 @@ In this task, you will configure Azure AD Connect device synchronization options
 
 1. On the **SCP configuration** page, check the **corp.contoso.com** Active Directory forest box, select the **Azure Active Directory** entry in the **Authentication Service** dropdown list, and select **Add**.
 
-1. When prompted for Enterprise Admin Credentials for corp.contoso.com, in the **Windows Security** dialog box, sign in with the **CORP\\demouser** user name and **demo\@pass123** password.
+1. When prompted for Enterprise Admin Credentials for corp.contoso.com, in the **Windows Security** dialog box, sign in with the **CORP\\demouser** user name and the secure password you created in Exercise 1, Task 1.
 
 1. Back on the **SCP configuration** page, select **Next**.
 

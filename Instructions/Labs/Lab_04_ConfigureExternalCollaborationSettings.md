@@ -41,7 +41,7 @@ You must enable external collaboration settings for your organization for approv
 
 1. In the left navigation menu, under **Entra ID**, select **External Identities**, and then select **All identity providers**.
 
-1. Select the **Email one-time passcode** item in the list of providers, then select **Configured**.
+1. In the **Email one-time passcode** row, select **Configured**.
 
     >**Note:** A one-time passcode is a very secure way to invite a user to join your organization.
     
@@ -70,8 +70,6 @@ You must enable external collaboration settings for your organization for approv
     - Only users assigned to specific admin roles can invite guest users: To allow only those users with administrator roles to invite guests, select this radio button. The administrator roles include Global Administrator, User Administrator, and Guest Inviter.
     - No one in the organization can invite guest users including admins (most restrictive): To deny everyone in the organization from inviting guests, select this radio button.
     - If Members can invite is set to No and Admins and users in the guest inviter role can invite is set to Yes, users in the Guest Inviter role will still be able to invite guests.
-
-    ![Screen image displaying guest invite settings with Guests can invite set to No and highlighted](./media/lp1-mod3-guest-user-invite-settings.png)
 
 1. Under **Collaboration restrictions**, review the available options and accept the default settings.
 

@@ -37,20 +37,21 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Find the **Microsoft Windows 11** box, then select the **Create v** and choose **Windows 11 Enterprise, version 25H2** from the menu that opens.
 
+1. Identify the instance number in your provided Azure username. The username uses the format `User<number>-<instance-number>`. Use all characters after the hyphen as the instance number. For example, if the username is `User2-ABCDEFG`, the instance number is `ABCDEFG`.
+
 1. Create the VM using the following values on the **Basics** tab:
 
   | Field | Value to use |
   | :-- | :-- |
   | Subscription | Accept the default |
-  | Resource Group | Select or create a new resource group for this lab |
-  | Virtual machine name | **vmEntraLogin** |
+  | Resource Group | Select the existing **rgEL** resource group |
+  | Virtual machine name | Enter **elvm** followed immediately by your instance number. For example, use **elvmABCDEFG** for username **User2-ABCDEFG**. |
   | Region | *default* |
   | Availability options | **No infrastructure redundancy required** |
   | Security Type | **Standard** |
-  | Size | **Standard D2s_v5 - 2 vcpus, 8 GiB memory** |
-  | | **Lab tip** - if the exact specified size is not available, try a similar size in the same series.|
+  | Size | **Standard DC1s v3 - 1 vCPU, 8 GiB memory** |
   | Admin Username | **vmEntraAdmin** |
-  | Admin Password | Use the one provided by the lab environment or make us a secure password you can remember |
+  | Admin Password | Use the password provided by the lab environment if it meets the Azure requirement of 12-123 characters. Otherwise, create a secure password of at least 12 characters that you can remember. |
   | Licensing | Confirm you have a license |
 
 1. You will not need to change anything on the **Disks** or **Networking** tabs, but you can review the values.
@@ -63,7 +64,15 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Select **Review + create** then select **Create**.
 
+1. Wait for the deployment to reach **Succeeded**, then open the virtual machine you created.
+
+1. Under **Settings**, select **Identity** and verify that **System assigned** status is **On**.
+
+1. Under **Settings**, select **Extensions + applications** and verify that **AADLoginForWindows** has provisioning state **Succeeded** before continuing.
+
 #### Task 2 - Microsoft Entra ID login for existing Azure Virtual Machines
+
+> **Important:** The **Virtual Machine Administrator Login** role might already be assigned to User2 at the resource group scope. Check the existing role assignments before you add one.
 
 1. In the Azure portal, go to **Virtual Machines**.
 
@@ -71,7 +80,13 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Select **Access control (IAM)**.
 
+1. Select **Check access**, select **Check access**, and search for **User2**.
+
+1. Review User2's current role assignments. If **Virtual Machine Administrator Login** is inherited from the resource group, skip the remaining assignment steps and continue to Task 3.
+
 1. Select **+ Add**, then **Add role assignment** to open the Add role assignment page.
+
+  If **Add role assignment** is disabled and User2 doesn't already have **Virtual Machine Administrator Login**, contact the environment administrator before continuing.
 
 1. Assign the following settings:
   - **Job function roles**
@@ -79,6 +94,8 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
   - **Members**: Choose User, group, or service principal.  Then use **+ Select members** to add **User2** as a specific user for the VM.
 
 1. Select **Review + assign** to complete the process.
+
+1. Verify that **User2** appears under **Role assignments** with the **Virtual Machine Administrator Login** role at the VM scope. Allow up to 10 minutes for the assignment to propagate before testing a new RDP session.
 
 #### Task 3 - Update the Virtual Machine to allow the Microsoft Entra ID login
 
@@ -139,7 +156,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Select **Yes** from the bottom of the screen.
 
-1. The Remote Desktop session should open; and show the Windows Server login screen.  **Other User** with an OK button should be displayed.
+1. The Remote Desktop session should open and show the Windows 11 login screen. **Other User** with an OK button should be displayed.
 
 1. Select **OK**.
 
@@ -147,7 +164,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
    - Username = `AzureAD\User2@<your domain name>`
    - Password = Enter the password provided for User2
 
-    >**Note:** User2 is the user we granted access to log in as administrator during Task 1.
+    >**Note:** User2 is the user we granted access to log in as administrator during Task 2.
 
 1. Windows should confirm the login and open to the normal Desktop.
 
