@@ -50,7 +50,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
   | Size | **Standard D2s_v7 - 2 vcpus, 8 GiB memory** |
   | | **Lab tip** - if the exact specified size is not available, try a similar size in the same series.|
   | Admin Username | **vmEntraAdmin** |
-  | Admin Password | Use the one provided by the lab environment or make us a secure password you can remember |
+  | Admin Password | Use the password provided by the lab environment if it meets the Azure requirement of 12-123 characters. Otherwise, create a secure password of at least 12 characters that you can remember. |
   | Licensing | Confirm you have a license |
 
 1. You will not need to change anything on the **Disks** or **Networking** tabs, but you can review the values.
