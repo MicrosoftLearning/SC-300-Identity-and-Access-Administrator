@@ -37,18 +37,19 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Find the **Microsoft Windows 11** box, then select the **Create v** and choose **Windows 11 Enterprise, version 25H2** from the menu that opens.
 
+1. Identify the instance number in your provided username. The username uses the format `User1-<instance-number>`. Use all characters after the hyphen as the instance number. For example, if the username is `User1-ABCDEFG`, the instance number is `ABCDEFG`.
+
 1. Create the VM using the following values on the **Basics** tab:
 
   | Field | Value to use |
   | :-- | :-- |
   | Subscription | Accept the default |
-  | Resource Group | Select or create a new resource group for this lab |
-  | Virtual machine name | **vmEntraLogin** |
+  | Resource Group | Select the existing **rgEL** resource group |
+  | Virtual machine name | Enter **elvm** followed immediately by your instance number. For example, use **elvmABCDEFG** for username **User1-ABCDEFG**. |
   | Region | *default* |
   | Availability options | **No infrastructure redundancy required** |
   | Security Type | **Standard** |
-  | Size | **Standard D2s_v7 - 2 vcpus, 8 GiB memory** |
-  | | **Lab tip** - if the exact specified size is not available, try a similar size in the same series.|
+  | Size | **Standard DC1s v3 - 1 vCPU, 8 GiB memory** |
   | Admin Username | **vmEntraAdmin** |
   | Admin Password | Use the password provided by the lab environment if it meets the Azure requirement of 12-123 characters. Otherwise, create a secure password of at least 12 characters that you can remember. |
   | Licensing | Confirm you have a license |
@@ -63,7 +64,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
 
 1. Select **Review + create** then select **Create**.
 
-1. Wait for the deployment to reach **Succeeded**, then open **vmEntraLogin**.
+1. Wait for the deployment to reach **Succeeded**, then open the virtual machine you created.
 
 1. Under **Settings**, select **Identity** and verify that **System assigned** status is **On**.
 
