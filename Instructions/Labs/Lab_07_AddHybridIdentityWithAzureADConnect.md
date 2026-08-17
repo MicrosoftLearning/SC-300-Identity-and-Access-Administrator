@@ -27,6 +27,8 @@ Your company works has Active Directory Domain Services on-premises.  They would
 
 #### Task 1 - Create the on-premises Active Directory infrastructure
 
+1. In the Azure portal, search for and open **Subscriptions**. Confirm that an active subscription is listed and that your account has **Owner** or **Contributor** access. If no subscription is available, you can't complete this optional lab in the current environment.
+
 1. Review the source for the [On-Premises Test Lab Guide](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm).
 
     **Note to learners and MCTs** - The deployment of this template can take 30-60 minutes, so be ready to take a break at this step or run the deployment before a lecture section of the course.
