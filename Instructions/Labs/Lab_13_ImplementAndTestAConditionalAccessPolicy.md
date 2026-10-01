@@ -29,7 +29,7 @@ Your organization needs to be able to limit user access to its internal applicat
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to to Office at **`https://www.office.com`**.
+1. Connect to **Microsoft Sway** at **`https://sway.cloud.microsoft`**.
 
 1. When prompted, log in as DebraB:
 
@@ -38,11 +38,9 @@ Your organization needs to be able to limit user access to its internal applicat
   | Username | `DebraB@<your lab domain>.onmicrosoft.com` |
   | Password | Enter the provided password |
     
-1. Bypass the welcome and introduction screens.
+1. Verify that it loads correctly.
 
-1. Open the **Apps** page, then then select on the **Sway** icon to see that it loads correctly.
-
-1. Log out of Office and close your browser session.
+1. Log out of Sway and close your browser session.
 
 #### Task 2 -  Create a conditional access policy
 
@@ -62,7 +60,7 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
     >**Note:** Using this naming to help you quickly recognize the policy and its function.
 
-1. Under **Assignments**, select **0 users or agents(Preview) selected**.
+1. Under **Assignments**, select **0 users and groups selected**.
 
 1. On the Include tab, select **Select users and groups**, and then mark **Users and groups** check box.
 
@@ -88,7 +86,7 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
 You should test your conditional access policies to ensure they working as expected.
 
-1. Open a new **InPrivate** browser tab, then go to **Microsoft Sway** at `https://sway.cloud.microsoft`.
+1. Open a new **InPrivate** browser tab, then go to **Microsoft Sway** at **`https://sway.cloud.microsoft`**.
 
    When prompted, sign in as **DebraB**:
 
@@ -165,7 +163,7 @@ As part of your company's larger security configuration, you must test a conditi
 
 1. In the **Name** box, enter **Sign in frequency**.
 
-1. Under **Assignments**, select **0 users or agents(Preview) selected**.
+1. Under **Assignments**, select **0 users and groups selected**.
 
 1. On the **Include** tab, mark **Select users and groups**, then select the **Users and groups** check box.
 
@@ -175,7 +173,7 @@ As part of your company's larger security configuration, you must test a conditi
 
 1. Within the **Include** make sure **Select resources** is selected, then in the **Select specific resources** select **None**.
 
-1. In the **Resources** pane, search for **Office 365**, then select it.
+1. In the **Resources** pane, search for and select **Office 365**, then select **Select** at the bottom of the page.
 
 1. Under **Access controls**, in the **Session** section, select **0 controls selected**.
 

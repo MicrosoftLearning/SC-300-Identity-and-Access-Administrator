@@ -258,7 +258,7 @@ After the users have been created, you will be prompted that the creation has su
 
     ``` 
     $PWProfile = @{
-        Password = "<Enter a complex password you will>";
+        Password = '<Enter a complex password>';
         ForceChangePasswordNextSignIn = $false
     }
     ```

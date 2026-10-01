@@ -143,13 +143,13 @@ You add your organization's privacy information in the **Properties** area of 
 
      **A new browser tab will open automatically**.
 
-1. Select the **Settings & Privacy** on the left menu.
+1. Expand **My Account** on the left menu.
 
-1. Select **Privacy**.
+1. Select **Privacy and Data**.
 
-1. Under **Organization's notice** select the **View** item next to Contoso Marketing organizational privacy statement.
+1. Under **Organization's notice** select the **View** item next to *Microsoft organizational privacy statement*.
 
-     **A new browser tab will open with the Privacy PDF file you linked to displayed**.
+     >A new browser tab will open with the Privacy PDF file you linked to displayed.
 
 1. Review the sample Privacy statement.
 
