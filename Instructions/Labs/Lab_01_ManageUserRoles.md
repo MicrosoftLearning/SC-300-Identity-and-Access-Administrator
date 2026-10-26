@@ -208,7 +208,7 @@ In this exercise, you removed the Application Administrator role from the user t
 1. To prepare the provided sample file:
    1. Open Notepad: inside the lab environment, select the **Start** button and type **Notepad**.  
    1. Open the **SC300BulkUser.csv** file from the **Allfiles/Labs/Lab1** folder.
-   1. Change the **enter your domain name** to the domain of your Azure lab environment.
+   1. Change **`<<<enter your domain name>>>`** to the domain of your Azure lab environment.
    1. Save the file.
 
 1. On the **Bulk create users** dialog, select the file folder icon on step 3.

@@ -122,7 +122,7 @@ You add your organization's privacy information in the **Properties** area of 
         - Allan Deyoung is a built-in users in your Azure lab tenant who works as an IT Admin, we will use him as the Privacy contact.
         - This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your global administrators.
 
-    - **Privacy statement URL** -  <https://github.com/MicrosoftLearning/SC-300-Identity-and-Access-Administrator/blob/master/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
+    - **Privacy statement URL** -  <https://microsoftlearning.github.io/SC-300-Identity-and-Access-Administrator/Allfiles/Labs/Lab2/SC-300-Lab_ContosoPrivacySample.pdf>
 
         - In sample Privacy PDF is provided in your labs directory.
         - Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
