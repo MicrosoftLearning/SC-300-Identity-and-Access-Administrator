@@ -28,13 +28,13 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to Office at **`https://www.m365.cloud.microsoft/apps`**.
+1. Connect to Office at **`https://m365.cloud.microsoft/apps`**.
 
 1. Select Sign in and connect as Delia Dennis.
 
    | **Setting** | **Value** |
    | :--- | :--- |
-   | Username | DeliaD@`your domain name.com` |
+   | Username | `DeliaD@<your domain name.com>` |
    | Password| Enter the User password provided for DeliaD |
 
 1. Select **Install apps**, and the select **Microsoft 365 apps**. You should connect to the Office.com website but see a message indicating you don't have a license.
@@ -58,7 +58,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
    | **Setting**| **Value**|
    | :--- | :--- |
    | Group type| **Security** |
-   | Group name| **sg-SC300-O365** |
+   | Group name| **`sg-SC300-O365`** |
    | Membership type| **Assigned** |
    | Owners| *Assign your own administrator account as the group owner*|
 
@@ -114,7 +114,7 @@ Your organization has decided to use security groups in Microsoft Entra ID to ma
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to Office at **`https://www.m365.cloud.microsoft/apps`**.
+1. Connect to Office at **`https://m365.cloud.microsoft/apps`**.
 
 1. Select Sign in and connect as Delia Dennis.
 
@@ -153,7 +153,7 @@ Part of your duties as an Microsoft Entra administrator is to create different t
    | **Setting**| **Value**|
    | :--- | :--- |
    | Group type| **Microsoft 365** |
-   | Group name| **Northwest Sales** |
+   | Group name| **`Northwest Sales`** |
    | Membership type| **Assigned** |
    | Owners| *Assign your own administrator account as the group owner*|
    | Members| **Alex Wilber** and **Bianca Pisani**|
