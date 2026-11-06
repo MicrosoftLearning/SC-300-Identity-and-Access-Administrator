@@ -29,7 +29,7 @@ Registering your application establishes a trust relationship between your app a
 
 1. On the **App registrations** page, on the menu, select **+ New registration**.
 
-1. On the **Register an application** blade, register an app named **Demo app** using the default values. You do not need to enter the redirect URI.
+1. On the **Register an application** blade, register an app named **`Demo app`** using the default values. You do not need to enter the redirect URI.
 
     ![Screen image displaying the Register an application page with the name and default settings highlighted](./media/lp3-mod3-register-an-application.png)
 
@@ -88,7 +88,7 @@ You can add both certificates and client secrets (a string) as credentials to yo
 
 1. Add a description for your client secret and duration
 
-    - Description: **SC300 lab secret**
+    - Description: **`SC300 lab secret`**
     - Duration: **90 days (3 months)**
 
 1. Select **Add**.
@@ -109,7 +109,7 @@ First, follow these steps to create an example scope named Employees.Read.All:
 
     ![An app registration's Expose an API pane in the Azure portal](./media/portal-02-expose-api.png)
 
-1. You're prompted to set an **Application ID URI**. Set the value to **api://DemoAppAPI**
+1. You're prompted to set an **Application ID URI**. Set the value to **`api://DemoAppAPI`**
 
     >**Note:** The App ID URI acts as the prefix for the scopes you'll reference in your API's code, and it must be globally unique. You can use the default value provided, which is in the form api://<application-client-id\>, or specify a more readable URI like `https://contoso.com/api`.
 
@@ -119,12 +119,12 @@ First, follow these steps to create an example scope named Employees.Read.All:
 
     | Field| Description| Value |
     | :--- | :--- | :--- |
-    | Scope name| The name of your scope. A common scope naming convention is resource.operation.constraint.| Employees.Read.All|
-    | Who can consent| Whether this scope can be consented to by users or if admin consent is required. Select Admins only for higher-privileged permissions.| Admins and users|
-    | Admin consent display name| A short description of the scope's purpose that only admins will see.| Read-only access to employee records|
-    | Admin consent description| A more detailed description of the permission granted by the scope that only admins will see.| Allow the application to have read-only access to all employee data.|
-    | User consent display name| A short description of the scope's purpose. Shown to users only if you set Who can consent to Admins and users.| Read-only access to your employee records|
-    | User consent description| A more detailed description of the permission granted by the scope. Shown to users only if you set Who can consent to Admins and users.| Allow the application to have read-only access to your employee data.|
+    | Scope name| The name of your scope. A common scope naming convention is resource.operation.constraint.| `Employees.Read.All`|
+    | Who can consent| Whether this scope can be consented to by users or if admin consent is required. Select Admins only for higher-privileged permissions.| Admins and users |
+    | Admin consent display name| A short description of the scope's purpose that only admins will see.| `Read-only access to employee records` |
+    | Admin consent description| A more detailed description of the permission granted by the scope that only admins will see.| `Allow the application to have read-only access to all employee data.` |
+    | User consent display name| A short description of the scope's purpose. Shown to users only if you set Who can consent to Admins and users.| `Read-only access to your employee records` |
+    | User consent description| A more detailed description of the permission granted by the scope. Shown to users only if you set Who can consent to Admins and users.| `Allow the application to have read-only access to your employee data.` |
 
 1. Set the **State** to **Enabled**, and then select **Add scope**.
 
@@ -146,10 +146,10 @@ Next, add another example scope named Employees.Write.All that only admins can
 
     | Field| Example value|
     | :--- | :--- |
-    | Scope name| Employees.Write.All|
+    | Scope name| `Employees.Write.All` |
     | Who can consent| Admins only|
-    | Admin consent display name| Write access to employee records|
-    | Admin consent description| Allow the application to have write access to all employee data.|
+    | Admin consent display name| `Write access to employee records` |
+    | Admin consent description| `Allow the application to have write access to all employee data.` |
     | User consent display name| None (leave empty)|
     | User consent description| None (leave empty)|
 
@@ -184,7 +184,7 @@ You need to create a new custom role for app management. This new role should be
 
     ![Screen image displaying the Roles and administrators blade with the New custom role menu option highlighted](./media/lp3-mod1-new-custom-role.png)
 
-1. In the New custom role dialog, on the Basics tab, in the name box, enter **My custom app role**.
+1. In the New custom role dialog, on the Basics tab, in the name box, enter **`My custom app role`**.
 
 1. Review the remaining options and then select **Next**.
 
