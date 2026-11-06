@@ -41,7 +41,7 @@ Follow these steps to open the settings for an Microsoft Entra role.
 
     ![Screen image displaying the Microsoft Entra roles page with the Settings menu highlighted](./media/lp3-mod3-pim-ad-roles-settings.png)
 
-1. Review the list of roles and then, in the **Search by role name**, enter **compliance**.
+1. Review the list of roles and then, in the **Search by role name**, enter **`compliance`**.
 
 1. In the results, select **Compliance Administrator**.
 
@@ -161,7 +161,7 @@ When you need to assume an Microsoft Entra role, you can request activation by o
 
     **Verification** - Based on our current lab environment configuration, you will be required configure MFA and log in successfully. However, if you had previously signed in using MFA, you may not see this window (You are required to authenticate only once per session).
 
-1. After you have completed the additional security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the **This is my justification for activating this role**.
+1. In the Activate – Compliance Administrator pane, in the **Reason** box, enter the **`This is my justification for activating this role`**.
 
     **Important Note** - the principle of least privilege, you should only activate the account for the amount of time you need it.  If the work needed to be done, only takes 1.5 hours, then set the duration to two hours. Similarly, if you know that you won't be able to do the work until after 3pm, choose a Custom activation time.
 
@@ -173,7 +173,7 @@ For certain roles, the scope of the granted permissions can be restricted to a s
 
 1. Remember to close out the browser windows for MiriamG, then open the Microsoft Entra admin center with your administrator account.
 
-1. Browse to the **Privileged Identity Management** page, and in the left navigation menu, select Azure **Microsoft Entra roles**.
+1. Browse to the **Privileged Identity Management** page, and in the left navigation menu, select **Microsoft Entra roles**.
 
 1. Select **Roles**.
 
@@ -195,7 +195,7 @@ Follow these steps to update or remove an existing role assignment.
 
 1. In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
 
-    ![Screen image displaying the options listed in the action column of the Compliance Adminsitrator](./media/lp4-mod3-pim-edit-role-assignments.png)
+    ![Screen image displaying the options listed in the action column of the Compliance Administrator](./media/lp4-mod3-pim-edit-role-assignments.png)
 
 1. Select **Update** and review the options available in the Membership settings pane. When complete, close the pane.
 
