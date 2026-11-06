@@ -45,9 +45,9 @@ A catalog is a container of resources and access packages. You create a catalog 
 
     ![Screen image displaying the Identity governance catalog page with the New catalog menu highlighted ](./media/lp4-mod1-identity-governance-new-catalog.png)
 
-1. In the New catalog pane, in the **Name** box, enter **Marketing**.
+1. In the New catalog pane, in the **Name** box, enter **`Marketing`**.
 
-1. In the **Description** box, enter **For marketing department users**. Users will see this information in an access package's details.
+1. In the **Description** box, enter **`For marketing department users`**. Users will see this information in an access package's details.
 
 1. Under **Enabled**, select **Yes**.
 
