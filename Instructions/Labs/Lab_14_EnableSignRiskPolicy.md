@@ -36,7 +36,7 @@ As an additional layer of security, you need to configure risk-based Conditional
 
 1. Name the policy **`User Risk Remediation`**.
 
-1. Under **Users or Agents** select **0 users or agents selected** then, on the **Include** tab, select **All users**.
+1. Under **Users** select **0 users and groups selected** then, on the **Include** tab, select **All users**.
 
 1. On the **Exclude** tab, select **Users and groups** and exclude **MOD Administrator**.
 
@@ -60,9 +60,9 @@ You have created a User Risk Conditional Access policy. The policy helps protect
 
 1. In the Microsoft Entra admin center, in the left navigation menu, under **Entra ID**, select **Conditional Access**.
 
-1. Select **+ Create new policy**, in the **Name** box, enter **Sign-in Risk Policy**.
+1. Select **+ Create new policy**, in the **Name** box, enter **`Sign-in Risk Policy`**.
 
-1. Under **Users or Agents** select **0 users or agents selected** then, on the **Include** tab, select **All users**.
+1. Under **Users** select **0 users and groups selected** then, on the **Include** tab, select **All users**.
 
 1. On the **Exclude** tab, select **Users and groups** and exclude **MOD Administrator**.
 
