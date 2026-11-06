@@ -43,7 +43,7 @@ The company has decided that Microsoft Entra ID should be used to login to virtu
   | :-- | :-- |
   | Subscription | Accept the default |
   | Resource Group | Select or create a new resource group for this lab |
-  | Virtual machine name | **vmEntraLogin** |
+  | Virtual machine name | **`vmEntraLogin`** |
   | Region | *default* |
   | Availability options | **No infrastructure redundancy required** |
   | Security Type | **Standard** |
