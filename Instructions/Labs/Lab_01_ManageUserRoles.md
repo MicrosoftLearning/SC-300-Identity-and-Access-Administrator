@@ -50,8 +50,8 @@ Your company recently hired a new employee who will perform duties as an applica
 
     | **Setting**| **Value**|
     | :--- | :--- |
-    | User principal name| ChrisG|
-    | Display Name| Chris Green|
+    | User principal name| `ChrisG` |
+    | Display Name| `Chris Green` |
 
 1. Ensure the **Auto-generate password** option is marked.
 
@@ -299,7 +299,7 @@ It may happen that an account is deleted and then needs to be recovered. You nee
 
     **Tip** - Selecting users from the list allows you to manage multiple users at the same time. If you select the user, to open that user's page, you will only be managing that individual user.
 
-    ![Screen image displaying the All users users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.](./media/lp1-mod2-remove-user.png)
+    ![Screen image displaying the All users list with one user check box selected and another check box highlighted indicating the ability to select multiple users from the list.](./media/lp1-mod2-remove-user.png)
 
 1. With the user account selected, select **Delete** from the menu.
 
