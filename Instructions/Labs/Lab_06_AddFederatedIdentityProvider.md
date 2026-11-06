@@ -154,7 +154,7 @@ This completes the configuration of Google as an identity provider.
 
     | **Security Note** |
     | ----: |
-    | If you are using an existing Gmail account that has Passkeys enable, you will be unable to complete the login processs within the lab environment.  Passkey requires BlueTooth, which cannot be enabled through the VM.  You can still complete the lab, just do these last few tasks in an InPrivate brower running outside the lab environment. |
+    | If you are using an existing Gmail account that has Passkeys enabled, you will be unable to complete the login process within the lab environment.  Passkey requires Bluetooth, which cannot be enabled through the VM.  You can still complete the lab, just do these last few tasks in an InPrivate browser running outside the lab environment. |
 
 
 #### Task 3 - Accept the invitation and login
