@@ -37,8 +37,6 @@ Multifactor authentication provides a means to verify who you are using more tha
 
     ![Screen image displaying the MFA registration policy page with browsing path highlighted](./media/lp2-mod4-browse-to-mfa-registration-policy.png)
 
-1. Under **Assignments**
-
 1. Under **Assignments**, select **All users** and review the available options.
 
 1. You can select from **All users** or **Select individuals and groups** if limiting your rollout.
