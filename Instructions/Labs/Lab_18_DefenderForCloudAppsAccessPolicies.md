@@ -23,7 +23,7 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 
 #### Estimated time: 20 minutes
 
-### Exercise 1 - Create and test the Conditional Access App Contol policy
+### Exercise 1 - Create and test the Conditional Access App Control policy
 
 #### Task 1 – Confirm that PradeepG has unconditional access to Microsoft Forms
 
@@ -37,6 +37,8 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 
    - **Username**: `PradeepG@<the domain provided for this lab>`
    - **Password**: Use the password provided for Pradeep Gupta.
+
+    > **Note:** You may be prompted to complete Multi-Factor Authentication (MFA) during sign-in. Follow the prompts to configure or verify your authentication method before continuing.
 
 1. Confirm that Microsoft Forms opens and that no warning messages are displayed.
 
@@ -52,9 +54,9 @@ Microsoft Defender for Cloud Apps  allows us to create additional Conditional Ac
 
 1. On the **Overview**, select **+ Create new policy**.
 
-1. Enter a policy name, such as **Monitor Pradeep using Forms**.
+1. Enter a policy name, such as **`Monitor Pradeep using Forms`**.
 
-1. Under **Assignments**, select **0 users or agents(Preview) selected**.
+1. Under **Assignments**, select **0 users and groups selected**.  
 
 1. On the Include tab, select **Select users and groups**, and then mark **Users and groups** check box.
 
@@ -108,7 +110,7 @@ Registering your application establishes a trust relationship between your app a
 
 1. Select **+ Create policy**. Select **Access policy**.
 
-1. Enter a name for the policy, such as **Monitor Microsoft Forms access**.
+1. Enter a name for the policy, such as **`Monitor Microsoft Forms access`**.
 
 1. Leave the **Category** as **Access control**.
 
