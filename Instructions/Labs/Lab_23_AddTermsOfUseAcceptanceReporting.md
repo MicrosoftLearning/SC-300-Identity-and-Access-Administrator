@@ -39,7 +39,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
     ![Screen image displaying the Terms of use page with New terms highlighted](./media/lp4-mod1-new-terms-of-use.png)
 
-1. In the **Name** box, enter **Testing terms of use**.
+1. In the **Name** box, enter **`Testing terms of use`**.
 
     >**Note:** This is the terms of use that will be used in the Azure portal.
 
@@ -51,7 +51,7 @@ Once you have finalized your terms of use document, use the following procedure 
 
     >**Note:** The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user will see will be based on their browser preferences.
 
-1. In the **Display name** box, enter **Contoso Terms of Use**.
+1. In the **Display name** box, enter **`Contoso Terms of Use`**.
 
     >**Note:** This is the title that users see when they sign in.
 
@@ -109,13 +109,13 @@ Once you have finalized your terms of use document, use the following procedure 
 
 #### Continued Task 1 - Create the Conditional Access Policy
 
-1. When the terms of use is created, you will automatically be redirected to the Conditional access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
+1. When the terms of use is created, you will automatically be redirected to the Conditional access policy page. On the page, in the **Name** box, enter **`Enforce ToU`**.
 
-1. Under **Assignments**, select **0 users or agents(Preview) selected**.
+1. Under **Assignments**, select **0 users and groups selected**.
 
 1. On the Include tab, select **Select users and groups**, and then mark **Users and groups** check box.
 
-1. In the **Select users and groups** pane, select ***Adele Vance** account and then select **Select**.
+1. In the **Select users and groups** pane, select **Adele Vance** account and then select **Select**.
 
     **Warning** - If you choose your administrator account, like all conditional access policies, be sure you have another account with enough permissions to change the conditional access policy. This is to ensure your administrator account will not be locked out should the conditional access policy result in an undesirable outcome.
 
