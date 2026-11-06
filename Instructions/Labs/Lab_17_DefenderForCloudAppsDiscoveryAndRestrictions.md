@@ -32,6 +32,8 @@ Microsoft Defender for Cloud Apps utilizes logs from network traffic to identify
 
 1. On the **Microsoft Defender portal**, in the left navigation menu, expand the **Cloud Apps**, select **Cloud App Catalog**.
 
+    > **Note:** If the left navigation menu is collapsed, select Show navigation to expand it.
+
 1. In the filter bar, set **Category** to **Cloud storage**.
 
 1. From the list of apps, select **Dropbox**.
