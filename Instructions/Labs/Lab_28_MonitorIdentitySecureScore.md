@@ -63,8 +63,8 @@ Microsoft Entra Identity Protection provides automated detection and remediation
 
    | Field | Value |
    | :--- | :--- |
-   | Name | **User risk protection policy** |
-   | Assignments | 1. Select **0 users or agents (Preview) selected** |
+   | Name | **`User risk protection policy`** |
+   | Assignments | 1. Select **0 users and groups selected** |
    |             | 2. On the **Include** tab mark **All users** |
    |             | 3. On the **Exclude** tab, use the **Users and groups** to exclude **MOD Administrator** |
    | Target resources | Select **No target resource selected**, and then select **All resources (formerly 'All cloud apps')** |
