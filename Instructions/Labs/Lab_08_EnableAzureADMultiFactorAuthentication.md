@@ -55,13 +55,13 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Switch back to the Microsoft Entra admin center, in the left navigation, under **Entra ID**, select **Conditional Access**.
 
-1. On the menu, Select **+ New policy**.
+1. On the menu select **Policies** and then select **+ New policy**.
 
     ![Screenshot highlighting the New Policy button in the Microsoft Entra admin center.](./media/lp2-mod1-azure-ad-conditional-access-policy.png)
 
-1. In the **Name** box, enter **MFA_for_Delia**.
+1. In the **Name** box, enter **`MFA_for_Delia`**.
 
-1. Under **Assignments**, in the **Users or agents (Preview)** section, select **0 users or agents (Preview) selected**.
+1. Under **Assignments**, in the **Users** section, select **0 users and groups selected**.
 
 1. On the **Include** tab, mark **Select users and groups**, then select the **Users and groups** check box.
 
@@ -73,7 +73,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. In the **Include** tab, select **Select resources**, then in the **Select specific resources** select **None**.
 
-1. In the **Resources** pane, search for **Office 365**, then select it.
+1. In the **Resources** pane, search for **Office 365**, then select it. At the bottom of the page select **Select**.
 
     - **Reminder** - in a previous lab we gave Delia Dennis an Office 365 license and logged into ensure it worked.
 
@@ -135,7 +135,7 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 
 1. At the top of the Users pane, select **Per-user MFA**.
 
-   >**Note:** you may have to use the ellipsis (...) to get to the Per-user MFA menu item.
+    >**Note:** you may have to use the ellipsis (...) to get to the Per-user MFA menu item.
 
    ![Screenshot showing the MFA option](./media/lp2-mod1-users-mfa.png)
 
@@ -155,13 +155,15 @@ Finally, let's look at how to configure MFA for user accounts. This is another w
 
 1. Notice that Adele now has **Enabled** as her MFA status.
 
-1. You can select **Service settings** to see the MFA setting screen, seen earlier in the lab.
+    > **Note:** If the changes are not displayed, refresh the page to view the updated information.
+
+1. You can select **Service settings** to view the MFA setting screen.
 
 1. Close the MFA setting tab.
 
 #### Task 2 -- Try logging in as Adele
 
-1. If you want to see another example of MFA login process, you can try to log in a Adele.
+1. If you want to see another example of MFA login process, you can try to log in as Adele (`AdeleV@<your domain address>`).
 
 ### Exercise summary
 
