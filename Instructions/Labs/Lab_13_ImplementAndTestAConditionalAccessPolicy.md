@@ -3,7 +3,7 @@ lab:
   title: 13 - Implement and test a conditional access policy
   learning path: '02'
   module: Module 02 - Implement an Authentication and Access Management Solution
-  description: Your organization needs to be able to limit user access to its internal applications. You must deploy an Microsoft Entra conditional access policy.
+  description: Your organization needs to be able to limit user access to its internal applications. You must deploy a Microsoft Entra conditional access policy.
   duration: 20 minutes
   level: 300
   islab: true
@@ -17,7 +17,7 @@ lab:
 
 ## Lab scenario
 
-Your organization needs to be able to limit user access to its internal applications. You must deploy an Microsoft Entra conditional access policy.
+Your organization needs to be able to limit user access to its internal applications. You must deploy a Microsoft Entra conditional access policy.
 
 **Note** - For Conditional Access Policies, you can turn off Security Defaults, the key points to remember are from the training.  Additional information on Security defaults can be found at this link: <https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults>
 
@@ -29,7 +29,7 @@ Your organization needs to be able to limit user access to its internal applicat
 
 1. Launch a new InPrivate browser window.
 
-1. Connect to to Office at **`https://www.office.com`**.
+1. Connect to Office at **`https://www.office.com`**.
 
 1. When prompted, log in as DebraB:
 
@@ -40,7 +40,7 @@ Your organization needs to be able to limit user access to its internal applicat
     
 1. Bypass the welcome and introduction screens.
 
-1. Open the **Apps** page, then then select on the **Sway** icon to see that it loads correctly.
+1. Open the **Apps** page, then select the **Sway** icon to see that it loads correctly.
 
 1. Log out of Office and close your browser session.
 
@@ -58,15 +58,15 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
-1. In the **Name** box, enter **Block Sway for DebraB**.
+1. In the **Name** box, enter **`Block Sway for DebraB`**.
 
-    >**Note:** Using this naming to help you quickly recognize the policy and its function.
+    >**Note:** Use this name to help you quickly recognize the policy and its function.
 
-1. Under **Assignments**, select **0 users or agents(Preview) selected**.
+1. Under **Assignments**, select **0 users and groups selected**.
 
-1. On the Include tab, select **Select users and groups**, and then mark **Users and groups** check box.
+1. On the Include tab, select **Select users and groups**, and then mark the **Users and groups** check box.
 
-1. In the **Select users and groups** pane, select **DebraB** account and then select **Select**.
+1. In the **Select users and groups** pane, select the **DebraB** account and then select **Select**.
 
 1. In the **Target resources**, select **No target resource selected**.
 
@@ -78,7 +78,7 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
 1. In the **Grant** pane, select **Block access** and then select **Select**.
 
-     >**Note:** This policy is being configure for the exercise only and is being used to quickly demonstrate a conditional access policy.
+     >**Note:** This policy is being configured for the exercise only and is being used to quickly demonstrate a conditional access policy.
 
 1. Under **Enable policy**, select **On**, and then select **Create**.
 
@@ -86,7 +86,7 @@ Microsoft Entra conditional access is an advanced feature of Microsoft Entra ID 
 
 #### Task 3 - Test the conditional access policy
 
-You should test your conditional access policies to ensure they working as expected.
+You should test your conditional access policies to ensure they are working as expected.
 
 1. Open a new **InPrivate** browser tab, then go to **Microsoft Sway** at `https://sway.cloud.microsoft`.
 
@@ -99,17 +99,19 @@ You should test your conditional access policies to ensure they working as expec
      
 1. Verify you are prevented from accessing Microsoft Sway.
 
-   ![Screen image displaying a the blocked resource access due to an enabled conditional access policy](./media/lp2-mod3-test-conditional-access-policy.png)
+   ![Screen image displaying blocked resource access due to an enabled conditional access policy](./media/lp2-mod3-test-conditional-access-policy.png)
 
 1. If you are signed in, close the tab, wait 1 minute, and then retry.
     
-    >**Note:** If you are auto-logged into Sway as DebraB, then you will need to manually log out.  Your credentials / access were cached.  Once you log out and sign-in, your Sway session should deny access.
+    >**Note:** If you are auto-logged into Sway as DebraB, then you will need to manually log out.  Your credentials / access were cached.  Once you log out and sign in, your Sway session should deny access.
 
 1. Close the tab and return to **Conditional Access**.
 
 1. In the left navigation, select **Policies** to view the list of Conditional Access policies.
 
 1. Select the **Block Sway for DebraB** policy.
+
+1. In the **Policy details** pane, select **View or Edit**.
 
 1. Under **Enable policy**, select **Off** and then select **Save**.
 
@@ -149,11 +151,11 @@ This report allows you to test the effectiveness of Conditional Access policies 
 
 In this exercise, you used the What If tool to model how a Conditional Access policy would apply to a sign-in. This exercise showed how to validate policy impact before enabling it for users.
 
-### Exercise 3 - Configure sign in frequency controls using a conditional access policy
+### Exercise 3 - Configure sign-in frequency controls using a conditional access policy
 
 #### Task - Use the Microsoft Entra admin center to configure conditional access
 
-As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign in frequency
+As part of your company's larger security configuration, you must test a conditional access policy that can be used to control sign-in frequency.
 
 1. Open the **Microsoft Entra admin center**.
 
@@ -163,13 +165,13 @@ As part of your company's larger security configuration, you must test a conditi
 
    ![Screen image displaying the Conditional Access page with New policy highlighted](./media/lp2-mod1-conditional-access-new-policy.png)
 
-1. In the **Name** box, enter **Sign in frequency**.
+1. In the **Name** box, enter **`Sign in frequency`**.
 
-1. Under **Assignments**, select **0 users or agents(Preview) selected**.
+1. Under **Assignments**, select **0 users and groups selected**.
 
 1. On the **Include** tab, mark **Select users and groups**, then select the **Users and groups** check box.
 
-1. In the **Select users and groups** pane, select **Grady Archie** account and then select **Select**.
+1. In the **Select users and groups** pane, select the **Grady Archie** account and then select **Select**.
 
 1. Select **Target Resources - No target resources selected**.
 
